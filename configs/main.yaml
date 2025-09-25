@@ -1,0 +1,62 @@
+name: "Dog's Life (EUR)"
+sha1: 19D81D0D8AA04AF0FFC12CDCC73FA7D6D5BEE3CB
+options:
+  basename: SCES_512.48
+  target_path: elf/SCES_512.48
+  elf_path: SCES_512.48
+  base_path: ..
+  platform: ps2
+  compiler: EEGCC
+
+  asm_path: asm
+  asset_path: asm
+  src_path: src
+  build_path: build/obj
+
+  find_file_boundaries: False
+  disasm_unknown: True
+  named_regs_for_c_funcs: False
+  use_gp_rel_macro_nonmatching: False
+  ld_bss_is_noload: False
+  generate_asm_macros_files: False
+
+  create_undefined_funcs_auto: True
+  undefined_funcs_auto_path: linkers/undefined_funcs_auto.txt
+  create_undefined_syms_auto: True
+  undefined_syms_auto_path: linkers/undefined_syms_auto.txt
+  ld_script_path: linkers/SCES_512.48.ld
+  
+  # Manually defined symbols
+  symbol_addrs_path:
+  - configs/sym.txt
+
+  section_order: [".text", ".vutext", ".data", ".vudata", ".rodata", ".gcc_except_table", ".sdata", ".sbss", ".bss"]
+  
+  gp_value: 0x4546f0
+  string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  subalign: 4
+
+segments:
+  - [0, databin, elf_header]
+
+  - name: main
+    type: code
+    start: 0x001000
+    vram: 0x100000
+    bss_size: 0x5047C
+    align: 4
+    subalign: 4
+    subsegments:
+      - [0x1000,   asm, text]
+      - [0x24D300, textbin, vutext]
+      - [0x25A680, data]
+      - [0x290EC0, data, vudata]
+      - [0x290F00, rodata]
+      - [0x34D580, gcc_except_table]
+      - [0x34D700, sdata]
+      - {start: 0x354280, type: sbss, vram: 0x00453280}
+      - {start: 0x354A80, type: bss,  vram: 0x00453A80}
+
+  - [0x360F18, databin]
+  - [0x362668]

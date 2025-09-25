@@ -1,0 +1,66 @@
+# Project-specific files
+SCES_512.48
+*[Ss][Cc][Ee][Ss]*
+*512*48*
+SCES_*.*
+prodg*
+tools/ee-gcc2.95.3-136/
+usr/
+src/
+
+# Splat, Ninja and Objdiff files
+asm/
+linkers/
+undefined_funcs_auto.txt
+undefined_syms_auto.txt
+.splache
+.ninja_log
+*.ninja
+objdiff.json
+
+## Binary/object products
+**/bin/
+**/build/
+
+## Clang-tooling things
+**/compile_commands.json
+
+# Compiled Object files
+**/.DS_Store
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+
+# Linker scripts
+*.ld
+
+# Python
+env/
+__pycache__/
+*.pyc
+
+# Miscellaneous
+.vscode
+temp/
