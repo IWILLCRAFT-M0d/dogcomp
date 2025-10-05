@@ -17,6 +17,7 @@ undefined_syms_auto.txt
 .ninja_log
 *.ninja
 objdiff.json
+report.json
 
 ## Binary/object products
 **/bin/

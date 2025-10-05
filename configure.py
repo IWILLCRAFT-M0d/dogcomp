@@ -51,11 +51,8 @@ if sys.platform == "linux" or sys.platform == "linux2":
 
 
 CATEGORY_MAP = {
-    "P2": "Engine",
-    "splice": "Splice",
-    "ps2t": "Tooling",
-    "sce": "Libs",
-    "data": "Data",
+    "game": "Main",
+    "data": "Data"
 }
 
 def clean():
@@ -187,10 +184,8 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
 
                     # Determine the category based on the name
                     categories = [name.split("/")[0]]
-                    if "P2/splice/" in name:
-                        categories.append("splice")
-                    elif "P2/ps2t" in name:
-                        categories.append("ps2t")
+                    if "text" == name or "src" in name:
+                        categories = ["game"]
 
                     unit = {
                         "name": name,
@@ -317,7 +312,7 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
             sys.exit(1)
 
     if objects_only:
-        # Write objdiff.json if dual_objects (i.e. --objects)
+        # Write objdiff.json if dual_objects (i.e. -diff)
         if dual_objects:
             objdiff = {
                 "$schema": "https://raw.githubusercontent.com/encounter/objdiff/main/config.schema.json",

@@ -50,9 +50,9 @@ segments:
     subsegments:
       - [0x1000,   asm, text]
       - [0x24D300, textbin, vutext]
-      - [0x25A680, data]
+      - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
-      - [0x290F00, rodata]
+      - [0x290F00, rodata, text]
       - [0x34D580, gcc_except_table]
       - [0x34D700, sdata]
       - {start: 0x354280, type: sbss, vram: 0x00453280}
