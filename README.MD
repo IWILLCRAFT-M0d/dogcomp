@@ -1,7 +1,6 @@
 This setup is incomplete.
-* The compiler used for the game still missing.
 * Sony's SDK headers are still missing.
-* m2ctx.py and permuter support.
+* m2ctx.py and permuter are not supported.
 
 # Setup
 The setup can be built on Linux or Windows through WSL. Follow the instructions below to set up the build environment.

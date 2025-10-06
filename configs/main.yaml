@@ -19,6 +19,9 @@ options:
   use_gp_rel_macro_nonmatching: False
   ld_bss_is_noload: False
   generate_asm_macros_files: False
+  migrate_rodata_to_functions: True
+  make_full_disasm_for_code: True
+  auto_decompile_empty_functions: False
 
   create_undefined_funcs_auto: True
   undefined_funcs_auto_path: linkers/undefined_funcs_auto.txt
@@ -48,11 +51,23 @@ segments:
     align: 4
     subalign: 4
     subsegments:
-      - [0x1000,   asm, text]
+      - [0x1000,   cpp, text]
+      - [0x51120,  cpp, text_00150120]
+      - [0xA1020,  cpp, text_001A0020]
+      - [0xE24F8,  cpp, text_001E14F8]
+      - [0x1411D8, cpp, text_002401D8]
+      - [0x191D10, cpp, text_00290D10]
+      - [0x1D1150, cpp, text_002D0150]
       - [0x24D300, textbin, vutext]
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
-      - [0x290F00, rodata, text]
+      - [0x290F00, .rodata, text]
+      - [0x2B2DB0, .rodata, text_00150120]
+      - [0x2D6600, .rodata, text_001A0020]
+      - [0x2E6400, .rodata, text_001E14F8]
+      - [0x333BB0, .rodata, text_002401D8]
+      - [0x33FBD0, .rodata, text_00290D10]
+      - [0x3456A0, .rodata, text_002D0150]
       - [0x34D580, gcc_except_table]
       - [0x34D700, sdata]
       - {start: 0x354280, type: sbss, vram: 0x00453280}

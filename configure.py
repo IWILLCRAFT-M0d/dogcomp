@@ -33,10 +33,10 @@ PRE_ELF_PATH = f"{OUT_DIR}/{BASENAME}.elf"
 
 # Compilation Flags
 INCLUDE_PATHS        = "-Iinclude"
-CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.3-136/bin"
-COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.2/ -O2 -G0 -ffast-math"
-COMPILER_FLAGS_C     = "-O2 -g0 -x c"
-COMPILER_FLAGS_CPP   = "-O2 -g0 -x c++ -fno-exceptions -G0"
+CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-274/bin"
+COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.2/ -O2 -g0"
+COMPILER_FLAGS_C     = "-x c"
+COMPILER_FLAGS_CPP   = "-x c++ -fno-exceptions -G16"
 
 COMPILE_CMD_C = (
     f"{CC_DIR}/ee-gcc.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_C}"
@@ -182,10 +182,11 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
                     src_cpp_files = list(Path("src").rglob(src_base.name + ".cpp"))
                     has_src = bool(src_c_files or src_cpp_files)
 
-                    # Determine the category based on the name
-                    categories = [name.split("/")[0]]
-                    if "text" == name or "src" in name:
+                    # Determine the category based on the path
+                    if "src/" in str(orig_entry.src_paths[idx]):
                         categories = ["game"]
+                    elif "asm/data" in str(orig_entry.src_paths[idx]):
+                        categories = ["data"]
 
                     unit = {
                         "name": name,
@@ -197,13 +198,13 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
                     }
 
                     if has_src:
-                        # Replace only the path segment named 'target' with 'current',
+                        # Replace only the path segment named 'target' with 'build/obj/src',
                         # preserving any filenames that may contain the substring "target".
                         op = Path(object_path)
                         parts = list(op.parts)
                         for idx, part in enumerate(parts):
                             if part == "target":
-                                parts[idx] = "current"
+                                parts[idx] = "build/obj/src"
                                 break
                         base_path = str(Path(*parts))
                         unit["base_path"] = base_path
@@ -225,13 +226,13 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
     ninja.rule(
         "cc",
         description="cc $in",
-        command=f"{COMPILE_CMD_C} $in -o $out && {cross}strip $out -N dummy-symbol-name",
+        command=f"{COMPILE_CMD_C} $cflags $in -o $out && {cross}strip $out -N dummy-symbol-name",
     )
 
     ninja.rule(
         "cpp",
         description="cpp $in",
-        command=f"{COMPILE_CMD_CPP} $in -o $out && {cross}strip $out -N dummy-symbol-name",
+        command=f"{COMPILE_CMD_CPP} $cflags $in -o $out && {cross}strip $out -N dummy-symbol-name",
     )
 
     ninja.rule(
@@ -263,53 +264,40 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
 
         if entry.object_path is None:
             continue
-
-        if isinstance(seg, splat.segtypes.common.asm.CommonSegAsm) or isinstance(
-            seg, splat.segtypes.common.data.CommonSegData):
-            if dual_objects:
+        
+        if dual_objects == False:
+            if isinstance(seg, splat.segtypes.common.asm.CommonSegAsm) or isinstance(
+            seg, splat.segtypes.common.data.CommonSegData) or isinstance(
+            seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(
+            seg, splat.segtypes.common.rodatabin.CommonSegRodatabin) or isinstance(
+            seg, splat.segtypes.common.textbin.CommonSegTextbin) or isinstance(
+            seg, splat.segtypes.common.bin.CommonSegBin):
+                build(entry.object_path, entry.src_paths, "as")
+            elif type(seg) == splat.segtypes.common.cpp.CommonSegCpp:
+                build(entry.object_path, entry.src_paths, "cpp")
+            elif type(seg) == splat.segtypes.common.c.CommonSegC:
+                build(entry.object_path, entry.src_paths, "cc")
+            else:
+                print(f"ERROR: Unsupported build segment type {seg.type}")
+                sys.exit(1)
+        else:
+            if isinstance(seg, splat.segtypes.common.asm.CommonSegAsm) or isinstance(
+            seg, splat.segtypes.common.data.CommonSegData) or isinstance(
+            seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(
+            seg, splat.segtypes.common.rodatabin.CommonSegRodatabin) or isinstance(
+            seg, splat.segtypes.common.textbin.CommonSegTextbin) or isinstance(
+            seg, splat.segtypes.common.bin.CommonSegBin):
                 build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
                 build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "as")
-        elif isinstance(seg, splat.segtypes.common.c.CommonSegC):
-            if dual_objects:
+            elif type(seg) == splat.segtypes.common.cpp.CommonSegCpp:
+                build(entry.object_path, entry.src_paths, "cpp", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
+                build(entry.object_path, entry.src_paths, "cpp", extra_flags="-DSKIP_ASM")
+            elif type(seg) == splat.segtypes.common.c.CommonSegC:
                 build(entry.object_path, entry.src_paths, "cc", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
                 build(entry.object_path, entry.src_paths, "cc", extra_flags="-DSKIP_ASM")
             else:
-                build(entry.object_path, entry.src_paths, "cpp")
-        elif isinstance(seg, splat.segtypes.common.cpp.CommonSegCpp):
-            if dual_objects:
-                build(entry.object_path, entry.src_paths, "cpp", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "cpp", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "cpp")
-        elif isinstance(seg, splat.segtypes.common.databin.CommonSegDatabin):
-            if dual_objects:
-                build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "as")
-        elif isinstance(seg, splat.segtypes.common.rodatabin.CommonSegRodatabin):
-            if dual_objects:
-                build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "as")
-        elif isinstance(seg, splat.segtypes.common.textbin.CommonSegTextbin):
-            if dual_objects:
-                build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "as")
-        elif isinstance(seg, splat.segtypes.common.bin.CommonSegBin):
-            if dual_objects:
-                build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            else:
-                build(entry.object_path, entry.src_paths, "as")
-        else:
-            print(f"ERROR: Unsupported build segment type {seg.type}")
-            sys.exit(1)
+                print(f"ERROR: Unsupported build segment type {seg.type}")
+                sys.exit(1)
 
     if objects_only:
         # Write objdiff.json if dual_objects (i.e. -diff)
@@ -369,6 +357,151 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
     else:
         print("Skipping checksum step")
 
+#MARK: Short loop fix
+# Pattern to workaround unintended nops around loops
+COMMENT_PART = r"\/\* (.+) ([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2}) \*\/"
+INSTRUCTION_PART = r"(\b(bne|bnel|beq|beql|beqz|bnez|bnezl|beqzl|bgez|bgezl|bgtz|bgtzl|blez|blezl|bltz|bltzl|b)\b.*)"
+OPCODE_PATTERN = re.compile(f"{COMMENT_PART}  {INSTRUCTION_PART}")
+
+PROBLEMATIC_FUNCS = set(
+    [
+        # text.cpp
+        "func_00107760",
+        "func_00107D68",
+        "func_0010E998",
+        "func_0010F568",
+        "func_0012E2B8",
+        "func_00139190",
+        "func_00142470",
+        "func_0014A398",
+        "func_0010E998",
+        "func_00123CA8",
+        "func_00125270",
+        "func_00144DC8",
+        "func_0014D1B0",
+        
+        
+        # text_00150120.cpp
+        "func_0016BFD8",
+        "func_00189A18",
+        "func_0018FE80",
+        "func_0017DC70",
+        "func_00185878",
+        
+        
+        # text_001A0020.cpp
+        "func_001A2608",
+        "func_001A2BA8",
+        "func_001ABCA8",
+        "func_001AC560",
+        "func_001ADA80",
+        "func_001C7BA8",
+        "func_001D43F0",
+        "func_001D4498",
+        "func_001DF858",
+        "func_001DFBB0",
+        
+        # text_001E14F8.cpp
+        "func_001E1D30",
+        "func_001E7780",
+        "func_001FEC88",
+        "func_0022CF80",
+
+        
+        # text_002401D8.cpp
+        "func_00240A08",
+        "func_00245AE8",
+        "func_00278098",
+        "func_0027C640",
+        "func_0027D240",
+        "func_0027EC50",
+        "func_0028D6A8",
+        "func_0028E4A0",
+        "func_0028EC20",
+        
+        
+        # text_00290D10.cpp
+        "func_0029A198",
+        "func_002AA498",
+        "func_002AA978",
+        "func_002AADF8",
+        "func_002AB278",
+        "func_002AB778",
+        "func_002ABAE8",
+        "func_002AF090",
+        "func_002B1F40",
+        "func_002B71E8",
+        "func_002B9288",
+        "func_002B9688",
+        "func_002C0460",
+        "func_002CA090",
+        
+        # text_002D0150.cpp
+        "func_002F7A78",
+        "func_002FC9B0",
+        "func_0030A4C8",
+        "func_00318BF8",
+        "func_00319C28",
+        "func_00327B78",
+        "func_0032A680",
+        "func_003326C0",
+        "func_00333810",
+        "func_00337B00",
+        "func_00339120",
+        "func_00339E68",
+        "func_002FA958",
+        "func_003120D0",
+        "func_003374B0",
+        "func_0033C5F8",
+        "func_002FC288",
+        "func_00302ED0",
+        "func_00310370",
+        "func_0033F640",
+        "func_00303590",
+        "func_0030BB10",
+        "func_0030D8B8",
+        "func_0031D298",
+        "func_0032F0E0",
+        "func_00335A80",
+        "func_00335B84",
+        "func_0034C230",
+        "func_0030EC70",
+        "func_00335258",
+        "func_00336F9C",
+        "func_0033739C",
+        "func_0033B610",
+        "func_00344A50",
+
+        
+    ]
+)
+
+def replace_instructions_with_opcodes(asm_folder: Path) -> None:
+    """
+    Replace branch instructions with raw opcodes for functions that trigger the short loop bug.
+    """
+    nm_folder = ROOT / asm_folder / "nonmatchings"
+
+    for p in nm_folder.rglob("*.s"):
+        if p.stem not in PROBLEMATIC_FUNCS:
+            continue
+
+        with p.open("r") as file:
+            content = file.read()
+
+        if re.search(OPCODE_PATTERN, content):
+            # Reference found
+            # Embed the opcode, we have to swap byte order for correct endianness
+            content = re.sub(
+                OPCODE_PATTERN,
+                r"/* \1 \2\3\4\5 */  .word      0x\5\4\3\2 /* \6 */",
+                content,
+            )
+
+            # Write the updated content back to the file
+            with p.open("w") as file:
+                file.write(content)
+
 def main():
     parser = argparse.ArgumentParser(description="Configure the project")
     parser.add_argument(
@@ -414,6 +547,8 @@ def main():
         build_stuff(linker_entries, skip_checksum=True, objects_only=True, dual_objects=True)
     else:
         build_stuff(linker_entries, do_skip_checksum)
+        
+    replace_instructions_with_opcodes(split.config["options"]["asm_path"])
     
 
 if __name__ == "__main__":

@@ -32,7 +32,7 @@ download "https://github.com/decompme/compilers/releases/download/compilers/ps2_
 # Extract the compiler into the tools dir
 echo "Extracting compiler to $TOP/tools..."
 cd $TOP/tools
-tar -xf /tmp/ps2_compilers.tar.xz ee-gcc2.95.3-136/
+tar -xf /tmp/ps2_compilers.tar.xz ee-gcc2.95.2-274/
 
 #echo "Removing temporary files..."
 rm /tmp/ps2_compilers.tar.xz

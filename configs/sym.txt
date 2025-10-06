@@ -5,3 +5,5 @@ D_0045345C = 0x0045345C; // type:s32
 D_004534C8 = 0x004534C8; // type:s32
 D_004534CC = 0x004534CC; // type:s32 size:8
 D_004537F0 = 0x004537F0; // type:s32
+func_00247B48 = 0x00247B48; // size:0x2CC
+func_002C64A0 = 0x002C64A0; // size:0x204

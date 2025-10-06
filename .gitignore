@@ -4,9 +4,8 @@ SCES_512.48
 *512*48*
 SCES_*.*
 prodg*
-tools/ee-gcc2.95.3-136/
+tools/ee-gcc2.95.2-274/
 usr/
-src/
 
 # Splat, Ninja and Objdiff files
 asm/
