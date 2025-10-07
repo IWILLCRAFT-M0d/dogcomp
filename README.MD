@@ -1,6 +1,5 @@
 This setup is incomplete.
 * Sony's SDK headers are still missing.
-* m2ctx.py and permuter are not supported.
 
 # Setup
 The setup can be built on Linux or Windows through WSL. Follow the instructions below to set up the build environment.

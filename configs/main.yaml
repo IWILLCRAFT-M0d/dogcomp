@@ -20,7 +20,7 @@ options:
   ld_bss_is_noload: False
   generate_asm_macros_files: False
   migrate_rodata_to_functions: True
-  make_full_disasm_for_code: True
+  make_full_disasm_for_code: False
   auto_decompile_empty_functions: False
 
   create_undefined_funcs_auto: True
