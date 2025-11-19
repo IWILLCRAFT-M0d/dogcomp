@@ -37,9 +37,9 @@ TARGET_DIR   = "target"
 # Compilation Flags
 INCLUDE_PATHS        = "-Iinclude"
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-274/bin"
-COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.2/ -O2 -g0"
-COMPILER_FLAGS_C     = "-x c"
-COMPILER_FLAGS_CPP   = "-x c++ -fno-exceptions -G16"
+COMMON_COMPILE_FLAGS = f"-O2 -g0"
+COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
+COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -G16 {COMMON_COMPILE_FLAGS}"
 CROSS = "mips-linux-gnu-"
 LD_ARGS = f"-EL -T {LINK_DIR}/undefined_syms_auto.txt -T {LINK_DIR}/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
 
