@@ -9,6 +9,7 @@ import shutil
 import sys
 import json
 import re
+import subprocess
 from pathlib import Path
 from typing import Dict, List, Set, Union
 
@@ -20,7 +21,8 @@ from splat.segtypes.linker_entry import LinkerEntry
 # Constants
 ROOT      = Path(__file__).parent.resolve()
 TOOLS_DIR = ROOT / "tools"
-OUT_DIR   = "build"
+BUILD_DIR = "build"
+OUT_DIR   = f"{BUILD_DIR}/out"
 LINK_DIR  = "linkers"
 
 CONFIG_PATH  = "configs"
@@ -30,6 +32,7 @@ LD_PATH      = f"{LINK_DIR}/{BASENAME}.ld"
 ELF_PATH     = f"{OUT_DIR}/{BASENAME}"
 MAP_PATH     = f"{OUT_DIR}/{BASENAME}.map"
 PRE_ELF_PATH = f"{OUT_DIR}/{BASENAME}.elf"
+TARGET_DIR   = "target"
 
 # Compilation Flags
 INCLUDE_PATHS        = "-Iinclude"
@@ -37,6 +40,9 @@ CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-274/bin"
 COMMON_COMPILE_FLAGS = f"-x c++ -B{TOOLS_DIR}/cc/lib/gcc-lib/ee/2.95.2/ -O2 -g0"
 COMPILER_FLAGS_C     = "-x c"
 COMPILER_FLAGS_CPP   = "-x c++ -fno-exceptions -G16"
+CROSS = "mips-linux-gnu-"
+LD_ARGS = f"-EL -T {LINK_DIR}/undefined_syms_auto.txt -T {LINK_DIR}/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
+
 
 COMPILE_CMD_C = (
     f"{CC_DIR}/ee-gcc.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_C}"
@@ -62,7 +68,10 @@ def clean():
     files_to_clean = [
         ".splache",
         ".ninja_log",
+        "rules.ninja",
         "build.ninja",
+        "matching.ninja",
+        "objdiff.ninja",
         "objdiff.json",
         LD_PATH
     ]
@@ -73,189 +82,62 @@ def clean():
     shutil.rmtree("asm", ignore_errors=True)
     shutil.rmtree(LINK_DIR, ignore_errors=True)
     shutil.rmtree("target", ignore_errors=True)
-    shutil.rmtree(OUT_DIR, ignore_errors=True)
+    shutil.rmtree(BUILD_DIR, ignore_errors=True)
 
+def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_checksum: bool):
 
-#MARK: Build
-def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_only=False, dual_objects=False):
-    """
-    Build the objects and the final ELF file.
-    If objects_only is True, only build objects and skip linking/checksum.
-    If dual_objects is True, build objects twice: once normally, once with -DSKIP_ASM.
-    """
-    built_objects: Set[Path] = set()
-    objdiff_units = []  # For objdiff.json
-
-    def build(
-        object_paths: Union[Path, List[Path]],
-        src_paths: List[Path],
-        task: str,
-        variables: Dict[str, str] = None,
-        implicit_outputs: List[str] = None,
-        out_dir: str = None,
-        extra_flags: str = "",
-        collect_objdiff: bool = False,
-        orig_entry=None,
-    ):
-        """
-        Helper function to build objects.
-        """
-        # Handle none parameters
-        if variables is None:
-            variables = {}
-
-        if implicit_outputs is None:
-            implicit_outputs = []
-
-        # Convert object_paths to list if it is not already
-        if not isinstance(object_paths, list):
-            object_paths = [object_paths]
-
-        # Only rewrite output path to .o if out_dir is set (i.e. --objects mode)
-        if out_dir:
-            new_object_paths = []
-            for obj in object_paths:
-                obj = Path(obj)
-                stem = obj.stem
-                if obj.suffix in [".s", ".c"]:
-                    stem = obj.stem
-                else:
-                    if obj.suffix == ".o" and obj.with_suffix("").suffix in [".s", ".c"]:
-                        stem = obj.with_suffix("").stem
-                target_dir = out_dir if out_dir else obj.parent
-                new_obj = Path(target_dir) / (stem + ".o")
-                new_object_paths.append(new_obj)
-            obj_path = str(object_paths[0])
-            object_paths = new_object_paths
-
-        # Otherwise, use the original object_paths (with .s.o, .c.o, etc.)
-
-        # Add object paths to built_objects
-        for idx, object_path in enumerate(object_paths):
-            if object_path.suffix == ".o":
-                built_objects.add(object_path)
-
-            # Add extra_flags to variables if present
-            build_vars = variables.copy()
-            if extra_flags:
-                build_vars["cflags"] = extra_flags
-            ninja.build(
-                outputs=[str(object_path)],
-                rule=task,
-                inputs=[str(s) for s in src_paths],
-                variables=build_vars,
-                implicit_outputs=implicit_outputs,
-            )
-
-            # Collect for objdiff.json if requested
-            if collect_objdiff and orig_entry is not None:
-                src = src_paths[0] if src_paths else None
-                if src:
-                    src = Path(src)
-                    # Always use the final "matched" name, i.e. as if it will be in src/ with no asm/ prefix
-                    try:
-                        # If the file is in asm/, replace asm/ with nothing (just drop asm/)
-                        if src.parts[0] == "asm":
-                            rel = Path(*src.parts[1:])
-                        elif src.parts[0] == "src":
-                            rel = Path(*src.parts[1:])
-                        else:
-                            rel = src
-                        # Remove extension for the name
-                        name = str(rel.with_suffix(""))
-                    except Exception:
-                        name = str(src.with_suffix(""))
-                else:
-                    name = object_path.stem
-                    # Ensure `rel` is defined so later code can compute src-based paths
-                    try:
-                        rel = Path(object_path)
-                    except Exception:
-                        rel = Path(str(object_path))
-
-                if "target" in str(object_path):
-                    target_path = str(object_path)
-
-                    # Determine if a .c or .cpp file exists in src/ for this unit (recursively)
-                    src_base = rel.with_suffix("")
-                    src_c_files = list(Path("src").rglob(src_base.name + ".c"))
-                    src_cpp_files = list(Path("src").rglob(src_base.name + ".cpp"))
-                    has_src = bool(src_c_files or src_cpp_files)
-
-                    # Determine the category based on the path
-                    if "src/" in str(orig_entry.src_paths[idx]):
-                        categories = ["game"]
-                    elif "asm/data" in str(orig_entry.src_paths[idx]):
-                        categories = ["data"]
-
-                    unit = {
-                        "name": name,
-                        "base_path": obj_path,
-                        "target_path": target_path,
-                        "metadata": {
-                            "progress_categories": categories,
-                        }
-                    }
-
-                    if has_src:
-                        # Replace only the path segment named 'target' with 'build/obj/src',
-                        # preserving any filenames that may contain the substring "target".
-                        op = Path(object_path)
-                        parts = list(op.parts)
-                        for idx, part in enumerate(parts):
-                            if part == "target":
-                                parts[idx] = "build/obj/src"
-                                break
-                        base_path = str(Path(*parts))
-                        unit["base_path"] = base_path
-                    objdiff_units.append(unit)
-
-    ninja = ninja_syntax.Writer(open(str(ROOT / "build.ninja"), "w", encoding="utf-8"), width=9999)
-
-    #MARK: Rules
-    cross = "mips-linux-gnu-"
-
-    ld_args = f"-EL -T {LINK_DIR}/undefined_syms_auto.txt -T {LINK_DIR}/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
-
-    ninja.rule(
+    if objdiff_mode:
+        ninja_file             = ninja_syntax.Writer(open("matching.ninja", "w", encoding="utf-8"), width=9999)
+        ninja_diff_file        = ninja_syntax.Writer(open("objdiff.ninja", "w", encoding="utf-8"), width=9999)
+        ninja_diff_file.include("rules.ninja")
+        ninja_nonmatching_file = ninja_syntax.Writer(open("build.ninja", "w", encoding="utf-8"), width=9999)
+        ninja_nonmatching_file.include("rules.ninja")
+    else:
+        ninja_file = ninja_syntax.Writer(open("build.ninja", "w", encoding="utf-8"), width=9999)
+    
+    ninja_file.include("rules.ninja")
+    
+    ninja_rules_file = ninja_syntax.Writer(open("rules.ninja", "w", encoding="utf-8"), width=9999)
+    
+    ninja_rules_file.rule(
         "as",
         description="as $in",
-        command=f"cpp {INCLUDE_PATHS} $in -o  - | {cross}as -no-pad-sections -EL -march=5900 -mabi=eabi -Iinclude -o $out",
+        command=f"cpp {INCLUDE_PATHS} $in -o  - | {CROSS}as -no-pad-sections -EL -march=5900 -mabi=eabi -Iinclude -o $out",
     )
 
-    ninja.rule(
+    ninja_rules_file.rule(
         "cc",
         description="cc $in",
-        command=f"{COMPILE_CMD_C} $cflags $in -o $out && {cross}strip $out -N dummy-symbol-name",
+        command=f"{COMPILE_CMD_C} $cflags $in -o $out && {CROSS}strip $out -N dummy-symbol-name",
     )
 
-    ninja.rule(
+    ninja_rules_file.rule(
         "cpp",
         description="cpp $in",
-        command=f"{COMPILE_CMD_CPP} $cflags $in -o $out && {cross}strip $out -N dummy-symbol-name",
+        command=f"{COMPILE_CMD_CPP} $cflags $in -o $out && {CROSS}strip $out -N dummy-symbol-name",
     )
 
-    ninja.rule(
+    ninja_rules_file.rule(
         "ld",
         description="link $out",
-        command=f"{cross}ld {ld_args}",
+        command=f"{CROSS}ld {LD_ARGS}",
     )
 
-    ninja.rule(
+    ninja_rules_file.rule(
         "sha1sum",
         description="sha1sum $in",
         command="sha1sum -c $in && touch $out",
     )
 
-    ninja.rule(
+    ninja_rules_file.rule(
         "elf",
         description="elf $out",
-        command=f"{cross}objcopy $in $out -O binary",
+        command=f"{CROSS}objcopy $in $out -O binary",
     )
-
-    TARGET_DIR = f"target"
-
-    # Build all the objects
+    
+    built_match_objects: Set[Path] = set()
+    built_objdiff_objects = []
+    
     for entry in linker_entries:
         seg = entry.segment
 
@@ -265,90 +147,114 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
         if entry.object_path is None:
             continue
         
-        if dual_objects == False:
-            if isinstance(seg, splat.segtypes.common.asm.CommonSegAsm) or isinstance(
-            seg, splat.segtypes.common.data.CommonSegData) or isinstance(
-            seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(
-            seg, splat.segtypes.common.rodatabin.CommonSegRodatabin) or isinstance(
-            seg, splat.segtypes.common.textbin.CommonSegTextbin) or isinstance(
-            seg, splat.segtypes.common.bin.CommonSegBin):
-                build(entry.object_path, entry.src_paths, "as")
-            elif type(seg) == splat.segtypes.common.cpp.CommonSegCpp:
-                build(entry.object_path, entry.src_paths, "cpp")
-            elif type(seg) == splat.segtypes.common.c.CommonSegC:
-                build(entry.object_path, entry.src_paths, "cc")
-            else:
+        # Matching file
+        match seg.type:
+            case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
+                ninja_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
+            case "c":
+                ninja_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]))
+            case "cpp":
+                ninja_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]))
+            case "bin":
+                ninja_file.build(outputs=str(entry.object_path), rule="ld", inputs=str(entry.src_paths[0]))
+            case _:
                 print(f"ERROR: Unsupported build segment type {seg.type}")
                 sys.exit(1)
-        else:
-            if isinstance(seg, splat.segtypes.common.asm.CommonSegAsm) or isinstance(
-            seg, splat.segtypes.common.data.CommonSegData) or isinstance(
-            seg, splat.segtypes.common.databin.CommonSegDatabin) or isinstance(
-            seg, splat.segtypes.common.rodatabin.CommonSegRodatabin) or isinstance(
-            seg, splat.segtypes.common.textbin.CommonSegTextbin) or isinstance(
-            seg, splat.segtypes.common.bin.CommonSegBin):
-                build(entry.object_path, entry.src_paths, "as", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "as", extra_flags="-DSKIP_ASM")
-            elif type(seg) == splat.segtypes.common.cpp.CommonSegCpp:
-                build(entry.object_path, entry.src_paths, "cpp", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "cpp", extra_flags="-DSKIP_ASM")
-            elif type(seg) == splat.segtypes.common.c.CommonSegC:
-                build(entry.object_path, entry.src_paths, "cc", out_dir=TARGET_DIR, collect_objdiff=True, orig_entry=entry)
-                build(entry.object_path, entry.src_paths, "cc", extra_flags="-DSKIP_ASM")
+        
+        built_match_objects.add(entry.object_path)
+        
+        if objdiff_mode:
+            
+            target_path = re.sub(r"^build", r"target", str(entry.object_path))
+            working_path = re.sub(r"^src", r"asm", str(entry.src_paths[0]))
+            working_path = re.sub(r"\.cpp", r".s", working_path)
+            working_path = re.sub(r"\.c", r".s", working_path)
+            
+            p = entry.src_paths[0]
+            
+            if re.search("^asm", str(entry.src_paths[0])):
+                name = re.sub(".s", "", str(entry.src_paths[0].relative_to(f"{p.root}asm")))
             else:
-                print(f"ERROR: Unsupported build segment type {seg.type}")
-                sys.exit(1)
-
-    if objects_only:
-        # Write objdiff.json if dual_objects (i.e. -diff)
-        if dual_objects:
-            objdiff = {
-                "$schema": "https://raw.githubusercontent.com/encounter/objdiff/main/config.schema.json",
-                "custom_make": "ninja",
-                "custom_args": [],
-                "build_target": False,
-                "build_base": True,
-                "watch_patterns": [
-                    "src/**/*.c",
-                    "src/**/*.cp",
-                    "src/**/*.cpp",
-                    "src/**/*.cxx",
-                    "src/**/*.h",
-                    "src/**/*.hp",
-                    "src/**/*.hpp",
-                    "src/**/*.hxx",
-                    "src/**/*.s",
-                    "src/**/*.S",
-                    "src/**/*.asm",
-                    "src/**/*.inc",
-                    "src/**/*.py",
-                    "src/**/*.yml",
-                    "src/**/*.txt",
-                    "src/**/*.json"
-                ],
-                "units": objdiff_units,
-                "progress_categories": [ {"id": id, "name": name} for id, name in CATEGORY_MAP.items() ],
+                name = re.sub(".cpp", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
+                name = re.sub(".c", "", name)
+            
+            if "src/" in str(entry.src_paths[0]):
+                categories = ["game"]
+            elif "asm/data" in str(entry.src_paths[0]):
+                categories = ["data"]
+            
+            unit = {
+                "name": name,
+                "base_path": str(entry.object_path),
+                "target_path": target_path,
+                "metadata": {
+                    "progress_categories": categories,
+                    "source_path": str(entry.src_paths[0])
+                }
             }
-            with open("objdiff.json", "w", encoding="utf-8") as f:
-                json.dump(objdiff, f, indent=2)
-        return
-
-    ninja.build(
+            
+            built_objdiff_objects.append(unit)
+            
+            # Objdiff working file
+            match seg.type:
+                case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
+                case "c":
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM -DNON_MATCHING" } )
+                case "cpp":
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM -DNON_MATCHING" } )
+            
+            # Objdiff target file
+            match seg.type:
+                case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
+                    ninja_diff_file.build(outputs=target_path, rule="as", inputs=str(entry.src_paths[0]))
+                case "c":
+                    ninja_diff_file.build(outputs=target_path, rule="cc", inputs=str(entry.src_paths[0]))
+                case "cpp":
+                    ninja_diff_file.build(outputs=target_path, rule="cpp", inputs=str(entry.src_paths[0]))
+            
+            # Replace previous code with this when Splat fixes the issue with target asm generation
+            # # Objdiff working file
+            # match seg.type:
+            #     case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
+            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
+            #     case "c":
+            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM" } )
+            #     case "cpp":
+            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM" } )
+            # 
+            # # Objdiff target file
+            # ninja_diff_file.build(outputs=target_path, rule="as", inputs=working_path)
+            
+    
+    if objdiff_mode:
+        objdiff = {
+            "custom_make": "ninja",
+            "custom_args": [],
+            "build_target": False,
+            "build_base": False,
+            "units": built_objdiff_objects,
+            "progress_categories": [ {"id": id, "name": name} for id, name in CATEGORY_MAP.items() ]
+        }
+        with open("objdiff.json", "w", encoding="utf-8") as f:
+            json.dump(objdiff, f, indent=2)
+    
+    ninja_file.build(
         PRE_ELF_PATH,
         "ld",
         LD_PATH,
-        implicit=[str(obj) for obj in built_objects],
+        implicit=[str(obj) for obj in built_match_objects],
         variables={"mapfile": MAP_PATH},
     )
 
-    ninja.build(
+    ninja_file.build(
         ELF_PATH,
         "elf",
         PRE_ELF_PATH,
     )
-
+    
     if not skip_checksum:
-        ninja.build(
+        ninja_file.build(
             ELF_PATH + ".ok",
             "sha1sum",
             f"{CONFIG_PATH}/checksum.sha1",
@@ -356,7 +262,8 @@ def build_stuff(linker_entries: List[LinkerEntry], skip_checksum=False, objects_
         )
     else:
         print("Skipping checksum step")
-
+    
+    
 #MARK: Short loop fix
 # Pattern to workaround unintended nops around loops
 COMMENT_PART = r"\/\* (.+) ([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2}) \*\/"
@@ -525,7 +432,7 @@ def main():
     parser.add_argument(
         "-diff",
         "--objdiff",
-        help="Create Objdiff's configuration and compiles target object files",
+        help="Create Objdiff's configuration and compiles target object files. Note: the game can still be fully compilable as matching file by using \'ninja -f matching.ninja\'",
         action="store_true",
     )
     args = parser.parse_args()
@@ -538,16 +445,17 @@ def main():
         clean()
         if args.clean_only:
             return
-
-    split.main([YAML_FILE], modes="all", verbose=False)
-
-    linker_entries = split.linker_writer.entries
+    
+    
+    split.main([YAML_FILE], modes="all", verbose=False, disassemble_all=True, make_full_disasm_for_code=False)
+    
+    # An issue at the moment of generating the target assembly makes impossible for now
+    # to generate the target objects correctly
+    ninja_build(split.linker_writer.entries, do_objects, do_skip_checksum)
     
     if do_objects:
-        build_stuff(linker_entries, skip_checksum=True, objects_only=True, dual_objects=True)
-    else:
-        build_stuff(linker_entries, do_skip_checksum)
-        
+        subprocess.call(["ninja", "-f", "objdiff.ninja"])
+    
     replace_instructions_with_opcodes(split.config["options"]["asm_path"])
     
 

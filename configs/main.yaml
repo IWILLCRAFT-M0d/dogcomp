@@ -11,7 +11,7 @@ options:
   asm_path: asm
   asset_path: asm
   src_path: src
-  build_path: build/obj
+  build_path: build
 
   find_file_boundaries: False
   disasm_unknown: True
