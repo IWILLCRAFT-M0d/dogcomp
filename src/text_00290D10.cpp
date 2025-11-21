@@ -1,4 +1,5 @@
 #include "common.h"
+#include "debug.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00290D10);
 
@@ -188,7 +189,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002967C8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00290D10", D_0043EC70);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296818);
+// sym name taken from rct3_mac
+
+void InterfaceError(char* name, int line) {
+    DDE_FatalError("Failed to get interface in %s (line %d).", name, line);
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296840);
 
