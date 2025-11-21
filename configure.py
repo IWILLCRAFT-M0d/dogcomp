@@ -52,8 +52,8 @@ COMPILE_CMD_CPP = (
 )
 
 if sys.platform == "linux" or sys.platform == "linux2":
-    COMPILE_CMD_C = f"wine {COMPILE_CMD_C}"
-    COMPILE_CMD_CPP = f"wine {COMPILE_CMD_CPP}"
+    COMPILE_CMD_C = f"tools/wibo {COMPILE_CMD_C}"
+    COMPILE_CMD_CPP = f"tools/wibo {COMPILE_CMD_CPP}"
 
 
 CATEGORY_MAP = {

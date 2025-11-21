@@ -40,14 +40,6 @@ pip3 install -U -r requirements.txt
 ```
 
 ## 4. Setup build environment
-Setup wine:
-
-```bash
-sudo dpkg --add-architecture i386 && \
-sudo apt-get update && \
-sudo apt-get install wine32
-```
-
 Install the MIPS assembler:
 
 ```bash
