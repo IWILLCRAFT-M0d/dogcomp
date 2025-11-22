@@ -9,6 +9,7 @@ func_00247B48 = 0x00247B48; // size:0x2CC
 func_002C64A0 = 0x002C64A0; // size:0x204
 
 Break__7Consolev = 0x001a3c08; // type:func
+Quit__7Consolev = 0x001a9258; // type:func
 InterfaceError = 0x00296818; // type:func
 DDE_FatalError = 0x002d5c78; // type:func
 memset = 0x00335b84; // type:func

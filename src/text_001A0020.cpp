@@ -345,7 +345,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9228);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9240);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9258);
+void Console::Quit() {
+    func_002963D0();
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9278);
 
