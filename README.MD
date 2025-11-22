@@ -1,8 +1,10 @@
-This setup is incomplete.
-* Sony's SDK headers are still missing.
+# Dogcomp: Dog's Life (2003) Decompilation Project
+<a href="https://decomp.dev/IWILLCRAFT-M0d/dogcomp"><img src="https://decomp.dev/IWILLCRAFT-M0d/dogcomp.svg?mode=shield&measure=fuzzy_match_percent"/></a><a href="https://decomp.dev/IWILLCRAFT-M0d/dogcomp"> <a href="https://decomp.dev/IWILLCRAFT-M0d/dogcomp"><sup>Progress bar powered by decomp.dev</sup></a>
+
+Dogcomp: A Dog's Life Decompilation Project. Currently working on the SCES_512.48 (PAL) release.
 
 # Setup
-The setup can be built on Linux or Windows through WSL. Follow the instructions below to set up the build environment.
+The setup can be built on Linux or Windows (through WSL). Follow the instructions below to set up the build environment.
 
 ## 1. Clone the repository
 Clone the repo to your local machine:
@@ -66,5 +68,4 @@ You can change a little the behavior by passing any of the following arguments t
 * `--clean/-c` - Delete any existing build files and configure the project.
 * `--clean-only/-C` - Delete any existing build files **without** configuring the project.
 * `--skip-checksum/-s` - Skip the checksum verification step.
-* `--objdiff/-diff` - Builds target object files for comparison with objdiff and generates an objdiff config file..
-
+* `--objdiff/-diff` - Builds target object files for comparison with [Objdiff](https://github.com/encounter/objdiff) and generates an Objdiff configuration file.
