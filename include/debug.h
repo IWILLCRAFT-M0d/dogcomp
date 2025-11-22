@@ -1,15 +1,19 @@
+#ifndef DEBUG_H
+#define DEBUG_H
 // TODO: add standard c/cpp headers to include
 extern "C" {
     #include "stdarg.h"
 }
-#ifndef DEBUG_H
-#define DEBUG_H
 
 
-// This doesn't belong here
+
 extern "C"
 {
-void Exit(int);
+void Exit(int); // This doesn't belong here. It's from Sony's SDK.
+
+void func_002D5958(char*,...);
+void InterfaceError(char* name, int line);
+void DDE_FatalError(char* message,...);
 }
 
 namespace Console{
@@ -17,7 +21,3 @@ namespace Console{
 };
 
 #endif
-
-extern "C" void func_002D5958(char*,...);
-void InterfaceError(char* name, int line);
-void DDE_FatalError(char* message,...);
