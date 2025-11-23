@@ -283,15 +283,16 @@ void func_001A1B60(char arg0, int arg1) {
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1380);
-
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1348);
-
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1310);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A12A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A12D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1310);
+
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1348);
+
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1380);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A13B8);
 
