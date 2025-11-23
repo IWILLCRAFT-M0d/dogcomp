@@ -36,19 +36,19 @@ TARGET_DIR   = "target"
 
 # Compilation Flags
 INCLUDE_PATHS        = "-Iinclude"
-CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-274/bin"
+CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-273a"
 COMMON_COMPILE_FLAGS = f"-O2 -g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
-COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -G16 {COMMON_COMPILE_FLAGS}"
+COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -G8 {COMMON_COMPILE_FLAGS}"
 CROSS = "mips-linux-gnu-"
 LD_ARGS = f"-EL -T {LINK_DIR}/undefined_syms_auto.txt -T {LINK_DIR}/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
 
 
 COMPILE_CMD_C = (
-    f"{CC_DIR}/ee-gcc.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_C}"
+    f"{CC_DIR}/bin/ee-gcc295.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_C}"
 )
 COMPILE_CMD_CPP = (
-    f"{CC_DIR}/ee-gcc.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_CPP}"
+    f"{CC_DIR}/bin/ee-gcc295.exe -c {INCLUDE_PATHS} {COMPILER_FLAGS_CPP}"
 )
 
 if sys.platform == "linux" or sys.platform == "linux2":
@@ -202,7 +202,7 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
                 case "c":
                     ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM -DNON_MATCHING" } )
                 case "cpp":
-                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM -DNON_MATCHING" } )
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-snas -DSKIP_ASM -DNON_MATCHING" } )
             
             # Objdiff target file
             match seg.type:
@@ -219,9 +219,9 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             #     case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
             #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
             #     case "c":
-            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM" } )
+            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-snas -DSKIP_ASM -DNON_MATCHING" } )
             #     case "cpp":
-            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM" } )
+            #         ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-snas -DSKIP_ASM -DNON_MATCHING" } )
             # 
             # # Objdiff target file
             # ninja_diff_file.build(outputs=target_path, rule="as", inputs=working_path)

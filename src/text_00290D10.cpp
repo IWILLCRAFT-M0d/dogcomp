@@ -1,5 +1,6 @@
 #include "common.h"
 #include "debug.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00290D10);
 
@@ -185,7 +186,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002966F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296710);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002967C8);
+void func_002967C8(int* arg0, int arg1) {
+    func_003481C8(*arg0);
+    func_002966F0();
+    if (arg1 & 1) {
+        func_00247B88(arg0);
+    }
+}
 
 INCLUDE_RODATA("asm/nonmatchings/text_00290D10", D_0043EC70);
 
@@ -1621,13 +1628,29 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C3158);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C3180);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C31D0);
+s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0) {
+    arg0->unk74 = 1;
+    arg0->unk68 = 1.0f;
+    arg0->unk44 = 0;
+    arg0->unk48 = 0;
+    arg0->unk4C = 0;
+    arg0->unk50 = 0;
+    arg0->unk54 = 0;
+    arg0->unk58 = 0;
+    arg0->unk5C = 0;
+    arg0->unk64 = 0;
+    arg0->unk6C = 0;
+    arg0->unk70 = 0;
+    return arg0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C3218);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C3CE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C3D80);
+void func_002C3D80() {
+	return;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/text_00290D10", D_00441250);
 
@@ -1841,7 +1864,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C5790);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C57A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C57E8);
+void func_002C57E8(void) {
+	return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C57F0);
 
@@ -1859,11 +1884,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C5ED0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C6358);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C6480);
+void func_002C6480(void) {
+	return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C6488);
+void func_002C6488(void) {
+	return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C6490);
+void func_002C6490(void) {
+	return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C6498);
 
@@ -1927,9 +1958,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C82A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C8318);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C8358);
+int func_002C8358(s_func_002C8358* arg0) {
+    return arg0->unk75C;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C8360);
+void func_002C8360(void) {
+	return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002C8368);
 

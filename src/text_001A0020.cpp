@@ -1,5 +1,6 @@
 #include "common.h"
 #include "debug.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A0020);
 
@@ -33,7 +34,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A0B90);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A0D80);
 
+#ifdef NON_MATCHING
+void func_001A12A0(char arg0, int arg1) {
+    if (arg1 != 0) {
+        func_001A0B90(D_0044EB68->unk504, "1", 0x21);
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A12A0);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A12D8);
 

@@ -5,6 +5,7 @@ SCES_512.48
 SCES_*.*
 prodg*
 tools/ee-gcc2.95.2-274/
+tools/ee-gcc2.95.2-273a/
 usr/
 
 # Splat, Ninja and Objdiff files
@@ -65,3 +66,4 @@ __pycache__/
 .vscode
 temp/
 ctx.c
+Zone.Identifier
