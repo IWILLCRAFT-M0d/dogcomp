@@ -282,6 +282,75 @@ void func_001A1B60(char arg0, int arg1) {
 	}
 }
 
+void func_001A1B98(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x1D, arg1);
+}
+
+void func_001A1BC8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x9D, arg1);
+}
+
+void func_001A1BF8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xCB, arg1);
+}
+
+void func_001A1C28(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xCD, arg1);
+}
+
+void func_001A1C58(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xD3, arg1);
+}
+
+void func_001A1C88(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xE, arg1);
+}
+
+void func_001A1CB8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xC7, arg1);
+}
+
+void func_001A1CE8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xCF, arg1);
+}
+
+void func_001A1D18(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x1C, arg1);
+}
+
+void func_001A1D48(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xD1, arg1);
+}
+
+void func_001A1D78(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xC9, arg1);
+}
+
+void func_001A1DA8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xD0, arg1);
+}
+
+void func_001A1DD8(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xC8, arg1);
+}
+
+void func_001A1E08(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0xF, arg1);
+}
+
+void func_001A1E38(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x27, arg1);
+}
+
+void func_001A1E68(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x35, arg1);
+}
+
+void func_001A1E98(char arg0, int arg1) {
+	func_001A0D80(D_0044EB68->unk504, 0x2B, arg1);
+}
+
+
 #else
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A12A0);
@@ -366,8 +435,6 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1B28);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1B60);
 
-#endif
-
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1B98);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1BC8);
@@ -401,6 +468,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1E38);
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1E68);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1E98);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1EC8);
 

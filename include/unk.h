@@ -27,7 +27,14 @@ typedef struct {
 
 
 typedef struct {
-    int unk0[321];
+    int unk0[311];
+    int m_renderOrient;
+    int m_renderRadius;
+    int m_renderActorName;
+    int m_renderHoldingPoints;
+    int m_renderCarryHandles;
+    int m_renderHitSpheres;
+    int unk4F4[4];
     int unk504;
 } s_0044EB68;
 
@@ -38,7 +45,7 @@ extern "C" {
 #endif
 
 void func_001A0B90(int, char*, int);
-
+void func_001A0D80(int, int, int); 
 
 
 void func_001A12A0(char arg0, int arg1);
@@ -82,6 +89,27 @@ void func_001A1AB8(char arg0, int arg1);
 void func_001A1AF0(char arg0, int arg1);
 void func_001A1B28(char arg0, int arg1);
 void func_001A1B60(char arg0, int arg1);
+
+
+void func_001A1B98(char arg0, int arg1);
+void func_001A1BC8(char arg0, int arg1);
+void func_001A1BF8(char arg0, int arg1);
+void func_001A1C28(char arg0, int arg1);
+void func_001A1C58(char arg0, int arg1);
+void func_001A1C88(char arg0, int arg1);
+void func_001A1CB8(char arg0, int arg1);
+void func_001A1CE8(char arg0, int arg1);
+void func_001A1D18(char arg0, int arg1);
+void func_001A1D48(char arg0, int arg1);
+void func_001A1D78(char arg0, int arg1);
+void func_001A1DA8(char arg0, int arg1);
+void func_001A1DD8(char arg0, int arg1);
+void func_001A1E08(char arg0, int arg1);
+void func_001A1E38(char arg0, int arg1);
+void func_001A1E68(char arg0, int arg1);
+void func_001A1E98(char arg0, int arg1);
+
+
 
 
 int func_002C8358(s_func_002C8358* arg0);
