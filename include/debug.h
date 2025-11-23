@@ -21,6 +21,7 @@ void DDE_FatalError(char* message,...);
 
 namespace Console{
 	void Break();
+    int RenderCarryHandles();
     void Quit();
 };
 

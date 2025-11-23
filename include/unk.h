@@ -27,7 +27,14 @@ typedef struct {
 
 
 typedef struct {
-    int unk0[321];
+    int unk0[311];
+    int m_renderOrient;
+    int m_renderRadius;
+    int m_renderActorName;
+    int m_renderHoldingPoints;
+    int m_renderCarryHandles;
+    int m_renderHitSpheres;
+    int unk4F4[4];
     int unk504;
 } s_0044EB68;
 

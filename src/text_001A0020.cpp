@@ -352,7 +352,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9210);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9228);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9240);
+#ifdef NON_MATCHING
+int Console::RenderCarryHandles() {
+   return D_0044EB68->m_renderCarryHandles = (D_0044EB68->m_renderCarryHandles ^ 1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderCarryHandles__7Consolev);
+#endif
 
 void Console::Quit() {
     func_002963D0();
