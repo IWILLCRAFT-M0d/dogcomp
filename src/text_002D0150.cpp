@@ -5918,7 +5918,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D0150", D_0044BDC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00341F60);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00342038);
+INCLUDE_ASM("asm/nonmatchings/text_002D0150", InitThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00342110);
 

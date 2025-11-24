@@ -26,15 +26,15 @@ typedef struct {
 } s_func_002C8358;
 
 typedef struct {
-    int   unk0[5];
-    bool  unk14;    // Fog enabled
-    int   unk18[4];
-    int   unk28;    // Fog color
-    int   unk2C;    // Fog color
-    int   unk30;    // Fog color
-    float unk34;    // Fog distance
-    bool  unk38;    // DOF
-    bool  unk3C;    // DOF
+  /* 0x000 */ int   unk0[5];
+  /* 0x014 */ bool  unk14;       // Fog enabled
+  /* 0x018 */ int   unk18[4];   
+  /* 0x028 */ int   unk28;       // Fog color
+  /* 0x02C */ int   unk2C;       // Fog color
+  /* 0x030 */ int   unk30;       // Fog color
+  /* 0x034 */ float fogDistance; // Fog distance
+  /* 0x038 */ bool  unk38;       // DOF
+  /* 0x03C */ bool  unk3C;       // DOF
 } s_0044EB68_sub;
 
 typedef struct {
@@ -52,7 +52,7 @@ typedef struct {
 } s_0044EB68;
 
 // Replace struct for class `Game_Document` and move to a proper file.
-extern s_0044EB68* _TheGame;
+extern s_0044EB68* TheGame;
 
 #ifdef __cplusplus
 extern "C" {
@@ -142,6 +142,5 @@ void func_002C8360(void);
 #ifdef __cplusplus
 }
 #endif
-
 
 #endif

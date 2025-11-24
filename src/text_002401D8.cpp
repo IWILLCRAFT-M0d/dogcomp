@@ -1,5 +1,6 @@
 #include "common.h"
 #include "debug.h"
+#include "FGDK3/Thread.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002401D8);
 
@@ -2813,7 +2814,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BAF8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BB00);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BB40);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Create__Q29Semaphore14Implementationii);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BB88);
 
@@ -2829,7 +2830,22 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BCE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BDA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BE00);
+// `-snas` Required
+#ifdef NON_MATCHING
+Status Thread_InternalInitialise() {
+    // Status arg0;
+    int temp_v0;
+    int* temp_s1;
+
+    InitThread();
+    temp_s1 = new int;
+    *temp_s1 = (int)Semaphore::Implementation::Create(1, 1);
+    D_00451948 = temp_s1;
+    return Status(0xFFFFFFFFU, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_InternalInitialise);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BE90);
 
