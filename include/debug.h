@@ -21,6 +21,10 @@ void DDE_FatalError(char* message,...);
 
 namespace Console{
 	void Break();
+    void Parse();
+    void Patch();
+    int RenderActorName();
+    int RenderHoldingPoints();
     int RenderCarryHandles();
     void Quit();
 };

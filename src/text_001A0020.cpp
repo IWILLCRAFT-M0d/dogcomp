@@ -645,9 +645,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A8928);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A8D90);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A8E98);
+void Console::Parse() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A8EA0);
+void Console::Patch() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A8EA8);
 
@@ -661,9 +665,21 @@ INCLUDE_RODATA("asm/nonmatchings/text_001A0020", D_003D60A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9110);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9210);
+#ifdef NON_MATCHING
+int Console::RenderActorName() {
+   return D_0044EB68->m_renderActorName = (D_0044EB68->m_renderActorName ^ 1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderActorName__7Consolev);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9228);
+#ifdef NON_MATCHING
+int Console::RenderHoldingPoints() {
+   return D_0044EB68->m_renderHoldingPoints = (D_0044EB68->m_renderHoldingPoints ^ 1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderHoldingPoints__7Consolev);
+#endif
 
 #ifdef NON_MATCHING
 int Console::RenderCarryHandles() {

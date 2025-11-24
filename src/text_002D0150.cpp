@@ -5314,7 +5314,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00336D60);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00336D80);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00336DE8);
+INCLUDE_ASM("asm/nonmatchings/text_002D0150", sprintf);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00336E58);
 
