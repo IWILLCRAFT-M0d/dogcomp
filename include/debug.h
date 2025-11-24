@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-#include "stdarg.h"
+#include <ee_gcc/gcc-lib/stdarg.h>
 
 void Exit(int); // This doesn't belong here. It's from Sony's SDK.
 void func_002963D0(void);
