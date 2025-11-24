@@ -1,4 +1,5 @@
-// Hack
+// Hacks
+// Floats causes the assembler to crash and some functions are aparently being improperly sized
 D_00453440 = 0x00453440; // type:s32
 D_00453444 = 0x00453444; // type:s32
 D_0045345C = 0x0045345C; // type:s32
@@ -8,6 +9,9 @@ D_004537F0 = 0x004537F0; // type:s32
 func_00247B48 = 0x00247B48; // size:0x2CC
 func_002C64A0 = 0x002C64A0; // size:0x204
 
+// Functions
+
+// Engine
 Break__7Consolev = 0x001a3c08; // type:func
 Parse__7Consolev = 0x001a8e98; // type:func
 Patch__7Consolev = 0x001a8ea0; // type:func
@@ -18,6 +22,19 @@ Quit__7Consolev = 0x001a9258; // type:func
 func_00275288 = 0x00275288; // type:func
 InterfaceError = 0x00296818; // type:func
 DDE_FatalError = 0x002d5c78; // type:func
+
+// TODO: replace with properly mangled counterparts. Symbols from RTC3 Gold (Mac).
+//Game_Document::Game_Document(float, float) = 0x001c61f8; // type:func
+//GameShell::GameShell(float, float) = 0x002d30e0; // type:func
+
+
+// Sony SDK
+
 memset = 0x00335b84; // type:func
 sprintf = 0x00336DE8; // type:func
 Exit = 0x00349BA8;
+
+
+// Globals
+
+_TheGame = 0x0044EB68;

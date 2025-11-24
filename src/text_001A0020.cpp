@@ -38,318 +38,317 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A0D80);
 #ifdef NON_MATCHING
 void func_001A12A0(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "1", 0x21);
+        func_001A0B90(_TheGame->unk504, "1", 0x21);
     }
 }
 
 void func_001A12D8(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "2", 0x22);
+        func_001A0B90(_TheGame->unk504, "2", 0x22);
     }
 }
 
 void func_001A1310(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "3", -0x5D);
+        func_001A0B90(_TheGame->unk504, "3", -0x5D);
     }
 }
 
 void func_001A1348(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "4", 0x24);
+        func_001A0B90(_TheGame->unk504, "4", 0x24);
     }
 }
 
 void func_001A1380(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "5", 0x25);
+        func_001A0B90(_TheGame->unk504, "5", 0x25);
     }
 }
 
 void func_001A13B8(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "6", 0x5E);
+        func_001A0B90(_TheGame->unk504, "6", 0x5E);
     }
 }
 
 void func_001A13F0(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "7", 0x26);
+        func_001A0B90(_TheGame->unk504, "7", 0x26);
     }
 }
 
 void func_001A1428(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "8", 0x2A);
+        func_001A0B90(_TheGame->unk504, "8", 0x2A);
     }
 }
 
 void func_001A1460(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "9", 0x28);
+        func_001A0B90(_TheGame->unk504, "9", 0x28);
     }
 }
 
 void func_001A1498(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "0", 0x29);
+        func_001A0B90(_TheGame->unk504, "0", 0x29);
     }
 }
 
 void func_001A14D0(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "A", 0);
+        func_001A0B90(_TheGame->unk504, "A", 0);
     }
 }
 
 void func_001A1508(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "B", 0);
+        func_001A0B90(_TheGame->unk504, "B", 0);
     }
 }
 
 void func_001A1540(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "C", 0);
+        func_001A0B90(_TheGame->unk504, "C", 0);
     }
 }
 
 void func_001A1578(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "D", 0);
+        func_001A0B90(_TheGame->unk504, "D", 0);
     }
 }
 
 void func_001A15B0(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "E", 0);
+        func_001A0B90(_TheGame->unk504, "E", 0);
     }
 }
 
 void func_001A15E8(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "F", 0);
+        func_001A0B90(_TheGame->unk504, "F", 0);
     }
 }
 
 void func_001A1620(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "G", 0);
+        func_001A0B90(_TheGame->unk504, "G", 0);
     }
 }
 
 void func_001A1658(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "H", 0);
+        func_001A0B90(_TheGame->unk504, "H", 0);
     }
 }
 
 void func_001A1690(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "I", 0);
+        func_001A0B90(_TheGame->unk504, "I", 0);
     }
 }
 
 void func_001A16C8(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "J", 0);
+        func_001A0B90(_TheGame->unk504, "J", 0);
     }
 }
 
 void func_001A1700(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "K", 0);
+        func_001A0B90(_TheGame->unk504, "K", 0);
     }
 }
 
 void func_001A1738(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "L", 0);
+        func_001A0B90(_TheGame->unk504, "L", 0);
     }
 }
 
 void func_001A1770(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "M", 0);
+        func_001A0B90(_TheGame->unk504, "M", 0);
     }
 }
 
 void func_001A17A8(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "N", 0);
+        func_001A0B90(_TheGame->unk504, "N", 0);
     }
 }
 
 void func_001A17E0(char arg0, int arg1) {
     if (arg1 != 0) {
-        func_001A0B90(D_0044EB68->unk504, "O", 0);
+        func_001A0B90(_TheGame->unk504, "O", 0);
     }
 }
 
 void func_001A1818(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "P", 0);
+		func_001A0B90(_TheGame->unk504, "P", 0);
 	}
 }
 
 void func_001A1850(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "Q", 0);
+		func_001A0B90(_TheGame->unk504, "Q", 0);
 	}
 }
 
 void func_001A1888(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "R", 0);
+		func_001A0B90(_TheGame->unk504, "R", 0);
 	}
 }
 
 void func_001A18C0(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "S", 0);
+		func_001A0B90(_TheGame->unk504, "S", 0);
 	}
 }
 
 void func_001A18F8(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "T", 0);
+		func_001A0B90(_TheGame->unk504, "T", 0);
 	}
 }
 
 void func_001A1930(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "U", 0);
+		func_001A0B90(_TheGame->unk504, "U", 0);
 	}
 }
 
 void func_001A1968(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "V", 0);
+		func_001A0B90(_TheGame->unk504, "V", 0);
 	}
 }
 
 void func_001A19A0(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "W", 0);
+		func_001A0B90(_TheGame->unk504, "W", 0);
 	}
 }
 
 void func_001A19D8(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "X", 0);
+		func_001A0B90(_TheGame->unk504, "X", 0);
 	}
 }
 
 void func_001A1A10(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "Y", 0);
+		func_001A0B90(_TheGame->unk504, "Y", 0);
 	}
 }
 
 void func_001A1A48(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "Z", 0);
+		func_001A0B90(_TheGame->unk504, "Z", 0);
 	}
 }
 
 void func_001A1A80(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, " ", 0);
+		func_001A0B90(_TheGame->unk504, " ", 0);
 	}
 }
 
 void func_001A1AB8(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "=", 0);
+		func_001A0B90(_TheGame->unk504, "=", 0);
 	}
 }
 
 void func_001A1AF0(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, ".", 0);
+		func_001A0B90(_TheGame->unk504, ".", 0);
 	}
 }
 
 void func_001A1B28(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, ",", 0);
+		func_001A0B90(_TheGame->unk504, ",", 0);
 	}
 }
 
 void func_001A1B60(char arg0, int arg1) {
 	if (arg1 != 0) {
-		func_001A0B90(D_0044EB68->unk504, "-", 0);
+		func_001A0B90(_TheGame->unk504, "-", 0);
 	}
 }
 
 void func_001A1B98(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x1D, arg1);
+	func_001A0D80(_TheGame->unk504, 0x1D, arg1);
 }
 
 void func_001A1BC8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x9D, arg1);
+	func_001A0D80(_TheGame->unk504, 0x9D, arg1);
 }
 
 void func_001A1BF8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xCB, arg1);
+	func_001A0D80(_TheGame->unk504, 0xCB, arg1);
 }
 
 void func_001A1C28(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xCD, arg1);
+	func_001A0D80(_TheGame->unk504, 0xCD, arg1);
 }
 
 void func_001A1C58(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xD3, arg1);
+	func_001A0D80(_TheGame->unk504, 0xD3, arg1);
 }
 
 void func_001A1C88(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xE, arg1);
+	func_001A0D80(_TheGame->unk504, 0xE, arg1);
 }
 
 void func_001A1CB8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xC7, arg1);
+	func_001A0D80(_TheGame->unk504, 0xC7, arg1);
 }
 
 void func_001A1CE8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xCF, arg1);
+	func_001A0D80(_TheGame->unk504, 0xCF, arg1);
 }
 
 void func_001A1D18(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x1C, arg1);
+	func_001A0D80(_TheGame->unk504, 0x1C, arg1);
 }
 
 void func_001A1D48(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xD1, arg1);
+	func_001A0D80(_TheGame->unk504, 0xD1, arg1);
 }
 
 void func_001A1D78(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xC9, arg1);
+	func_001A0D80(_TheGame->unk504, 0xC9, arg1);
 }
 
 void func_001A1DA8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xD0, arg1);
+	func_001A0D80(_TheGame->unk504, 0xD0, arg1);
 }
 
 void func_001A1DD8(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xC8, arg1);
+	func_001A0D80(_TheGame->unk504, 0xC8, arg1);
 }
 
 void func_001A1E08(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0xF, arg1);
+	func_001A0D80(_TheGame->unk504, 0xF, arg1);
 }
 
 void func_001A1E38(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x27, arg1);
+	func_001A0D80(_TheGame->unk504, 0x27, arg1);
 }
 
 void func_001A1E68(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x35, arg1);
+	func_001A0D80(_TheGame->unk504, 0x35, arg1);
 }
 
 void func_001A1E98(char arg0, int arg1) {
-	func_001A0D80(D_0044EB68->unk504, 0x2B, arg1);
+	func_001A0D80(_TheGame->unk504, 0x2B, arg1);
 }
-
 
 #else
 
@@ -469,7 +468,6 @@ INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1E68);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1E98);
 #endif
-
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A1EC8);
 
@@ -665,27 +663,26 @@ INCLUDE_RODATA("asm/nonmatchings/text_001A0020", D_003D60A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", func_001A9110);
 
+// `-snas` Required
 #ifdef NON_MATCHING
 int Console::RenderActorName() {
-   return D_0044EB68->m_renderActorName = (D_0044EB68->m_renderActorName ^ 1);
+   return _TheGame->m_renderActorName ^= 1;
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderActorName__7Consolev);
-#endif
 
-#ifdef NON_MATCHING
 int Console::RenderHoldingPoints() {
-   return D_0044EB68->m_renderHoldingPoints = (D_0044EB68->m_renderHoldingPoints ^ 1);
+   return _TheGame->m_renderHoldingPoints ^= 1;
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderHoldingPoints__7Consolev);
-#endif
 
-#ifdef NON_MATCHING
 int Console::RenderCarryHandles() {
-   return D_0044EB68->m_renderCarryHandles = (D_0044EB68->m_renderCarryHandles ^ 1);
+   return _TheGame->m_renderCarryHandles ^= 1;
 }
+
 #else
+
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderActorName__7Consolev);
+
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderHoldingPoints__7Consolev);	
+
 INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderCarryHandles__7Consolev);
 #endif
 

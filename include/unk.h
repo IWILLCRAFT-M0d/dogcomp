@@ -4,20 +4,20 @@
 // Unknown data and functions.
 
 typedef struct {
-    int unk0[17];
-    int unk44;
-    int unk48;
-    int unk4C;
-    int unk50;
-    int unk54;
-    int unk58;
-    int unk5C;
-    int unk60;
-    int unk64;
+    int   unk0[17];
+    int   unk44;
+    int   unk48;
+    int   unk4C;
+    int   unk50;
+    int   unk54;
+    int   unk58;
+    int   unk5C;
+    int   unk60;
+    int   unk64;
     float unk68;
-    int unk6C;
-    int unk70;
-    int unk74;
+    int   unk6C;
+    int   unk70;
+    int   unk74;
 } s_func_002C31D0;
 
 typedef struct {
@@ -25,20 +25,34 @@ typedef struct {
     int unk75C;
 } s_func_002C8358;
 
+typedef struct {
+    int   unk0[5];
+    bool  unk14;    // Fog enabled
+    int   unk18[4];
+    int   unk28;    // Fog color
+    int   unk2C;    // Fog color
+    int   unk30;    // Fog color
+    float unk34;    // Fog distance
+    bool  unk38;    // DOF
+    bool  unk3C;    // DOF
+} s_0044EB68_sub;
 
 typedef struct {
-    int unk0[311];
-    int m_renderOrient;
-    int m_renderRadius;
-    int m_renderActorName;
-    int m_renderHoldingPoints;
-    int m_renderCarryHandles;
-    int m_renderHitSpheres;
-    int unk4F4[4];
-    int unk504;
+    int             unk0[120];
+    s_0044EB68_sub* unk1E0;
+    int             unk1E4[190];
+    int             m_renderOrient;
+    int             m_renderRadius;
+    int             m_renderActorName;
+    int             m_renderHoldingPoints;
+    int             m_renderCarryHandles;
+    int             m_renderHitSpheres;
+    int             unk4F4[4];
+    int             unk504;
 } s_0044EB68;
 
-extern s_0044EB68* D_0044EB68;
+// Replace struct for class `Game_Document` and move to a proper file.
+extern s_0044EB68* _TheGame;
 
 #ifdef __cplusplus
 extern "C" {
