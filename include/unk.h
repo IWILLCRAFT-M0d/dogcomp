@@ -129,6 +129,8 @@ void func_001A1E98(char arg0, int arg1);
 int func_002C8358(s_func_002C8358* arg0);
 void func_002967C8(int* arg0, int arg1);
 void func_00247B88(int*);
+int func_002963F8();
+int func_002964C0();
 void func_002966F0();
 void func_003481C8(int);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
@@ -144,3 +146,4 @@ void func_002C8360(void);
 #endif
 
 #endif
+
