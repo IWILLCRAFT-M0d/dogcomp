@@ -5000,7 +5000,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_0032E940);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_0032E9A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_0032EA48);
+INCLUDE_ASM("asm/nonmatchings/text_002D0150", sceMcInit);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_0032EC00);
 
@@ -5060,11 +5060,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00330240);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_003302B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_003302F0);
+INCLUDE_ASM("asm/nonmatchings/text_002D0150", sceScfGetLanguage);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00330350);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_00330370);
+INCLUDE_ASM("asm/nonmatchings/text_002D0150", sceScfGetAspect);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D0150", func_003303B0);
 

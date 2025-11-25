@@ -20,6 +20,7 @@ RenderHoldingPoints__7Consolev = 0x001a9228; // type:func
 RenderCarryHandles__7Consolev = 0x001a9240; // type:func
 Quit__7Consolev = 0x001a9258; // type:func
 func_00275288 = 0x00275288; // type:func
+func_002963F8 = 0x002963F8; // type:func
 InterfaceError = 0x00296818; // type:func
 DDE_FatalError = 0x002d5c78; // type:func
 func_001A8320__3FogPv = 0x001A8320; // type:func
@@ -34,6 +35,9 @@ Create__Q29Semaphore14Implementationii = 0x0026BB40; // type:func
 // Sony SDK
 InitThread = 0x00342038; // type:func
 __builtin_new = 0x00247C00; // type:func
+sceMcInit = 0x0032ea48; // type:func
+sceScfGetLanguage = 0x003302f0; // type:func
+sceScfGetAspect = 0x00330370; // type:func
 memset = 0x00335b84; // type:func
 sprintf = 0x00336DE8; // type:func
 Exit = 0x00349BA8;

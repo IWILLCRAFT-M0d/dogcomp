@@ -2,6 +2,8 @@
 #include "debug.h"
 #include "unk.h"
 
+#include <libscf.h>
+
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00290D10);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00290E50);
@@ -154,14 +156,46 @@ INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002963F0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00290D10", D_0043EC30);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002963F8);
+int func_002963F8() {
+    int temp_2;
+
+    temp_2 = sceScfGetLanguage();
+    switch (temp_2) {
+    case 0:
+        //SCE_JAPANESE_LANGUAGE
+        return 0;
+    case 2:
+        //SCE_FRENCH_LANGUAGE
+        return 2;
+    case 3:
+        //SCE_SPANISH_LANGUAGE
+        return 3;
+    case 4:
+        //SCE_GERMAN_LANGUAGE
+        return 4;
+    case 5:
+        //SCE_ITALIAN_LANGUAGE
+        return 5;
+    case 6:
+        //SCE_DUTCH_LANGUAGE
+        return 6;
+    case 7:
+        //SCE_PORTUGUESE_LANGUAGE
+        return 7;
+    default:
+        //SCE_ENGLISH_LANGUAGE
+        return 1;
+    }
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296478);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296480);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002964C0);
-
+int func_002964C0() {
+    return sceScfGetAspect() == SCE_ASPECT_169;
+}
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_002964E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290D10", func_00296548);
