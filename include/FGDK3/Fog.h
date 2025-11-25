@@ -11,7 +11,7 @@ int func_001A0250(void*, float*);
 }
 #endif
 
-
+// Likely part of the `Console` class instead.
 class Fog {
     public:
         void func_001A8320(void* arg0);

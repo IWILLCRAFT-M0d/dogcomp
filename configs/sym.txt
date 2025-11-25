@@ -12,13 +12,13 @@ func_002C64A0 = 0x002C64A0; // size:0x204
 // Functions
 
 // Engine
-Break__7Consolev = 0x001a3c08; // type:func
-Parse__7Consolev = 0x001a8e98; // type:func
-Patch__7Consolev = 0x001a8ea0; // type:func
-RenderActorName__7Consolev = 0x001a9210; // type:func
-RenderHoldingPoints__7Consolev = 0x001a9228; // type:func
-RenderCarryHandles__7Consolev = 0x001a9240; // type:func
-Quit__7Consolev = 0x001a9258; // type:func
+Break__7Console = 0x001a3c08; // type:func
+Parse__7Console = 0x001a8e98; // type:func
+Patch__7Console = 0x001a8ea0; // type:func
+RenderActorName__7Console = 0x001a9210; // type:func
+RenderHoldingPoints__7Console = 0x001a9228; // type:func
+RenderCarryHandles__7Console = 0x001a9240; // type:func
+Quit__7Console = 0x001a9258; // type:func
 func_00275288 = 0x00275288; // type:func
 func_002963F8 = 0x002963F8; // type:func
 InterfaceError = 0x00296818; // type:func

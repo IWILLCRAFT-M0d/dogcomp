@@ -54,6 +54,7 @@ void func_001A1310(char arg0, int arg1) {
         func_001A0B90(TheGame->unk504, "3", -0x5D);
     }
 }
+
 void func_001A1348(char arg0, int arg1) {
     if (arg1 != 0) {
         func_001A0B90(TheGame->unk504, "4", 0x24);
@@ -689,11 +690,11 @@ int Console::RenderCarryHandles() {
 
 #else
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderActorName__7Consolev);
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderActorName__7Console);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderHoldingPoints__7Consolev);	
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderHoldingPoints__7Console);
 
-INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderCarryHandles__7Consolev);
+INCLUDE_ASM("asm/nonmatchings/text_001A0020", RenderCarryHandles__7Console);
 #endif
 
 void Console::Quit() {

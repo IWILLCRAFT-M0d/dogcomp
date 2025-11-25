@@ -35,11 +35,11 @@ typedef struct {
   /* 0x034 */ float fogDistance; // Fog distance
   /* 0x038 */ bool  unk38;       // DOF
   /* 0x03C */ bool  unk3C;       // DOF
-} s_0044EB68_sub;
+} s_0044EB68_1E0;
 
 typedef struct {
     int             unk0[120];
-    s_0044EB68_sub* unk1E0;
+    s_0044EB68_1E0* unk1E0;
     int             unk1E4[190];
     int             m_renderOrient;
     int             m_renderRadius;
