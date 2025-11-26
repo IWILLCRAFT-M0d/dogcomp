@@ -58,7 +58,8 @@ if sys.platform == "linux" or sys.platform == "linux2":
 
 CATEGORY_MAP = {
     "game": "Main",
-    "data": "Data"
+    "data": "Data",
+    "FGDK3": "Engine"
 }
 
 def clean():
@@ -180,6 +181,8 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             
             if "src/" in str(entry.src_paths[0]):
                 categories = ["game"]
+                if "FGDK3" in str(entry.src_paths[0]):
+                    categories += ["FGDK3"]
             elif "asm/data" in str(entry.src_paths[0]):
                 categories = ["data"]
             
