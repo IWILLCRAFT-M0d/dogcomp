@@ -37,7 +37,7 @@ TARGET_DIR   = "target"
 # Compilation Flags
 INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common"
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.2-273a"
-COMMON_COMPILE_FLAGS = f"-O2 -g0"
+COMMON_COMPILE_FLAGS = f"-g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
 COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -G8 {COMMON_COMPILE_FLAGS}"
 CROSS = "mips-linux-gnu-"
@@ -148,14 +148,20 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
         if entry.object_path is None:
             continue
         
+        match str(entry.src_paths[0]):
+            case "src/FGDK3/Code/Playstation2/Music.cpp" | "src/FGDK3/Code/Playstation2/GameShell.cpp" | "src/text_002FCF70.cpp":
+                split_optimization = "-O0"
+            case _:
+                split_optimization = "-O2"
+        
         # Matching file
         match seg.type:
             case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
-                ninja_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
+                ninja_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization} )
             case "c":
-                ninja_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]))
+                ninja_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
             case "cpp":
-                ninja_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]))
+                ninja_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
             case "bin":
                 ninja_file.build(outputs=str(entry.object_path), rule="ld", inputs=str(entry.src_paths[0]))
             case _:
@@ -176,8 +182,8 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             if re.search("^asm", str(entry.src_paths[0])):
                 name = re.sub(".s", "", str(entry.src_paths[0].relative_to(f"{p.root}asm")))
             else:
-                name = re.sub(".cpp", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
-                name = re.sub(".c", "", name)
+                name = re.sub("\.cpp", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
+                name = re.sub("\.c", "", name)
             
             if "src/" in str(entry.src_paths[0]):
                 categories = ["game"]
@@ -201,20 +207,20 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             # Objdiff working file
             match seg.type:
                 case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
-                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]))
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
                 case "c":
-                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": "-DSKIP_ASM -DNON_MATCHING" } )
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": f"{split_optimization} -DSKIP_ASM -DNON_MATCHING" } )
                 case "cpp":
-                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": "-snas -DSKIP_ASM -DNON_MATCHING" } )
+                    ninja_nonmatching_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": f"{split_optimization} -snas -DSKIP_ASM -DNON_MATCHING" } )
             
             # Objdiff target file
             match seg.type:
                 case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
-                    ninja_diff_file.build(outputs=target_path, rule="as", inputs=str(entry.src_paths[0]))
+                    ninja_diff_file.build(outputs=target_path, rule="as", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
                 case "c":
-                    ninja_diff_file.build(outputs=target_path, rule="cc", inputs=str(entry.src_paths[0]))
+                    ninja_diff_file.build(outputs=target_path, rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
                 case "cpp":
-                    ninja_diff_file.build(outputs=target_path, rule="cpp", inputs=str(entry.src_paths[0]))
+                    ninja_diff_file.build(outputs=target_path, rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
             
             # Replace previous code with this when Splat fixes the issue with target asm generation
             # # Objdiff working file

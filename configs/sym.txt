@@ -27,6 +27,10 @@ func_001A8320__3FogPv = 0x001A8320; // type:func
 Thread_InternalInitialise = 0x0026BE00; // type:func
 Create__Q29Semaphore14Implementationii = 0x0026BB40; // type:func
 
+// TODO: replace with properly mangled counterparts. From game strings leftovers.
+// void Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:func
+// void Music_Piece::~Music_Piece(Music_Piece *this,uint param_2) = 0x00280538; // type:func
+
 // TODO: replace with properly mangled counterparts. Symbols from RTC3 Gold (Mac).
 //Game_Document::Game_Document(float, float) = 0x001c61f8; // type:func
 //GameShell::GameShell(float, float) = 0x002d30e0; // type:func
@@ -44,5 +48,14 @@ Exit = 0x00349BA8;
 
 
 // Globals
-
+_vt$22Music_MenuRegisterable = 0x0043CCA0;
+//_vt$20Music_PS2Performance = 0x0043CCB8; // allow_duplicated:True filename:_vt$20Music_PS2Performance_0043CCB8
+//_vt$20Music_PS2Performance = 0x0043CCD8; // allow_duplicated:True filename:_vt$20Music_PS2Performance_0043CCD8
+_vt$14Music_PS2Piece = 0x0043CD28;
+_vt$14Music_PS2Track = 0x0043CDA8;
+_vt$17Music_Performance = 0x0043CDC8;
+_vt$11Music_Piece = 0x0043CE18;
+_vt$11Music_Track = 0x0043CE90;
+_vt$13Music_Channel = 0x0043CF98;
+_vt$12CreateAction = 0x0043CF78;
 TheGame = 0x0044EB68;

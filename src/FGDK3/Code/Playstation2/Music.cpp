@@ -1,0 +1,473 @@
+#include "common.h"
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027ED98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027EF10);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027EF98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027EFE8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F020);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F100);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F270);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F308);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F390);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F708);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F820);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F8B8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027F988);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FA30);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FAD8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FB48);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FBE0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FC60);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FCF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FE60);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FEA8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FF00);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280088);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280370);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280460);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280538);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280628);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280660);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280708);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002807D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002809C0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280A58);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280AA0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280AF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280B38);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280F08);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280FB8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280FE8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281198);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281218);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281298);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281380);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002813E0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281518);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281650);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281710);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002817C0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002817F8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281888);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281910);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281B28);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281BA8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002822B8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002822F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282328);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002823B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282428);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282450);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282480);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002824F8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282560);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282648);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002826B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282978);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282D88);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282E48);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282F08);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282FC8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283210);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002833F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283EB0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284018);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284090);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002841D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284880);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002848C8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284958);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284A08);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284AF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284B60);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284C28);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284CE0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284D30);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284D90);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284DF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285338);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002854E0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002856F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002858D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002859C0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285A08);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285B60);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$22Music_MenuRegisterable);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", D_0043CCB8);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", D_0043CCD8);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$14Music_PS2Piece);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$14Music_PS2Track);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$17Music_Performance);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$11Music_Piece);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$11Music_Track);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285CE8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285DC0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285E18);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285E70);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285EC8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285F18);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285F88);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285FF8);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", D_0043CF48);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286080);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002860F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286198);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286248);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002862C8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286300);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286390);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286450);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002864C8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286548);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002865B8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286628);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286698);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002866D0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286720);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286790);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286848);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002868B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286920);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002869C8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286A30);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286A98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286AD0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286B20);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286B50);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286BD0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286C40);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286CA8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286D28);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286DB8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286E78);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286EB0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286EE8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286F20);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286F58);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286F90);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286FC8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287000);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287030);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287068);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287098);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002870F8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287130);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002871A0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002871D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287228);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287278);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002872D0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287308);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287348);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002873B8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002873F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287428);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287460);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287498);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002874D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287508);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287538);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287570);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002875A8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002875D0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287628);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287660);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287698);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287700);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287740);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002877C8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287808);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287850);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287888);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002878E0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287918);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287948);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287980);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002879B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002879E0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287A18);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287A48);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287A80);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287AB8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287AF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287B18);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287B50);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287B88);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287BC0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287CA0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287CF0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287DC0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287E18);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287E70);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287EA8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287F20);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287F60);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287F98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287FD8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288028);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002880D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288110);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288160);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002881A0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288218);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288268);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002882B8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002882F0);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$12CreateAction);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _vt$13Music_Channel);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288340);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288398);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002883F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288440);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002884B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288520);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288558);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002885B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288618);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002886B0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002887C0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002887E8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288828);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002888F0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288930);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288968);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002889A8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288A38);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288AC0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00288AF8);
