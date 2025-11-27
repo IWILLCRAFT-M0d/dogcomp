@@ -124,7 +124,16 @@ void func_001A1E68(char arg0, int arg1);
 void func_001A1E98(char arg0, int arg1);
 
 
-
+void func_001ACFC8(void);
+void func_001AD180(void);
+void func_001AD560(void);
+void func_001D6A10(void);
+void func_001C8120(void);
+void func_001DD518(void);
+void func_001DA1B8(void);
+void func_001DEF10(void);
+void func_001DA3E8(void);
+void func_001D4650(void);
 
 int func_002C8358(s_func_002C8358* arg0);
 void func_002967C8(int* arg0, int arg1);

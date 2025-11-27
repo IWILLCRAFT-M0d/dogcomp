@@ -1,4 +1,5 @@
 #include "common.h"
+#include "FGDK3/Playstation2/Controller.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0);
 
@@ -8,7 +9,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC1A8
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC1F0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC270);
+s_func_002FC270* func_002FC270(s_func_002FC270* arg0) {
+    arg0->unk0 = 0;
+    arg0->unk4 = 0;
+    arg0->unkC = 0;
+    arg0->unk18 = 0;
+    return arg0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC288);
 
