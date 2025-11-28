@@ -23,9 +23,11 @@ func_00275288 = 0x00275288; // type:func
 func_002963F8 = 0x002963F8; // type:func
 InterfaceError = 0x00296818; // type:func
 DDE_FatalError = 0x002d5c78; // type:func
-func_001A8320__3FogPv = 0x001A8320; // type:func
+func_001A8320__7ConsolePv = 0x001A8320; // type:func
 Thread_InternalInitialise = 0x0026BE00; // type:func
 Create__Q29Semaphore14Implementationii = 0x0026BB40; // type:func
+__tf17Controller_Device = 0x002FCF00;
+__tf12ConsoleLayer = 0x001AB658;
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 // void Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:func
@@ -58,4 +60,6 @@ _vt$11Music_Piece = 0x0043CE18;
 _vt$11Music_Track = 0x0043CE90;
 _vt$13Music_Channel = 0x0043CF98;
 _vt$12CreateAction = 0x0043CF78;
+_vt$18InputDevice_Device = 0x00447148;
+_vt$17Controller_Device = 0x00447338;
 TheGame = 0x0044EB68;

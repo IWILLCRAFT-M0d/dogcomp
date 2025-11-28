@@ -35,12 +35,14 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDC8
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDE8);
 
+// __static_initialization_and_destruction_0
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCE50);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCEE0);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", D_00447338);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", _vt$17Controller_Device);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCF00);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", __tf17Controller_Device);
 
+// _GLOBAL_$I$(unk)$(unk)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCF50);

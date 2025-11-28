@@ -2342,7 +2342,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBB80);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBC20);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00447148);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$18InputDevice_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBC60);
 
