@@ -154,6 +154,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284880);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002848C8);
 
+// Music_PS2Performance::Music_PS2Performance
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284958);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284A08);

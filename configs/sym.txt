@@ -37,6 +37,7 @@ __tf9GameShell = 0x002D32C0;
 // ? Animation::SetValue(?) = 0x002f5890; // type:func
 // ? Animation::SetPosition(?) = 0x002f5a80; // type:func
 
+
 // TODO: replace with properly mangled counterparts. Symbols from RTC3 Gold (Mac).
 //Game_Document::Game_Document(float, float) = 0x001c61f8; // type:func
 //GameShell::GameShell(float, float) = 0x002d30e0; // type:func
@@ -52,7 +53,14 @@ memset = 0x00335b84; // type:func
 sprintf = 0x00336DE8; // type:func
 Exit = 0x00349BA8;
 
-
+// MultiStream SDK
+SOUND_StartCommand = 0x00288d60; // type:func
+SOUND_EndCommand = 0x00288dc0; // type:func
+SOUND_AddData = 0x00288F50; // type:func
+SOUND_Pause = 0x00289AB0; // type:func
+SOUND_Resume = 0x00289ad8; // type:func
+FlushIOPCommand = 0x0028a9f8; // type:func
+SOUND_FlushIOPCommand = 0x0028aa18; // type:func
 // Globals
 _vt$22Music_MenuRegisterable = 0x0043CCA0;
 //_vt$20Music_PS2Performance = 0x0043CCB8; // allow_duplicated:True filename:_vt$20Music_PS2Performance_0043CCB8

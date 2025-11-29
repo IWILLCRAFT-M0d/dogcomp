@@ -3,6 +3,7 @@
 #include "unk.h"
 
 #include <libscf.h>
+#include <sound.h>
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30);
 
@@ -10,11 +11,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288CF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288D10);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288D60);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StartCommand);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288DC0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EndCommand);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288F50);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddData);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D200);
 
@@ -54,9 +55,16 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002899F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289A40);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289AB0);
+void SOUND_Pause() {
+    SOUND_StartCommand(SND_PAUSE);
+    SOUND_EndCommand();
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289AD8);
+void SOUND_Resume() {
+    SOUND_StartCommand(SND_RESUME);
+    SOUND_EndCommand();
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289B00);
 
@@ -86,9 +94,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A940);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A9D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A9F8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", FlushIOPCommand);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AA18);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FlushIOPCommand);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AB00);
 
