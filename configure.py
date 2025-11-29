@@ -182,8 +182,8 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             if re.search("^asm", str(entry.src_paths[0])):
                 name = re.sub(".s", "", str(entry.src_paths[0].relative_to(f"{p.root}asm")))
             else:
-                name = re.sub("\.cpp", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
-                name = re.sub("\.c", "", name)
+                name = re.sub(r"\.cpp", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
+                name = re.sub(r"\.c", "", name)
             
             if "src/" in str(entry.src_paths[0]):
                 categories = ["game"]
