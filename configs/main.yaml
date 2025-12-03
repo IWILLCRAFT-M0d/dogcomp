@@ -55,6 +55,15 @@ segments:
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700]
+      
+      
+      #- [0xAE138,  cpp, Dogs/Code/Creatre] # 001AD138 - Actually meant to be `Creatures.cpp`
+      #- [0xAE378,  cpp, text_001AD378]
+      #- [0xB0470,  cpp, text_001AF470] # Objects 3D related
+      #- [0xB17A8,  cpp, text_001B07A8] # Textures related
+      #- [0xB2F70,  cpp, text_001B1F70]
+      #- [0xD92A0,  cpp, text_001D82A0]
+      
       - [0xE24F8,  cpp, text_001E14F8]
       - [0x1411D8, cpp, text_002401D8]
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0

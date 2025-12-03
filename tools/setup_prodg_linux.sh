@@ -24,18 +24,15 @@ download() {
 echo Starting ProDG setup script...
 
 # download required files (registry + SDK package)
-download "https://github.com/AngheloAlf/SN-Systems-ProDG_for_PS2_2.0/releases/latest/download/eegcc_sn_v2.73a.tar.gz"
-
-# apply environment variables from the registry file
-# wine regedit prodg_env.reg
+download "https://github.com/AngheloAlf/sce_ps2_sdk_24/releases/latest/download/sce_ps2_sdk_24.tar.gz"
 
 # Extract the compiler into the tools dir
 echo "Extracting compiler to $TOP/tools..."
-mkdir $TOP/tools/ee-gcc2.95.2-273a
-cd $TOP/tools/ee-gcc2.95.2-273a
-tar -xf /tmp/eegcc_sn_v2.73a.tar.gz
+mkdir $TOP/tools/ee-gcc2.95.3
+cd $TOP/tools/ee-gcc2.95.3
+tar -xf /tmp/sce_ps2_sdk_24.tar.gz
 
 echo "Removing temporary files..."
-rm /tmp/eegcc_sn_v2.73a.tar.gz
+rm /tmp/sce_ps2_sdk_24.tar.gz
 
 echo "Setup complete!"
