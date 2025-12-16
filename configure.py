@@ -362,7 +362,7 @@ PROBLEMATIC_FUNCS = set(
         
         # text_002D0150.cpp
         "func_002F7A78",
-        "func_002FC9B0",
+        "Controller_InternalInitialise",
         "func_0030A4C8",
         "func_00318BF8",
         "func_00319C28",
@@ -387,8 +387,8 @@ PROBLEMATIC_FUNCS = set(
         "func_0031CEA8",
         "func_0031D298",
         "func_0032F0E0",
-        "func_00335A80",
-        "func_00335B84",
+        "memmove",
+        "memset",
         "func_0034C230",
         "func_0030EC70",
         "func_00335258",

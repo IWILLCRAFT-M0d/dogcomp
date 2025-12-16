@@ -51,6 +51,23 @@ typedef struct {
     int             unk504;
 } s_0044EB68;
 
+/*struct Resource_Generic {
+    int unk0;
+    int unk4;
+    int unk8;
+    void* unkC;
+
+    Resource_Generic();
+    virtual ~Resource_Generic();
+};
+
+struct Texture_Resources : public Resource_Generic {
+
+    int unk14;
+    Texture_Resources();
+    virtual ~Texture_Resources();
+};*/
+
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
 
@@ -71,11 +88,12 @@ void func_001DD518(void);
 void func_001DEF10(void);
 
 int func_002C8358(s_func_002C8358* arg0);
+
 void func_002967C8(int* arg0, int arg1);
 void func_00247B88(int*);
 int func_002963F8();
 int func_002964C0();
-void func_002966F0();
+void IOPMem_Finalise();
 void func_003481C8(int);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
 void func_002C3D80();

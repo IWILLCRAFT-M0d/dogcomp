@@ -87,7 +87,7 @@ class Console {
 		int RenderHoldingPoints();
 		int RenderCarryHandles();
 		void Quit();
-		void func_001A8320(void* arg0);
+		void FogSharpness(void* arg0);
 };
 
 #endif

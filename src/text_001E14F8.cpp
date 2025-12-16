@@ -15,11 +15,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E2188);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E25C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E3190);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E31D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E31E0);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_Initialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E3210);
 
@@ -147,11 +147,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E55E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5608);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5648);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", LevelRes_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5690);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5698);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", LevelRes_Initialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E56C8);
 
@@ -165,7 +165,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5810);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5820);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5870);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", main);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5C98);
 
@@ -343,11 +343,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E5FE8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E6028);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA608);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objects_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA650);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA658);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objects_Initialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA688);
 
@@ -413,13 +413,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC6D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC718);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC730);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_InternalInitialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC808);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_InternalFinalise);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC888);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_Initialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC8B8);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_Finalise);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC8D8);
 

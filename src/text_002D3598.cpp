@@ -276,11 +276,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6978);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6998);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D69B8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A00);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A08);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Initialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A38);
 
@@ -2018,13 +2018,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7260);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F72A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F72C0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalInitialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F74D0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalFinalise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7578);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Initialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F75A8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Finalise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F75C8);
 
@@ -2068,7 +2068,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446BE8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446C10);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8350);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8600);
 
@@ -2076,9 +2076,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8648);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8688);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8710);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Initialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8740);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Finalise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8760);
 
@@ -2098,13 +2098,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F89A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8AC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8B28);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalInitialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8D98);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalFinalise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8DF0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Initialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E20);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Finalise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E40);
 
@@ -2172,11 +2172,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F94E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9520);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9528);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_InternalInitialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9588);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9590);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_Initialise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F95C0);
 
@@ -2316,13 +2316,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB818);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB858);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB878);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalInitialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB8C0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalFinalise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB930);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Initialise);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB960);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Finalise);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB980);
 

@@ -700,14 +700,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A82E8);
 
 // `-snas` Required
 #ifdef NON_MATCHING
-void Console::func_001A8320(void* arg0) {
+void Console::FogSharpness(void* arg0) {
     float newFog;
     if (func_001A0250(arg0, &newFog) == 0) {
         TheGame->unk1E0->fogDistance = newFog;
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8320__7ConsolePv);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", FogSharpness__7ConsolePv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8358);
