@@ -188,7 +188,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004437E8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443968);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D18);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D58);
 
@@ -198,9 +198,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D68);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5DD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5DF0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf15MessageStreamUI);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5E40);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5E90);
 
@@ -216,17 +216,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6010);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6020);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6040);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf24Debug_DataValueContainer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6090);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004439D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D60B0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf21Debug_StructContainer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6138);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6158);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf22Debug_WatchEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D61A8);
 
@@ -246,7 +246,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6308);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6358);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63A0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14StreamRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0);
 
@@ -290,11 +290,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B18);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443AE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B38);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14Font_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B98);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18Resource1Z11Font_Header);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6BE8);
 
@@ -432,7 +432,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9148);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D91C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9210);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf6Endian);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9250);
 
@@ -1940,7 +1940,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6FC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6FD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6FE0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf9Animation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7020);
 
@@ -2012,9 +2012,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7200);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7208);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7210);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf28AnimationResourceProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F7260);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tft9Interface1Z28AnimationResourceProvider_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F72A0);
 
@@ -2088,7 +2088,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F87B0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446D38);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F87D0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf17InputMouse_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8820);
 
@@ -2114,7 +2114,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E90);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446E58);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8EB0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf20InputKeyboard_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8F00);
 
@@ -2140,7 +2140,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446F00);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446F18);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9298);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf21InputJoystick1_Device);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446F68);
 
@@ -2300,7 +2300,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00447048);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00447060);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB6C0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf17InputEvent_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB710);
 
@@ -2344,7 +2344,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$18InputDevice_Device);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBC60);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18InputDevice_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBCA0);
 
@@ -2384,8 +2384,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBF18);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00447228);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBF48);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11InputCD_PS2);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBF98);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FBFB0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf7InputCD);

@@ -102,13 +102,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00448C88);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003191E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00319240);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf19Animation_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00319290);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003192A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003192B0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z15AnimationHeader);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00319300);
 
@@ -152,7 +152,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_004491A0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_004491B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C548);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf12ScriptThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C588);
 
@@ -202,7 +202,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C820);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C870);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C900);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft16Tree34Enumerator1Z6Script);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_InternalInitialise);
 
@@ -224,7 +224,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CB68);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00449330);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CB78);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf16Script_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CBC8);
 
@@ -232,7 +232,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CBD8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CBE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CBF0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z12ScriptHeader);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CC40);
 
@@ -386,7 +386,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EA40);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EA48);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EA50);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf6Script);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EA90);
 
@@ -452,13 +452,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F068);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00449870);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F0F8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf15Shape_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F148);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F158);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F168);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z9ShapeData);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_004499A8);
 
@@ -476,13 +476,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F330);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00449A18);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F3B8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf22DogsTaleLand_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F408);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F418);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F428);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z14Landscape_Land);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_InternalInitialise);
 
@@ -502,13 +502,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FAB8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00449BE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FB90);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tf17Texture_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FBE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FBF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FC00);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z10GE_Texture);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031FC50);
 
@@ -532,13 +532,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00449C70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003205D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00320B88);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceMpegInit);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00320C38);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceMpegCreate);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00320E48);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceMpegDelete);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00320E50);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceMpegAddBs);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00320E90);
 
@@ -878,35 +878,35 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003297F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329820);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329858);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceCdStRead);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003299E0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceCdStPause);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329A30);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceCdStResume);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329A88);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceCdStStat);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329AD0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceCdStream);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329C38);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsResetGraph);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329DC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329DD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00329FC0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsSetDefClear);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A0C8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsPutDrawEnv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A1B0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsSetDefDBuff);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A448);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsSwapDBuff);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A4A8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsSyncV);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A540);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032A680);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceGsExecStoreImage);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032AD10);
 
@@ -938,7 +938,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032B5A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032B5C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032B6A8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDmaPutEnv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032B880);
 
@@ -956,17 +956,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BA70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BAF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BB70);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDmaSync);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BBA8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDmaWatch);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BBE0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDmaPause);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BC78);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BC90);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVu0CheckBusy);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032BCA8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVu0Reset);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_0044A6D8);
 
@@ -1045,36 +1045,36 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032C778);
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032C7C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032C948);
+// beginning of devvif1.c?
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1Reset);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032C9A8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1Pause);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032C9D0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1Continue);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CA38);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1PutErr);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CA78);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1GetErr);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CA98);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1Sync);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CAA8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1GetCnd);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CAF8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1PutFifo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CCD0);
-
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CD30);
-
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", sceDevVif1GetFifo);
+// beginning of libpad?
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CD90);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CEA8);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", scePadInit);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032CFE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032D088);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032D108);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", scePadPortOpen);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032D2F0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", scePadPortClose);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032D3A8);
 
@@ -1122,7 +1122,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032DFF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032E058);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032E0C0);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", scePadSetWarningLevel);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0032E128);
 

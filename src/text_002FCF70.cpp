@@ -32,11 +32,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447408);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447420);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE988);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf14FileSystemDisc);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE9E0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf10FileSystem);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEA38);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf13StorageDevice);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEA90);
 
@@ -230,7 +230,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301AC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301B38);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301BA8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf12File_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301C18);
 

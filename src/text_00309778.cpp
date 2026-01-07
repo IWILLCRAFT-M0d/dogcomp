@@ -100,7 +100,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B578);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447CF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B630);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf12StringBuffer);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B670);
 
@@ -126,7 +126,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447D20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447D50);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B828);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf19ShapeParams_Dynamic);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B898);
 
@@ -192,9 +192,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030CF98);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447F28);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030D030);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf24ShapeDataNamedBoneWriter);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030D080);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf26CustomParameterBlockWriter);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030D0C0);
 
@@ -234,7 +234,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030DDC8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447F80);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030DEA8);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf15RelocationBlock);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030DEF8);
 
@@ -322,6 +322,6 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00310AE0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00310B58);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf14MeshTransforms);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00310BA8);

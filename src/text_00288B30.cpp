@@ -19,9 +19,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddData);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D200);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288FB8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddLongData);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289030);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddString);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlayStream);
 
@@ -29,31 +29,31 @@ INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2C0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002893B0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_LoadFile);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289488);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlayStreamFromSFX);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002894F8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FindFreeStream);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3B0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289570);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FindFreeStreamRange);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289608);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlaySFX);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289720);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlaySFXLoop);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289860);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetChannelVolume);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002898D8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetChannelPitch);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289940);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StopStream);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002899F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StopSound);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289A40);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetStatus);
 
 void SOUND_Pause() {
     SOUND_StartCommand(SND_PAUSE);
@@ -70,85 +70,85 @@ void SOUND_InitSPU() {
     SOUND_EndCommand();
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289B28);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_InitStreamData);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289BA8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CloseStreamBuffer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D468);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289C68);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetMaxStreamLimit);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AllocateStreamBuffer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289DE0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ResizeStreamBuffer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00289EE8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ResizeSPUBuffer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A0A0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetSPUWriteAddress);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A0E8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CopyIOPBuffer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A8A8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FindFreeSPUChannel);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A918);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetKeyStatus);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A940);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CheckAndStartStereo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028A9D0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CancelCheckStereo);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", FlushIOPCommand);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FlushIOPCommand);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AB00);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EnableEffects);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AC50);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_DisableEffects);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028ACA8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetEffectMasterVolume);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AD18);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetChannelEffectOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AD58);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetChannelEffectOff);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AD98);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AllChannelEffectsOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028ADD8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AllChannelEffectsOff);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D768);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AE18);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ChainStreams);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AF28);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PatchSFX);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AF78);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_HzToSPU);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetFileInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028AFF0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetFileInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B098);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CreateFileInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B118);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StoreHOST0FileName);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B168);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeFileID);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B1A0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeAllFileIDs);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B1C8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AllocateFileMemory);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B208);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeFileMemory);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B230);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AllocateSpotFXMemory);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B270);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeSpotFXMemory);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeAllSpotFXIDs);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B2C0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FreeSpotFXID);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B2F8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetFileOffsetAndPlaySize);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B358);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_InitCD);
 
 void SOUND_DisableCDCallback() {
     SOUND_StartCommand(SND_DISABLE_CD_CALLBACK);
@@ -159,9 +159,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_DisableSPUCallback);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EnableSPUCallback);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B410);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetStreamChannel);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B440);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetMSHSampleCount);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D7A8);
 
@@ -169,103 +169,103 @@ INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D7D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D7F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B448);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PatchMSH);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D828);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B4B8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetMSHInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B558);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetStreamParent_Int);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D8A0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D8C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B608);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetStreamChild_Int);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B7B8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetMaxIOPRAM);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B7E0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetMIHInfo);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043DA48);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043DA68);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B8F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetMIBEndOffset);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028B988);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetMIHFileID);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BA08);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_TransferDataToIOP);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BB68);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CheckIOPTransfer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BBA0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StreamAllowKeyOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BBF8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StreamDisableKeyOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BC50);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetStreamTrack_Int);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BCC0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetStreamInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BEE0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetEXTERNALInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BFA0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetNextInfoCounter);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BFB0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_NextFileIDCounter);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028BFD8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ReturnFileInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C000);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetEEWriteAddress);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C048);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetIOPWriteAddress);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C090);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetFileIDInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C0E8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_TransIOPToSPU);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C150);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_RestartFromCDError);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C178);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CheckCDError);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C1A0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EXTERNAL_CDErrorPause);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C1C8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EXTERNAL_CDErrorRestart);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C1F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_HandleCDErrors);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C2F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ModifyEETransferAddress);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C360);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SFXDisableKeyOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C390);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SFXEnableKeyOn);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C3C0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_KeyOnChannel);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C410);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetOutputPCM);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C440);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetOutputBitStream);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C470);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AppendStream);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C500);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StreamAddSPUChannel);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C5B8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetStreamLoadSource);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C638);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_InitPCMPlayback);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C6A8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_InitPCMPlaybackNoStream);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C780);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_ClosePCMPlayback);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C7A8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlayPCM);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C7D0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_StopPCM);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C7F8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_GetPCMInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C820);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetPCMType);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C878);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetPCMVolume);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028C8D0);
 
@@ -437,7 +437,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028E968);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028EB88);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028EC20);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_MemFree);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028ED48);
 
@@ -452,6 +452,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028EF48);
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F078);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F088);
+
+// end of multistream functions? sound.c
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F0B0);
 
@@ -845,7 +847,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A630);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EE88);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A6A0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf16GE_TextureTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A700);
 
@@ -857,7 +859,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A740);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EF70);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A758);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf14GE_TexturePage);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A798);
 
@@ -937,7 +939,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1990);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A19A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A19E8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf9GE_Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1A28);
 
@@ -951,7 +953,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1A70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1A78);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1AE8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf12GE_PS2Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1B58);
 
@@ -983,7 +985,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F1F0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F200);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1BD8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf19GE_PS2DisplayTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1C70);
 
@@ -1101,7 +1103,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5110);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5120);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5190);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf17GE_RenderHardware);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A51D0);
 
@@ -1111,7 +1113,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F3D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F408);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5200);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf20GE_PS2RenderHardware);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5270);
 
@@ -2535,7 +2537,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9E60);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_00442648);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9EB0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf12GE_PS2Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9F00);
 
@@ -2761,7 +2763,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BD0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C10);
 
@@ -2785,7 +2787,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C88);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C90);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C98);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1CE8);
 
@@ -2885,7 +2887,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D23D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D26E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2D00);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf17GE_TransformState);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2D40);
 

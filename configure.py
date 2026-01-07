@@ -336,7 +336,7 @@ PROBLEMATIC_FUNCS = set(
         "func_0027EC50",
         "func_0028D6A8",
         "func_0028E4A0",
-        "func_0028EC20",
+        "SOUND_MemFree",
         "func_00291110",
         
         
@@ -367,7 +367,7 @@ PROBLEMATIC_FUNCS = set(
         "func_00318BF8",
         "func_00319C28",
         "func_00327B78",
-        "func_0032A680",
+        "sceGsExecStoreImage",
         "func_003326C0",
         "func_00333810",
         "func_00337B00",

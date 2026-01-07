@@ -115,7 +115,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5038);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E5498);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5068);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf16ObjectNewMessage);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E50B8);
 
@@ -159,11 +159,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E56E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E57A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E57C0);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf15Level_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5810);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5820);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tft8Resource1Z17Level_Description);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", main);
 
@@ -471,7 +471,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E6708);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E6728);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001ED318);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf11PausedLayer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001ED370);
 
@@ -19547,7 +19547,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_002350C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_002350C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_002350F8);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf19TravelFromLevelGate);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_00235158);
 

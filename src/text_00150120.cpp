@@ -197,7 +197,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150D08);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150D58);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150E10);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf3Rat);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150E68);
 
@@ -283,7 +283,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001529E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152BB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152BE0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf10SaveKennel);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152C38);
 
@@ -451,7 +451,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BB440);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00159E38);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A1E0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf5Scent);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A238);
 
@@ -1015,7 +1015,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF690);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF6A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00167FB8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf9SimObject);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001680A0);
 
@@ -1163,7 +1163,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001686B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001686B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001686F8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf25SimObj_ObjectWithMomentum);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168758);
 
@@ -1263,7 +1263,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF6E0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF700);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B90);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf24SimObj_UniverseLandscape);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C38);
 
@@ -1277,7 +1277,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C60);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF730);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C68);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11YDRRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168CB8);
 
@@ -1289,7 +1289,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168E58);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF798);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168E98);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11Location_IF);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF7C0);
 
@@ -1297,19 +1297,19 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF7D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BF7F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168EE8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf12TextRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168F28);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168F68);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168FB8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf22SimObj_HitPrimReceiver);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168FF8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf19CameraSpecialHit_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00169048);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf18SimObj_ChildHolder);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00169088);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11Movement_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001690D8);
 
@@ -1661,7 +1661,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003C7328);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173038);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173178);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf8Snowball);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001731D0);
 
@@ -2145,7 +2145,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181758);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181780);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001817A8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf14WheeledVehicle);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181800);
 
@@ -2373,7 +2373,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D1580);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D1598);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D15B0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$11WorldObject);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187ED8);
 
@@ -2383,7 +2383,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001880A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001880D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188120);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11WorldObject);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001881B8);
 
@@ -2677,7 +2677,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C670);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C6C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C6F0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf21StreamedSpeechTrivial);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D2B58);
 
@@ -3065,9 +3065,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D560);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D590);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D5C0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf9GameLayer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D620);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf6Thread);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D660);
 
@@ -3155,7 +3155,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E3C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E3D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E418);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf17BookMetaphorLayer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D4180);
 
