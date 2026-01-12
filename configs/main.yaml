@@ -66,6 +66,8 @@ segments:
 
       - [0xE24F8,  cpp, text_001E14F8]
       - [0x1411D8, cpp, text_002401D8]
+      - [0x16C2A8, cpp, FGDK3/Code/ThrowCat]
+      - [0x16C710, cpp, text_0026B710]
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0
       - [0x189B30, cpp, text_00288B30] # Sound.c?
       - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
@@ -90,6 +92,8 @@ segments:
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2E6400, .rodata, text_001E14F8]
       - [0x333BB0, .rodata, text_002401D8]
+      - [0x33C4F8, .rodata, FGDK3/Code/ThrowCat]
+      - [0x33C610, .rodata, text_0026B710]
       - [0x33DA50, .rodata, FGDK3/Code/Playstation2/Music]
       - [0x33E030, .rodata, text_00288B30]
       - [0x343CE8, .rodata, FGDK3/Code/Playstation2/GameShell]

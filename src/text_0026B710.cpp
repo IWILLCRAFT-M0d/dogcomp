@@ -1,0 +1,1184 @@
+#include "common.h"
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B710);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B808);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B900);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B948);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B988);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B9A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B9D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BA08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BA30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BA50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BAD0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BAF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BB00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Create__Q29Semaphore14Implementationii);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BB88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BC08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BC68);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BC90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BCB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BCE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BDA0);
+
+// `-snas` Required
+#ifdef NON_MATCHING
+Status Thread_InternalInitialise() {
+    // Status arg0;
+    int temp_v0;
+    int* temp_s1;
+
+    InitThread();
+    temp_s1 = new int;
+    *temp_s1 = (int)Semaphore::Implementation::Create(1, 1);
+    D_00451948 = temp_s1;
+    return Status(0xFFFFFFFFU, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Thread_InternalInitialise__Fv);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BE90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Thread_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Thread_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BF30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026BFE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C028);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C058);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C098);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B650);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B680);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B6D0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B700);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B750);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B770);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf23PS2ThreadImplementation);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C138);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C1A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C1E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C258);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B7D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C2C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C338);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C340);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C360);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", TextRes_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C3C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", TextRes_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C400);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C420);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C4E0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B860);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf14Text_Resources);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C558);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C568);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tft8Resource1Zc);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", StdMem_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C610);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", StdMem_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", StdMem_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C668);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C698);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C708);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C728);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C780);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C818);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C900);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026C9C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", StdInit_InitialisationSequence);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", StdInit_FinalisationSequence);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CE20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CE60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CED0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CF20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CF60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CF98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CFD0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026CFF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D068);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D108);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D110);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D120);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D128);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D138);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D148);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D158);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043B960);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", SoundManager_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", SoundManager_InternalFinalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", SoundManager_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D308);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D328);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D538);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026D7D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026DEB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026DF28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026DF48);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Sound_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Sound_InternalFinalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Sound_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", Sound_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E318);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E380);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E3D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E468);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E480);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E490);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E498);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E4A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026E500);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026ED08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026ED28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026EE30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026EF50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F048);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F180);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F2B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F330);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F4F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F580);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F5E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F5F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F638);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F678);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F770);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F810);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf19SoundImplementation);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F8A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F8A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F8B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf5Sound);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F930);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F940);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F948);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F9D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F9E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F9E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F9F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026F9F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA18);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA40);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA48);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA68);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA70);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA80);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FA98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAA8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAC0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAD8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FAF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB18);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB48);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB70);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FB80);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BA58);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BA88);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BAB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FBA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", sifManager_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FF60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", sifManager_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", sifManager_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026FFB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270018);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270080);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270190);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002703B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270408);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270468);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270498);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002704D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002704F8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BBC0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00270508);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271790);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002717B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002717C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002717E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271808);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BDC8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BE08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf11ShapeParams);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271860);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf13Shape_Instance);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002718D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002718F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271900);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271908);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271938);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271970);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002719A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002719E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271A18);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271A20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271AD8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271B30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271BB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271C58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271D10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271D98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271EE0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271EF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00271F00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272130);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272440);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272508);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272530);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272558);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272580);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002725A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002725D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272640);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272690);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002726C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272748);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272798);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002727C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002727E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272810);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272838);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272860);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002728C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272938);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002729A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272A78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272A98);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BE40);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf9SavedGame);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272B00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272B08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272B30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272B58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272B88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272BB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272BE0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272C08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272C30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272C58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272C80);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272CB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272CF0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272D28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272D60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272D98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272DD0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272E28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272E88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", RunPath_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272F98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", RunPath_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", RunPath_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00272FF0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273000);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273158);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002731E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273240);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002732B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273318);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002733D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273420);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002735C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002736A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002736E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273778);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002737A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273900);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273968);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273998);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002739B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273A80);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273B10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273C38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273CB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273D08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273D28);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273D58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273DA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273DE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273E20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273E58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273E90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00273F68);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274020);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274200);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002742B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274400);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002744B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002744F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274540);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274588);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002745D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274628);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274680);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274730);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274790);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002747F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274850);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002748B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002748E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274918);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002749C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274A00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274A60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274B00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274C10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274CB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274D40);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274DD0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274EB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00274F78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275038);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002750E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275288);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275328);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002753E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275448);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002754E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275520);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275528);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275600);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002756E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275718);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002757B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002757E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002757F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002758F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275908);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275990);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275AF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275B00);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275B08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275B10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf19Resource_LayoutUnit);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275BE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275BF0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf20Resource_LayoutGroup);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043BFD8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C030);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C078);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C0C0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C100);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C148);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C188);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C1A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf22Resource_LayoutOverlay);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275CD8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf29Resource_LayoutExclusiveGroup);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275D90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf29Resource_LayoutInclusiveGroup);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf16Resource_Generic);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275E88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275E90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275EE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275F20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275F88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275F90);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275F98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FA8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FD8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00275FF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276090);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276110);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276190);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276650);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002766C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276A40);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276AC0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276AE8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276B70);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276CD8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276E70);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276FA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00276FA8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277040);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002770A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002770C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002770E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277178);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002771D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002771F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277290);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002772F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277388);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002773E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277408);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002774A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277500);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277520);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277540);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277590);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002775B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002775D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277618);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277620);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277650);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277670);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002776C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277720);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00277848);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002779E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278018);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278098);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278118);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278190);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002781E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278278);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002782A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002782C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002782E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278308);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278350);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278358);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C2F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf12StdAllocator);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002783A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002784C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278568);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278608);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278668);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002786A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002786B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002786D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002786F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002788D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278CA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278D10);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278D30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00278D88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279000);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002791C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279238);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279258);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279408);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002795C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279618);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279630);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279638);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279640);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279648);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279650);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279658);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279660);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279680);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279688);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279690);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002796B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002796D0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C3A0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C3E0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C420);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C460);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf15StandardPointer);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002797B8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C4A0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C4E0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C4F0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C5A8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C610);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C678);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C690);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C6E0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C730);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279840);
+// start of /Common/NavGraphRes.cpp ???
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C7A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", NavGraphRes_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002798C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002798D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279900);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279920);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_002799E0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C808);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf18NavGraph_Resources);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279A50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279A60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tft8Resource1Z8NavGraph);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279AC0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279C78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279CF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279D58);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_00279EA0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A270);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A2F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A348);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A538);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A550);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A5A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A618);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A670);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027A9C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027AA50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027AAF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027AC78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027AE88);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027AEF8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027B560);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027BA78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C098);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C0B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C0C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C4E8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C4F0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C578);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C5A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C640);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C770);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C7B0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027C7F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027CA20);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027CB38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027CD48);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027CDE0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D0F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D130);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D240);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D4E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D4F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027D500);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DB30);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DC70);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DD60);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DD80);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DE18);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DE78);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DE98);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DEB8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DF50);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DFB0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027DFD0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E068);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E0C8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E160);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E1C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E1E0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E278);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E2D8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E2F8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E478);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E5C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E610);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E808);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E828);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E940);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E970);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E998);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E9A0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E9A8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E9B0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C918);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027E9B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EA08);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EA58);
+// start of /Playstation2/MusicRes.cpp ??
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", MusicRes_InternalInitialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EAE0);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", MusicRes_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EB18);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EB38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027EC50);
+
+INCLUDE_RODATA("asm/nonmatchings/text_0026B710", D_0043C9B8);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf15Music_Resources);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0027ED38);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026B710", __tf8Resource1Z11Music_Piece);
