@@ -88,6 +88,11 @@ segments:
       - [0x216F28, cpp, text_00315F28]
       - [0x219FD0, cpp, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x21A340, cpp, text_00319340]
+      - [0x21FEA0, cpp, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
+      - [0x2201B8, cpp, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
+      - [0x220478, cpp, FGDK3/ResLibs/TextureRes/Code/TextureRes]
+
+      - [0x220C50, cpp, text_0031FC50]
       - [0x24D300, textbin, vutext]
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
@@ -121,6 +126,11 @@ segments:
       - [0x349540, .rodata, text_00315F28]
       - [0x349C08, .rodata, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x349DF0, .rodata, text_00319340]
+      - [0x34A820, .rodata, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
+      - [0x34A9A8, .rodata, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
+      - [0x34AB88, .rodata, FGDK3/ResLibs/TextureRes/Code/TextureRes]
+      - [0x34AC70, .rodata, text_0031FC50]
+
       - [0x34D580, gcc_except_table]
       - [0x34D700, sdata]
       - {start: 0x354280, type: sbss, vram: 0x00453280}

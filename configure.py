@@ -383,6 +383,8 @@ PROBLEMATIC_FUNCS = set(
 
         # text_0031940.cpp
         "func_00319C28",
+
+        # text_0031FC50.cpp
         "func_00327B78",
         "sceGsExecStoreImage",
         "func_003326C0",
@@ -410,7 +412,9 @@ PROBLEMATIC_FUNCS = set(
         "func_00336F9C",
         "func_0033739C",
         "func_0033B610",
+        "func_00342AF8",
         "func_00344A50",
+
 
         
     ]
