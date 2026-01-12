@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "FGDK3/Playstation2/InpKeybd.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8820);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8870);
