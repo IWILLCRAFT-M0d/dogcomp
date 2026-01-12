@@ -66,6 +66,8 @@ segments:
 
       - [0xE24F8,  cpp, text_001E14F8]
       - [0x1411D8, cpp, text_002401D8]
+      - [0x14CA70, cpp, FGDK3/ResLibs/SoundRes/Code/SoundRes]
+      - [0x14CED8, cpp, text_0024BED8]
       - [0x16B940, cpp, FGDK3/Code/Playstation2/TimSrv]
       - [0x16C2A8, cpp, FGDK3/Code/ThrowCat]
       - [0x16C710, cpp, text_0026B710]
@@ -97,11 +99,14 @@ segments:
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
       - [0x290F00, .rodata, text]
+      #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2E6400, .rodata, text_001E14F8]
       - [0x333BB0, .rodata, text_002401D8]
+      - [0x333f18, .rodata, FGDK3/ResLibs/SoundRes/Code/SoundRes]
+      - [0x334058, .rodata, text_0024BED8]
       - [0x33C470, .rodata, FGDK3/Code/Playstation2/TimSrv]
       - [0x33C4F8, .rodata, FGDK3/Code/ThrowCat]
 
