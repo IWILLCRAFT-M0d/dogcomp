@@ -86,11 +86,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_00448C08);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00318FD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", AnimationRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_003190B8);
 
@@ -204,11 +204,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031C870);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft16Tree34Enumerator1Z6Script);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ScriptRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031CA08);
 
@@ -438,13 +438,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EE60);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_004495B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", ShapeRes_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031EF78);
 
@@ -462,11 +462,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z9ShapeData);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00315F28", D_004499A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", LandscapeRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", LandscapeRes_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F200);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", LandscapeRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", LandscapeRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F238);
 
@@ -484,13 +484,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F418);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", __tft8Resource1Z14Landscape_Land);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", TextureRes_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_0031F550);
 

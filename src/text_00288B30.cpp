@@ -25,9 +25,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddString);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlayStream);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2C0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2C0); /* "Stream (%d) out of range\n"*/
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2E0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D2E0); /* "Call SOUND_SetMaxStreamLimit to allow more\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_LoadFile);
 
@@ -35,9 +35,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_PlayStreamFromSFX);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FindFreeStream);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3B0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3B0); /* "SOUND_FindFreeStream\n"*/
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3C8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D3C8); /* "No Spare streams free\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_FindFreeStreamRange);
 
@@ -74,7 +74,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_InitStreamData);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_CloseStreamBuffer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D468);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D468); /* "Must range from 0-47\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_SetMaxStreamLimit);
 
@@ -677,16 +677,18 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296630);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296650);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002966B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296710);
 
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002967C8);
+/*
 void func_002967C8(int* arg0, int arg1) {
     func_003481C8(*arg0);
     IOPMem_Finalise();
@@ -694,8 +696,9 @@ void func_002967C8(int* arg0, int arg1) {
         func_00247B88(arg0);
     }
 }
+*/
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EC70);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EC70); /* "c:/coding/fgdk3/Code/Playstation2/IOPMem.cpp" */
 
 // sym name taken from rct3_mac
 
@@ -2535,7 +2538,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9E38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9E60);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_00442648);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$12GE_PS2Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf12GE_PS2Device);
 
@@ -2613,15 +2616,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA540);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA560);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA6D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA950);
 

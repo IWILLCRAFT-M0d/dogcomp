@@ -741,13 +741,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E2138);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D5D48);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Game_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D5E90);
 
@@ -1299,13 +1299,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA2E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA338);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_InternalInitialise__Fv);
 
 void func_001DA3E8(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA420);
 

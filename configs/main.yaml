@@ -70,6 +70,8 @@ segments:
       - [0x189B30, cpp, text_00288B30] # Sound.c?
       - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
+      #- [0x1FC878, cpp, FGDK3/Code/Inpdev]
+      #- [0x1FCD40, cpp, text_002FBD40]
       - [0x1FCFF0, cpp, FGDK3/Code/Playstation2/Controller]
       - [0x1FDF70, cpp, text_002FCF70] # -O0
       - [0x20A778, cpp, text_00309778]

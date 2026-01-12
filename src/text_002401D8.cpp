@@ -1,6 +1,6 @@
 #include "common.h"
 #include "debug.h"
-#include "FGDK3/Thread.h"
+#include "FGDK3/Playstation2/Thread.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002401D8);
 
@@ -614,13 +614,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0024BA50);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0024BA70);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundRes_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0024BB58);
 
@@ -2736,15 +2736,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026AB08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026ABD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026AD98);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TimSrv_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026AE58);
 
@@ -2778,13 +2778,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026B3B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026B448);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", ThrowCatch_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026B648);
 
@@ -2844,14 +2844,14 @@ Status Thread_InternalInitialise() {
     return Status(0xFFFFFFFFU, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522);
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_InternalInitialise__Fv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BE90);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Thread_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026BF30);
 
@@ -2895,11 +2895,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C340);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C360);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TextRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TextRes_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C3C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", TextRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", TextRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C400);
 
@@ -2917,13 +2917,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C568);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", __tft8Resource1Zc);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C610);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", StdMem_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026C668);
 
@@ -2979,11 +2979,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026D158);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002401D8", D_0043B960);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", SoundManager_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026D308);
 
@@ -2999,13 +2999,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026DF28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026DF48);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", Sound_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026E318);
 
@@ -3159,13 +3159,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_002401D8", D_0043BAB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026FBA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026FF60);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", sifManager_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0026FFB8);
 
@@ -3337,13 +3337,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00272E28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00272E88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00272F98);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", RunPath_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00272FF0);
 
@@ -3777,7 +3777,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00279840);
 // start of /Common/NavGraphRes.cpp ???
 INCLUDE_RODATA("asm/nonmatchings/text_002401D8", D_0043C7A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", NavGraphRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", NavGraphRes_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002798C8);
 
@@ -3951,11 +3951,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0027EA08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0027EA58);
 // start of /Playstation2/MusicRes.cpp ??
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", MusicRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", MusicRes_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0027EAE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", MusicRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", MusicRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_0027EB18);
 

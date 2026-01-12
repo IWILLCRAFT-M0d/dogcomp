@@ -1,4 +1,4 @@
-#include "Dogs/Console.h"
+#include "Console.h"
 #include "FGDK3/Fog.h"
 
 #include "common.h"

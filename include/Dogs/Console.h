@@ -73,7 +73,6 @@ void func_001A1E38(char arg0, int arg1);
 void func_001A1E68(char arg0, int arg1);
 void func_001A1E98(char arg0, int arg1);
 
-
 #ifdef __cplusplus
 }
 #endif

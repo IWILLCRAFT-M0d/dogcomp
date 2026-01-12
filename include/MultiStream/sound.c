@@ -1,14 +1,14 @@
 /* SCE CONFIDENTIAL
  $PSLibId$
  */
-/* 
+/*
  *        Emotion Engine (I/O Processor) Library Sample Program
  *
  *                         - Multistream -
  *
  *                           Shift-JIS
  *
- *      Copyright (C) 2000-2001 Sony Computer Entertainment Europe 
+ *      Copyright (C) 2000-2001 Sony Computer Entertainment Europe
  *                        All Rights Reserved.
  *
  *                            sound.c
@@ -16,10 +16,10 @@
  *
  *       Version        Date            Design      Log
  *  --------------------------------------------------------------------
- *      5.00            Oct,31,2001      Jason Page 
- *      6.00            Nov,28,2002      Jason Page 
- *      6.10            Jan,31,2003      Jason Page 
- *      6.20            Feb,25,2003      Jason Page 
+ *      5.00            Oct,31,2001      Jason Page
+ *      6.00            Nov,28,2002      Jason Page
+ *      6.10            Jan,31,2003      Jason Page
+ *      6.20            Feb,25,2003      Jason Page
  *		7.00 (DSP)		Jun,25,2003		 Jason Page
  *		7.1				Jan,6,2004		 Jason Page
  *		7.2				Apr,13,2004		 Jason Page
@@ -51,7 +51,7 @@ Notes for playing back realtime DTS surround sound:
 #include <sdrcmd.h>
 #include <libdev.h>
 #include <libpkt.h>
-#include <libcdvd.h> 
+#include <libcdvd.h>
 #include <sifdev.h>	/* for cd funtions.. */
 #include <sif.h>
 #include <libmrpc.h>
@@ -1482,7 +1482,7 @@ SOUND_ResizeSPUBuffer
 	Returns		0		OK
 				-1		Failed
 				-2		Size too small
-						
+
 	Note that if you make this value too small, the audio will skip (due to it playing
 	data more than once due to not getting data from the CD fast enough). A value
 	of around 4096 seems to be the minimum size which still worked without glitching.
@@ -1593,7 +1593,7 @@ int count;
 	SOUND_TransFlag[0]=0;
 
 	if (SOUND_DSP_CHECKSUM==2)
-	{	
+	{
 		SOUND_DSP_CHECKSUM=0;
 		SOUND_DSP_CHECKCOUNT=0;
 	}
@@ -1642,7 +1642,7 @@ int count;
 		streamnum=(unsigned char)((j>>4)&63);	/* Stream channel number */
 
 /* Has EE requested stream to stop? */
-		if (SOUND_STREAM_STATUS[streamnum]!=STREAM_STATUS_EE_REQSTOP) 
+		if (SOUND_STREAM_STATUS[streamnum]!=STREAM_STATUS_EE_REQSTOP)
 			SOUND_STREAM_STATUS[streamnum]=STREAM_STATUS_ON;	/* No..Stream ON */
 		else
 		{
@@ -1930,7 +1930,7 @@ int SOUND_GetKeyStatus(int channel)
 {
 	if ((channel<0)||(channel>47))		/* SPU channel valid? */
 		return(-1);	/* No. */
-	
+
 	// is this even a channel that multistream is allowed to use?
 	if(!CHANNEL_FLAG_SET(channel,SOUND_MSChannelUseMask))
 		return(-1);
@@ -2098,7 +2098,7 @@ SOUND_EnableEffects
 	SOUND_FX_SPACE 6	size = 0xf6c0
 	SOUND_FX_ECHO 7		size = 0x18040
 	SOUND_FX_DELAY 8	size = 0x18040
-	SOUND_FX_PIPE  9	size = 0x3c00 
+	SOUND_FX_PIPE  9	size = 0x3c00
 
 	Requires:	core		(0 or 1)
 				type		Reverb type (STUDIO_A, HALL etc..)
@@ -2315,9 +2315,9 @@ SOUND_ChainStreams
 
 typedef struct SOUND_CHAIN_INFO
 {
-	int		FileID;		 File ID to chain to.. 
-	u_int	Offset;		Offset into file to start playing 
-	u_int	PlaySize;	
+	int		FileID;		 File ID to chain to..
+	u_int	Offset;		Offset into file to start playing
+	u_int	PlaySize;
 } SOUND_CHAIN_INFO;
 
 ***********************************************************************************/
@@ -2421,7 +2421,7 @@ SOUND_GetFileInfo
 	Finally, each GetFileInfo command should be followed by a SOUND_FlushIOPCommand. If two or
 	more GetFileInfo commands are called before a SOUND_FlushIOPCommand, only the result from the
 	last requested file is returned to the EE.
-  
+
   	Requires:	filename	Name of file to load (including either host0: or cdrom0:)
 	Returns:	TagID		ID to be compared with the return value of SOUND_ReturnFileInfo
 
@@ -2470,12 +2470,12 @@ SOUND_SetFileInfo (V5)
 	type of ID value. Otherwise, the behaviour of the system can not be relied upon.
 
 	If you don't know the LSN/Size of the file, either:
-	
+
 	1)	Call the SOUND_GetFileInfo function before calling this one. Note, that a SOUND_FlushIOPCommand(0);
 	 	will be required after the SOUND_GetFileInfo and SOUND_SetFileInfo calls.
 	2)	Call SOUND_CreateFileInfo (which calls both the "Get" and "Set" functions on the IOP)
 
-	
+
 x
 ***********************************************************************************/
 u_int SOUND_SetFileInfo(int ID, u_int LSN, u_int size, int source, u_int offset)
@@ -2790,7 +2790,7 @@ SOUND_DisplayStats
 	Requires:	Nothing
 	Returns:	Nothing
 
-	Displays:	Version number 
+	Displays:	Version number
 				Allocated Spot FX details (ID and SPU address)
 				Allocated File details (ID, LSN, Size, Offset to load from)
 				Allocated Stream details (channel, IOP & SPU address and sizes)
@@ -3218,7 +3218,7 @@ int SOUND_SetMIBEndOffset(u_int i, u_int Offset)
 		MSERROR(("Not storing offset\n"));
 		return(-1);
 	}
-		
+
 	SOUND_MultiThreadSafeCheckStart();	// MULTITHREAD SAFE CODE
 
 	SOUND_StartCommand(SND_SET_MIB_END);
@@ -3423,7 +3423,7 @@ SOUND_SetStreamTrack_Int
 	Please note that playback of this data will continue from the current seek
 	point through the file. Also note that the requested track will not be heard
 	until its data has been loaded and played in SPU RAM.
-	
+
 	Requires:	stream		Stream channel
 				track		Track to play from interleaved data file
 	Returns:	0			OK
@@ -3854,7 +3854,7 @@ SOUND_HandleCDErrors
 	Notes:
 		Return codes for n are shown in the docs for IOPLibRef_Device_*.pdf
 		Function: sceCdGetError:
-	
+
 		0x00 SCECdErNO		No error
 		0x01 SCECdErABRT	Abort command received
 		0x13 SCECdErNORDY	Processing command
@@ -4181,7 +4181,7 @@ SOUND_SetStreamLoadSource
 	Returns:	0			ok
 				-1			Invalid stream channel
 				-2			Invalid source
-	
+
 ***********************************************************************************/
 int SOUND_SetStreamLoadSource(int stream,int source)
 {
@@ -4211,7 +4211,7 @@ the size if you want to stream MONO files). Sets flags for stereo/mono and forma
 	Requires:		stream	Stream number to use for PCM playback
 					format	SOUND_WAV or SOUND_PCM
 					stereo	SOUND_STEREO or SOUND_MONO
-					
+
 ***********************************************************************************/
 int SOUND_InitPCMPlayback(int stream, int format, int stereo)
 {
@@ -4237,7 +4237,7 @@ the size depending on a stream buffer)
 
 	Returns:		0		OK
 					-1		Error
-					
+
 	Notes:			size must be a multiple of 2048.
 ***********************************************************************************/
 int SOUND_InitPCMPlaybackNoStream(u_int size,u_int mode)
@@ -4323,7 +4323,7 @@ SOUND_GetPCMInfo
 Fills a SOUND_PCM_INFO buffer with relevent PCM information:
 
 void SOUND_GetPCMInfo(SOUND_PCM_INFO *PCMInfo)
-		
+
 	Requires:	PCMInfo					Pointer to a SOUND_PCM_INFO structure
 	Returns:	PCMInfo->IOPAddress		IOP Address of PCM data buffer
 				PCMInfo->Size			Size of PCM data buffer
@@ -4333,7 +4333,7 @@ void SOUND_GetPCMInfo(SOUND_PCM_INFO *PCMInfo)
 										SOUND_PCM_BUFFER_NOT_ALLOCATED (No PCM buffer allocated)
 ***********************************************************************************/
 void SOUND_GetPCMInfo(SOUND_PCM_INFO *PCMInfo)
-{			  
+{
 	PCMInfo->Status=SOUND_PCM_STATUS;	/* Current PCM playback status */
 	PCMInfo->IOPAddress=SOUND_PCM_IOP_ADDR;	/* IOP PCM buffer address */
 	PCMInfo->Size=SOUND_PCM_SIZE;		/* IOP PCM buffer size */
@@ -4634,7 +4634,7 @@ SOUND_SetStreamStartPosition
 
 	Requires:	i		Stream number
 				offset	Offset (in bytes) through file to start playing
-	
+
 ***********************************************************************************/
 int SOUND_SetStreamStartPosition(int i, u_int offset)
 {
@@ -4752,7 +4752,7 @@ SOUND_WaitForFileToLoad
 
 		Care must be taken to make sure that stream priorities will not cause any issues, where only
 		allowing a single stream to load may mean that SOUND_WaitForFileToLoad seems to lock up.
-		
+
 
 *****************************************************************************/
 int SOUND_WaitForFileToLoad(u_int chan,int flag)
@@ -4829,7 +4829,7 @@ printf("a=%x\n",a);
 			SOUND_HandleCDErrors();
 		}
 		SOUND_GetStreamInfo(chan,StreamInfo);	/* Get Stream info */
-	} 
+	}
 
 	if (flag==SOUND_WAIT_COLD)
 	{
@@ -5070,7 +5070,7 @@ u_int mode;
 
     /* Query the memory requirements for the DTS encoder. */
     errorcode = DTS_querymemsize(mode,quality, &permanentsize,&temporarysize);
-    
+
 /*    scePrintf("DTS_querymemsize() permanent size is %i, temporary size is %i, returned %i\n",  */
 /*        permanentsize, temporarysize, errorcode); */
 
@@ -5180,7 +5180,7 @@ int threadid;
 
 	threadid = GetThreadId();
     sceSifSetRpcQueue(&DTS_rpcqd, threadid);
-    sceSifRegisterRpc(&DTS_rpcsd, DTS_RPC_DEVICE, DTS_RPC, (void *)DTS_rpcarg, 0, 
+    sceSifRegisterRpc(&DTS_rpcsd, DTS_RPC_DEVICE, DTS_RPC, (void *)DTS_rpcarg, 0,
         0, &DTS_rpcqd);
 	sceSifRpcLoop(&DTS_rpcqd);
 #else
@@ -5247,7 +5247,7 @@ sceVu0FVECTOR ACC;
 #endif
 
 void *DTS_RPC(unsigned int command, void *pdata, int size)
-{ 
+{
 #if SOUND_DTS_ENABLE
 
 short *pppcm[6];
@@ -5274,38 +5274,38 @@ sceDevVu0Pause();
 sceDevVu0GetCnd(&VU0_SaveData); /* SAVE THE VU0  registers */
 
 asm __volatile__("
-SQC2 $vf00, 0x0(%0)  
-SQC2 $vf01, 0x10(%0)  
-SQC2 $vf02, 0x20(%0)  
-SQC2 $vf03, 0x30(%0)  
-SQC2 $vf04, 0x40(%0)  
-SQC2 $vf05, 0x50(%0)  
-SQC2 $vf06, 0x60(%0)  
-SQC2 $vf07, 0x70(%0)  
-SQC2 $vf08, 0x80(%0)  
-SQC2 $vf09, 0x90(%0)  
-SQC2 $vf10, 0xa0(%0)  
-SQC2 $vf11, 0xb0(%0)  
-SQC2 $vf12, 0xc0(%0)  
-SQC2 $vf13, 0xd0(%0)  
-SQC2 $vf14, 0xe0(%0)  
-SQC2 $vf15, 0xf0(%0)  
-SQC2 $vf16, 0x100(%0)  
-SQC2 $vf17, 0x110(%0)  
-SQC2 $vf18, 0x120(%0)  
-SQC2 $vf19, 0x130(%0)  
-SQC2 $vf20, 0x140(%0)  
-SQC2 $vf21, 0x150(%0)  
-SQC2 $vf22, 0x160(%0)  
-SQC2 $vf23, 0x170(%0)  
-SQC2 $vf24, 0x180(%0)  
-SQC2 $vf25, 0x190(%0)  
-SQC2 $vf26, 0x1a0(%0)  
-SQC2 $vf27, 0x1b0(%0)  
-SQC2 $vf28, 0x1c0(%0)  
-SQC2 $vf29, 0x1d0(%0)  
-SQC2 $vf30, 0x1e0(%0)  
-SQC2 $vf31, 0x1f0(%0)  
+SQC2 $vf00, 0x0(%0)
+SQC2 $vf01, 0x10(%0)
+SQC2 $vf02, 0x20(%0)
+SQC2 $vf03, 0x30(%0)
+SQC2 $vf04, 0x40(%0)
+SQC2 $vf05, 0x50(%0)
+SQC2 $vf06, 0x60(%0)
+SQC2 $vf07, 0x70(%0)
+SQC2 $vf08, 0x80(%0)
+SQC2 $vf09, 0x90(%0)
+SQC2 $vf10, 0xa0(%0)
+SQC2 $vf11, 0xb0(%0)
+SQC2 $vf12, 0xc0(%0)
+SQC2 $vf13, 0xd0(%0)
+SQC2 $vf14, 0xe0(%0)
+SQC2 $vf15, 0xf0(%0)
+SQC2 $vf16, 0x100(%0)
+SQC2 $vf17, 0x110(%0)
+SQC2 $vf18, 0x120(%0)
+SQC2 $vf19, 0x130(%0)
+SQC2 $vf20, 0x140(%0)
+SQC2 $vf21, 0x150(%0)
+SQC2 $vf22, 0x160(%0)
+SQC2 $vf23, 0x170(%0)
+SQC2 $vf24, 0x180(%0)
+SQC2 $vf25, 0x190(%0)
+SQC2 $vf26, 0x1a0(%0)
+SQC2 $vf27, 0x1b0(%0)
+SQC2 $vf28, 0x1c0(%0)
+SQC2 $vf29, 0x1d0(%0)
+SQC2 $vf30, 0x1e0(%0)
+SQC2 $vf31, 0x1f0(%0)
 "
 :: "r"(&VU0_SaveData));
 
@@ -5314,7 +5314,7 @@ VMADDx $vf08, $vf00, $vf00x
 SQC2 $vf08, 0x0(%0)"
 :: "r"(ACC));
 
-                if (DTS_encode(pppcm, DTS_packet, (void *)DTS_ptemporarybuf) 
+                if (DTS_encode(pppcm, DTS_packet, (void *)DTS_ptemporarybuf)
                     != DTS_OK)
                 {
                     MSERROR(("Failed DTS encoding.\n"));
@@ -5363,10 +5363,10 @@ SOUND_InitINTERNAL_RPC
 void SOUND_InitFastLoad_RPC(void)
 {
 int threadid;
-	
+
 	threadid = GetThreadId();
     sceSifSetRpcQueue(&SOUND_rpcqd, threadid);
-    sceSifRegisterRpc(&SOUND_rpcsd, SOUND_FASTLOAD_RPC_DEVICE, SOUND_FASTLOAD_RPC, (void *)SOUND_rpcarg, 0, 
+    sceSifRegisterRpc(&SOUND_rpcsd, SOUND_FASTLOAD_RPC_DEVICE, SOUND_FASTLOAD_RPC, (void *)SOUND_rpcarg, 0,
         0, &SOUND_rpcqd);
 	sceSifRpcLoop(&SOUND_rpcqd);
 }
@@ -5397,7 +5397,7 @@ struct ThreadParam param;
 
 
 	SOUND_INTERNALStack= (char*)addr;
- 
+
 	param.entry			=  (void (*)(void *))SOUND_InitFastLoad_RPC;
     param.initPriority 	= ThreadPriority;	/* Thread MUST be a higher priority than the main thread. */
 	param.stack			= SOUND_INTERNALStack;
@@ -5457,7 +5457,7 @@ SOUND_FASTLOAD_RPC
 
 *****************************************************************************/
 void *SOUND_FASTLOAD_RPC(unsigned int command, void *pdata, int size)
-{ 
+{
 u_int *ptr;
 int ret;
 int addr;
@@ -6470,7 +6470,7 @@ SOUND_GetChannelSPUVolume
 
 	Returns:	Vol			Left Volume (top 16 bits), Right Volume (bottom 16 bits)
 				0x5a5a5a5a	SPU channel out of range
-				
+
 ***********************************************************************************/
 u_int SOUND_GetChannelSPUVolume(u_int SPUChannel)
 {
@@ -6505,7 +6505,7 @@ SOUND_PauseSPUChannels
 	Note:	Pausing any SPU channels which are PARENT streams will also pause SPU channels
 			for any CHILD streams belonging to the PARENT. Pausing any CHILD streams will
 			not pause their PARENT streams
-				
+
 ***********************************************************************************/
 int SOUND_PauseSPUChannels(u_int First,u_int Last)
 {
@@ -6539,7 +6539,7 @@ SOUND_ResumeSPUChannels
 				-1			First SPU channel out of range
 				-2			Last SPU channel out of range
 				-3			First SPU channel larger than Last SPU channel
-				
+
 	Note:	Resuming any SPU channels which are PARENT streams will also resume SPU channels
 			for any CHILD streams belonging to the PARENT. Resuming any CHILD streams will
 			not resume their PARENT streams
@@ -6576,7 +6576,7 @@ SOUND_SetSPUChannelRelease
 	Returns:	0			OK
 				-1			Release Rate out of range
 				-2			SPU channel out of range
-				
+
 	Note:		Allows you to modify the release rate after a KeyOn has been performed
 
 ***********************************************************************************/
@@ -6632,7 +6632,7 @@ u_int a;
 		address1=0x1fffff;
 		address2=0x1dffff;
 	}
-		
+
 	a=address1&0x1ffff;
 
 	if (a!=0x1ffff)
@@ -6699,7 +6699,7 @@ SOUND_SetFastLoadNext
 	Only to be used if FASTLOAD is ON.
 	Allows a stream which cd loading has been stopped to continue loading another
 	data packet.
-				
+
 
 	Requires:		i	Stream channel
 	Returns:		0	OK
@@ -6768,7 +6768,7 @@ int stat;
 		return(-3);
 	if (start>end)
 		return(-4);
-	
+
 	for (a=start;a<=end;a++)
 	{
 		stat=SOUND_GetStreamChannel((u_int)a);	/* SPU channel being used by a stream? */
@@ -6816,7 +6816,7 @@ SOUND_STREAM_INFO StreamInfo;
 		return(-2);
 	if (end<0)
 		return(-3);
-	
+
 	for (a=start;a<=end;a++)
 	{
 
@@ -7033,7 +7033,7 @@ SOUND_MemCheckForSFXID
 
 
 	Notes: Called internally by SOUND_PatchSFX only.
-	
+
 *****************************************************************************/
 int SOUND_MemCheckForSFXID(u_int ID, u_int SPUAddr)
 {
@@ -7101,7 +7101,7 @@ SOUND_MemAllocateClose
 	Returns:	Address		Address allocated
 				-1			No spare sections
 				-2			RAM not availiable
-	
+
 *****************************************************************************/
 int SOUND_MemAllocClose(void)
 {
@@ -7126,7 +7126,7 @@ SOUND_MemAllocate
 	Returns:	Address		Address allocated
 				-1			No spare sections
 				-2			RAM not availiable
-	
+
 *****************************************************************************/
 int SOUND_MemAllocate(u_int Size)
 {
@@ -7230,7 +7230,7 @@ SOUND_MemAllocateEffectBuffer
 	Note:		To use this address for an effect buffer:
 				Address-=1;
 				SOUND_SetEffectBufferAddress(Address..);
-	
+
 *****************************************************************************/
 int SOUND_MemAllocateEffectBuffer(int Type)
 {
@@ -7573,7 +7573,7 @@ SOUND_SetSFXPlayOffset
 
 	Sets the offset to play a SFX from in SPU RAM.
 	The offset value is added to the SPU RAM address past to SOUND_PatchSFX.
-	Passing 0 will play the SFX from the original address past to 
+	Passing 0 will play the SFX from the original address past to
 	SOUND_PatchSFX.
 	As there is no information held about the length of a SFX, care must be
 	taken not to set the offset to invalid values.
@@ -7735,7 +7735,7 @@ void SOUND_SULPHA(void)
 /*****************************************************************************
 SOUND_SetMemHooks
 Set up some memory allocation routine hooks.
-The default routines are memalign and free, so this does not have to be 
+The default routines are memalign and free, so this does not have to be
 called.
 Errors are produced if memory has already been allocated and not free'd (ie
 it's outstanding)
@@ -7761,7 +7761,7 @@ int	SOUND_SetMemHooks( SOUND_ALLOC_FUNC allocFunc, SOUND_FREE_FUNC freeFunc )
 {
 	if( SOUND_ALLOC_COUNTER != 0 )
 	{
-		// barf - 
+		// barf -
 		MSERROR(("ERROR: SOUND_SetMemHooks() - Things are probably going to go bang - !\n"));
 		MSERROR(("ERROR: you've allocated memory that's not free'd and are now changing the allocation and free routines\n"));
 		return(-1);
@@ -7982,7 +7982,7 @@ SOUND_SetDSPBuffer
 
 	Returns:	size		size of data which will be allocated on IOP (packets*1024)
 				0			Error
-	
+
 	Notes: IOP will allocate buffers also with this command. Therefore, you need to
 	use SOUND_DSP_OFF to free these buffers if EE processing is no longer required.
 
@@ -8028,7 +8028,7 @@ static u_int SOUND_DSPCurrentReadCounter=0;
 //static u_int SOUND_DSPCurrentWriteCounter=0;
 /*****************************************************************************
 SOUND_CheckDSPUpdate
-	Returns amount of packets of PCM data are in EE RAM 
+	Returns amount of packets of PCM data are in EE RAM
 
 	Requires:	Nothing
 	Returns:	Number of packets
@@ -8200,7 +8200,7 @@ SOUND_DSPSetEffect
 				effect		DSP effect type
 
 	Note: Each slot can only effect either core 0 or core 1
-		
+
 	List of effects:
 
 	SOUND_FLAG_DSP_OFF 				Turns DSP effect slot OFF
@@ -8269,7 +8269,7 @@ SOUND_GetDSPInfo
 	buffer->Debug[0] = Scan lines taken between each PCM callback
 	buffer->Debug[1] = Scan lines taken to process DSP
 
-	buffer->EffectInfo[n] = 
+	buffer->EffectInfo[n] =
 
 	Filter					Nothing
 	Distortion				Nothing
@@ -8397,14 +8397,14 @@ int wakeThreadID=0;
 
 /*****************************************************************************
 SOUND_SetMultiStreamVoices
-	
+
 	Limits MultiStream to the specified voices. '1' bits mean MultiStream
 	controls the voice, '0' bits mean MultiStream leaves the voices alone.
 	This function modifes the SOUND_SPUKeyStatus array, marking voices
 	MultiStream should not use as "SPU_KEY_STATUS_UNKNOWN".
 
 	Required for SCREAM to run along with MultiStream
-	
+
     Requires:	core0			voice flags for SPU core 0
 				core1           voice flags for SPU core 1
 	Returns:	Nothing

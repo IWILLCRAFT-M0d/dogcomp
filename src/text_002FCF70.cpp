@@ -146,13 +146,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB30);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB70);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFC68);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Finalise__Fv);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447520);
 
@@ -332,9 +332,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302D18);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302D50);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302E48);
 
@@ -506,13 +506,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00307B58);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00307C78);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00307E58);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00307F00);
 

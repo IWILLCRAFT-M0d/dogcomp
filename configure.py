@@ -35,7 +35,7 @@ PRE_ELF_PATH = f"{OUT_DIR}/{BASENAME}.elf"
 TARGET_DIR   = "target"
 
 # Compilation Flags
-INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common"
+INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common -I include/Dogs"
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.3"
 COMMON_COMPILE_FLAGS = f"-g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
@@ -362,7 +362,7 @@ PROBLEMATIC_FUNCS = set(
         
         # text_002D0150.cpp
         "func_002F7A78",
-        "Controller_InternalInitialise",
+        "Controller_InternalInitialise__Fv",
         "func_0030A4C8",
         "func_00318BF8",
         "func_00319C28",

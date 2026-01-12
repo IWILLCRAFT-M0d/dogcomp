@@ -1,6 +1,12 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
+#include "FGDK3/Playstation2/Thread.h"
+
+//sifManager header goes here
+#include "FGDK3/Inpdev.h"
+#include "FGDK3/Playstation2/RunPath.h"
+
 typedef struct {
 	int unk0;
 	int unk4;
@@ -17,5 +23,10 @@ s_func_002FC270* func_002FC270(s_func_002FC270* arg0);
 #ifdef __cplusplus
 }
 #endif
+
+Status Controller_InternalInitialise(void);
+void Controller_InternalFinalise(void);
+Status Controller_Initialise(void);
+void Controller_Finalise(void);
 
 #endif

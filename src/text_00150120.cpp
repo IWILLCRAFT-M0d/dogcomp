@@ -701,11 +701,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161040);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161060);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001610B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001610E8);
 
@@ -2181,11 +2181,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC50);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181990);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001819C8);
 

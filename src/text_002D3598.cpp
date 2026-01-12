@@ -168,7 +168,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D08);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442FD0);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$14StreamRenderer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442FE8);
 
@@ -176,17 +176,17 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443008);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443028);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443048);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$22Debug_WatchEnvironment);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443228);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$21Debug_StructContainer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443408);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$24Debug_DataValueContainer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004435E8);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$11DebugWindow);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004437E8);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$15MessageStreamUI);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443968);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16DebugEnvironment);
 
@@ -276,11 +276,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6978);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6998);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A00);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A38);
 
@@ -288,7 +288,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A58);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B18);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443AE0);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$14Font_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14Font_Resources);
 
@@ -458,7 +458,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443C30);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443C80);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443CD0);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$10Endian_Mem);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443D20);
 
@@ -472,7 +472,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93F8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11EndianFile);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9468);
 
@@ -2018,13 +2018,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tft9Interface1Z28AnimationResour
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F72A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputUtil_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F75C8);
 
@@ -2068,7 +2068,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446BE8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446C10);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8600);
 
@@ -2076,9 +2076,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8648);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8688);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputMouse_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8760);
 
@@ -2090,6 +2090,8 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446D38);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf17InputMouse_Device);
 
+// beginning of InpKeybd.cpp?
+// InputKeyboard_Device::InputKeyboard_Device
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8820);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8870);
@@ -2098,24 +2100,27 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F89A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8AC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E40);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E68);
 
+// InputKeyboard_Device::~InputKeyboard_Device
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E90);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446E58);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$20InputKeyboard_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf20InputKeyboard_Device);
 
+// InpJoys1.cpp
+// InputJoystick1_Device::InputJoystick1_Device
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8F00);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8F68);
@@ -2172,11 +2177,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F94E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9520);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9588);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputEvent_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F95C0);
 
@@ -2316,13 +2321,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB818);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB858);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalInitialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalFinalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Initialise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Finalise);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputDevice_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002FB980);
 
