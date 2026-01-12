@@ -70,6 +70,7 @@ segments:
       - [0x189B30, cpp, text_00288B30] # Sound.c?
       - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
+      - [0x1FA408, cpp, FGDK3/Code/Playstation2/InpJoy5]
       - [0x1FA528, cpp, FGDK3/Code/Inpevent]
 
       - [0x1FC878, cpp, FGDK3/Code/Inpdev]
@@ -93,6 +94,7 @@ segments:
       - [0x33E030, .rodata, text_00288B30]
       - [0x343CE8, .rodata, FGDK3/Code/Playstation2/GameShell]
       - [0x343D68, .rodata, text_002D3598]
+      - [0x347FA8, .rodata, FGDK3/Code/Playstation2/InpJoy5]
       - [0x347FF0, .rodata, FGDK3/Code/Inpevent]
       - [0x348110, .rodata, FGDK3/Code/Inpdev]
       - [0x3481A0, .rodata, text_002FBD40]

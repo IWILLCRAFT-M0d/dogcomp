@@ -2161,21 +2161,5 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F93C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9400);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9408);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9450);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9458);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9488);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F94A8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F94E0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F94E8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F9520);
-
 
 
