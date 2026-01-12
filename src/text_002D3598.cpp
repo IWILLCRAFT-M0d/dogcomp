@@ -2089,32 +2089,3 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F87B0);
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00446D38);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf17InputMouse_Device);
-
-// beginning of InpKeybd.cpp?
-// InputKeyboard_Device::InputKeyboard_Device
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8820);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8870);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F89A8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8AC0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalInitialise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_InternalFinalise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Initialise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", InputKeyboard_Finalise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E40);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E68);
-
-// InputKeyboard_Device::~InputKeyboard_Device
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F8E90);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$20InputKeyboard_Device);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf20InputKeyboard_Device);
