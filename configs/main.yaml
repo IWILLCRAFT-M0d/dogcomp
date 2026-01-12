@@ -28,13 +28,13 @@ options:
   create_undefined_syms_auto: True
   undefined_syms_auto_path: linkers/undefined_syms_auto.txt
   ld_script_path: linkers/SCES_512.48.ld
-  
+
   # Manually defined symbols
   symbol_addrs_path:
   - configs/sym.txt
 
   section_order: [".text", ".vutext", ".data", ".vudata", ".rodata", ".gcc_except_table", ".sdata", ".sbss", ".bss"]
-  
+
   gp_value: 0x4546f0
   string_encoding: ASCII
   rodata_string_guesser_level: 2
@@ -55,23 +55,24 @@ segments:
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700]
-      
-      
+
+
       #- [0xAE138,  cpp, Dogs/Code/Creatre] # 001AD138 - Actually meant to be `Creatures.cpp`
       #- [0xAE378,  cpp, text_001AD378]
       #- [0xB0470,  cpp, text_001AF470] # Objects 3D related
       #- [0xB17A8,  cpp, text_001B07A8] # Textures related
       #- [0xB2F70,  cpp, text_001B1F70]
       #- [0xD92A0,  cpp, text_001D82A0]
-      
+
       - [0xE24F8,  cpp, text_001E14F8]
       - [0x1411D8, cpp, text_002401D8]
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0
       - [0x189B30, cpp, text_00288B30] # Sound.c?
       - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
-      #- [0x1FC878, cpp, FGDK3/Code/Inpdev]
-      #- [0x1FCD40, cpp, text_002FBD40]
+      - [0x1FC878, cpp, FGDK3/Code/Inpdev]
+      - [0x1FCD40, cpp, text_002FBD40]
+
       - [0x1FCFF0, cpp, FGDK3/Code/Playstation2/Controller]
       - [0x1FDF70, cpp, text_002FCF70] # -O0
       - [0x20A778, cpp, text_00309778]
@@ -90,6 +91,8 @@ segments:
       - [0x33E030, .rodata, text_00288B30]
       - [0x343CE8, .rodata, FGDK3/Code/Playstation2/GameShell]
       - [0x343D68, .rodata, text_002D3598]
+      - [0x348110, .rodata, FGDK3/Code/Inpdev]
+      - [0x3481A0, .rodata, text_002FBD40]
       - [0x348290, .rodata, FGDK3/Code/Playstation2/Controller]
       - [0x348390, .rodata, text_002FCF70]
       - [0x348CD0, .rodata, text_00309778]
