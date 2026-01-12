@@ -1,4 +1,5 @@
 #include "common.h"
+#include "FGDK3/Playstation2/Thread.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_0026B710", func_0026B710);
 

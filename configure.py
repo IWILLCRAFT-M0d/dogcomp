@@ -307,9 +307,11 @@ PROBLEMATIC_FUNCS = set(
         "func_00185878",
         
         
-        # text_001A0020.cpp
+        # Console.cpp
         "func_001A2608",
         "func_001A2BA8",
+
+        # text_00AB700.cpp
         "func_001ABCA8",
         "func_001AC560",
         "func_001ADA80",
@@ -330,17 +332,19 @@ PROBLEMATIC_FUNCS = set(
         # text_002401D8.cpp
         "func_00240A08",
         "func_00245AE8",
+
+        # text_0026B710.cpp
         "func_00278098",
         "func_0027C640",
         "func_0027D240",
         "func_0027EC50",
+
+
+        # text_00288B30.cpp
         "func_0028D6A8",
         "func_0028E4A0",
         "SOUND_MemFree",
         "func_00291110",
-        
-        
-        # text_00290D10.cpp
         "func_0029A198",
         "func_002AA498",
         "func_0029D728",
@@ -360,10 +364,16 @@ PROBLEMATIC_FUNCS = set(
         "func_002C3F98",
         "func_002CA090",
         
-        # text_002D0150.cpp
+        # text_002D3598.cpp
         "func_002F7A78",
+
+        # Controller.cpp
         "Controller_InternalInitialise__Fv",
+
+        # text_00309778.cpp
         "func_0030A4C8",
+
+        # text_00315F28.cpp
         "func_00318BF8",
         "func_00319C28",
         "func_00327B78",
