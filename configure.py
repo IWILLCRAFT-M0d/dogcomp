@@ -193,6 +193,8 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
                 name = re.sub(r"\.cpp$", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
                 name = re.sub(r"\.c$", "", name)
             
+            categories = []
+            
             if "src/" in ps:
                 if "FGDK3" in ps:
                     categories = ["FGDK3"]
@@ -200,8 +202,6 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
                     categories = ["game"]
             elif "asm/data" in ps:
                 categories = ["data"]
-            else:
-                categories = []
             
             unit = {
                 "name": name,
