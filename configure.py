@@ -35,7 +35,7 @@ PRE_ELF_PATH = f"{OUT_DIR}/{BASENAME}.elf"
 TARGET_DIR   = "target"
 
 # Compilation Flags
-INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common -I include/Dogs"
+INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common -I include/Dogs -I include/FGDK3"
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.3"
 COMMON_COMPILE_FLAGS = f"-g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"

@@ -2,11 +2,11 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F9588);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F95C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F95E0);
 
@@ -124,9 +124,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB638);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", D_00446FF0);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", D_00447048);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", _vt$Q224InputEvent_ValueInstance10LocalTimer);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", D_00447060);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", _vt$17InputEvent_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", __tf17InputEvent_Device);
 

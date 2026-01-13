@@ -61,7 +61,7 @@ ThrowCatch_Finalise__Fv = 0x0026b628; // type:func
 TextRes_InternalInitialise__Fv = 0x0026c380; // type:func
 TextRes_InternalFinalise__Fv = 0x0026c3c8; // type:func
 TextRes_Initialise__Fv = 0x0026c3d0; // type:func
-TextRes_Finalise = 0x0026C400; // type:func
+TextRes_Finalise__Fv = 0x0026C400; // type:func
 sifManager_InternalInitialise__Fv = 0x0026fca8; // type:func
 sifManager_Initialise__Fv = 0x0026ff68; // type:func
 sifManager_Finalise__Fv = 0x0026ff98; // type:func
@@ -530,6 +530,7 @@ _vt$22Music_MenuRegisterable = 0x0043CCA0;
 
 
 _vt$11WorldObject = 0x003d15b0;
+_vt$17Player_GrowlTimer = 0x003e9f88;
 _vt$14Music_PS2Piece = 0x0043CD28;
 _vt$14Music_PS2Track = 0x0043CDA8;
 _vt$17Music_Performance = 0x0043CDC8;
@@ -555,26 +556,34 @@ TheGame = 0x0044EB68;
 // TextRes.cpp
 _vt$14Text_Resources = 0x0043b860;
 
+// TextureRes
+_vt$17Texture_Resources = 0x00449be0;
 
+// SoundRes.cpp
+_vt$15Sound_Resources = 0x00432fb0;
 
+// Inpevent.cpp
+InputEvent_InternalFinalise__Fv = 0x002F9588; // type:func
+InputEvent_Finalise__Fv = 0x002F95C0; // type:func
+_vt$Q224InputEvent_ValueInstance10LocalTimer = 0x00447048;
+_vt$17InputEvent_Device = 0x00447060;
 
+// LandscapeRes.cpp
+_vt$22DogsTaleLand_Resources = 0x00449a18;
 
+// ShapeRes.cpp
+_vt$15Shape_Resources = 0x00449870;
 
+// MusicRes.cpp
+_vt$15Music_Resources = 0x0043c9b8;
 
+// TimSrv.cpp
+_vt$12TimSrv_Timer = 0x0043b4b0;
 
+// GameShell.cpp
+_vt$9GameShell = 0x00442d18;
 
-
-
-
-
-
-
-
-
-
-
-
-
+_vt$16Resource_Generic = 0x0043bfd8;
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8

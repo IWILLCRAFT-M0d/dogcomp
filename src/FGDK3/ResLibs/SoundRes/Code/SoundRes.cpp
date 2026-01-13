@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BB
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BDB0);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", D_00432FB0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", _vt$15Sound_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", __tf15Sound_Resources);
 

@@ -40,7 +40,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B208);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B210);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", D_0043B4B0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", _vt$12TimSrv_Timer);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B218);
 

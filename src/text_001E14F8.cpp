@@ -413,6 +413,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC6D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EC718);
 
+
+// Objtable.cpp
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objtable_InternalFinalise__Fv);
@@ -787,7 +789,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F6628);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F66C0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E9F88);
+INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", _vt$17Player_GrowlTimer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F6720);
 

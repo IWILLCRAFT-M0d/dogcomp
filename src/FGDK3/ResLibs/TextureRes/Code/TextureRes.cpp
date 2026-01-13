@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_00
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FAB8);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", D_00449BE0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _vt$17Texture_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __tf17Texture_Resources);
 

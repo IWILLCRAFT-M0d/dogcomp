@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3210)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3268);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", D_00442D18);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", _vt$9GameShell);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", __tf9GameShell);
 

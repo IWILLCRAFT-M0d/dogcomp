@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", func_0026C420);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", func_0026C420); /* Load? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", func_0026C4E0);
 

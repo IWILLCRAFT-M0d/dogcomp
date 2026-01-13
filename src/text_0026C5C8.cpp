@@ -599,7 +599,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275BF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf20Resource_LayoutGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BFD8);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$16Resource_Generic);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C030);
 
@@ -1034,23 +1034,5 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027E9B8);
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EA08);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EA58);
-// start of /Playstation2/MusicRes.cpp ??
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", MusicRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EAE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", MusicRes_Initialise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EB18);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EB38);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027EC50);
-
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C9B8);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf15Music_Resources);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0027ED38);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf8Resource1Z11Music_Piece);
