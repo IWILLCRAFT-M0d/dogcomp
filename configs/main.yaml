@@ -94,8 +94,7 @@ segments:
       - [0x211BE8, cpp, text_00310BE8]
       - [0x216F28, cpp, text_00315F28]
       - [0x219FD0, cpp, FGDK3/ResLibs/AnimRes/Code/AnimRes]
-      - [0x21A340, cpp, text_00319340]
-      #- [0x21A340, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
+      - [0x21A340, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
       - [0x21D940, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptRes]
       - [0x21FEA0, cpp, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
       - [0x2201B8, cpp, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
@@ -140,8 +139,7 @@ segments:
       - [0x349040, .rodata, text_00310BE8] # zip
       - [0x349540, .rodata, text_00315F28] # zlib stuff?
       - [0x349C08, .rodata, FGDK3/ResLibs/AnimRes/Code/AnimRes]
-      - [0x349DF0, .rodata, text_00319340]
-      #- [0x349DF0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
+      - [0x349DF0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
       - [0x34A2E0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptRes]
       - [0x34A820, .rodata, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
       - [0x34A9A8, .rodata, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]

@@ -83,6 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026DF28);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026DF48);
 
+// Sound.cpp
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_InternalFinalise__Fv);
@@ -250,6 +251,8 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026FF60);
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", sifManager_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", sifManager_Finalise__Fv);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026FFB8);
 
