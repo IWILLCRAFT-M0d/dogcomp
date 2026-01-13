@@ -585,6 +585,16 @@ _vt$9GameShell = 0x00442d18;
 
 _vt$16Resource_Generic = 0x0043bfd8;
 
+// InpJoys1.cpp
+
+
+// InpJoy5.cpp
+InputJoy5_InternalInitialise__Fv = 0x002f9408; // type:func
+
+InpJoy5_Initialise__Fv = 0x002f9458; // type:func
+
+_vt$11InputCD_PS2 = 0x00447228;
+
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8
 //Music_Piece::~Music_Piece(Music_Piece *this,uint param_2) = 0x00280538; // type:func

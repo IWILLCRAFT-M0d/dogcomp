@@ -52,6 +52,7 @@ segments:
     subalign: 4
     subsegments:
       - [0x1000,   cpp, text]
+      #- [0x8760, cpp, Dogs/Code/BoneGod]
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700]
@@ -64,13 +65,14 @@ segments:
       #- [0xB2F70,  cpp, text_001B1F70]
       #- [0xD92A0,  cpp, text_001D82A0]
 
+
       - [0xE24F8,  cpp, text_001E14F8]
       - [0x1411D8, cpp, text_002401D8]
       - [0x14CA70, cpp, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x14CED8, cpp, text_0024BED8]
       - [0x16B940, cpp, FGDK3/Code/Playstation2/TimSrv]
       - [0x16C2A8, cpp, FGDK3/Code/ThrowCat]
-      - [0x16C710, cpp, text_0026B710]
+      - [0x16C710, cpp, FGDK3/Code/Playstation2/Thread]
       - [0x16D380, cpp, FGDK3/Code/TextRes]
       - [0x16D5C8, cpp, text_0026C5C8]
       - [0x17FA98, cpp, FGDK3/Code/Playstation2/MusicRes]
@@ -93,6 +95,7 @@ segments:
       - [0x216F28, cpp, text_00315F28]
       - [0x219FD0, cpp, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x21A340, cpp, text_00319340]
+      #- [0x21A340, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
       - [0x21D940, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptRes]
       - [0x21FEA0, cpp, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
       - [0x2201B8, cpp, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
@@ -114,8 +117,7 @@ segments:
       - [0x334058, .rodata, text_0024BED8]
       - [0x33C470, .rodata, FGDK3/Code/Playstation2/TimSrv]
       - [0x33C4F8, .rodata, FGDK3/Code/ThrowCat]
-
-      - [0x33C610, .rodata, text_0026B710]
+      - [0x33C610, .rodata, FGDK3/Code/Playstation2/Thread]
       - [0x33C820, .rodata, FGDK3/Code/TextRes]
 
       - [0x33C8E0, .rodata, text_0026C5C8]
@@ -139,6 +141,7 @@ segments:
       - [0x349540, .rodata, text_00315F28] # zlib stuff?
       - [0x349C08, .rodata, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x349DF0, .rodata, text_00319340]
+      #- [0x349DF0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
       - [0x34A2E0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptRes]
       - [0x34A820, .rodata, FGDK3/ResLibs/ShapeRes/Code/ShapeRes]
       - [0x34A9A8, .rodata, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]

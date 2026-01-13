@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00315FF8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00316138);
 
-INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00316160);
+INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00316160); /* inflate? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00315F28", func_00316680);
 

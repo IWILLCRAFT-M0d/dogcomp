@@ -462,6 +462,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00107700);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00107740);
 
+// BoneGod.cpp
 INCLUDE_ASM("asm/nonmatchings/text", func_00107760);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00107BC0);

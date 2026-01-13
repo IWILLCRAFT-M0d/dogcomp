@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "FGDK3/Inpdev.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalFinalise__Fv);

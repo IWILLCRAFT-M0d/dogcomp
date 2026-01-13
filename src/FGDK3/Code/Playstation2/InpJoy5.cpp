@@ -1,10 +1,10 @@
 #include "common.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F9408);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F9450);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F9458);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InpJoy5_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F9488);
 
