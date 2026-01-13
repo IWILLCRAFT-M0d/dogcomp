@@ -26,13 +26,13 @@ sudo apt-get install python3 python3-pip
 Create a Python environment for the project:
 
 ```bash
-python3 -m venv env
+python3 -m venv .venv
 ```
 
 Activate the environment:
 
 ```bash
-source env/bin/activate
+source .venv/bin/activate
 ```
 
 Then install the required Python packages:

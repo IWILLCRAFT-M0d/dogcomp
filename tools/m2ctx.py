@@ -8,13 +8,18 @@ import tempfile
 
 script_dir = os.path.dirname(os.path.realpath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, ".."))
-src_dir = root_dir + "src/"
 
 # Project-specific
 CPP_FLAGS = [
+    "-DM2CTX",
     "-Iinclude",
-    "-D_LANGUAGE_C",
-    "-DM2CTX"
+    "-Iinclude/MultiStream",
+    "-Iinclude/ee_gcc",
+    "-Iinclude/ee",
+    "-Iinclude/ee_gcc/gcc-lib",
+    "-Iinclude/ee_gcc/machine",
+    "-Iinclude/ee_gcc/sys",
+    "-Iinclude/common"
 ]
 
 

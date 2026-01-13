@@ -60,6 +60,7 @@ report.json
 
 # Python
 env/
+.venv/
 __pycache__/
 *.pyc
 
