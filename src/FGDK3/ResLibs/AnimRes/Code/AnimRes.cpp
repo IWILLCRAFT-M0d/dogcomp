@@ -1,6 +1,6 @@
 #include "common.h"
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C08);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C08); /* "Animation" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0);
 
@@ -12,9 +12,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190D8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190D8); /* load */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00319198);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00319198); /* unload */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", _vt$19Animation_Resources);
 
@@ -22,9 +22,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003191E0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", __tf19Animation_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00319290);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00319290); /* return "Animation"; */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003192A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003192A0); /* return "Animation"; */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", __tft8Resource1Z15AnimationHeader);
 

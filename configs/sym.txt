@@ -190,6 +190,7 @@ __tf11Movement_IF = 0x00169088;
 __tf8Snowball = 0x00173178;
 __tf14WheeledVehicle = 0x001817a8;
 __tf11WorldObject = 0x00188120;
+__tf20SpeechAniTextBigHint = 0x0018c670;
 __tf21StreamedSpeechTrivial = 0x0018c6f0;
 __tf9GameLayer = 0x0019d5c0;
 __tf6Thread = 0x0019d620;
@@ -340,10 +341,14 @@ __tf17Texture_Resources = 0x0031fb90;
 __tft8Resource1Z10GE_Texture = 0x0031fc00;
 
 // Sony SDK
+GetThreadId = 0x00341150; // type:func
+SuspendThread = 0x003411D0; // type:func
+ResumeThread = 0x003411f0; // type:func
 InitThread = 0x00342038; // type:func
 __builtin_new = 0x00247C00; // type:func
 sceCdLayerSearchFile = 0x00328638; // type:func
 sceCdSearchFile = 0x00328950; // type:func
+sceCdRead = 0x00329390; // type:func
 scePadRead = 0x0032d458; // type:func
 sceMcInit = 0x0032ea48; // type:func
 sceScfGetLanguage = 0x003302f0; // type:func
@@ -532,6 +537,7 @@ _vt$22Music_MenuRegisterable = 0x0043CCA0;
 
 _vt$11WorldObject = 0x003d15b0;
 _vt$17Player_GrowlTimer = 0x003e9f88;
+__tf17Player_GrowlTimer = 0x001f7378;
 _vt$14Music_PS2Piece = 0x0043CD28;
 _vt$14Music_PS2Track = 0x0043CDA8;
 _vt$17Music_Performance = 0x0043CDC8;
@@ -581,6 +587,7 @@ _vt$17InputEvent_Device = 0x00447060;
 
 // LandscapeRes.cpp
 LandscapeRes_InternalFinalise__Fv = 0x0031f200; // type:func
+LandscapeRes_Finalise__Fv = 0x0031F238; // type:func
 _vt$22DogsTaleLand_Resources = 0x00449a18;
 
 // ShapeRes.cpp
@@ -619,15 +626,14 @@ _vt$12ScriptThread = 0x004491b8;
 
 // ScriptRes.cpp
 ScriptRes_Finalise__Fv = 0x0031ca08; // type:func
+_vt$16Script_Resources = 0x00449330;
 _vt$6Script = 0x004495b0;
 
 __tf20SetDebugOutputAction = 0x002d6308;
 
 FontRes__Finalise__Fv = 0x002d6a38; // type:func
 
-GetThreadId = 0x00341150; // type:func
-SuspendThread = 0x003411D0; // type:func
-ResumeThread = 0x003411f0; // type:func
+
 
 func_002F8760 = 0x002F8760; // type:func
 func_002F8788 = 0x002F8788; // type:func
@@ -643,6 +649,9 @@ _vt$6Status = 0x0043b960;
 _6Status$m_file = 0x004519F4;
 _6Status$m_line = 0x004519F8;
 _6Status$m_errorString = 0x0049F3B8;
+_vt$6Widget = 0x00436fd0;
+
+strlen = 0x003374B0; // type:func
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8

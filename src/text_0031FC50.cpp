@@ -352,7 +352,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003290D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003292C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00329390);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceCdRead);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00329570);
 
@@ -1002,7 +1002,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337258);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0033739C);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003374B0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strlen);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003375E8);
 

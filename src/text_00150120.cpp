@@ -2671,9 +2671,9 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D29D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C5F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C650);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C650); /* SpeechAniTextBigHint::~SpeechAniTextBigHint*/
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C670);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf20SpeechAniTextBigHint);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C6C0);
 

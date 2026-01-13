@@ -828,7 +828,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436CD0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436E50);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436FD0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$6Widget);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437150);
 

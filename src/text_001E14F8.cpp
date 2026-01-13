@@ -804,7 +804,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F7368);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F7370);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F7378);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf17Player_GrowlTimer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001F73C8);
 

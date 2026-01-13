@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "FGDK3/Playstation2/Music.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", Music_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", Music_InternalFinalise__Fv);
@@ -140,7 +142,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283210);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002833F0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002833F0); /* Music_PS2Piece::Load*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283EB0);
 

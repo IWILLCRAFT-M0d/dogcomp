@@ -564,7 +564,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275448);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002754E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275520);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275520); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275528);
 
@@ -572,11 +572,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275600);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002756E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275718);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275718); /* resource loading? */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002757B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002757E8);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002757E8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002757F0);
 
