@@ -1,5 +1,6 @@
 #include "common.h"
 
+#include <ee/eekernel.h>
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FC50);
 
@@ -1337,7 +1338,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341130);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341140);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341150);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", GetThreadId);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341160);
 
@@ -1353,11 +1354,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003411B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003411C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003411D0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", SuspendThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003411E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003411F0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", ResumeThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341200);
 
@@ -1699,9 +1700,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003441D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003443C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00344408);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceSifSetRpcQueue);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003444A0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceSifRegisterRpc);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00344570);
 
@@ -1711,7 +1712,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00344698);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003446F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003448B8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceSifRpcLoop);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003448F8);
 

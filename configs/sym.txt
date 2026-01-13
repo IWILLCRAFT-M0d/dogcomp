@@ -33,6 +33,7 @@ Game_Finalise__Fv = 0x001D5E70; // type:func
 LevelRes_InternalInitialise__Fv = 0x001e5648; // type:func
 LevelRes_Initialise__Fv = 0x001e5698; // type:func
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
+Landscape_InternalFinalise__Fv = 0x001E31D8; // type:func
 Landscape_Initialise__Fv = 0x001e31e0; // type:func
 Objects_InternalInitialise__Fv = 0x001ea608; // type:func
 Objects_Initialise__Fv = 0x001ea658; // type:func
@@ -551,7 +552,17 @@ _vt$11DebugWindow = 0x004435e8;
 _vt$14Font_Resources = 0x00443ae0;
 _vt$15MessageStreamUI = 0x004437e8;
 _vt$16DebugEnvironment = 0x00443968;
+_vt$19Resource_LayoutUnit = 0x0043c148;
+_vt$29Resource_LayoutInclusiveGroup = 0x0043c030;
+_vt$29Resource_LayoutExclusiveGroup = 0x0043C078;
+_vt$22Resource_LayoutOverlay = 0x0043c0c0;
+_vt$20Resource_LayoutGroup = 0x0043c100;
+_vt$12StdAllocator = 0x0043c2f0;
 TheGame = 0x0044EB68;
+
+// AnimRes.cpp
+_vt$19Animation_Resources = 0x00448c88;
+AnimationRes_Finalise__Fv = 0x003190B8;
 
 // TextRes.cpp
 _vt$14Text_Resources = 0x0043b860;
@@ -569,6 +580,7 @@ _vt$Q224InputEvent_ValueInstance10LocalTimer = 0x00447048;
 _vt$17InputEvent_Device = 0x00447060;
 
 // LandscapeRes.cpp
+LandscapeRes_InternalFinalise__Fv = 0x0031f200; // type:func
 _vt$22DogsTaleLand_Resources = 0x00449a18;
 
 // ShapeRes.cpp
@@ -576,7 +588,8 @@ _vt$15Shape_Resources = 0x00449870;
 
 // MusicRes.cpp
 _vt$15Music_Resources = 0x0043c9b8;
-
+MusicRes_InternalFinalise__Fv = 0x0027eae0; // type:func
+MusicRes_Finalise__Fv = 0x0027eb18; // type:func
 // TimSrv.cpp
 _vt$12TimSrv_Timer = 0x0043b4b0;
 
@@ -584,9 +597,12 @@ _vt$12TimSrv_Timer = 0x0043b4b0;
 _vt$9GameShell = 0x00442d18;
 
 _vt$16Resource_Generic = 0x0043bfd8;
+__16ResourceGeneric = 0x00275328;
+_$_16Resource_Generic = 0x002753e0; // type:func
 
 // InpJoys1.cpp
-
+InputJoystick1_Initialise__Fv = 0x002f9248; // type:func
+InputJoystick1_Finalise__Fv = 0x002f9278; // type:func
 
 // InpJoy5.cpp
 InputJoy5_InternalInitialise__Fv = 0x002f9408; // type:func
@@ -594,6 +610,39 @@ InputJoy5_InternalInitialise__Fv = 0x002f9408; // type:func
 InpJoy5_Initialise__Fv = 0x002f9458; // type:func
 
 _vt$11InputCD_PS2 = 0x00447228;
+
+// ScriptThread.cpp
+__tf32ScriptThread_BroadcastEnumerator = 0x0031c820;
+_vt$32ScriptThread_BroadcastEnumerator = 0x004491a0;
+_vt$12ScriptThread = 0x004491b8;
+
+
+// ScriptRes.cpp
+ScriptRes_Finalise__Fv = 0x0031ca08; // type:func
+_vt$6Script = 0x004495b0;
+
+__tf20SetDebugOutputAction = 0x002d6308;
+
+FontRes__Finalise__Fv = 0x002d6a38; // type:func
+
+GetThreadId = 0x00341150; // type:func
+SuspendThread = 0x003411D0; // type:func
+ResumeThread = 0x003411f0; // type:func
+
+func_002F8760 = 0x002F8760; // type:func
+func_002F8788 = 0x002F8788; // type:func
+
+func_002F8E40 = 0x002F8E40; // type:func
+func_002F8E68 = 0x002F8E68; // type:func
+sceSifRpcLoop = 0x003448b8; // type:func
+sceSifSetRpcQueue = 0x00344408; // type:func
+sceSifRegisterRpc = 0x003444a0; // type:func
+
+_vt$9SavedGame = 0x0043be40;
+_vt$6Status = 0x0043b960;
+_6Status$m_file = 0x004519F4;
+_6Status$m_line = 0x004519F8;
+_6Status$m_errorString = 0x0049F3B8;
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8

@@ -15,9 +15,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F9190);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F91D8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F9248);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F9278);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_Finalise__Fv);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", D_00446F00);
 

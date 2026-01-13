@@ -10,13 +10,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190D8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00319198);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C88);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", _vt$19Animation_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003191E0);
 

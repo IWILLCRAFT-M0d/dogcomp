@@ -18,9 +18,23 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_I
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E40);
+#ifdef NON_MATCHING
+// keyboard thread
+int D_00453594;
 
+void func_002F8E40() {
+    SuspendThread(D_00453594);
+}
+
+void func_002F8E68() {
+    ResumeThread(D_00453594);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E40);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E68);
+#endif
+
 
 // InputKeyboard_Device::~InputKeyboard_Device
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E90);

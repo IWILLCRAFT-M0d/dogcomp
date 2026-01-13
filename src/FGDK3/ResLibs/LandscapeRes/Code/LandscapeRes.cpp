@@ -4,7 +4,7 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F200);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Initialise__Fv);
 

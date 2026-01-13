@@ -1,6 +1,8 @@
 #include "common.h"
 #include "debug.h"
 
+#include "Dogs/Landscape.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E14F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E16B0);
@@ -15,9 +17,14 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E2188);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E25C8);
 
+
+
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E31D8);
+
+void Landscape_InternalFinalise() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_Initialise__Fv);
 

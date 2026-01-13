@@ -8,5 +8,6 @@
 #include "FGDK3/ThrowCat.h"
 
 Status InputEvent_InternalInitialise(void);
+void InputEvent_InternalFinalise(void);
 
 #endif

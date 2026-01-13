@@ -10,4 +10,14 @@
 
 Status InputMouse_InternalInitialise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+    void func_002F8760(void);
+    void func_002F8788(void);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

@@ -7,7 +7,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CA08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CA28);
 
@@ -233,4 +233,4 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE60);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", D_004495B0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", _vt$6Script);

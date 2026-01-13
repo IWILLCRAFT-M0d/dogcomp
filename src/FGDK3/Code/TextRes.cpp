@@ -4,8 +4,9 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_InternalFinalise__Fv);
-
+void TextRes_InternalFinalise(){
+    return;
+}
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Finalise__Fv);

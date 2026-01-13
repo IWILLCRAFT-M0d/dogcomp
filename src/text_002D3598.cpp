@@ -242,7 +242,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6308);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf20SetDebugOutputAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6358);
 
@@ -282,7 +282,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A00);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A38);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes__Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A58);
 

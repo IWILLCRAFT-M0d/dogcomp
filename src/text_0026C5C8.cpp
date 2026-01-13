@@ -61,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D148);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D158);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043B960);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$6Status);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_InternalInitialise__Fv);
 
@@ -382,7 +382,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00272A78);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00272A98);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BE40);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf9SavedGame);
 
@@ -556,9 +556,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002750E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275288);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275328);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __16ResourceGeneric);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002753E0);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", _$_16Resource_Generic);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00275448);
 
@@ -604,15 +604,15 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf20Resource_LayoutGroup);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$16Resource_Generic);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C030);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$29Resource_LayoutInclusiveGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C078);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$29Resource_LayoutExclusiveGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C0C0);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$22Resource_LayoutOverlay);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C100);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$20Resource_LayoutGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C148);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$19Resource_LayoutUnit);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C188);
 
@@ -760,15 +760,15 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278350);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278358);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C2F0);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$12StdAllocator);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf12StdAllocator);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002783A8);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002783A8); /* StdAllocator::Alloc */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002784C8);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002784C8); /* StdAllocator::Free */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278568);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278568); /* StdAllocator::MemAlign */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278608);
 
@@ -861,6 +861,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C6E0);
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C730);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00279840);
+
 // start of /Common/NavGraphRes.cpp ???
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C7A8);
 

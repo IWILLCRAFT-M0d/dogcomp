@@ -12,6 +12,9 @@ extern "C" {
 }
 #endif
 
+#define STATUS_TRACE(_unk0) Status(_unk0, __FILE__, __LINE__)
+#define STATUS_TRACE_2(_unk0) Status(_unk0, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522)
+
 extern int* D_00451948;
 
 class Status {

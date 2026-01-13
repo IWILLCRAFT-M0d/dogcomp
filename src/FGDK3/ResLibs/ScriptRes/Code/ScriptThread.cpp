@@ -34,9 +34,9 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", D_0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", func_00319C28);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", D_004491A0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", _vt$32ScriptThread_BroadcastEnumerator);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", D_004491B8);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", _vt$12ScriptThread);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", __tf12ScriptThread);
 
@@ -84,7 +84,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", func_0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", func_0031C7C0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", func_0031C820);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", __tf32ScriptThread_BroadcastEnumerator);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptThread", func_0031C870);
 

@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "FGDK3/Playstation2/InpMouse.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F7F28);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F7F80);
@@ -36,11 +38,23 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Init
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Finalise__Fv);
 
+#ifdef NON_MATCHING
+// mouse thread
+int D_00453574;
+void func_002F8760() {
+    SuspendThread(D_00453574);
+}
+
+void func_002F8788() {
+    ResumeThread(D_00453574);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8760);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8788);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F87B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F87B0); /* InputMouse_Device::~InputMouse_Device */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", D_00446D38);
 

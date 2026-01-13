@@ -1,8 +1,12 @@
 #include "common.h"
 
+#include "FGDK3/Inpevent.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_InternalFinalise__Fv);
+void InputEvent_InternalFinalise() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Initialise__Fv);
 
