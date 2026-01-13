@@ -186,8 +186,8 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             p = entry.src_paths[0]
             ps = str(p)
             
-            if re.search("^asm", str(p)):
-                name = re.sub("\.s$", "", str(entry.src_paths[0].relative_to(f"{p.root}asm")))
+            if re.search(r"^asm", str(p)):
+                name = re.sub(r"\.s$", "", str(entry.src_paths[0].relative_to(f"{p.root}asm")))
             else:
                 # Raw string required to avoid bad escape sequence warning in Python 3.12
                 name = re.sub(r"\.cpp$", "", str(entry.src_paths[0].relative_to(f"{p.root}src")))
