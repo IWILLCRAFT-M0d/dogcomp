@@ -32,9 +32,13 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpdev", _vt$18InputDevice_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", __tf18InputDevice_Device);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCA0);
+void func_002FBCA0() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCA8);
+void func_002FBCA8() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCB0);
 

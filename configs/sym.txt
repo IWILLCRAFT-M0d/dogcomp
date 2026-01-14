@@ -106,8 +106,10 @@ InputKeyboard_InternalFinalise__Fv = 0x002f8d98; // type:func
 InputKeyboard_Initialise__Fv = 0x002f8df0; // type:func
 InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
 InputMouse_InternalInitialise__Fv = 0x002f8350; // type:func
+InputMouse_InternalFinalise__Fv = 0x002f8688; // type:func
 InputMouse_Initialise__Fv = 0x002f8710; // type:func
 InputMouse_Finalise__Fv = 0x002f8740; // type:func
+_vt$17InputMouse_Device = 0x00446d38;
 InputEvent_InternalInitialise__Fv = 0x002f9528; // type:func
 InputEvent_Initialise__Fv = 0x002f9590; // type:func
 InputDevice_InternalInitialise__Fv = 0x002fb878; // type:func
@@ -608,13 +610,22 @@ __16ResourceGeneric = 0x00275328;
 _$_16Resource_Generic = 0x002753e0; // type:func
 
 // InpJoys1.cpp
+InputJoystick1_InternalInitialise__Fv = 0x002F9190; // type:func
+InputJoystick1_InternalFinalise__Fv = 0x002f91d8; // type:func
 InputJoystick1_Initialise__Fv = 0x002f9248; // type:func
 InputJoystick1_Finalise__Fv = 0x002f9278; // type:func
+func_002F9018 = 0x002f9018; // type:func
+func_002F93C0 = 0x002f93c0; // type:func
+func_002F9400 = 0x002f9400; // type:func
+
 
 // InpJoy5.cpp
 InputJoy5_InternalInitialise__Fv = 0x002f9408; // type:func
-
-InpJoy5_Initialise__Fv = 0x002f9458; // type:func
+InputJoy5_InternalFinalise__Fv = 0x002F9450; // type:func
+InputJoy5_Initialise__Fv = 0x002f9458; // type:func
+InputJoy5_Finalise__Fv = 0x002F9488; // type:func
+func_002F94E0 = 0x002F94E0; // type:func
+func_002F9520 = 0x002F9520; // type:func
 
 _vt$11InputCD_PS2 = 0x00447228;
 
@@ -652,6 +663,11 @@ _6Status$m_errorString = 0x0049F3B8;
 _vt$6Widget = 0x00436fd0;
 
 strlen = 0x003374B0; // type:func
+
+// Inpdev.cpp
+func_002FBCA0 = 0x002fbca0; // type:func
+func_002FBCA8 = 0x002fbca8; // type:func
+
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8

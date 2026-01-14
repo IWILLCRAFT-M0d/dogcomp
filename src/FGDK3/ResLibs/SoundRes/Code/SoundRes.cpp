@@ -2,7 +2,7 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA70); /* return "Sound"; */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_InternalInitialise__Fv);
 
@@ -12,9 +12,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_In
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BB58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BB58); /* load */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BDB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BDB0); /* unload */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", _vt$15Sound_Resources);
 

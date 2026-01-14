@@ -18,8 +18,8 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", __tf22DogsTaleLand_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F408);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F408); /* return "DogsTaleLand"; */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F418);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F418); /* return "DogsTaleLand"; */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", __tft8Resource1Z14Landscape_Land);

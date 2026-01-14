@@ -32,7 +32,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8600);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8648);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8688);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Initialise__Fv);
 
@@ -43,11 +43,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Fina
 int D_00453574;
 void func_002F8760() {
     SuspendThread(D_00453574);
-}
+};
 
 void func_002F8788() {
     ResumeThread(D_00453574);
-}
+};
 
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8760);
@@ -56,7 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8788);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F87B0); /* InputMouse_Device::~InputMouse_Device */
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", D_00446D38);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", _vt$17InputMouse_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", __tf17InputMouse_Device);
 

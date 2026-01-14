@@ -9,6 +9,7 @@
 #include "FGDK3/Playstation2/InpKeybd.h"
 
 Status InputMouse_InternalInitialise(void);
+void InputMouse_InternalFinalise(void);
 
 #ifdef __cplusplus
 extern "C" {
