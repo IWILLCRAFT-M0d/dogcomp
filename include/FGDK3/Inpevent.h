@@ -3,7 +3,7 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-//timsrv header goes here
+#include "FGDK3/Playstation2/TimSrv.h"
 #include "FGDK3/Inpdev.h"
 #include "FGDK3/ThrowCat.h"
 

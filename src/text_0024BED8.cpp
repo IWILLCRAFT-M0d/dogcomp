@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C388);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C3F0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00433058);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00433058); /* "Framework" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C420);
 

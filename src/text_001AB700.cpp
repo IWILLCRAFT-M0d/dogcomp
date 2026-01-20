@@ -153,7 +153,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD110);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD118);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAF80);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAF80); /* "Creature" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD138);
 
@@ -169,13 +169,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD1D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD298);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAFD8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", _vt$18Creature_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf18Creature_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD308);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD308); /* return "Creature"; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD318);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD318); /* return "Creature"; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tft8Resource1Z24Creature_TypeDescription);
 
@@ -369,7 +369,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B0378);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B03A0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB768);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB768); /* "13GenericObject" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf9Element3D);
 
@@ -379,7 +379,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB788);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB7B8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB7C8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB7C8); /* "t9Interface1Z11Location_IF" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B0548);
 
@@ -479,7 +479,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B2658);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B2678);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBB38);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBB38); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBB60);
 
@@ -487,15 +487,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBB90);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBC78);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCA0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCA0); /* "Debug Stats" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCB0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCB0); /* "Debug Stats compositor" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCC8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCC8); /* "Nederlands" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCD8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCE8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCE8); /* "Italiano" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBCF8);
 
@@ -503,15 +503,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD08);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD38);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD68);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD68); /* "portugue" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD78);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD78); /* "norwegia" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DBD88);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B2768);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DCE28);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DCE28); /* "c:/coding/dogs/Code/Common/Game.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001B6698);
 
@@ -651,9 +651,9 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E10D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E10E8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E1100);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E1100); /* "LGSkiResortCafeSkiSlope" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E1118);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E1118); /* "LGTownStationPark" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E1130);
 
@@ -1191,7 +1191,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D91B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9228);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D95B0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D95B0); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D95B8);
 
@@ -1223,7 +1223,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf16LoadSavedGameReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D99F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9A50);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9A50); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9A58);
 
@@ -1231,7 +1231,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf14ChangeLevelReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9AE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9B20);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9B20); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9B28);
 
@@ -1239,7 +1239,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf15StartNewGameReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9BB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9BF0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9BF0); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9BF8);
 
@@ -1263,7 +1263,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9E08);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9E78);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9FB0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9FB0); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9FB8);
 
@@ -1301,13 +1301,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA338);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_InternalInitialise__Fv);
 
-void func_001DA3E8(void) {
+void Gameutil_InternalFinalise() {
 	return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA420);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Gameutil_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA440);
 
@@ -1513,6 +1513,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E5240);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E5270);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DFBB0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DFBB0); /* landscape_land::render */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E53A0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E53A0); /* "Creature type not found, DTL may define a creature of a type which is not in this overlay" */

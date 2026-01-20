@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FE08);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00320008);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00320300);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceMpegDemuxPss);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00320320);
 
@@ -32,7 +32,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceMpegDelete);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceMpegAddBs);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00320E90);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sceMpegGetPicture);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00320ED8);
 
@@ -104,7 +104,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003217B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00321818);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003218E0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003218E0); /* libmpeg ErrMessage */
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003218F0);
 
@@ -562,7 +562,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", scePadInit);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0032CFE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0032D088);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", scePadEnd);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", scePadPortOpen);
 
@@ -574,7 +574,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0032D408);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", scePadRead);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0032D4D8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", scePadGetState);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0032D550);
 
@@ -772,19 +772,19 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003308E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330930);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330A08);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330A08); /* cosf */
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330AF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330BD8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330BD8); /* sinf */
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330CC8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", tanf);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0031FC50", D_0044A9C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330D50);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330E50);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330E50); /* asinf */
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00330F50);
 
@@ -796,7 +796,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003311F0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0031FC50", D_0044AA18);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00331330);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00331330); /* powf */
 
 INCLUDE_RODATA("asm/nonmatchings/text_0031FC50", D_0044AA28);
 
@@ -876,7 +876,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0031FC50", D_0044B080);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00334728);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003349D0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", fabsf);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003349F0);
 
@@ -942,9 +942,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335CF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335D00);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335D40);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", printf);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335D90);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335D90); /* qsort */
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003367B8);
 
@@ -988,31 +988,31 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336D80);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sprintf);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336E58);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336E58); /* eofread */
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336E60);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", sscanf);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336EE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00336F9C);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strcat);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003370C8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strchr);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337258);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strcmp);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0033739C);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strcpy);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strlen);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003375E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003376C8);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strncmp);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337880);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strncpy);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337A40);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337A40); /* strrchr */
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337A90);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", strstr);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00337B00);
 
@@ -1276,7 +1276,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00340F40);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00340F50);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00340F60);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", RemoveIntcHandler);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00340F70);
 
@@ -1310,7 +1310,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341050);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341060);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341070);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", DeleteThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341080);
 
@@ -1318,7 +1318,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341090);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410B0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", TerminateThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410C0);
 
@@ -1374,7 +1374,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341250);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341260);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341270);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", DeleteSema);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341280);
 
@@ -1562,7 +1562,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341D18);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341D30);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341D40);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", DisableIntc);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341DA8);
 

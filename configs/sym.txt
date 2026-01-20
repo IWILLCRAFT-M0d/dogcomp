@@ -14,8 +14,10 @@ entry = 0x00100008; // type:func
 main = 0x001e5870; // type:func
 // Engine
 SimObj_InternalInitialise__Fv = 0x00161068; // type:func
+SimObj_InternalFinalise__Fv = 0x001610b0; // type:func
 SimObj_Initialise__Fv = 0x001610b8; // type:func
 WorldObj_InternalInitialise__Fv = 0x00181948; // type:func
+WorldObj_InternalFinalise__Fv = 0x00181990; // type:func
 WorldObj_Initialise__Fv = 0x00181998; // type:func
 Break__7Console = 0x001a3c08; // type:func
 Parse__7Console = 0x001a8e98; // type:func
@@ -24,14 +26,17 @@ RenderActorName__7Console = 0x001a9210; // type:func
 RenderHoldingPoints__7Console = 0x001a9228; // type:func
 RenderCarryHandles__7Console = 0x001a9240; // type:func
 Quit__7Console = 0x001a9258; // type:func
+// Gameutil.cpp
 Gameutil_InternalInitialise__Fv = 0x001da3a0; // type:func
+Gameutil_InternalFinalise__Fv = 0x001da3e8; // type:func
 Gameutil_Initialise__Fv = 0x001da3f0; // type:func
+Gameutil_Finalise__Fv = 0x001da420; // type:func
+
 Game_InternalInitialise__Fv = 0x001d5d80; // type:func
 Game_InternalFinalise__Fv = 0x001d5e08; // type:func
 Game_Initialise__Fv = 0x001d5e40; // type:func
 Game_Finalise__Fv = 0x001D5E70; // type:func
-LevelRes_InternalInitialise__Fv = 0x001e5648; // type:func
-LevelRes_Initialise__Fv = 0x001e5698; // type:func
+
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
 Landscape_InternalFinalise__Fv = 0x001E31D8; // type:func
 Landscape_Initialise__Fv = 0x001e31e0; // type:func
@@ -82,6 +87,7 @@ RunPath_InternalInitialise__Fv = 0x00272f50; // type:func
 RunPath_Initialise__Fv = 0x00272fa0; // type:func
 RunPath_Finalise__Fv = 0x00272fd0; // type:func
 NavGraphRes_InternalInitialise__Fv = 0x00279880; // type:func
+NavGraphRes_InternalFinalise__Fv = 0x002798c8; // type:func
 MusicRes_InternalInitialise__Fv = 0x0027ea98; // type:func
 MusicRes_Initialise__Fv = 0x0027eae8; // type:func
 Music_InternalInitialise__Fv = 0x0027ed98; // type:func
@@ -96,6 +102,7 @@ GE_InternalFinalise__Fv = 0x002ca810; // type:func
 GE_Initialise__Fv = 0x002ca900; // type:func
 GE_Finalise__Fv = 0x002ca930; // type:func
 FontRes_InternalInitialise__Fv = 0x002d69b8; // type:func
+FontRes_InternalFinalise__Fv = 0x002d6a00; // type:func
 FontRes_Initialise__Fv = 0x002d6a08; // type:func
 InputUtil_InternalInitialise__Fv = 0x002f72c0; // type:func
 InputUtil_InternalFinalise__Fv = 0x002f74d0; // type:func
@@ -201,6 +208,7 @@ __tf12ConsoleLayer = 0x001AB658;
 __tf9Container = 0x001acf60;
 __tf13BasketballNet = 0x001acfd8;
 __tf4Pram = 0x001ad078;
+_vt$18Creature_Resources = 0x003dafd8;
 __tf18Creature_Resources = 0x001ad2b8;
 __tft8Resource1Z24Creature_TypeDescription = 0x001ad328;
 __tf9DogScript = 0x001af348;
@@ -271,6 +279,7 @@ __tf11Music_Track = 0x00285DC0;
 __tf20Music_PS2Performance = 0x00285ff8;
 __tf13Music_Channel = 0x00288340;
 __tf12CreateAction = 0x00288440;
+_vt$16GE_TextureTarget = 0x0043ee88;
 __tf16GE_TextureTarget = 0x0029a6a0;
 __tf14GE_TexturePage = 0x0029a758;
 __tf9GE_Target = 0x002a19e8;
@@ -311,7 +320,15 @@ __tf17Controller_Device = 0x002FCF00;
 __tf14FileSystemDisc = 0x002fe988;
 __tf10FileSystem = 0x002fe9e0;
 __tf13StorageDevice = 0x002fea38;
+_vt$28StorageDevice_MemCardUpdater = 0x004475c0;
+_vt$16FileFind_MemCard = 0x004475e0;
+_vt$12File_MemCard = 0x00447618;
+_vt$21StorageDevice_MemCard = 0x004476a8;
+__tf21StorageDevice_MemCard = 0x00301ac8;
+_vt$22FileSystemDisc_MemCard = 0x00447668;
 __tf12File_MemCard = 0x00301ba8;
+__tf22FileSystemDisc_MemCard = 0x00301b38;
+__tf16FileFind_MemCard = 0x00301c68;
 __tf12StringBuffer = 0x0030b630;
 __tf19ShapeParams_Dynamic = 0x0030b828;
 __tf24ShapeDataNamedBoneWriter = 0x0030d030;
@@ -322,7 +339,16 @@ __tf14FileSystem_Zip = 0x00313560;
 __tf18FileSystemDisc_Zip = 0x003135d0;
 __tf21FileAccess_Zip_Stored = 0x00313640;
 __tf23FileAccess_Zip_Deflated = 0x003136b0;
+_vt$18FileFindAccess_Zip = 0x004480b8;
+_vt$23FileAccess_Zip_Deflated = 0x004480f0;
+_vt$21FileAccess_Zip_Stored = 0x00448140;
+_vt$18FileSystemDisc_Zip = 0x00448190;
+_vt$14FileSystem_Zip = 0x004481d0;
 __tf18FileFindAccess_Zip = 0x003137b0;
+_vt$29FileFindAccess_FileDescriptor = 0x00448370;
+_vt$19File_FileDescriptor = 0x004483a8;
+
+_vt$29FileSystemDisc_FileDescriptor = 0x004483f8;
 __tf29FileSystemDisc_FileDescriptor = 0x003153d8;
 __tf19File_FileDescriptor = 0x00315458;
 __tf29FileFindAccess_FileDescriptor = 0x00315540;
@@ -343,9 +369,25 @@ __tf17Texture_Resources = 0x0031fb90;
 __tft8Resource1Z10GE_Texture = 0x0031fc00;
 
 // Sony SDK
+printf = 0x00335D40; // type:func
+tanf = 0x00330CC8; // type:func
+fabsf = 0x003349D0; // type:func
+sscanf = 0x00336E60; // type:func
+strcat = 0x00336F9C; // type:func
+strchr = 0x003370C8; // type:func
+strcmp = 0x00337258; // type:func
+strcpy = 0x0033739c; // type:func
+strncmp = 0x003376C8; // type:func
+strncpy = 0x00337880; // type:func
+strstr = 0x00337A90; // type:func
+DisableIntc = 0x00341d40; // type:func
+RemoveIntcHandler = 0x00340f60; // type:func
+DeleteThread = 0x00341070; // type:func
+TerminateThread = 0x003410b0; // type:func
 GetThreadId = 0x00341150; // type:func
 SuspendThread = 0x003411D0; // type:func
 ResumeThread = 0x003411f0; // type:func
+DeleteSema = 0x00341270; // type:func
 InitThread = 0x00342038; // type:func
 __builtin_new = 0x00247C00; // type:func
 sceCdLayerSearchFile = 0x00328638; // type:func
@@ -497,9 +539,11 @@ sceDevVu0Reset = 0x0032bca8; // type:func
 
 // libpad
 scePadInit = 0x0032cea8; // type:func
+scePadEnd = 0x0032d088; // type:func
 scePadPortOpen = 0x0032d108; // type:func
 scePadPortClose = 0x0032d2f0; // type:func
 scePadSetWarningLevel = 0x0032e0c0; // type:func
+scePadGetState = 0x0032d4d8; // type:func
 
 // libdma
 sceDmaPutEnv = 0x0032b6a8; // type:func
@@ -526,10 +570,12 @@ sceGsSyncV = 0x0032a4a8; // type:func
 sceGsExecStoreImage = 0x0032a680; // type:func
 
 // libmpeg
+sceMpegDemuxPss = 0x00320300; // type:func
 sceMpegInit = 0x00320b88; // type:func
 sceMpegCreate = 0x00320c38; // type:func
 sceMpegDelete = 0x00320e48; // type:func
 sceMpegAddBs = 0x00320e50; // type:func
+sceMpegGetPicture = 0x00320e90; // type:func
 
 // Globals
 _vt$22Music_MenuRegisterable = 0x0043CCA0;
@@ -538,8 +584,6 @@ _vt$22Music_MenuRegisterable = 0x0043CCA0;
 
 
 _vt$11WorldObject = 0x003d15b0;
-_vt$17Player_GrowlTimer = 0x003e9f88;
-__tf17Player_GrowlTimer = 0x001f7378;
 _vt$14Music_PS2Piece = 0x0043CD28;
 _vt$14Music_PS2Track = 0x0043CDA8;
 _vt$17Music_Performance = 0x0043CDC8;
@@ -628,7 +672,9 @@ func_002F94E0 = 0x002F94E0; // type:func
 func_002F9520 = 0x002F9520; // type:func
 
 _vt$11InputCD_PS2 = 0x00447228;
-
+_vt$13StorageDevice = 0x00447390;
+_vt$10FileSystem = 0x00447408;
+_vt$14FileSystemDisc = 0x00447420;
 // ScriptThread.cpp
 __tf32ScriptThread_BroadcastEnumerator = 0x0031c820;
 _vt$32ScriptThread_BroadcastEnumerator = 0x004491a0;
@@ -668,6 +714,98 @@ strlen = 0x003374B0; // type:func
 func_002FBCA0 = 0x002fbca0; // type:func
 func_002FBCA8 = 0x002fbca8; // type:func
 
+_vt$18NavGraph_Resources = 0x0043c808;
+_vt$28NavGraphCellFromPosSphereHit = 0x0043c918;
+__tf28NavGraphCellFromPosSphereHit = 0x0027e9b8;
+
+_vt$23GE_LoadedPS2PrimIndices = 0x0043f548;
+
+_vt$12GE_GSPageMgr = 0x0043f9f0;
+__tf12GE_GSPageMgr = 0x002b1b30;
+
+// zlib
+inflate = 0x00316160; // type:func
+inflate_blocks = 0x00316a50; // type:func
+inflate_trees_bits = 0x00318038; // type:func
+inflate_trees_dynamic = 0x00318138; // type:func
+
+_vt$18FileSystemDiscRoot = 0x00447498;
+__tf18FileSystemDiscRoot = 0x002ff870;
+
+__tf28StorageDevice_MemCardUpdater = 0x00301d28;
+
+
+__tf19PlayerMoveAnimation = 0x001f8078;
+__tf19PlayerLookAnimation = 0x001f80e8;
+_vt$19PlayerLookAnimation = 0x003ea1e0;
+_vt$19PlayerMoveAnimation = 0x003ea240;
+
+_vt$20BackgroundSaveThread = 0x0040c328;
+_vt$Q215SavegameManager14MyInputBinding = 0x0040c348;
+__tfQ215SaveGameManager14MyInputBinding = 0x00203090;
+__tf20BackgroundSaveThread = 0x002030e0;
+_vt$11YDRRenderer = 0x003bedc8;
+__tft11GE_DMAPktRc1i69 = 0x002c3108;
+__tf18GE_DMAPktRcGeneric = 0x002c3180;
+
+// WalkerComponents.cpp
+__tf19WalkingBobAnimation = 0x002e5e70;
+__tf23AnimVarWalkingAnimation = 0x002e5f90;
+__tf23AnimPosWalkingAnimation = 0x002e6000;
+__tf28AnimPosWorldWalkingAnimation = 0x002e6070;
+__tf31AnimPosWorldAFSWalkingAnimation = 0x002e60e0;
+__tf19AnimPosLegAnimation = 0x002e6150;
+__tf24AnimPosWorldLegAnimation = 0x002e61c0;
+__tf27AnimPosWorldAFSLegAnimation = 0x002e6230;
+__tf22AnimPosAmblerAnimation = 0x002e62a0;
+__tf27AnimPosWorldAmblerAnimation = 0x002e6310;
+__tf30AnimPosWorldAFSAmblerAnimation = 0x002e6380;
+__tf14LegIKAnimation = 0x002e63d0;
+__tf21IKSingleStepAnimation = 0x002e6420;
+__tf17IKAmblerAnimation = 0x002e6470;
+__tf17TurnFlexAnimation = 0x002e64c0;
+
+_vt$1717TurnFlexAnimation = 0x00444848;
+_vt$17IKAmblerAnimation = 0x004448a8;
+_vt$21IKSingleStepAnimation = 0x00444908;
+_vt$14LegIKAnimation = 0x00444968;
+_vt$30AnimPosWorldAFSAmblerAnimation = 0x004449c8;
+_vt$27AnimPosWorldAmblerAnimation = 0x00444a28;
+_vt$22AnimPosAmblerAnimation = 0x00444a88;
+_vt$27AnimPosWorldAFSLegAnimation = 0x00444ae8;
+_vt$24AnimPosWorldLegAnimation = 0x00444b48;
+_vt$19AnimPosLegAnimation = 0x00444ba8;
+_vt$31AnimPosWorldAFSWalkingAnimation = 0x00444c08;
+_vt$28AnimPosWorldWalkingAnimation = 0x00444c68;
+_vt$23AnimPosWalkingAnimation = 0x00444cc8;
+_vt$23AnimVarWalkingAnimation = 0x00444d28;
+_vt$22WalkingParamsAnimation = 0x00444d88;
+_vt$19WalkingBobAnimation = 0x00444de8;
+
+
+__tf39VehicleNavDirectionalBackwardsAnimation = 0x0018c5f8;
+
+ __tf12PlayingLayer = 0x001f8ee0;
+
+ // Player.cpp
+_vt$17Player_GrowlTimer = 0x003e9f88;
+__tf17Player_GrowlTimer = 0x001f7378;
+
+__tf19Music_ObjectService = 0x001e7260;
+_vt$19Music_ObjectService = 0x003e5d90;
+
+__tf4Mien = 0x001e6f90;
+_vt$4Mien = 0x003e5b60;
+
+_vt$23Music_GameObjectService = 0x003e5d30;
+__tf23Music_GameObjectService = 0x001e7158;
+_vt$16ObjectNewMessage = 0x003e5498;
+
+// Levelres.cpp
+LevelRes_InternalInitialise__Fv = 0x001e5648; // type:func
+LevelRes_InternalFinalise__Fv = 0x001e5690; // type:func
+LevelRes_Initialise__Fv = 0x001e5698; // type:func
+LevelRes_Finalise__Fv = 0x001e56c8; // type:func
 
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8

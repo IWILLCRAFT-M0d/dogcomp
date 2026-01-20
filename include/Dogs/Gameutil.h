@@ -7,5 +7,6 @@
 #include "FGDK3/Inpevent.h"
 
 Status Gameutil_InternalInitialise(void);
+void Gameutil_InternalFinalise(void);
 
 #endif

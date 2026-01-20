@@ -3,6 +3,8 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "FGDK3/Playstation2/Controller.h"
+
 Status InputJoy5_InternalInitialise(void);
 void InputJoy5_InternalFinalise(void);
 Status InputJoy5_Initialise(void);

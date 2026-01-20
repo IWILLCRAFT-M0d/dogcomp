@@ -514,131 +514,131 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2608);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4BC8);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4BD0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4BD0); /* "Possible actors:" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2BA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2BA8); /* Console::Help */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C18); /* Console::Time */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2D28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2D28); /* Console::ListActors */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C70);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C88);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A32A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A32A0); /* Console::Vars */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A34E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A34E0); /* Console::Set */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4CD8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4CD8); /* "Invalid value" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3738);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3738); /* Console::StopwatchSet */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A37C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A37C0); /* Console::SetDogStatus */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4D08);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4D08); /* "Actor not found in this level" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3998);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3998); /* Console::ToggleDebugConsole */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A39F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3A88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3A88); /* Console::Threads */
 
 void Console::Break() {
 	Exit(0);
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3C28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3C28); /* Console::DebugMessage */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3E10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3E10); /* Console::Lines */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3E70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3E70); /* Console::Cells */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3FE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3FE0); /* Console::SetCloth */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4570);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4570); /* Console::Verbose */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D50F8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D50F8); /* "Parameter must be ON or OFF" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5118);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5118); /* "Verbose variable listing toggled" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4658);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4658); /* Console::ColourLoD */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A46E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A46E0); /* Console::TextureLoD */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4768);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4768); /* Console::TestDoggyDoAnims */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5160);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5160); /* "1st Actor arg not found in this level" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4808);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4808); /* Console::RelocateToActor */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4A28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4A28); /* Console::RelocateToCoord */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51B0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51B0); /* "Invalid X coordinate" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51C8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51C8); /* "Invalid Y coordinate" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51E0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D51E0); /* "Invalid Z coordinate" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4BE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4BE8); /* Console::RelocateToPosFacing */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4E90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4E90); /* Console::RelCam */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4FF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4FF0); /* Console::Camera */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A52F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A52F0); /* Console::Camfol */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5398);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5398); /* Console::Kill */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5400);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5400); /* Console::Suspend */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5460);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5460); /* Console::Resume */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5328);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5328); /* "Invalid thread ID" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A54C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A54C0); /* Console::Map */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A55A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A55A8); /* Console::Alias */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A56B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A56B0); /* Console::Ambient */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D53B0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D53B0); /* "need 3 numbers between 0.0 and 1.0" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A58A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A58A8); /* Console::Save */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5408);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5408); /* "Game slot not specified" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5420);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5420); /* "Card slot not specified" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5438);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5438); /* "Completed successfully" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5450);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5450); /* "Unknown error occurred" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5980);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5980); /* Console::SlowMo */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5AB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5AB0); /* Console::Speed */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5C38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5C38); /* Console::AngVel */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5DC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5DC0); /* Console::Load */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D55E0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D55E0); /* "Some kind of error occurred" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", jtbl_003D5600);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5F08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5F08); /* Console::Mien */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D56B8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D56B8); /* "Expecting a slot number" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6178);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6178); /* Console::SetCardSlot */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6208);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6208); /* Console::SetGameSlot */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6298);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6298); /* Console::SetAllAutoCamPos */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D57E0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D57E0); /* "Invalid actor2 name" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D57F8);
 
@@ -652,51 +652,51 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5860);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5870);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6630);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6630); /* Console::SetOptimalCutPos */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A68D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A68D8); /* Console::IsAdvance */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6A70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6A70); /* Console::IsMediaReady */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6B48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6B48); /* Console::IsRender */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6C88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6C88); /* Console::IsShadowed */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6DC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6DC8); /* Console::DirMemCard */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7200);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7200); /* Console::Dist */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7438);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7438); /* Console::FormatMemCard */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7498);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7498); /* Console::UnformatMemCard */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A74F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A74F8); /* Console::Pos */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A76A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A76A0); /* Console::Orient */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7970);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7970); /* Console::ActorName */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A79E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A79E0); /* Console::Goto */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7CC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7CC8); /* Console::IK */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7DE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7DE8); /* Console::Isolate */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7E48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7E48); /* Console::Unisolate */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5B90);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5B90); /* "No such actor" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7F38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7F38); /* Console::Freeze */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5BB0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5BB0); /* "Fog enabled" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5BC0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5BC0); /* "Fog disabled" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8050); /* Console::Fog */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8150);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8150); /* Console::FogDensity */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A82E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A82E8); /* Console::FogOnset */
 
 // `-snas` Required
 #ifdef NON_MATCHING
@@ -710,21 +710,21 @@ void Console::FogSharpness(void* arg0) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", FogSharpness__7ConsolePv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8358);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8358); /* Console::FogColour */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A83C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A83C8); /* Console::Remove */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8570);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8570); /* Console::Unremove */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A86A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A86A0); /* Console::Maroon */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8780);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8780); /* Console::Unmaroon */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5D20);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8928);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8928); /* Console::Holding */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8D90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8D90); /* Console::Unfreeze */
 
 void Console::Parse() {
     return;
@@ -734,15 +734,15 @@ void Console::Patch() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8EA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8EA8); /* Console::ProfileScript */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8F20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A8F20); /* Console::Bones */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9018);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9018); /* Console::RenderOrient */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D6080);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D6080); /* "Orientation rendering enabled" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D60A0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D60A0); /* "Orientation rendering disabled" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9110);
 
@@ -770,26 +770,26 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", RenderCarryHandles__7Console);
 #endif
 
 void Console::Quit() {
-    func_002963D0();
+    func_002963D0(); /* Main_Terminate */
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9278);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9278); /* Console::Debug */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9388);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9388); /* Console::DepthOfField */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A95F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A95F8); /* Console::Diffuse */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A97F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A97F0); /* Console::RenderHitSpheres */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A98E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A98E8); /* Console::UnlockBegMoves */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A99F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A99F8); /* Console::UnlockClues */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9A20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9A20); /* Console::MoveForward */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9BB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9BB0); /* Console::SetScreenFader */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9C70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9C70); /* Console::SetGameTime */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9CD0);
 
@@ -813,7 +813,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAB00);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAC78);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AADF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AADF8); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAE00);
 

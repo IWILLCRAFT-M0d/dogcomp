@@ -6,6 +6,7 @@
 #include "FGDK3/ThrowCat.h"
 
 Status LevelRes_InternalInitialise(void);
+void LevelRes_InternalFinalise(void);
 
 #endif
 

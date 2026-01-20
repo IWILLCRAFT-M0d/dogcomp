@@ -74,15 +74,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003134C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00313528);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_004480B8);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$18FileFindAccess_Zip);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_004480F0);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$23FileAccess_Zip_Deflated);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448140);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$21FileAccess_Zip_Stored);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448190);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$18FileSystemDisc_Zip);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_004481D0);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$14FileSystem_Zip);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf14FileSystem_Zip);
 
@@ -92,7 +92,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf21FileAccess_Zip_Stored);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf23FileAccess_Zip_Deflated);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00313720);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00313720); /* FileFindAccess_Zip::~FileFindAccess_Zip */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf18FileFindAccess_Zip);
 
@@ -192,13 +192,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315330);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315388);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448330);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448330); /* "c:/coding/fgdk3/Code/Playstation2/File_FileDescriptor.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448370);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$29FileFindAccess_FileDescriptor);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_004483A8);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$19File_FileDescriptor);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_004483F8);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", _vt$29FileSystemDisc_FileDescriptor);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf29FileSystemDisc_FileDescriptor);
 

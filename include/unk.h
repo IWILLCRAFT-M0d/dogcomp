@@ -84,7 +84,6 @@ void func_001C8120(void);
 void func_001D4650(void);
 void func_001D6A10(void);
 void func_001DA1B8(void);
-void func_001DA3E8(void);
 void func_001DD518(void);
 void func_001DEF10(void);
 
