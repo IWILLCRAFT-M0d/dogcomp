@@ -1247,15 +1247,25 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B20);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B40);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B60); /* return 1; */
+int func_00168B60(void) {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B68); /* return; */
+void func_00168B68(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B70); /* return; */
+void func_00168B70(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B78); /* return; */
+void func_00168B78(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B80); /* return; */
+void func_00168B80(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168B88);
 
@@ -1271,9 +1281,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C40);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C50); /* return 1; */
+int func_00168C50(void) {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C58); /* return 1; */
+int func_00168C58(void) {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168C60);
 
@@ -1605,7 +1619,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172870);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172890);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001729D0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf5Smell);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172A28);
 
@@ -2514,9 +2528,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001887A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001887E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188820);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tft9Interface1Z17WalkerProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188860);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tft9Interface1Z20WalkingFootRayHit_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001888A0);
 

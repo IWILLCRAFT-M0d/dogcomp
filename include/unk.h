@@ -193,6 +193,15 @@ void func_00275FB0(void);
 void func_0027C4E8(void);
 
 // text_00150120
+
+int func_00168B60(void);
+void func_00168B68(void);
+void func_00168B70(void);
+void func_00168B78(void);
+void func_00168B80(void);
+int func_00168C50(void);
+int func_00168C58(void);
+
 int func_00188400(void);
 void func_00188408(void);
 int func_00188450(void);
@@ -214,6 +223,19 @@ int func_0018D860(void);
 
 // text_00288B30
 int func_002C6498(void);
+
+// text_0024BED8
+void func_00262F70(void);
+void func_00262F78(void);
+void func_00262F80(void);
+void func_00262F88(void);
+void func_00262F90(void);
+int func_00263640(void);
+
+// text_001AB700
+int func_001ACFC0(void);
+
+void func_00247D28(void*);
 #ifdef __cplusplus
 }
 #endif

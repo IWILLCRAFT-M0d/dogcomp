@@ -916,7 +916,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00334DF8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00334FC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00334FF0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", free);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00335000);
 

@@ -41,11 +41,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC350);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC3A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC490);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC490); /* Pram::~Pram */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003D6AA0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003D6C20);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003D6C20); /* "Slidable: Out of memory ..." */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC560);
 
@@ -133,7 +133,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf9Container);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ACFB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ACFC0);
+int func_001ACFC0(void) {
+	return 0;
+}
 
 void func_001ACFC8(void) {
 	return;
@@ -1187,7 +1189,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E3398);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E33C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D91B8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf13SwitchViewReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9228);
 

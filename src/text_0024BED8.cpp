@@ -1,5 +1,5 @@
 #include "common.h"
-
+#include "unk.h"
 #include "debug.h"
 
 #include "FGDK3/Playstation2/Thread.h"
@@ -1460,17 +1460,28 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262DD0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262EF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F30);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf21PointerMessageHandler);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F70);
+void func_00262F70(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F78);
+void func_00262F78(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F80);
+void func_00262F80(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F88);
+void func_00262F88(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F90);
+void func_00262F90(void) {
+    return;
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262F98);
 
@@ -1554,7 +1565,9 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004389A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002635F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263640);
+int func_00263640(void) {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263648);
 

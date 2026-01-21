@@ -320,7 +320,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00310A98);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00310AE0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447FE8);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", _vt$14MeshTransforms);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf14MeshTransforms);
 

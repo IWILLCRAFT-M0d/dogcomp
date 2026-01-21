@@ -10,4 +10,12 @@ void TextRes_InternalFinalise(void);
 Status TextRes_Initialise(void);
 void TextRes_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+void func_0026C4E0(void*, void*);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

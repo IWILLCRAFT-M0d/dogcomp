@@ -5,6 +5,7 @@
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Playstation2/SoundManager.h"
 #include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/NavGraphRes.h"
 #include "unk.h"
 
 #ifdef NON_MATCHING
@@ -913,7 +914,9 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043C7A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", NavGraphRes_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", NavGraphRes_InternalFinalise__Fv); /* return; */
+void NavGraphRes_InternalFinalise() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002798D0);
 

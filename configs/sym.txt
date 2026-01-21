@@ -385,6 +385,7 @@ ResumeThread = 0x003411f0; // type:func
 DeleteSema = 0x00341270; // type:func
 InitThread = 0x00342038; // type:func
 __builtin_new = 0x00247C00; // type:func
+
 sceCdLayerSearchFile = 0x00328638; // type:func
 sceCdSearchFile = 0x00328950; // type:func
 sceCdRead = 0x00329390; // type:func
@@ -837,6 +838,31 @@ _vt$33AnimatedObject_ComplexHitReceiver = 0x00390228;
 __tf17AnimatedObject_IF = 0x00103e68;
 _vt$17AnimatedObject_IF = 0x00395a80;
 __tf7Boulder = 0x00109e80;
+
+__tf10NullAccess = 0x00309128;
+__tf8FileFindAccess_Nul = 0x003091e8;
+_vt$8FileFindAccess_Nul = 0x00447b70;
+_vt$10NullAccess = 0x00447ba8;
+
+_vt$14MeshTransforms = 0x00447fe8;
+_vt$Q24File11OpenWatcher = 0x00447b18;
+__tfQ24File11OpenWatcher = 0x00308078;
+__tf12File_MemRead = 0x003080d0;
+
+_vt$12File_MemRead = 0x00447ac8;
+
+__tf21PointerMessageHandler = 0x00262f30;
+
+__tft9Interface1Z17WalkerProvider_IF = 0x00188820;
+__tft9Interface1Z20WalkingFootRayHit_IF = 0x00188860;
+__tf5Smell = 0x001729d0;
+__tf13SwitchViewReq = 0x001d91b8;
+
+__tfQ224InputEvent_ValueInstance10LocalTimer = 0x002fb718;
+__tf25InputDevice_ChangeCatcher = 0x002FB788;
+__builtin_delete = 0x00247B88; // type:func
+__builtin_vec_new = 0x00247DA0; // type:func
+free = 0x00334FF0; // type:func
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8
 //Music_Piece::~Music_Piece(Music_Piece *this,uint param_2) = 0x00280538; // type:func
