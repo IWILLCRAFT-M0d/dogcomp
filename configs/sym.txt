@@ -68,9 +68,6 @@ TextRes_InternalInitialise__Fv = 0x0026c380; // type:func
 TextRes_InternalFinalise__Fv = 0x0026c3c8; // type:func
 TextRes_Initialise__Fv = 0x0026c3d0; // type:func
 TextRes_Finalise__Fv = 0x0026C400; // type:func
-sifManager_InternalInitialise__Fv = 0x0026fca8; // type:func
-sifManager_Initialise__Fv = 0x0026ff68; // type:func
-sifManager_Finalise__Fv = 0x0026ff98; // type:func
 StdMem_InternalInitialise__Fv = 0x0026c5c8; // type:func
 StdMem_Initialise__Fv = 0x0026c618; // type:func
 StdMem_Finalise__Fv = 0x0026c648; // type:func
@@ -83,9 +80,7 @@ Sound_InternalInitialise__Fv = 0x0026df68; // type:func
 Sound_InternalFinalise__Fv = 0x0026e2a0; // type:func
 Sound_Initialise__Fv = 0x0026e2c8; // type:func
 Sound_Finalise__Fv = 0x0026e2f8; // type:func
-RunPath_InternalInitialise__Fv = 0x00272f50; // type:func
-RunPath_Initialise__Fv = 0x00272fa0; // type:func
-RunPath_Finalise__Fv = 0x00272fd0; // type:func
+
 NavGraphRes_InternalInitialise__Fv = 0x00279880; // type:func
 NavGraphRes_InternalFinalise__Fv = 0x002798c8; // type:func
 MusicRes_InternalInitialise__Fv = 0x0027ea98; // type:func
@@ -807,6 +802,41 @@ LevelRes_InternalFinalise__Fv = 0x001e5690; // type:func
 LevelRes_Initialise__Fv = 0x001e5698; // type:func
 LevelRes_Finalise__Fv = 0x001e56c8; // type:func
 
+_vt$13ShapeInstance = 0x0043bdc8;
+
+// RunPath.cpp
+RunPath_InternalInitialise__Fv = 0x00272f50; // type:func
+RunPath_InternalFinalise__Fv = 0x00272f98; // type:func
+RunPath_Initialise__Fv = 0x00272fa0; // type:func
+RunPath_Finalise__Fv = 0x00272fd0; // type:func
+
+// sifManager.cpp
+sifManager_InternalInitialise__Fv = 0x0026fca8; // type:func
+sifManager_InternalFinalise__Fv = 0x0026ff60; // type:func
+sifManager_Initialise__Fv = 0x0026ff68; // type:func
+sifManager_Finalise__Fv = 0x0026ff98; // type:func
+
+__tf18PointsOfContactHit = 0x0019ecf0;
+__tf13BallBounceHit = 0x0019ed40;
+__tf9BounceHit = 0x0019ed90;
+_vt$9BounceHit = 0x003d4780;
+_vt$13BallBounceHit = 0x003d47a0;
+_vt$18PointsOfContactHit = 0x003d47c0;
+
+__tf8Selector = 0x00160fe0;
+// ParticleSystem.cpp
+__tf19Particle_PlotObject = 0x00149f10;
+_vt$19Particle_PlotObject = 0x003b02e8;
+
+__tf23PersonHitSizeCalculator = 0x0014cc10;
+__tf24PersonVehicleHitReceiver = 0x0014ccb8;
+_vt$24PersonVehicleHitReceiver = 0x003b1e48;
+_vt$23PersonHitSizeCalculator = 0x003b1e68;
+
+_vt$33AnimatedObject_ComplexHitReceiver = 0x00390228;
+__tf17AnimatedObject_IF = 0x00103e68;
+_vt$17AnimatedObject_IF = 0x00395a80;
+__tf7Boulder = 0x00109e80;
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8
 //Music_Piece::~Music_Piece(Music_Piece *this,uint param_2) = 0x00280538; // type:func

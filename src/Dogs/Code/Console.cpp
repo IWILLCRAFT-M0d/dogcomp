@@ -524,9 +524,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2D28); /* Console::ListActors */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C70);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C70); /* "Invalid actor name" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C88);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C88); /* "No script for actor" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A32A0); /* Console::Vars */
 
@@ -813,7 +813,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAB00);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAC78);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AADF8); /* return 0; */
+int func_001AADF8() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AAE00);
 

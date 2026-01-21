@@ -1,5 +1,5 @@
 #include "common.h"
-
+#include "unk.h"
 // inputCD
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD40); /* InputCD_PS2::InputCD_PS2*/
@@ -10,7 +10,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBE78);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEE8); /* return; */
+void func_002FBEE8(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEF0);
 

@@ -379,9 +379,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028DC18);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028DCA8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043E3B8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043E3B8); /* "SOUND_InitMultiChannelPitch not called\n" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043E3E0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043E3E0); /* "SPU channel %d out of range (must be 0-47\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028DD58);
 
@@ -2404,7 +2404,9 @@ void func_002C6490(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C6498); /* return 0; */
+int func_002C6498(void) {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C64A0);
 

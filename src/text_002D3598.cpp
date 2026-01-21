@@ -342,7 +342,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D76E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7710);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443B70);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443B70); /* "0123456789abcdefghijklmnopqrstuvwxyz" */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7738);
 
