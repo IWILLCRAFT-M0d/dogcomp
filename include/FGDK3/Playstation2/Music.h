@@ -4,8 +4,8 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "FGDK3/Playstation2/IOPMem.h"
-//sifManager header goes here
-//soundManager header goes here
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Playstation2/SoundManager.h"
 //Music_ObjectService header goes here
 #include "FGDK3/Playstation2/RunPath.h"
 //StdMem header goes here

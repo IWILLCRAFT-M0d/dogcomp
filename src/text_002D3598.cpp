@@ -345,7 +345,26 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7710);
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443B70); /* "0123456789abcdefghijklmnopqrstuvwxyz" */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7738);
-
+/*
+// getTarget
+char* func_002D7738(int arg0) {
+    switch (arg0) {
+    case 0:
+        //return &D_00452A28;
+        return "Windows";
+    case 1:
+        //return &D_00452A30;
+        return "PS2";
+    case 2:
+        //return &D_00452A38;
+        return "Xbox";
+    case 3:
+        return "GameCube";
+    default:
+        return "unknown_target";
+    }
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D77A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7808);

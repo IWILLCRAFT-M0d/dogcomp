@@ -266,7 +266,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002461A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002461C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002462A8);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", __pure_virtual);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_002462B0);
 
@@ -334,9 +334,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00247E48);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00247E88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00247EB0);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", __rtti_si);
 
-INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00247ED0);
+INCLUDE_ASM("asm/nonmatchings/text_002401D8", __rtti_user);
 
 INCLUDE_ASM("asm/nonmatchings/text_002401D8", func_00247EF0);
 

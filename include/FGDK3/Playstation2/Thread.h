@@ -40,6 +40,21 @@ class Status {
     virtual int PrepareReport(char*, int);
 };
 
+struct StdInit_ModuleDescription {
+    int unk0;
+    const void *unk4;
+};
+
+class StdInit_ClientBase {
+public:
+    int m_unk0;
+
+    void CheckError(Status);
+};
+
+Status Semaphore_Initialise();
+void Semaphore_Finalise();
+
 class Semaphore {
     public:
     class Implementation {
@@ -77,6 +92,7 @@ class Semaphore {
         return impl->Poll();
     }
 };
+
 
 
 Status Thread_InternalInitialise(void);

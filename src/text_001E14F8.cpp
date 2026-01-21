@@ -188,9 +188,20 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5EB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E60C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6428); /* Mien::Mien */
+//INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6428); /* Mien::Mien */
+Mien::Mien(){
+    this->unk0 = 3;
+    this->unk4 = -1;
+    this->unk8 = 0;
+    this->unkC = 0.5f;
+    this->unk10 = 0;
+    this->unk18 = 0;
+    this->unk1C = 0;
+    this->unk20 = 5.0f;
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6478); /* Mien::~Mien */
+}
+
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", _$_4Mien); /* Mien::~Mien */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E5900);
 
@@ -229,7 +240,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6FE0);
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6FE8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", _vt$4Mien);
-
+// beginning of MusicServices.cpp ?
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E6FF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E7078);

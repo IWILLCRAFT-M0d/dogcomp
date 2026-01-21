@@ -12,13 +12,20 @@ func_002C64A0 = 0x002C64A0; // size:0x204
 // Functions
 entry = 0x00100008; // type:func
 main = 0x001e5870; // type:func
+
 // Engine
+
+// SimObj.cpp
 SimObj_InternalInitialise__Fv = 0x00161068; // type:func
 SimObj_InternalFinalise__Fv = 0x001610b0; // type:func
 SimObj_Initialise__Fv = 0x001610b8; // type:func
+// WorldObj.cpp
 WorldObj_InternalInitialise__Fv = 0x00181948; // type:func
 WorldObj_InternalFinalise__Fv = 0x00181990; // type:func
 WorldObj_Initialise__Fv = 0x00181998; // type:func
+WorldObj_Finalise__Fv = 0x001819C8; // type:func
+
+
 Break__7Console = 0x001a3c08; // type:func
 Parse__7Console = 0x001a8e98; // type:func
 Patch__7Console = 0x001a8ea0; // type:func
@@ -31,7 +38,7 @@ Gameutil_InternalInitialise__Fv = 0x001da3a0; // type:func
 Gameutil_InternalFinalise__Fv = 0x001da3e8; // type:func
 Gameutil_Initialise__Fv = 0x001da3f0; // type:func
 Gameutil_Finalise__Fv = 0x001da420; // type:func
-
+// Game.cpp
 Game_InternalInitialise__Fv = 0x001d5d80; // type:func
 Game_InternalFinalise__Fv = 0x001d5e08; // type:func
 Game_Initialise__Fv = 0x001d5e40; // type:func
@@ -42,10 +49,13 @@ Landscape_InternalFinalise__Fv = 0x001E31D8; // type:func
 Landscape_Initialise__Fv = 0x001e31e0; // type:func
 Objects_InternalInitialise__Fv = 0x001ea608; // type:func
 Objects_Initialise__Fv = 0x001ea658; // type:func
+
+// Objtable.cpp
 Objtable_InternalInitialise__Fv = 0x001ec730; // type:func
 Objtable_InternalFinalise__Fv = 0x001ec808; // type:func
 Objtable_Initialise__Fv = 0x001ec888; // type:func
 Objtable_Finalise__Fv = 0x001ec8b8; // type:func
+
 
 SoundRes_InternalInitialise__Fv = 0x0024BA80; // type:func
 SoundRes_InternalFinalise__Fv = 0x0024bae8; // type:func
@@ -60,14 +70,17 @@ TimSrv_InternalInitialise__Fv = 0x0026ad70; // type:func
 TimSrv_InternalFinalise__Fv = 0x0026ade8; // type:func
 TimSrv_Initialise__Fv = 0x0026ae08; // type:func
 TimSrv_Finalise__Fv = 0x0026ae38; // type:func
+// ThrowCat.cpp
 ThrowCatch_InternalInitialise__Fv = 0x0026b4d0; // type:func
 ThrowCatch_InternalFinalise__Fv = 0x0026b5f0; // type:func
 ThrowCatch_Initialise__Fv = 0x0026b5f8; // type:func
 ThrowCatch_Finalise__Fv = 0x0026b628; // type:func
+// TextRes.cpp
 TextRes_InternalInitialise__Fv = 0x0026c380; // type:func
 TextRes_InternalFinalise__Fv = 0x0026c3c8; // type:func
 TextRes_Initialise__Fv = 0x0026c3d0; // type:func
 TextRes_Finalise__Fv = 0x0026C400; // type:func
+
 StdMem_InternalInitialise__Fv = 0x0026c5c8; // type:func
 StdMem_Initialise__Fv = 0x0026c618; // type:func
 StdMem_Finalise__Fv = 0x0026c648; // type:func
@@ -96,32 +109,41 @@ GE_InternalInitialise__Fv = 0x002ca610; // type:func
 GE_InternalFinalise__Fv = 0x002ca810; // type:func
 GE_Initialise__Fv = 0x002ca900; // type:func
 GE_Finalise__Fv = 0x002ca930; // type:func
+
+// FontRes.cpp
 FontRes_InternalInitialise__Fv = 0x002d69b8; // type:func
 FontRes_InternalFinalise__Fv = 0x002d6a00; // type:func
 FontRes_Initialise__Fv = 0x002d6a08; // type:func
+// Inputil.cpp
 InputUtil_InternalInitialise__Fv = 0x002f72c0; // type:func
 InputUtil_InternalFinalise__Fv = 0x002f74d0; // type:func
 InputUtil_Initialise__Fv = 0x002f7578; // type:func
 InputUtil_Finalise__Fv = 0x002f75a8; // type:func
+// InpKeybd.cpp
 InputKeyboard_InternalInitialise__Fv = 0x002f8b28; // type:func
 InputKeyboard_InternalFinalise__Fv = 0x002f8d98; // type:func
 InputKeyboard_Initialise__Fv = 0x002f8df0; // type:func
 InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
+// InpMouse.cpp
 InputMouse_InternalInitialise__Fv = 0x002f8350; // type:func
 InputMouse_InternalFinalise__Fv = 0x002f8688; // type:func
 InputMouse_Initialise__Fv = 0x002f8710; // type:func
 InputMouse_Finalise__Fv = 0x002f8740; // type:func
 _vt$17InputMouse_Device = 0x00446d38;
+// Inpevent.cpp
 InputEvent_InternalInitialise__Fv = 0x002f9528; // type:func
 InputEvent_Initialise__Fv = 0x002f9590; // type:func
+// Inpdev.cpp
 InputDevice_InternalInitialise__Fv = 0x002fb878; // type:func
 InputDevice_InternalFinalise__Fv = 0x002fb8c0; // type:func
 InputDevice_Initialise__Fv = 0x002fb930; // type:func
 InputDevice_Finalise__Fv = 0x002fb960; // type:func
+// Controller.cpp
 Controller_InternalInitialise__Fv = 0x002fc9b0; // type:func
 Controller_InternalFinalise__Fv = 0x002fcc60; // type:func
 Controller_Initialise__Fv = 0x002fcd98; // type:func
 Controller_Finalise__Fv = 0x002fcdc8; // type:func
+
 File_MemCard_InternalInitialise__Fv = 0x002ffbb0; // type:func
 File_MemCard_Initialise__Fv = 0x002ffc88; // type:func
 File_MemCard_Finalise__Fv = 0x002ffcd8; // type:func
@@ -132,20 +154,34 @@ Thread_InternalInitialise__Fv = 0x0026BE00; // type:func
 Thread_Initialise__Fv = 0x0026bee0; // type:func
 Thread_Finalise__Fv = 0x0026bf10; // type:func
 Create__Q29Semaphore14Implementationii = 0x0026BB40; // type:func
+__26PS2SemaphoreImplementationii = 0x0026BB88; // type:func
+_$_26PS2SemaphoreImplementation = 0x0026BC08; // type:func
 File_CD_InternalInitialise__Fv = 0x00302da0; // type:func
 File_CD_InternalFinalise__Fv = 0x00302e28; // type:func
+
+
+
+// AnimRes.cpp
 AnimationRes_InternalInitialise__Fv = 0x00319000; // type:func
 AnimationRes_InternalFinalise__Fv = 0x00319068; // type:func
 AnimationRes_Initialise__Fv = 0x00319088; // type:func
+
+// ScriptRes.cpp
 ScriptRes_InternalInitialise__Fv = 0x0031c940; // type:func
 ScriptRes_InternalFinalise__Fv = 0x0031c9b0; // type:func
 ScriptRes_Initialise__Fv = 0x0031c9d8; // type:func
+
+// ShapeRes.cpp
+_vt$15Shape_Resources = 0x00449870;
 ShapeRes_InternalInitialise__Fv = 0x0031eea0; // type:func
 ShapeRes_InternalFinalise__Fv = 0x0031ef08; // type:func
 ShapeRes_Initialise__Fv = 0x0031ef28; // type:func
 ShapeRes_Finalise__Fv = 0x0031ef58; // type:func
+// LandscapeRes.cpp
 LandscapeRes_InternalInitialise__Fv = 0x0031f1b8; // type:func
 LandscapeRes_Initialise__Fv = 0x0031f208; // type:func
+
+// TextureRes.cpp
 TextureRes_InternalInitialise__Fv = 0x0031f478; // type:func
 TextureRes_InternalFinalise__Fv = 0x0031f4e0; // type:func
 TextureRes_Initialise__Fv = 0x0031f500; // type:func
@@ -363,6 +399,11 @@ __tft8Resource1Z14Landscape_Land = 0x0031f428;
 __tf17Texture_Resources = 0x0031fb90;
 __tft8Resource1Z10GE_Texture = 0x0031fc00;
 
+CheckError__18StdInit_ClientBaseG6Status = 0x0026ce20; // type:func
+_vt$26PS2SemaphoreImplementation = 0x0043b650;
+_vt$Q29Semaphore14Implementation = 0x0043b6d0;
+_$_Q29Semaphore14Implementation = 0x0026c098;
+EntryPoint__13DefaultThread = 0x0026C338;
 // Sony SDK
 printf = 0x00335D40; // type:func
 tanf = 0x00330CC8; // type:func
@@ -381,10 +422,17 @@ DeleteThread = 0x00341070; // type:func
 TerminateThread = 0x003410b0; // type:func
 GetThreadId = 0x00341150; // type:func
 SuspendThread = 0x003411D0; // type:func
+StartThread = 0x00341080; // type:func
 ResumeThread = 0x003411f0; // type:func
+CreateSema = 0x00341260; // type:func
 DeleteSema = 0x00341270; // type:func
+SignalSema = 0x00341280; // type:func
+WaitSema = 0x003412A0; // type:func
+PollSema = 0x003412B0; // type:func
 InitThread = 0x00342038; // type:func
 __builtin_new = 0x00247C00; // type:func
+__malloc_lock = 0x0026BCE8; // type:func
+__malloc_unlock = 0x0026BDA0; // type:func
 
 sceCdLayerSearchFile = 0x00328638; // type:func
 sceCdSearchFile = 0x00328950; // type:func
@@ -632,8 +680,6 @@ LandscapeRes_InternalFinalise__Fv = 0x0031f200; // type:func
 LandscapeRes_Finalise__Fv = 0x0031F238; // type:func
 _vt$22DogsTaleLand_Resources = 0x00449a18;
 
-// ShapeRes.cpp
-_vt$15Shape_Resources = 0x00449870;
 
 // MusicRes.cpp
 _vt$15Music_Resources = 0x0043c9b8;
@@ -791,6 +837,8 @@ __tf19Music_ObjectService = 0x001e7260;
 _vt$19Music_ObjectService = 0x003e5d90;
 
 __tf4Mien = 0x001e6f90;
+__4Mien = 0x001E6428; // type:func
+_$_4Mien = 0x001E6478; // type:func
 _vt$4Mien = 0x003e5b60;
 
 _vt$23Music_GameObjectService = 0x003e5d30;
@@ -815,7 +863,7 @@ RunPath_Finalise__Fv = 0x00272fd0; // type:func
 sifManager_InternalInitialise__Fv = 0x0026fca8; // type:func
 sifManager_InternalFinalise__Fv = 0x0026ff60; // type:func
 sifManager_Initialise__Fv = 0x0026ff68; // type:func
-sifManager_Finalise__Fv = 0x0026ff98; // type:func
+Semaphore_Finalise__Fv = 0x0026ff98; // type:func
 
 __tf18PointsOfContactHit = 0x0019ecf0;
 __tf13BallBounceHit = 0x0019ed40;
@@ -861,8 +909,26 @@ __tf13SwitchViewReq = 0x001d91b8;
 __tfQ224InputEvent_ValueInstance10LocalTimer = 0x002fb718;
 __tf25InputDevice_ChangeCatcher = 0x002FB788;
 __builtin_delete = 0x00247B88; // type:func
+__builtin_vec_delete = 0x00247D28; // type:func
 __builtin_vec_new = 0x00247DA0; // type:func
+
+D_003CFCD0 = 0x003CFCD0;
 free = 0x00334FF0; // type:func
+Signal__26PS2SemaphoreImplementation = 0x0026BC68; // type:func
+Wait__26PS2SemaphoreImplementation = 0x0026BC90; // type:func
+Poll__26PS2SemaphoreImplementation = 0x0026BCB8; // type:func
+__rtti_si = 0x00247EB0; // type:func
+__rtti_user = 0x00247ED0; // type:func
+__pure_virtual = 0x002462A8; // type:func
+__tiQ29Semaphore14Implementation = 0x00453870; // align:8
+__tf26PS2SemaphoreImplementation = 0x0026c138;
+__ti26PS2SemaphoreImplementation = 0x004a0798;
+__tfQ29Semaphore14Implementation = 0x0026c058;
+_vt$23PS2ThreadImplementation = 0x0043b680;
+_vt$Q26Thread14Implementation = 0x0043b700;
+__tfQ26Thread14Implementation = 0x0026bfe8;
+_vt$13DefaultThread = 0x0043b7d0;
+__tf13DefaultThread = 0x0026c2c8;
 // TODO: replace with properly mangled counterparts. From game strings leftovers.
 //Music_Piece::Music_Piece(Music_Piece *this) = 0x0027f988; // type:0026fca8
 //Music_Piece::~Music_Piece(Music_Piece *this,uint param_2) = 0x00280538; // type:func

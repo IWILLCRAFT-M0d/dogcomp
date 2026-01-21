@@ -9,7 +9,7 @@ extern "C" {
 #include <stdarg.h>
 #include <eekernel.h>
 
-void func_002963D0(void);
+void func_002963D0(void); /* rct3 Main_Terminate */
 void func_002D5958(char*,...);
 void InterfaceError(char* name, int line);
 void DDE_FatalError(char* message,...);

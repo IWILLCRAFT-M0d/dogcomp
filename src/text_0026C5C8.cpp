@@ -45,7 +45,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_InitialisationSequence);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CE20);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CE60);
 
@@ -270,7 +270,7 @@ void sifManager_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", sifManager_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", sifManager_Finalise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Semaphore_Finalise__Fv);
 
 
 

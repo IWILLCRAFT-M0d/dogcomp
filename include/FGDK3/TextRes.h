@@ -13,7 +13,7 @@ void TextRes_Finalise(void);
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_0026C4E0(void*, void*);
+void func_0026C4E0(void*, char*);
 #ifdef __cplusplus
 }
 #endif

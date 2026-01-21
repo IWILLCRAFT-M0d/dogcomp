@@ -1,6 +1,8 @@
 #include "common.h"
 #include "FGDK3/Playstation2/Thread.h"
+#include "FGDK3/Playstation2/sifManager.h"
 
+#include <ee/eekernel.h>
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B710);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B808);
@@ -29,19 +31,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BB00);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Create__Q29Semaphore14Implementationii);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BB88);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __26PS2SemaphoreImplementationii);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BC08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BC68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Signal__26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BC90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Wait__26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BCB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Poll__26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BCE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __malloc_lock);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BDA0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __malloc_unlock);
 
 // `-snas` Required
 #ifdef NON_MATCHING
@@ -68,29 +70,29 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_Finalise__
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BF30);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BFE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tfQ26Thread14Implementation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C028);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C058);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tfQ29Semaphore14Implementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C098);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_Q29Semaphore14Implementation);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B650);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _vt$26PS2SemaphoreImplementation);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B680);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _vt$23PS2ThreadImplementation);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B6D0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _vt$Q29Semaphore14Implementation);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B700);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _vt$Q26Thread14Implementation);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B750);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B750); /* "Q26Thread14Implementation" */
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B770);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B770); /* "Q29Semaphore14Implementation" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tf23PS2ThreadImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C138);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tf26PS2SemaphoreImplementation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C1A8);
 
@@ -98,11 +100,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C1E8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C258);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", D_0043B7D0);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _vt$13DefaultThread);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C2C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tf13DefaultThread);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C338);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", EntryPoint__13DefaultThread);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C340);
 

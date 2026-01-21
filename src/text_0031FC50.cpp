@@ -1,7 +1,7 @@
 #include "common.h"
 
 #include <ee/eekernel.h>
-
+#include "FGDK3/Playstation2/Thread.h"
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FC50);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FCF0);
@@ -1312,7 +1312,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341060);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", DeleteThread);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341080);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", StartThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341090);
 
@@ -1372,17 +1372,17 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341240);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341250);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341260);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", CreateSema);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", DeleteSema);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341280);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", SignalSema);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341290);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003412A0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", WaitSema);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003412B0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", PollSema);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003412C0);
 

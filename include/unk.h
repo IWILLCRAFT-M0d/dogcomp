@@ -69,6 +69,22 @@ struct Texture_Resources : public Resource_Generic {
     virtual ~Texture_Resources();
 };*/
 
+struct Mien {
+    int unk0;
+    int unk4;
+    int unk8;
+    float unkC;
+    int unk10;
+    int unk14;       // 0x14 - Missing field
+    int unk18;
+    int unk1C;
+    float unk20;
+    int unk24;       // 0x24 - Missing field
+
+    Mien();
+    virtual ~Mien();
+};
+
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
 
@@ -235,7 +251,7 @@ int func_00263640(void);
 // text_001AB700
 int func_001ACFC0(void);
 
-void func_00247D28(void*);
+//void func_00247D28(void*);
 #ifdef __cplusplus
 }
 #endif

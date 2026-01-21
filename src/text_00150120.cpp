@@ -705,7 +705,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161060);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalFinalise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalFinalise__Fv); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_Initialise__Fv);
 
@@ -2197,7 +2197,12 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC50);
 
+
 INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise__Fv);
+/*Status WorldObj_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 0x96);
+}*/
+
 
 void WorldObj_InternalFinalise() {
     return;
@@ -2205,7 +2210,7 @@ void WorldObj_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001819C8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001819E8);
 

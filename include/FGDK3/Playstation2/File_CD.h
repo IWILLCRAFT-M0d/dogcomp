@@ -4,7 +4,7 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "FGDK3/ThrowCat.h"
-//sifManager header goes here
+#include "FGDK3/Playstation2/sifManager.h"
 
 Status File_CD_InternalInitialise(void);
 

@@ -537,7 +537,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001C54C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001C5518);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001C61F8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001C61F8); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001C6C90);
 

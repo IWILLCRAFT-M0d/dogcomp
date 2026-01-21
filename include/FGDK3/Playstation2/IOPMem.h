@@ -3,7 +3,7 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-//sifManager header goes here
+#include "FGDK3/Playstation2/sifManager.h"
 
 Status IOPMem_InternalInitialise(void);
 
