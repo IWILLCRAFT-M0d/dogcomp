@@ -5,6 +5,8 @@
 
 #include "FGDK3/Playstation2/Controller.h"
 
+extern void * const InputJoy5_StdInit_UsedModules[];
+
 Status InputJoy5_InternalInitialise(void);
 void InputJoy5_InternalFinalise(void);
 Status InputJoy5_Initialise(void);

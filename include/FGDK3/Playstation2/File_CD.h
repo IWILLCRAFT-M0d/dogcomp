@@ -7,5 +7,8 @@
 #include "FGDK3/Playstation2/sifManager.h"
 
 Status File_CD_InternalInitialise(void);
+void File_CD_InternalFinalise(void);
+Status File_CD_Initialise(void);
+void File_CD_Finalise(void);
 
 #endif

@@ -34,20 +34,42 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8648);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
-Status InputKeyboard_Initialise(void) {
+StdInit_ModuleDescription InputMouse_StdInit_Description = {
+    0,
+    &InputMouse_StdInit_UsedModules
+};
+
+void * const InputMouse_StdInit_UsedModules[] = {
+    &InputMouse_InternalInitialise,
+    &InputMouse_InternalFinalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    &RunPath_Initialise,
+    &RunPath_Finalise,
+    &Thread_Initialise,
+    &Thread_Finalise,
+    &InputDevice_Initialise,
+    &InputDevice_Finalise,
+    &InputKeyboard_Initialise,
+    &InputKeyboard_Finalise,
+    0,
+    0,
+};
+
+Status InputMouse_Initialise(void) {
     return StdInit_InitialisationSequence(&InputMouse_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Finalise__Fv);
-
-/*
-void InputMouse_Finalise(void) { StdInit_FinalisationSequence(&InputMouse_StdInit_Description);
+void InputMouse_Finalise(void) {
+    StdInit_FinalisationSequence(&InputMouse_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Finalise__Fv);
+#endif
 
 #ifdef NON_MATCHING
 // mouse thread

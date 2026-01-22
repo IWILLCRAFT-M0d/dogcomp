@@ -7,6 +7,8 @@
 #include "FGDK3/Inpdev.h"
 #include "FGDK3/ThrowCat.h"
 
+extern void * const InputJoystick1_StdInit_UsedModules[];
+
 Status InputJoystick1_InternalInitialise(void);
 void InputJoystick1_InternalFinalise(void);
 Status InputJoystick1_Initialise(void);

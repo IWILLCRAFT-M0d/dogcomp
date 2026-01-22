@@ -14,18 +14,35 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_InternalInitialise__F
 void TextRes_InternalFinalise(){
     return;
 }
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Initialise__Fv);
-/*
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription TextRes_StdInit_Description = {
+    0,
+    &TextRes_StdInit_UsedModules
+};
+
+
+void * const TextRes_StdInit_UsedModules[] = {
+    &TextRes_InternalInitialise,
+    &TextRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    0,
+    0,
+};
+
 Status TextRes_Initialise(void) {
     return StdInit_InitialisationSequence(&TextRes_StdInit_Description);
 }
-*/
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Finalise__Fv);
-/*
+
 void TextRes_Finalise(void) {
     StdInit_FinalisationSequence(&TextRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", func_0026C420); /* Load? */
 

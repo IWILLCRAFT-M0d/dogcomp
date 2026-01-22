@@ -7,5 +7,7 @@
 
 Status RunPath_InternalInitialise(void);
 void RunPath_InternalFinalise(void);
+Status RunPath_Initialise(void);
+void RunPath_Finalise(void);
 
 #endif

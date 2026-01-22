@@ -14,20 +14,31 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_InternalInitialis
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription ThrowCatch_StdInit_Description = {
+    0,
+    &ThrowCatch_StdInit_UsedModules
+};
+
+void * const ThrowCatch_StdInit_UsedModules[] = {
+    &ThrowCatch_InternalInitialise,
+    &ThrowCatch_InternalFinalise,
+    0,
+    0,
+};
+
 Status ThrowCatch_Initialise(void) {
     return StdInit_InitialisationSequence(&ThrowCatch_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Finalise__Fv);
-
-/*
 void ThrowCatch_Finalise(void) {
     StdInit_FinalisationSequence(&ThrowCatch_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B648); /* rct3 ThrowCatch_DefiniteThrow */

@@ -6,21 +6,33 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalInitialise
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription InputDevice_StdInit_Description = {
+    0,
+    &InputDevice_StdInit_UsedModules
+};
+
+void * const InputDevice_StdInit_UsedModules[] = {
+    &InputDevice_InternalInitialise,
+    &InputDevice_InternalFinalise,
+    0,
+    0,
+};
+
 Status InputDevice_Initialise(void) {
     return StdInit_InitialisationSequence(&InputDevice_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Finalise__Fv);
-
-/*
 void InputDevice_Finalise(void) {
-StdInit_FinalisationSequence(&InputDevice_StdInit_Description);
+    StdInit_FinalisationSequence(&InputDevice_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Finalise__Fv);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FB980);
 

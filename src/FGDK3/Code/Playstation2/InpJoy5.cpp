@@ -4,26 +4,40 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_InternalInitialise__Fv);
 
-//INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_InternalFinalise__Fv);
+
 void InputJoy5_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription InputJoy5_StdInit_Description = {
+    0,
+    &InputJoy5_StdInit_UsedModules
+};
+
+
+void * const InputJoy5_StdInit_UsedModules[] = {
+    &InputJoy5_InternalInitialise,
+    &InputJoy5_InternalFinalise,
+    &Controller_Initialise,
+    &Controller_Finalise,
+    0,
+    0,
+};
+
 Status InputJoy5_Initialise(void) {
     return StdInit_InitialisationSequence(&InputJoy5_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Finalise__Fv);
-
-/*
 void InputJoy5_Finalise(void) {
     StdInit_FinalisationSequence(&InputJoy5_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F94A8); /* return Status */
 

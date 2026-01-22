@@ -5,6 +5,8 @@
 
 #include "FGDK3/ThrowCat.h"
 
+extern void * const TextRes_StdInit_UsedModules[];
+
 Status TextRes_InternalInitialise(void);
 void TextRes_InternalFinalise(void);
 Status TextRes_Initialise(void);

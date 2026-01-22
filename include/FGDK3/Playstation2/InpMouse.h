@@ -8,6 +8,8 @@
 #include "FGDK3/Inpdev.h"
 #include "FGDK3/Playstation2/InpKeybd.h"
 
+extern void * const InputMouse_StdInit_UsedModules[];
+
 Status InputMouse_InternalInitialise(void);
 void InputMouse_InternalFinalise(void);
 Status InputMouse_Initialise(void);

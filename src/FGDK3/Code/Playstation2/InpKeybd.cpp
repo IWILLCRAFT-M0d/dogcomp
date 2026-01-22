@@ -14,20 +14,37 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_I
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription InputKeyboard_StdInit_Description = {
+    0,
+    &InputKeyboard_StdInit_UsedModules
+};
+
+void * const InputKeyboard_StdInit_UsedModules[] = {
+    &InputKeyboard_InternalInitialise,
+    &InputKeyboard_InternalFinalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    &RunPath_Initialise,
+    &RunPath_Finalise,
+    &InputDevice_Initialise,
+    &InputDevice_Finalise,
+    0,
+    0,
+};
+
 Status InputKeyboard_Initialise(void) {
     return StdInit_InitialisationSequence(&InputKeyboard_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Finalise__Fv);
-
-/*
 void InputKeyboard_Finalise(void) { StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Finalise__Fv);
+#endif
 
 #ifdef NON_MATCHING
 // keyboard thread

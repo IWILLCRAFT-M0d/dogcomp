@@ -268,7 +268,7 @@ void sifManager_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", sifManager_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Semaphore_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Semaphore_Finalise__Fv);
 
@@ -769,7 +769,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002775D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277618);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277620);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277620); /* RelRecv_Initialise */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277650);
 

@@ -24,6 +24,8 @@ s_func_002FC270* func_002FC270(s_func_002FC270* arg0);
 }
 #endif
 
+extern void * const Controller_StdInit_UsedModules[];
+
 Status Controller_InternalInitialise(void);
 void Controller_InternalFinalise(void);
 Status Controller_Initialise(void);

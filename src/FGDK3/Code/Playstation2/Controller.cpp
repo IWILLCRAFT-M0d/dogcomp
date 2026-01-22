@@ -31,21 +31,41 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC38
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription Controller_StdInit_Description = {
+    0,
+    &Thread_StdInit_UsedModules
+};
+
+void * const Controller_StdInit_UsedModules[] = {
+    &Controller_InternalInitialise,
+    &Controller_InternalFinalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    &InputDevice_Initialise,
+    &InputDevice_Finalise,
+    &RunPath_Initialise,
+    &RunPath_Finalise,
+    &Thread_Initialise,
+    &Thread_Finalise,
+    0,
+    0,
+};
+
 Status Controller_Initialise(void) {
     return StdInit_InitialisationSequence(&Controller_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Finalise__Fv);
-
-/*
 void Controller_Finalise(void) {
     StdInit_FinalisationSequence(&Controller_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Finalise__Fv);
+#endif
+
 
 // Controller_Device::Controller_Device
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDE8);
