@@ -2,14 +2,30 @@
 
 #include "FGDK3/TextRes.h"
 #include "unk.h"
+
+#ifdef NON_MATCHING
+Status TextRes_InternalInitialise(void) {
+  return Status(0xffffffff, "c:/coding/fgdk3/Code/Common/TextRes.cpp", 0x2d);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_InternalInitialise__Fv);
+#endif
 
 void TextRes_InternalFinalise(){
     return;
 }
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Initialise__Fv);
-
+/*
+Status TextRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&TextRes_StdInit_Description);
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_Finalise__Fv);
+/*
+void TextRes_Finalise(void) {
+    StdInit_FinalisationSequence(&TextRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", func_0026C420); /* Load? */
 

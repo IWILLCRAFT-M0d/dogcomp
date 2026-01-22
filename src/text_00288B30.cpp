@@ -748,7 +748,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297400);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EDC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297430);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf9ClassInfo);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002974A0);
 
@@ -1230,7 +1230,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6350);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A64C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6540);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf15GE_PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6580);
 
@@ -1252,7 +1252,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6610);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf14GE_PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6650);
 
@@ -1264,7 +1264,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6678);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6680);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6688);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf18GE_PS2PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A66F8);
 
@@ -2038,7 +2038,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BF8F8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_00441158);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BFA58);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf18GE_TextureStylePkt);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BFAA8);
 

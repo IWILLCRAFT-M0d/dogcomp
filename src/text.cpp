@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "unk.h"
+
 INCLUDE_ASM("asm/nonmatchings/text", func_00100000);
 
 INCLUDE_ASM("asm/nonmatchings/text", entry);
@@ -1771,7 +1773,9 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00136E80);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00138FB8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00139048);
+void func_00139048(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00139050);
 
@@ -1883,15 +1887,15 @@ INCLUDE_ASM("asm/nonmatchings/text", __tf14TransientSound);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A278);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A2B8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf23DogSphereObjHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A308);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A348);
+INCLUDE_ASM("asm/nonmatchings/text", __tf22DogAntiSnagHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A398);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A460);
+INCLUDE_ASM("asm/nonmatchings/text", __tf25DogPushOffHitPrimReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A4C0);
 
@@ -1903,7 +1907,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A6B8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A718);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A720);
+INCLUDE_ASM("asm/nonmatchings/text", __tf16HitPrimDisplayer);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A770);
 
@@ -1915,7 +1919,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A7A8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A7F8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A838);
+INCLUDE_ASM("asm/nonmatchings/text", __tf19Interface1Z7Jump_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A878);
 
@@ -1943,7 +1947,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003A8400);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013B0C0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013B200);
+INCLUDE_ASM("asm/nonmatchings/text", __tf17DustEffectManager);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013B258);
 
@@ -2169,7 +2173,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013F0B8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013F0C0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013F0C8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf15StaticFootPrint);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013F120);
 
@@ -2391,7 +2395,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003ADFC0);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142EF8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00142F38);
+INCLUDE_ASM("asm/nonmatchings/text", __tf8GE_Light);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142F78);
 
@@ -2587,7 +2591,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003B1980);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003B1998);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149CB0);
+INCLUDE_ASM("asm/nonmatchings/text", __tf10ParticleID);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149D00);
 
@@ -2599,15 +2603,15 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00149D60);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149DB0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149DB8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf9SpawnSpec);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149E08);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149E10);
+INCLUDE_ASM("asm/nonmatchings/text", __tf12ParticleSpec);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149E60);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149E68);
+INCLUDE_ASM("asm/nonmatchings/text", __tf14ParticleSystem);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149EC8);
 
@@ -2629,7 +2633,7 @@ INCLUDE_ASM("asm/nonmatchings/text", __tf19Particle_PlotObject);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149F60);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149F80);
+INCLUDE_ASM("asm/nonmatchings/text", __tf14WidgetEditable);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149FC0);
 
@@ -2729,7 +2733,7 @@ INCLUDE_ASM("asm/nonmatchings/text", __tf24PersonVehicleHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014CD08);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0014CD18);
+INCLUDE_ASM("asm/nonmatchings/text", __tf14PersonRepulsor);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014CD78);
 
@@ -2819,7 +2823,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0014F518);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014F520);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0014F5C0);
+INCLUDE_ASM("asm/nonmatchings/text", __tf18RoverSaysPuzzleGod);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014F618);
 

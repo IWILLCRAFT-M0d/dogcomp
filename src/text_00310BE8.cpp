@@ -1,8 +1,8 @@
 #include "common.h"
-// FileAccess_Zip_Stored::FileAccess_Zip_Stored
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310BE8);
-// FileAccess_Zip_Stored::~FileAccess_Zip_Stored
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310C68);
+
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310BE8); /* FileAccess_Zip_Stored::FileAccess_Zip_Stored */
+
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310C68); /* FileAccess_Zip_Stored::~FileAccess_Zip_Stored */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310CC0);
 
@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310F80);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311008);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448040);
+INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448040); /* "c:/coding/fgdk3/Code/Common/FileSystem_Zip.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311040);
 

@@ -19366,7 +19366,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_0042E728);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_0042E748);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0022E928);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf9TitleView);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0022E980);
 
@@ -19934,7 +19934,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023A270);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E568);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E588);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf14Visual_Graphic);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E5D8);
 
@@ -19944,7 +19944,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E5E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E5F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E5F8);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", __tf14Visual_Counter);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_0023E648);
 

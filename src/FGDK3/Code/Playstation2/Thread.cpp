@@ -3,31 +3,83 @@
 #include "FGDK3/Playstation2/sifManager.h"
 
 #include <ee/eekernel.h>
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B710);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __23PS2ThreadImplementationP6Threadi);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B808);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_23PS2ThreadImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B900);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B948);
+Thread::Implementation *Thread::Implementation::Create(Thread* th, int stack_size) {
+    return new PS2ThreadImplementation(th, stack_size);
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B988);
+void PS2ThreadImplementation::EntryPoint(PS2ThreadImplementation* impl) {
+    impl->m_exitCode = impl->m_thread->EntryPoint();
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B9A8);
+int PS2ThreadImplementation::Go() {
+    return StartThread(this->m_threadId, this);
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026B9D8);
+void PS2ThreadImplementation::Suspend() {
+    if (this->m_suspendCnt++ == 0) {
+        SuspendThread(this->m_threadId);
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BA08);
+void PS2ThreadImplementation::Resume() {
+    if (this->m_suspendCnt-- == 1) {
+        ResumeThread(this->m_threadId);
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BA30);
+int PS2ThreadImplementation::GetPriority() {
+    ThreadParam param;
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BA50);
+    ReferThreadStatus(this->m_threadId, &param);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BAD0);
+    return param.currentPriority;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BAF8);
+void PS2ThreadImplementation::SetPriority(int prio) {
+    ChangeThreadPriority(this->m_threadId, prio);
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BB00);
+
+#ifdef NOT_MATCHING
+PS2ThreadImplementation *PS2ThreadImplementation::GetCurrent() {
+    m_threadMutex.Wait();
+
+    int id = GetThreadId();
+    PS2ThreadImplementation *p = m_topThread;
+    for (; p != 0; p = p->m_next) {
+        if (p->m_threadId == id) {
+            break;
+        }
+    }
+
+    m_threadMutex.Signal();
+    return p;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", GetCurrent__23PS2ThreadImplementation);
+#endif
+
+void PS2ThreadImplementation::Exit(int code) {
+    this->m_exitCode = code;
+    TerminateThread(this->m_threadId);
+}
+
+int PS2ThreadImplementation::GetExitCode() {
+    return this->m_exitCode;
+}
+
+void Thread::SwitchToNext() {
+    PS2ThreadImplementation *s;
+
+    s = PS2ThreadImplementation::GetCurrent();
+    RotateThreadReadyQueue(s->m_thread->GetPriority());
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Create__Q29Semaphore14Implementationii);
 
@@ -35,11 +87,25 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __26PS2SemaphoreI
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Signal__26PS2SemaphoreImplementation);
+void PS2SemaphoreImplementation::Signal() {
+    if (this->m_initialized) {
+        SignalSema(this->m_semaId);
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Wait__26PS2SemaphoreImplementation);
+void PS2SemaphoreImplementation::Wait() {
+    if (this->m_initialized) {
+        WaitSema(this->m_semaId);
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Poll__26PS2SemaphoreImplementation);
+int PS2SemaphoreImplementation::Poll() {
+    if (this->m_initialized) {
+        return PollSema(this->m_semaId) != -1;
+    }
+
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __malloc_lock);
 
@@ -62,17 +128,38 @@ Status Thread_InternalInitialise() {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_InternalInitialise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BE90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_InternalFinalise__Fv);
 
+#ifdef NON_MATCHING
+StdInit_ModuleDescription Thread_StdInit_Description = {
+    0,
+    &Thread_StdInit_UsedModules
+};
+
+void * const Thread_StdInit_UsedModules[] = {
+    &Thread_InternalInitialise,
+    &Thread_InternalFinalise,
+    0,
+    0,
+};
+
+Status Thread_Initialise(void) {
+    return StdInit_InitialisationSequence(&Thread_StdInit_Description);
+}
+
+void Thread_Finalise(void) {
+    StdInit_FinalisationSequence(&Thread_StdInit_Description);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_Initialise__Fv);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026BF30);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tfQ26Thread14Implementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C028);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_Q26Thread14Implementation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tfQ29Semaphore14Implementation);
 
@@ -94,7 +181,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tf23PS2ThreadIm
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __tf26PS2SemaphoreImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C1A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C1A8); /* __tf6Thread */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", func_0026C1E8);
 

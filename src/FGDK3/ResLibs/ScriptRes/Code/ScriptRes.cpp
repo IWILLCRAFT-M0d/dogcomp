@@ -8,7 +8,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Initialise__Fv);
 
+/*
+Status ScriptRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&ScriptRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Finalise__Fv);
+
+/*
+void ScriptRes_Finalise(void) {
+    StdInit_FinalisationSequence(&ScriptRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CA28); /* load? */
 

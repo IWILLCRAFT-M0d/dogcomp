@@ -8,5 +8,7 @@
 
 Status Gameutil_InternalInitialise(void);
 void Gameutil_InternalFinalise(void);
+Status Gameutil_Initialise(void):
+void Gameutil_Finalise(void);
 
 #endif

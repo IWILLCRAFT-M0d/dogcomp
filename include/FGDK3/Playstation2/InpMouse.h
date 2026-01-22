@@ -10,6 +10,8 @@
 
 Status InputMouse_InternalInitialise(void);
 void InputMouse_InternalFinalise(void);
+Status InputMouse_Initialise(void);
+void InputMouse_Finalise(void);
 
 #ifdef __cplusplus
 extern "C" {

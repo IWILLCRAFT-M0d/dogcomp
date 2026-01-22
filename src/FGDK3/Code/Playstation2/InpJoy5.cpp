@@ -11,7 +11,19 @@ void InputJoy5_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Initialise__Fv);
 
+/*
+Status InputJoy5_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputJoy5_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Finalise__Fv);
+
+/*
+void InputJoy5_Finalise(void) {
+    StdInit_FinalisationSequence(&InputJoy5_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F94A8); /* return Status */
 

@@ -252,6 +252,8 @@ int func_00263640(void);
 int func_001ACFC0(void);
 
 //void func_00247D28(void*);
+
+void func_00139048(void);
 #ifdef __cplusplus
 }
 #endif

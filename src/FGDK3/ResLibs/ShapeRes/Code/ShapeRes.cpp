@@ -6,7 +6,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_In
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Initialise__Fv);
 
+/*
+Status ShapeRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&ShapeRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Finalise__Fv);
+
+/*
+void ShapeRes_Finalise(void) {
+    StdInit_FinalisationSequence(&ShapeRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031EF78); /* load? */
 

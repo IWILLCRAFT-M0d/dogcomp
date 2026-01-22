@@ -10,7 +10,19 @@ void InputEvent_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Initialise__Fv);
 
+/*
+Status InputEvent_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputEvent_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Finalise__Fv);
+
+/*
+void InputEvent_Finalise(void) {
+StdInit_FinalisationSequence(&InputEvent_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F95E0);
 

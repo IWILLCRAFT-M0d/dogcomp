@@ -15,6 +15,8 @@ extern "C" {
 #define STATUS_TRACE(_unk0) Status(_unk0, __FILE__, __LINE__)
 #define STATUS_TRACE_2(_unk0) Status(_unk0, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522)
 
+extern void * const Thread_StdInit_UsedModules[];
+
 extern int* D_00451948;
 
 class Status {
@@ -45,6 +47,9 @@ struct StdInit_ModuleDescription {
     const void *unk4;
 };
 
+extern Status StdInit_InitialisationSequence(StdInit_ModuleDescription*);
+extern void StdInit_FinalisationSequence(StdInit_ModuleDescription*);
+
 class StdInit_ClientBase {
 public:
     int m_unk0;
@@ -54,6 +59,63 @@ public:
 
 Status Semaphore_Initialise();
 void Semaphore_Finalise();
+
+
+class Thread {
+    public:
+    class Implementation {
+        public:
+        /* 0x00 */ Thread *m_thread;
+        /* 0x04 */ /* vtbl pointer */
+
+        static Thread::Implementation *Create(Thread*, int);
+
+        /* vtbl[0] */ /* type_info function */
+        /* vtbl[1] */ virtual ~Implementation() {}
+        /* vtbl[2] */ virtual int Go() = 0;
+        /* vtbl[3] */ virtual void Suspend() = 0;
+        /* vtbl[4] */ virtual void Resume() = 0;
+        /* vtbl[5] */ virtual int GetPriority() = 0;
+        /* vtbl[6] */ virtual void SetPriority(int) = 0;
+        /* vtbl[7] */ virtual void Exit(int) = 0;
+        /* vtbl[8] */ virtual int GetExitCode() = 0;
+    };
+
+    /* 0x00 */ Implementation *impl;
+
+    Thread() {
+        impl = Thread::Implementation::Create(this, 0);
+    }
+
+    virtual ~Thread() {
+        delete impl;
+    }
+
+    virtual int EntryPoint() = 0;
+    static void SwitchToNext();
+
+    int Go() {
+        return impl->Go();
+    }
+    void Suspend() {
+        impl->Suspend();
+    }
+    void Resume() {
+        impl->Resume();
+    }
+    int GetPriority() {
+        return impl->GetPriority();
+    }
+    void SetPriority(int prio) {
+        impl->SetPriority(prio);
+    }
+    void Exit(int code) {
+        impl->Exit(code);
+    }
+    int GetExitCode() {
+        return impl->GetExitCode();
+    }
+};
 
 class Semaphore {
     public:
@@ -93,10 +155,55 @@ class Semaphore {
     }
 };
 
+class PS2ThreadImplementation : /* 0x00 */ public Thread::Implementation {
+    public:
+    /* sbss  0x00453864 */ static PS2ThreadImplementation *m_topThread;
+    /* sdata 0x00451930 */ static Semaphore m_threadMutex;
 
+    /* 0x08 */ PS2ThreadImplementation *m_next;
+    /* 0x0C */ int m_threadId;
+    /* 0x10 */ void *m_stack;
+    /* 0x14 */ int m_suspendCnt;
+    /* 0x18 */ int m_exitCode;
+
+    PS2ThreadImplementation();
+    PS2ThreadImplementation(Thread*, int);
+
+    static void EntryPoint(PS2ThreadImplementation*);
+    static PS2ThreadImplementation *GetCurrent();
+
+    /* vtbl[0] */ /* type_info function */
+    /* vtbl[1] */ virtual ~PS2ThreadImplementation();
+    /* vtbl[2] */ virtual int Go();
+    /* vtbl[3] */ virtual void Suspend();
+    /* vtbl[4] */ virtual void Resume();
+    /* vtbl[5] */ virtual int GetPriority();
+    /* vtbl[6] */ virtual void SetPriority(int);
+    /* vtbl[7] */ virtual void Exit(int);
+    /* vtbl[8] */ virtual int GetExitCode();
+};
+
+class PS2SemaphoreImplementation : /* 0x00 */ public Semaphore::Implementation {
+    /* size:0x10 */
+
+    public:
+    /* 0x04 */ int m_initialized;
+    /* 0x08 */ StdInit_ClientBase m_unk8;
+    /* 0x0C */ int m_semaId;
+
+    PS2SemaphoreImplementation(int init, int max);
+
+    /* vtbl[0] */ /* type_info function */
+    /* vtbl[1] */ virtual ~PS2SemaphoreImplementation();
+    /* vtbl[2] */ virtual void Signal();
+    /* vtbl[3] */ virtual void Wait();
+    /* vtbl[4] */ virtual int Poll();
+};
 
 Status Thread_InternalInitialise(void);
-
+void Thread_InternalFinalise(void);
+Status Thread_Initialise(void);
+void Thread_Finalise(void);
 
 
 #endif

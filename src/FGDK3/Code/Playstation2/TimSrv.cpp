@@ -1,6 +1,6 @@
 #include "common.h"
 
-#include "FGDK3/Playstation2/Thread.h"
+#include "FGDK3/Playstation2/TimSrv.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026A940);
 
@@ -20,7 +20,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_InternalFi
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_Initialise__Fv);
 
+/*
+Status TimSrv_Initialise(void) {
+    return StdInit_InitialisationSequence(&TimSrv_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_Finalise__Fv);
+
+/*
+void TimSrv_Finalise(void) {
+StdInit_FinalisationSequence(&TimSrv_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AE58);
 

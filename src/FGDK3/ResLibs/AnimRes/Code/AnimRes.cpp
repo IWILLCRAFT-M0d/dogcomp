@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "AnimRes.h"
+
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C08); /* "Animation" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0);
@@ -10,7 +12,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Initialise__Fv);
 
+/*
+Status AnimationRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&AnimationRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Finalise__Fv);
+
+/*
+void AnimationRes_Finalise(void) {
+    StdInit_FinalisationSequence(&AnimationRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190D8); /* load */
 

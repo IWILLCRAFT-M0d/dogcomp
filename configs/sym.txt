@@ -84,8 +84,9 @@ TextRes_Finalise__Fv = 0x0026C400; // type:func
 StdMem_InternalInitialise__Fv = 0x0026c5c8; // type:func
 StdMem_Initialise__Fv = 0x0026c618; // type:func
 StdMem_Finalise__Fv = 0x0026c648; // type:func
-StdInit_InitialisationSequence = 0x0026cb28; // type:func // from rct3 gold
-StdInit_FinalisationSequence = 0x0026cd58; // type:func // from rct3 gold
+//StdInit_InitialisationSequence = 0x0026cb28; // type:func // from rct3 gold
+//StdInit_FinalisationSequence = 0x0026cd58; // type:func // from rct3 gold
+
 SoundManager_InternalInitialise__Fv = 0x0026d178; // type:func
 SoundManager_InternalFinalise__Fv = 0x0026d260; //type:func
 SoundManager_Initialise__Fv = 0x0026d2d8; // type:func
@@ -151,8 +152,11 @@ File_InternalInitialise__Fv = 0x00307d30; // type:func
 File_Initialise__Fv = 0x00307e78; // type:func
 File_Finalise__Fv = 0x00307ec8; // type:func
 Thread_InternalInitialise__Fv = 0x0026BE00; // type:func
+Thread_InternalFinalise__Fv = 0x0026be90; // type:func
 Thread_Initialise__Fv = 0x0026bee0; // type:func
 Thread_Finalise__Fv = 0x0026bf10; // type:func
+StdInit_InitialisationSequence__FP25StdInit_ModuleDescription = 0x0026cb28; // type:func
+StdInit_FinalisationSequence__FP25StdInit_ModuleDescription = 0x0026cd58; // type:func
 Create__Q29Semaphore14Implementationii = 0x0026BB40; // type:func
 __26PS2SemaphoreImplementationii = 0x0026BB88; // type:func
 _$_26PS2SemaphoreImplementation = 0x0026BC08; // type:func
@@ -206,19 +210,33 @@ __tf7Jump_IF = 0x0013a008;
 __tf23AnimationMovedObject_IF = 0x0013a058;
 __tf3Dog = 0x0013a0a8;
 __tf14TransientSound = 0x0013a228;
+__tf23DogSphereObjHitReceiver = 0x0013a2b8;
+__tf22DogAntiSnagHitReceiver = 0x0013a348;
+__tf25DogPushOffHitPrimReceiver = 0x0013a460;
+__tf16HitPrimDisplayer = 0x0013a720;
+__tf19Interface1Z7Jump_IF = 0x0013a838;
+
+__tf17DustEffectManager = 0x0013b200;
+__tf15StaticFootPrint = 0x0013f0c8;
 __tf9LevelGate = 0x0013fcb0;
 __tf5Light = 0x00141f08;
+__tf8GE_Light = 0x00142f38;
 __tf9Motorbike = 0x00144b48;
 __tf6Person = 0x0014cb78;
 __tf11PlaceHolder = 0x0014d390;
 __tf9PlayerDog = 0x0014f4c0;
+__tf18RoverSaysPuzzleGod = 0x0014f5c0;
 __tf3Rat = 0x00150e10;
 __tf10SaveKennel = 0x00152be0;
 __tf5Scent = 0x0015a1e0;
+
 __tf9SimObject = 0x00167fb8;
+__tf10DebugID_IF = 0x00168160;
+_vt$10DebugID_IF = 0x003bf578;
 __tf25SimObj_ObjectWithMomentum = 0x001686f8;
 __tf24SimObj_UniverseLandscape = 0x00168b90;
 __tf11YDRRenderer = 0x00168c68;
+__tft9Interface1Z10DebugID_IF = 0x00168e58;
 __tf11Location_IF = 0x00168e98;
 
 __tf12TextRenderer = 0x00168ee8;
@@ -230,10 +248,28 @@ __tf11Movement_IF = 0x00169088;
 __tf8Snowball = 0x00173178;
 __tf14WheeledVehicle = 0x001817a8;
 __tf11WorldObject = 0x00188120;
+__tf21PersistentDataUpdater = 0x00188518;
+__tf18AnimPosProvider_IF = 0x00188590;
 __tf20SpeechAniTextBigHint = 0x0018c670;
 __tf21StreamedSpeechTrivial = 0x0018c6f0;
 __tf9GameLayer = 0x0019d5c0;
 __tf6Thread = 0x0019d620;
+__tfQ212BookMetaphor4Page = 0x0019d6d0;
+__tfQ212BookMetaphor16GamePositionPage = 0x0019d740;
+__tfQ212BookMetaphor11NewGamePage = 0x0019d830;
+__tfQ212BookMetaphor12LoadGamePage = 0x0019d8f8;
+__tfQ212BookMetaphor12SaveGamePage = 0x0019da10;
+__tfQ212BookMetaphor19CurrentPositionPage = 0x0019db38;
+__tfQ212BookMetaphor10Stats0Page = 0x0019dc68;
+__tfQ212BookMetaphor10Stats1Page = 0x0019dce8;
+__tfQ12BookMetaphor12SettingsPage = 0x0019dd58;
+__tfQ212BookMetaphor10CheatsPage = 0x0019ddc8;
+__tfQ212BookMetaphor16BackgroundThread = 0x0019deb8;
+__tfQ212BookMetaphor23NewGameBackgroundThread = 0x0019df98;
+__tfQ212BookMetaphor24LoadGameBackgroundThread = 0x0019e0a0;
+__tfQ212BookMetaphor24SaveGameBackgroundThread = 0x0019e1a8;
+__tfQ212BookMetaphor27ChangeLevelBackgroundThread = 0x0019e2b0;
+
 __tf17BookMetaphorLayer = 0x0019e418;
 __tf12ConsoleLayer = 0x001AB658;
 __tf9Container = 0x001acf60;
@@ -245,22 +281,41 @@ __tft8Resource1Z24Creature_TypeDescription = 0x001ad328;
 __tf9DogScript = 0x001af348;
 __tf18SetLevelEnumerator = 0x001af3c0;
 __tf9Element3D = 0x001b04a8;
+__tf13SimObj_Filter = 0x001d6a90;
+__tf23SimObj_FilterFlagsAndEq = 0x001d6ad0;
+__tf20WorldObject_Universe = 0x001d6b48;
+__tf11GameDesktop = 0x001d6be8;
 __tf13Game_Document = 0x001d6cc0;
+__tf11DSLRenderer = 0x001d7098;
 __tf9StatusBar = 0x001d71f0;
-//__tf18SetLevelEnumerator = 0x001d7568;
+__tf28Game_ClosestVisibleInFrontOf = 0x001d7240;
 __tf24AfterMapChangeEnumerator = 0x001d75d8;
 __tf25BeforeMapChangeEnumerator = 0x001d76a0;
 __tf10DebugLayer = 0x001d7858;
+__tf14ToggleScreenMR = 0x001d7a08;
+__tf8LightsMR = 0x001d78b0;
+__tf7DebugMR = 0x001d7b68;
+__tf8CameraMR = 0x001d7cc0;
+__tfQ214ToggleScreenMR13BounceDisplay = 0x001d7f70;
+__tfQ27DebugMR7MAction = 0x001d8008;
+__tfQ28CameraMR19CameraControlAction = 0x001d8110;
+__tf16MenuRegisterable = 0x001d7e18;
+__tfQ29GameState12GameStateReq = 0x001d9158;
+__tf9TitleView = 0x0022e928;
 __tf16BMStateChangeReq = 0x001d95d8;
 __tf16LoadSavedGameReq = 0x001d9988;
 __tf14ChangeLevelReq = 0x001d9a78;
 __tf15StartNewGameReq = 0x001d9b48;
+__tf10FadeOutReq = 0x001d9fd8;
+__tf9FadeInReq = 0x001da0c8;
 __tf13HitTri_Object = 0x001de258;
 __tf16ObjectNewMessage = 0x001e5068;
 __tf15Level_Resources = 0x001e57c0;
 __tft8Resource1Z17Level_Description = 0x001e5820;
 __tf11PausedLayer = 0x001ed318;
 __tf19TravelFromLevelGate = 0x002350f8;
+__tf14Visual_Graphic = 0x0023e588;
+__tf14Visual_Counter = 0x0023e5f8;
 __tf15Sound_Resources = 0x0024be18;
 __tft8Resource1Z12Sound_Effect = 0x0024be88;
 __tf15Widget_ErrorBox = 0x0025d570;
@@ -275,6 +330,7 @@ __tf11Widget_Fill = 0x0025ddd0;
 __tf19Widget_WithChildren = 0x0025ded0;
 __tf13Widget_Border = 0x0025df48;
 __tf17Widget_VScrollbar = 0x0025e040;
+__tf14WidgetEditable = 0x00149f80;
 __tf6Action = 0x0025e0e0;
 __tf10NullAction = 0x0025e158;
 __tf12GUI_TitleBar = 0x0025e860;
@@ -284,7 +340,11 @@ __tf10Widget_Bar = 0x0025ef90;
 __tf13Widget_Slider = 0x0025f020;
 __tf14Widget_ListBox = 0x0025f0d8;
 __tf14DropDownUpdate = 0x0025f1e8;
+__tf11PrimaryMenu = 0x00262ff8;
 __tf14VirtualDesktop = 0x00263048;
+
+__tf16FocusStackAction = 0x00263210;
+__tf15HierarchyAction = 0x00263350;
 __tf10HelpAction = 0x00263490;
 __tf23PS2ThreadImplementation = 0x0026c0c8;
 __tf14Text_Resources = 0x0026c508;
@@ -308,8 +368,13 @@ __tf15Music_Resources = 0x0027ece8;
 __tf8Resource1Z11Music_Piece = 0x0027ed48;
 __tf11Music_Track = 0x00285DC0;
 __tf20Music_PS2Performance = 0x00285ff8;
+__tf22Music_MenuRegisterable = 0x00286080;
 __tf13Music_Channel = 0x00288340;
 __tf12CreateAction = 0x00288440;
+
+
+
+__tf9ClassInfo = 0x00297430;
 _vt$16GE_TextureTarget = 0x0043ee88;
 __tf16GE_TextureTarget = 0x0029a6a0;
 __tf14GE_TexturePage = 0x0029a758;
@@ -319,7 +384,9 @@ __tf19GE_PS2DisplayTarget = 0x002a1bd8;
 __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
 __tf12GE_PS2Device = 0x002c9eb0;
-
+__tf15GE_PrimVertices = 0x002a6540;
+__tf14GE_PrimIndices = 0x002a6610;
+__tf18GE_PS2PrimVertices = 0x002a6688;
 
 __tf12GE_PrimCache = 0x002d1bd0;
 __tf9GE_Device = 0x002d1c98;
@@ -336,9 +403,25 @@ __tf14StreamRenderer = 0x002d63a0;
 __tf14Font_Resources = 0x002d6b38;
 __tf18Resource1Z11Font_Header = 0x002d6b98;
 __tf6Endian = 0x002d9210;
+__tf10Endian_Mem = 0x002d9298;
+__tf16Endian_ExpandMem = 0x002d9328;
 __tf11EndianFile = 0x002d93f8;
+__tf9DrawShape = 0x002de650;
+_vt$22DrawShape_TexturedQuad = 0x00444438;
+_vt$9DrawShape = 0x00444450;
+__tf22DrawShape_TexturedQuad = 0x002de690;
+
+__tf8GE_DMARc = 0x002de770;
+_vt$8GE_DMARc = 0x00444498;
+
+
+__tf18AnimationComponent = 0x002f6ed8;
+__tf23AnimationWeightModifier = 0x002f6f68;
 __tf9Animation = 0x002f6fe0;
+
+// Animate.cpp
 __tf28AnimationResourceProvider_IF = 0x002f7210;
+
 __tft9Interface1Z28AnimationResourceProvider_IF = 0x002f7260;
 __tf17InputMouse_Device = 0x002f87d0;
 __tf20InputKeyboard_Device = 0x002f8eb0;
@@ -399,11 +482,30 @@ __tft8Resource1Z14Landscape_Land = 0x0031f428;
 __tf17Texture_Resources = 0x0031fb90;
 __tft8Resource1Z10GE_Texture = 0x0031fc00;
 
+
 CheckError__18StdInit_ClientBaseG6Status = 0x0026ce20; // type:func
+// Thread.cpp
 _vt$26PS2SemaphoreImplementation = 0x0043b650;
 _vt$Q29Semaphore14Implementation = 0x0043b6d0;
-_$_Q29Semaphore14Implementation = 0x0026c098;
+_$_Q29Semaphore14Implementation = 0x0026c098; // type:func
+_$_Q26Thread14Implementation = 0x0026c028; // type:func
+__23PS2ThreadImplementationP6Threadi = 0x0026B710; // type:func
+_$_23PS2ThreadImplementation = 0x0026B808; // type:func
+Create__Q26Thread14ImplementationP6Threadi = 0x0026B900; // type:func
+EntryPoint__23PS2ThreadImplementationP23PS2ThreadImplementation = 0x0026B948; // type:func
+Go__23PS2ThreadImplementation = 0x0026B988; // type:func
+Suspend__23PS2ThreadImplementation = 0x0026B9A8; // type:func
+Resume__23PS2ThreadImplementation = 0x0026B9D8; // type:func
+GetPriority__23PS2ThreadImplementation = 0x0026BA08; // type:func
+SetPriority__23PS2ThreadImplementationi = 0x0026BA30; // type:func
+GetCurrent__23PS2ThreadImplementation = 0x0026BA50; // type:func
+Exit__23PS2ThreadImplementationi = 0x0026BAD0; // type:func
+GetExitCode__23PS2ThreadImplementation = 0x0026baf8; // type:func
+SwitchToNext__6Thread = 0x0026bb00; // type:func
 EntryPoint__13DefaultThread = 0x0026C338;
+_23PS2ThreadImplementation$m_topThread = 0x00453864;
+_23PS2ThreadImplementation$m_threadMutex = 0x00451930;
+
 // Sony SDK
 printf = 0x00335D40; // type:func
 tanf = 0x00330CC8; // type:func
@@ -420,7 +522,10 @@ DisableIntc = 0x00341d40; // type:func
 RemoveIntcHandler = 0x00340f60; // type:func
 DeleteThread = 0x00341070; // type:func
 TerminateThread = 0x003410b0; // type:func
+ChangeThreadPriority = 0x003410F0; // type:func
+RotateThreadReadyQueue = 0x00341110; // type:func
 GetThreadId = 0x00341150; // type:func
+ReferThreadStatus = 0x00341160; // type:func
 SuspendThread = 0x003411D0; // type:func
 StartThread = 0x00341080; // type:func
 ResumeThread = 0x003411f0; // type:func
@@ -728,6 +833,8 @@ ScriptRes_Finalise__Fv = 0x0031ca08; // type:func
 _vt$16Script_Resources = 0x00449330;
 _vt$6Script = 0x004495b0;
 
+__tf19ClearMessagesAction = 0x002d61c8;
+__tf18TestMessagesAction = 0x002d6268;
 __tf20SetDebugOutputAction = 0x002d6308;
 
 FontRes__Finalise__Fv = 0x002d6a38; // type:func
@@ -753,10 +860,13 @@ _vt$6Widget = 0x00436fd0;
 strlen = 0x003374B0; // type:func
 
 // Inpdev.cpp
-func_002FBCA0 = 0x002fbca0; // type:func
-func_002FBCA8 = 0x002fbca8; // type:func
 
+
+// NavGraphRes.h
 _vt$18NavGraph_Resources = 0x0043c808;
+NavGraphRes_Initialise__Fv = 0x002798D0;
+NavGraphRes_Finalise__Fv = 0x00279900;
+
 _vt$28NavGraphCellFromPosSphereHit = 0x0043c918;
 __tf28NavGraphCellFromPosSphereHit = 0x0027e9b8;
 
@@ -787,6 +897,7 @@ _vt$Q215SavegameManager14MyInputBinding = 0x0040c348;
 __tfQ215SaveGameManager14MyInputBinding = 0x00203090;
 __tf20BackgroundSaveThread = 0x002030e0;
 _vt$11YDRRenderer = 0x003bedc8;
+__tf18GE_TextureStylePkt = 0x002bfa58;
 __tft11GE_DMAPktRc1i69 = 0x002c3108;
 __tf18GE_DMAPktRcGeneric = 0x002c3180;
 
@@ -808,6 +919,7 @@ __tf17IKAmblerAnimation = 0x002e6470;
 __tf17TurnFlexAnimation = 0x002e64c0;
 
 _vt$1717TurnFlexAnimation = 0x00444848;
+__tf17LookAtIKAnimation = 0x002e7ab8;
 _vt$17IKAmblerAnimation = 0x004448a8;
 _vt$21IKSingleStepAnimation = 0x00444908;
 _vt$14LegIKAnimation = 0x00444968;
@@ -873,11 +985,18 @@ _vt$13BallBounceHit = 0x003d47a0;
 _vt$18PointsOfContactHit = 0x003d47c0;
 
 __tf8Selector = 0x00160fe0;
+
+__tf9SpawnSpec = 0x00149db8;
+__tf10ParticleID = 0x00149cb0;
+__tf12ParticleSpec = 0x00149e10;
+
 // ParticleSystem.cpp
+__tf14ParticleSystem = 0x00149e68;
 __tf19Particle_PlotObject = 0x00149f10;
 _vt$19Particle_PlotObject = 0x003b02e8;
 
 __tf23PersonHitSizeCalculator = 0x0014cc10;
+__tf14PersonRepulsor = 0x0014cd18;
 __tf24PersonVehicleHitReceiver = 0x0014ccb8;
 _vt$24PersonVehicleHitReceiver = 0x003b1e48;
 _vt$23PersonHitSizeCalculator = 0x003b1e68;

@@ -41,9 +41,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C900);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C9C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_InitialisationSequence);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_InitialisationSequence__FP25StdInit_ModuleDescription);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence__FP25StdInit_ModuleDescription);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
 
@@ -814,7 +814,13 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf12StdAllocator);
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002783A8); /* StdAllocator::Alloc */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002784C8); /* StdAllocator::Free */
+/* void StdAllocator::Free(void* ptr)
 
+{
+  free(ptr);
+  return;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278568); /* StdAllocator::MemAlign */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00278608);
@@ -918,13 +924,21 @@ void NavGraphRes_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002798D0);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", NavGraphRes_Initialise__Fv);
+/*
+Status NavGraphRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&NavGraphRes_StdInit_Description);
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", NavGraphRes_Finalise__Fv);
+/*
+void NavGraphRes_Finalise(void) {
+    StdInit_FinalisationSequence(&NavGraphRes_StdInit_Description);
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00279920); /* load? */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00279900);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00279920);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002799E0);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002799E0); /* unload? */
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$18NavGraph_Resources);
 

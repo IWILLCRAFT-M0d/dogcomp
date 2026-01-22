@@ -33,7 +33,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_In
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Initialise__Fv);
 
+/*
+Status Controller_Initialise(void) {
+    return StdInit_InitialisationSequence(&Controller_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Finalise__Fv);
+
+/*
+void Controller_Finalise(void) {
+    StdInit_FinalisationSequence(&Controller_StdInit_Description);
+}
+*/
 
 // Controller_Device::Controller_Device
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDE8);

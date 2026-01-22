@@ -8,7 +8,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalFinalise__
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Initialise__Fv);
 
+/*
+Status InputDevice_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputDevice_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Finalise__Fv);
+
+/*
+void InputDevice_Finalise(void) {
+StdInit_FinalisationSequence(&InputDevice_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FB980);
 

@@ -13,5 +13,8 @@
 
 
 Status InputUtil_InternalInitialise(void);
+void InputUtil_InternalFinalise(void);
+Status InputUtil_Initialise(void);
+void InputUtil_Finalise(void);
 
 #endif

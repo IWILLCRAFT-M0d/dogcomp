@@ -847,21 +847,21 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E2978);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6A40);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6A90);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf13SimObj_Filter);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E29C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6AD0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf23SimObj_FilterFlagsAndEq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6B40);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6B48);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf20WorldObject_Universe);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6B98);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E29F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6BE8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf11GameDesktop);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D6C40);
 
@@ -975,7 +975,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7018);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E2A28);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7098);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf11DSLRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D70E8);
 
@@ -983,7 +983,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D71D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf9StatusBar);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7240);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf28Game_ClosestVisibleInFrontOf);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D72B0);
 
@@ -1027,19 +1027,19 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf10DebugLayer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D78A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D78B0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf8LightsMR);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7900);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7A08);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf14ToggleScreenMR);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7A58);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7B68);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf7DebugMR);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7BB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7CC0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf8CameraMR);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7D10);
 
@@ -1053,7 +1053,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E2EF8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003E2F18);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7E18);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf16MenuRegisterable);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7E58);
 
@@ -1063,19 +1063,19 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7EC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7F50);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7F70);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tfQ214ToggleScreenMR13BounceDisplay);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7FC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D7FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D8008);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tfQ27DebugMR7MAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D8058);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D80F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D8110);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tfQ28CameraMR19CameraControlAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D8160);
 
@@ -1155,7 +1155,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9060);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D90F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9158);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tfQ29GameState12GameStateReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9198);
 
@@ -1279,7 +1279,7 @@ int func_001D9FB0(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9FB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001D9FD8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf10FadeOutReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA048);
 
@@ -1287,7 +1287,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA070);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA0A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA0C8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf9FadeInReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001DA138);
 

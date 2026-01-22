@@ -5,6 +5,8 @@
 
 Status LandscapeRes_InternalInitialise(void);
 void LandscapeRes_InternalFinalise(void);
+Status LandscapeRes_Initialise(void);
+void LandscapeRes_Finalise(void);
 
 #endif
 

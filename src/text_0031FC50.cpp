@@ -1326,11 +1326,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_003410F0);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", ChangeThreadPriority);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341100);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341110);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", RotateThreadReadyQueue);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341120);
 
@@ -1340,7 +1340,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341140);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", GetThreadId);
 
-INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341160);
+INCLUDE_ASM("asm/nonmatchings/text_0031FC50", ReferThreadStatus);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_00341170);
 

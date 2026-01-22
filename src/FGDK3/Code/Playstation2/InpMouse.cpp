@@ -36,7 +36,18 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Inte
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Initialise__Fv);
 
+/*
+Status InputKeyboard_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputMouse_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Finalise__Fv);
+
+/*
+void InputMouse_Finalise(void) { StdInit_FinalisationSequence(&InputMouse_StdInit_Description);
+}
+*/
 
 #ifdef NON_MATCHING
 // mouse thread

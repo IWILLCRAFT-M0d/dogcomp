@@ -1,12 +1,26 @@
 #include "common.h"
 
+#include "FGDK3/InpUtil.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Initialise__Fv);
 
+/*
+Status InputUtil_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputUtil_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Finalise__Fv);
+
+/*
+void InputUtil_Finalise(void) {
+StdInit_FinalisationSequence(&InputUtil_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F75C8);
 

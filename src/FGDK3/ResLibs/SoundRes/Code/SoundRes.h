@@ -1,6 +1,13 @@
 #ifndef SOUNDRES_H
 #define SOUNDRES_H
 
+#include "FGDK3/Playstation2/Thread.h"
+
+Status SoundRes_InternalInitialise(void);
+void SoundRes_InternalFinalise(void);
+Status SoundRes_Initialise(void);
+void SoundRes_Finalise(void);
+
 #ifdef __cplusplus
 extern "C" {
 #endif

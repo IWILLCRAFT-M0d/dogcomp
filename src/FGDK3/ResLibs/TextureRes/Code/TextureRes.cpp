@@ -8,7 +8,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", Texture
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_Initialise__Fv);
 
+/*
+Status TextureRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&TextureRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_Finalise__Fv);
+
+/*
+void TextureRes_Finalise(void) {
+    StdInit_FinalisationSequence(&TextureRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031F550); /* Texture_Resources::Texture_Resources */
 

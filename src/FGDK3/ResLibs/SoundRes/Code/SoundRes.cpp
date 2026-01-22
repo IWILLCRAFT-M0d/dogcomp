@@ -11,7 +11,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_In
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_Initialise__Fv);
 
+/*
+Status SoundRes_Initialise(void) {
+        return StdInit_InitialisationSequence(&SoundRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_Finalise__Fv);
+
+/*
+void SoundRes_Finalise(void) {
+    StdInit_FinalisationSequence(&SoundRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BB58); /* load */
 

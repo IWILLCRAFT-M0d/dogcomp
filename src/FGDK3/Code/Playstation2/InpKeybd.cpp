@@ -16,7 +16,18 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_I
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Initialise__Fv);
 
+/*
+Status InputKeyboard_Initialise(void) {
+    return StdInit_InitialisationSequence(&InputKeyboard_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_Finalise__Fv);
+
+/*
+void InputKeyboard_Finalise(void) { StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
+}
+*/
 
 #ifdef NON_MATCHING
 // keyboard thread

@@ -10,7 +10,19 @@ void MusicRes_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Initialise__Fv);
 
+/*
+Status MusicRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&MusicRes_StdInit_Description);
+}
+*/
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Finalise__Fv);
+
+/*
+void MusicRes_Finalise(void) {
+    StdInit_FinalisationSequence(&MusicRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", func_0027EB38); /* load */
 

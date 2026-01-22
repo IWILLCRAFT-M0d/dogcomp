@@ -13,7 +13,18 @@ void LandscapeRes_InternalFinalise() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Initialise__Fv);
 
+/*
+Status LandscapeRes_Initialise(void) {
+    return StdInit_InitialisationSequence(&LandscapeRes_StdInit_Description);
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Finalise__Fv);
+
+/*
+void LandscapeRes_Finalise(void) {
+    StdInit_FinalisationSequence(&LandscapeRes_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F258); /* load? */
 
