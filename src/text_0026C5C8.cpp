@@ -7,6 +7,7 @@
 #include "FGDK3/Playstation2/sifManager.h"
 #include "FGDK3/NavGraphRes.h"
 #include "unk.h"
+#include "FGDK3/RelRecv.h"
 
 #ifdef NON_MATCHING
 char D_0043B8E0[] = "c:/coding/fgdk3/Code/Common/StdMem.cpp";
@@ -767,11 +768,14 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002775B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_002775D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277618);
+void RelRecv_InternalFinalise(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277620); /* RelRecv_Initialise */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277650);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", RelRecv_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", RelRecv_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00277670);
 

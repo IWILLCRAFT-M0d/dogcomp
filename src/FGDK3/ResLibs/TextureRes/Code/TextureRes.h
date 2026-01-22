@@ -3,6 +3,11 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+
+extern void * const TextureRes_StdInit_UsedModules[];
+
 Status TextureRes_InternalInitialise(void);
 void TextureRes_InternalFinalise(void);
 Status TextureRes_Initialise(void);

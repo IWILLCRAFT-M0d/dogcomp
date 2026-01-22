@@ -25,7 +25,6 @@ StdInit_ModuleDescription TimSrv_StdInit_Description = {
     &TimSrv_StdInit_UsedModules
 };
 
-
 void * const TimSrv_StdInit_UsedModules[] = {
     &TimSrv_InternalInitialise,
     &TimSrv_InternalFinalise,
