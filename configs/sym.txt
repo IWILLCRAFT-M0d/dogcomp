@@ -169,6 +169,7 @@ __tf13HitTri_Object = 0x001de258;
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
 Landscape_InternalFinalise__Fv = 0x001e31d8; // type:func
 Landscape_Initialise__Fv = 0x001e31e0; // type:func
+Landscape_Finalise__Fv = 0x001E3210; // type:func
 __tf16ObjectNewMessage = 0x001e5068;
 // Levelres.cpp
 LevelRes_InternalInitialise__Fv = 0x001e5648; // type:func
@@ -346,7 +347,7 @@ MusicRes_InternalFinalise__Fv = 0x0027eae0; // type:func
 MusicRes_Initialise__Fv = 0x0027eae8; // type:func
 MusicRes_Finalise__Fv = 0x0027eb18; // type:func
 __tf15Music_Resources = 0x0027ece8;
-__tf8Resource1Z11Music_Piece = 0x0027ed48;
+__tft8Resource1Z11Music_Piece = 0x0027ed48;
 Music_InternalInitialise__Fv = 0x0027ed98; // type:func
 Music_InternalFinalise__Fv = 0x0027ef10; // type:func
 Music_Initialise__Fv = 0x0027ef98; // type:func

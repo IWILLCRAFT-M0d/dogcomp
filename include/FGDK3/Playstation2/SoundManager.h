@@ -5,5 +5,7 @@
 
 Status SoundManager_InternalInitialise(void);
 void SoundManager_InternalFinalise(void);
+Status SoundManager_Initialise(void);
+void SoundManager_Finalise(void);
 
 #endif

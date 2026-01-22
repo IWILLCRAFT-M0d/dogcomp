@@ -19,18 +19,46 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E2188);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E25C8);
 
+#ifdef NON_MATCHING
 
+Status Landscape_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Landscape.cpp", 0xc3c);
+}
 
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_InternalInitialise__Fv);
-
+#endif
 
 void Landscape_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_Initialise__Fv);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E3210);
+StdInit_ModuleDescription Landscape_StdInit_Description = {
+    0,
+    &Landscape_StdInit_UsedModules
+};
+
+void * const Landscape_StdInit_UsedModules[] = {
+    &Landscape_InternalInitialise,
+    &Landscape_InternalFinalise,
+    0,
+    0,
+};
+
+Status Landscape_Initialise(void) {
+    return StdInit_InitialisationSequence(&Landscape_StdInit_Description);
+}
+
+void Landscape_Finalise(void) {
+    StdInit_FinalisationSequence(&Landscape_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Landscape_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E3230);
 

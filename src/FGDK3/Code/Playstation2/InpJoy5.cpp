@@ -45,13 +45,28 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Initia
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Finalise__Fv);
 #endif
 
+#ifdef NON_MATCHING
+
+Status func_002F94A8(void) {
+    return Status(0xFFFFFFFF, 0, -1);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F94A8); /* return Status */
+#endif
 
 void func_002F94E0() {
     return;
 }
+#ifdef NON_MATCHING
 
+Status func_002F94E8(void) {
+    return Status(0xFFFFFFFF, 0, -1);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", func_002F94E8); /* return Status */
+#endif
 
 void func_002F9520() {
     return;

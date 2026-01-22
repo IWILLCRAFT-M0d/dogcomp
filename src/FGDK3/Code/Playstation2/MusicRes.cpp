@@ -34,4 +34,4 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tf15Music_Res
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", func_0027ED38); /* return "Music"; */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tf8Resource1Z11Music_Piece);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tft8Resource1Z11Music_Piece);
