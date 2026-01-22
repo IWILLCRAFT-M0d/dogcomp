@@ -44,9 +44,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBAA8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBAD0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBB70);
+void func_002FBB70(void) {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBB78);
+void func_002FBB78(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBB80);
 

@@ -1,8 +1,16 @@
 #include "common.h"
 
 #include "TextureRes.h"
+#include "unk.h"
 
+#ifdef NON_MATCHING
+Status TextureRes_InternalInitialise(void) {
+    func_002757E8();
+    return Status(0xffffffff, "c:/coding/fgdk3/ResLibs/TextureRes/Code/TextureRes.cpp", 0x42);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_InternalFinalise__Fv);
 
@@ -37,9 +45,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", Texture
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031F550); /* Texture_Resources::Texture_Resources */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __17Texture_Resources); /* Texture_Resources::Texture_Resources */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031F588); /* Texture_Resources::~Texture_Resources */
+/*
+Texture_Resources::Texture_Resources(){
+    this->unk14 = 0;
+}
+*/
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _$_17Texture_Resources); /* Texture_Resources::~Texture_Resources */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031F5E0); /* load */
 

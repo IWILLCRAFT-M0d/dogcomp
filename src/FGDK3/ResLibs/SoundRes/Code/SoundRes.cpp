@@ -2,10 +2,18 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "SoundRes.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA70); /* return "Sound"; */
 
+#ifdef NON_MATCHING
+Status SoundRes_InternalInitialise(void) {
+    func_002757E8();
+    return Status(0xffffffff, "c:/coding/fgdk3/ResLibs/SoundRes/Code/SoundRes.cpp", 0x4f);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_InternalFinalise__Fv);
 

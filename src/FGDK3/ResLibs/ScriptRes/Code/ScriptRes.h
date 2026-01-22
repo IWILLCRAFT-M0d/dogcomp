@@ -1,9 +1,21 @@
 #ifndef SCRIPTRES_H
 #define SCRIPTRES_H
 
+#include "FGDK3/Playstation2/Thread.h"
+
+#include "FGDK3/ThrowCat.h"
+
+extern void * const ScriptRes_StdInit_UsedModules[];
+
+Status ScriptRes_InternalInitialise(void);
+void ScriptRes_InternalFinalise(void);
+Status ScriptRes_Initialise(void);
+void ScriptRes_Finalise(void);
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+void func_0031CB30(void);
 
 void func_0031E8C0(void);
 int func_0031E8C8(void);

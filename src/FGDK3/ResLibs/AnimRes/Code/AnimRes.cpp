@@ -1,30 +1,57 @@
 #include "common.h"
 
 #include "AnimRes.h"
-
+#include "unk.h"
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C08); /* "Animation" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0);
 
+#ifdef NON_MATCHING
+
+Status AnimationRes_InternalInitialise(void) {
+    func_002757E8();
+    return Status(0xFFFFFFFF,"c:/coding/fgdk3/ResLibs/AnimRes/Code/AnimRes.cpp", 0x4b);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalInitialise__Fv);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalFinalise__Fv);
+//INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalFinalise__Fv);
+void AnimationRes_InternalFinalise(void) {
+    func_002757F0();
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription AnimationRes_StdInit_Description = {
+    0,
+    &AnimationRes_StdInit_UsedModules
+};
+
+void * const AnimationRes_StdInit_UsedModules[] = {
+    &AnimationRes_InternalInitialise,
+    &AnimationRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &RelRecv_Initialise,
+    &RelRecv_Finalise,
+    0,
+    0,
+};
+
 Status AnimationRes_Initialise(void) {
     return StdInit_InitialisationSequence(&AnimationRes_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Finalise__Fv);
-
-/*
 void AnimationRes_Finalise(void) {
     StdInit_FinalisationSequence(&AnimationRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_003190D8); /* load */
 

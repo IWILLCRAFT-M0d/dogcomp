@@ -8,6 +8,7 @@
 #include "FGDK3/NavGraphRes.h"
 #include "unk.h"
 #include "FGDK3/RelRecv.h"
+#include "FGDK3/ResLibs/TextureRes/Code/TextureRes.h"
 
 #ifdef NON_MATCHING
 char D_0043B8E0[] = "c:/coding/fgdk3/Code/Common/StdMem.cpp";

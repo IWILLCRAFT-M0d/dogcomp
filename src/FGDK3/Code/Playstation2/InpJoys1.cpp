@@ -16,7 +16,15 @@ void func_002F9018() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F9020);
 
+#ifdef NON_MATCHING
+
+Status InputJoystick1_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/InpJoys1.cpp", 0xd3);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_InternalFinalise__Fv);
 

@@ -1,32 +1,57 @@
 #include "common.h"
 #include "ScriptRes.h"
 
-// ScriptRes
+#include "unk.h"
+
+#ifdef NON_MATCHING
+Status ScriptRes_InternalInitialise(void) {
+    func_002757E8();
+    func_0031CB30();
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/ScriptRes/Code/ScriptRes.cpp", 0x7c);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription ScriptRes_StdInit_Description = {
+    0,
+    &ScriptRes_StdInit_UsedModules
+};
+
+
+void * const ScriptRes_StdInit_UsedModules[] = {
+    &ScriptRes_InternalInitialise,
+    &ScriptRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    0,
+    0,
+};
+
 Status ScriptRes_Initialise(void) {
     return StdInit_InitialisationSequence(&ScriptRes_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Finalise__Fv);
-
-/*
 void ScriptRes_Finalise(void) {
     StdInit_FinalisationSequence(&ScriptRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CA28); /* load? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CAE8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CB30);
+void func_0031CB30(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CB38);
 

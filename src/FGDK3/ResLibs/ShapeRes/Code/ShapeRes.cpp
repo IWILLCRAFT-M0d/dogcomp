@@ -1,6 +1,18 @@
 #include "common.h"
 
+#include "ShapeRes.h"
+
+#include "unk.h"
+
+#ifdef NON_MATCHING
+
+Status ShapeRes_InternalInitialise(void) {
+    func_002757E8();
+    return Status(0xffffffff, "c:/coding/fgdk3/ResLibs/ShapeRes/Code/ShapeRes.cpp", 0x59);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_InternalFinalise__Fv);
 

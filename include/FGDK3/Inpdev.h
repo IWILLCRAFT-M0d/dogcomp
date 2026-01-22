@@ -15,6 +15,8 @@ extern "C" {
 #endif
     void func_002FBCA0(void);
     void func_002FBCA8(void);
+    void func_002FBB70(void);
+    void func_002FBB78(void);
 #ifdef __cplusplus
 }
 #endif

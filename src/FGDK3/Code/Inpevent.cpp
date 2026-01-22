@@ -8,21 +8,39 @@ void InputEvent_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription InputEvent_StdInit_Description = {
+    0,
+    &InputEvent_StdInit_UsedModules
+};
+
+void * const InputEvent_StdInit_UsedModules[] = {
+    &InputEvent_InternalInitialise,
+    &InputEvent_InternalFinalise,
+    &TimSrv_Initialise,
+    &TimSrv_Finalise,
+    &InputDevice_Initialise,
+    &InputDevice_Finalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    0,
+    0,
+};
+
 Status InputEvent_Initialise(void) {
     return StdInit_InitialisationSequence(&InputEvent_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Finalise__Fv);
-
-/*
 void InputEvent_Finalise(void) {
-StdInit_FinalisationSequence(&InputEvent_StdInit_Description);
+    StdInit_FinalisationSequence(&InputEvent_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_Finalise__Fv);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F95E0);
 

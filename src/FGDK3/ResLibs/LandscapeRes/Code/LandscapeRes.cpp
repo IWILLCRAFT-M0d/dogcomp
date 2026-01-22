@@ -4,27 +4,51 @@
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", D_004499A8); /* "DogsTaleLand" */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_InternalInitialise__Fv);
 
-//INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_InternalFinalise__Fv);
+#ifdef NON_MATCHING
+
+Status LandscapeRes_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/Fgdk3/ResLibs/LandscapeRes/Code/LandscapeRes.cpp", 0x4f);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_InternalInitialise__Fv);
+#endif
+
 void LandscapeRes_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription LandscapeRes_StdInit_Description = {
+    0,
+    &LandscapeRes_StdInit_UsedModules
+};
+
+void * const LandscapeRes_StdInit_UsedModules[] = {
+    &LandscapeRes_InternalInitialise,
+    &LandscapeRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &RelRecv_Initialise,
+    &RelRecv_Finalise,
+    0,
+    0,
+};
+
 Status LandscapeRes_Initialise(void) {
     return StdInit_InitialisationSequence(&LandscapeRes_StdInit_Description);
 }
-*/
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Finalise__Fv);
 
-/*
 void LandscapeRes_Finalise(void) {
     StdInit_FinalisationSequence(&LandscapeRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", LandscapeRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", func_0031F258); /* load? */
 
