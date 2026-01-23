@@ -68,6 +68,9 @@ O0_SPLITS = [
     "src/text_002FCF70.cpp"
 ]
 
+COMPLETED_SPLITS = [
+]
+
 def clean():
     """
     Clean all products of the build process.
@@ -161,14 +164,21 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             else:
                 split_optimization = "-O2"
         
+        split_state = ""
+        
+        for split in COMPLETED_SPLITS:
+            if split == str(entry.src_paths[0]):
+                split_state = "-snas"
+                break
+        
         # Matching file
         match seg.type:
             case "asm" | "data" | "sdata" | "bss" | "sbss" | "rodata" | "databin" | "gcc_except_table" | "textbin":
-                ninja_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization} )
+                ninja_file.build(outputs=str(entry.object_path), rule="as", inputs=str(entry.src_paths[0]), variables={ "cflags": f"{split_optimization}"} )
             case "c":
-                ninja_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
+                ninja_file.build(outputs=str(entry.object_path), rule="cc", inputs=str(entry.src_paths[0]), variables={ "cflags": f"{split_optimization} {split_state}" } )
             case "cpp":
-                ninja_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": split_optimization } )
+                ninja_file.build(outputs=str(entry.object_path), rule="cpp", inputs=str(entry.src_paths[0]), variables={ "cflags": f"{split_optimization} {split_state}" } )
             case "bin":
                 ninja_file.build(outputs=str(entry.object_path), rule="ld", inputs=str(entry.src_paths[0]))
             case _:
