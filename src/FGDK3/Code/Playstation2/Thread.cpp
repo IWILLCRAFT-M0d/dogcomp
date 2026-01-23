@@ -45,7 +45,7 @@ void PS2ThreadImplementation::SetPriority(int prio) {
 }
 
 
-#ifdef NOT_MATCHING
+#ifdef NON_MATCHING
 PS2ThreadImplementation *PS2ThreadImplementation::GetCurrent() {
     m_threadMutex.Wait();
 

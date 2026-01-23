@@ -157,9 +157,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD118);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAF80); /* "Creature" */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD138);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Creatres_InternalInitialise__Fv);
 
-void func_001AD180(void) {
+void Creatres_InternalFinalise(void) {
 	return;
 }
 
@@ -187,7 +187,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB160);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DB190);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD378);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD378); /* DogScript::DogScript */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD470);
 

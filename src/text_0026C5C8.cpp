@@ -4,6 +4,7 @@
 #include "mem.h"
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Playstation2/SoundManager.h"
+#include "FGDK3/Playstation2/Sound.h"
 #include "FGDK3/Playstation2/sifManager.h"
 #include "FGDK3/NavGraphRes.h"
 #include "unk.h"
@@ -49,11 +50,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence__FP25
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CE60);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CE60); /* Status::PrepareReport */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CED0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CF20);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf6Status);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CF60);
 
@@ -85,9 +86,40 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_InternalInitialise__F
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_Initialise__Fv);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D308);
+StdInit_ModuleDescription SoundManager_StdInit_Description = {
+    0,
+    &SoundManager_StdInit_UsedModules
+};
+
+void * const SoundManager_StdInit_UsedModules[] = {
+    &SoundManager_InternalInitialise,
+    &SoundManager_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    &RunPath_Initialise,
+    &RunPath_Finalise,
+    &Thread_Initialise,
+    &Thread_Finalise,
+    0,
+    0,
+};
+
+Status SoundManager_Initialise(void) {
+        return StdInit_InitialisationSequence(&SoundManager_StdInit_Description);
+}
+
+void SoundManager_Finalise(void) {
+    StdInit_FinalisationSequence(&SoundManager_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", SoundManager_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D328);
 
@@ -106,11 +138,38 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_InternalFinalise__Fv);
 
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription Sound_StdInit_Description = {
+    0,
+    &Sound_StdInit_UsedModules
+};
+
+void * const Sound_StdInit_UsedModules[] = {
+    &Sound_InternalInitialise,
+    &Sound_InternalFinalise,
+    &SoundManager_Initialise,
+    &SoundManager_Finalise,
+    &Music_Initialise,
+    &Music_Finalise,
+    0,
+    0,
+};
+
+Status Sound_Initialise(void) {
+    return StdInit_InitialisationSequence(&Sound_StdInit_Description);
+}
+
+void Sound_Finalise(void) {
+    StdInit_FinalisationSequence(&Sound_StdInit_Description);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_Initialise__Fv);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", Sound_Finalise__Fv);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026E318);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026E318); /* SoundImplementation::SoundImplementation */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026E380);
 
@@ -258,9 +317,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026FB80);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BA58);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BA88);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$19SoundImplementation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BAB8);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BAB8); /* "19SoundImplementation" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026FBA0);
 
@@ -316,7 +375,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_00271808);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$13ShapeInstance);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", D_0043BE08);
+INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$11ShapeParams);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf11ShapeParams);
 

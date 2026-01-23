@@ -14,23 +14,39 @@ Status ShapeRes_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_InternalInitialise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_InternalFinalise__Fv);
+void ShapeRes_InternalFinalise(void) {
+    func_002757F0();
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Initialise__Fv);
 
-/*
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription ShapeRes_StdInit_Description = {
+    0,
+    &ShapeRes_StdInit_UsedModules
+};
+
+void * const ShapeRes_StdInit_UsedModules[] = {
+    &ShapeRes_InternalInitialise,
+    &ShapeRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    0,
+    0,
+};
+
 Status ShapeRes_Initialise(void) {
     return StdInit_InitialisationSequence(&ShapeRes_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Finalise__Fv);
-
-/*
 void ShapeRes_Finalise(void) {
     StdInit_FinalisationSequence(&ShapeRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031EF78); /* load? */
 

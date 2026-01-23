@@ -1,14 +1,25 @@
 #include "common.h"
+
+#include "FGDK3/Playstation2/Thread.h"
+
 #include "unk.h"
 // inputCD
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD40); /* InputCD_PS2::InputCD_PS2*/
+INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD40); /* InputCD_PS2::InputCD_PS2 ?*/
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD70);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBE78);
 
+#ifdef NON_MATCHING
+
+Status func_002FBEB0(void) {
+    return Status(0xFFFFFFFF, 0, -1);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEB0);
+#endif
 
 void func_002FBEE8(void) {
     return;

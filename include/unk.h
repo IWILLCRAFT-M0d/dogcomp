@@ -94,7 +94,7 @@ extern "C" {
 
 
 void func_001ACFC8(void);
-void func_001AD180(void);
+//void func_001AD180(void);
 void func_001AD560(void);
 void func_001C8120(void);
 void func_001D4650(void);
@@ -256,6 +256,13 @@ int func_001ACFC0(void);
 void func_00139048(void);
 
 void func_002757F0(void);
+char* func_002D7738(int);
+void func_002D7980(void);
+Status func_002FBEB0(void);
+int func_0030ACA8(char*, int);
+int func_0030ACD0(char*, unsigned int);
+
+void func_002D5D58(void);
 #ifdef __cplusplus
 }
 #endif

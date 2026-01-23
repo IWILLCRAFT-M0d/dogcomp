@@ -2,27 +2,51 @@
 
 #include "FGDK3/Playstation2/MusicRes.h"
 
+#ifdef NON_MATCHING
+
+Status MusicRes_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/MusicRes.cpp", 0x4d);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_InternalInitialise__Fv);
+#endif
 
 void MusicRes_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Initialise__Fv);
+#ifdef NON_MATCHING
 
-/*
+StdInit_ModuleDescription MusicRes_StdInit_Description = {
+    0,
+    &MusicRes_StdInit_UsedModules
+};
+
+
+void * const MusicRes_StdInit_UsedModules[] = {
+    &MusicRes_InternalInitialise,
+    &MusicRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &RelRecv_Initialise,
+    &RelRecv_Finalise,
+    0,
+    0,
+};
+
 Status MusicRes_Initialise(void) {
     return StdInit_InitialisationSequence(&MusicRes_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Finalise__Fv);
-
-/*
 void MusicRes_Finalise(void) {
     StdInit_FinalisationSequence(&MusicRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", MusicRes_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", func_0027EB38); /* load */
 

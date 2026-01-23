@@ -6,6 +6,8 @@
 #include "FGDK3/ThrowCat.h"
 #include "FGDK3/Playstation2/sifManager.h"
 
+extern void * const File_CD_StdInit_UsedModules[];
+
 Status File_CD_InternalInitialise(void);
 void File_CD_InternalFinalise(void);
 Status File_CD_Initialise(void);

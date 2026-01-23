@@ -6,6 +6,8 @@
 #include "FGDK3/ThrowCat.h"
 #include "FGDK3/RelRecv.h"
 
+extern void * const MusicRes_StdInit_UsedModules[];
+
 Status MusicRes_InternalInitialise(void);
 void MusicRes_InternalFinalise(void);
 Status MusicRes_Initialise(void);

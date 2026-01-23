@@ -5,6 +5,14 @@
 
 extern void * const TimSrv_StdInit_UsedModules[];
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+Status func_0026ABD8(void);
+#ifdef __cplusplus
+}
+#endif
+
 Status TimSrv_InternalInitialise(void);
 void TimSrv_InternalFinalise(void);
 Status TimSrv_Initialise(void);

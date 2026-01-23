@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include  <stdio.h>
+
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309778);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309798);
@@ -62,9 +64,23 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ABE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030AC08);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ACA8);
 
+
+
+#ifdef NON_MATCHING
+
+int func_0030ACA8(char* buffer, int arg1) {
+    return sprintf(buffer, "%i", arg1);
+}
+
+int func_0030ACD0(char* buffer, unsigned int arg1) {
+    return sprintf(buffer, "%u", arg1);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ACA8);
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ACD0);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ACF8);
 
@@ -98,7 +114,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B4B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B578);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447CF8);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", _vt$12StringBuffer);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf12StringBuffer);
 
@@ -122,9 +138,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B7B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B7F8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447D20);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", _vt$19ShapeParams_Dynamic);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447D50);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447D50); /* "11ShapeParams" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf19ShapeParams_Dynamic);
 
@@ -190,7 +206,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030CE18);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030CF98);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447F28);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", _vt$24ShapeDataNamedBoneWriter);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf24ShapeDataNamedBoneWriter);
 
@@ -232,7 +248,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030DD08);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030DDC8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00309778", D_00447F80);
+INCLUDE_RODATA("asm/nonmatchings/text_00309778", _vt$15RelocationBlock);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", __tf15RelocationBlock);
 

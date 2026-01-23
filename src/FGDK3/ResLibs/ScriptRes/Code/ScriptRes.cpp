@@ -22,7 +22,6 @@ StdInit_ModuleDescription ScriptRes_StdInit_Description = {
     &ScriptRes_StdInit_UsedModules
 };
 
-
 void * const ScriptRes_StdInit_UsedModules[] = {
     &ScriptRes_InternalInitialise,
     &ScriptRes_InternalFinalise,
@@ -69,9 +68,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", __tft8Resource1Z12ScriptHeader);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CC40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CC40); /* Script::Script */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CCB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CCB0); /* Script::~Script */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CDD8);
 

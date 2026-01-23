@@ -3,6 +3,12 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+#include "FGDK3/Playstation2/Sound.h"
+
+extern void * const SoundRes_StdInit_UsedModules[];
+
 Status SoundRes_InternalInitialise(void);
 void SoundRes_InternalFinalise(void);
 Status SoundRes_Initialise(void);

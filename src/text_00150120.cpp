@@ -2889,7 +2889,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190788);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190C18);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D2E58);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D2E58); /* "memcard1:" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190C20);
 
@@ -3085,11 +3085,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3440);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3468);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3490);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor10CheatsPage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D34E8);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q12BookMetaphor12SettingsPage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3540);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor10Stats1Page);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3598);
 

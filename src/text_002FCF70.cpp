@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "FGDK3/Playstation2/File_MemCard.h"
+#include "FGDK3/Playstation2/File_CD.h"
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FCF70); /* FileSystemDisc::FileSystemDisc */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020);
@@ -148,11 +150,40 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB70);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFC68);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalFinalise__Fv);
 
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription File_MemCard_StdInit_Description = {
+    0,
+    &File_MemCard_StdInit_UsedModules
+};
+
+void * const File_MemCard_StdInit_UsedModules[] = {
+    &File_MemCard_InternalInitialise,
+    &File_MemCard_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    &TimSrv_Initialise,
+    &TimSrv_Finalise,
+    0,
+    0,
+};
+
+Status File_MemCard_Initialise(void) {
+    return StdInit_InitialisationSequence(&File_MemCard_StdInit_Description);
+}
+
+void File_MemCard_Finalise(void) {
+    StdInit_FinalisationSequence(&File_MemCard_StdInit_Description);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Initialise__Fv);
-
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_Finalise__Fv);
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447520); /* "c:/coding/fgdk3/Code/Playstation2/File_MemCard.cpp" */
 
@@ -236,7 +267,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301C18);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf16FileFind_MemCard);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301CD8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301CD8); /* StorageDevice_MemCardUpdater::~StorageDevice_MemCardUpdater ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf28StorageDevice_MemCardUpdater);
 
@@ -312,7 +343,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302A80);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_004477C0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_004477F8);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$Q24File6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302AD0);
 
@@ -336,9 +367,36 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302E48);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302E98);
+StdInit_ModuleDescription File_CD_StdInit_Description = {
+    0,
+    &File_CD_StdInit_UsedModules
+};
+
+void * const File_CD_StdInit_UsedModules[] = {
+    &File_CD_InternalInitialise,
+    &File_CD_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &Semaphore_Initialise,
+    &Semaphore_Finalise,
+    0,
+    0,
+};
+
+Status File_CD_Initialise(void) {
+    return StdInit_InitialisationSequence(&File_CD_StdInit_Description);
+}
+
+void File_CD_Finalise(void) {
+    StdInit_FinalisationSequence(&File_CD_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302ED0);
 
@@ -348,7 +406,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003030E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00303110);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447880);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447880); /* "c:/coding/fgdk3/Code/Playstation2/File_CD.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00303148);
 
@@ -368,13 +426,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304008);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003040C0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447918);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$7File_CD);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447968);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$17FileSystemDisc_CD);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304128);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf17FileSystemDisc_CD);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304198);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf7File_CD);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304208);
 
