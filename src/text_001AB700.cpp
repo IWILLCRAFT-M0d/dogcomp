@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+#include "Dogs/Creatres.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB700);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB7E8);
@@ -157,15 +159,51 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD118);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAF80); /* "Creature" */
 
+#ifdef NON_MATCHING
+
+Status Creatres_InternalInitialise(void) {
+  return Status(0xffffffff, "c:/coding/dogs/Code/Common/Creatres.cpp", 0x2c);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", Creatres_InternalInitialise__Fv);
+#endif
 
 void Creatres_InternalFinalise(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD188);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD1B8);
+StdInit_ModuleDescription Creatres_StdInit_Description = {
+    0,
+    &Creatres_StdInit_UsedModules
+};
+
+
+void * const Creatres_StdInit_UsedModules[] = {
+    &Creatres_InternalInitialise,
+    &Creatres_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+	&RelRecv_Initialise,
+	&RelRecv_Finalise,
+    0,
+    0,
+};
+
+Status Creatres_Initialise(void) {
+    return StdInit_InitialisationSequence(&Creatres_StdInit_Description);
+}
+
+void Creatres_Finalise(void) {
+    StdInit_FinalisationSequence(&Creatres_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Creatres_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", Creatres_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD1D8);
 

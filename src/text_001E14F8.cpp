@@ -3,6 +3,7 @@
 
 #include "Dogs/Landscape.h"
 #include "Dogs/Levelres.h"
+#include "Dogs/Objects.h"
 #include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E14F8);
@@ -186,7 +187,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E55E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E5608);
 
+#ifdef NON_MATCHING
+
+Status LevelRes_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Levelres.cpp", 0x2C);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", LevelRes_InternalInitialise__Fv);
+#endif
 
 void LevelRes_InternalFinalise() {
     return;
@@ -397,13 +406,46 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E5FE8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E14F8", D_003E6028);
 
+#ifdef NON_MATCHING
+
+Status Objects_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Objects.cpp", 0xCD);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objects_InternalInitialise__Fv);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA650);
+void Objects_InternalFinalise(void) {
+    return;
+}
 
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription Objects_StdInit_Description = {
+    0,
+    &Objects_StdInit_UsedModules
+};
+
+void * const Objects_StdInit_UsedModules[] = {
+    &Objects_InternalInitialise,
+    &Objects_InternalFinalise,
+    0,
+    0,
+};
+
+Status Objects_Initialise(void) {
+    return StdInit_InitialisationSequence(&Objects_StdInit_Description);
+}
+
+void Objects_Finalise(void) {
+    StdInit_FinalisationSequence(&Objects_StdInit_Description);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objects_Initialise__Fv);
-
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA688);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", Objects_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001EA6A8);
 
