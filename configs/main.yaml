@@ -79,6 +79,9 @@ segments:
       - [0x17FA98, cpp, FGDK3/Code/Playstation2/MusicRes]
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0
       - [0x189B30, cpp, text_00288B30] # Sound.c?
+
+      #- [0x1900B0, cpp, text_0028F0B0]
+
       - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
       - [0x1F82C0, cpp, FGDK3/Code/InpUtil]
@@ -93,7 +96,10 @@ segments:
       - [0x1FDF70, cpp, text_002FCF70] # -O0
       - [0x20A778, cpp, text_00309778]
       - [0x211BE8, cpp, text_00310BE8]
+      #- [0x211BE8, cpp, FGDK3/Code/FileSystem_Zip]
+      #- [cpp, FGDK3/Code/Playstation2/File_FileDescriptor]
       - [0x216F28, cpp, text_00315F28] # zlib functions
+      # 0x216F28 inflate.c
       - [0x219FD0, cpp, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x21A340, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
       - [0x21D940, cpp, FGDK3/ResLibs/ScriptRes/Code/ScriptRes]
@@ -102,6 +108,21 @@ segments:
       - [0x220478, cpp, FGDK3/ResLibs/TextureRes/Code/TextureRes]
 
       - [0x220C50, cpp, text_0031FC50]
+      - [0x228FD0, cpp, text_00327FD0] # libcdvd
+      - [0x22AC38, cpp, text_00329C38] # libgraph
+      - [0x22C448, cpp, text_0032B448] # libdma
+      - [0x22CC90, cpp, text_0032BC90] # libdev
+      - [0x22DD90, cpp, text_0032CD90] # libpad
+      - [0x22F128, cpp, text_0032E128]
+
+      - [0x22F468, cpp, text_0032E468] # libsdr
+
+      - [0x22FA48, cpp, text_0032EA48] # libmc
+      - [0x231240, cpp, text_00330240] # libscf
+      - [0x231930, cpp, text_00330930]
+      - [0x235BD0, cpp, text_00334BD0]
+
+
       - [0x24D300, textbin, vutext]
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
@@ -131,6 +152,9 @@ segments:
       - [0x33DA50, .rodata, FGDK3/Code/Playstation2/Music]
       #-[0x33E030, .rodata, sound]
       - [0x33E030, .rodata, text_00288B30]
+
+      #- [0x33FA98, .rodata, text_0028F0B0]
+
       #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
       - [0x343CE8, .rodata, FGDK3/Code/Playstation2/GameShell]
       - [0x343D68, .rodata, text_002D3598]
@@ -160,7 +184,8 @@ segments:
       #File_FileDescriptor
       - [0x348390, .rodata, text_002FCF70]
       - [0x348CD0, .rodata, text_00309778]
-      - [0x349040, .rodata, text_00310BE8] # zip
+      #- [0x349040, .rodata, FGDK3/Code/FileSystem_Zip]
+      - [0x349040, .rodata, text_00310BE8]
       - [0x349540, .rodata, text_00315F28] # zlib stuff?
       - [0x349C08, .rodata, FGDK3/ResLibs/AnimRes/Code/AnimRes]
       - [0x349DF0, .rodata, FGDK3/ResLibs/ScriptRes/Code/ScriptThread]
@@ -169,6 +194,21 @@ segments:
       - [0x34A9A8, .rodata, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
       - [0x34AB88, .rodata, FGDK3/ResLibs/TextureRes/Code/TextureRes]
       - [0x34AC70, .rodata, text_0031FC50]
+      - [0x34B180, .rodata, text_00327FD0] # libcdvd
+      - [0x34B490, .rodata, text_00329C38] # libgraph
+      - [0x34B6D8, .rodata, text_0032B448] # libdma
+      - [0x34B750, .rodata, text_0032BC90] # libdev
+      - [0x34B788, .rodata ,text_0032CD90] # libpad
+      #- [0x34B8E0, .rodata, text_0032E128]
+
+      - [0x34B8E0, .rodata, text_0032E468] # libsdr
+
+      - [0x34B930, .rodata, text_0032EA48] # libmc
+      - [0x34B9B8, .rodata, text_00330240] # libscf
+      - [0x34B9E0, .rodata, text_00330930]
+      - [0x34C0E8, .rodata, text_00334BD0]
+
+
 
       - [0x34D580, gcc_except_table]
       - [0x34D700, sdata]

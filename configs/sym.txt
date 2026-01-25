@@ -671,11 +671,17 @@ __tf18FileFindAccess_Zip = 0x003137b0;
 __tf29FileSystemDisc_FileDescriptor = 0x003153d8;
 __tf19File_FileDescriptor = 0x00315458;
 __tf29FileFindAccess_FileDescriptor = 0x00315540;
-// zlib
+// inflate.c
+inflateReset = 0x00315F28; // type:func
 inflate = 0x00316160; // type:func
+// infblock.c
 inflate_blocks = 0x00316a50; // type:func
+// zutil.c
+zlibVersion = 0x00317840; // type:func
+
 inflate_trees_bits = 0x00318038; // type:func
 inflate_trees_dynamic = 0x00318138; // type:func
+inflate_trees_fixed = 0x00318328; // type:func
 // AnimRes.cpp
 AnimationRes_InternalInitialise__Fv = 0x00319000; // type:func
 AnimationRes_InternalFinalise__Fv = 0x00319068; // type:func
@@ -844,6 +850,10 @@ _vt$Q215SavegameManager14MyInputBinding = 0x0040c348;
 // SoundRes.cpp
 _vt$15Sound_Resources = 0x00432fb0;
 _vt$6Widget = 0x00436fd0;
+
+_vt$20Tree34_NodeAllocator = 0x0043b3c8;
+_vt$25Tree34_NodeAllocatorBasic = 0x0043B3F0;
+
 // TimSrv.cpp
 _vt$12TimSrv_Timer = 0x0043b4b0;
 // Thread.cpp

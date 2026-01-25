@@ -5,7 +5,7 @@
 #include <libscf.h>
 #include <sound.h>
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30); /* SOUND_InitIOP */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288CF0);
 
@@ -2901,3 +2901,4 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf17GE_TransformState);
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2D40);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2D60);
+

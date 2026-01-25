@@ -6,7 +6,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BED8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BEF0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BEF0); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BEF8);
 
@@ -18,13 +18,13 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BF58);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C0D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C198);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C198); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1A0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1A0); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1A8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1A8); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1B0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1B0); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1B8);
 
@@ -2101,10 +2101,10 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A860);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A8A0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B3C8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$20Tree34_NodeAllocator);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B3F0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$25Tree34_NodeAllocatorBasic);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B418);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B418); /* "25Tree34_NodeAllocatorBasic" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A8D0);

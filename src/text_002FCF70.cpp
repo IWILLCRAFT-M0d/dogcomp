@@ -492,7 +492,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304BC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304C18);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304C58);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304C58); /* in FGDK3/Code/Common/File.cpp */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304D08);
 
@@ -524,7 +524,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003059F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00306030);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447A30);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447A30); /* "C:/Coding/FGDK3/Code/Common/File.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003065D0);
 
