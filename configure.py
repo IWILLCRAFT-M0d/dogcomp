@@ -196,7 +196,7 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
             p = entry.src_paths[0]
             ps = str(p)
             
-            if re.search(r"^asm.sce", str(entry.src_paths[0])):
+            if re.search(r"^asm.(data.)?sce", str(entry.src_paths[0])):
                 continue
 
             if re.search(r"^asm", str(p)):
