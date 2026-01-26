@@ -775,6 +775,19 @@ scePadPortClose = 0x0032d2f0; // type:func
 scePadRead = 0x0032d458; // type:func
 scePadGetState = 0x0032d4d8; // type:func
 scePadSetWarningLevel = 0x0032e0c0; // type:func
+
+sceGifPkRef = 0x0032E230; // type:func
+sceGifPkOpenGifTag = 0x0032E358; // type:func
+sceGifPkAddGsData = 0x0032E418; // type:func
+sceGifPkAddGsAD = 0x0032E440; // type:func
+
+sceSdRemoteInit = 0x0032E468; // type:func
+sceSdTransToIOP = 0x0032E510; // type:func
+sceSdCallBack = 0x0032E598; // type:func
+sceSdRemote = 0x0032E5A8; // type:func
+sceSdRemoteCallbackInit = 0x0032E868; // type:func
+_sdrCBThread = 0x0032E940; // type:func
+_sdrCB = 0x0032E9A8; // type:func
 sceMcInit = 0x0032ea48; // type:func
 sceScfGetLanguage = 0x003302f0; // type:func
 sceScfGetAspect = 0x00330370; // type:func

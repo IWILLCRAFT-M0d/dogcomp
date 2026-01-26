@@ -21,6 +21,9 @@ options:
   generate_asm_macros_files: False
   migrate_rodata_to_functions: True
   make_full_disasm_for_code: False
+
+
+
   auto_decompile_empty_functions: False
 
   create_undefined_funcs_auto: True
@@ -108,17 +111,17 @@ segments:
       - [0x220478, cpp, FGDK3/ResLibs/TextureRes/Code/TextureRes]
 
       - [0x220C50, cpp, text_0031FC50]
-      - [0x228FD0, cpp, text_00327FD0] # libcdvd
-      - [0x22AC38, cpp, text_00329C38] # libgraph
-      - [0x22C448, cpp, text_0032B448] # libdma
+      - [0x228FD0, asm, sce/eecdvd] # libcdvd
+      - [0x22AC38, asm, sce/text_00329C38] # libgraph
+      - [0x22C448, asm, sce/libdma] # libdma
       - [0x22CC90, cpp, text_0032BC90] # libdev
-      - [0x22DD90, cpp, text_0032CD90] # libpad
-      - [0x22F128, cpp, text_0032E128]
+      - [0x22DD90, asm, sce/libpad]
+      - [0x22F128, asm, sce/libgifpk]
 
       - [0x22F468, cpp, text_0032E468] # libsdr
 
-      - [0x22FA48, cpp, text_0032EA48] # libmc
-      - [0x231240, cpp, text_00330240] # libscf
+      - [0x22FA48, asm, sce/libmc]
+      - [0x231240, asm, sce/libscf]
       - [0x231930, cpp, text_00330930]
       - [0x235BD0, cpp, text_00334BD0]
 
@@ -194,17 +197,18 @@ segments:
       - [0x34A9A8, .rodata, FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes]
       - [0x34AB88, .rodata, FGDK3/ResLibs/TextureRes/Code/TextureRes]
       - [0x34AC70, .rodata, text_0031FC50]
-      - [0x34B180, .rodata, text_00327FD0] # libcdvd
-      - [0x34B490, .rodata, text_00329C38] # libgraph
-      - [0x34B6D8, .rodata, text_0032B448] # libdma
+      - [0x34B180, rodata, sce/eecdvd] # libcdvd
+      - [0x34B490, rodata, sce/text_00329C38] # libgraph
+
+
+      - [0x34B6D8, rodata, sce/libdma]
       - [0x34B750, .rodata, text_0032BC90] # libdev
-      - [0x34B788, .rodata ,text_0032CD90] # libpad
-      #- [0x34B8E0, .rodata, text_0032E128]
+      - [0x34B788, rodata, sce/libpad]
 
       - [0x34B8E0, .rodata, text_0032E468] # libsdr
 
-      - [0x34B930, .rodata, text_0032EA48] # libmc
-      - [0x34B9B8, .rodata, text_00330240] # libscf
+      - [0x34B930, rodata, sce/libmc]
+      - [0x34B9B8, rodata, sce/libscf]
       - [0x34B9E0, .rodata, text_00330930]
       - [0x34C0E8, .rodata, text_00334BD0]
 

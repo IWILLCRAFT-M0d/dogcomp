@@ -3,16 +3,16 @@
 #include <ee/eekernel.h>
 
 // libsdr
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E468);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", sceSdRemoteInit);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E510);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", sceSdTransToIOP);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E598);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", sceSdCallBack);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E5A8);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", sceSdRemote);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E868);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", sceSdRemoteCallbackInit);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E940);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", _sdrCBThread);
 
-INCLUDE_ASM("asm/nonmatchings/text_0032E468", func_0032E9A8);
+INCLUDE_ASM("asm/nonmatchings/text_0032E468", _sdrCB);
