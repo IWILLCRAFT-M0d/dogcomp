@@ -59,10 +59,8 @@ segments:
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700]
-
-
-      #- [0xAE138,  cpp, Dogs/Code/Creatre] # 001AD138 - Actually meant to be `Creatures.cpp`
-      #- [0xAE378,  cpp, text_001AD378]
+      - [0xAE138,  cpp, Dogs/Code/Creatres]
+      - [0xAE378,  cpp, text_001AD378]
       #- [0xB0470,  cpp, text_001AF470] # Objects 3D related
       #- [0xB17A8,  cpp, text_001B07A8] # Textures related
       #- [0xB2F70,  cpp, text_001B1F70]
@@ -70,6 +68,8 @@ segments:
 
 
       - [0xE24F8,  cpp, text_001E14F8]
+
+      - [0xE7FF0, cpp, text_001E6FF0]
       - [0x1411D8, cpp, text_002401D8]
       - [0x14CA70, cpp, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x14CED8, cpp, text_0024BED8]
@@ -135,7 +135,10 @@ segments:
       - [0x2B2DB0, .rodata, text_00150120]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
+      - [0x2DBF80, .rodata, Dogs/Code/Creatres]
+      - [0x2DC138, .rodata, text_001AD378]
       - [0x2E6400, .rodata, text_001E14F8]
+      - [0x2E6CF0, .rodata, text_001E6FF0]
       - [0x333BB0, .rodata, text_002401D8]
       - [0x333f18, .rodata, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x334058, .rodata, text_0024BED8]
