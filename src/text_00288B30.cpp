@@ -616,43 +616,35 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296178);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296248);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296248); /* Main_RunGame */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E8); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963F0); /* return 0; */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EC30);
 
+// getPS2Lang
 int func_002963F8() {
-    int temp_2;
 
-    temp_2 = sceScfGetLanguage();
-    switch (temp_2) {
-    case 0:
-        //SCE_JAPANESE_LANGUAGE
+    switch (sceScfGetLanguage()) {
+    case SCE_JAPANESE_LANGUAGE:
         return 0;
-    case 2:
-        //SCE_FRENCH_LANGUAGE
+    case SCE_FRENCH_LANGUAGE:
         return 2;
-    case 3:
-        //SCE_SPANISH_LANGUAGE
+    case SCE_SPANISH_LANGUAGE:
         return 3;
-    case 4:
-        //SCE_GERMAN_LANGUAGE
+    case SCE_GERMAN_LANGUAGE:
         return 4;
-    case 5:
-        //SCE_ITALIAN_LANGUAGE
+    case SCE_ITALIAN_LANGUAGE:
         return 5;
-    case 6:
-        //SCE_DUTCH_LANGUAGE
+    case SCE_DUTCH_LANGUAGE:
         return 6;
-    case 7:
-        //SCE_PORTUGUESE_LANGUAGE
+    case SCE_PORTUGUESE_LANGUAGE:
         return 7;
     default:
         //SCE_ENGLISH_LANGUAGE
@@ -660,10 +652,11 @@ int func_002963F8() {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296478);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296478); /* return 3; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296480);
 
+// isWidescreen
 int func_002964C0() {
     return sceScfGetAspect() == SCE_ASPECT_169;
 }
@@ -986,13 +979,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1BC8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$19GE_PS2DisplayTarget);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F0B8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$12GE_PS2Target);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F188);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$9GE_Target);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F1F0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F1F0); /* "9GE_Target" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F200);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F200); /* "12GE_PS2Target" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf19GE_PS2DisplayTarget);
 
@@ -1072,7 +1065,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A46E0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F250);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F260);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$10ClipVolume);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4838);
 
@@ -1116,23 +1109,23 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf17GE_RenderHardware);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A51D0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F388);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$20GE_PS2RenderHardware);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F3D0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$17GE_RenderHardware);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F408);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F408); /* "17GE_RenderHardware" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf20GE_PS2RenderHardware);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5270);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5270); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5298);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5298); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A52A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A52D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5300);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5300); /* return 6; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5308);
 
@@ -1220,9 +1213,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A60E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6148);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6270);
+//INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6270); /* GE_PrimIndices::GE_PrimIndices */
+GE_PrimIndices::GE_PrimIndices(int arg1, char arg2, int arg3) {
+    this->m_unk0 = 1;
+    this->m_unk2 = arg2;
+    this->m_unk4 = arg3;
+    this->m_unk8 = arg1;
+    this->m_unk3 = 0;
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A62A0);
+}
+
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A62A0); /* GE_PrimIndices::~GE_PrimIndices */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A62D0);
 
@@ -1236,7 +1237,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf15GE_PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6580);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6598);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6598); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65A0);
 
@@ -1246,11 +1247,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65C0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65C0); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65C8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65C8); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65D0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65D0); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A65D8);
 
@@ -1280,47 +1281,47 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6728);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6748);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6750);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf17GE_PS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A67C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A67C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A67D0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A67D0); /* ~GE_LoadedPS2PrimVertices */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$23GE_LoadedPS2PrimIndices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F590);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$24GE_LoadedPS2PrimVertices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F610);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$17GE_PS2PrimIndices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F658);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$18GE_PS2PrimVertices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F6D8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$14GE_PrimIndices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F720);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$15GE_PrimVertices);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7A0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7A0); /* "15GE_PrimVertices" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7B8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7B8); /* "14GE_PrimIndices" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7D0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7D0); /* "18GE_PS2PrimVertices" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7E8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F7E8); /* "17GE_PS2PrimIndices" */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A67F0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf24GE_LoadedPS2PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6888);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6888); /* GE_LoadedPS2PrimIndices::~GE_LoadedPS2PrimIndices ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A68A8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf23GE_LoadedPS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6940);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A69F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6AB8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6AB8); /* GE_PS2PrimCache::GE_PS2PrimCache */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6F18);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A6F18); /* GE_PS2PrimCache::~GE_PS2PrimCache */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A7008);
 
@@ -1386,9 +1387,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC100);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F8A0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F900);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$24GE_PS2PrimCacheDMABuffer);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC150);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf24GE_PS2PrimCacheDMABuffer);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC1A0);
 
@@ -1398,7 +1399,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC220);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC228);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC410);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf15GE_PS2PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC460);
 
@@ -2762,21 +2763,21 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1A38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1B10);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_004429B0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$9GE_Device);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_00442BD0);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1B50);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1B90);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC0); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1BC8); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __tf12GE_PrimCache);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C10);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C10); /* GE_PrimCache::~GE_PrimCache */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C40);
 
@@ -2790,7 +2791,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C68);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C70);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C78);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C78); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1C80);
 

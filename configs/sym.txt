@@ -574,10 +574,19 @@ __tf12GE_PS2Target = 0x002a1ae8;
 __tf19GE_PS2DisplayTarget = 0x002a1bd8;
 __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
+
+__14GE_PrimIndicesici = 0x002A6270; // type:func
+
 __tf15GE_PrimVertices = 0x002a6540;
 __tf14GE_PrimIndices = 0x002a6610;
 __tf18GE_PS2PrimVertices = 0x002a6688;
+__tf17GE_PS2PrimIndices = 0x002A6750;
+__tf24GE_LoadedPS2PrimVertices = 0x002A67F0;
+__tf23GE_LoadedPS2PrimIndices = 0x002A68A8;
+__tf24GE_PS2PrimCacheDMABuffer = 0x002AC150;
+__tf15GE_PS2PrimCache = 0x002AC410;
 __tf12GE_GSPageMgr = 0x002b1b30;
+
 __tf18GE_TextureStylePkt = 0x002bfa58;
 __tft11GE_DMAPktRc1i69 = 0x002c3108;
 __tf18GE_DMAPktRcGeneric = 0x002c3180;
@@ -999,9 +1008,22 @@ _vt$12CreateAction = 0x0043cf78;
 _vt$13Music_Channel = 0x0043cf98;
 _vt$16GE_TextureTarget = 0x0043ee88;
 _vt$19GE_PS2DisplayTarget = 0x0043efe8;
+_vt$12GE_PS2Target = 0x0043F0B8;
+_vt$9GE_Target = 0x0043F188;
+_vt$10ClipVolume = 0x0043F260;
+_vt$20GE_PS2RenderHardware = 0x0043F388;
+_vt$17GE_RenderHardware = 0x0043F3D0;
 _vt$23GE_LoadedPS2PrimIndices = 0x0043f548;
+_vt$24GE_LoadedPS2PrimVertices = 0x0043F590;
+_vt$17GE_PS2PrimIndices = 0x0043F610;
+_vt$18GE_PS2PrimVertices = 0x0043F658;
+_vt$14GE_PrimIndices = 0x0043F6D8;
+_vt$15GE_PrimVertices = 0x0043F720;
+_vt$24GE_PS2PrimCacheDMABuffer = 0x0043F900;
 _vt$12GE_GSPageMgr = 0x0043f9f0;
 _vt$12GE_PS2Device = 0x00442648;
+_vt$9GE_Device = 0x004429B0;
+_vt$12GE_PrimCache = 0x00442BD0;
 // GameShell.cpp
 _vt$9GameShell = 0x00442d18;
 _vt$14StreamRenderer = 0x00442fd0;

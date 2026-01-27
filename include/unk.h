@@ -88,6 +88,19 @@ struct Mien {
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
 
+class GE_PrimIndices {
+    public:
+        short m_unk0;
+        char m_unk2;
+        char m_unk3;
+        int m_unk4;
+        int m_unk8;
+    GE_PrimIndices(int, char, int);
+    virtual ~GE_PrimIndices();
+};
+
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
