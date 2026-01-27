@@ -6,5 +6,5 @@
 #include "FGDK3/Playstation2/sifManager.h"
 
 Status IOPMem_InternalInitialise(void);
-
+void IOPMem_InternalFinalise(void);
 #endif

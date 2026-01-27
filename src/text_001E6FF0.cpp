@@ -129,7 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EA5E8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E5F88); /* "c:/coding/dogs/Code/Common/NavClient.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E5FB8);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E5FB8); /* "_typeID >= 0 && _typeID < m_maxNavCellType" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E5FE8);
 
@@ -18927,23 +18927,23 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022ABD8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022ABF8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DB18);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DB18); /* "c:/coding/dogs/Code/Common/SpecialIKComponents.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DB50);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", _vt$26GroundConformanceAnimation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DBB0);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", _vt$22PickUpStretchAnimation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DC10);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", _vt$21LookAroundIKAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022AC18);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf21LookAroundIKAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022AC68);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022AC88);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf22PickUpStretchAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022ACD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022ACF8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf26GroundConformanceAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022AD48);
 
@@ -19021,9 +19021,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022CB68);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022CC60);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DE48);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DE48); /* "c:/coding/dogs/Code/Common/SpeechAni.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DE78);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DE78); /* "Stream has changed in mid-animation, will ignore change.\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022CD10);
 
@@ -19033,7 +19033,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022CF40);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022CF80);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DF30);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", _vt$17VibrateRumbleAnim);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042DF90);
 
@@ -19091,33 +19091,33 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D348);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D350);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D358);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf24StreamedVoiceoverTrivial);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3B8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3B8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3C8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3C8); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D3D0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf13StreamPreload);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D430);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D460);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D460); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D468);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D470);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D470); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D478);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D498);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf17VibrateRumbleAnim);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D4E8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042E630);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042E630); /* "C:/Coding/Dogs/Code/Common/SaveGameManager.h" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042E660);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042E660); /* "m_mode==Mode_Inactive" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D588);
 
@@ -19449,87 +19449,87 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00430E18);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00430E40);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234D68);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf28TravelToExternalPosAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234DC8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234DC8); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234DD0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00430EC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234E00);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf23TravelToObjectAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234E60);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234E60); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234E68);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234E98);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf15TravelToObject2);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234EF8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234EF8); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234F00);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234F30);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf19TravelToObjectsHead);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234F90);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234F90); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234F98);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00234FC8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf11TravelToPos);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235028);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235028); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235030);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235060);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf12TravelToDest);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002350C0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002350C0); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002350C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf19TravelFromLevelGate);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235158);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235158); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235160);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf20NavToObjectAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002351C0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002351C0); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002351C8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf25NavToDestinationAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235228);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235228); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235230);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf19DogRaceNavAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235290);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235290); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235298);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf25VehicleNavToDestAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002352F8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002352F8); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235300);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf30VehicleNavDirectionalAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235360);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235360); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235368);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf17NavToPosAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002353C8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002353C8); /* return 1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002353D0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf21RandomWanderAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235430);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235430); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235438);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235438); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00235440);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf20TurnToAngleAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002354A0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002354A0); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002354A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002355E0);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002355E0); /* Visual_Graphic */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00431024);
+INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00431024); /* "20TurnToAngleAnimation" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_00431288);
 

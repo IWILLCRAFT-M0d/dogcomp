@@ -5,6 +5,8 @@
 
 #include "FGDK3/ThrowCat.h"
 
+extern void * const LevelRes_StdInit_UsedModules[];
+
 Status LevelRes_InternalInitialise(void);
 void LevelRes_InternalFinalise(void);
 Status LevelRes_Initialise(void);

@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+#include "FGDK3/Playstation2/Thread.h"
+
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB138); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB160); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
@@ -135,11 +137,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF300);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF328);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB338);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB338); /* "Script \"%s\" cannot find its owning object ID=%d" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB368);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$18SetLevelEnumerator);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB380);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$9DogScript);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf9DogScript);
 
@@ -355,11 +357,20 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C53C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C5410);
 
+// nodowngrade
+#ifdef NON_MATCHING
+int D_00452174;
+Status func_001C54C8(void) {
+	D_00452174 = 1;
+	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x562);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C54C8);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C5518);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C61F8); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __13Game_Documentff); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C6C90);
 
@@ -469,17 +480,17 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CEA98);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CF828);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10B0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10B0); /* "LGFarmhouseVillageHouses" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10D0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10D0); /* "LGTownDogPoundPark" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10E8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E10E8); /* "LGCentreVillageHouses" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1100); /* "LGSkiResortCafeSkiSlope" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1118); /* "LGTownStationPark" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1130);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1130); /* "LGTownFinaleDogPound" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", jtbl_003E1150);
 
@@ -565,13 +576,32 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2138);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5D48);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_InternalInitialise__Fv); /* in Game.cpp */
+
+
+//#ifdef NON_MATCHING
+
+//Status Game_InternalInitialise(void) {
+//    Game_Document::Game_Document(0.01, 0.125);
+//    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x2160);
+//}
+//#else
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_InternalInitialise__Fv);
+//#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_InternalFinalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_Finalise__Fv);
+/*
+Status Game_Initialise(void) {
+    return StdInit_InitialisationSequence(&Game_StdInit_Description);
+}
+
+void Game_Finalise(void) {
+    StdInit_FinalisationSequence(&Game_StdInit_Description);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5E90);
 
@@ -793,7 +823,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7008);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7010);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7018);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7018); /* DebugLayer */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2A28);
 
@@ -801,7 +831,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf11DSLRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D70E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D71D0);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D71D0); /* StatusBar::~StatusBar ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf9StatusBar);
 

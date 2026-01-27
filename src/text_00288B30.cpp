@@ -2,6 +2,7 @@
 #include "debug.h"
 #include "unk.h"
 
+#include "FGDK3/Playstation2/IOPMem.h"
 #include <libscf.h>
 #include <sound.h>
 
@@ -17,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_EndCommand);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddData);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D200);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043D200); /* "RPC buffer full. Call SOUND_FlushIOPCommand\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", SOUND_AddLongData);
 
@@ -683,8 +684,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296650);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002966B8);
-
+void IOPMem_InternalFinalise(void) {
+    return;
+}
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", IOPMem_Finalise__Fv);
@@ -982,7 +984,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1BB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A1BC8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043EFE8);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", _vt$19GE_PS2DisplayTarget);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043F0B8);
 
@@ -2812,11 +2814,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D18);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D20);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D58);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D58); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D60);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D60); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D68);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D68); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D1D70);
 
@@ -2876,11 +2878,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2300);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2318);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2328);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2328); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2330);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2330); /* return -0x1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2338);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2338); /* return -0x1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D2340);
 

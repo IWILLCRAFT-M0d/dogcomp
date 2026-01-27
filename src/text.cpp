@@ -6,7 +6,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00100000);
 
 INCLUDE_ASM("asm/nonmatchings/text", entry);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001000B8);
+INCLUDE_ASM("asm/nonmatchings/text", func_001000B8); /* _exit */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001000C0);
 
@@ -655,7 +655,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_0039D8B0);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_0039D8E0);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039D910);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039D910); /* "Animation" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010AE50);
 
@@ -731,7 +731,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0010CB20);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010CBA8);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039DA48);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039DA48); /* "Invalid cinema mode passed to Camera::RemoveFromCinemaModeList" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010CBE8);
 
@@ -763,7 +763,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0010E998);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010ED08);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039DC28);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039DC28); /* "Invalid SimObject in Camera::AdvanceCinemaProjectileCam" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010ED40);
 
@@ -901,11 +901,11 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00118118);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001181C0);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039DFF8);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039DFF8); /* s_Failed_to_get_camera_mount_objec_0039dff8 */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001181E0);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039E068);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039E068); /* "Failed to get camera mount interface in CutModeSetFocus" */
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_0039E0A0);
 
@@ -919,7 +919,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00118720);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00118810);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_0039E110);
+INCLUDE_RODATA("asm/nonmatchings/text", D_0039E110); /* "Failed to get camera mount object in CutModeSetFOV" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00118920);
 
@@ -1085,7 +1085,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00122080);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001220A8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001220F8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf20CameraSpecialHitTest);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf6Camera);
 
@@ -1119,7 +1119,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00122230);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A01B0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122238);
+INCLUDE_ASM("asm/nonmatchings/text", __tf11CameraMount);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122290);
 
@@ -1169,39 +1169,39 @@ INCLUDE_ASM("asm/nonmatchings/text", func_001223E8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001223F0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001223F8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf15CameraYawMarker);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122450);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122458);
+INCLUDE_ASM("asm/nonmatchings/text", __tf29CamGroundAvoidanceHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001224A8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122718);
+INCLUDE_ASM("asm/nonmatchings/text", __tf34FollowPlayerCameraSpecialHitResult);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122768);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001229D8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001229F8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf16CameraModeAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122A48);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122AB8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122AD8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf17CameraMountAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122B28);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122BA8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122BC8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf15CameraNUDAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122C18);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122C98);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122CB8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf16CameraNextAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122D08);
 
@@ -1297,31 +1297,31 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00125F68);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00126098);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1C60);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1C60); /* "c:/coding/dogs/Code/Common/Cloth.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1C88);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1C88); /* "index+1 < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CA8);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CA8); /* "index2 < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CC0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CC0); /* "m_numStretchForces == f" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CD8);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CD8); /* "index < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CF0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1CF0); /* "index3 < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D08);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D08); /* "(m_numStretchForces + m_numShearForces) == f" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D38);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D38); /* "(index+2) < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D58);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D58); /* "(index2) < m_numParticles" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D78);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D78); /* "m_numForces == f" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D90);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1D90); /* "m_numTris == t" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1DA0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1DA0); /* "f->m_p0->m_numConnected < (MAX_CONNECTIONS+1)" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A1DD0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A1DD0); /* "f->m_p1->m_numConnected < (MAX_CONNECTIONS+1)" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00126118);
 
@@ -1359,7 +1359,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00127B70);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00127B78);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00127B80);
+INCLUDE_ASM("asm/nonmatchings/text", __tf5Cloth);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00127BD8);
 
@@ -1611,7 +1611,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003A6248);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0012CA78);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0012CBF8);
+INCLUDE_ASM("asm/nonmatchings/text", __tf14DiggingRaceGod);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0012CC58);
 
@@ -1787,7 +1787,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00139190);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001397E0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00139858);
+INCLUDE_ASM("asm/nonmatchings/text", func_00139858); /* return 0x64; */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00139860);
 
@@ -1877,7 +1877,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A200);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A208);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A8058);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A8058); /* "7Jump_IF" */
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A8068);
 
@@ -1921,7 +1921,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A7F8);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf19Interface1Z7Jump_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013A878);
+INCLUDE_ASM("asm/nonmatchings/text", __tft9Interface1Z23AnimationMovedObject_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A8B8);
 
@@ -2375,23 +2375,23 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00142260);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001422D0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001422F0);
+INCLUDE_ASM("asm/nonmatchings/text", __tf18ToggleRenderAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142340);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142370);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00142390);
+INCLUDE_ASM("asm/nonmatchings/text", __tf11ClearAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001423E0);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142400);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00142420);
+INCLUDE_ASM("asm/nonmatchings/text", __tf10SaveAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142470);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003ADFC0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003ADFC0); /* "8GE_Light" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142EF8);
 
@@ -2593,23 +2593,23 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003B1998);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf10ParticleID);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149D00);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149D00); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149D08);
+INCLUDE_ASM("asm/nonmatchings/text", __tf13AttractorSpec);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149D58);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149D58); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149D60);
+INCLUDE_ASM("asm/nonmatchings/text", __tf11EmitterSpec);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149DB0);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149DB0); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf9SpawnSpec);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149E08);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149E08); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf12ParticleSpec);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149E60);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149E60); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf14ParticleSystem);
 
@@ -2621,7 +2621,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00149ED8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149EE8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149EF8);
+INCLUDE_ASM("asm/nonmatchings/text", func_00149EF8); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00149F00);
 
@@ -2635,9 +2635,9 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00149F60);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf14WidgetEditable);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00149FC0);
+INCLUDE_ASM("asm/nonmatchings/text", __tf17ParticleSystem_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0014A010);
+INCLUDE_ASM("asm/nonmatchings/text", __tft9Interface1Z17ParticleSystem_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014A050);
 

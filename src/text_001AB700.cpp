@@ -3,7 +3,7 @@
 
 #include "Dogs/Creatres.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB700);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB700); /* Container::Container */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB7E8);
 
@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ABA10);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ABA78);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ABAE8);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ABAE8); /* BasketballNet::BasketballNet */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ABBD8);
 
@@ -41,7 +41,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC2F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC350);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC3A0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC3A0); /* Pram::Pram */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AC490); /* Pram::~Pram */
 
@@ -145,7 +145,7 @@ void func_001ACFC8(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ACFD0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAEA8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAEA8); /* "9Container" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf13BasketballNet);
 

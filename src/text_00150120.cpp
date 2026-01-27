@@ -9,7 +9,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001503B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001505D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150648);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150648); /* return 0x64; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150650);
 
@@ -21,7 +21,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150B78);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B1DB0); /* "Person may have fallen through floor: %s\n" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B1DE0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B1DE0); /* "Acos out of range" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B1E10);
 
@@ -289,7 +289,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf10SaveKennel);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152C38);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152C40);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf21MostInFrontCalculator);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152C90);
 
@@ -513,7 +513,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015ACD0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015AD30);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BB840);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BB840); /* "ScentMarkingGameGod" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015AEE8);
 
@@ -629,19 +629,19 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015FF70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001601F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160238);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf20ScentMarkingGameNode);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160290);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160298);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf19ScentMarkingGameGod);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001602F8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BD1D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160300);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf28ScentMarkingGameGodInterface);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160350);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tft9Interface1Z28ScentMarkingGameGodInterface);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160390);
 
@@ -702,14 +702,22 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161038);
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161040);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161060);
+#ifdef NON_MATCHING
+Status SimObj_InternalInitialise(void) {
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/SimObj.cpp", 0x132);
+}
 
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalInitialise__Fv);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_InternalFinalise__Fv); /* return; */
+void SimObj_InternalFinalise(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_Initialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001610E8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", SimObj_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161108);
 
@@ -1097,9 +1105,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001684D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001684E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001684F8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001684F8); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168500);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168500); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168508);
 
@@ -1431,7 +1439,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BB90);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BCD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BCF8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11SkiLiftSeat);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BD50);
 
@@ -1503,7 +1511,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003C3E38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D730);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D870);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf8Slidable);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D8C8);
 
@@ -1585,7 +1593,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001711B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001711E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171230);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171288);
 
@@ -1699,7 +1707,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003C7848);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173718);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173858);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf13SoundCreature);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001738B0);
 
@@ -1791,7 +1799,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177488);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001774C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177568);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf9SphereObj);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001775C0);
 
@@ -1803,7 +1811,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001775F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177648);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177688);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf15BallHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001776D8);
 
@@ -1859,7 +1867,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178460);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001785A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001785C8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11SwingBridge);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178620);
 
@@ -1985,7 +1993,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017D0E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017D0E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017D110);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf11TugOfWarGod);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017D168);
 
@@ -2129,7 +2137,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181438);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001815F8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CE4A0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$5WheeledVehicleHitReceiver);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CE4C0);
 
@@ -2183,7 +2191,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181860);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181870);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181878);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf25WheeledVehicleHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001818C8);
 
@@ -2197,20 +2205,48 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC50);
 
-
-INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise__Fv);
-/*Status WorldObj_InternalInitialise(void) {
+#ifdef NON_MATCHING
+Status WorldObj_InternalInitialise(void) {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 0x96);
-}*/
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise__Fv);
+#endif
 
 
 void WorldObj_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Initialise__Fv);
+#ifdef NON_MATCHING
 
+StdInit_ModuleDescription WorldObj_StdInit_Description = {
+    0,
+    &WorldObj_StdInit_UsedModules
+};
+
+
+void * const WorldObj_StdInit_UsedModules[] = {
+    &WorldObj_InternalInitialise,
+    &WorldObj_InternalFinalise,
+	&SimObj_Initialise,
+	&SimObj_Finalise,
+    0,
+    0,
+};
+
+Status WorldObj_Initialise(void) {
+    return StdInit_InitialisationSequence(&WorldObj_StdInit_Description);
+}
+
+void WorldObj_Finalise(void) {
+    StdInit_FinalisationSequence(&WorldObj_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001819E8);
 
@@ -2362,7 +2398,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001874C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187518);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187628);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187628); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187630);
 
@@ -2374,7 +2410,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001879A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187EC8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D0260);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$21PersistantDataUpdater);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D0278);
 
@@ -2481,6 +2517,7 @@ int func_00188488(void) {
 float func_00188490(void) {
     return 0.0f;
 }
+
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001884A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001884A8);
@@ -2603,7 +2640,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D2108);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00189CD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A018);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf4Zone);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A070);
 
@@ -2615,13 +2652,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A088);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A098);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A0A0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf10ZoneRadius);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A138);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A140);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A148);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf16ZoneFromNavGraph);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018A1E0);
 

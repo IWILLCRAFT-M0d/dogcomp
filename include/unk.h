@@ -269,5 +269,10 @@ void func_002D5D58(void);
 
 void IOPMem_Finalise(void);
 
+Status SimObj_InternalInitialise(void);
+void SimObj_InternalFinalise(void);
+Status SimObj_Initialise(void);
+void SimObj_Finalise(void);
+
 #endif
 
