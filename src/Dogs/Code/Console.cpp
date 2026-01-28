@@ -744,7 +744,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D6080); /* "Orientatio
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D60A0); /* "Orientation rendering disabled" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9110);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9110); /* Console::RenderRadius */
 
 // `-snas` Required
 #ifdef NON_MATCHING
@@ -761,11 +761,8 @@ int Console::RenderCarryHandles() {
 }
 
 #else
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", RenderActorName__7Console);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", RenderHoldingPoints__7Console);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", RenderCarryHandles__7Console);
 #endif
 
@@ -781,9 +778,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A95F8); /* Console::Di
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A97F0); /* Console::RenderHitSpheres */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A98E8); /* Console::UnlockBegMoves */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", UnlockBegMoves__7Console); /* Console::UnlockBegMoves */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A99F8); /* Console::UnlockClues */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", UnlockClues__7Console); /* Console::UnlockClues */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9A20); /* Console::MoveForward */
 

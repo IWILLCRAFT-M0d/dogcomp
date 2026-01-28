@@ -85,6 +85,8 @@ class Console {
 		int RenderActorName();
 		int RenderHoldingPoints();
 		int RenderCarryHandles();
+		void UnlockBegMoves();
+		void UnlockClues();
 		void Quit();
 		void FogSharpness(void* arg0);
 };

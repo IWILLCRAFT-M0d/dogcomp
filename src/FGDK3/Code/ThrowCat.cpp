@@ -41,4 +41,4 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B648); /* rct3 ThrowCatch_DefiniteThrow */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_DefiniteThrow); /* rct3 ThrowCatch_DefiniteThrow */

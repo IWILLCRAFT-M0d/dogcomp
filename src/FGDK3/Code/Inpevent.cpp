@@ -2,7 +2,18 @@
 
 #include "FGDK3/Inpevent.h"
 
+
+#ifdef NON_MATCHING
+
+Status InputEvent_InternalInitialise(void) {
+    int D_00452E30 = 0;
+    int D_00452E34 = 0;
+    int D_00452E40 = 0;
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/Inpevent.cpp", 143);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", InputEvent_InternalInitialise__Fv);
+#endif
 
 void InputEvent_InternalFinalise() {
     return;

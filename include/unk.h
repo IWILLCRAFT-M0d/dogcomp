@@ -1,6 +1,7 @@
 #ifndef UNK_H
 #define UNK_H
 
+#include <stdlib.h>
 #include "FGDK3/Playstation2/Thread.h"
 // Unknown data and functions.
 
@@ -69,6 +70,16 @@ struct Texture_Resources : public Resource_Generic {
     virtual ~Texture_Resources();
 };*/
 
+struct Resource_Generic {
+    int m_unk0;
+    int m_unk4;
+    int m_unk8;
+    StdInit_ClientBase m_unkC;
+
+    Resource_Generic();
+    virtual ~Resource_Generic();
+};
+
 struct Mien {
     int unk0;
     int unk4;
@@ -87,6 +98,28 @@ struct Mien {
 
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
+
+class Game_Document {
+    public:
+    Game_Document(float, float);
+    virtual ~Game_Document();
+};
+
+class StdAllocator {
+    public:
+        void* Alloc(size_t nbytes);
+        void Free(void* ptr);
+        void* MemAlign(size_t alignment, size_t size);
+};
+
+class GE_RenderHardware {
+    public:
+        float m_unk0;
+        int m_unk4;
+    GE_RenderHardware();
+    virtual ~GE_RenderHardware();
+    virtual void func_002CA950();
+};
 
 class GE_PrimCache {
     public:
@@ -294,7 +327,8 @@ int func_001ACFC0(void);
 //void func_00247D28(void*);
 
 void func_00139048(void);
-
+int func_00274B00(char* name);
+int func_00275288(int arg0, int arg1, int ovlType, int arg3);
 void func_002757F0(void);
 char* func_002D7738(int);
 void func_002D7980(void);
@@ -303,6 +337,7 @@ int func_0030ACA8(char*, int);
 int func_0030ACD0(char*, unsigned int);
 
 void func_002D5D58(void);
+
 #ifdef __cplusplus
 }
 #endif
@@ -313,6 +348,8 @@ Status SimObj_InternalInitialise(void);
 void SimObj_InternalFinalise(void);
 Status SimObj_Initialise(void);
 void SimObj_Finalise(void);
+
+Status StdMem_Initialise(void);
 
 #endif
 

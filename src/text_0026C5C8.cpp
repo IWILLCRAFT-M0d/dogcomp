@@ -21,7 +21,10 @@ Status StdMem_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdMem_InternalInitialise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C610);
+//INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C610);
+void StdMem_InternalFinalise(void) {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdMem_Initialise__Fv);
 

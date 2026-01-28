@@ -18,7 +18,6 @@ void ShapeRes_InternalFinalise(void) {
     func_002757F0();
 }
 
-
 #ifdef NON_MATCHING
 
 StdInit_ModuleDescription ShapeRes_StdInit_Description = {

@@ -1,7 +1,7 @@
 #include "common.h"
 
 // GameShell::Step? (rct3 mac)
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D2D80);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", Step__9GameShellG9GameShell);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D2F98);
 
@@ -10,8 +10,26 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3020)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D30A8);
 
 // GameShell::GameShell
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D30E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", __9GameShellff);
+/*
 
+void GameShell::GameShell(float fps, float gamespeed) {
+  undefined8 uVar1;
+
+  TimSrv_Client::TimSrv_Client(this);
+  this->unk4 = 0;
+  uVar1 = TimSrv_GetTime();
+  *(undefined8 *)&this->field_0x8 = uVar1;
+  this->fps = fps; // unk10
+  this->m_gamespeed = gamespeed; // unk14
+  this->temp_inputdisabledthing = 0; // unk1c
+  if (TheGame != 0) {
+    tempR_DDE_FatalError("More than one GameShell instance not allowed");
+  }
+  TheGame = this;
+  return;
+}
+*/
 // GameShell::~GameShell
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3188);
 

@@ -21,11 +21,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334D70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334DA8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334DC8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", memalign);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334DF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334FC8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", malloc);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", free);
 

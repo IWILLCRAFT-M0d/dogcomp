@@ -10,6 +10,10 @@
 #include "unk.h"
 #include "FGDK3/RelRecv.h"
 #include "FGDK3/ResLibs/TextureRes/Code/TextureRes.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", SoundManager_InternalInitialise__Fv);
 
@@ -264,7 +268,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", Semaphore_Finalise__Fv);
 
 
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FFB8);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", __13ShapeInstance);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270018);
 
@@ -494,7 +498,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273C38);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273CB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273D08);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", __19Resource_LayoutUnitPv); /* Resource_LayoutUnit */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273D28);
 
@@ -572,9 +576,53 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00275038);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002750E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00275288);
+//INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00275288);
+int func_00275288(int arg0, int arg1, int ovlType, int arg3) {
+    char* format;
+    char ovlName[256];
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", __16ResourceGeneric);
+    switch (arg3) {
+    default:
+        sprintf(ovlName, "overlay\\%d.ovl", ovlType);
+        break;
+    case 1:
+        sprintf(ovlName, "overlay\\%dd%d.ovl", ovlType, arg0);
+        break;
+    case 2:
+        sprintf(ovlName, "overlay\\%dl%d.ovl", ovlType, arg1);
+        break;
+    case 3:
+        sprintf(ovlName, "overlay\\%dd%dl%d.ovl", ovlType, arg0, arg1);
+        break;
+    }
+    return func_00274B00(ovlName);
+}
+
+
+
+#ifdef NON_MATCHING
+extern void* D_0035FC18[];
+extern int D_0044F5A0;
+Resource_Generic::Resource_Generic(){
+    int i;
+
+    this->m_unk0 = 0;
+    this->m_unk4 = 0;
+    this->m_unk8 = 0;
+
+    StdInit_ClientBase *a0 = &this->m_unkC;
+    a0->CheckError(StdMem_Initialise());
+
+    for (i = 0; i < D_0044F5A0; i++) {
+        if (D_0035FC18[i] == this) {
+            this->m_unk8 = i;
+            break;
+        }
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", __16Resource_Generic);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", _$_16Resource_Generic);
 
@@ -788,12 +836,22 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002781E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278278);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002782A8);
+//INCLUDE_ASM("asm/nonmatchings/text_0026D178", Alloc__12StdAllocatorUi);/* StdAllocator::Alloc */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002782C8);
+void * StdAllocator::Alloc(size_t nbytes) {
+  return malloc(nbytes);
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002782E8);
 
+//INCLUDE_ASM("asm/nonmatchings/text_0026D178", Free__12StdAllocatorPv); /* StdAllocator::Free */
+ void StdAllocator::Free(void* ptr) {
+  free(ptr);
+}
+
+//INCLUDE_ASM("asm/nonmatchings/text_0026D178", MemAlign__12StdAllocatorUiUi); /* StdAllocator::MemAlign */
+void* StdAllocator::MemAlign(size_t alignment, size_t size) {
+    return memalign(alignment, size);
+}
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278308);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278350);
@@ -804,17 +862,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$12StdAllocator);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", __tf12StdAllocator);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002783A8); /* StdAllocator::Alloc */
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002783A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002784C8); /* StdAllocator::Free */
-/* void StdAllocator::Free(void* ptr)
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002784C8);
 
-{
-  free(ptr);
-  return;
-}
-*/
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278568); /* StdAllocator::MemAlign */
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278568);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278608);
 

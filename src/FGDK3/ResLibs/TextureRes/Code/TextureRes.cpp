@@ -45,13 +45,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", Texture
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __17Texture_Resources); /* Texture_Resources::Texture_Resources */
-
-/*
 Texture_Resources::Texture_Resources(){
     this->unk14 = 0;
 }
-*/
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _$_17Texture_Resources); /* Texture_Resources::~Texture_Resources */
 

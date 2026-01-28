@@ -10,4 +10,6 @@ void ThrowCatch_InternalFinalise(void);
 Status ThrowCatch_Initialise(void);
 void ThrowCatch_Finalise(void);
 
+void ThrowCatch_DefiniteThrow(Status);
+
 #endif

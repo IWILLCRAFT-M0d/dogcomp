@@ -6,6 +6,7 @@
 #include <libscf.h>
 #include <sound.h>
 #include <ee/sifdev.h>
+#include "FGDK3/ThrowCat.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30); /* SOUND_InitIOP */
 
@@ -617,7 +618,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296178);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296248); /* Main_RunGame */
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", Main_RunGame); /* Main_RunGame */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963D0);
 
@@ -907,9 +908,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A928);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029A968);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029AA28);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029AA28); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029AA30);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029AA30); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0029AA38);
 
@@ -1448,7 +1449,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC488);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC490);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC4A8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC4A8); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC4B0);
 
@@ -2676,11 +2677,27 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA950);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA958);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA958); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA960);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA968); /* GE_RenderHardware */
+
+#ifdef NON_MATCHING
+
+int D_00452894;
+
+GE_RenderHardware::GE_RenderHardware() {
+    this->m_unk0 = 1.0f;
+    this->m_unk4 = 0;
+    if (D_00452894 != 0) {
+        ThrowCatch_DefiniteThrow(Status(0x4007, "C:/Coding/FGDK3/Code/Common/GE.cpp", 63));
+    }
+    D_00452894 = 1;
+
+};
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __17GE_RenderHardware);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CAA00);
 

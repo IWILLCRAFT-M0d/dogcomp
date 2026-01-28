@@ -6,6 +6,8 @@
 #include "FGDK3/ThrowCat.h"
 #include "FGDK3/RelRecv.h"
 
+#include "unk.h"
+
 extern void * const TextureRes_StdInit_UsedModules[];
 
 Status TextureRes_InternalInitialise(void);
@@ -13,7 +15,7 @@ void TextureRes_InternalFinalise(void);
 Status TextureRes_Initialise(void);
 void TextureRes_Finalise(void);
 
-/*
+
 struct Texture_Resources : public Resource_Generic {
 
     int unk14;
@@ -21,15 +23,5 @@ struct Texture_Resources : public Resource_Generic {
     virtual ~Texture_Resources();
 };
 
-struct Resource_Generic {
-    int unk0;
-    int unk4;
-    int unk8;
-    void* unkC;
-
-    Resource_Generic();
-    virtual ~Resource_Generic();
-};
-*/
 
 #endif

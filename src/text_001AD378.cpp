@@ -578,15 +578,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5D48);
 
 
 
-//#ifdef NON_MATCHING
+#ifdef NON_MATCHING
 
-//Status Game_InternalInitialise(void) {
-//    Game_Document::Game_Document(0.01, 0.125);
-//    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x2160);
-//}
-//#else
+Status Game_InternalInitialise(void) {
+    Game_Document::Game_Document(0.01, 0.125);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x2160);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_InternalInitialise__Fv);
-//#endif
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Game_InternalFinalise__Fv);
 

@@ -2770,7 +2770,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D2BB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C748);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C960);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __Q212BookMetaphor16GamePositionPagei);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C980);
 
