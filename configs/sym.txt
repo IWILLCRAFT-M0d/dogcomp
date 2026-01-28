@@ -954,6 +954,7 @@ strncmp = 0x003376c8; // type:func
 strncpy = 0x00337880; // type:func
 strstr = 0x00337a90; // type:func
 RemoveIntcHandler = 0x00340f60; // type:func
+CreateThread = 0x00341060; // type:func
 DeleteThread = 0x00341070; // type:func
 StartThread = 0x00341080; // type:func
 TerminateThread = 0x003410b0; // type:func

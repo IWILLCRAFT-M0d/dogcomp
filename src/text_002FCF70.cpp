@@ -170,7 +170,7 @@ Status File_MemCard_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalFinalise__Fv);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalFinalise__Fv); // must be compiled as C, O0 optimized?
 
 #ifdef NON_MATCHING
 

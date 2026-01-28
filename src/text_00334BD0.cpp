@@ -419,7 +419,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341040);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341050);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341060);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", CreateThread);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", DeleteThread);
 

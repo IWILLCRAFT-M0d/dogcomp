@@ -459,15 +459,50 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00272E28);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00272E88);
 
+#ifdef NON_MATCHING
+
+Status RunPath_InternalInitialise() {
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/RunPath.cpp", 66);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_InternalInitialise__Fv);
+#endif
 
 void RunPath_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_Initialise__Fv);
+#ifdef NON_MATCHING
 
+StdInit_ModuleDescription RunPath_StdInit_Description = {
+    0,
+    &RunPath_StdInit_UsedModules
+};
+
+void * const RunPath_StdInit_UsedModules[] = {
+    &RunPath_InternalInitialise,
+    &RunPath_InternalFinalise,
+    &File_CD_Initialise,
+    &File_CD_Finalise,
+    0,
+    0,
+};
+
+
+Status RunPath_Initialise() {
+  return StdInit_InitialisationSequence(&RunPath_StdInit_Description);
+}
+
+
+void RunPath_Finalise() {
+    StdInit_FinalisationSequence(&RunPath_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00272FF0); /* return "cdrom0:\\" */
 

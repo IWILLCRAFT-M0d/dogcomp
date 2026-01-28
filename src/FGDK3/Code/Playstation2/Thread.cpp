@@ -3,7 +3,43 @@
 #include "FGDK3/Playstation2/sifManager.h"
 
 #include <ee/eekernel.h>
+#include <stdlib.h>
+#include <string.h>
+
+#ifdef NON_MATCHING
+PS2ThreadImplementation::PS2ThreadImplementation(Thread *th, int stack_size) {
+    void *p;
+    this->m_thread = th;
+
+    p = malloc(stack_size);
+    this->m_suspendCnt = 0;
+    this->m_exitCode = 0;
+    this->m_stack = p;
+
+    memset(p, 0xCD, stack_size);
+
+    if (stack_size != 0) {
+        ThreadParam param;
+
+        param.entry = &PS2ThreadImplementation::EntryPoint;
+        param.stack = this->m_stack;
+        param.stackSize = stack_size;
+        param.initPriority = 1;
+        param.gpReg = &_gp;
+
+        this->m_threadId = CreateThread(&param);
+    } else {
+        this->m_threadId = GetThreadId();
+    }
+
+    m_threadMutex.Wait();
+    this->m_next = this->m_topThread;
+    this->m_topThread = this;
+    m_threadMutex.Signal();
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __23PS2ThreadImplementationP6Threadi);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", _$_23PS2ThreadImplementation);
 
@@ -80,8 +116,9 @@ void Thread::SwitchToNext() {
     RotateThreadReadyQueue(s->m_thread->GetPriority());
 }
 
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Create__Q29Semaphore14Implementationii);
+Semaphore::Implementation *Semaphore::Implementation::Create(int init, int max) {
+    return new PS2SemaphoreImplementation(init, max);
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", __26PS2SemaphoreImplementationii);
 
@@ -124,11 +161,19 @@ Status Thread_InternalInitialise() {
     D_00451948 = temp_s1;
     return Status(0xFFFFFFFFU, "c:/coding/fgdk3/Code/Playstation2/Thread.cpp", 522);
 }
+
+void Thread_InternalFinalise() {
+    if (D_00451948 != 0) {
+        delete D_00451948;
+    }
+}
+
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_InternalInitialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_InternalFinalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Thread", Thread_InternalFinalise__Fv);
+
 
 #ifdef NON_MATCHING
 StdInit_ModuleDescription Thread_StdInit_Description = {

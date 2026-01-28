@@ -5,6 +5,8 @@
 
 #include "FGDK3/Playstation2/File_CD.h"
 
+extern void * const RunPath_StdInit_UsedModules[];
+
 Status RunPath_InternalInitialise(void);
 void RunPath_InternalFinalise(void);
 Status RunPath_Initialise(void);
