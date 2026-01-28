@@ -172,7 +172,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024E3B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024E620);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024E760);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024E760); /* Widget_Graphic */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024E810);
 
@@ -446,7 +446,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255BF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255BF8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004332F8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004332F8); /* "Attempt to place widget above non-hierarchical widget (not allowed)" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255C40);
 
@@ -820,13 +820,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004366D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436850);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004369D0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$14Widget_Graphic);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436B50);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$15Widget_LiveText);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436CD0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$20Widget_FormattedText);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436E50);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$11Widget_Text);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$6Widget);
 
@@ -860,11 +860,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437260);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437278);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025D2A0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf13Widget_Window);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025D390);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Widget_Menu);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025D480);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf15Widget_MenuItem);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372C0);
 
@@ -1571,7 +1571,7 @@ int func_00263640(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263648);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263668);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf13VD_FocusStack);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002636B8);
 
@@ -1579,7 +1579,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263748);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263930);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263950);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf17VD_HierarchyStack);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002639A0);
 
@@ -1587,7 +1587,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263A40);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263C10);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263C30);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf13VD_HelpWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263C80);
 

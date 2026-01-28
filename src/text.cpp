@@ -2799,7 +2799,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0014DCF0);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014DD20);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0014EB88);
+INCLUDE_ASM("asm/nonmatchings/text", func_0014EB88); /* addMove */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0014EBA0);
 

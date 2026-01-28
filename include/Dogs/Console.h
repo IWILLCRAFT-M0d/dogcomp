@@ -80,6 +80,7 @@ int func_001AADF8(void);
 class Console {
 	public:
 		void Break();
+		void TestDoggyDoAnims();
 		void Parse();
 		void Patch();
 		int RenderActorName();

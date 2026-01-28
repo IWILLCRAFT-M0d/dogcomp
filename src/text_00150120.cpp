@@ -704,7 +704,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161040);
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161060);
 #ifdef NON_MATCHING
 Status SimObj_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/SimObj.cpp", 0x132);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/SimObj.cpp", 306);
 }
 
 #else
@@ -2207,7 +2207,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC50);
 
 #ifdef NON_MATCHING
 Status WorldObj_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 0x96);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 150);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_00150120", WorldObj_InternalInitialise__Fv);
@@ -3064,7 +3064,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019B480);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019B5A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019B6C0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __17BookMetaphorLayer); /* BookMetaphorLayer::BookMetaphorLayer */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019B7A0);
 

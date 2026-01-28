@@ -30,6 +30,7 @@ void GameShell::GameShell(float fps, float gamespeed) {
   return;
 }
 */
+
 // GameShell::~GameShell
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3188);
 
@@ -43,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", __tf9GameShell
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3318);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3360);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3360); /* TimSrv_Client::TimSrv_Client */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D33C0);
 

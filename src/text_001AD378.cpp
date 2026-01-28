@@ -2,14 +2,13 @@
 #include "unk.h"
 
 #include "FGDK3/Playstation2/Thread.h"
+#include "Dogs/Gameutil.h"
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB138); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB160); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB190); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
-
-
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AD378); /* DogScript::DogScript */
 
@@ -362,7 +361,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C5410);
 int D_00452174;
 Status func_001C54C8(void) {
 	D_00452174 = 1;
-	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x562);
+	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 1378);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C54C8);
@@ -564,7 +563,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1F00); /* "ResPatch.tmp" 
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E1F10); /* "BriberyBone" */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D4E40);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D4E40); /* changeCollar */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5B88);
 
@@ -581,7 +580,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5D48);
 #ifdef NON_MATCHING
 
 Status Game_InternalInitialise(void) {
-    Game_Document::Game_Document(0.01, 0.125);
+    new Game_Document::Game_Document(0.01, 0.125);
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x2160);
 }
 #else
@@ -603,7 +602,15 @@ void Game_Finalise(void) {
 }
 */
 
+
+
+#ifdef NON_MATCHING
+Status func_001D5E90(void) {
+	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 8588);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5E90);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D5ED8);
 
@@ -667,15 +674,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6A18);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E21D8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2228);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$25BeforeMapChangeEnumerator);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2240);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$24AfterMapChangeEnumerator);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2288);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$28Game_ClosestVisibleInFrontOf);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E22A0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$9StatusBar);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2480);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$11DSLRenderer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2498);
 
@@ -691,17 +698,17 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26F8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2730);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2948);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$20WorldObject_Universe);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2960);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$23SimObj_FilterFlagsAndEq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2978);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$13SimObj_Filter);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6A40);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf13SimObj_Filter);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E29C0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E29C0); /* "13SimObj_Filter" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf23SimObj_FilterFlagsAndEq);
 
@@ -711,7 +718,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf20WorldObject_Universe);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6B98);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E29F0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E29F0); /* "20WorldObject_Universe" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf11GameDesktop);
 
@@ -857,15 +864,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D76F0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2AF0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2BB8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$8CameraMR);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2BD0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$7DebugMR);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2BE8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$14ToggleScreenMR);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2C00);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$8LightsMR);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2C18);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$10DebugLayer);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7768);
 
@@ -909,7 +916,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf16MenuRegisterable);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7E58);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7E78);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tfQ28LightsMR17LightingRigAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D7EC8);
 
@@ -965,7 +972,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D87E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8840);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D88A0);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D88A0); /* ChangeLevelReq */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8910);
 
@@ -975,7 +982,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8A40);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8AA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8B00);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8B00); /* __10FadeOutReqf */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8B80);
 
@@ -1013,33 +1020,33 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9198);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E307C);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E31B8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$9FadeInReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E31E0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$10FadeOutReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3208);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$15BMPageActionReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3230);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$18BMHighlightMoveReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3258);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$18BMHighlightClueReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3280);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$15StartNewGameReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E32A8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$14ChangeLevelReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E32D0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$16LoadSavedGameReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E32F8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$18BMPageNumChangeReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3320);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$15BMPageChangeReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3348);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$16BMStateChangeReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3370);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$13SwitchViewReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E3398);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$Q29GameState12GameStateReq);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E33C0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E33C0); /* "Q29GameState12GameStateReq" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf13SwitchViewReq);
 
@@ -1059,7 +1066,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9680);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D96B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D96D8);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf15BMPageChangeReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9748);
 
@@ -1067,7 +1074,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9780);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9810);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9830);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf18BMPageNumChangeReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D98A0);
 
@@ -1105,7 +1112,7 @@ int func_001D9BF0(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9BF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9C18);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf18BMHighlightClueReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9C88);
 
@@ -1113,7 +1120,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9CC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9CF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9D10);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf18BMHighlightMoveReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9D80);
 
@@ -1121,7 +1128,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9DB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9DE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9E08);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf15BMPageActionReq);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9E78);
 
@@ -1133,7 +1140,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D9FB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf10FadeOutReq);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA048);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA048); /* doFadeOut */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA070);
 
@@ -1141,7 +1148,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA0A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf9FadeInReq);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA138);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA138); /* doFadeIn */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA160);
 
@@ -1163,7 +1170,14 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA2E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DA338);
 
+
+#ifdef NON_MATCHING
+Status Gameutil_InternalInitialise(void) {
+	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Gameutil.cpp", 69);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", Gameutil_InternalInitialise__Fv);
+#endif
 
 void Gameutil_InternalFinalise() {
 	return;

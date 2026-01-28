@@ -51,9 +51,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0628);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A06D0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0810);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0810); /* open debug console */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0900);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0900); /* close debug console */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0968);
 
@@ -568,7 +568,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4658); /* Console::Co
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A46E0); /* Console::TextureLoD */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A4768); /* Console::TestDoggyDoAnims */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", TestDoggyDoAnims__7Console); /* Console::TestDoggyDoAnims */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5160); /* "1st Actor arg not found in this level" */
 
@@ -657,6 +657,37 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6630); /* Console::Se
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A68D8); /* Console::IsAdvance */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6A70); /* Console::IsMediaReady */
+/*
+extern void* D_00453698;
+
+void Console::IsMediaReady(s32 arg0) {
+    char str[128];
+
+    s32 slot;
+    u32 temp_4;
+
+
+    slot = D_00453698->m_cardSlot; // unk20
+    switch (D_00453698->m_mediaReady) { // unk 28
+    case 1:
+        sprintf(str, "Cannot access card slot %d", slot);
+        break;
+    case 2:
+        sprintf(str, "Media not present in card slot %d", slot);
+        break;
+    case 3:
+        sprintf(str, "Media not formatted in card slot %d", slot);
+        break;
+    case 5:
+        sprintf(str, "Not enough space for Dogstale on media in card slot %d", slot);
+        break;
+    case 0:
+        sprintf(str, "Media ready in card slot %d", slot);
+        break;
+    }
+    func_001A0B08(arg0, 2, str);
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6B48); /* Console::IsRender */
 

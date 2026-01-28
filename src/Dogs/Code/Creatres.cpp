@@ -8,7 +8,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Creatres", D_003DAF80); /* "Creature"
 #ifdef NON_MATCHING
 
 Status Creatres_InternalInitialise(void) {
-  return Status(0xffffffff, "c:/coding/dogs/Code/Common/Creatres.cpp", 0x2c);
+  return Status(0xffffffff, "c:/coding/dogs/Code/Common/Creatres.cpp", 44);
 }
 
 #else

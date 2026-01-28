@@ -5,7 +5,7 @@
 #ifdef NON_MATCHING
 
 Status MusicRes_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/MusicRes.cpp", 0x4d);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/MusicRes.cpp", 77);
 }
 
 #else

@@ -6,7 +6,7 @@
 #ifdef NON_MATCHING
 Status TextureRes_InternalInitialise(void) {
     func_002757E8();
-    return Status(0xffffffff, "c:/coding/fgdk3/ResLibs/TextureRes/Code/TextureRes.cpp", 0x42);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/TextureRes/Code/TextureRes.cpp", 66);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", TextureRes_InternalInitialise__Fv);

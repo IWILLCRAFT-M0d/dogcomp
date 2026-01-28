@@ -104,6 +104,21 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", Sound_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026E318); /* SoundImplementation::SoundImplementation */
 
+/*
+SoundImplementation::SoundImplementation(void* arg1) // Sound arg? {
+    this->m_unk8 = 0;
+    this->m_unkC = 0;
+    this->m_unk14 = 0;
+    this->m_unk18 = 0;
+    this->m_unk24 = 0;
+    this->m_unk0 = arg1;
+    this->m_unk10 = 1;
+    this->m_unk28 = 0xFFFFFFFF;
+    this->m_unk4 = 0xFFFFFFFF;
+    Sound_Initialise();
+};
+*/
+
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026E380);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026E3D8);

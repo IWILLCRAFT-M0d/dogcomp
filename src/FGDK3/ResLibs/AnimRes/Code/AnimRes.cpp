@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0
 
 Status AnimationRes_InternalInitialise(void) {
     func_002757E8();
-    return Status(0xFFFFFFFF,"c:/coding/fgdk3/ResLibs/AnimRes/Code/AnimRes.cpp", 0x4b);
+    return Status(0xFFFFFFFF,"c:/coding/fgdk3/ResLibs/AnimRes/Code/AnimRes.cpp", 75);
 }
 
 #else

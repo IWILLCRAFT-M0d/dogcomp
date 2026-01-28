@@ -8,7 +8,7 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", 
 #ifdef NON_MATCHING
 
 Status LandscapeRes_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/Fgdk3/ResLibs/LandscapeRes/Code/LandscapeRes.cpp", 0x4f);
+    return Status(0xFFFFFFFF, "c:/coding/Fgdk3/ResLibs/LandscapeRes/Code/LandscapeRes.cpp", 79);
 }
 
 #else

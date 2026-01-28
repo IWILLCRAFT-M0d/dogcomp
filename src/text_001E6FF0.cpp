@@ -693,7 +693,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F8378);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F83A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F85D8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __12PlayingLayer);
 
 void func_001F8628(void) {
     return;

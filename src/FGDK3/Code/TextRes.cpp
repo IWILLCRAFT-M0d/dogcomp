@@ -5,7 +5,7 @@
 
 #ifdef NON_MATCHING
 Status TextRes_InternalInitialise(void) {
-  return Status(0xffffffff, "c:/coding/fgdk3/Code/Common/TextRes.cpp", 0x2d);
+  return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/TextRes.cpp", 45);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/TextRes", TextRes_InternalInitialise__Fv);

@@ -2,6 +2,11 @@
 
 #include "FGDK3/Playstation2/File_MemCard.h"
 #include "FGDK3/Playstation2/File_CD.h"
+
+#include <common/libcdvd.h>
+#include <ee/libmc.h>
+#include "unk.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FCF70); /* FileSystemDisc::FileSystemDisc */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020);
@@ -148,7 +153,22 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB30);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB70);
 
+#ifdef NON_MATCHING
+int D_00452ECC = 0; // memcard initialised var?
+Status File_MemCard_InternalInitialise(void) {
+    int mcerror;
+    if (D_00452ECC == 0) {
+        mcerror = sceMcInit();
+        if (mcerror != sceMcIniSucceed) {
+            return func_0026CFF8(mcerror,"Could not initialise memory card interface", "c:/coding/fgdk3/Code/Playstation2/File_MemCard.cpp", 76);
+    }
+    D_00452ECC = 1;
+  }
+  return func_0026CFD0(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/File_MemCard.cpp", 82);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalFinalise__Fv);
 
@@ -213,7 +233,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300988);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003009C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300BE8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi); /* FileSystemDisc_MemCard::FileSystemDisc_MemCard(int slot); */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300CC8);
 
@@ -466,7 +486,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304730);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304768);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003047A0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __17FileSystemDisc_CD); /* FileSystemDisc_CD::FileSystemDisc_CD() */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00304830);
 

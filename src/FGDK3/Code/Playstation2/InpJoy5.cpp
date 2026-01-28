@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 Status InputJoy5_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/InpJoy5.cpp", 0x29);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/InpJoy5.cpp", 41);
 }
 
 #else

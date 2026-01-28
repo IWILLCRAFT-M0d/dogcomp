@@ -10,7 +10,7 @@
 #ifdef NON_MATCHING
 
 Status LevelRes_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Levelres.cpp", 0x2C);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Levelres.cpp", 44);
 }
 
 #else

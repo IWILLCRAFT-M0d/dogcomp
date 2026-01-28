@@ -9,7 +9,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA
 #ifdef NON_MATCHING
 Status SoundRes_InternalInitialise(void) {
     func_002757E8();
-    return Status(0xffffffff, "c:/coding/fgdk3/ResLibs/SoundRes/Code/SoundRes.cpp", 0x4f);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/SoundRes/Code/SoundRes.cpp", 0x79);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_InternalInitialise__Fv);

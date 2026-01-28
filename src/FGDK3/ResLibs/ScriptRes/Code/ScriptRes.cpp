@@ -7,7 +7,7 @@
 Status ScriptRes_InternalInitialise(void) {
     func_002757E8();
     func_0031CB30();
-    return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/ScriptRes/Code/ScriptRes.cpp", 0x7c);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/ScriptRes/Code/ScriptRes.cpp", 124);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", ScriptRes_InternalInitialise__Fv);

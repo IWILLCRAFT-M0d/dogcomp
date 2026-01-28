@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3760);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D37B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3808);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __16DebugEnvironment);
 /* DebugEnvironment::DebugEnvironment */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D38A0); /* DebugEnvironment::~DebugEnvironment */
@@ -25,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442D68);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3988);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4290); /* DebugWindow::~DebugWindow*/
 
@@ -284,7 +284,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6998);
 
 #ifdef NON_MATCHING
 Status FontRes_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/FontRes.cpp", 0x2f);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/FontRes.cpp", 47);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_InternalInitialise__Fv);

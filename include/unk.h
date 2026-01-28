@@ -101,8 +101,10 @@ extern s_0044EB68* TheGame;
 
 class Game_Document {
     public:
+        char m_unk[1450]; // temporary
     Game_Document(float, float);
     virtual ~Game_Document();
+
 };
 
 class StdAllocator {
@@ -338,6 +340,9 @@ int func_0030ACD0(char*, unsigned int);
 
 void func_002D5D58(void);
 
+Status func_001D5E90(void);
+Status func_0026CFD0(unsigned int, char*, int);
+Status func_0026CFF8(int, char*,char* ,int);
 #ifdef __cplusplus
 }
 #endif
