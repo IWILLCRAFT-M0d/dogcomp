@@ -157,11 +157,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5C28);
 
-// sym name taken from rct3_mac
-// TODO: fix warning "second parameter of `va_start' not last named argument"
 void DDE_FatalError(char* message, ...) {
     va_list args;
-    va_start(args, 0);
+    va_start(args, message);
     func_002D5958(message, args);
     va_end(args);
 }

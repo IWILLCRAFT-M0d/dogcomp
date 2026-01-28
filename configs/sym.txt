@@ -575,6 +575,8 @@ __tf19GE_PS2DisplayTarget = 0x002a1bd8;
 __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
 
+__12GE_PrimCachecsiiiPvi = 0x002CABB0; // type:func
+__15GE_PrimVerticesiii = 0x002A6070; // type:func
 __14GE_PrimIndicesici = 0x002A6270; // type:func
 
 __tf15GE_PrimVertices = 0x002a6540;
@@ -930,6 +932,7 @@ sceClose = 0x003454a8; // type:func
 sceLseek = 0x00345628; // type:func
 sceRead = 0x00345860; // type:func
 Exit = 0x00349ba8; // type:func
+sceSifFreeIopHeap = 0x003481C8; // type:func
 _vt$33AnimatedObject_ComplexHitReceiver = 0x00390228;
 _vt$17AnimatedObject_IF = 0x00395a80;
 _vt$19Particle_PlotObject = 0x003b02e8;

@@ -2,6 +2,7 @@
 
 #include <ee/eekernel.h>
 
+
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334BD0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334BF0);
@@ -912,7 +913,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003480D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00348150);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003481C8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifFreeIopHeap);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003481E8);
 

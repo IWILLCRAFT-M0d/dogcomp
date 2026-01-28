@@ -88,6 +88,33 @@ struct Mien {
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
 
+class GE_PrimCache {
+    public:
+        char m_unk0;
+        char m_unk1;
+        short m_unk2;
+        int m_unk4;
+        int m_unk8;
+        int m_unkC;
+        int m_unk10;
+        int m_unk14;
+    GE_PrimCache(char, short, int, int, int, void*, int);
+    virtual ~GE_PrimCache();
+};
+
+class GE_PrimVertices {
+    public:
+        int m_unk0;
+        int m_unk4;
+        short m_unk8;
+        short m_unkA;
+        int m_unkC;
+
+
+    GE_PrimVertices(int, int, int);
+    virtual ~GE_PrimVertices();
+};
+
 class GE_PrimIndices {
     public:
         short m_unk0;
@@ -118,12 +145,12 @@ void func_001DEF10(void);
 
 int func_002C8358(s_func_002C8358* arg0);
 
-void func_002967C8(int* arg0, int arg1);
+void func_002967C8(void* arg0, int arg1);
 void func_00247B88(int*);
 int func_002963F8();
 int func_002964C0();
 
-void func_003481C8(int);
+//void func_003481C8(int);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
 void func_002C3D80();
 void func_002C57E8(void);
