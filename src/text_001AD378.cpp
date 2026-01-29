@@ -4,6 +4,8 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
+#include <libscf.h>
+
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB138); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB160); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
@@ -1209,7 +1211,33 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DB9E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DBC90);
 
+#ifdef NON_MATCHING
+int func_001DBD50(int arg0) {
+	switch (arg0) {
+
+	case 0:
+		return 0;
+	case SCE_ENGLISH_LANGUAGE:
+		return 0;
+	case SCE_FRENCH_LANGUAGE:
+		return 2;
+	case SCE_SPANISH_LANGUAGE:
+		return 5;
+	case SCE_GERMAN_LANGUAGE:
+		return 4;
+	case SCE_ITALIAN_LANGUAGE:
+		return 3;
+	case SCE_DUTCH_LANGUAGE:
+		return 1;
+	case SCE_PORTUGUESE_LANGUAGE:
+		return 6;
+	default:
+		return 0;
+  }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DBD50);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DBDB8);
 

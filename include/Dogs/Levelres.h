@@ -12,5 +12,13 @@ void LevelRes_InternalFinalise(void);
 Status LevelRes_Initialise(void);
 void LevelRes_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+char * func_001E5810(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif
 

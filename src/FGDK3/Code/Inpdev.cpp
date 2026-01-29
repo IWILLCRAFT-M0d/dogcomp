@@ -2,7 +2,15 @@
 
 #include "FGDK3/Inpdev.h"
 
+#ifdef NON_MATCHING
+
+Status InputDevice_InternalInitialise() {
+  return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/Inpdev.cpp", 43);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_InternalFinalise__Fv);
 

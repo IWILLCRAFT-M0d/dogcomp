@@ -353,6 +353,8 @@ void func_002D5D58(void);
 Status func_001D5E90(void);
 Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
+
+int func_001DBD50(int);
 #ifdef __cplusplus
 }
 #endif

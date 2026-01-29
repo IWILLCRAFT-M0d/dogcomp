@@ -51,16 +51,27 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", Creatres_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", Creatres_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD1D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD1D8); /* load? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD298);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD298); /* unload */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Creatres", _vt$18Creature_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", __tf18Creature_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD308); /* return "Creature"; */
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD318); /* return "Creature"; */
+char * func_001AD308() {
+    return "Creature";
+}
+
+char * func_001AD318() {
+    return "Creature";
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD308);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", func_001AD318);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", __tft8Resource1Z24Creature_TypeDescription);

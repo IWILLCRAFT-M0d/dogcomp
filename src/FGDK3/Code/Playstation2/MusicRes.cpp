@@ -56,6 +56,13 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", _vt$15Music_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tf15Music_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", func_0027ED38); /* return "Music"; */
+#ifdef NON_MATCHING
+
+char * func_0027ED38() {
+    return "Music";
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", func_0027ED38);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tft8Resource1Z11Music_Piece);

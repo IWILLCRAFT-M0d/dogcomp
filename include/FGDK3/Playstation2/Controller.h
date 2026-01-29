@@ -20,6 +20,8 @@ typedef struct {
 extern "C" {
 #endif
 s_func_002FC270* func_002FC270(s_func_002FC270* arg0);
+void func_002FCC10(void);
+void func_002FCC38(void);
 #ifdef __cplusplus
 }
 #endif

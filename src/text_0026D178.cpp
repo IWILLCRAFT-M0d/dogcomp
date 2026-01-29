@@ -263,7 +263,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB78);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB80);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043BA58);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$5Sound);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$19SoundImplementation);
 
@@ -305,7 +305,7 @@ float func_002704F8(void) {
     return 0.0f;
 }
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043BBC0);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043BBC0); /* "<unknown shape>" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270508);
 

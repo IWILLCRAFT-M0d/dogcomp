@@ -620,9 +620,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296178);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", Main_RunGame); /* Main_RunGame */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963D0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963D0); /* Main_Terminate */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E0); /* return tempR__Main_CloseRequest; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002963E8); /* return; */
 

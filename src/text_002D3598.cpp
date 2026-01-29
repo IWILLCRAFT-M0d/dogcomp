@@ -333,7 +333,14 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$14Font_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14Font_Resources);
 
+#ifdef NON_MATCHING
+char * func_002D6B88() {
+    return "Font";
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B88);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18Resource1Z11Font_Header);
 
@@ -975,7 +982,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf19WalkingBobAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E5EC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E5F20);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf22WalkingParamsAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E5F70);
 
@@ -1067,7 +1074,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445130);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445190);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004451F0);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004451F0); /* _vt$19PositionIKAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf19PositionIKAnimation);
 
@@ -1267,9 +1274,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EE7C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EE858);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445590);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445590); /* "c:/coding/fgdk3/Code/Common/AnimPosComponents.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004455C8);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004455C8); /* _vt$31AnimPosWorldAFSLoopingAnimation */
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445628);
 

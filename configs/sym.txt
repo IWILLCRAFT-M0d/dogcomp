@@ -685,6 +685,7 @@ __tf15PlaneClipVolume = 0x002DF4C0;
 __tf18SixPlaneClipVolume = 0x002DF7C0;
 // WalkerComponents.cpp
 __tf19WalkingBobAnimation = 0x002e5e70;
+__tf22WalkingParamsAnimation = 0x002E5F20;
 __tf23AnimVarWalkingAnimation = 0x002e5f90;
 __tf23AnimPosWalkingAnimation = 0x002e6000;
 __tf28AnimPosWorldWalkingAnimation = 0x002e6070;
@@ -1092,6 +1093,7 @@ _vt$13DefaultThread = 0x0043b7d0;
 // TextRes.cpp
 _vt$14Text_Resources = 0x0043b860;
 _vt$6Status = 0x0043b960;
+_vt$5Sound = 0x0043BA58;
 _vt$19SoundImplementation = 0x0043ba88;
 _vt$13ShapeInstance = 0x0043bdc8;
 _vt$11ShapeParams = 0x0043be08;

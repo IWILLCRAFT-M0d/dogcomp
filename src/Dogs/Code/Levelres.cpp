@@ -56,7 +56,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", func_001E57A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", __tf15Level_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", func_001E5810); /* return "Level" */
+#ifdef NON_MATCHING
+
+char * func_001E5810() {
+    return "Level";
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", func_001E5810);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", __tft8Resource1Z17Level_Description);
 

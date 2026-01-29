@@ -13,4 +13,13 @@ void Creatres_InternalFinalise(void);
 Status Creatres_Initialise(void);
 void Creatres_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+char * func_001AD308(void);
+char * func_001AD318(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

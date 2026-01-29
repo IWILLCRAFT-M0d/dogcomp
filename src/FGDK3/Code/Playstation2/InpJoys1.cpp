@@ -80,7 +80,7 @@ void func_002F93C0() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F93C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F93C8); /* return Status */
 
 void func_002F9400() {
     return;

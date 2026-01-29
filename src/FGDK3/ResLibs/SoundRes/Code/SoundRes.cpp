@@ -4,7 +4,13 @@
 #include "SoundRes.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA70); /* return "Sound"; */
+#ifdef NON_MATCHING
+char * func_0024BA70() {
+    return "Sound";
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA70);
+#endif
 
 #ifdef NON_MATCHING
 Status SoundRes_InternalInitialise(void) {
@@ -60,7 +66,6 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", _vt$15So
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", __tf15Sound_Resources);
 
-//INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BE68);
 char * func_0024BE68() {
     return func_0024BA70();
 }

@@ -1,6 +1,8 @@
 #include "common.h"
 #include "FGDK3/Playstation2/Controller.h"
 
+#include <eekernel.h>
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC160);
@@ -23,11 +25,22 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC798
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_InternalInitialise__Fv);
 
-// SuspendThread(DAT_004535c0)
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC10);
+#ifdef NON_MATCHING
 
-// ResumeThread(DAT_004535c0)
+int D_004535C0;
+
+void func_002FCC10() {
+    SuspendThread(D_004535C0); // suspend controller thread
+}
+
+void func_002FCC38() {
+    ResumeThread(D_004535C0);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC10);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC38);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_InternalFinalise__Fv);
 

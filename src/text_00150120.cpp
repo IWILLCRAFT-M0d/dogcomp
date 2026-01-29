@@ -105,11 +105,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4E40);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4E70);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4EE0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4EE0); /* "Failed to advance slidable in PlayerDog.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4F10);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4F10); /* "Invalid RoverSays move ID in PlayerDog:: msg AddMove" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4F48);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4F48); /* "IsMoveAvailableInCurrentStage: Unknown stage ID" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003B4F78);
 
