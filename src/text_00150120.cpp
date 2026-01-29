@@ -2784,7 +2784,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018CBA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018D438);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018D7E8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __Q212BookMetaphor11NewGamePage);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018D830);
 
@@ -2936,7 +2936,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00191678);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001916A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00191FB0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __Q12BookMetaphor12SettingsPage);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00191FE0);
 
@@ -2974,7 +2974,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00194710);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00194738);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00194770);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __Q212BookMetaphor27ChangeLevelBackgroundThreadii); /* BookMetaphor::ChangeLevelBackgroundThread::ChangeLevelBackgroundThread(int map, int entry) */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001947C8);
 
@@ -3112,15 +3112,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D31C8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D31E8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D33C8);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor27ChangeLevelBackgroundThread);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D33F0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor24SaveGameBackgroundThread);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3418);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor24LoadGameBackgroundThread);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3440);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor23NewGameBackgroundThread);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3468);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor16BackgroundThread);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor10CheatsPage);
 
@@ -3128,25 +3128,25 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q12BookMetaphor12SettingsPa
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor10Stats1Page);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3598);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor10Stats0Page);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D35F0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor19CurrentPositionPage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3680);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor12SaveGamePage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3710);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor12LoadGamePage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D37A0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor11NewGamePage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3830);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor16GamePositionPage);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D38C0);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$Q212BookMetaphor4Page);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3918);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", _vt$6Thread);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3938);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3938); /* _vt$9GameLayer */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3958);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3958); /* _vt$9GameLayer */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019BF18);
 
@@ -3172,7 +3172,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", __tfQ212BookMetaphor16GamePosition
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019D7B0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3EF8);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3EF8); /* "9GameLayer" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D3F08);
 
@@ -3214,7 +3214,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", __tfQ212BookMetaphor16BackgroundTh
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019DF28);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D4080);
+INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D4080); /* "Q212BookMetaphor16BackgroundThread" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", __tfQ212BookMetaphor23NewGameBackgroundThread);
 
@@ -3264,11 +3264,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D45B0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003D45C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E4C0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tfQ24File8Callback);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E500);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E540);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tfQ212BookMetaphor28CurrentPositionPageResponder);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0019E580);
 

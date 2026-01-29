@@ -107,6 +107,16 @@ class Game_Document {
 
 };
 
+class GameShell {
+    public:
+        int unk4;
+        float m_fps;
+        float m_gamespeed;
+        int unk1C;
+    GameShell(float, float);
+    virtual ~GameShell();
+};
+
 class StdAllocator {
     public:
         void* Alloc(size_t nbytes);

@@ -12,4 +12,13 @@ void RunPath_InternalFinalise(void);
 Status RunPath_Initialise(void);
 void RunPath_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+char * func_00272FF0(void);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

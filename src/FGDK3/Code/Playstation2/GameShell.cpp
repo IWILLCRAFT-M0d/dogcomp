@@ -1,5 +1,8 @@
 #include "common.h"
 
+#include "unk.h"
+#include "debug.h"
+
 // GameShell::Step? (rct3 mac)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", Step__9GameShellG9GameShell);
 
@@ -10,26 +13,29 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3020)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D30A8);
 
 // GameShell::GameShell
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", __9GameShellff);
-/*
 
-void GameShell::GameShell(float fps, float gamespeed) {
-  undefined8 uVar1;
 
-  TimSrv_Client::TimSrv_Client(this);
+#ifdef NON_MATCHING
+GameShell* D_004528EC;
+GameShell::GameShell(float fps, float gamespeed) {
+  //undefined8 uVar1;
+
+  //TimSrv_Client();
   this->unk4 = 0;
-  uVar1 = TimSrv_GetTime();
-  *(undefined8 *)&this->field_0x8 = uVar1;
-  this->fps = fps; // unk10
+  //uVar1 = TimSrv_GetTime();
+  //*(undefined8 *)&this->field_0x8 = uVar1;
+  this->m_fps = fps; // unk10
   this->m_gamespeed = gamespeed; // unk14
-  this->temp_inputdisabledthing = 0; // unk1c
-  if (TheGame != 0) {
-    tempR_DDE_FatalError("More than one GameShell instance not allowed");
+  this->unk1C = 0; // input is disabled when != 0 ?
+  if (D_004528EC != 0) {
+    DDE_FatalError("More than one GameShell instance not allowed");
   }
-  TheGame = this;
-  return;
+  //D_004528EC = this;
+
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", __9GameShellff);
+#endif
 
 // GameShell::~GameShell
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3188);

@@ -964,27 +964,27 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8660);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D86C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8720);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __16LoadSavedGameReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8780);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __16BMStateChangeReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D87E0);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __15BMPageChangeReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8840);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __18BMPageNumChangeReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D88A0); /* ChangeLevelReq */
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __14ChangeLevelReqii); /* ChangeLevelReq::ChangeLevelReq(int map, int entry); */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8910);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D89D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8A40);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __18BMHighlightMoveReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8AA0);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __15BMPageActionReqi);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8B00); /* __10FadeOutReqf */
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __10FadeOutReqf);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8B80);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __9FadeInReqf);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8C00);
 

@@ -504,7 +504,14 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", RunPath_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00272FF0); /* return "cdrom0:\\" */
+#ifdef NON_MATCHING
+// getRunPath
+char * func_00272FF0() {
+    return "cdrom0:\\";
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00272FF0);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273000);
 
@@ -626,7 +633,6 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00275038);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002750E0);
 
-//INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00275288);
 int func_00275288(int arg0, int arg1, int ovlType, int arg3) {
     char* format;
     char ovlName[256];
@@ -853,16 +859,47 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00277590);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002775B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002775D0);
+#ifdef NON_MATCHING
+
+Status RelRecv_InternalInitialise() {
+  return Status(0xFFFFFFFF,"c:/coding/fgdk3/Code/Common/RelRecv.cpp", 62);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", RelRecv_InternalInitialise__Fv);
+#endif
 
 void RelRecv_InternalFinalise(void) {
     return;
 }
 
+#ifdef NON_MATCHING
+StdInit_ModuleDescription RelRecv_StdInit_Description = {
+    0,
+    &RelRecv_StdInit_UsedModules
+};
 
+void * const RelRecv_StdInit_UsedModules[] = {
+    &RelRecv_InternalInitialise,
+    &RelRecv_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    0,
+    0,
+};
+
+Status RelRecv_Initialise(void) {
+    return StdInit_InitialisationSequence(&RelRecv_StdInit_Description);
+}
+
+void RelRecv_Finalise(void) {
+    StdInit_FinalisationSequence(&RelRecv_StdInit_Description);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", RelRecv_Initialise__Fv);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", RelRecv_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00277670);
 
@@ -886,22 +923,18 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002781E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278278);
 
-//INCLUDE_ASM("asm/nonmatchings/text_0026D178", Alloc__12StdAllocatorUi);/* StdAllocator::Alloc */
-
 void * StdAllocator::Alloc(size_t nbytes) {
   return malloc(nbytes);
 }
 
-
-//INCLUDE_ASM("asm/nonmatchings/text_0026D178", Free__12StdAllocatorPv); /* StdAllocator::Free */
  void StdAllocator::Free(void* ptr) {
   free(ptr);
 }
 
-//INCLUDE_ASM("asm/nonmatchings/text_0026D178", MemAlign__12StdAllocatorUiUi); /* StdAllocator::MemAlign */
 void* StdAllocator::MemAlign(size_t alignment, size_t size) {
     return memalign(alignment, size);
 }
+
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278308);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278350);

@@ -418,7 +418,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_CD_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302ED0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __7File_CDPG10sceCdlFILE); /*File_CD::File_CD(sceCdlFILE * fp) */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00303078);
 
@@ -650,7 +650,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00308858);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003088C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00308928);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __10NullAccess);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00308980);
 
