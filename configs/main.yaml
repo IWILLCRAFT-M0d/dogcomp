@@ -58,7 +58,7 @@ segments:
       #- [0x8760, cpp, Dogs/Code/BoneGod]
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
-      - [0xAC700,  cpp, text_001AB700]
+      - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
       - [0xAE138,  cpp, Dogs/Code/Creatres]
       - [0xAE378,  cpp, text_001AD378]
       #- [0xB0470,  cpp, text_001AF470] # Objects 3D related

@@ -226,6 +226,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0748);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0788);
 
+
+
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B07A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B07D0);
@@ -263,6 +265,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B1E80);
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B1EA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B1F50);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B1F70);
 
@@ -336,6 +340,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DBD78); /* "norwegia" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DBD88);
 
+// beginning of game.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B2768);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DCE28); /* "c:/coding/dogs/Code/Common/Game.cpp" */
@@ -1317,7 +1322,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DD5B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DD5D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DD5F0);
+// HitTri
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DD5F0); /* HitTri_Object */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DD740);
 
@@ -1376,6 +1382,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DE2C8);
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DE318);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DE358);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001DE378);
 

@@ -209,7 +209,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150EF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150F10);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150F30);
+
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150F30); /* SaveKennel::SaveKennel */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00151050);
 
@@ -303,6 +304,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152DB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152DD0);
 
+// Scent
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00152E98);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153200);
@@ -327,7 +329,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153D30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153DD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153DD8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153DD8); /* Scent::Scent */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00153E68);
 
@@ -491,7 +493,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A420);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A508);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A528);
+
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A528); /* ScentMarkingGameNode::ScentMarkingGameNode */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003BB728);
 
@@ -505,7 +508,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A5B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A8D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A970);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015A970); /* ScentMarkingGameGod::ScentMarkingGameGod */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0015AB78);
 
@@ -647,7 +650,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00160390);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001603B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001603D0);
+
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001603D0); /* Selector::Selector */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001604C0);
 
@@ -702,6 +706,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161038);
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161040);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00161060);
+
+// beginning of SimObj.cpp
 #ifdef NON_MATCHING
 Status SimObj_InternalInitialise(void) {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/SimObj.cpp", 306);
@@ -1051,7 +1057,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00168300);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001683B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001683B8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001683B8); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001683C0);
 
@@ -1343,7 +1349,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00169158);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00169198);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001691B8);
+// Skidoo
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001691B8); /* Skidoo::Skidoo */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001693A0);
 
@@ -1369,7 +1376,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016AEB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016AEC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016AEE0);
+// SkiLiftSeat
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016AEE0); /* SkiLiftSeat::SkiLiftSeat */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016B040);
 
@@ -1447,7 +1455,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BD58);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BD60);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BD80);
+// Slideable
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BD80); /* Slideable::Slideable */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016BED0);
 
@@ -1523,7 +1532,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D8E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D8F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D910);
+// SmallThing
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016D910); /* SmallThing::SmallThing */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0016DAA8);
 
@@ -1607,7 +1617,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171308);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171348);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171368);
+// Smell
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171368); /* Smell::Smell */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00171400);
 
@@ -1633,7 +1644,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172A28);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172A30);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172A50);
+// Snowball
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172A50); /* Snowball::Snowball */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00172B48);
 
@@ -1691,7 +1703,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001731D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001731D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001731F8);
+// SoundCreature
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001731F8); /* SoundCreature::SoundCreature */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173298);
 
@@ -1713,7 +1726,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001738B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001738B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001738D8);
+// SphereObj
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001738D8); /* SphereObj::SphereObj */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00173A20);
 
@@ -1819,7 +1833,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177728);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177768);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177788);
+// SwingBridge
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177788); /* SwingBridge::SwingBridge */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00177898);
 
@@ -1875,7 +1890,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178630);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178638);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178658);
+
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178658); /* TugOfWarGod::TugOfWarGod */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00178818);
 
@@ -2041,7 +2057,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017EBF8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F300);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F468);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F468); /* StaticWaterRipple::StaticWaterRipple */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F528);
 
@@ -2049,7 +2065,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F568);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F588);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F728);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017F728); /* WaterSplashManager::WaterSplashManager */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0017FA38);
 
@@ -2115,7 +2131,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00180110);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00180180);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001801A0);
+// WheeledVehicle
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001801A0); /* WheeledVehicle::WheeledVehicle */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001803E8);
 
@@ -2199,11 +2216,14 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001818D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181928);
 
+// Beginning of WorldObj
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFBF8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00150120", D_003CFC50);
+
+
 
 #ifdef NON_MATCHING
 Status WorldObj_InternalInitialise(void) {
@@ -2578,7 +2598,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001888A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001888C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001888E0);
+// Zone
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001888E0); /* Zone::Zone */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188968);
 
@@ -2738,6 +2759,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018BB30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018BB50);
 
+// AnimationComponents
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018BB70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_0018C5C8);

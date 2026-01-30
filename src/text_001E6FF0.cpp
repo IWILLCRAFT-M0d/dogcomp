@@ -125,6 +125,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EA540);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EA5A0);
 
+// beginning of objects.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EA5E8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E5F88); /* "c:/coding/dogs/Code/Common/NavClient.cpp" */
@@ -230,6 +231,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EC610);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E6440);
 
+
+// beginning of objtable.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EC630);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001EC6C8);
@@ -280,6 +283,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED188);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED1B8);
 
+
+
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED1D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED1F8);
@@ -315,7 +320,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E6B90);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED400);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED440);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED440); /* Platform::Platform */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001ED5A8);
 
@@ -437,6 +442,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E9B50);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E9B80);
 
+// beginning of player.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F08F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F0F68);
@@ -639,6 +645,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F7458);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F7498);
 
+
+// beginning of playeranim?
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F74B8); /* PlayerMoveAnimation::PlayerMoveAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001F75F8);
@@ -862,6 +870,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FC118);
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FC400);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FC420);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FC440);
 
@@ -13970,6 +13980,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FDA60);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FE068);
 
+
+// beginning of savegamemanager?
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FE088); /* background saving */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_001FE0C8);
@@ -19752,6 +19764,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0023E650);
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0023E658);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0023E678);
+
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0023E698);
 

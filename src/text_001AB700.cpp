@@ -3,6 +3,7 @@
 
 #include "Dogs/Creatres.h"
 
+// Container stuff?
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB700); /* Container::Container */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AB7E8);
