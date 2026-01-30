@@ -819,7 +819,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9BB0); /* Console::Se
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9C70); /* Console::SetGameTime */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9CD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", __12ConsoleLayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9E18);
 

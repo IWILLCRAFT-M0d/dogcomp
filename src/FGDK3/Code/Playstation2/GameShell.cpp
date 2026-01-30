@@ -12,9 +12,6 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D3020)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GameShell", func_002D30A8);
 
-// GameShell::GameShell
-
-
 #ifdef NON_MATCHING
 GameShell* D_004528EC;
 GameShell::GameShell(float fps, float gamespeed) {

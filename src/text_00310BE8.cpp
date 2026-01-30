@@ -56,7 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003120D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00312238);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00312680);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00312680); /*FileSystemDisc_Zip::Find(char * filename)? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00312860);
 

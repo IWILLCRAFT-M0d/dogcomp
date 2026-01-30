@@ -8,6 +8,11 @@
 #include <ee/sifdev.h>
 #include "FGDK3/ThrowCat.h"
 
+#include "FGDK3/Playstation2/GE.h"
+#include <libdev.h>
+#include <libgraph.h>
+
+
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30); /* SOUND_InitIOP */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288CF0);
@@ -1118,7 +1123,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4960);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4980);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A49A0); /* GE_PS2RenderHardware */
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4B90); /* ~GE_PS2RenderHardware */
 
@@ -2195,7 +2200,7 @@ s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0) {
     return arg0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C3218); /* GE_PS2Device::GE_PS2Device */
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __12GE_PS2Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C3CE0); /* GE_PS2Device::~GE_PS2Device */
 
@@ -2665,7 +2670,29 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA540);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA560);
 
+#ifdef NON_MATCHING
+Status GE_InternalInitialise() {
+  //    void *pvVar1;
+  //GE_PS2RenderHardware *this;
+
+  //PTR_004528b4 = (int *)__builtin_vec_new((undefined *)(DAT_004528b8 << 2));
+  sceDevVif0Reset();
+  sceDevVif1Reset();
+  sceDevVu0Reset();
+  sceDevVu1Reset();
+  sceGsResetPath();
+  sceDmaReset(1);
+  //pvVar1 = __builtin_new((int *)0x2ac);
+  //GE_DMAPktRc1i69::GE_DMAPktRc1i69((long)(int)pvVar1);
+  //this = (GE_PS2RenderHardware *)__builtin_new((int *)0x2c);
+  //GE_PS2RenderHardware();
+  //DAT_0045286c = this;
+  return Status(0xFFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/GE.cpp", 260);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", GE_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA6D8);
 
@@ -2719,7 +2746,7 @@ GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, 
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CABF0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CAC38);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CAE00);
 

@@ -546,7 +546,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11EndianFile);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11Endian_File);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9468);
 
@@ -558,7 +558,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9520);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9540);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9560);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __12LiveEditablePcPc);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D95D0);
 

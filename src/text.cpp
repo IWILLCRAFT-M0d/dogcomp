@@ -2285,9 +2285,9 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003AD920);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003ADAF0);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003ADCC0);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003ADCC0); /* "Light Manager" */
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00141588);
+INCLUDE_ASM("asm/nonmatchings/text", __12LightManager);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001415F0);
 
@@ -2361,7 +2361,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003ADDA8);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003ADF50);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00142190);
+INCLUDE_ASM("asm/nonmatchings/text", __tf12LightManager);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001421E0);
 
@@ -2369,7 +2369,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_001421E8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001421F0);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00142210);
+INCLUDE_ASM("asm/nonmatchings/text", __tf15EditLightAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00142260);
 

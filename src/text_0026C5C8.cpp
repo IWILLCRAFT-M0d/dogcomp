@@ -4,7 +4,7 @@
 #include "mem.h"
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Playstation2/SoundManager.h"
-#include "FGDK3/Playstation2/Sound.h"
+//#include "FGDK3/Playstation2/Sound.h"
 #include "FGDK3/Playstation2/sifManager.h"
 #include "FGDK3/NavGraphRes.h"
 #include "unk.h"
@@ -52,7 +52,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence__FP25
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CE60); /* Status::PrepareReport */
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", PrepareReport_6StatusPci); /* Status::PrepareReport(char*, int) */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CED0);
 

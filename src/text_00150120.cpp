@@ -2558,9 +2558,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001885E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188630);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188680);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf17WalkerProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001886D0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __tf20WalkingFootRayHit_IF);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00188720);
 
@@ -2918,7 +2918,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190508);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001905C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190618);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", __Q212BookMetaphor10Stats1Page);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00190680);
 

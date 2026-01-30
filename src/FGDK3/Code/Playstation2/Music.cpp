@@ -2,6 +2,11 @@
 
 #include "FGDK3/Playstation2/Music.h"
 
+#include <ee_gcc/sys/types.h>
+#include <MultiStream/sound.h>
+#include <eekernel.h>
+
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", Music_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", Music_InternalFinalise__Fv);
@@ -62,13 +67,32 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280088);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280370);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280460);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __11Music_Piece);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280538);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280628);
 
+
+
+#ifdef NON_MATCHING
+char* func_00280660(int arg0) {
+
+    switch (arg0) {
+    case 0:
+        return "MIDI";
+    case 1:
+        return "CDDA";
+    case 2:
+        return "ADPCM";
+    default:
+        return "";
+    }
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280660);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280708);
 
@@ -88,7 +112,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280F08);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280FB8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280FE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __17Music_Performance);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00281198);
 
@@ -140,7 +164,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282648);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002826B0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282978);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __14Music_PS2PiecePc); /* Music_PS2Piece::Music_PS2Piece(char* name?) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282D88);
 
@@ -154,7 +178,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283210);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002833F0); /* Music_PS2Piece::Load*/
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", Load__14Music_PS2Piece); /* Music_PS2Piece::Load*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283EB0);
 
@@ -169,7 +193,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284880);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002848C8);
 
 // Music_PS2Performance::Music_PS2Performance
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284958);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __20Music_PS2Performance);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284A08);
 
@@ -182,10 +206,28 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284C28);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284CE0);
 
 // Music_PS2Performance::PauseNow
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284D30);
+#ifdef NON_MATCHING
 
-// Music_PS2Performance::ResumeNow
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284D90);
+void Music_PS2Performance::PauseNow() {
+  scePrintf("Music_PS2Performance::PauseNow\n");
+  this->m_paused = 1;
+  SOUND_Pause();
+  FlushIOPCommand(0);
+
+
+}
+
+void Music_PS2Performance::ResumeNow() {
+  scePrintf("Music_PS2Performance::ResumeNow\n");
+  this->m_paused = 0;
+  SOUND_Resume();
+  FlushIOPCommand(0);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", PauseNow_20Music_PS2Performance);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", ResumeNow_20Music_PS2Performance);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284DF0);
 
@@ -333,7 +375,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287278);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002872D0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287308);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __13Music_Channel);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287348);
 
@@ -411,9 +453,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287CA0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287CF0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287DC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __12CreateAction);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287E18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __22Music_MenuRegisterable);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287E70);
 

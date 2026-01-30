@@ -233,7 +233,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300988);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003009C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi); /* FileSystemDisc_MemCard::FileSystemDisc_MemCard(int slot); */
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi); /* FileSystemDisc_MemCard::FileSystemDisc_MemCard(int port/slot?); */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300CC8);
 
@@ -249,7 +249,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301290);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003014E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301548);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __21StorageDevice_MemCardi); /* int card */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301648);
 

@@ -22,7 +22,6 @@ StdInit_ModuleDescription InputJoy5_StdInit_Description = {
     &InputJoy5_StdInit_UsedModules
 };
 
-
 void * const InputJoy5_StdInit_UsedModules[] = {
     &InputJoy5_InternalInitialise,
     &InputJoy5_InternalFinalise,

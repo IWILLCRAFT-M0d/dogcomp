@@ -7,8 +7,21 @@
 #include "unk.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/text_001E5870", main);
+INCLUDE_ASM("asm/nonmatchings/text_001E5870", main); /* Status(0xFFFFFFFF, "c:/coding/dogs/Code/Playstation2/Main.cpp", 141) */
+/*
 
+Semaphore_Initialise();
+IOPMem_Initialise();
+GE_Initialise();
+RunPath_Initialise();
+
+~~~~
+
+Main_RunGame();
+GE_Finalise();
+Semaphore_Finalise();
+
+*/
 INCLUDE_ASM("asm/nonmatchings/text_001E5870", func_001E5C98);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E5870", func_001E5D68);

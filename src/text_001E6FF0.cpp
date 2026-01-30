@@ -138,7 +138,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_003E6028);
 #ifdef NON_MATCHING
 
 Status Objects_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Objects.cpp", 0xCD);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Objects.cpp", 205);
 }
 
 #else
@@ -19113,7 +19113,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D478);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __tf17VibrateRumbleAnim);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022D4E8);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", __9TitleView);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001E6FF0", D_0042E630); /* "C:/Coding/Dogs/Code/Common/SaveGameManager.h" */
 

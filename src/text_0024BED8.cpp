@@ -1432,7 +1432,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262128);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002624C0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __14VirtualDesktop);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262580);
 
