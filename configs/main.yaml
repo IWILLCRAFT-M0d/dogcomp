@@ -124,7 +124,8 @@ segments:
       - [0x22DD90, asm, sce/libpad]
       - [0x22F128, asm, sce/libgifpk]
 
-      - [0x22F468, cpp, text_0032E468] # libsdr
+      - [0x22F468, asm, sce/sdr_main] # libsdr
+      - [0x22F868, asm, sce/sdr_cb]
 
       - [0x22FA48, asm, sce/libmc]
       - [0x231240, asm, sce/libscf]
@@ -224,7 +225,8 @@ segments:
       - [0x34B750, .rodata, text_0032BC90] # libdev
       - [0x34B788, rodata, sce/libpad]
 
-      - [0x34B8E0, .rodata, text_0032E468] # libsdr
+      - [0x34B8E0, rodata, sce/sdr_main] # libsdr
+      - [0x34B908, rodata, sce/sdr_cb]
 
       - [0x34B930, rodata, sce/libmc]
       - [0x34B9B8, rodata, sce/libscf]
