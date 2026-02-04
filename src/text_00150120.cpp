@@ -3,6 +3,7 @@
 
 #include "Dogs/WorldObj.h"
 #include "unk.h"
+#include <string.h>
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00150120);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001503B0);
@@ -841,7 +842,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00163EB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00164008);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001641C0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001641C0); /* GenericObject */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001643E0);
 
@@ -2413,7 +2414,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187468);
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00187478);
 
 // important for scripts?
-void func_00187490(s_func_00187490* arg0, void* dest, void* arg2, size_t count) {
+void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t count) {
     if (arg0->unk0 == 1) {
         memcpy(dest, arg0->unk8, count);
     }

@@ -126,7 +126,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024CCF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024CDA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024CE30);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024CE30); /* Widget_Text */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024CEA0); /* return 0xd0 */
 

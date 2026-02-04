@@ -1,6 +1,7 @@
 #include "common.h"
 #include "FGDK3/Playstation2/Thread.h"
 
+// TODO: Cleanup unnecessary headers here
 #include "mem.h"
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Playstation2/SoundManager.h"
@@ -57,10 +58,16 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CED0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", __tf6Status);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CF60);
+
+Status func_0026CF60(void) {
+    return Status(0xFFFFFFFF, 0x0, -1);
+}
 
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CF98);
+Status func_0026CF98(void) {
+    return Status(0xFFFFFFFF, 0x0, -1);
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CFD0);
 

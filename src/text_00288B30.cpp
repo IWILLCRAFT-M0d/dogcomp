@@ -467,7 +467,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F088);
 
 
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F0B0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F0B0); // Movement_IF thing?
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F110);
 
@@ -479,7 +479,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F1A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F208);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F228);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_0028F228); /* rct3 MeshInstance::Render ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00290D08);
 
@@ -757,7 +757,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296AF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296CB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296D40);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296D40); /* rct3 InterfaceTag::InterfaceTag */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296FB0);
 
@@ -2814,7 +2814,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D0150);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D0218);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D0490);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D0490); /* rct3 GE_Device::GetViewFrustrumClipVolume ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002D04E8);
 

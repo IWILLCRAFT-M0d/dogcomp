@@ -183,7 +183,7 @@ class GE_PrimIndices {
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_00187490(s_func_00187490* arg0, void* dest, void* arg2, size_t arg3);
+void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
 
 void func_001ACFC8(void);
 //void func_001AD180(void);
@@ -199,6 +199,8 @@ int func_002C8358(s_func_002C8358* arg0);
 
 void func_002967C8(void* arg0, int arg1);
 void func_00247B88(int*);
+Status func_0026CF60(void);
+Status func_0026CF98(void);
 int func_002963F8();
 int func_002964C0();
 

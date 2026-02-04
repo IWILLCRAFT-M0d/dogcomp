@@ -154,17 +154,17 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF410);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF430);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF470);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF470); /* Element3D ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF790);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF790); /* rct3 Element3D::AdvanceExternal ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF8D8);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF8D8); /* rct Element3D::InitialiseDefaults ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AFCC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AFD78);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", Render__9Element3DPv); /* rct3 Element3D::Render ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AFEF8);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AFEF8); /* rct3 Element3D::GetAnimVar ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0020);
 
@@ -175,7 +175,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0070);
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0078);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001B0168);
-
+// vtables
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB688);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB6A0);

@@ -1090,7 +1090,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7B08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7B80);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7C98);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7C98); /* BoneManager */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7CF0);
 

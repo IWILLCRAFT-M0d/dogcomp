@@ -1,13 +1,12 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 // TODO: add standard c/cpp headers to include
+#include <stdarg.h>
+#include <eekernel.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#include <stdarg.h>
-#include <eekernel.h>
 
 void func_002963D0(void); /* rct3 Main_Terminate */
 void func_002D5958(char*, va_list);
