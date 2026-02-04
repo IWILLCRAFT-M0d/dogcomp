@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BF40);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024BF58);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C0D8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __14Widget_Desktop); /* Widget_Desktop */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C198); /* return 0; */
 
@@ -42,9 +42,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C510);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C660);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C6D8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __6WidgetPci); /* Widget::Widget(char*, int) */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C768);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C768); /* ~Widget */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C7C8);
 
@@ -440,7 +440,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255A78);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255B40);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255BA8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255BA8); /* Widget_Compositor */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00255BF0);
 
@@ -832,33 +832,33 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$6Widget);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437150); /* "11Widget_Text" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437160);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437160); /* "20Widget_FormattedText" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437178);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437178); /* "15Widget_LiveText" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437190);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437190); /* "14Widget_Graphic" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371A8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371A8); /* "16Widget_Animation" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371C0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371C0); /* "11Widget_Fill" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371D0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371D0); /* "19Widget_WithChildren" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371E8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371E8); /* "13Widget_Border" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371F8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004371F8); /* "17Widget_VScrollbar" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437210);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437210); /* "10NullAction" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437220);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437220); /* "13Widget_Button" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025D1B0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437248);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437248); /* "17Widget_Compositor" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437260);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437260); /* "15Widget_Splitter" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437278);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437278); /* "11Widget_Pane" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf13Widget_Window);
 
@@ -866,43 +866,43 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Widget_Menu);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf15Widget_MenuItem);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372C0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372C0); /* "14Widget_SubMenu" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372D8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372D8); /* "22Widget_StdNotification" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372F8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004372F8); /* "12GUI_TitleBar" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437308);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437308); /* "13Widget_Layout" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437318);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437318); /* "11ValueEditor" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437328);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437328); /* "19Widget_EditableText" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437340);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437340); /* "14Widget_Desktop" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf15Widget_ErrorBox);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf18Widget_QuestionBox);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437388);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437388); /* "18Widget_StdQuestion" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373A0);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373A0); /* "15Widget_TableRow" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373B8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373B8); /* "12Widget_Table" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373C8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373C8); /* "10Widget_Bar" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373D8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373D8); /* "13Widget_Slider" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373E8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004373E8); /* "14Widget_ListBox" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437400);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437400); /* "14DropDownUpdate" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437418);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437418); /* "19DefaultIndexUpdater" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437430);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437430); /* "18LookupIndexUpdater" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437448);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437448); /* "Q215Widget_DropDown14DropDownAction" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025D750);
 
@@ -946,7 +946,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025DA00);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Widget_Text);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025DA90);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025DA90); /* return D_004512f8; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025DA98);
 
@@ -1420,15 +1420,15 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002620E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262108);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375A8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375A8); /* "Context Help" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375B8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375B8); /* "Focus Stack" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375C8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375C8); /* "<Unnamed>" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375D8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375D8); /* "Hierarchy Stack" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375E8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004375E8); /* "No context sensitive help is available" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00262128);
 
@@ -1913,21 +1913,21 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043AFF8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B038);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268508);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11FloatEditor);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268558);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf10Int8Editor);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002685A8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Uint8Editor);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002685F8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Int16Editor);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268648);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf12Uint16Editor);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268698);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11Int32Editor);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002686E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268738);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf10BoolEditor);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268788);
 
@@ -1939,15 +1939,15 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268848);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268898);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002688B8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf17Int32EditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268908);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268928);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf18UInt32EditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268978);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268998);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf17Int16EditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002689E8);
 
@@ -1975,7 +1975,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268C68);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B1F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268C70);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf9V3XEditor);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268CC0);
 
@@ -1995,13 +1995,13 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268E60);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268EB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268ED0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf19Vector3EditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268F58);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00268F78);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf23Vector3DataEditorWidget);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269000);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf13NameTagEditor);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269050);
 
@@ -2009,23 +2009,23 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002691E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002691F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269210);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf19NameTagEditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269260);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269280);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf11SEW_Toggler);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002692D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002692F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269310);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf15V3EW_ZeroAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269360);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00269380);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002693A0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf16V3DEW_ZeroAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002693F0);
 
@@ -2097,7 +2097,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A7A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A840);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A860);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf25Tree34_NodeAllocatorBasic);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A8A0);
 

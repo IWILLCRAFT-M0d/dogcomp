@@ -259,7 +259,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB50);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB70);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB78);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB78); /* return D_00451a64; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FB80);
 
@@ -269,6 +269,8 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$19SoundImplementation);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043BAB8); /* "19SoundImplementation" */
 
+
+// start of sifmanager?
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_0026FBA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", sifManager_InternalInitialise__Fv);
@@ -357,7 +359,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00271B30);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00271BB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00271C58);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00271C58); /* __9SavedGamePcii SavedGame::SavedGame */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00271D10);
 
@@ -575,11 +577,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00273F68);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00274020);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00274200);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00274200); /* Load Resource_LayoutOverlay */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002742B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00274400);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00274400); /* Unload Resource_LayoutOverlay */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002744B0);
 
@@ -859,6 +861,8 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00277590);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002775B0);
 
+
+// beginning of relrecv?
 #ifdef NON_MATCHING
 
 Status RelRecv_InternalInitialise() {
@@ -935,7 +939,7 @@ void* StdAllocator::MemAlign(size_t alignment, size_t size) {
     return memalign(alignment, size);
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278308);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278308); /* StdAllocator */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278350);
 
@@ -947,7 +951,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", __tf12StdAllocator);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002783A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002784C8);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002784C8); /* __7PointerPv Pointer::Pointer */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00278568);
 
@@ -983,7 +987,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00279258);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00279408);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002795C8);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", __tf7Pointer);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00279618);
 
@@ -1011,17 +1015,17 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002796B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002796D0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C3A0);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$15JoystickPointer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C3E0);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$15StandardPointer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C420);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", _vt$7Pointer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C460);
+INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C460); /* "7Pointer" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", __tf15StandardPointer);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_002797B8);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", __tf15JoystickPointer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C4A0);
 
@@ -1041,6 +1045,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C6E0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026D178", D_0043C730);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00279840);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00279840); /* __tf12InputBinding */
 
 

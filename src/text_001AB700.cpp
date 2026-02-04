@@ -144,7 +144,7 @@ void func_001ACFC8(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ACFD0);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001ACFD0); /* return D_0044e568; */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AB700", D_003DAEA8); /* "9Container" */
 
@@ -154,7 +154,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD070);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", __tf4Pram);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD110);
+INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD110); /* return D_0044e580; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AB700", func_001AD118);
 

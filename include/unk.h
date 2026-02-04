@@ -6,6 +6,13 @@
 // Unknown data and functions.
 
 typedef struct {
+    int unk0;
+    char unk4[4];
+    void* unk8;
+} s_func_00187490;
+
+
+typedef struct {
     int   unk0[17];
     int   unk44;
     int   unk48;
@@ -176,7 +183,7 @@ class GE_PrimIndices {
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+void func_00187490(s_func_00187490* arg0, void* dest, void* arg2, size_t arg3);
 
 void func_001ACFC8(void);
 //void func_001AD180(void);

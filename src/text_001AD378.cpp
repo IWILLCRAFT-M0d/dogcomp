@@ -374,7 +374,7 @@ Status func_001C54C8(void) {
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C54C8);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C5518);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C5518); // load CLI options?
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __13Game_Documentff); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
 
@@ -482,7 +482,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CCDF8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CCE58);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CEA98);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CEA98); /* (Game_Document *) */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001CF828);
 
@@ -691,19 +691,19 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$9StatusBar);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$11DSLRenderer);
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2498);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2498); /* _vt$13Game_Document */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2668);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2668); /* _vt$13Game_Document */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2680);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2680); /* _vt$13Game_Document */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26C0);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26C0); /* _vt$11GameDesktop */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26D8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26D8); /* _vt$11GameDesktop */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26F8);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E26F8); /* _vt$11GameDesktop */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2730);
+INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E2730); /* _vt$11GameDesktop */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$20WorldObject_Universe);
 
@@ -711,7 +711,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$23SimObj_FilterFlagsAndEq);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", _vt$13SimObj_Filter);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6A40);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6A40); /* __tf21SimObj_RayHitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf13SimObj_Filter);
 
@@ -719,7 +719,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003E29C0); /* "13SimObj_Filte
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf23SimObj_FilterFlagsAndEq);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6B40);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D6B40); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __tf20WorldObject_Universe);
 

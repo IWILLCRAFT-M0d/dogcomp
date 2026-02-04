@@ -65,7 +65,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D49C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4A78);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4BB0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4BB0); /* __15Widget_TableRowi ? */
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442D88); /* "Welcome to the debug environment" */
 
@@ -1036,7 +1036,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6510);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6530);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6550);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6550); /* MoveObjectComponent */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6AF8);
 
@@ -1062,17 +1062,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7708);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7808);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7860);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7860); /* LookAtIKAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7960);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E79B8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445100);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445100); /* "c:/coding/fgdk3/Code/Common/IKComponents.cpp" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445130);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445130); /* _vt$17LookAtIKAnimation */
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445190);
+INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445190); /* _vt$25MatrixPositionIKAnimation */
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_004451F0); /* _vt$19PositionIKAnimation */
 
@@ -1974,9 +1974,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf17AnimationTimeBase);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E78);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E80);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E80); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E88);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E88); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002F6E90);
 

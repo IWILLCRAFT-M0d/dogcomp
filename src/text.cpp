@@ -214,7 +214,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00103E40);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf17AnimatedObject_IF);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_00395B08);
+INCLUDE_RODATA("asm/nonmatchings/text", D_00395B08); /* "17AnimatedObject_IF" */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf14AnimatedObject);
 
@@ -244,11 +244,11 @@ INCLUDE_ASM("asm/nonmatchings/text", __tf33AnimatedObject_ComplexHitReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001041C8);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_00395BD8);
+INCLUDE_RODATA("asm/nonmatchings/text", D_00395BD8); /* "t9Interface1Z17AnimatedObject_IF" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_00395C00);
+INCLUDE_RODATA("asm/nonmatchings/text", D_00395C00); /* "11Platform_IF" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_00395C10);
+INCLUDE_RODATA("asm/nonmatchings/text", D_00395C10); /* "t9Interface1Z11Platform_IF" */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf18SimObj_HitFilter);
 
@@ -261,6 +261,8 @@ INCLUDE_ASM("asm/nonmatchings/text", func_001042B8);
 INCLUDE_ASM("asm/nonmatchings/text", func_001042F8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00104318);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00104338);
 
@@ -326,7 +328,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00105D10);
 INCLUDE_ASM("asm/nonmatchings/text", func_00105DF8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00105E28);
-
+// vtables
 INCLUDE_RODATA("asm/nonmatchings/text", D_003960E8);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_00396100);
@@ -414,7 +416,7 @@ INCLUDE_RODATA("asm/nonmatchings/text", D_003978D8);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003978F0);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_00397910);
+INCLUDE_RODATA("asm/nonmatchings/text", _vt$17PHitPrimDisplayer);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_00397928);
 
@@ -492,7 +494,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00108748);
 INCLUDE_ASM("asm/nonmatchings/text", func_001087C8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00108840);
-
+// vtables
 INCLUDE_RODATA("asm/nonmatchings/text", D_003991A0);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003991C8);
@@ -592,7 +594,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00109E40);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf7Boulder);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00109ED8);
+INCLUDE_ASM("asm/nonmatchings/text", func_00109ED8); /* return D_0044c908; */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00109EE0);
 
@@ -617,7 +619,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0010A558);
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf6Button);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0010A6F0);
+INCLUDE_ASM("asm/nonmatchings/text", func_0010A6F0); /* return D_0044c948; */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010A6F8);
 
@@ -1172,7 +1174,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_001223E0);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001223E8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_001223F0);
+INCLUDE_ASM("asm/nonmatchings/text", func_001223F0); /* return D_0044ca90; */
 
 INCLUDE_ASM("asm/nonmatchings/text", __tf15CameraYawMarker);
 
@@ -1212,11 +1214,11 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00122D08);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122D78);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00122D98);
+INCLUDE_ASM("asm/nonmatchings/text", __tf17CameraZonesAction);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122DE8);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A02A8);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A02A8); /* "t9Interface1Z6Camera" */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00122E00);
 
@@ -1626,9 +1628,9 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0012CC58);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A6540);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0012CC60);
+INCLUDE_ASM("asm/nonmatchings/text", __tf23DiggingRaceGodInterface);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0012CCB0);
+INCLUDE_ASM("asm/nonmatchings/text", __tft9Interface1Z23DiggingRaceGodInterface);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0012CCF0);
 
@@ -1806,8 +1808,8 @@ INCLUDE_ASM("asm/nonmatchings/text", func_001398B8);
 INCLUDE_ASM("asm/nonmatchings/text", func_00139928);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00139B60);
-
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A6820);
+// vtables
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A6820); /* _vt$16HitPrimDisplayer */
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A6838);
 
@@ -1889,7 +1891,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A208);
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A8058); /* "7Jump_IF" */
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003A8068);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003A8068); /* "23AnimationMovedObject_IF" */
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003A8088);
 
@@ -2019,7 +2021,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013C1E8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013C238);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0013C290);
+INCLUDE_ASM("asm/nonmatchings/text", func_0013C290); /* return D_0044cf60; */
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013C298);
 
@@ -2146,7 +2148,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013EC00);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013EC40);
 
-INCLUDE_RODATA("asm/nonmatchings/text", D_003AB800);
+INCLUDE_RODATA("asm/nonmatchings/text", D_003AB800); /* "FootPrints" */
 
 INCLUDE_RODATA("asm/nonmatchings/text", D_003AB810);
 

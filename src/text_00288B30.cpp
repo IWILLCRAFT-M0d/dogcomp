@@ -1128,7 +1128,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", __20GE_PS2RenderHardware); /* GE_P
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4B90); /* ~GE_PS2RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4BF8);
-
+/*
+Status func_002A4BF8(void) {
+   Status(0x4002, "c:/coding/fgdk3/Code/playstation2/GE_RenderHardware.cpp", 207)
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4C58);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4D38);
@@ -1203,7 +1207,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5970);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A59E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5A50);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5A50); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5A58);
 
@@ -1440,7 +1444,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC1A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC1B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC220);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC220); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002AC228);
 
