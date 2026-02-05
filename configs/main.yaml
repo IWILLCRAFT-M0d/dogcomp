@@ -55,9 +55,9 @@ segments:
     subalign: 4
     subsegments:
       - [0x1000,   cpp, text]
-      #- [0x3B8F8, cpp, Dogs/Code/DustEffects]
-      #- [0x3C288, cpp, Dogs/Code/Fish]
-      #- [0x8760, cpp, text_0013B288]
+      - [0x3B8F8, cpp, Dogs/Code/DustEffects]
+      - [0x3C288, cpp, text_0013B288]
+
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
@@ -139,8 +139,8 @@ segments:
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
       - [0x290F00, .rodata, text]
-      #- [0x2A9370, .rodata, Dogs/Code/DustEffects]
-      #- [0x2A9760, .rodata, text_0013B288]
+      - [0x2A9370, .rodata, Dogs/Code/DustEffects]
+      - [0x2A9760, .rodata, text_0013B288]
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
