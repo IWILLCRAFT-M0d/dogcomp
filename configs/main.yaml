@@ -64,6 +64,7 @@ segments:
       - [0x43FB8, cpp, text_00142FB8] # Motorbike?
       - [0x45BC8, cpp, text_00144BC8] # ParticleSystem
       - [0x4B110, cpp, text_0014A110] # Person
+      - [0x4E058, cpp, text_0014D058]
       - [0x4E410, cpp, Dogs/Code/PlayerDog]
       - [0x50640, cpp, Dogs/Code/Rat]
       #- [0x51120,  cpp, text_00150120]
@@ -160,6 +161,7 @@ segments:
       - [0x2AF160, .rodata, text_00142FB8]
       - [0x2B0878, .rodata, text_00144BC8]
       - [0x2B2CF0, .rodata, text_0014A110]
+      - [0x2B4740, .rodata, text_0014D058]
       - [0x2B5E18, .rodata, Dogs/Code/PlayerDog]
       - [0x2B8DD0, .rodata, Dogs/Code/Rat]
 
