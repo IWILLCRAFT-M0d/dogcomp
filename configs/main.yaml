@@ -65,6 +65,7 @@ segments:
       - [0x45BC8, cpp, text_00144BC8] # ParticleSystem
       - [0x4B110, cpp, text_0014A110] # Person
       - [0x51120,  cpp, text_00150120]
+      - [0x51F30, cpp, text_00150F30]
       - [0x53DD0, cpp, text_00152DD0]
       - [0x613D0, cpp, text_001603D0]
       - [0x6A1B8, cpp, text_001691B8]
@@ -161,6 +162,7 @@ segments:
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
+      - [0x2BA5F8, .rodata, text_00150F30]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
       - [0x2C0A30, .rodata, text_001691B8]
