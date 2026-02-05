@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+#include "Dogs/Motorbike.h"
+
 // Motorbike
 INCLUDE_ASM("asm/nonmatchings/text_00142FB8", func_00142FB8); /* Motorbike::Motorbike */
 

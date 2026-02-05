@@ -2,6 +2,8 @@
 
 #include "unk.h"
 
+#include "Dogs/Fish.h"
+
 // Fish
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B288); /* Fish::Fish */
 

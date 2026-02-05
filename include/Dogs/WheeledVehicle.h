@@ -1,0 +1,4 @@
+#ifndef WHEELEDVEHICLE_H
+#define WHEELEDVEHICLE_H
+
+#endif

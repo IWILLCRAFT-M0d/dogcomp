@@ -1,6 +1,8 @@
 #include "common.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F640);
+#include "Dogs/Rat.h"
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F640); /* Rat::Rat */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F7A8);
 

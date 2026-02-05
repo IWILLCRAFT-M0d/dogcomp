@@ -1,9 +1,10 @@
 #include "common.h"
+#include "Dogs/PlayerDog.h"
 
 // PlayerDog
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D410);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D410); /* PlayerDog::PlayerDog */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D678);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D678); /* ~PlayerDog */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740);
 

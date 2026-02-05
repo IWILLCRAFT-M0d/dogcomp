@@ -43,5 +43,3 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD18);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD28);
-
-//INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD48);

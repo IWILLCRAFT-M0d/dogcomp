@@ -18919,9 +18919,11 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00229780);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002297D0);
 
+
+// split
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_002297F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00229A18);
+INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00229A18); /* "c:/coding/dogs/Code/Common/SpecialIKComponents.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_00229B40);
 
@@ -19255,6 +19257,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022FAA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022FAA8);
 
+// split
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022FAC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E6FF0", func_0022FC70);

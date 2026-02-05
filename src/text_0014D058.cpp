@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/PlaceHolder.h"
+
 // Placeholder
 INCLUDE_ASM("asm/nonmatchings/text_0014D058", func_0014D058);
 

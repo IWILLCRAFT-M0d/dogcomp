@@ -70,10 +70,12 @@ segments:
       - [0x51F30, cpp, text_00150F30] # SaveKennel
       - [0x53DD0, cpp, text_00152DD0] # Scent
       - [0x613D0, cpp, text_001603D0]
+      #- [0x62060, cpp, text_00161060]
 
       - [0x6A1B8, cpp, Dogs/Code/Skidoo]
       - [0x6BEE0, cpp, Dogs/Code/SkiLiftSeat]
       - [0x6CD80, cpp, text_0016BD80]
+      - [0x6E910, cpp, text_0016D910]
 
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
@@ -99,6 +101,7 @@ segments:
       - [0x16D380, cpp, FGDK3/Code/TextRes]
       - [0x16D5C8, cpp, text_0026C5C8]
       - [0x16E178, cpp, text_0026D178]
+      #- [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, text_00279880]
 
       #- [0x16D5C8, cpp, FGDK3/Code/StdMem]
@@ -170,13 +173,15 @@ segments:
 
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
-      #- [0x2B2DB0, .rodata, text_00150120]
+
       - [0x2BA5F8, .rodata, text_00150F30]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
+      #- [0x2BFA88, .rodata, text_00161060]
       - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
       - [0x2C21F0, .rodata, Dogs/Code/SkiLiftSeat]
       - [0x2C3900, .rodata, text_0016BD80] # Slideable
+      - [0x2C5290, .rodata, text_0016D910]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
@@ -199,6 +204,7 @@ segments:
 
       - [0x33C8E0, .rodata, text_0026C5C8]
       - [0x33C978, .rodata, text_0026D178]
+
 
       - [0x33D7A8, .rodata, text_00279880]
 
