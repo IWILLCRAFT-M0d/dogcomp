@@ -62,7 +62,7 @@ segments:
       - [0x401F8, cpp, Dogs/Code/LevelGate]
       - [0x40F10, cpp, text_0013FF10]
       - [0x43FB8, cpp, text_00142FB8]
-
+      - [0x45BC8, cpp, text_00144BC8]
 
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
@@ -152,6 +152,7 @@ segments:
       - [0x2AE1C8, .rodata, Dogs/Code/LevelGate]
       - [0x2AE620, .rodata, text_0013FF10]
       - [0x2AF160, .rodata, text_00142FB8]
+      - [0x2B0878, .rodata, text_00144BC8]
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
