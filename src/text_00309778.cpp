@@ -1,7 +1,7 @@
 #include "common.h"
 
 #include  <stdio.h>
-
+#include "unk.h"
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309778);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309798);
@@ -126,13 +126,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B688);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B690);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B698);
+//INCLUDE_ASM("asm/nonmatchings/text_00309778", __19ShapeParams_Dynamic);
+ShapeParams_Dynamic::ShapeParams_Dynamic() {
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B6B8);
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B6F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B760);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B6B8); /* __19ShapeParams_Dynamici (int size) */
+
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B6F8); /* destructor */
+
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B760); /* setsize ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030B7B8);
 

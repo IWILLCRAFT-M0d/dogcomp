@@ -674,7 +674,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0010B7F8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010B990);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_0010B9A0);
+INCLUDE_ASM("asm/nonmatchings/text", func_0010B9A0); // smellovision nose rendering
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0010B9C8);
 
@@ -1715,7 +1715,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_00134788);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_001349B8);
 
-INCLUDE_ASM("asm/nonmatchings/text", func_00134B10);
+INCLUDE_ASM("asm/nonmatchings/text", func_00134B10); // playerdog rendering function?
 
 INCLUDE_ASM("asm/nonmatchings/text", func_00135DB0);
 
@@ -1939,7 +1939,7 @@ INCLUDE_ASM("asm/nonmatchings/text", func_0013A8B8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A8D8);
 
-// DustEffectManager
+// DustEffectManager (DustEffects.h/cpp)
 INCLUDE_ASM("asm/nonmatchings/text", func_0013A8F8);
 
 INCLUDE_ASM("asm/nonmatchings/text", func_0013ABD8);

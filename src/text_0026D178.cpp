@@ -287,11 +287,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026D178", Semaphore_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", __13ShapeInstance);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270018);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270018); /* _$_13ShapeInstance */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270080);
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", func_00270080); /* rct3 ShapeInstance::Empty ? Empty__13ShapeInstance */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026D178", Fill__13ShapeInstance); /* rct3 ShapeInstance::Fill ? */
+INCLUDE_ASM("asm/nonmatchings/text_0026D178", Fill__13ShapeInstance); /* rct3 ShapeInstance::Fill ? Fill__13ShapeInstance */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026D178", SetShape__13ShapeInstancei); /* rct3 ShapeInstance::SetShape(ShapeData const*) ? */
 

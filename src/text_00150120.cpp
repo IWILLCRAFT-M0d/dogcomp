@@ -912,7 +912,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00165748);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001657B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001657C0);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001657C0); // camera thing?
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00165830);
 
@@ -2277,7 +2277,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181A30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181B60);
 
-INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181CB8);
+INCLUDE_ASM("asm/nonmatchings/text_00150120", func_00181CB8); /* worldobject ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00150120", func_001820D8);
 

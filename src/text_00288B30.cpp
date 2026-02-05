@@ -12,6 +12,7 @@
 #include <libdev.h>
 #include <libgraph.h>
 
+#include "FGDK3/Playstation2/GE_RenderHardware.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00288B30); /* SOUND_InitIOP */
 
@@ -1123,6 +1124,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4960);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4980);
 
+// beginning of GE_RenderHardware.cpp?
+
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4B90); /* ~GE_PS2RenderHardware */
@@ -1176,6 +1179,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5308);
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5310);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5330);
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A5350);
 
@@ -1556,7 +1561,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B1090);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B10B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B10D8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B10D8); /* GE_GSPageMgr */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B11A0);
 
@@ -1618,7 +1623,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B25B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002B2630);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FA70);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FA70); /* "TextureStage" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FA80);
 
@@ -1728,7 +1733,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FE28);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FE38);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FE48);
+INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FE48); /* "SpecularAlpha" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_00288B30", D_0043FE58);
 
@@ -2120,7 +2125,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BFEA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BFF30);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002BFFC0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", __11GE_DMAPktRc1i69);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C0320);
 
@@ -2558,9 +2563,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9210);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C92B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9408);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9408); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9410);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9410); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9418);
 
@@ -2638,9 +2643,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9F90);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9F98);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9FB0);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9FB0); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9FB8);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9FB8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002C9FC0);
 
@@ -2676,21 +2681,25 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002CA560);
 
 #ifdef NON_MATCHING
 Status GE_InternalInitialise() {
-  //    void *pvVar1;
-  //GE_PS2RenderHardware *this;
-
+  void *pvVar1;
+  extern void *D_004528B4;
+  extern int D_004528B8;
+  GE_PS2RenderHardware *D_0045286C;
   //PTR_004528b4 = (int *)__builtin_vec_new((undefined *)(DAT_004528b8 << 2));
+  D_004528B4 = new int*[D_004528B8 << 2];
   sceDevVif0Reset();
   sceDevVif1Reset();
   sceDevVu0Reset();
   sceDevVu1Reset();
   sceGsResetPath();
   sceDmaReset(1);
-  //pvVar1 = __builtin_new((int *)0x2ac);
-  //GE_DMAPktRc1i69::GE_DMAPktRc1i69((long)(int)pvVar1);
-  //this = (GE_PS2RenderHardware *)__builtin_new((int *)0x2c);
-  //GE_PS2RenderHardware();
-  //DAT_0045286c = this;
+  //__builtin_new((int *)0x2ac);
+  pvVar1 = new GE_DMAPktRc1i69();
+
+
+  //__builtin_new((int *)0x2c);
+  D_0045286C  = new GE_PS2RenderHardware();
+
   return Status(0xFFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/GE.cpp", 260);
 }
 

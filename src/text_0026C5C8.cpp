@@ -46,11 +46,22 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C900);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026C9C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_InitialisationSequence__FP25StdInit_ModuleDescription);
+INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_InitialisationSequence__FP25StdInit_ModuleDescription); // stdinit.cpp?
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdInit_FinalisationSequence__FP25StdInit_ModuleDescription);
 
+
+#ifdef NON_MATCHING
+void StdInit_ClientBase::CheckError(Status status) {
+  //SStack_20.m_unk0 = *param_2;
+  if (status.m_unk0 != 0xffffffff) {
+    status.m_file = "";
+    ThrowCatch_DefiniteThrow(status);
+  }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", PrepareReport_6StatusPci); /* Status::PrepareReport(char*, int) */
 

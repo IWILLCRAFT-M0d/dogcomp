@@ -179,6 +179,32 @@ class GE_PrimIndices {
 };
 
 
+struct ShapeParams {
+    int unk0;
+    int unk1;
+    ShapeParams() {
+        unk0 = 0;
+        unk1 = 1;
+    }
+};
+struct ShapeParams_Dynamic : public ShapeParams {
+    ShapeParams_Dynamic();
+    virtual ~ShapeParams_Dynamic();
+};
+
+
+
+class ShapeInstance {
+    public:
+
+    ShapeInstance();
+    virtual ~ShapeInstance();
+};
+
+struct GE_DMAPktRc1i69 {
+    GE_DMAPktRc1i69();
+    virtual ~GE_DMAPktRc1i69();
+};
 
 #ifdef __cplusplus
 extern "C" {

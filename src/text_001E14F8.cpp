@@ -5,7 +5,7 @@
 #include "Dogs/Objects.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E14F8);
+INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E14F8); // landscape/ik collision ?
 
 INCLUDE_ASM("asm/nonmatchings/text_001E14F8", func_001E16B0);
 

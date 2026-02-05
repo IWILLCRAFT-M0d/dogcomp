@@ -1501,11 +1501,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437A08);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437A40);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437C58);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437C58); /* _vt$11PrimaryMenu */
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437E48);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437E60);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437E60); /* _vt$21PointerMessageHandler */
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437EB8);
 
@@ -1539,29 +1539,29 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437F20);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf16FocusStackAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263260);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263260); /* __13VD_FocusStack */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263330);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf15HierarchyAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002633A0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002633A0); /* __17VD_HierarchyStack */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00263470);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf10HelpAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002634E0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002634E0); /* __13VD_HelpWindow */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002635D0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00437F80);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004385E8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004385E8); /* _vt$13VD_HelpWindow */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004387C8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004387C8); /* _vt$17VD_HierarchyStack */
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004389A8);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004389A8); /* _vt$13VD_FocusStack */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002635F0);
 
@@ -2107,4 +2107,4 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$25Tree34_NodeAllocatorBasic
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_0043B418); /* "25Tree34_NodeAllocatorBasic" */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0026A8D0);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf20Tree34_NodeAllocator);

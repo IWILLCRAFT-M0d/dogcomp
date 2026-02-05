@@ -154,7 +154,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF410);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF430);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF470); /* Element3D ? */
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", __9Element3DPvs); /* Element3D (ClassInfo, shapeid)?  */
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF790); /* rct3 Element3D::AdvanceExternal ? */
 
@@ -430,7 +430,7 @@ void func_001C8120(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C8128);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C8128); // returns smellovision active status
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001C8140);
 
@@ -981,6 +981,12 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", __18BMPageNumChangeReqi);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", __14ChangeLevelReqii); /* ChangeLevelReq::ChangeLevelReq(int map, int entry); */
 
+/*
+ChangeLevelReq::ChangeLevelReq(int level, int gate) {
+	this->m_level = level;
+	this-m_gate = gate;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D8910);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001D89D0);

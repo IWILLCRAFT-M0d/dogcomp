@@ -206,6 +206,7 @@ __tf9DogScript = 0x001af348;
 __13Game_Documentff = 0x001c61f8; // type:func
 
 __tf18SetLevelEnumerator = 0x001af3c0;
+__9Element3DPvs = 0x001AF470; // type:func
 Render__9Element3DPv = 0x001AFD78; // type:func
 __tf9Element3D = 0x001b04a8;
 // Game.cpp
@@ -416,6 +417,7 @@ __tf15V3EW_ZeroAction = 0x00269310;
 __tf16V3DEW_ZeroAction = 0x002693A0;
 
 __tf25Tree34_NodeAllocatorBasic = 0x0026A860;
+__tf20Tree34_NodeAllocator = 0x0026A8D0;
 
 TimSrv_InternalInitialise__Fv = 0x0026ad70; // type:func
 TimSrv_InternalFinalise__Fv = 0x0026ade8; // type:func
@@ -702,6 +704,7 @@ __tf15GE_PS2PrimCache = 0x002AC410;
 __tf12GE_GSPageMgr = 0x002b1b30;
 
 __tf18GE_TextureStylePkt = 0x002bfa58;
+__11GE_DMAPktRc1i69 = 0x002BFFC0; // type:func
 __tft11GE_DMAPktRc1i69 = 0x002c3108;
 __tf18GE_DMAPktRcGeneric = 0x002c3180;
 __12GE_PS2Device = 0x002C3218; // type:func
@@ -885,6 +888,7 @@ __10NullAccess = 0x00308928; // type:func
 __tf10NullAccess = 0x00309128;
 __tf8FileFindAccess_Nul = 0x003091e8;
 __tf12StringBuffer = 0x0030b630;
+__19ShapeParams_Dynamic = 0x0030B698; // type:func
 __tf19ShapeParams_Dynamic = 0x0030b828;
 __tf24ShapeDataNamedBoneWriter = 0x0030d030;
 __tf26CustomParameterBlockWriter = 0x0030d080;
