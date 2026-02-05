@@ -64,10 +64,9 @@ segments:
       - [0x43FB8, cpp, text_00142FB8] # Motorbike?
       - [0x45BC8, cpp, text_00144BC8] # ParticleSystem
       - [0x4B110, cpp, text_0014A110] # Person
-
-
       - [0x51120,  cpp, text_00150120]
       - [0x53DD0, cpp, text_00152DD0]
+      - [0x613D0, cpp, text_001603D0]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
       - [0xAE138,  cpp, Dogs/Code/Creatres]
@@ -162,6 +161,7 @@ segments:
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
       - [0x2BBDB8, .rodata, text_00152DD0]
+      - [0x2BE2F8, .rodata, text_001603D0]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
