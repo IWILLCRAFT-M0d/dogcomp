@@ -5,8 +5,8 @@
 #include "unk.h"
 #include <string.h>
 
-// Slideable
-INCLUDE_ASM("asm/nonmatchings/text_0016BD80", func_0016BD80); /* Slideable::Slideable */
+// Slidable
+INCLUDE_ASM("asm/nonmatchings/text_0016BD80", func_0016BD80); /* Slidable::Slidable */
 
 INCLUDE_ASM("asm/nonmatchings/text_0016BD80", func_0016BED0);
 

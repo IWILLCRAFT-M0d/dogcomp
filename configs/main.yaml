@@ -74,8 +74,9 @@ segments:
 
       - [0x6A1B8, cpp, Dogs/Code/Skidoo]
       - [0x6BEE0, cpp, Dogs/Code/SkiLiftSeat]
-      - [0x6CD80, cpp, text_0016BD80]
-      - [0x6E910, cpp, text_0016D910]
+      - [0x6CD80, cpp, text_0016BD80] # Slidable
+      - [0x6E910, cpp, text_0016D910] # SmallThing
+      - [0x72368, cpp, text_00171368]
 
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
@@ -178,10 +179,12 @@ segments:
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
       #- [0x2BFA88, .rodata, text_00161060]
+
       - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
       - [0x2C21F0, .rodata, Dogs/Code/SkiLiftSeat]
       - [0x2C3900, .rodata, text_0016BD80] # Slideable
       - [0x2C5290, .rodata, text_0016D910]
+      - [0x2C6C20, .rodata, text_00171368]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
