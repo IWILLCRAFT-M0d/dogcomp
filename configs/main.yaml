@@ -57,9 +57,10 @@ segments:
       - [0x1000,   cpp, text]
       - [0x3B8F8, cpp, Dogs/Code/DustEffects]
       - [0x3C288, cpp, Dogs/Code/Fish]
-
       - [0x3D368, cpp, Dogs/Code/FlyingHat]
-      - [0x3DE98, cpp, text_0013CE98]
+      - [0x3DE98, cpp, Dogs/Code/FootPrint]
+      - [0x401F8, cpp, text_0013F1F8]
+
       - [0x51120,  cpp, text_00150120]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
@@ -144,7 +145,8 @@ segments:
       - [0x2A9370, .rodata, Dogs/Code/DustEffects]
       - [0x2A9760, .rodata, Dogs/Code/Fish]
       - [0x2AAFD0, .rodata, Dogs/Code/FlyingHat]
-      - [0x2AC6C8, .rodata, text_0013CE98]
+      - [0x2AC6C8, .rodata, Dogs/Code/FootPrint]
+      - [0x2AE1C8, .rodata, text_0013F1F8]
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
       - [0x2B2DB0, .rodata, text_00150120]
