@@ -63,15 +63,17 @@ segments:
       - [0x40F10, cpp, text_0013FF10] # Light?
       - [0x43FB8, cpp, text_00142FB8] # Motorbike?
       - [0x45BC8, cpp, text_00144BC8] # ParticleSystem
-      - [0x4B110, cpp, text_0014A110] # Person
-      - [0x4E058, cpp, text_0014D058]
+      - [0x4B110, cpp, Dogs/Code/Person]
+      - [0x4E058, cpp, text_0014D058] # Placeholder
       - [0x4E410, cpp, Dogs/Code/PlayerDog]
       - [0x50640, cpp, Dogs/Code/Rat]
       #- [0x51120,  cpp, text_00150120]
-      - [0x51F30, cpp, text_00150F30]
-      - [0x53DD0, cpp, text_00152DD0]
+      - [0x51F30, cpp, text_00150F30] # SaveKennel
+      - [0x53DD0, cpp, text_00152DD0] # Scent
       - [0x613D0, cpp, text_001603D0]
-      - [0x6A1B8, cpp, text_001691B8]
+
+      - [0x6A1B8, cpp, Dogs/Code/Skidoo]
+      - [0x6BEE0, cpp, text_0016AEE0]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
       - [0xAE138,  cpp, Dogs/Code/Creatres]
@@ -160,7 +162,7 @@ segments:
       - [0x2AE620, .rodata, text_0013FF10]
       - [0x2AF160, .rodata, text_00142FB8]
       - [0x2B0878, .rodata, text_00144BC8]
-      - [0x2B2CF0, .rodata, text_0014A110]
+      - [0x2B2CF0, .rodata, Dogs/Code/Person]
       - [0x2B4740, .rodata, text_0014D058]
       - [0x2B5E18, .rodata, Dogs/Code/PlayerDog]
       - [0x2B8DD0, .rodata, Dogs/Code/Rat]
@@ -171,7 +173,8 @@ segments:
       - [0x2BA5F8, .rodata, text_00150F30]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
-      - [0x2C0A30, .rodata, text_001691B8]
+      - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
+      - [0x2C21F0, .rodata, text_0016AEE0]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
