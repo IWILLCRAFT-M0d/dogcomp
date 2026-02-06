@@ -4707,7 +4707,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00227D00);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00227E28);
 
-INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002282D8);
+INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002282D8); /* SlidableBlockPuzzle */
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002283F0);
 

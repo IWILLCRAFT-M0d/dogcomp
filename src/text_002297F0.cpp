@@ -38,6 +38,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022ACD8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", __tf26GroundConformanceAnimation);
 
+
+// split for speechani.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022AD48); /* SpeechAniText */
 
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022ADC0);
@@ -274,6 +276,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002297F0", D_0042EC10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022EA10);
 
+// split for trail.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022EA50); /* Trail::Trail */
 
 INCLUDE_ASM("asm/nonmatchings/text_002297F0", func_0022ED58);
