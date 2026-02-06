@@ -246,7 +246,7 @@ int func_001D9FB0(void);
 
 // text_001E14F8
 void func_001E5008(void);
-void func_001ED248(void);
+
 void func_001F1FF8(void);
 void func_001F8628(void);
 int func_001FC7E8(void);
