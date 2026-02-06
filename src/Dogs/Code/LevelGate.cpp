@@ -1,7 +1,5 @@
 #include "common.h"
-#include "unk.h"
 
-// LevelGate
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F1F8); /* LevelGate::LevelGate */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F2A8);

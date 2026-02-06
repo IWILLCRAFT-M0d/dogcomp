@@ -1,7 +1,5 @@
 #include "common.h"
-#include "unk.h"
 
-// DustEffectManager (DustEffects.h/cpp)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013ABD8);

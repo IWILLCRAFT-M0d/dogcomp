@@ -61,22 +61,22 @@ segments:
       - [0x3DE98, cpp, Dogs/Code/FootPrint]
       - [0x401F8, cpp, Dogs/Code/LevelGate]
       - [0x40D48, cpp, text_0013FD48] # Light?
-      - [0x43FB8, cpp, text_00142FB8] # Motorbike?
+      - [0x43FB8, cpp, Dogs/Code/Motorbike]
       - [0x45BC8, cpp, text_00144BC8] # ParticleSystem
       - [0x4B110, cpp, Dogs/Code/Person]
-      - [0x4E058, cpp, text_0014D058] # Placeholder
+      - [0x4E058, cpp, Dogs/Code/PlaceHolder]
       - [0x4E410, cpp, Dogs/Code/PlayerDog]
       - [0x50640, cpp, Dogs/Code/Rat]
-      - [0x51F30, cpp, text_00150F30] # SaveKennel
+      - [0x51F30, cpp, Dogs/Code/SaveKennel]
       - [0x53DD0, cpp, text_00152DD0] # Scent
       - [0x613D0, cpp, text_001603D0]
       #- [0x62060, cpp, text_00161060]
 
       - [0x6A1B8, cpp, Dogs/Code/Skidoo]
       - [0x6BEE0, cpp, Dogs/Code/SkiLiftSeat]
-      - [0x6CD80, cpp, text_0016BD80] # Slidable
-      - [0x6E910, cpp, text_0016D910] # SmallThing
-      - [0x72368, cpp, text_00171368] # Smell
+      - [0x6CD80, cpp, Dogs/Code/Slidable]
+      - [0x6E910, cpp, Dogs/Code/SmallThing]
+      - [0x72368, cpp, Dogs/Code/Smell]
       - [0x73A50, cpp, text_00172A50]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
@@ -165,26 +165,26 @@ segments:
       - [0x2AC6C8, .rodata, Dogs/Code/FootPrint]
       - [0x2AE1C8, .rodata, Dogs/Code/LevelGate]
       - [0x2AE620, .rodata, text_0013FD48]
-      - [0x2AF160, .rodata, text_00142FB8]
+      - [0x2AF160, .rodata, Dogs/Code/Motorbike]
       - [0x2B0878, .rodata, text_00144BC8]
       - [0x2B2CF0, .rodata, Dogs/Code/Person]
-      - [0x2B4740, .rodata, text_0014D058]
+      - [0x2B4740, .rodata, Dogs/Code/PlaceHolder]
       - [0x2B5E18, .rodata, Dogs/Code/PlayerDog]
       - [0x2B8DD0, .rodata, Dogs/Code/Rat]
 
       #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
       #- [0x29A148, .rodata, Dogs/Code/BoneGod]
 
-      - [0x2BA5F8, .rodata, text_00150F30]
+      - [0x2BA5F8, .rodata, Dogs/Code/SaveKennel]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
       #- [0x2BFA88, .rodata, text_00161060]
 
       - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
       - [0x2C21F0, .rodata, Dogs/Code/SkiLiftSeat]
-      - [0x2C3900, .rodata, text_0016BD80] # Slideable
-      - [0x2C5290, .rodata, text_0016D910]
-      - [0x2C6C20, .rodata, text_00171368]
+      - [0x2C3900, .rodata, Dogs/Code/Slidable]
+      - [0x2C5290, .rodata, Dogs/Code/SmallThing]
+      - [0x2C6C20, .rodata, Dogs/Code/Smell]
       - [0x2C6FB0, .rodata, text_00172A50]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]

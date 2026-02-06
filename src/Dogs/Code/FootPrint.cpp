@@ -1,5 +1,4 @@
 #include "common.h"
-#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013CE98);
 

@@ -1,11 +1,5 @@
 #include "common.h"
-#include "debug.h"
 
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
-
-// SkiLiftSeat
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016AEE0); /* SkiLiftSeat::SkiLiftSeat */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016B040);

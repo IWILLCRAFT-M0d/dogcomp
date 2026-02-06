@@ -1,9 +1,7 @@
 #include "common.h"
-#include "unk.h"
 
 #include "Dogs/FlyingHat.h"
 
-// FlyingHat
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C368); /* FlyingHat::FlyingHat */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C460);

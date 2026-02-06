@@ -1,11 +1,5 @@
 #include "common.h"
-#include "debug.h"
 
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
-
-// Skidoo
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001691B8); /* Skidoo::Skidoo */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001693A0);
