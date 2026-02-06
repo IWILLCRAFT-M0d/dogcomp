@@ -1,10 +1,6 @@
 #include "common.h"
-#include "debug.h"
 
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
-
+#include "Dogs/SmallThing.h"
 
 // SmallThing
 INCLUDE_ASM("asm/nonmatchings/text_0016D910", func_0016D910); /* SmallThing::SmallThing */

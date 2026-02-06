@@ -1,9 +1,4 @@
 #include "common.h"
-#include "debug.h"
-
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
 
 // Slidable
 INCLUDE_ASM("asm/nonmatchings/text_0016BD80", func_0016BD80); /* Slidable::Slidable */

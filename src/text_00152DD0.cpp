@@ -1,9 +1,4 @@
 #include "common.h"
-#include "debug.h"
-
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
 
 // Scent
 INCLUDE_ASM("asm/nonmatchings/text_00152DD0", func_00152DD0);

@@ -1,6 +1,4 @@
 #include "common.h"
-#include "unk.h"
-
 
 // ParticleSystem
 INCLUDE_ASM("asm/nonmatchings/text_00144BC8", func_00144BC8);

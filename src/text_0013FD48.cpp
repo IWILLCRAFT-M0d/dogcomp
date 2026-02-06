@@ -1,5 +1,4 @@
 #include "common.h"
-#include "unk.h"
 
 // Light
 INCLUDE_ASM("asm/nonmatchings/text_0013FD48", func_0013FD48);

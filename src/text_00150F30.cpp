@@ -1,10 +1,4 @@
 #include "common.h"
-#include "debug.h"
-
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
-
 
 INCLUDE_ASM("asm/nonmatchings/text_00150F30", func_00150F30); /* SaveKennel::SaveKennel */
 
