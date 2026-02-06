@@ -1,6 +1,7 @@
 #include "common.h"
 
-// Snowball
+#include "Dogs/Snowball.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172A50); /* Snowball::Snowball */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172B48);

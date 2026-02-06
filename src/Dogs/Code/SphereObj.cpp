@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/SphereObj.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001738D8); /* SphereObj::SphereObj */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173A20);
