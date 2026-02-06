@@ -144,6 +144,7 @@ segments:
       - [0x16EF68, cpp, FGDK3/Code/Playstation2/Sound]
       - [0x170BA0, cpp, text_0026FBA0]
       - [0x170FB8, cpp, text_0026FFB8]
+      - [0x176FF8, cpp, text_00275FF8]
       - [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, text_00279880] # navgraph functions
 
@@ -293,6 +294,7 @@ segments:
       - [0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
       - [0x33CAD0, .rodata, text_0026FBA0]
       - [0x33CBC0, .rodata, text_0026FFB8]
+      - [0x33D280, .rodata, text_00275FF8]
       - [0x33D2B0, .rodata, text_002775D0]
 
 
