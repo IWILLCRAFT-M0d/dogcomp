@@ -178,7 +178,7 @@ segments:
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
       - [0x290F00, .rodata, text]
-      - [0x2A1490, .rodata, text_00122F50]
+      - [0x2A1490, .rodata, Dogs/Code/Car]
       - [0x2A2B90, .rodata, Dogs/Code/Cloth]
       - [0x2A4588, .rodata, text_00127D30]
       - [0x2A5D98, .rodata, text_001292C8]
