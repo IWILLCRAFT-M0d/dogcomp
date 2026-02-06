@@ -137,6 +137,7 @@ segments:
       - [0x16E178, cpp, FGDK3/Code/Playstation2/SoundManager]
       - [0x16EF68, cpp, text_0026DF68]
       - [0x170BA0, cpp, text_0026FBA0]
+      - [0x170FB8, cpp, text_0026FFB8]
       #- [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, text_00279880]
 
@@ -281,6 +282,7 @@ segments:
       - [0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
       - [0x33C9E0, .rodata, text_0026DF68]
       - [0x33CAD0, .rodata, text_0026FBA0]
+      - [0x33CBC0, .rodata, text_0026FFB8]
 
 
       - [0x33D7A8, .rodata, text_00279880]
