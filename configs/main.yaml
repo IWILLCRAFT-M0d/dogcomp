@@ -107,6 +107,7 @@ segments:
       - [0xD92A0, cpp, text_001D82A0]
       - [0xDE5F0, cpp, Dogs/Code/HitTri]
       - [0xDF378, cpp, text_001DE378]
+      - [0xE6198, cpp, text_001E5198] # actual start of levelres?
 
       - [0xE6648, cpp, Dogs/Code/Levelres]
 
