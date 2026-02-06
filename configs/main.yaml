@@ -138,7 +138,7 @@ segments:
       - [0x16EF68, cpp, text_0026DF68]
       - [0x170BA0, cpp, text_0026FBA0]
       - [0x170FB8, cpp, text_0026FFB8]
-      #- [0x1785D0, cpp, text_002775D0]
+      - [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, text_00279880]
 
       #- [0x16D5C8, cpp, FGDK3/Code/StdMem]
@@ -283,6 +283,7 @@ segments:
       - [0x33C9E0, .rodata, text_0026DF68]
       - [0x33CAD0, .rodata, text_0026FBA0]
       - [0x33CBC0, .rodata, text_0026FFB8]
+      - [0x33D2B0, .rodata, text_002775D0]
 
 
       - [0x33D7A8, .rodata, text_00279880]
