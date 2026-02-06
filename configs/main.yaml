@@ -112,7 +112,7 @@ segments:
       - [0xB0470,  cpp, text_001AF470] # element3d
       - [0xB17A8, cpp, text_001B07A8]
       - [0xB2F70, cpp, text_001B1F70]
-      - [0xD92A0, cpp, text_001D82A0]
+      - [0xD92A0, cpp, Dogs/Code/GameState]
       - [0xDB3A0, cpp, Dogs/Code/Gameutil]
       - [0xDE5F0, cpp, Dogs/Code/HitTri]
       - [0xDF378, cpp, text_001DE378]
@@ -270,7 +270,7 @@ segments:
       - [0x2DC688, .rodata, text_001AF470]
       - [0x2DCA50, .rodata, text_001B07A8]
       - [0x2DCB38, .rodata, text_001B1F70]
-      - [0x2E41B8, .rodata, text_001D82A0]
+      - [0x2E41B8, .rodata, Dogs/Code/GameState]
       - [0x2E4740, .rodata, Dogs/Code/Gameutil]
       - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
       - [0x2E6218, .rodata, text_001DE378]
