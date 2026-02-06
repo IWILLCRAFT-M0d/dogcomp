@@ -249,8 +249,7 @@ segments:
       - [0x2D37C0, .rodata, text_0018BB70]
       - [0x2D3B58, .rodata, text_0018C748]
       - [0x2D5780, .rodata, text_0019E5A0]
-
-      - [0x2D5B18, .rodata, Dogs/Code/Console]
+      - [0x2D59E8, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, Dogs/Code/Containers]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
       - [0x2DC138, .rodata, text_001AD378]

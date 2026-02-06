@@ -5,6 +5,21 @@
 #include "debug.h"
 #include "unk.h"
 
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D49E8);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A10);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A40);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A70);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A80);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A90);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4AA0);
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F570);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F5C8);

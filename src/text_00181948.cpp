@@ -12,8 +12,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_00181948", D_003CFC20);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00181948", D_003CFC50);
 
-
-
 #ifdef NON_MATCHING
 Status WorldObj_InternalInitialise(void) {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 150);

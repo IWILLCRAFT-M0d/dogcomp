@@ -2,8 +2,7 @@
 
 #include "unk.h"
 
-// AnimationComponents
-INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018BB70);
+INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018BB70); /* tempR_AnimationComponent::CreateComponents */
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018C5C8);
 
