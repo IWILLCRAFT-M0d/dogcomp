@@ -3,4 +3,9 @@
 
 #include "HitTri.h"
 
+/*
+class SaveKennel : public HitTri_Object {
+};
+*/
+
 #endif

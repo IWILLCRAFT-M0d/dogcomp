@@ -10,4 +10,9 @@ void WorldObj_InternalFinalise(void);
 Status WorldObj_Initialise(void);
 void WorldObj_Finalise(void);
 
+/*
+class WorldObject : public SimObj_ObjectWithMomentum {
+};
+*/
+
 #endif

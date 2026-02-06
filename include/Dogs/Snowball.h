@@ -3,5 +3,10 @@
 
 #include "SphereObj.h"
 
+/*
+class Snowball : public SphereObj {
+};
+*/
+
 #endif
 

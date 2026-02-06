@@ -3,4 +3,9 @@
 
 #include "HitTri.h"
 
+/*
+class SmallThing : public HitTri_Object {
+};
+*/
+
 #endif

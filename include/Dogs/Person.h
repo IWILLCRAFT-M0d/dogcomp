@@ -3,4 +3,9 @@
 
 #include "WorldObj.h"
 
+/*
+class Person : public WorldObject {
+};
+*/
+
 #endif

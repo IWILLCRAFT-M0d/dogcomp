@@ -1054,6 +1054,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7570);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E7590);
 
+
+// split (ikcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E75B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E76B0);
@@ -1162,6 +1164,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002ED288);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002ED2A8);
 
+
+// split (animvarcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002ED2C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002ED418);
@@ -1226,6 +1230,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EDB90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EDBB0);
 
+
+// Split (animposcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EDBD0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002EDCE8);

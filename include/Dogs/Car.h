@@ -3,4 +3,9 @@
 
 #include "WheeledVehicle.h"
 
+/*
+class Car : public WheeledVehicle {
+};
+*/
+
 #endif

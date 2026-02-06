@@ -3,4 +3,9 @@
 
 #include "SmallThing.h"
 
+/*
+class FlyingHat : public SmallThing {
+};
+*/
+
 #endif

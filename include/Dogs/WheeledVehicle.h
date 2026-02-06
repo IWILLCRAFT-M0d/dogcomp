@@ -3,4 +3,9 @@
 
 #include "HitTri.h"
 
+/*
+class WheeledVehicle : public HitTri_Object {
+};
+*/
+
 #endif

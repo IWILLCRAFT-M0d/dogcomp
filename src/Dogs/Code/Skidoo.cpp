@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Skidoo.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001691B8); /* Skidoo::Skidoo */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001693A0);

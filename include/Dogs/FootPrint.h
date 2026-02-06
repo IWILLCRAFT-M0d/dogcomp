@@ -3,4 +3,9 @@
 
 #include "WorldObj.h"
 
+/*
+class FootPrints : public WorldObject {
+};
+*/
+
 #endif

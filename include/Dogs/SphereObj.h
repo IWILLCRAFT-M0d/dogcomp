@@ -3,4 +3,9 @@
 
 #include "WorldObj.h"
 
+/*
+class SphereObj : public WorldObject {
+};
+*/
+
 #endif

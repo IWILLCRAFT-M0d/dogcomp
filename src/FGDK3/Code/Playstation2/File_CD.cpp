@@ -5,8 +5,6 @@
 
 #include "FGDK3/Playstation2/File_CD.h"
 
-
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00302D50);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", File_CD_InternalInitialise__Fv);

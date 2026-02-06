@@ -3,4 +3,9 @@
 
 #include "Dog.h"
 
+/*
+class PlayerDog : public Dog {
+};
+*/
+
 #endif

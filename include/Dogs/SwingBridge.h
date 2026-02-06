@@ -3,4 +3,9 @@
 
 #include "HitTri.h"
 
+/*
+class SwingBridge : public HitTri_Object {
+};
+*/
+
 #endif
