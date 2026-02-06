@@ -79,7 +79,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_001B1F70", D_003DBD78); /* "norwegia" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001B1F70", D_003DBD88);
 
-
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001B2768);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001B1F70", D_003DCE28); /* "c:/coding/dogs/Code/Common/Game.cpp" */
@@ -100,7 +99,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C5338);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C53C0);
 
-// split
+
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C5410);
 
 // nodowngrade
@@ -322,8 +321,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_001B1F70", D_003E2138);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001D5D48);
 
-
-
 #ifdef NON_MATCHING
 
 Status Game_InternalInitialise(void) {
@@ -348,8 +345,6 @@ void Game_Finalise(void) {
     StdInit_FinalisationSequence(&Game_StdInit_Description);
 }
 */
-
-
 
 #ifdef NON_MATCHING
 Status func_001D5E90(void) {
