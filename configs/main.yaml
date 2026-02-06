@@ -124,6 +124,8 @@ segments:
       - [0xFF088, cpp, Dogs/Code/SaveGameManager]
       - [0x1042D8, cpp, text_002032D8]
       - [0x12A7F0, cpp, text_002297F0]
+      - [0x130AC8, cpp, text_0022FAC8]
+      - [0x13F698, cpp, text_0023E698]
       - [0x1411D8, cpp, text_002401D8]
       - [0x14CA70, cpp, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x14CED8, cpp, text_0024BED8]
@@ -264,6 +266,8 @@ segments:
       - [0x30CCE8, .rodata, Dogs/Code/SaveGameManager]
       - [0x30D700, .rodata, text_002032D8]
       - [0x32EB18, .rodata, text_002297F0]
+      - [0x331498, .rodata, text_0022FAC8]
+      - [0x333510, .rodata, text_0023E698]
       - [0x333BB0, .rodata, text_002401D8]
       - [0x333f18, .rodata, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x334058, .rodata, text_0024BED8] # widget
