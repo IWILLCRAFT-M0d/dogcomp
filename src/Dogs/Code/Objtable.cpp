@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Objtable.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC630);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC6C8);

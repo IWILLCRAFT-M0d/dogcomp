@@ -1,9 +1,4 @@
 #include "common.h"
-#include "debug.h"
-
-#include "Dogs/Landscape.h"
-#include "Dogs/Levelres.h"
-#include "Dogs/Objects.h"
 #include "unk.h"
 
 

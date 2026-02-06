@@ -95,5 +95,3 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D148);
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D158);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026C5C8", _vt$6Status);
-
-
