@@ -78,6 +78,7 @@ segments:
       - [0x6E910, cpp, Dogs/Code/SmallThing]
       - [0x72368, cpp, Dogs/Code/Smell]
       - [0x73A50, cpp, text_00172A50]
+      - [0x811A0, cpp, text_001801A0] # wheeledvehicle
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
       - [0xAE138,  cpp, Dogs/Code/Creatres]
@@ -186,6 +187,7 @@ segments:
       - [0x2C5290, .rodata, Dogs/Code/SmallThing]
       - [0x2C6C20, .rodata, Dogs/Code/Smell]
       - [0x2C6FB0, .rodata, text_00172A50]
+      - [0x2CF490, .rodata, text_001801A0]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
