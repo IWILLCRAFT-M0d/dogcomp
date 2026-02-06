@@ -6,7 +6,6 @@
 
 #include <libscf.h>
 
-// split
 INCLUDE_ASM("asm/nonmatchings/text_001D82A0", func_001D82A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001D82A0", func_001D82D8);

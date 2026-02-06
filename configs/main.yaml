@@ -110,7 +110,7 @@ segments:
       #- [0xD92A0,  cpp, text_001D82A0]
 
 
-      - [0xE24F8,  cpp, text_001E14F8]
+
       - [0xE6648, cpp, Dogs/Code/Levelres]
 
       - [0xE6870, cpp, text_001E5870]
@@ -242,7 +242,7 @@ segments:
       - [0x2E41b8, .rodata, text_001D82A0]
       - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
       - [0x2E6218, .rodata, text_001DE378]
-      - [0x2E6400, .rodata, text_001E14F8]
+
 
       - [0x2E6640, .rodata, Dogs/Code/Levelres]
 
