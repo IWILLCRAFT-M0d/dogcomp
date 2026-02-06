@@ -96,6 +96,7 @@ segments:
       - [0x82948, cpp, text_00181948] # WorldObj
       - [0x898E0, cpp, Dogs/Code/Zone]
       - [0x8CB70, cpp, text_0018BB70]
+      - [0x8D748, cpp, text_0018C748]
       - [0x9F5A0, cpp, text_0019E5A0]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, Dogs/Code/Containers]
@@ -140,7 +141,7 @@ segments:
       - [0x16D380, cpp, FGDK3/Code/TextRes]
       - [0x16D5C8, cpp, text_0026C5C8]
       - [0x16E178, cpp, FGDK3/Code/Playstation2/SoundManager]
-      - [0x16EF68, cpp, text_0026DF68]
+      - [0x16EF68, cpp, FGDK3/Code/Playstation2/Sound]
       - [0x170BA0, cpp, text_0026FBA0]
       - [0x170FB8, cpp, text_0026FFB8]
       - [0x1785D0, cpp, text_002775D0]
@@ -246,6 +247,7 @@ segments:
       - [0x2D0BF8, .rodata, text_00181948]
       - [0x2D2C20, .rodata, Dogs/Code/Zone]
       - [0x2D37C0, .rodata, text_0018BB70]
+      - [0x2D3B58, .rodata, text_0018C748]
       - [0x2D5780, .rodata, text_0019E5A0]
 
       - [0x2D5B18, .rodata, Dogs/Code/Console]
@@ -289,7 +291,7 @@ segments:
 
       - [0x33C8E0, .rodata, text_0026C5C8]
       - [0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
-      - [0x33C9E0, .rodata, text_0026DF68]
+      - [0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
       - [0x33CAD0, .rodata, text_0026FBA0]
       - [0x33CBC0, .rodata, text_0026FFB8]
       - [0x33D2B0, .rodata, text_002775D0]

@@ -1040,8 +1040,6 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6550); /* MoveObjectCompo
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E6AF8);
 
-
-
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00445070);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002E74A0);
