@@ -1,11 +1,5 @@
 #include "common.h"
-#include "debug.h"
-
-#include "Dogs/Landscape.h"
-#include "Dogs/Levelres.h"
-#include "Dogs/Objects.h"
 #include "unk.h"
-
 
 // split
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002032D8);

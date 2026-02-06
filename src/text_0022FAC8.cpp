@@ -310,7 +310,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0022FAC8", func_002363B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022FAC8", func_002363D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022FAC8", func_00236400);
+INCLUDE_ASM("asm/nonmatchings/text_0022FAC8", func_00236400); /* visual.cpp */
 
 INCLUDE_ASM("asm/nonmatchings/text_0022FAC8", func_002367F0);
 
