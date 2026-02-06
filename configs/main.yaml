@@ -109,6 +109,7 @@ segments:
       - [0xE6870, cpp, text_001E5870]
       - [0xE7FF0, cpp, text_001E6FF0]
       - [0xF18F8, cpp, text_001F08F8]
+      - [0xF84B8, cpp, text_001F74B8]
       - [0x1411D8, cpp, text_002401D8]
       - [0x14CA70, cpp, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x14CED8, cpp, text_0024BED8]
@@ -231,6 +232,7 @@ segments:
 
       - [0x2E6CF0, .rodata, text_001E6FF0]
       - [0x2EAB28, .rodata, text_001F08F8]
+      - [0x2EB1B0, .rodata, text_001F74B8]
       - [0x333BB0, .rodata, text_002401D8]
       - [0x333f18, .rodata, FGDK3/ResLibs/SoundRes/Code/SoundRes]
       - [0x334058, .rodata, text_0024BED8] # widget
