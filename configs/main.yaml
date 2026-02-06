@@ -94,7 +94,7 @@ segments:
       - [0x7E340, cpp, Dogs/Code/WaterSplash]
       - [0x811A0, cpp, Dogs/Code/WheeledVehicle]
       - [0x82948, cpp, text_00181948] # WorldObj
-      - [0x898E0, cpp, text_001888E0] # Zone
+      - [0x898E0, cpp, Dogs/Code/Zone]
       - [0x8CB70, cpp, text_0018BB70]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, Dogs/Code/Containers]
@@ -232,7 +232,7 @@ segments:
       - [0x2CEDC0, .rodata, Dogs/Code/WaterSplash]
       - [0x2CF490, .rodata, Dogs/Code/WheeledVehicle]
       - [0x2D0BF8, .rodata, text_00181948]
-      - [0x2D2C20, .rodata, text_001888E0]
+      - [0x2D2C20, .rodata, Dogs/Code/Zone]
       - [0x2D37C0, .rodata, text_0018BB70]
 
       - [0x2D5B18, .rodata, Dogs/Code/Console]

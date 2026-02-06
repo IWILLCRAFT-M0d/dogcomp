@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/SoundCreature.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_001731F8); /* SoundCreature::SoundCreature */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173298);
