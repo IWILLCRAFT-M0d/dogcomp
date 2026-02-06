@@ -75,8 +75,9 @@ segments:
       - [0x50640, cpp, Dogs/Code/Rat]
       - [0x51F30, cpp, Dogs/Code/SaveKennel]
       - [0x53DD0, cpp, text_00152DD0] # Scent
-      - [0x613D0, cpp, text_001603D0]
-      #- [0x62060, cpp, text_00161060]
+      - [0x613D0, cpp, text_001603D0] # selector
+      - [0x62068, cpp, text_00161068]
+
 
       - [0x6A1B8, cpp, Dogs/Code/Skidoo]
       - [0x6BEE0, cpp, Dogs/Code/SkiLiftSeat]
@@ -202,7 +203,8 @@ segments:
       - [0x2BA5F8, .rodata, Dogs/Code/SaveKennel]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
-      #- [0x2BFA88, .rodata, text_00161060]
+      - [0x2BFA88, .rodata, text_00161068]
+
 
       - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
       - [0x2C21F0, .rodata, Dogs/Code/SkiLiftSeat]
