@@ -55,6 +55,7 @@ segments:
     subalign: 4
     subsegments:
       - [0x1000, cpp, text]
+      - [0xAF40, cpp, text_00109F40]
       - [0x23F50, cpp, Dogs/Code/Car]
       - [0x25EF8, cpp, Dogs/Code/Cloth]
       - [0x28D30, cpp, text_00127D30] # DiggablePatch
@@ -180,6 +181,7 @@ segments:
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
       - [0x290F00, .rodata, text]
+      - [0x29D150, .rodata, text_00109F40]
       - [0x2A1490, .rodata, Dogs/Code/Car]
       - [0x2A2B90, .rodata, Dogs/Code/Cloth]
       - [0x2A4588, .rodata, text_00127D30]
