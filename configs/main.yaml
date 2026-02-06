@@ -55,6 +55,7 @@ segments:
     subalign: 4
     subsegments:
       - [0x1000,   cpp, text]
+      - [0x2DD30, cpp, Dogs/Code/Dog]
       - [0x3B8F8, cpp, Dogs/Code/DustEffects]
       - [0x3C288, cpp, Dogs/Code/Fish]
       - [0x3D368, cpp, Dogs/Code/FlyingHat]
@@ -86,7 +87,7 @@ segments:
       - [0x811A0, cpp, Dogs/Code/WheeledVehicle]
       - [0x82948, cpp, text_00181948]
       - [0xA0570,  cpp, Dogs/Code/Console]
-      - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
+      - [0xAC700,  cpp, Dogs/Code/Containers]
       - [0xAE138,  cpp, Dogs/Code/Creatres]
       - [0xAE378,  cpp, text_001AD378]
       - [0xDE5F0, cpp, Dogs/Code/HitTri]
@@ -168,6 +169,7 @@ segments:
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
       - [0x290F00, .rodata, text]
+      - [0x2A7660, .rodata, Dogs/Code/Dog]
       - [0x2A9370, .rodata, Dogs/Code/DustEffects]
       - [0x2A9760, .rodata, Dogs/Code/Fish]
       - [0x2AAFD0, .rodata, Dogs/Code/FlyingHat]
@@ -203,7 +205,7 @@ segments:
       - [0x2CF490, .rodata, Dogs/Code/WheeledVehicle]
       - [0x2D0BF8, .rodata, text_00181948]
       - [0x2D5B18, .rodata, Dogs/Code/Console]
-      - [0x2D7AA0, .rodata, text_001AB700]
+      - [0x2D7AA0, .rodata, Dogs/Code/Containers]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
       - [0x2DC138, .rodata, text_001AD378]
       - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
