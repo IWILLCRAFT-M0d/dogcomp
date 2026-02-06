@@ -103,7 +103,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5020);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5020); /* Debug_DataValueContainer */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5130);
 
