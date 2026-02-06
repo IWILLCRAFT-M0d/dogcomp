@@ -2,7 +2,6 @@
 
 #include "unk.h"
 
-// beginning of player.cpp?
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B28);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B50);
@@ -210,6 +209,4 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7408);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7458);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7498);
-
-
 

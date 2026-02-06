@@ -2,7 +2,6 @@
 
 #include "Dogs/Car.h"
 
-// Car
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00122F50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_001231C0);
