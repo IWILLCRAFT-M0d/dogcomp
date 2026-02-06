@@ -1,13 +1,8 @@
 #include "common.h"
-
-
 #include "mem.h"
-
-#include "FGDK3/Playstation2/SoundManager.h"
-
 #include "unk.h"
 
-
+#include "FGDK3/Playstation2/SoundManager.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/SoundManager", SoundManager_InternalInitialise__Fv);
 
