@@ -93,8 +93,8 @@ segments:
       - [0x79658, cpp, Dogs/Code/TugOfWar]
       - [0x7E340, cpp, Dogs/Code/WaterSplash]
       - [0x811A0, cpp, Dogs/Code/WheeledVehicle]
-      - [0x82948, cpp, text_00181948]
-      - [0x898E0, cpp, text_001888E0]
+      - [0x82948, cpp, text_00181948] # WorldObj
+      - [0x898E0, cpp, text_001888E0] # Zone
       - [0x8CB70, cpp, text_0018BB70]
       - [0xA0570,  cpp, Dogs/Code/Console]
       - [0xAC700,  cpp, Dogs/Code/Containers]
@@ -128,6 +128,7 @@ segments:
       - [0x16D5C8, cpp, text_0026C5C8]
       - [0x16E178, cpp, FGDK3/Code/Playstation2/SoundManager]
       - [0x16EF68, cpp, text_0026DF68]
+      - [0x170BA0, cpp, text_0026FBA0]
       #- [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, text_00279880]
 
@@ -262,6 +263,7 @@ segments:
       - [0x33C8E0, .rodata, text_0026C5C8]
       - [0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
       - [0x33C9E0, .rodata, text_0026DF68]
+      - [0x33CAD0, .rodata, text_0026FBA0]
 
 
       - [0x33D7A8, .rodata, text_00279880]
