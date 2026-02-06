@@ -1,0 +1,52 @@
+#include "common.h"
+
+// Car
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00122F50);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_001231C0);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00123298);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00123C28);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00123CA8);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00124900);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00124D10);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00124E50);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", __tf3Car);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00124ED0);
+
+INCLUDE_ASM("asm/nonmatchings/text_00122F50", func_00124ED8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A04A8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A04B8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A04D0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A04F8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0518);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0530);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0548);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0560);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0578);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A0824);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A1798);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A17D8);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A17F0);
+
+INCLUDE_RODATA("asm/nonmatchings/text_00122F50", D_003A1808);
