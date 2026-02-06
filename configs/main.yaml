@@ -140,7 +140,8 @@ segments:
       - [0x1FCD40, cpp, text_002FBD40]
       - [0x1FCFF0, cpp, FGDK3/Code/Playstation2/Controller]
       - [0x1FDF70, cpp, text_002FCF70] # -O0
-      - [0x203D50, cpp, text_00302D50]
+      - [0x203D50, cpp, text_00302D50] # File_CD
+      - [0x205B48, cpp, FGDK3/Code/File]
       - [0x20A778, cpp, text_00309778]
       - [0x211BE8, cpp, text_00310BE8]
       #- [0x211BE8, cpp, FGDK3/Code/FileSystem_Zip]
@@ -283,6 +284,7 @@ segments:
       #File_FileDescriptor
       - [0x348390, .rodata, text_002FCF70]
       - [0x348880, .rodata, text_00302D50]
+      - [0x348A30, .rodata, FGDK3/Code/File]
       - [0x348CD0, .rodata, text_00309778]
       #- [0x349040, .rodata, FGDK3/Code/FileSystem_Zip]
       - [0x349040, .rodata, text_00310BE8]
