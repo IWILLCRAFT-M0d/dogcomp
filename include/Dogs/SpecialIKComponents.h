@@ -1,0 +1,4 @@
+#ifndef SPECIALIKCOMPONENTS_H
+#define SPECIALIKCOMPONENTS_H
+
+#endif

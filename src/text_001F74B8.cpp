@@ -54,6 +54,8 @@ INCLUDE_ASM("asm/nonmatchings/text_001F74B8", func_001F8348);
 
 INCLUDE_ASM("asm/nonmatchings/text_001F74B8", func_001F8378);
 
+
+// split?
 INCLUDE_ASM("asm/nonmatchings/text_001F74B8", func_001F83A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001F74B8", __12PlayingLayer);

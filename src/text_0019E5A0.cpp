@@ -1,5 +1,6 @@
 #include "common.h"
 
+// Bounce?
 INCLUDE_ASM("asm/nonmatchings/text_0019E5A0", func_0019E5A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0019E5A0", func_0019E610);
