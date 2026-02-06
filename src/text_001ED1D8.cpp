@@ -1,7 +1,7 @@
 #include "common.h"
 #include "unk.h"
 
-
+// paused.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001ED1D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001ED1F8);
@@ -36,6 +36,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_001ED1D8", D_003E6B90);
 
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001ED400);
 
+// beginning of platform.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001ED440); /* Platform::Platform */
 
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001ED5A8);
@@ -151,3 +152,4 @@ INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001F0878);
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001F08B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001ED1D8", func_001F08D8);
+// end
