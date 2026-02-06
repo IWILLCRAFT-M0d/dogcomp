@@ -1,10 +1,11 @@
 #include "common.h"
+#include <libscf.h>
 #include "unk.h"
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
-#include <libscf.h>
+#include "Dogs/Game.h"
 
 // split
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001B1F70);
@@ -98,7 +99,6 @@ INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C5238);
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C5338);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C53C0);
-
 
 INCLUDE_ASM("asm/nonmatchings/text_001B1F70", func_001C5410);
 

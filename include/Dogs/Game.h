@@ -8,4 +8,9 @@ void Game_InternalFinalise(void);
 Status Game_Initialise(void);
 void Game_Finalise(void);
 
+/*
+class Game_Document : public GameShell {
+};
+*/
+
 #endif
