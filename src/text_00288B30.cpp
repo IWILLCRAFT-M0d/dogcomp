@@ -682,6 +682,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002965D0);
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296630);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296650);
+
+// split
 #ifdef NON_MATCHING
 
 Status IOPMem_InternalInitialise(void) {
@@ -800,6 +802,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297520);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297558);
 
+// split
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297578);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00297608);
@@ -1124,7 +1127,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4960);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_002A4980);
 
-// beginning of GE_RenderHardware.cpp?
+// beginning of GE_RenderHardware.cpp
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 

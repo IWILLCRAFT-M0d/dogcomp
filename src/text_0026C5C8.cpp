@@ -1,6 +1,6 @@
 #include "common.h"
 #include "FGDK3/Playstation2/Thread.h"
-
+#include "FGDK3/ThrowCat.h"
 #include "mem.h"
 
 #include "unk.h"
