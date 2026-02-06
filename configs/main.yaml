@@ -89,6 +89,8 @@ segments:
       - [0xAC700,  cpp, text_001AB700] # containers (pram, basketball net)
       - [0xAE138,  cpp, Dogs/Code/Creatres]
       - [0xAE378,  cpp, text_001AD378]
+      - [0xDE5F0, cpp, Dogs/Code/HitTri]
+      - [0xDF378, cpp, text_001DE378]
       #- [0xB0470,  cpp, text_001AF470] # Objects 3D related
       #- [0xB17A8,  cpp, text_001B07A8] # Textures related
       #- [0xB2F70,  cpp, text_001B1F70]
@@ -204,6 +206,8 @@ segments:
       - [0x2D7AA0, .rodata, text_001AB700]
       - [0x2DBF80, .rodata, Dogs/Code/Creatres]
       - [0x2DC138, .rodata, text_001AD378]
+      - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
+      - [0x2E6218, .rodata, text_001DE378]
       - [0x2E6400, .rodata, text_001E14F8]
 
       - [0x2E6640, .rodata, Dogs/Code/Levelres]

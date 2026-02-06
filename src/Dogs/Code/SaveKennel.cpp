@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/SaveKennel.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00150F30); /* SaveKennel::SaveKennel */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050);
