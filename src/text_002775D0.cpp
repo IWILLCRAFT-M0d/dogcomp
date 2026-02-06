@@ -1,15 +1,8 @@
 #include "common.h"
-#include "FGDK3/Playstation2/Thread.h"
-
 #include "mem.h"
-#include "FGDK3/Playstation2/RunPath.h"
-#include "FGDK3/Playstation2/SoundManager.h"
-#include "FGDK3/Playstation2/Sound.h"
-#include "FGDK3/Playstation2/sifManager.h"
-#include "FGDK3/NavGraphRes.h"
 #include "unk.h"
+
 #include "FGDK3/RelRecv.h"
-#include "FGDK3/ResLibs/TextureRes/Code/TextureRes.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
