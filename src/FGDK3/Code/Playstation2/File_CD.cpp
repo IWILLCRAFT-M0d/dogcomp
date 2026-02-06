@@ -1,11 +1,11 @@
 #include "common.h"
-
-#include "FGDK3/Playstation2/File_MemCard.h"
-#include "FGDK3/Playstation2/File_CD.h"
+#include "unk.h"
 
 #include <common/libcdvd.h>
-#include <ee/libmc.h>
-#include "unk.h"
+
+#include "FGDK3/Playstation2/File_CD.h"
+
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00302D50);
 

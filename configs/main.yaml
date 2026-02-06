@@ -55,7 +55,7 @@ segments:
     subalign: 4
     subsegments:
       - [0x1000, cpp, text]
-      - [0x23F50, cpp, text_00122F50] # Car
+      - [0x23F50, cpp, Dogs/Code/Car]
       - [0x25EF8, cpp, Dogs/Code/Cloth]
       - [0x28D30, cpp, text_00127D30] # DiggablePatch
       - [0x2A2C8, cpp, text_001292C8] # DiggingRace
