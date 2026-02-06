@@ -114,6 +114,7 @@ segments:
       - [0xEB608, cpp, Dogs/Code/Objects]
       - [0xED630, cpp, Dogs/Code/Objtable]
       - [0xEE1D8, cpp, text_001ED1D8]
+      - [0xEE440, cpp, Dogs/Code/Platform]
       - [0xF18F8, cpp, Dogs/Code/Player]
       - [0xF84B8, cpp, text_001F74B8]
       - [0xFD440, cpp, text_001FC440]
@@ -247,17 +248,13 @@ segments:
       - [0x2E41b8, .rodata, text_001D82A0]
       - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
       - [0x2E6218, .rodata, text_001DE378]
-
-
       - [0x2E6640, .rodata, Dogs/Code/Levelres]
-
-
       - [0x2E67C8, .rodata, text_001E5870]
-
       - [0x2E6CF0, .rodata, text_001E6FF0]
       - [0x2E7200, .rodata, Dogs/Code/Objects]
       - [0x2E74F8, .rodata, Dogs/Code/Objtable]
       - [0x2E7708, .rodata, text_001ED1D8]
+      - [0x2E7C78, .rodata, Dogs/Code/Platform]
       - [0x2EAB28, .rodata, Dogs/Code/Player]
       - [0x2EB1B0, .rodata, text_001F74B8]
       - [0x2EC868, .rodata, text_001FC440]
