@@ -106,23 +106,8 @@ struct Mien {
 // Replace struct for class `Game_Document` and move to a proper file.
 extern s_0044EB68* TheGame;
 
-class Game_Document {
-    public:
-        char m_unk[1450]; // temporary
-    Game_Document(float, float);
-    virtual ~Game_Document();
 
-};
 
-class GameShell {
-    public:
-        int unk4;
-        float m_fps;
-        float m_gamespeed;
-        int unk1C;
-    GameShell(float, float);
-    virtual ~GameShell();
-};
 
 class StdAllocator {
     public:
@@ -390,6 +375,7 @@ Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 
 int func_001DBD50(int);
+void* func_002D3360(void*);
 #ifdef __cplusplus
 }
 #endif

@@ -85,7 +85,7 @@ segments:
       - [0x51F30, cpp, Dogs/Code/SaveKennel]
       - [0x53DD0, cpp, text_00152DD0] # Scent
       - [0x613D0, cpp, text_001603D0] # selector
-      - [0x62068, cpp, text_00161068]
+      - [0x62068, cpp, Dogs/Code/SimObj]
 
 
       - [0x6A1B8, cpp, Dogs/Code/Skidoo]
@@ -164,7 +164,7 @@ segments:
 
       #- [0x1900B0, cpp, text_0028F0B0]
 
-      - [0x1D3D80, cpp, FGDK3/Code/Playstation2/GameShell] # -O0 - Guessed filepath and name
+      - [0x1D3D80, cpp, FGDK3/Code/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
       - [0x1F82C0, cpp, FGDK3/Code/InpUtil]
       - [0x1F8F28, cpp, FGDK3/Code/Playstation2/InpMouse]
@@ -243,7 +243,7 @@ segments:
       - [0x2BA5F8, .rodata, Dogs/Code/SaveKennel]
       - [0x2BBDB8, .rodata, text_00152DD0]
       - [0x2BE2F8, .rodata, text_001603D0]
-      - [0x2BFA88, .rodata, text_00161068]
+      - [0x2BFA88, .rodata, Dogs/Code/SimObj]
 
 
       - [0x2C0A30, .rodata, Dogs/Code/Skidoo]
@@ -327,7 +327,7 @@ segments:
       #- [0x33FA98, .rodata, text_0028F0B0]
 
       #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
-      - [0x343CE8, .rodata, FGDK3/Code/Playstation2/GameShell]
+      - [0x343CE8, .rodata, FGDK3/Code/GameShell]
       - [0x343D68, .rodata, text_002D3598]
       #CLIOpts 345658
       #WalkerComponents 345800

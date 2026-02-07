@@ -675,7 +675,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341D30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", DisableIntc);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341DA8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", EnableIntc);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00341E10);
 

@@ -9,6 +9,7 @@ extern void * const TimSrv_StdInit_UsedModules[];
 extern "C" {
 #endif
 Status func_0026ABD8(void);
+long TimSrv_GetTime(void);
 #ifdef __cplusplus
 }
 #endif

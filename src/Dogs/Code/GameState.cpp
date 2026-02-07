@@ -3,7 +3,7 @@
 
 #include "Dogs/GameState.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D82A0); /* Q29GameState12GameStateReq */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __Q29GameState12GameStateReqPv); /* Q29GameState12GameStateReq */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D82D8);
 
@@ -28,17 +28,23 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __16LoadSavedGameReqi);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __16BMStateChangeReqi);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __15BMPageChangeReqi);
+// BMPageChangeReq::BMPageChangeReq(int page) : GameState::GameStateReq(this) {
+//
+// 	this->m_page = page;
+//
+// }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __18BMPageNumChangeReqi);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __14ChangeLevelReqii); /* ChangeLevelReq::ChangeLevelReq(int map, int entry); */
 
-/*
-ChangeLevelReq::ChangeLevelReq(int level, int gate) {
-	this->m_level = level;
-	this-m_gate = gate;
-}
-*/
+
+// ChangeLevelReq::ChangeLevelReq(int level, int gate) {
+// 	this->m_gate = gate;
+// 	this->m_level = level;
+//
+// }
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8910);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D89D0);

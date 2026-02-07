@@ -49,7 +49,16 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_Finalise__
 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_GetTime);
+/*
+long TimSrv_GetTime(void) {
+    long temp_16;
 
+    DisableIntc(9);
+    func_0026A940();
+    temp_16 = D_00453468;
+    EnableIntc(9);
+    return temp_16;
+}*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AE98);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B028);

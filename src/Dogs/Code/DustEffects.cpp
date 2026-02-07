@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/DustEffects.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013ABD8);

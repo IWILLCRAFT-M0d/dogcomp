@@ -6,6 +6,9 @@
 /*
 class PlayerDog : public Dog {
 };
+
+//msg AddMove
 */
+
 
 #endif
