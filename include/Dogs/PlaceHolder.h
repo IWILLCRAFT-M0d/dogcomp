@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class PlaceHolder : public WorldObject {
 };
-*/
+
 
 #endif

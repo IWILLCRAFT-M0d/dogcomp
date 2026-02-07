@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/SkiLiftSeat.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016AEE0); /* SkiLiftSeat::SkiLiftSeat */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016B040);

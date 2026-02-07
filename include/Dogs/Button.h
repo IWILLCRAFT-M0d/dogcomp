@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class Button : public WorldObject {
 };
-*/
+
 
 #endif

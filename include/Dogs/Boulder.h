@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class Boulder : public WorldObject {
 };
-*/
+
 
 #endif

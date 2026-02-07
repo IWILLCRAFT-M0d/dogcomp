@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A110);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A2C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", _$_6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A398);
 

@@ -3,9 +3,9 @@
 
 #include "SmallThing.h"
 
-/*
+
 class Rat : public SmallThing {
 };
-*/
+
 
 #endif

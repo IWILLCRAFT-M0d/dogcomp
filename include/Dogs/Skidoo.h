@@ -3,9 +3,11 @@
 
 #include "WheeledVehicle.h"
 
-/*
+
 class Skidoo : public WheeledVehicle {
+    public:
+        Skidoo() : WheeledVehicle(3) {};
 };
-*/
+
 
 #endif

@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class HitTri_Object : public WorldObject {
 };
-*/
+
 
 #endif

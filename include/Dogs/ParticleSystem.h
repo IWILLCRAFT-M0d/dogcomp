@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class ParticleSystem : public WorldObject {
 };
-*/
+
 
 #endif

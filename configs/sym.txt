@@ -38,8 +38,16 @@ __tf17CameraMountAction = 0x00122AD8;
 __tf15CameraNUDAction = 0x00122BC8;
 __tf16CameraNextAction = 0x00122CB8;
 __tf17CameraZonesAction = 0x00122D98;
+
+// Car.cpp
+// __3Car = 0x00122F50; // type:func
+_$_3Car = 0x001231C0; // type:func
 __tf3Car = 0x00124e78;
+
+// Cloth.cpp
 __tf5Cloth = 0x00127B80;
+
+
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
 __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
@@ -64,7 +72,12 @@ __tf18ToggleRenderAction = 0x001422f0;
 __tf11ClearAction = 0x00142390;
 __tf10SaveAction = 0x00142420;
 __tf8GE_Light = 0x00142f38;
+
+// Motorbike.cpp
+_$_9Motorbike = 0x00143168; // type:func
 __tf9Motorbike = 0x00144b48;
+
+
 __tf10ParticleID = 0x00149cb0;
 __tf13AttractorSpec = 0x00149D08;
 __tf11EmitterSpec = 0x00149d60;
@@ -76,11 +89,17 @@ __tf19Particle_PlotObject = 0x00149f10;
 __tf14WidgetEditable = 0x00149f80;
 __tf17ParticleSystem_IF = 0x00149FC0;
 __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
+
+// Person.cpp
+_$_6Person = 0x0014A2C8; // type:func
 __tf6Person = 0x0014cb78;
+
 __tf23PersonHitSizeCalculator = 0x0014cc10;
 __tf24PersonVehicleHitReceiver = 0x0014ccb8;
 __tf14PersonRepulsor = 0x0014cd18;
 __tf11PlaceHolder = 0x0014d390;
+__9PlayerDogPv = 0x0014D410; // type:func
+_$_9PlayerDog = 0x0014D678; // type:func
 __tf9PlayerDog = 0x0014f4c0;
 __tf18RoverSaysPuzzleGod = 0x0014f5c0;
 __tf3Rat = 0x00150e10;
@@ -97,6 +116,7 @@ SimObj_InternalInitialise__Fv = 0x00161068; // type:func
 SimObj_InternalFinalise__Fv = 0x001610b0; // type:func
 SimObj_Initialise__Fv = 0x001610b8; // type:func
 SimObj_Finalise__Fv = 0x001610e8; // type:func
+_$_9SimObject = 0x001652E8; // type:func
 __tf9SimObject = 0x00167fb8;
 __tf10DebugID_IF = 0x00168160;
 __tf25SimObj_ObjectWithMomentum = 0x001686f8;
@@ -129,6 +149,7 @@ __tf18WaterSplashManager = 0x0017FF28;
 __tf17StaticWaterRipple = 0x0017FF90;
 __tf13RippleManager = 0x00180030;
 __tf20CurtainSplashManager = 0x00180110;
+_$_14WheeledVehicle = 0x001803E8; // type:func
 __tf14WheeledVehicle = 0x001817a8;
 __tf25WheeledVehicleHitReceiver = 0x00181878;
 // WorldObj.cpp

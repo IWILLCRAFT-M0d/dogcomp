@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class BoneGod : public WorldObject {
 };
-*/
+
 
 #endif

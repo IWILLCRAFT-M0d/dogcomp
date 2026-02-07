@@ -752,7 +752,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296840);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296878);
 
-INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296958);
+INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296958); // classinfo?
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00296990);
 

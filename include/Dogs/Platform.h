@@ -3,9 +3,9 @@
 
 #include "HitTri.h"
 
-/*
+
 class Platform : public HitTri_Object {
 };
-*/
+
 
 #endif

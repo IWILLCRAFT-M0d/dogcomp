@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class Camera : public WorldObject {
 };
-*/
+
 
 #endif

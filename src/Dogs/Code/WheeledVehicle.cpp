@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001801A0); /* WheeledVehicle::WheeledVehicle */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001803E8); /* WheeledVehicle::~WheeledVehicle */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle); /* WheeledVehicle::~WheeledVehicle */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528);
 

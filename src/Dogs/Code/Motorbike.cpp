@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00142FB8); /* Motorbike::Motorbike */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143168);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", _$_9Motorbike);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143220);
 

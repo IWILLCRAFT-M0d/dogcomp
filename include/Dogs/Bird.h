@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
+
 class Bird : public WorldObject {
 };
-*/
+
 
 #endif

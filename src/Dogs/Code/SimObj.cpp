@@ -5,6 +5,7 @@
 #include "unk.h"
 #include <string.h>
 
+#include "Dogs/SimObj.h"
 
 // beginning of SimObj.cpp
 #ifdef NON_MATCHING
@@ -194,7 +195,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001650D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165110); /* SimObject::SimObject */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001652E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_9SimObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001653A8);
 
