@@ -39,24 +39,26 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_Initialise__
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E318); /* SoundImplementation::SoundImplementation */
+#ifdef NON_MATCHING
 
-/*
-SoundImplementation::SoundImplementation(void* arg1) // Sound arg? {
-    this->m_unk8 = 0;
-    this->m_unkC = 0;
-    this->m_unk14 = 0;
-    this->m_unk18 = 0;
-    this->m_unk24 = 0;
-    this->m_unk0 = arg1;
-    this->m_unk10 = 1;
-    this->m_unk28 = 0xFFFFFFFF;
-    this->m_unk4 = 0xFFFFFFFF;
+SoundImplementation::SoundImplementation(void* arg1) {
+    this->unk8 = 0;
+    this->unkC = 0;
+    this->unk14 = 0;
+    this->unk18 = 0;
+    this->unk24 = 0;
+    this->unk0 = arg1;
+    this->unk10 = 1;
+    this->unk28 = 0xFFFFFFFF;
+    this->unk4 = 0xFFFFFFFF;
     Sound_Initialise();
 };
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E380);
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", __19SoundImplementationPv); /* SoundImplementation::SoundImplementation */
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", _$_19SoundImplementation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E3D8);
 

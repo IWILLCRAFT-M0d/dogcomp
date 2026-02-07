@@ -1,5 +1,5 @@
-#ifndef MUSIC_H
-#define MUSIC_H
+#ifndef PS2MUSIC_H
+#define PS2MUSIC_H
 
 #include "FGDK3/Playstation2/Thread.h"
 
@@ -10,15 +10,7 @@
 #include "FGDK3/Playstation2/RunPath.h"
 //StdMem header goes here
 
-class Music_PS2Performance {
-    public:
 
-        int m_paused; // 0x128
-        Music_PS2Performance();
-        virtual ~Music_PS2Performance();
-        virtual void PauseNow();
-        virtual void ResumeNow();
-};
 
 
 Status Music_InternalInitialise(void);
@@ -34,5 +26,19 @@ char* func_00280660(int);
 }
 #endif
 
+class Music_PS2Performance {
+    public:
+
+        int m_paused; // 0x128
+        Music_PS2Performance();
+        virtual ~Music_PS2Performance();
+        virtual void PauseNow();
+        virtual void ResumeNow();
+};
+/*
+class Music_PS2Piece : public Music_Piece {
+
+};
+*/
 #endif
 

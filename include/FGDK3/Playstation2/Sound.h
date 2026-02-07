@@ -13,4 +13,19 @@ void Sound_InternalFinalise(void);
 Status Sound_Initialise(void);
 void Sound_Finalise(void);
 
+class SoundImplementation {
+    public:
+        void* unk0;
+        int unk4;
+        int unk8;
+        int unkC;
+        int unk10;
+        int unk14;
+        int unk18;
+        int unk24;
+        int unk28;
+        SoundImplementation(void*);
+        virtual ~SoundImplementation();
+};
+
 #endif
