@@ -1,5 +1,5 @@
 #include "common.h"
-#include "unk.h"
+
 #include "Dogs/PlayerAnim.h"
 
 // beginning of playeranim?
@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8048);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8050);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8058);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", _$_19PlayerMoveAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerAnim", D_003EA1B0); /* "c:/coding/dogs/Code/Common/PlayerAnim.cpp" */
 
@@ -29,7 +29,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerAnim", _vt$19PlayerMoveAnimatio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", __tf19PlayerMoveAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F80C8); /* PlayerLookAnimation::~PlayerLookAnimation */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", _$_19PlayerLookAnimation); /* PlayerLookAnimation::~PlayerLookAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", __tf19PlayerLookAnimation);
 

@@ -1,7 +1,7 @@
 #include "common.h"
-#include "unk.h"
 
-// Zone
+#include "Dogs/Zone.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001888E0); /* Zone::Zone */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188968);

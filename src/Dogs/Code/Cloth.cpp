@@ -2,7 +2,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00124EF8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001250E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", _$_5Cloth);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001251E0);
 

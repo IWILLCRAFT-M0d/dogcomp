@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002363B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002363D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236400);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236400); /* Visual_Counter */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002367F0);
 

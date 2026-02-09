@@ -5,7 +5,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0013FD48", func_0013FD48);
 
 INCLUDE_ASM("asm/nonmatchings/text_0013FD48", func_0013FF10); /* Light::Light */
 
-INCLUDE_ASM("asm/nonmatchings/text_0013FD48", func_00140130);
+INCLUDE_ASM("asm/nonmatchings/text_0013FD48", _$_5Light);
 
 INCLUDE_ASM("asm/nonmatchings/text_0013FD48", func_00140190);
 

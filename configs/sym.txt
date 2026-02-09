@@ -23,8 +23,17 @@ __tf6Basket = 0x001060f8;
 __tft9Interface1Z9Basket_IF = 0x001061A0;
 __tf21SimObj_RayHitReceiver = 0x001072e8;
 __tf4Bird = 0x001073d8;
+
+// BoneGod
+_$_7BoneGod = 0x00107BC0; // type:func
 __tf7BoneGod = 0x00108a48;
+
+// Boulder
+_$_7Boulder = 0x00108C98; // type:func
 __tf7Boulder = 0x00109e80;
+
+// Button
+_$_6Button = 0x0010A050; // type:func
 __tf6Button = 0x0010a698;
 __tf13GenericObject = 0x00121fe8;
 __tf20CameraSpecialHitTest = 0x001220f8;
@@ -45,14 +54,18 @@ _$_3Car = 0x001231C0; // type:func
 __tf3Car = 0x00124e78;
 
 // Cloth.cpp
+_$_5Cloth = 0x001250E8; // type:func
 __tf5Cloth = 0x00127B80;
 
 
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
 __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
+_$_3Dog = 0x0012DCE0; // type:func
 __tf7Jump_IF = 0x0013a008;
 __tf23AnimationMovedObject_IF = 0x0013a058;
+
+
 __tf3Dog = 0x0013a0a8;
 __tf14TransientSound = 0x0013a228;
 __tf23DogSphereObjHitReceiver = 0x0013a2b8;
@@ -62,8 +75,18 @@ __tf16HitPrimDisplayer = 0x0013a720;
 __tf19Interface1Z7Jump_IF = 0x0013a838;
 __tft9Interface1Z23AnimationMovedObject_IF = 0x0013A878;
 __tf17DustEffectManager = 0x0013b200;
+
+// Fish
+_$_4Fish = 0x0013B3A0; // type:func
+
 __tf15StaticFootPrint = 0x0013f0c8;
+
+// LevelGate
+_$_9LevelGate = 0x0013F2A8; // type:func
 __tf9LevelGate = 0x0013fcb0;
+
+// Light
+_$_5Light = 0x00140130; // type:func
 __12LightManager = 0x00141588; // type:func
 __tf5Light = 0x00141f08;
 __tf12LightManager = 0x00142190;
@@ -97,12 +120,23 @@ __tf6Person = 0x0014cb78;
 __tf23PersonHitSizeCalculator = 0x0014cc10;
 __tf24PersonVehicleHitReceiver = 0x0014ccb8;
 __tf14PersonRepulsor = 0x0014cd18;
+
+// PlaceHolder
+_$_11PlaceHolder = 0x0014D2F0; // type:func
 __tf11PlaceHolder = 0x0014d390;
+
+// PlayerDog
 __9PlayerDogPv = 0x0014D410; // type:func
 _$_9PlayerDog = 0x0014D678; // type:func
 __tf9PlayerDog = 0x0014f4c0;
+_$_18RoverSaysPuzzleGod = 0x0014F520; // type:func
 __tf18RoverSaysPuzzleGod = 0x0014f5c0;
+
+// Rat
+_$_3Rat = 0x00150D58; // type:func
 __tf3Rat = 0x00150e10;
+
+// SaveKennel
 __tf10SaveKennel = 0x00152be0;
 __tf21MostInFrontCalculator = 0x00152C40;
 __tf5Scent = 0x0015a1e0;
@@ -137,6 +171,8 @@ __tf11SkiLiftSeat = 0x0016BCF8;
 __tf8Slidable = 0x0016d870;
 __tf10SmallThing = 0x00171230;
 
+// Smell
+_$_5Smell = 0x00171400; // type:func
 __tf5Smell = 0x001729d0;
 
 __tf8Snowball = 0x00173178;
@@ -144,6 +180,9 @@ __tf13SoundCreature = 0x00173858;
 __tf9SphereObj = 0x00177568;
 __tf15BallHitReceiver = 0x00177688;
 __tf11SwingBridge = 0x001785C8;
+
+// TugOfWar
+_$_11TugOfWarGod = 0x00178818; // type:func
 __tf11TugOfWarGod = 0x0017D110;
 __tf18WaterSplashManager = 0x0017FF28;
 __tf17StaticWaterRipple = 0x0017FF90;
@@ -199,6 +238,8 @@ __tfQ212BookMetaphor28CurrentPositionPageResponder = 0x0019E540;
 __tf18PointsOfContactHit = 0x0019ecf0;
 __tf13BallBounceHit = 0x0019ed40;
 __tf9BounceHit = 0x0019ed90;
+
+// Console
 Break__7Console = 0x001a3c08; // type:func
 TestDoggyDoAnims__7Console = 0x001A4768; // type:func
 FogSharpness__7ConsolePv = 0x001a8320; // type:func
@@ -212,9 +253,14 @@ UnlockBegMoves__7Console = 0x001A98E8; // type:func
 UnlockClues__7Console = 0x001A99F8; // type:func
 __tf12ConsoleLayer = 0x001ab658;
 __12ConsoleLayer = 0x001A9CD0; // type:func
+
+// Containers
+_$_9Container = 0x001AB7E8; // type:func
 __tf9Container = 0x001acf60;
 __tf13BasketballNet = 0x001acfd8;
 __tf4Pram = 0x001ad078;
+
+
 //Creatres.cpp
 Creatres_InternalInitialise__Fv = 0x001AD138; // type:func
 Creatres_InternalFinalise__Fv = 0x001ad180; // type:func
@@ -283,6 +329,9 @@ Gameutil_InternalInitialise__Fv = 0x001da3a0; // type:func
 Gameutil_InternalFinalise__Fv = 0x001da3e8; // type:func
 Gameutil_Initialise__Fv = 0x001da3f0; // type:func
 Gameutil_Finalise__Fv = 0x001da420; // type:func
+
+// HitTri
+_$_13HitTri_Object = 0x001DD740; // type:func
 __tf13HitTri_Object = 0x001de258;
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
 Landscape_InternalFinalise__Fv = 0x001e31d8; // type:func
@@ -313,8 +362,15 @@ Objtable_InternalFinalise__Fv = 0x001ec808; // type:func
 Objtable_Initialise__Fv = 0x001ec888; // type:func
 Objtable_Finalise__Fv = 0x001ec8b8; // type:func
 __tf11PausedLayer = 0x001ed318;
+
+// Platform
+_$_8Platform = 0x001ED5A8; // type:func
+
 __tf17Player_GrowlTimer = 0x001f7378;
+
+_$_19PlayerMoveAnimation = 0x001F8058; // type:func
 __tf19PlayerMoveAnimation = 0x001f8078;
+_$_19PlayerLookAnimation = 0x001F80C8; // type:Func
 __tf19PlayerLookAnimation = 0x001f80e8;
 __12PlayingLayer = 0x001f85d8; // type:func
 __tf12PlayingLayer = 0x001f8ee0;

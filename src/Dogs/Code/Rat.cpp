@@ -56,7 +56,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Rat", D_003B9120);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150D08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150D58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", _$_3Rat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", __tf3Rat);
 

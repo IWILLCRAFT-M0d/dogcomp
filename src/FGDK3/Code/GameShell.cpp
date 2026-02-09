@@ -56,7 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D33C0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3428);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3460);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3460); /* return * */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3490);
 

@@ -1,5 +1,5 @@
-#ifndef THREAD_H
-#define THREAD_H
+#ifndef PS2THREAD_H
+#define PS2THREAD_H
 
 
 #ifdef __cplusplus

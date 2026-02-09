@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD5F0); /* HitTri_Object */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD740);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", _$_13HitTri_Object);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD818);
 

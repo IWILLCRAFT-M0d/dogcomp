@@ -2,14 +2,14 @@
 
 #include "Dogs/PlayerDog.h"
 
-#ifdef NON_MATCHING
-PlayerDog::PlayerDog(void* arg1) {
-
-}
-
-#else
+// #ifdef NON_MATCHING
+// PlayerDog::PlayerDog(void* arg1) {
+//
+// }
+//
+// #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogPv); /* PlayerDog::PlayerDog */
-#endif
+// #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog); /* ~PlayerDog */
 
@@ -121,7 +121,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf9PlayerDog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F518);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F520);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_18RoverSaysPuzzleGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf18RoverSaysPuzzleGod);
 

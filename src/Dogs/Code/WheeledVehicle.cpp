@@ -6,7 +6,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001801A0); /* Whee
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle); /* WheeledVehicle::~WheeledVehicle */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528); /* return (float) WheeledVehicle->unk6B0; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530);
 

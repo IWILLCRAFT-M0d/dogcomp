@@ -2,13 +2,13 @@
 
 #include "Dogs/Travel.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FAC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FAC8); /* TravelToExternalPosAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FC70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FCC0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FD58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FD58); /* TravelToObjectAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FDD0);
 
@@ -16,13 +16,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FDF8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_0022FF68);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002301C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002301C8); /* TravelToObject2 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230240);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230460);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002305B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002305B0); /* TravelToObjectsHead */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230628);
 

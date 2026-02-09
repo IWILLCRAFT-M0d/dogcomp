@@ -202,8 +202,8 @@ void func_001AD560(void);
 void func_001C8120(void);
 void func_001D4650(void);
 void func_001D6A10(void);
-void func_001DA1B8(void);
-void func_001DD518(void);
+
+
 void func_001DEF10(void);
 
 int func_002C8358(s_func_002C8358* arg0);
@@ -223,16 +223,12 @@ void func_002C6480(void);
 void func_002C6488(void);
 void func_002C6490(void);
 void func_002C8360(void);
-int func_001D95B0(void);
-int func_001D9A50(void);
-int func_001D9B20(void);
-int func_001D9BF0(void);
-int func_001D9FB0(void);
+
+
 
 // text_001E14F8
 void func_001E5008(void);
 
-void func_001F1FF8(void);
 void func_001F8628(void);
 int func_001FC7E8(void);
 int func_001E72D0(void);
@@ -335,7 +331,7 @@ int func_00188480(void);
 int func_00188488(void);
 float func_00188490(void);
 int func_001884E8(void);
-void func_0018B978(void);
+
 int func_0018D840(void);
 int func_0018D848(void);
 int func_0018D850(void);
@@ -358,7 +354,7 @@ int func_001ACFC0(void);
 
 //void func_00247D28(void*);
 
-void func_00139048(void);
+
 int func_00274B00(char* name);
 int func_00275288(int arg0, int arg1, int ovlType, int arg3);
 void func_002757F0(void);
@@ -374,7 +370,7 @@ Status func_001D5E90(void);
 Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 
-int func_001DBD50(int);
+
 void* func_002D3360(void*);
 #ifdef __cplusplus
 }

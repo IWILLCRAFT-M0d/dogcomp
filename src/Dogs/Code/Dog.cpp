@@ -1,5 +1,4 @@
 #include "common.h"
-#include "unk.h"
 
 #include "Dogs/Dog.h"
 
@@ -20,7 +19,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012D5E8); /* Dog::Dog */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012DCE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_3Dog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012DFE8);
 

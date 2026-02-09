@@ -11,4 +11,13 @@ void Gameutil_InternalFinalise(void);
 Status Gameutil_Initialise(void);
 void Gameutil_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+int func_001DBD50(int);
+void func_001DD518(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

@@ -4,6 +4,9 @@
 /*
 #include "AnimationComponents.h"
 
+class PlayerMoveAnimation : public AnimationComponent {
+};
+
 class PlayerLookAnimation : public AnimationComponent {
 };
 */

@@ -62,4 +62,17 @@ class BMPageChangeReq : GameState::GameStateReq {
 //         FadeOutReq(float);
 // };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+int func_001D95B0(void);
+int func_001D9A50(void);
+int func_001D9B20(void);
+int func_001D9BF0(void);
+int func_001D9FB0(void);
+void func_001DA1B8(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

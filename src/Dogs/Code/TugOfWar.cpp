@@ -2,7 +2,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178658); /* TugOfWarGod::TugOfWarGod */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178818);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_11TugOfWarGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001789D0);
 

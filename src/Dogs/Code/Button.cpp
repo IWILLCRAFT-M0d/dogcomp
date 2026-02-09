@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_00109F40); /* Button */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150);
 

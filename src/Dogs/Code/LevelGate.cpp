@@ -1,8 +1,10 @@
 #include "common.h"
 
+#include "Dogs/LevelGate.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F1F8); /* LevelGate::LevelGate */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F2A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", _$_9LevelGate);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/LevelGate", D_003AD1C8);
 

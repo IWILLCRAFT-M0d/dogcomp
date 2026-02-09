@@ -1,5 +1,4 @@
 #include "common.h"
-#include "unk.h"
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"

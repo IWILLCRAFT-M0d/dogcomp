@@ -2,7 +2,7 @@
 
 #include "Dogs/PlaceHolder.h"
 
-// Placeholder
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D058);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D138);
@@ -33,7 +33,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlaceHolder", D_003B4A78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D1B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D2F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", _$_11PlaceHolder);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", __tf11PlaceHolder);
 

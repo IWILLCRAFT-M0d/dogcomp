@@ -1,6 +1,6 @@
 #include "common.h"
 
-#include "unk.h"
+#include "Dogs/Player.h"
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B28);
 

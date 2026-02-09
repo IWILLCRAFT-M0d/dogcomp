@@ -6,7 +6,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB700); /* Container::Container */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB7E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_9Container);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB8B8);
 

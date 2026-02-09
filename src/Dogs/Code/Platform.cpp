@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED440); /* Platform::Platform */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED5A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", _$_8Platform);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED660);
 
