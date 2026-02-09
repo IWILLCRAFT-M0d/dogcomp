@@ -2,7 +2,7 @@
 
 #include "Dogs/BoneGod.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107760);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107760); /* BoneGod */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", _$_7BoneGod);
 

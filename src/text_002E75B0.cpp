@@ -2,6 +2,7 @@
 #include "debug.h"
 #include "unk.h"
 
+#include "FGDK3/IKComponents.h"
 
 // split (ikcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E75B0);
