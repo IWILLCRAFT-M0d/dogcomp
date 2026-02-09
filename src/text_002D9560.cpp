@@ -313,9 +313,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0E90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0F30);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0FA8);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0FA8); /* AnimPosWorldAmblerAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1020);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1020); /* AnimPosWorldAFSAmblerAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1098);
 
@@ -325,7 +325,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1158);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1200);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1278);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E1278); /* LegIKAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E15B8);
 
