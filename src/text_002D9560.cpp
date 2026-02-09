@@ -2,7 +2,6 @@
 #include "debug.h"
 #include "unk.h"
 
-#include "FGDK3/FontRes.h"
 
 // split
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __12LiveEditablePcPc);
@@ -87,6 +86,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB18);
 
+// split
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB38);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB40);
@@ -281,6 +281,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E04C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0510);
 
+// split?
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0558);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0560);
@@ -289,7 +290,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0580);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0690);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E06E0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E06E0); /* WalkingParamsAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0A00);
 
@@ -305,13 +306,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0C30);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0CC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0D50);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0D50); /* AnimPosLegAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0DF0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0DF0); /* AnimPosWorldLegAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0E90);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0E90); /* AnimPosWorldAFSLegAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0F30);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0F30); /* AnimPosAmblerAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002E0FA8); /* AnimPosWorldAmblerAnimation */
 

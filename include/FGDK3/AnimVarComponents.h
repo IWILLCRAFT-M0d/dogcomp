@@ -1,0 +1,4 @@
+#ifndef ANIMVARCOMPONENTS_H
+#define ANIMVARCOMPONENTS_H
+
+#endif

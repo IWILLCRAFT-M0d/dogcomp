@@ -18,7 +18,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002A49A0", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A49A0", func_002A4B90); /* ~GE_PS2RenderHardware */
+INCLUDE_ASM("asm/nonmatchings/text_002A49A0", _$_20GE_PS2RenderHardware); /* ~GE_PS2RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A49A0", func_002A4BF8);
 /*

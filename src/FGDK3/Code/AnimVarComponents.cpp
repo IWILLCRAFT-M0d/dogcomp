@@ -1,8 +1,6 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
 
-#include "FGDK3/FontRes.h"
+#include "FGDK3/AnimVarComponents.h"
 
 // split (animvarcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED2C8);

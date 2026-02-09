@@ -769,6 +769,7 @@ __tf9GE_Target = 0x002a19e8;
 __tf12GE_PS2Target = 0x002a1ae8;
 __tf19GE_PS2DisplayTarget = 0x002a1bd8;
 __20GE_PS2RenderHardware = 0x002A49A0; // type:func
+_$_20GE_PS2RenderHardware = 0x002A4B90; // type:func
 __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
 
@@ -902,8 +903,8 @@ InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
 func_002F8E40 = 0x002f8e40; // type:func
 func_002F8E68 = 0x002f8e68; // type:func
 __tf20InputKeyboard_Device = 0x002f8eb0;
-func_002F9018 = 0x002f9018; // type:func
 // InpJoys1.cpp
+_$_21InputJoystick1_Device = 0x002F8F68; // type:func
 InputJoystick1_InternalInitialise__Fv = 0x002f9190; // type:func
 InputJoystick1_InternalFinalise__Fv = 0x002f91d8; // type:func
 InputJoystick1_Initialise__Fv = 0x002f9248; // type:func

@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Smell.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00171368); /* Smell::Smell */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", _$_5Smell);

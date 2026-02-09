@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F8F00); /* InputJoystick1_Device::InputJoystick1_Device */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F8F68); /* InputJoystick1_Device::~InputJoystick1_Device */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", _$_21InputJoystick1_Device); /* InputJoystick1_Device::~InputJoystick1_Device */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F8FC8);
 
