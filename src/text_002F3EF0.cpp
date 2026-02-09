@@ -4,7 +4,7 @@
 
 
 // split
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3EF0);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3EF0); /* NothingAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F88);
 
@@ -48,7 +48,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4378); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4380);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4398);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4398); /* AnimationComponent */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F44C0);
 
