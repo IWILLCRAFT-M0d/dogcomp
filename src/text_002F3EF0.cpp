@@ -1,9 +1,5 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
 
-
-// split
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3EF0); /* NothingAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F88);
