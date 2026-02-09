@@ -1,10 +1,12 @@
-#ifndef GE_RENDERHARDWARE_H
-#define GE_RENDERHARDWARE_H
+#ifndef PS2GE_RENDERHARDWARE_H
+#define PS2GE_RENDERHARDWARE_H
 
-struct GE_PS2RenderHardware {
+#include "unk.h"
 
-    GE_PS2RenderHardware();
-    virtual ~GE_PS2RenderHardware();
+class GE_PS2RenderHardware : public GE_RenderHardware {
+    public:
+        GE_PS2RenderHardware();
+        virtual ~GE_PS2RenderHardware();
 };
 
 #endif

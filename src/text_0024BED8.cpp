@@ -808,7 +808,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00435F08);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_004360F0);
 
-INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436110);
+INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", _vt$6Action);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0024BED8", D_00436130);
 
@@ -1004,7 +1004,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025E0D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf6Action);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025E120);
+Action::Action(){
+    this->unk0 = 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0025E138);
 
@@ -1200,36 +1202,3 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __tf32WidgetCompositor_ChildEnumer
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260008);
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260028);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260060);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002600A0);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260158);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002601C0);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002601E8);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002601F8);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260420);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260590);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260600);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260660);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260668);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002606D0); /* return; */
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_002606D8);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260700);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260760);
-
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_00260780);

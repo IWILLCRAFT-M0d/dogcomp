@@ -98,7 +98,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __9GE_Device);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CAE00);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CAF00);
 

@@ -60,7 +60,7 @@ typedef struct {
     int             m_renderHitSpheres;
     int             unk4F4[4];
     int             unk504;
-} s_0044EB68;
+} s_0044EB68; // Game_Document
 
 /*struct Resource_Generic {
     int unk0;
@@ -176,6 +176,7 @@ struct ShapeParams {
 };
 struct ShapeParams_Dynamic : public ShapeParams {
     ShapeParams_Dynamic();
+    ShapeParams_Dynamic(int);
     virtual ~ShapeParams_Dynamic();
 };
 
@@ -193,6 +194,12 @@ struct GE_DMAPktRc1i69 {
     virtual ~GE_DMAPktRc1i69();
 };
 
+struct Action {
+    int unk0;
+    Action();
+    virtual ~Action();
+    virtual void func_002462a8() = 0;
+};
 
 
 #ifdef __cplusplus

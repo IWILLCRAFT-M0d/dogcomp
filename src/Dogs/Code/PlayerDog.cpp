@@ -8,7 +8,7 @@
 // }
 //
 // #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogPv); /* PlayerDog::PlayerDog */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogPv); /* PlayerDog::PlayerDog (ClassInfo?)*/
 // #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog); /* ~PlayerDog */

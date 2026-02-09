@@ -450,6 +450,7 @@ __tf19Widget_WithChildren = 0x0025ded0;
 __tf13Widget_Border = 0x0025df48;
 __tf17Widget_VScrollbar = 0x0025e040;
 __tf6Action = 0x0025e0e0;
+__6Action = 0x0025E120; // type:func
 __tf10NullAction = 0x0025e158;
 __tf13Widget_Button = 0x0025e238;
 __tf17Widget_Compositor = 0x0025e390;
@@ -817,7 +818,7 @@ GE_Finalise__Fv = 0x002ca930; // type:func
 __17GE_RenderHardware = 0x002CA968; // type:func
 __12GE_PrimCachecsiiiPvi = 0x002CABB0; // type:func
 __9GE_Device = 0x002CAC38; // type:func
-
+_$_9GE_Device = 0x002CAE00; // type:func
 __tf12GE_PrimCache = 0x002d1bd0;
 __tf9GE_Device = 0x002d1c98;
 //__tf17GE_RenderHardware = 0x002d2360;
@@ -1263,6 +1264,7 @@ _vt$17VibrateRumbleAnim = 0x0042DF30;
 // SoundRes.cpp
 _vt$15Sound_Resources = 0x00432fb0;
 
+_vt$6Action = 0x00436110;
 _vt$14Widget_Graphic = 0x004369D0;
 _vt$15Widget_LiveText = 0x00436B50;
 _vt$20Widget_FormattedText = 0x00436CD0;
