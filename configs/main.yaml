@@ -176,6 +176,7 @@ segments:
       - [0x1E85B0, cpp, text_002E75B0]
       - [0x1EE2C8, cpp, FGDK3/Code/AnimVarComponents]
       - [0x1EEBD0, cpp, text_002EDBD0]
+      - [0x1F0738, cpp, text_002EF738]
       - [0x1F4EF0, cpp, text_002F3EF0]
       - [0x1F82C0, cpp, FGDK3/Code/InpUtil]
       - [0x1F8F28, cpp, FGDK3/Code/Playstation2/InpMouse]
@@ -355,6 +356,7 @@ segments:
       - [0x346100, .rodata, text_002E75B0]
       - [0x346350, .rodata, FGDK3/Code/AnimVarComponents]
       - [0x346590, .rodata, text_002EDBD0]
+      - [0x346CE8, .rodata, text_002EF738]
       - [0x347610, .rodata, text_002F3EF0]
       #CLIOpts 345658
       #WalkerComponents 345800
