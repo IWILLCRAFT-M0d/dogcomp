@@ -169,6 +169,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D478);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", __tf17VibrateRumbleAnim);
 
+// split?
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", __9TitleView);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0022AD48", D_0042E630); /* "C:/Coding/Dogs/Code/Common/SaveGameManager.h" */

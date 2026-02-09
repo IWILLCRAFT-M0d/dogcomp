@@ -1,18 +1,6 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
-
-#include "FGDK3/Playstation2/IOPMem.h"
-#include <ee/sifdev.h>
-#include "FGDK3/ThrowCat.h"
-
-#include "FGDK3/Playstation2/GE.h"
-#include <libdev.h>
-#include <libgraph.h>
 
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
-
-// beginning of GE_RenderHardware.cpp
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 
