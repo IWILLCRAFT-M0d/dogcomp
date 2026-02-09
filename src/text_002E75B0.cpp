@@ -37,6 +37,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E7A98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", __tf17LookAtIKAnimation);
 
+// split? (bonemanager?)
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E7B08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E7B80);
