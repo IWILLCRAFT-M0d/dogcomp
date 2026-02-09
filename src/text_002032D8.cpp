@@ -32,10 +32,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002037A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00203840);
 
-INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002038A0);
+INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002038A0); // scent color things
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00203A78);
 
+// split?
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00203A98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00203B10);

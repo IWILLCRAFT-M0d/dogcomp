@@ -1,0 +1,4 @@
+#ifndef ANIMPOSCOMPONENTS_H
+#define ANIMPOSCOMPONENTS_H
+
+#endif

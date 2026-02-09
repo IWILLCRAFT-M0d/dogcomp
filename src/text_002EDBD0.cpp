@@ -1,7 +1,4 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
-
 
 // Split (animposcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/text_002EDBD0", func_002EDBD0);
