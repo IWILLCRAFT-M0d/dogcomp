@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A298); /*
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A5C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A770);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A770); /* GroundConformanceAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A9A0);
 
@@ -32,10 +32,10 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpecialIKComponents", _vt$21LookAroun
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", __tf21LookAroundIKAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022AC68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", _$_22PickUpStretchAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", __tf22PickUpStretchAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022ACD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", _$_26GroundConformanceAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", __tf26GroundConformanceAnimation);

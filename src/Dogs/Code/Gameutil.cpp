@@ -1,9 +1,10 @@
 #include "common.h"
+#include <libscf.h>
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
-#include <libscf.h>
+
 
 
 #ifdef NON_MATCHING

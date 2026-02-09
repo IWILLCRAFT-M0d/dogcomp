@@ -498,6 +498,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00290EE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00290F38);
 
+// split?
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00290F58);
 
 INCLUDE_ASM("asm/nonmatchings/text_00288B30", func_00290F70);

@@ -57,6 +57,7 @@ void StdInit_ClientBase::CheckError(Status status) {
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", CheckError__18StdInit_ClientBaseG6Status);
 #endif
 
+// status.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", PrepareReport_6StatusPci); /* Status::PrepareReport(char*, int) */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026CED0);

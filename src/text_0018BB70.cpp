@@ -18,7 +18,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0018BB70", D_003D29D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", __tf39VehicleNavDirectionalBackwardsAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018C650); /* SpeechAniTextBigHint::~SpeechAniTextBigHint*/
+INCLUDE_ASM("asm/nonmatchings/text_0018BB70", _$_20SpeechAniTextBigHint); /* SpeechAniTextBigHint::~SpeechAniTextBigHint*/
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", __tf20SpeechAniTextBigHint);
 
