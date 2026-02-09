@@ -161,6 +161,7 @@ segments:
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0
       - [0x189B30, cpp, text_00288B30] # Sound.c?
       - [0x1A59A0, cpp, text_002A49A0]
+      - [0x1CB560, cpp, text_002CA560]
 
 
       #- [0x1900B0, cpp, text_0028F0B0]
@@ -329,6 +330,7 @@ segments:
       #-[0x33E030, .rodata, sound]
       - [0x33E030, .rodata, text_00288B30]
       - [0x340320, .rodata, text_002A49A0]
+      - [0x3438E0, .rodata, text_002CA560]
       #- [0x33FA98, .rodata, text_0028F0B0]
 
       #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
