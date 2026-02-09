@@ -83,11 +83,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296840);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296878);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296958); // classinfo?
+INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296958); /* ClassInfo */
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296990);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296AF0);
+INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296AF0); /* rct ClassInfo::AddInterface ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296CB8);
 
@@ -105,7 +105,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00296570", func_002971F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00297228);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00296570", D_0043ED70);
+INCLUDE_RODATA("asm/nonmatchings/text_00296570", _vt$9ClassInfo);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00297238);
 

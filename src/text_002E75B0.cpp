@@ -33,7 +33,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E7A28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", __tf25MatrixPositionIKAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_002E75B0", func_002E7A98);
+INCLUDE_ASM("asm/nonmatchings/text_002E75B0", _$_17LookAtIKAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002E75B0", __tf17LookAtIKAnimation);
 

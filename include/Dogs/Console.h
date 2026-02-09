@@ -91,5 +91,8 @@ class Console {
 		void Quit();
 		void FogSharpness(void* arg0);
 };
+/*
+class ConsoleLayer {};
+*/
 
 #endif

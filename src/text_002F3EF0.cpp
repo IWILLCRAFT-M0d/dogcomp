@@ -2,15 +2,15 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3EF0); /* NothingAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F88);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F88); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F90);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F90); /* NothingForXAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3FE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4068);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4068); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4070);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_16NothingAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446610);
 
@@ -54,11 +54,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4608); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4610);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4628);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4628); /* Animation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4900);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4A40);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_9Animation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4C60);
 

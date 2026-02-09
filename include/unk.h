@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 #include "FGDK3/Playstation2/Thread.h"
+
+#include "Dogs/SimObj.h"
 // Unknown data and functions.
 
 typedef struct {
@@ -191,12 +193,14 @@ struct GE_DMAPktRc1i69 {
     virtual ~GE_DMAPktRc1i69();
 };
 
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
 
-void func_001ACFC8(void);
+
 //void func_001AD180(void);
 void func_001AD560(void);
 void func_001C8120(void);
@@ -350,7 +354,7 @@ void func_00262F90(void);
 int func_00263640(void);
 
 // text_001AB700
-int func_001ACFC0(void);
+
 
 //void func_00247D28(void*);
 

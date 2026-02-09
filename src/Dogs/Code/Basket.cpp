@@ -64,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105FC8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", __tf9Basket_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00106040);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", _$_6Basket);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", __tf6Basket);
 

@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022ABB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022ABD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022ABF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", _$_21LookAroundIKAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpecialIKComponents", D_0042DB18); /* "c:/coding/dogs/Code/Common/SpecialIKComponents.cpp" */
 

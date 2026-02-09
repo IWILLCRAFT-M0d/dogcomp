@@ -1,5 +1,4 @@
 #include "common.h"
-#include "unk.h"
 
 #include "Dogs/Containers.h"
 
@@ -22,7 +21,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABAE8); /* BasketballNet::BasketballNet */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABBD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_13BasketballNet);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABCA8);
 
@@ -44,7 +43,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC350);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC3A0); /* Pram::Pram */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC490); /* Pram::~Pram */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_4Pram);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Containers", D_003D6AA0);
 

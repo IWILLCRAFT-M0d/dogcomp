@@ -1,10 +1,10 @@
 #include "common.h"
 
+#include "Dogs/DiggablePatch.h"
 
-// DiggablePatch
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127D30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127D30); /* DiggablePatch */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127E48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8);
 

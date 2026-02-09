@@ -2,7 +2,7 @@
 
 #include "Dogs/Bird.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106220);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106220); /* Bird */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106340);
 
@@ -66,7 +66,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Bird", D_00398F18);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf21SimObj_RayHitReceiver);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00107338);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", _$_4Bird);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf4Bird);
 

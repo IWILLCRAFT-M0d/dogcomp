@@ -2,9 +2,9 @@
 
 #include "Dogs/DustEffects.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8); /* DustEffectManager */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013ABD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", _$_17DustEffectManager);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AC80);
 

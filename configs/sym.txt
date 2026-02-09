@@ -19,9 +19,11 @@ __tf18SimObj_HitFilter = 0x001041d8;
 __tft9Interface1Z17AnimatedObject_IF = 0x00104228;
 __tf12DiscAperture = 0x00104A98;
 __tf9Basket_IF = 0x00105FF0;
+_$_6Basket = 0x00106040; // type:func
 __tf6Basket = 0x001060f8;
 __tft9Interface1Z9Basket_IF = 0x001061A0;
 __tf21SimObj_RayHitReceiver = 0x001072e8;
+_$_4Bird = 0x00107338; // type:func
 __tf4Bird = 0x001073d8;
 
 // BoneGod
@@ -57,10 +59,14 @@ __tf3Car = 0x00124e78;
 _$_5Cloth = 0x001250E8; // type:func
 __tf5Cloth = 0x00127B80;
 
+// DiggablePatch
+_$_13DiggablePatch = 0x00127E48; // type:func
 
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
 __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
+
+// Dog
 _$_3Dog = 0x0012DCE0; // type:func
 __tf7Jump_IF = 0x0013a008;
 __tf23AnimationMovedObject_IF = 0x0013a058;
@@ -74,6 +80,9 @@ __tf25DogPushOffHitPrimReceiver = 0x0013a460;
 __tf16HitPrimDisplayer = 0x0013a720;
 __tf19Interface1Z7Jump_IF = 0x0013a838;
 __tft9Interface1Z23AnimationMovedObject_IF = 0x0013A878;
+
+// DustEffect
+_$_17DustEffectManager = 0x0013ABD8; // type:func
 __tf17DustEffectManager = 0x0013b200;
 
 // Fish
@@ -240,6 +249,7 @@ __tf18PointsOfContactHit = 0x0019ecf0;
 __tf13BallBounceHit = 0x0019ed40;
 __tf9BounceHit = 0x0019ed90;
 
+
 // Console
 Break__7Console = 0x001a3c08; // type:func
 TestDoggyDoAnims__7Console = 0x001A4768; // type:func
@@ -254,9 +264,12 @@ UnlockBegMoves__7Console = 0x001A98E8; // type:func
 UnlockClues__7Console = 0x001A99F8; // type:func
 __tf12ConsoleLayer = 0x001ab658;
 __12ConsoleLayer = 0x001A9CD0; // type:func
+_$_12ConsoleLayer = 0x001A9E18; // type:func
 
 // Containers
 _$_9Container = 0x001AB7E8; // type:func
+_$_13BasketballNet = 0x001ABBD8; // type:func
+_$_4Pram = 0x001AC490; // type:func
 __tf9Container = 0x001acf60;
 __tf13BasketballNet = 0x001acfd8;
 __tf4Pram = 0x001ad078;
@@ -377,6 +390,7 @@ __12PlayingLayer = 0x001f85d8; // type:func
 __tf12PlayingLayer = 0x001f8ee0;
 __tfQ215SaveGameManager14MyInputBinding = 0x00203090;
 __tf20BackgroundSaveThread = 0x002030e0;
+_$_21LookAroundIKAnimation = 0x0022ABF8; // type:func
 __tf21LookAroundIKAnimation = 0x0022AC18;
 _$_22PickUpStretchAnimation = 0x0022AC68; // type:func
 __tf22PickUpStretchAnimation = 0x0022AC88;
@@ -864,6 +878,7 @@ __tf17TurnFlexAnimation = 0x002e64c0;
 __tf19MoveObjectComponent = 0x002e7520;
 __tf19PositionIKAnimation = 0x002e79d8;
 __tf25MatrixPositionIKAnimation = 0x002E7A48;
+_$_17LookAtIKAnimation = 0x002E7A98; // type:func
 __tf17LookAtIKAnimation = 0x002e7ab8;
 __tf16AnimVarAnimation = 0x002ed870;
 __tf22AnimVarLoopedAnimation = 0x002ED918;
@@ -875,6 +890,8 @@ __tf23AnimPosAFSBaseAnimation = 0x002eea88;
 __tf31AnimPosLocalLoopedBaseAnimation = 0x002eeb30;
 
 __tf31AnimPosWorldAFSLoopingAnimation = 0x002ef160;
+_$_16NothingAnimation = 0x002F4070; // type:func
+_$_9Animation = 0x002F4A40; // type:func
 __tf17AnimationTimeBase = 0x002f6e08;
 __tf18AnimationComponent = 0x002f6ed8;
 __tf23AnimationWeightModifier = 0x002f6f68;
@@ -1296,6 +1313,7 @@ _vt$11Music_Piece = 0x0043ce18;
 _vt$11Music_Track = 0x0043ce90;
 _vt$12CreateAction = 0x0043cf78;
 _vt$13Music_Channel = 0x0043cf98;
+_vt$9ClassInfo = 0x0043ED70;
 _vt$16GE_TextureTarget = 0x0043ee88;
 _vt$19GE_PS2DisplayTarget = 0x0043efe8;
 _vt$12GE_PS2Target = 0x0043F0B8;
