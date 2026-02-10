@@ -336,19 +336,3 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", __tf17TurnFlexAnimation);
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E6510);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E6530);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E6550); /* MoveObjectComponent */
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E6AF8);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002DE720", D_00445070);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E74A0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E7500);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", __tf19MoveObjectComponent);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E7570);
-
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002E7590);
