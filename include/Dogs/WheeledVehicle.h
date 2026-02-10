@@ -6,7 +6,7 @@
 
 class WheeledVehicle : public HitTri_Object {
     public:
-        WheeledVehicle(int wheels);
+        WheeledVehicle(int wheels, void*, void*, int, short);
         virtual ~WheeledVehicle();
 };
 

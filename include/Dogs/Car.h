@@ -6,7 +6,7 @@
 
 class Car : public WheeledVehicle {
     public:
-        Car() : WheeledVehicle(4) {};
+        Car(void*, void*, int, short);
         virtual ~Car();
 };
 

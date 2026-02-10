@@ -8,18 +8,20 @@ class GenericObject {
 
 class SimObj_Base : public GenericObject {
     public:
-        SimObj_Base();
+        SimObj_Base(void*, void*, int, short);
         virtual ~SimObj_Base();
 };
 
 class SimObject : public SimObj_Base {
     public:
-        SimObject();
+        SimObject(void*, void*, int, short);
         virtual ~SimObject();
 };
 
 class SimObj_ObjectWithMomentum : public SimObject {
-
+    public:
+        SimObj_ObjectWithMomentum(void*, void*, int, short);
+        virtual ~SimObj_ObjectWithMomentum();
 };
 
 #endif
