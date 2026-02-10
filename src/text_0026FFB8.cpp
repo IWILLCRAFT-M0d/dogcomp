@@ -6,6 +6,7 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "FGDK3/Playstation2/RunPath.h"
 
+// shape.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __13ShapeInstance);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270018); /* _$_13ShapeInstance */
@@ -260,6 +261,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002736E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273778);
 
+// split???
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002737A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273900);
