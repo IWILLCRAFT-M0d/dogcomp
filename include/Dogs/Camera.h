@@ -5,6 +5,9 @@
 
 
 class Camera : public WorldObject {
+    public:
+        Camera(void*, void*, int, short);
+        virtual ~Camera();
 };
 
 

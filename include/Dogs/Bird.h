@@ -5,6 +5,9 @@
 
 
 class Bird : public WorldObject {
+    public:
+        Bird(void*, void*, int, short);
+        virtual ~Bird();
 };
 
 

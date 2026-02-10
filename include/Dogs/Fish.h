@@ -5,6 +5,9 @@
 
 
 class Fish : public WorldObject {
+    public:
+        Fish(void*, void*, int, short);
+        virtual ~Fish();
 };
 
 

@@ -6,7 +6,8 @@
 
 class Skidoo : public WheeledVehicle {
     public:
-        Skidoo() : WheeledVehicle(3) {};
+        Skidoo(void*, void*, int, short);
+        virtual ~Skidoo();
 };
 
 

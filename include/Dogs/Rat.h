@@ -5,6 +5,9 @@
 
 
 class Rat : public SmallThing {
+    public:
+        Rat(void*, void*, int, short);
+        virtual ~Rat();
 };
 
 

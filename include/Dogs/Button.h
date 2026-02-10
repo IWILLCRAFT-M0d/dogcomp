@@ -5,6 +5,9 @@
 
 
 class Button : public WorldObject {
+    public:
+        Button(void*, void*, int, short);
+        virtual ~Button();
 };
 
 

@@ -5,12 +5,21 @@
 
 
 class Container : public WorldObject {
+    public:
+        Container(void*, void*, int, short);
+        virtual ~Container();
 };
 
 class BasketballNet : public Container {
+    public:
+        BasketballNet(void*, void*, int, short);
+        virtual ~BasketballNet();
 };
 
 class Pram : public Container {
+    public:
+        Pram(void*, void*, int, short);
+        virtual ~Pram();
 };
 
 

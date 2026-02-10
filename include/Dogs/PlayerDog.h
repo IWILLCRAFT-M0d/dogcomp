@@ -6,7 +6,7 @@
 
 class PlayerDog : public Dog {
     public:
-        PlayerDog(void*);
+        PlayerDog(void*, void*, int, short);
         virtual ~PlayerDog();
 };
 

@@ -5,6 +5,9 @@
 
 
 class BoneGod : public WorldObject {
+    public:
+        BoneGod(void*, void*, int, short);
+        virtual ~BoneGod();
 };
 
 

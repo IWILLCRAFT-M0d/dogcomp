@@ -14,6 +14,9 @@ void WorldObj_Finalise(void);
 
 
 class WorldObject : public SimObj_ObjectWithMomentum {
+    public:
+        WorldObject(void*, void*, int, short);
+        virtual ~WorldObject();
 };
 
 

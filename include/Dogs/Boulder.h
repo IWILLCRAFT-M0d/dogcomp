@@ -5,6 +5,9 @@
 
 
 class Boulder : public WorldObject {
+    public:
+        Boulder(void*, void*, int, short);
+        virtual ~Boulder();
 };
 
 

@@ -5,6 +5,9 @@
 
 
 class SwingBridge : public HitTri_Object {
+    public:
+        SwingBridge(void*, void*, int, short);
+        virtual ~SwingBridge();
 };
 
 

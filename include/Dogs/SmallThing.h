@@ -5,6 +5,9 @@
 
 
 class SmallThing : public HitTri_Object {
+    public:
+        SmallThing(void*, void*, int, short);
+        virtual ~SmallThing();
 };
 
 

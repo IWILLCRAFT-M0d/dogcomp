@@ -5,6 +5,9 @@
 
 
 class HitTri_Object : public WorldObject {
+    public:
+        HitTri_Object(void*, void*, int, short);
+        virtual ~HitTri_Object();
 };
 
 

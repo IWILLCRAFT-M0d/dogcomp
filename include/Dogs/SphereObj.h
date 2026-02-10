@@ -5,6 +5,9 @@
 
 
 class SphereObj : public WorldObject {
+    public:
+        SphereObj(void*, void*, int, short);
+        virtual ~SphereObj();
 };
 
 

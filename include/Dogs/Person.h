@@ -5,6 +5,9 @@
 
 
 class Person : public WorldObject {
+    public:
+        Person(void*, void*, int, short);
+        virtual ~Person();
 };
 
 

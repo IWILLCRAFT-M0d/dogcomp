@@ -135,7 +135,7 @@ _$_11PlaceHolder = 0x0014D2F0; // type:func
 __tf11PlaceHolder = 0x0014d390;
 
 // PlayerDog
-__9PlayerDogPv = 0x0014D410; // type:func
+__9PlayerDogPvPvis = 0x0014D410; // type:func
 _$_9PlayerDog = 0x0014D678; // type:func
 __tf9PlayerDog = 0x0014f4c0;
 _$_18RoverSaysPuzzleGod = 0x0014F520; // type:func
