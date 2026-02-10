@@ -47,21 +47,3 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED8F8);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", __tf22AnimVarLoopedAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED9A0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED9C0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED9E0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002ED9F8);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDA18);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDA30);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDAF0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDB30);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDB90);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVarComponents", func_002EDBB0);

@@ -54,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002993A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299448);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299450);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299450); /* GE_TextureTarget */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299600); /* ~GE_TextureTarget */
 
