@@ -1,21 +1,5 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
 
-#include "FGDK3/Playstation2/IOPMem.h"
-#include <libscf.h>
-#include <sound.h>
-#include <ee/sifdev.h>
-#include "FGDK3/ThrowCat.h"
-
-#include "FGDK3/Playstation2/GE.h"
-#include <libdev.h>
-#include <libgraph.h>
-
-#include "FGDK3/Playstation2/GE_RenderHardware.h"
-
-
-// split
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297578);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297608);
