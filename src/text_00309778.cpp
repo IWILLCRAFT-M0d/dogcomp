@@ -1,6 +1,5 @@
 #include "common.h"
 
-#include  <stdio.h>
 #include "unk.h"
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309778);
 
