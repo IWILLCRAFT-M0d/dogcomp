@@ -4,18 +4,8 @@
 
 #include "FGDK3/Playstation2/IOPMem.h"
 #include <libscf.h>
-#include <sound.h>
-#include <ee/sifdev.h>
-#include "FGDK3/ThrowCat.h"
-
-#include "FGDK3/Playstation2/GE.h"
-#include <libdev.h>
-#include <libgraph.h>
-
-#include "FGDK3/Playstation2/GE_RenderHardware.h"
 
 
-// split?
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F70);
@@ -194,9 +184,3 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296548);
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296590);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002965B0);
-
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002965D0);
-
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296630);
-
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296650);
