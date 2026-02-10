@@ -1144,7 +1144,9 @@ mallinfo = 0x00335c48; // type:func
 // Sony SDK
 printf = 0x00335d40; // type:func
 sprintf = 0x00336de8; // type:func
+eofread = 0x00336E58; // type:func
 sscanf = 0x00336e60; // type:func
+strcasecmp = 0x00336EE8; // type:func
 strcat = 0x00336f9c; // type:func
 strchr = 0x003370c8; // type:func
 strcmp = 0x00337258; // type:func
@@ -1153,6 +1155,7 @@ strlen = 0x003374b0; // type:func
 strncmp = 0x003376c8; // type:func
 strncpy = 0x00337880; // type:func
 strstr = 0x00337a90; // type:func
+vfprintf = 0x00339DF0; // type:func
 RemoveIntcHandler = 0x00340f60; // type:func
 CreateThread = 0x00341060; // type:func
 DeleteThread = 0x00341070; // type:func

@@ -201,6 +201,12 @@ struct Action {
     virtual void func_002462a8() = 0;
 };
 
+struct Resource_LayoutUnit {
+    int unk0;
+    void* unk4;
+    Resource_LayoutUnit(void*);
+    virtual ~Resource_LayoutUnit();
+};
 
 #ifdef __cplusplus
 extern "C" {

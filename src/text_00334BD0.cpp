@@ -99,11 +99,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00336D80);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sprintf);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00336E58); /* eofread */
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", eofread);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sscanf);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00336EE8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strcasecmp);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strcat);
 
@@ -173,7 +173,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339CF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339D38);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339DF0);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", vfprintf);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00334BD0", D_0044B540);
 

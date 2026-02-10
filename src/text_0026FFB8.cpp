@@ -280,7 +280,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273C38);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273CB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __19Resource_LayoutUnitPv); /* Resource_LayoutUnit */
+//INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __19Resource_LayoutUnitPv); /* Resource_LayoutUnit */
+Resource_LayoutUnit::Resource_LayoutUnit(void* arg0){
+    this->unk0 = 0;
+    this->unk4 = arg0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273D28);
 
