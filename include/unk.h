@@ -397,7 +397,7 @@ int func_0018D860(void);
 // text_00288B30
 int func_002C6498(void);
 
-// text_0024BED8
+// FGDK3/Code/Widget
 void func_00262F70(void);
 void func_00262F78(void);
 void func_00262F80(void);
