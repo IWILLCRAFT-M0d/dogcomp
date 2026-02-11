@@ -11,7 +11,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AF18);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AF20); /* SpeechAniSound */
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AFC0);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", _$_14SpeechAniSound);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022B030);
 
@@ -25,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022B5E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022B608); /* SpeechAniSoundWithControl (used for jake barking)*/
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022B7A0);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", _$_25SpeechAniSoundWithControl);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022B820);
 

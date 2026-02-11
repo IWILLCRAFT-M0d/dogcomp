@@ -9,7 +9,7 @@
 #ifdef NON_MATCHING
 
 Status StdMem_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/StdMem.cpp", 0x3DA);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/StdMem.cpp", 986);
 }
 
 #else

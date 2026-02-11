@@ -286,7 +286,7 @@ Resource_LayoutUnit::Resource_LayoutUnit(void* arg0){
     this->unk4 = arg0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273D28);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_19Resource_LayoutUnit);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273D58);
 
@@ -482,11 +482,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026FFB8", D_0043C1A0); /* "20Resource_Lay
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf22Resource_LayoutOverlay);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275CD8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_29Resource_LayoutExclusiveGroup);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf29Resource_LayoutExclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275D90); /* Resource_LayoutInclusiveGroup::~Resource_LayoutInclusiveGroup */
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_29Resource_LayoutInclusiveGroup); /* Resource_LayoutInclusiveGroup::~Resource_LayoutInclusiveGroup */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf29Resource_LayoutInclusiveGroup);
 

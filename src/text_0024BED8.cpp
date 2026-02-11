@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1A8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1B0); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C1B8);
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", _$_14Widget_Desktop);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C280);
 
@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C660);
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", __6WidgetPci); /* Widget::Widget(char*, int) */
 
-INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C768); /* ~Widget */
+INCLUDE_ASM("asm/nonmatchings/text_0024BED8", _$_6Widget); /* ~Widget */
 
 INCLUDE_ASM("asm/nonmatchings/text_0024BED8", func_0024C7C8);
 

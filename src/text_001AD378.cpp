@@ -131,7 +131,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF2E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF300);
 
-INCLUDE_ASM("asm/nonmatchings/text_001AD378", func_001AF328);
+INCLUDE_ASM("asm/nonmatchings/text_001AD378", _$_9DogScript);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001AD378", D_003DB338); /* "Script \"%s\" cannot find its owning object ID=%d" */
 

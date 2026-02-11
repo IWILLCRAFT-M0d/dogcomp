@@ -109,7 +109,7 @@ GE_PrimIndices::GE_PrimIndices(int arg1, char arg2, int arg3) {
 
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62A0); /* GE_PrimIndices::~GE_PrimIndices */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_14GE_PrimIndices); /* GE_PrimIndices::~GE_PrimIndices */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62D0);
 

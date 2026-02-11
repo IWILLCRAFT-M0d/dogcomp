@@ -241,6 +241,12 @@ class StorageDevice_MemCard : public StorageDevice {
         StorageDevice_MemCard(int card);
 };
 */
+
+/*
+class Widget_Desktop : public Widget_Border {
+};
+*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif

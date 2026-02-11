@@ -56,7 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299448);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299450); /* GE_TextureTarget */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299600); /* ~GE_TextureTarget */
+INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_16GE_TextureTarget); /* ~GE_TextureTarget */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299690);
 
@@ -74,7 +74,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A0C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A188);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A198);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A198); // texturecopy (used for loading screen image?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A600);
 

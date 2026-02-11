@@ -2,6 +2,7 @@
 #include "debug.h"
 #include "unk.h"
 
+// DrawShape.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_002DAB38", func_002DAB38);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DAB38", func_002DAB40);
