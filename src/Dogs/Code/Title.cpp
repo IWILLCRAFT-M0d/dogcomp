@@ -1,0 +1,71 @@
+#include "common.h"
+
+#include "Dogs/Title.h"
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", __9TitleView);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E630); /* "C:/Coding/Dogs/Code/Common/SaveGameManager.h" */
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E660); /* "m_mode==Mode_Inactive" */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022D588);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD08);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD18);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E300);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E340);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E3D8);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E438);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E458);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E478);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E510);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E570);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E590);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E628);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E688);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E720);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E780);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E7A0);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E838);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E898);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E728);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E748);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", __tf9TitleView);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E980);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E938);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E960);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E9B0);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E9B0);
+
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042EC10);
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022EA10);
