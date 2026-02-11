@@ -39,7 +39,7 @@ typedef struct {
 typedef struct {
   /* 0x000 */ int   unk0[5];
   /* 0x014 */ bool  unk14;       // Fog enabled
-  /* 0x018 */ int   unk18[4];   
+  /* 0x018 */ int   unk18[4];
   /* 0x028 */ int   unk28;       // Fog color
   /* 0x02C */ int   unk2C;       // Fog color
   /* 0x030 */ int   unk30;       // Fog color
@@ -207,7 +207,40 @@ struct Resource_LayoutUnit {
     Resource_LayoutUnit(void*);
     virtual ~Resource_LayoutUnit();
 };
+/*
+struct Resource_LayoutOverlay : public Resource_LayoutUnit {
+    int unkC;
+    void* unk10;
 
+}*/
+
+
+struct Resource_LayoutGroup : public Resource_LayoutUnit {
+    int unkC;
+    void* unk10;
+    Resource_LayoutGroup(void*, int, void*);
+    virtual ~Resource_LayoutGroup();
+};
+/*
+class FileSystemDisc {
+};
+
+class FileSystemDisc_CD : public FileSystemDisc {
+};
+
+class FileSystemDiscRoot : public FileSystemDisc {
+};
+*/
+
+/*
+class StorageDevice {
+};
+
+class StorageDevice_MemCard : public StorageDevice {
+    public:
+        StorageDevice_MemCard(int card);
+};
+*/
 #ifdef __cplusplus
 extern "C" {
 #endif

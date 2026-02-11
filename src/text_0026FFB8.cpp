@@ -320,9 +320,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274588);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002745D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274628);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274680);
+Resource_LayoutGroup::Resource_LayoutGroup(void* arg0, int arg1, void* arg2) :  Resource_LayoutUnit(arg0) {
+    this->unkC = arg1;
+    this->unk10 = arg2;
+}
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_20Resource_LayoutGroup);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274730);
 

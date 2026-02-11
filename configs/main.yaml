@@ -152,7 +152,7 @@ segments:
       - [0x16D5C8, cpp, text_0026C5C8]
       - [0x16E178, cpp, FGDK3/Code/Playstation2/SoundManager]
       - [0x16EF68, cpp, FGDK3/Code/Playstation2/Sound]
-      - [0x170BA0, cpp, text_0026FBA0]
+      - [0x170BA0, cpp, FGDK3/Code/Playstation2/sifManager]
       - [0x170FB8, cpp, text_0026FFB8]
       - [0x176FF8, cpp, text_00275FF8]
       - [0x1785D0, cpp, text_002775D0]
@@ -333,7 +333,7 @@ segments:
       - [0x33C8E0, .rodata, text_0026C5C8]
       - [0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
       - [0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
-      - [0x33CAD0, .rodata, text_0026FBA0]
+      - [0x33CAD0, .rodata, FGDK3/Code/Playstation2/sifManager]
       - [0x33CBC0, .rodata, text_0026FFB8]
       #- [0x33CE40, .rodata, FGDK3/Code/SavedGame]
       #- [0x33CE68, .rodata, FGDK3/Code/Playstation2/RunPath]
@@ -396,13 +396,14 @@ segments:
       - [0x348110, .rodata, FGDK3/Code/Inpdev]
       - [0x3481A0, .rodata, text_002FBD40]
       - [0x348290, .rodata, FGDK3/Code/Playstation2/Controller]
-      #File_Memcard
+
       #File_CD
       #File
       #Playstation2/File
       #FileSystem_Zip
       #File_FileDescriptor
       - [0x348390, .rodata, text_002FCF70]
+      #-[0x3484F0, .rodata, FGDK3/Code/Playstation2/File_Memcard]
       - [0x348880, .rodata, FGDK3/Code/Playstation2/File_CD]
       - [0x348A30, .rodata, FGDK3/Code/File]
       - [0x348A80, .rodata, text_00307D30]

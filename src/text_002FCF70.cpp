@@ -7,7 +7,7 @@
 #include <ee/libmc.h>
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FCF70); /* FileSystemDisc::FileSystemDisc */
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __14FileSystemDisc); /* FileSystemDisc::FileSystemDisc */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020);
 
@@ -85,7 +85,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF188);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __18FileSystemDiscRoot);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF1E0);
 
