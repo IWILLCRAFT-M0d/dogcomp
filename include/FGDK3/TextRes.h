@@ -5,6 +5,8 @@
 
 #include "FGDK3/ThrowCat.h"
 
+#include "unk.h"
+
 extern void * const TextRes_StdInit_UsedModules[];
 
 Status TextRes_InternalInitialise(void);
@@ -20,4 +22,12 @@ void func_0026C4E0(void*, char*);
 }
 #endif
 
+/*template <typename T> struct Resource : public Resource_Generic {
+
+};
+
+struct Text_Resources : Resource<char> {
+
+};
+*/
 #endif

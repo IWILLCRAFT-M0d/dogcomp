@@ -1,6 +1,5 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
+
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/CLIOpts", D_00444658); /* "c:/coding/fgdk3/Code/Common/CLIOpts.cpp" */
 

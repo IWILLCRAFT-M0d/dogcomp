@@ -62,16 +62,7 @@ typedef struct {
     int             unk504;
 } s_0044EB68; // Game_Document
 
-/*struct Resource_Generic {
-    int unk0;
-    int unk4;
-    int unk8;
-    void* unkC;
-
-    Resource_Generic();
-    virtual ~Resource_Generic();
-};
-
+/*
 struct Texture_Resources : public Resource_Generic {
 
     int unk14;
@@ -246,6 +237,10 @@ class StorageDevice_MemCard : public StorageDevice {
 class Widget_Desktop : public Widget_Border {
 };
 */
+
+class StorageDevice {
+
+};
 
 #ifdef __cplusplus
 extern "C" {
@@ -428,6 +423,7 @@ Status func_0026CFF8(int, char*,char* ,int);
 
 
 void* func_002D3360(void*);
+int func_001FD558(char* arg0, char* arg1);
 #ifdef __cplusplus
 }
 #endif

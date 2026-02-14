@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EA50); /* Trail::Trail */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022ED58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", _$_5Trail);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EE48);
 

@@ -25,11 +25,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE0E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE5C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE680);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_10FileSystem);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE738);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE738); /* StorageDevice */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE7F8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_13StorageDevice);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE8B0);
 
@@ -211,7 +211,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFD10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFF30);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFFE0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_12File_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300040);
 
@@ -283,7 +283,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf22FileSystemDisc_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf12File_MemCard);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301C18);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_16FileFind_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf16FileFind_MemCard);
 

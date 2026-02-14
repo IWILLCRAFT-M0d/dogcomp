@@ -3,11 +3,11 @@
 // split for speechani.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AD48); /* SpeechAniText */
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022ADC0);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", _$_13SpeechAniText);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AE18);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AF18);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AF18); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AF20); /* SpeechAniSound */
 

@@ -9,9 +9,9 @@
 
 
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304B48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304B48); /* File_MemRead */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304BC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_12File_MemRead);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304C18);
 
@@ -37,25 +37,25 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305378);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003054A8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003055A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003055A0); /* File::File::OpenWatcher */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305658);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_Q24File11OpenWatcher);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305768);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003059F0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003059F0); /* File::File */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306030);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/File", D_00447A30); /* "C:/Coding/FGDK3/Code/Common/File.cpp" */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003065D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003065D0); /* ~File */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003067A0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306920);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306B20);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306B20); /* read ? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306CD8);
 

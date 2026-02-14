@@ -97,7 +97,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CE8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001630A8); /* SimObj_Universe::SimObj_Universe */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __15SimObj_Universe); /* SimObj_Universe::SimObj_Universe */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_15SimObj_Universe);
 
@@ -213,11 +213,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001657B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001657C0); // camera thing?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165830);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165830); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165838);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165988);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165988); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165990);
 

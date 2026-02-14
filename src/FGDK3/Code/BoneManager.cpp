@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9648);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9758);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9868);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", GetMatrixIDFromName__11BoneManagerPc);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9A20);
 
@@ -39,7 +39,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9F08);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E9FD8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EA070);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EA070); /* BoneManager::GetAnimPos ? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EA2A8);
 

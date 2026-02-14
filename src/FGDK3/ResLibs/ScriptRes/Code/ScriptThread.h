@@ -10,4 +10,7 @@ int func_0031C5E8(void);
 }
 #endif
 
+class ScriptThread {
+};
+
 #endif

@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Element3D.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", __9Element3DPvs); /* Element3D (ClassInfo, shapeid)?  */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001AF790); /* rct3 Element3D::AdvanceExternal ? */
@@ -12,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", Render__9Element3DPv); /* rc
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001AFEF8); /* rct3 Element3D::GetAnimVar ? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0020);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0020); /* rct3 Element3D::GetAnimPos ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0068);
 

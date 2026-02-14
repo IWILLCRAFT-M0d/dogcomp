@@ -48,7 +48,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E7A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E838);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E898);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", _$_9TitleView);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E728);
 

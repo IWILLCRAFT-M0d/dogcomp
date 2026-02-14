@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016D910); /* SmallThing::SmallThing */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DAA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", _$_10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DB80);
 

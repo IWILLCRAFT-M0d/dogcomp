@@ -86,7 +86,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDE8
 // __static_initialization_and_destruction_0
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCE50);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCEE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", _$_17Controller_Device);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", _vt$17Controller_Device);
 

@@ -50,15 +50,19 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", D_0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __tf20GE_PS2RenderHardware);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5270); /* return 0; */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5270);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5298); /* return 0; */
+int func_002A5298(void) {
+  return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52A0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52D0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5300); /* return 6; */
+int func_002A5300(void) {
+  return 6;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5308);
 

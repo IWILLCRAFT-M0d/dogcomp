@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172A50); /* Snowball::Snowball */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172B48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", _$_8Snowball);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172BE8);
 

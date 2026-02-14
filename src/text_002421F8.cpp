@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include <libmpeg.h>
+
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002421F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002422F0);

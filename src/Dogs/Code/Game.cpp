@@ -114,7 +114,7 @@ Status func_001C54C8(void) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C54C8);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI options?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI options? (return Status)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __13Game_Documentff); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
 

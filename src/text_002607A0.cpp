@@ -799,6 +799,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf16V3DEW_ZeroAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002693F0);
 
+// tree34 split?
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269410);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002694C8);
@@ -869,7 +870,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A840);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf25Tree34_NodeAllocatorBasic);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A8A0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_25Tree34_NodeAllocatorBasic);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", _vt$20Tree34_NodeAllocator);
 

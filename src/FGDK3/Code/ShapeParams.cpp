@@ -9,7 +9,7 @@ ShapeParams_Dynamic::ShapeParams_Dynamic() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B6B8); /* __19ShapeParams_Dynamici (int size) */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B6F8); /* destructor */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic); /* destructor */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B760); /* setsize ? */
 

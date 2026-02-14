@@ -16,6 +16,11 @@ typedef struct {
 	int unk18;
 } s_func_002FC270;
 
+/*
+class Controller_Device : public InputDevice_Device {
+};
+*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif

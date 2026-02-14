@@ -11,7 +11,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E5EB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E60C8);
 
-//INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6428); /* Mien::Mien */
 Mien::Mien(){
     this->unk0 = 3;
     this->unk4 = -1;

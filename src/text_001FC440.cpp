@@ -13094,7 +13094,9 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD428);
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD548);
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD558);
+int func_001FD558(char* arg0, char* arg1) {
+    return strcmp(arg0, arg1);
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD578);
 

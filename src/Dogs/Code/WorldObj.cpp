@@ -63,9 +63,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181B60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181CB8); /* worldobject ? */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __11WorldObjectPvPvis); /* worldobject ? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001820D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", _$_11WorldObject);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFD10);
 
