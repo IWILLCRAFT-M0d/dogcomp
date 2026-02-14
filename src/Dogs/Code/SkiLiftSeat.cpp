@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016AEE0); /* SkiLiftSeat::SkiLiftSeat */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016B040);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", _$_11SkiLiftSeat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016B110);
 

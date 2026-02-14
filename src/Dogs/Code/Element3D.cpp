@@ -40,7 +40,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0348);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0378);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B03A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B03A0); /* ~Element3D */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB768); /* "13GenericObject" */
 

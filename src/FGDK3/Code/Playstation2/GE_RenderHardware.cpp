@@ -1,5 +1,5 @@
 #include "common.h"
-
+#include <libgraph.h>
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
@@ -13,6 +13,16 @@ Status func_002A4BF8(void) {
 }
 */
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4C58);
+/*
+  if ((param_2 == 0) || (puVar1[2] != 0x32)) {
+    func_002CA560(0,SCE_GS_INTERLACE,SCE_GS_NTSC,SCE_GS_FRAME);
+    D_00386860 = 60; // set framerate
+  }
+  else {
+    func_002CA560(0,SCE_GS_INTERLACE,SCE_GS_PAL,SCE_GS_FRAME);
+    D_00386860 = 50; // set framerate
+  }
+*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D38);
 

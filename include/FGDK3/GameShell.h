@@ -6,7 +6,7 @@
 class GameShell {
     public:
         int unk0;
-        int unk4;
+        float m_gametime;
         long unk8;
         float m_fps;
         float m_gamespeed;

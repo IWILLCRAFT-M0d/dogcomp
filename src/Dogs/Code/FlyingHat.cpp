@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C368); /* FlyingHat::FlyingHat */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C460);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", _$_9FlyingHat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C518);
 

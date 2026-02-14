@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001691B8); /* Skidoo::Skidoo */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001693A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", _$_6Skidoo);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169478);
 

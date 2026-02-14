@@ -88,6 +88,9 @@ __tf17DustEffectManager = 0x0013b200;
 // Fish
 _$_4Fish = 0x0013B3A0; // type:func
 
+// FlyingHat
+_$_9FlyingHat = 0x0013C460; // type:func
+
 __tf15StaticFootPrint = 0x0013f0c8;
 
 // LevelGate
@@ -159,6 +162,7 @@ SimObj_InternalInitialise__Fv = 0x00161068; // type:func
 SimObj_InternalFinalise__Fv = 0x001610b0; // type:func
 SimObj_Initialise__Fv = 0x001610b8; // type:func
 SimObj_Finalise__Fv = 0x001610e8; // type:func
+_$_15SimObj_Universe = 0x001631E8; // type:func
 _$_9SimObject = 0x001652E8; // type:func
 __tf9SimObject = 0x00167fb8;
 __tf10DebugID_IF = 0x00168160;
@@ -175,8 +179,16 @@ __tf11Movement_IF = 0x00169088;
 __tft9Interface1Z11Location_IF = 0x001690D8;
 __tft9Interface1Z11Movement_IF = 0x00169118;
 __tft9Interface1Z19CameraSpecialHit_IF = 0x00169158;
+
+// Skidoo
+_$_6Skidoo = 0x001693A0; // type:func
 __tf6Skidoo = 0x0016AE60;
+
+// SkiLiftSeat
+_$_11SkiLiftSeat = 0x0016B040; // type:func
 __tf11SkiLiftSeat = 0x0016BCF8;
+
+
 __tf8Slidable = 0x0016d870;
 __tf10SmallThing = 0x00171230;
 

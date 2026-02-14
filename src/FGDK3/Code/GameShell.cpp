@@ -21,7 +21,7 @@ GameShell::GameShell(float fps, float gamespeed) {
   long uVar1;
 
   func_002D3360(this);
-  this->unk4 = 0;
+  this->m_gametime = 0.0f;
   uVar1 = TimSrv_GetTime();
   this->unk8= uVar1;
   this->m_fps = fps; // unk10

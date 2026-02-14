@@ -99,7 +99,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CF0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001630A8); /* SimObj_Universe::SimObj_Universe */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001631E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_15SimObj_Universe);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163270);
 
