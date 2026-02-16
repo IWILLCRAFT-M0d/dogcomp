@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4248);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4298);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F42D0);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F42D0); /* AnimationTimeBase::~AnimationTimeBase */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4300);
 

@@ -2,7 +2,29 @@
 
 #include "Dogs/SphereObj.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001738D8); /* SphereObj::SphereObj */
+#ifdef NON_MATCHING
+SphereObj::SphereObj(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1, arg2 = 0, arg3, arg4) {
+    this->unk5C4 = 1.0;
+    this->unk5F0 = -10000.0;
+    this->unk5F4 = 10000.0;
+    this->unk5F8 = 0.65;
+    this->unk5C0 = 0;
+    this->unk5C8 = 0;
+    this->unk5CC = 0;
+    this->unk5D0 = 0;
+    this->unk5D4 = 0;
+    this->unk5D8 = 0;
+    this->unk5DC = 0;
+    this->unk5E0 = 0;
+    this->unk5E4 = 0;
+    this->unk5E8 = 0;
+    this->unk5EC = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjPvPvis); /* SphereObj::SphereObj */
+#endif
+
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173A20);
 

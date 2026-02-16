@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177788); /* SwingBridge::SwingBridge */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177898);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", _$_11SwingBridge);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177950);
 

@@ -146,7 +146,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238EE8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238F48);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Visual", D_00431400);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Visual", D_00431400); /* "PawController" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238FF0);
 

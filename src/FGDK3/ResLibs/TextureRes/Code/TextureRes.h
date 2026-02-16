@@ -16,12 +16,24 @@ Status TextureRes_Initialise(void);
 void TextureRes_Finalise(void);
 
 
-struct Texture_Resources : public Resource_Generic {
 
-    int unk14;
-    Texture_Resources();
-    virtual ~Texture_Resources();
+
+// struct Texture_Resources : public Resource_Generic {
+//
+//     int unk14;
+//     Texture_Resources();
+//     virtual ~Texture_Resources();
+// };
+
+class GE_Texture {
+
 };
 
+class Texture_Resources : Resource<GE_Texture> {
+    public:
+        int unk14;
+        Texture_Resources();
+        virtual ~Texture_Resources();
+};
 
 #endif

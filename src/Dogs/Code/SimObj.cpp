@@ -477,7 +477,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B8); /* SimObj_ObjectWithMomentum::~SimObj_ObjectWithMomentum */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf25SimObj_ObjectWithMomentum);
 

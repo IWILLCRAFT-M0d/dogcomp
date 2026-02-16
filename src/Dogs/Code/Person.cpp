@@ -2,7 +2,7 @@
 
 #include "Dogs/Person.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A110); /* Person */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __6PersonPvPvis); /* Person */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", _$_6Person);
 
@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A650);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A840);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A850);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A850); // accesory function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014AB50);
 

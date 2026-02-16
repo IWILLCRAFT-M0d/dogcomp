@@ -2,19 +2,19 @@
 
 #include "Dogs/Button.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_00109F40); /* Button */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonPvPvis); /* Button */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178); // button::Extra?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370); // button action updater?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0); // button action?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550); /* return (int) this->unk5ec (button state?) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 

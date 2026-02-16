@@ -7,11 +7,9 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
-
-// split
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1F70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8); // PS2 config options (language, aspect)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B20A0);
 
@@ -218,11 +216,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCB68);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCD78);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCDF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCDF8); // memory stats?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCE58);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CEA98); /* (Game_Document *) */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CEA98); /* (Game_Document *)  rendering stuff */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CF828);
 
@@ -326,7 +324,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5D48);
 
 Status Game_InternalInitialise(void) {
     new Game_Document::Game_Document(0.01, 0.125);
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 0x2160);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 8544);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_InternalInitialise__Fv);

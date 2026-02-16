@@ -6,11 +6,11 @@
 #include <string.h>
 
 // Beginning of WorldObj
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFBF8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFBF8); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC20);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC20); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC50);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC50); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
 
 #ifdef NON_MATCHING
 Status WorldObj_InternalInitialise(void) {
@@ -272,13 +272,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B0); /* return a0->unk314 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D0); /* return a0->unk338 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D8); /* return a0->unk33C */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883E0);
 
@@ -330,31 +330,31 @@ float func_00188490(void) {
     return 0.0f;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A0); /* return a0->unk5A8 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884C8); /* return a0->unk494 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884D0); /* return a0->unk494 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884D8); /* return a0->unk498 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884E0); /* return a0->unk544 */
 
 int func_001884E8(void) {
      return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F0); /* return a0->unk48 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F8); /* return a0->unk5B0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188500);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188500); /* return a0->unk5B8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188508);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188508); /* return a0->unk5BC */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188510);
 

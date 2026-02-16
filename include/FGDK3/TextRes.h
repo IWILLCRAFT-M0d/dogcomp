@@ -22,12 +22,8 @@ void func_0026C4E0(void*, char*);
 }
 #endif
 
-/*template <typename T> struct Resource : public Resource_Generic {
+class Text_Resources : Resource<char> {
 
 };
 
-struct Text_Resources : Resource<char> {
-
-};
-*/
 #endif

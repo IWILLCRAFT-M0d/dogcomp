@@ -80,6 +80,14 @@ struct Resource_Generic {
     virtual ~Resource_Generic();
 };
 
+template <typename T> struct Resource : Resource_Generic {
+    virtual int bar();
+};
+
+class ShapeData {
+
+};
+
 struct Mien {
     int unk0;
     int unk4;
@@ -369,19 +377,6 @@ void func_00168B78(void);
 void func_00168B80(void);
 int func_00168C50(void);
 int func_00168C58(void);
-
-int func_00188400(void);
-void func_00188408(void);
-int func_00188450(void);
-int func_00188458(void);
-int func_00188460(void);
-int func_00188468(void);
-int func_00188470(void);
-int func_00188478(void);
-int func_00188480(void);
-int func_00188488(void);
-float func_00188490(void);
-int func_001884E8(void);
 
 int func_0018D840(void);
 int func_0018D848(void);

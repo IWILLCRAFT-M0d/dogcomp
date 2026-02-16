@@ -5,11 +5,17 @@
 
 #include "FGDK3/ThrowCat.h"
 
+#include "unk.h"
+
 extern void * const ShapeRes_StdInit_UsedModules[];
 
 Status ShapeRes_InternalInitialise(void);
 void ShapeRes_InternalFinalise(void);
 Status ShapeRes_Initialise(void);
 void ShapeRes_Finalise(void);
+
+class Shape_Resources : Resource<ShapeData> {
+
+};
 
 #endif

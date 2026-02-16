@@ -4,6 +4,8 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "FGDK3/Widget.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BED8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF0); /* return; */
@@ -150,7 +152,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D7D0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D998);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024DB00);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024DB00); /* Widget_FormattedText */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024DB40); /* return 0xe0; */
 
@@ -162,7 +164,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024DF30);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024DFA8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E308);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E308); /* Widget_LiveText */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E360);
 
@@ -186,7 +188,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FCA8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FD70);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FF08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FF08); /* Widget_WithChildren */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FF88); /* return 0xd0; */
 
@@ -534,7 +536,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00257960);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00257A70);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00257CA8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00257CA8); /* GUI_TitleBar */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00257F58);
 

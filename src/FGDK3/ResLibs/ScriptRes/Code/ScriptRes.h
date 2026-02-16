@@ -66,6 +66,7 @@ void func_0031EA48(void);
 }
 #endif
 
-
+class ScriptHeader {
+};
 
 #endif

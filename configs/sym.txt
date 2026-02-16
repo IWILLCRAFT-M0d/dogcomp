@@ -35,8 +35,11 @@ _$_7Boulder = 0x00108C98; // type:func
 __tf7Boulder = 0x00109e80;
 
 // Button
+__6ButtonPvPvis = 0x00109F40; // type:func
 _$_6Button = 0x0010A050; // type:func
 __tf6Button = 0x0010a698;
+
+
 __tf13GenericObject = 0x00121fe8;
 __tf20CameraSpecialHitTest = 0x001220f8;
 __tf6Camera = 0x00122148;
@@ -126,6 +129,7 @@ __tf17ParticleSystem_IF = 0x00149FC0;
 __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
 
 // Person.cpp
+__6PersonPvPvis = 0x0014A110; // type:func
 _$_6Person = 0x0014A2C8; // type:func
 __tf6Person = 0x0014cb78;
 
@@ -202,8 +206,12 @@ __tf5Smell = 0x001729d0;
 _$_8Snowball = 0x00172B48; // type:func
 __tf8Snowball = 0x00173178;
 __tf13SoundCreature = 0x00173858;
+
+__9SphereObjPvPvis = 0x001738D8; // type:func
 __tf9SphereObj = 0x00177568;
 __tf15BallHitReceiver = 0x00177688;
+
+_$_11SwingBridge = 0x00177898; // type:func
 __tf11SwingBridge = 0x001785C8;
 
 // TugOfWar
@@ -364,6 +372,7 @@ Gameutil_Initialise__Fv = 0x001da3f0; // type:func
 Gameutil_Finalise__Fv = 0x001da420; // type:func
 
 // HitTri
+__13HitTri_ObjectPvPvis = 0x001DD5F0; // type:func
 _$_13HitTri_Object = 0x001DD740; // type:func
 __tf13HitTri_Object = 0x001de258;
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
