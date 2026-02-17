@@ -60,8 +60,18 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _vt$
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __tf17Texture_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FBE0); /* return "Texture"; */
+#ifdef NON_MATCHING
+char* func_0031FBE0() {
+    return "Texture"; // D_00453200
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FBF0); /* return "Texture"; */
+char* func_0031FBF0() {
+    return "Texture"; // D_00453200
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FBE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FBF0);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __tft8Resource1Z10GE_Texture);

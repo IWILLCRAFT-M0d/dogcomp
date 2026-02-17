@@ -1,5 +1,5 @@
 #include "common.h"
-
+#include "unk.h"
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A1D88);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A1E60);
@@ -50,7 +50,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4218);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4230);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44C8);
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44C8); /* D_0045214C = 0;
+D_00452144 = 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44D8);
 
@@ -66,9 +67,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4838);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4878);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A48A8); /* return 0; */
+int func_002A48A8() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A48B0); /* return 0; */
+int func_002A48B0() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A48B8);
 

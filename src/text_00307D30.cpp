@@ -66,7 +66,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308768);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308798);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003087C0);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003087C0); /* return D_00453740 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003087F8);
 
@@ -126,7 +126,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00307D30", _vt$10NullAccess);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309080);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003090D8);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", _$_10NullAccess);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf10NullAccess);
 

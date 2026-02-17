@@ -28,4 +28,13 @@ class SoundImplementation {
         virtual ~SoundImplementation();
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+void func_0026E498(void);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

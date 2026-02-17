@@ -2,7 +2,20 @@
 
 #include "Dogs/Fish.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B288); /* Fish::Fish */
+#ifdef NON_MATCHING
+Fish::Fish(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    this->unk5F0 = 1500.0;
+    this->unk5F4 = 1000.0;
+    this->unk600 = 0;
+    this->unk5D0 = 0;
+    this->unk5D4 = 1;
+    this->unk5D8 = 0;
+    this->unk5F8 = 0;
+    this->unk5FC = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __4FishPvPvis); /* Fish::Fish */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", _$_4Fish);
 

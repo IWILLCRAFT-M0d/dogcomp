@@ -22,6 +22,7 @@ void Music_Finalise(void);
 extern "C" {
 #endif
 char* func_00280660(int);
+int func_00280708(char*);
 #ifdef __cplusplus
 }
 #endif

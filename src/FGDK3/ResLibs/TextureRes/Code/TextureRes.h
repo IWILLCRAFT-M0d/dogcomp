@@ -36,4 +36,13 @@ class Texture_Resources : Resource<GE_Texture> {
         virtual ~Texture_Resources();
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+char* func_0031FBE0(void);
+char* func_0031FBF0(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

@@ -10,7 +10,10 @@ INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002EF848);
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002EFBC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002EFEE0);
+float func_002EFEE0(float fparg1, float fparg2, float fparg3, float fparg4, float fparg5) {
+    return fparg2 + (fparg5 * (fparg3 - fparg2));
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002EFEF0);
 
@@ -74,7 +77,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F0D28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F0D90);
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F0E50);
+int func_002F0E50() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F0E58);
 
@@ -106,7 +111,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F12E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F1348);
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F14B0);
+int func_002F14B0() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F14B8);
 
@@ -268,9 +275,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_002EF738", D_00446298);
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F3608);
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F36A0);
+int func_002F36A0() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F36A8);
+INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F36A8); /* return D_00452CC0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F36B0);
 
@@ -288,11 +297,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_002EF738", D_004462E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F37A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F3840);
+int func_002F3840() {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F3848);
+INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F3848); /* return D_00452CD0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002EF738", func_002F3850);
+INCLUDE_ASM("asm/nonmatchings/text_002EF738", _$_28AdvanceTimeRecordingTimeBase);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002EF738", D_00446310);
 

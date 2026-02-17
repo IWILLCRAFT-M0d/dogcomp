@@ -20,7 +20,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_001503B0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_001505D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150648);
+int func_00150648() {
+    return 0x64;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150650);
 
@@ -62,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", __tf3Rat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150E68);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150EE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150EE8); /* return D_0044D3F0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150EF0);
 

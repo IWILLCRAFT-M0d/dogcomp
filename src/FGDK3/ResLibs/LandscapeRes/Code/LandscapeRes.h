@@ -13,5 +13,14 @@ void LandscapeRes_InternalFinalise(void);
 Status LandscapeRes_Initialise(void);
 void LandscapeRes_Finalise(void);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+char* func_0031F408(void);
+char* func_0031F418(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif
 

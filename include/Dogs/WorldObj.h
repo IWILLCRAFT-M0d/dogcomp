@@ -22,6 +22,7 @@ class WorldObject : public SimObj_ObjectWithMomentum {
 #ifdef __cplusplus
 extern "C" {
 #endif
+int func_00187628(void);
 int func_00188400(void);
 void func_00188408(void);
 int func_00188450(void);

@@ -210,7 +210,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187628); /* return 1; */
+int func_00187628() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187630);
 
@@ -356,7 +358,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188500); /* return a0-
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188508); /* return a0->unk5BC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188510);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188510); /* return D_0044DCA0 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D18B8);
 

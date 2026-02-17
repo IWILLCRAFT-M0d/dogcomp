@@ -2,9 +2,18 @@
 
 #include "Dogs/SaveKennel.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00150F30); /* SaveKennel::SaveKennel */
+#ifdef NON_MATCHING
+SaveKennel::SaveKennel(void* arg1, void* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    this->unk604 = 0;
+    this->unk620 = 0;
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050);
+    this->unk624 = 1.0;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __10SaveKennelPvPvis); /* SaveKennel::SaveKennel */
+#endif
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); /* SaveKennel::Extra ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001510C0);
 

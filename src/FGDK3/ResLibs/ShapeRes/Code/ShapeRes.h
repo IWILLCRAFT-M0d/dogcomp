@@ -18,4 +18,14 @@ class Shape_Resources : Resource<ShapeData> {
 
 };
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+char* func_0031F148(void);
+char* func_0031F158(void);
+#ifdef __cplusplus
+}
+#endif
+
 #endif

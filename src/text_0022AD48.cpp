@@ -1,4 +1,5 @@
 #include "common.h"
+#include "unk.h"
 
 // split for speechani.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022AD48); /* SpeechAniText */
@@ -141,31 +142,43 @@ INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D2D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D2E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D340); /* return; */
+void func_0022D340() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D348);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D348); /* return a0->unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D350); /* return 1; */
+int func_0022D350() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", __tf24StreamedVoiceoverTrivial);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D3B8); /* return; */
+void func_0022D3B8() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D3C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D3C8); /* return 1; */
+int func_0022D3C8() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", __tf13StreamPreload);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D430);
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D460); /* return; */
+void func_0022D460() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D468);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D468); /* return a0->unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D470); /* return 1; */
+int func_0022D470() {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_0022AD48", func_0022D478);
+INCLUDE_ASM("asm/nonmatchings/text_0022AD48", _$_17VibrateRumbleAnim);
 
 INCLUDE_ASM("asm/nonmatchings/text_0022AD48", __tf17VibrateRumbleAnim);
 

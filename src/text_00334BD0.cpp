@@ -169,7 +169,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00334BD0", D_0044B360);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339120);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339CF0);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", __sprint);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339D38);
 
@@ -179,7 +179,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00334BD0", D_0044B540);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00334BD0", D_0044B550);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00339E68);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", _vfprintf_r);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033B380);
 
@@ -225,7 +225,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033DC48);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033DF68);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033E0D8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", __sfvwrite);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033E4B0);
 

@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __tf6Button);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F0); /* return D_0044c948; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F0); /* return D_0044C948; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F8);
 // vtables

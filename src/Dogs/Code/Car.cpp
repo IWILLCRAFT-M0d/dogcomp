@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124E50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", __tf3Car);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124ED0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124ED0); /* return D_0044CC80 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124ED8);
 

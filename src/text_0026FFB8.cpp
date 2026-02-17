@@ -435,7 +435,7 @@ void func_002757E8(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002757F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002758F8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002758F8); /* return D_00451B54 != 0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275908);
 
@@ -459,7 +459,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf19Resource_LayoutUnit);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275BE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275BF0);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275BF0); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf20Resource_LayoutGroup);
 
@@ -501,9 +501,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275EE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F20);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F88);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F88); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F90);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F90); /* return D_00451B50 */
 
 int func_00275F98(void) {
     return 0;

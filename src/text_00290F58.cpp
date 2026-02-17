@@ -2,7 +2,6 @@
 #include "debug.h"
 #include "unk.h"
 
-#include "FGDK3/Playstation2/IOPMem.h"
 #include <libscf.h>
 
 
@@ -138,9 +137,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963D0); /* Main_Terminate 
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963E0); /* return tempR__Main_CloseRequest; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963E8); /* return; */
+void func_002963E8() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963F0); /* return 0; */
+int func_002963F0() {
+    return 0;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/text_00290F58", D_0043EC30);
 
@@ -168,9 +171,22 @@ int func_002963F8() {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296478); /* return 3; */
+int func_00296478(void) {
+    return 3;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296480);
+int func_00296480(int arg0) {
+    switch (arg0) {
+        case 1:
+            return 1;
+        case 2:
+            return 1;
+        case 3:
+            return 1;
+        default:
+            return 0;
+    }
+}
 
 // isWidescreen
 int func_002964C0() {

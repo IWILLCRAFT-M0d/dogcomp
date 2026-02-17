@@ -7,7 +7,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DogScript", D_003DB160); /* "_actorID
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DogScript", D_003DB190); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD378); /* DogScript::DogScript */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", __9DogScriptPvii); /* DogScript::DogScript */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD470);
 

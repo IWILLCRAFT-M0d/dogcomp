@@ -36,10 +36,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", __tf9LevelGate);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD10); /* return a0->unk130 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD18); /* return a0->unk134 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD20); /* return D_0044D088 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD28);

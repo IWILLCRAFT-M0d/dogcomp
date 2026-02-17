@@ -210,7 +210,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Travel", D_00430E40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf28TravelToExternalPosAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234DC8); /* return 1; */
+int func_00234DC8() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234DD0);
 
@@ -218,71 +220,101 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Travel", D_00430EC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf23TravelToObjectAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234E60); /* return 1; */
+int func_00234E60() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234E68);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf15TravelToObject2);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234EF8); /* return 1; */
+int func_00234EF8() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234F00);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf19TravelToObjectsHead);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234F90); /* return 1; */
+int func_00234F90() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234F98);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf11TravelToPos);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235028); /* return 1; */
+int func_00235028() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235030);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf12TravelToDest);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002350C0); /* return 1; */
+int func_002350C0() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002350C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf19TravelFromLevelGate);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235158); /* return 1; */
+int func_00235158() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf20NavToObjectAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002351C0); /* return 1; */
+int func_002351C0() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf25NavToDestinationAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235228); /* return 1; */
+int func_00235228() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf19DogRaceNavAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235290); /* return 1; */
+int func_00235290() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf25VehicleNavToDestAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002352F8); /* return 1; */
+int func_002352F8() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf30VehicleNavDirectionalAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235360); /* return 1; */
+int func_00235360() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf17NavToPosAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002353C8); /* return 1; */
+int func_002353C8() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf21RandomWanderAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235430); /* return 0; */
+int func_00235430() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00235438); /* return 0; */
+int func_00235438() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf20TurnToAngleAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002354A0); /* return 1; */
+int func_002354A0() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002354A8);
 

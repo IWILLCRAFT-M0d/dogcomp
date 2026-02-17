@@ -10,5 +10,13 @@ class Rat : public SmallThing {
         virtual ~Rat();
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+int func_00150648(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

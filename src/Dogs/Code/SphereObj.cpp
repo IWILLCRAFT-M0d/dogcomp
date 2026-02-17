@@ -3,7 +3,7 @@
 #include "Dogs/SphereObj.h"
 
 #ifdef NON_MATCHING
-SphereObj::SphereObj(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1, arg2 = 0, arg3, arg4) {
+SphereObj::SphereObj(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     this->unk5C4 = 1.0;
     this->unk5F0 = -10000.0;
     this->unk5F4 = 10000.0;

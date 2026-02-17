@@ -55,8 +55,18 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", _vt$15Sh
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", __tf15Shape_Resources);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031F148); /* return "Shape"; */
+#ifdef NON_MATCHING
+char* func_0031F148() {
+    return "Shape";
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031F158); /* return "Shape"; */
+char* func_0031F158() {
+    return "Shape";
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031F148);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", func_0031F158);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", __tft8Resource1Z9ShapeData);

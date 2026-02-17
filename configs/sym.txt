@@ -89,6 +89,7 @@ _$_17DustEffectManager = 0x0013ABD8; // type:func
 __tf17DustEffectManager = 0x0013b200;
 
 // Fish
+__4FishPvPvis = 0x0013B288; // type:func
 _$_4Fish = 0x0013B3A0; // type:func
 
 // FlyingHat
@@ -153,6 +154,7 @@ _$_3Rat = 0x00150D58; // type:func
 __tf3Rat = 0x00150e10;
 
 // SaveKennel
+__10SaveKennelPvPvis = 0x00150F30; // type:func
 __tf10SaveKennel = 0x00152be0;
 __tf21MostInFrontCalculator = 0x00152C40;
 __tf5Scent = 0x0015a1e0;
@@ -160,6 +162,9 @@ __tf20ScentMarkingGameNode = 0x00160238;
 __tf19ScentMarkingGameGod = 0x00160298;
 __tf28ScentMarkingGameGodInterface = 0x00160300;
 __tft9Interface1Z28ScentMarkingGameGodInterface = 0x00160350;
+
+__8SelectorPvPvis = 0x001603D0; // type:func
+_$_8Selector = 0x001604C0; // type:func
 __tf8Selector = 0x00160fe0;
 // SimObj.cpp
 SimObj_InternalInitialise__Fv = 0x00161068; // type:func
@@ -205,6 +210,9 @@ __tf5Smell = 0x001729d0;
 
 _$_8Snowball = 0x00172B48; // type:func
 __tf8Snowball = 0x00173178;
+
+__13SoundCreaturePvPvis = 0x001731F8; // type:func
+_$_13SoundCreature = 0x00173298; // type:func
 __tf13SoundCreature = 0x00173858;
 
 __9SphereObjPvPvis = 0x001738D8; // type:func
@@ -308,6 +316,7 @@ Creatres_Initialise__Fv = 0x001AD188; // type:func
 Creatres_Finalise__Fv = 0x001AD1B8; // type:func
 __tf18Creature_Resources = 0x001ad2b8;
 __tft8Resource1Z24Creature_TypeDescription = 0x001ad328;
+__9DogScriptPvii = 0x001AD378; // type:func
 _$_9DogScript = 0x001AF328; // type:func
 __tf9DogScript = 0x001af348;
 
@@ -429,6 +438,7 @@ _$_14SpeechAniSound = 0x0022AFC0; // type:func
 _$_25SpeechAniSoundWithControl = 0x0022B7A0; // type:func
 __tf24StreamedVoiceoverTrivial = 0x0022D358;
 __tf13StreamPreload = 0x0022D3D0;
+_$_17VibrateRumbleAnim = 0x0022D478; // type:func
 __tf17VibrateRumbleAnim = 0x0022D498;
 __9TitleView = 0x0022D4E8; // type:func
 _$_9TitleView = 0x0022E898; // type:func
@@ -689,7 +699,9 @@ Music_InternalInitialise__Fv = 0x0027ed98; // type:func
 Music_InternalFinalise__Fv = 0x0027ef10; // type:func
 Music_Initialise__Fv = 0x0027ef98; // type:func
 Music_Finalise__Fv = 0x0027efe8; // type:func
+_$_11Music_Track = 0x0027FA30; // type:func
 __11Music_Piece = 0x00280460; // type:func
+_$_11Music_Piece = 0x00280538; // type:func
 __17Music_Performance = 0x00280FE8; // type:func
 __14Music_PS2PiecePc = 0x00282978; // type:func
 Load__14Music_PS2Piece = 0x002833F0; // type:func
@@ -697,6 +709,11 @@ __20Music_PS2Performance = 0x00284958; // type:func
 PauseNow_20Music_PS2Performance = 0x00284D30; // type:func
 ResumeNow_20Music_PS2Performance = 0x00284D90; // type:func
 __tf11Music_Track = 0x00285dc0;
+__tf11Music_Piece = 0x00285E18;
+__tf17Music_Performance = 0x00285E70;
+_$_14Music_PS2Track = 0x00285EC8; // type:func
+__tf14Music_PS2Track = 0x00285F18;
+
 __tf20Music_PS2Performance = 0x00285ff8;
 __tf22Music_MenuRegisterable = 0x00286080;
 __13Music_Channel = 0x00287308; // type:func
@@ -824,6 +841,8 @@ __tf9ClassInfo = 0x00297430;
 _$_16GE_TextureTarget = 0x00299600; // type:func
 __tf16GE_TextureTarget = 0x0029a6a0;
 __tf14GE_TexturePage = 0x0029a758;
+_$_12GE_PS2Target = 0x0029A7F8; // type:func
+_$_19GE_PS2DisplayTarget = 0x002A0C58; // type:func
 __tf9GE_Target = 0x002a19e8;
 __tf12GE_PS2Target = 0x002a1ae8;
 __tf19GE_PS2DisplayTarget = 0x002a1bd8;
@@ -852,6 +871,7 @@ __11GE_DMAPktRc1i69 = 0x002BFFC0; // type:func
 __tft11GE_DMAPktRc1i69 = 0x002c3108;
 __tf18GE_DMAPktRcGeneric = 0x002c3180;
 __12GE_PS2Device = 0x002C3218; // type:func
+_$_12GE_PS2Device = 0x002C3CE0; // type:func
 func_002C64A0 = 0x002c64a0; // size:0x204
 __tf12GE_PS2Device = 0x002c9eb0;
 GE_InternalInitialise__Fv = 0x002ca610; // type:func
@@ -938,6 +958,7 @@ __tf23AnimPosAFSBaseAnimation = 0x002eea88;
 __tf31AnimPosLocalLoopedBaseAnimation = 0x002eeb30;
 
 __tf31AnimPosWorldAFSLoopingAnimation = 0x002ef160;
+_$_28AdvanceTimeRecordingTimeBase = 0x002F3850; // type:func
 _$_16NothingAnimation = 0x002F4070; // type:func
 _$_9Animation = 0x002F4A40; // type:func
 __tf17AnimationTimeBase = 0x002f6e08;
@@ -1046,6 +1067,7 @@ File_Finalise__Fv = 0x00307ec8; // type:func
 __tfQ24File11OpenWatcher = 0x00308078;
 __tf12File_MemRead = 0x003080d0;
 __10NullAccess = 0x00308928; // type:func
+_$_10NullAccess = 0x003090D8; // type:func
 __tf10NullAccess = 0x00309128;
 __tf8FileFindAccess_Nul = 0x003091e8;
 __tf12StringBuffer = 0x0030b630;
@@ -1101,6 +1123,7 @@ ScriptRes_Initialise__Fv = 0x0031c9d8; // type:func
 ScriptRes_Finalise__Fv = 0x0031ca08; // type:func
 __tf16Script_Resources = 0x0031cb78;
 __tft8Resource1Z12ScriptHeader = 0x0031cbf0;
+__6ScriptPvii = 0x0031CC40; // type:func
 _$_6Script = 0x0031CCB0; // type:func
 __tf6Script = 0x0031ea50;
 ShapeRes_InternalInitialise__Fv = 0x0031eea0; // type:func
@@ -1155,6 +1178,7 @@ sceGsExecStoreImage = 0x0032a680; // type:func
 sceGsSetDefDispEnv = 0x0032AF48; // type:func
 // libdma
 sceDmaPutEnv = 0x0032b6a8; // type:func
+sceDmaSendN = 0x0032B938; // type:func
 sceDmaSync = 0x0032bb70; // type:func
 sceDmaWatch = 0x0032bba8; // type:func
 sceDmaPause = 0x0032bbe0; // type:func
@@ -1179,7 +1203,10 @@ scePadPortClose = 0x0032d2f0; // type:func
 scePadRead = 0x0032d458; // type:func
 scePadGetState = 0x0032d4d8; // type:func
 scePadSetWarningLevel = 0x0032e0c0; // type:func
-
+sceGifPkInit = 0x0032E128; // type:func
+sceGifPkReset = 0x0032E138; // type:func
+sceGifPkTerminate = 0x0032E148; // type:func
+sceGifPkSize = 0x0032E1A0; // type:func
 sceGifPkRef = 0x0032E230; // type:func
 sceGifPkOpenGifTag = 0x0032E358; // type:func
 sceGifPkAddGsData = 0x0032E418; // type:func
@@ -1218,7 +1245,10 @@ strlen = 0x003374b0; // type:func
 strncmp = 0x003376c8; // type:func
 strncpy = 0x00337880; // type:func
 strstr = 0x00337a90; // type:func
+__sprint = 0x00339CF0; // type:func
 vfprintf = 0x00339DF0; // type:func
+_vfprintf_r = 0x00339E68; // type:func
+__sfvwrite = 0x0033E0D8; // type:func
 RemoveIntcHandler = 0x00340f60; // type:func
 CreateThread = 0x00341060; // type:func
 DeleteThread = 0x00341070; // type:func
@@ -1439,6 +1469,7 @@ _vt$23AnimPosWalkingAnimation = 0x00444cc8;
 _vt$23AnimVarWalkingAnimation = 0x00444d28;
 _vt$22WalkingParamsAnimation = 0x00444d88;
 _vt$19WalkingBobAnimation = 0x00444de8;
+_vt$19MoveObjectComponent = 0x00445070;
 _vt$22AnimVarLoopedAnimation = 0x00445388;
 _vt$16AnimVarAnimation = 0x004453e8;
 _vt$26AnimVarLoopedBaseAnimation = 0x00445448;

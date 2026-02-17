@@ -1,14 +1,30 @@
 #include "common.h"
-#include "debug.h"
 
-#include "Dogs/WorldObj.h"
-#include "unk.h"
-#include <string.h>
+#include "Dogs/Selector.h"
 
+#ifdef NON_MATCHING
+Selector::Selector(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    /*
+    pvVar1 = D_0044D708;
+    if (arg2 != (void *)0x0) {
+        pvVar1 = arg2;
+    }
+    */
+    this->unk5C0 = 1;
+    this->unk5C4 = 0;
+    this->unk5C8 = 0;
+    this->unk5CC = 0;
+    /*
+    if (arg2 == (void *)0x0) {
+        *(undefined4 *)((int)D_0044D708 + 4) = 1;
+    }
+    */
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorPvPvis); /* Selector::Selector */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_001603D0); /* Selector::Selector */
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_001604C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", _$_8Selector);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160560);
 

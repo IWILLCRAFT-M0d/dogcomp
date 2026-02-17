@@ -1,4 +1,5 @@
 #include "common.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297578);
 
@@ -38,11 +39,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299250);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299250); /* return a0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299258);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299270);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299270); /* return a0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299278);
 
@@ -76,15 +77,26 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A188);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A198); // texturecopy (used for loading screen image?)
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A600);
+int func_0029A600(int arg0, int arg1) {
+    return (arg1 >= arg0) ? arg1 : arg0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A610); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A618); /* return 0; */
+int func_0029A610() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A620); /* return; */
+int func_0029A618() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A628); /* return; */
+void func_0029A620() {
+    return;
+}
+
+void func_0029A628() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A630);
 
@@ -92,7 +104,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00297578", _vt$16GE_TextureTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf16GE_TextureTarget);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A700);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A700); /* return a0->unk22C */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A708);
 
@@ -106,7 +118,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf14GE_TexturePage);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A798);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A7F8);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_12GE_PS2Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8);
 
@@ -114,13 +126,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A968);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA28); /* return; */
+void func_0029AA28() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA30); /* return; */
+void func_0029AA30() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA38);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA38); /* a0->unkC = 1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA48);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA48); /* a0->unkC = 0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA58);
 
@@ -150,7 +166,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0AC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0C18);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0C58);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_19GE_PS2DisplayTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0CB0);
 
@@ -170,7 +186,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1500);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1520);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1678);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1678); /* D_004520EC = 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1688);
 
@@ -186,13 +202,21 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf9GE_Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A28); /* ~GE_Target */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A58); /* return 0; */
+int func_002A1A58() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A60); /* return 0; */
+int func_002A1A60() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A68); /* return; */
+void func_002A1A68() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A70); /* return; */
+void func_002A1A70() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A78);
 
@@ -200,23 +224,44 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf12GE_PS2Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B58);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68); /* return a0->unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B70); /* return 1.0f; */
+float func_002A1B70() {
+    return 1.0f;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B80); /* return 1; */
+int func_002A1B80() {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B88); /* return 0; */
+int func_002A1B88() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B90); /* return; */
+void func_002A1B90() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B98); /* asm("break 0x1"); */
+void func_002A1B98() {
+    asm("break 0x1");
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1BA8); /* asm("break 0x1"); */
+void func_002A1BA8() {
+    asm("break 0x1");
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1BB8); /* asm("break 0x1"); */
+void func_002A1BB8() {
+    asm("break 0x1");
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1BC8); /* asm("break 0x1"); */
+void func_002A1BC8() {
+    asm("break 0x1");
+    return;
+}
+
 
 INCLUDE_RODATA("asm/nonmatchings/text_00297578", _vt$19GE_PS2DisplayTarget);
 
@@ -236,9 +281,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1CB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D00);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D18);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D18); /* return D_004520EC */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D28);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D28); /* return D_004520E8 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D30);
 

@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1B8); /* return 0x64 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0);
 

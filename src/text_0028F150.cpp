@@ -1,4 +1,5 @@
 #include "common.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F150);
 
@@ -8,8 +9,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F208);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F228); /* rct3 MeshInstance::Render ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290D08);
-
+int func_00290D08() {
+    return 0;
+}
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290D10);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290E50);
