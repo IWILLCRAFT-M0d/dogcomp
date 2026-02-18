@@ -11,7 +11,7 @@
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogPvPvis); /* PlayerDog::PlayerDog (ClassInfo?)*/
 // #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog); /* ~PlayerDog */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740);
 
@@ -59,7 +59,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F0A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F0A8); /* RoverSaysPuzzleGod */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F188);
 
@@ -119,7 +119,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F498);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf9PlayerDog);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F518);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F518); /* return D_0044D398 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_18RoverSaysPuzzleGod);
 

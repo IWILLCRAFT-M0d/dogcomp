@@ -3,7 +3,7 @@
 #include "Dogs/PlaceHolder.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D058);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D058); /* PlaceHolder */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D138);
 
@@ -37,6 +37,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", _$_11PlaceHolder);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", __tf11PlaceHolder);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D3E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D3E8); /* return D_0044D348; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D3F0);

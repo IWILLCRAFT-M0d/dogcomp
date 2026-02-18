@@ -247,11 +247,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A168);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1E8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F0); /* return &a0->unk6D0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F8); /* return (float) a0->unk5E4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A200);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A200); /* return D_0044CE58 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A208);
 
@@ -283,7 +283,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A8118);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A6B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A718);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A718); /* return a0->unk14 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __tf16HitPrimDisplayer);
 
