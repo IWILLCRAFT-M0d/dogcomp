@@ -1,26 +1,31 @@
 #include "common.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3EF0); /* NothingAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F88); /* return; */
+void func_002F3F88() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3F90); /* NothingForXAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F3FE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4068); /* return; */
+void func_002F4068() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_16NothingAnimation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446610);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$20NothingForXAnimation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446670);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$16NothingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4090);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", __tf16NothingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F40E0);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_20NothingForXAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4100);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", __tf20NothingForXAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4150);
 
@@ -28,29 +33,36 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F41B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4200);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446700);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$22WeightSettingAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4248);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4298);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F42D0); /* AnimationTimeBase::~AnimationTimeBase */
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_17AnimationTimeBase);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4300);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4368);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4378); /* return; */
+float func_002F4368() {
+    return 0.0f;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4380);
+void func_002F4378() {
+    return;
+}
+
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4380); /* AnimationTimeBaseFinder */
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4398); /* AnimationComponent */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F44C0);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", _$_18AnimationComponent);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F44F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4608); /* return; */
+void func_002F4608() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F4610);
 
@@ -112,7 +124,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F5A80);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F5B88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F5BF8);
+int func_002F5BF8() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F5C00);
 
@@ -186,17 +200,19 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6BB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6C18);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6C50);
+int func_002F6C50() {
+    return 0;
+}
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446878);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$9Animation);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_004468A8);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$23AnimationWeightModifier);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_004468C0);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$18AnimationComponent);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446920);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$23AnimationTimeBaseFinder);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_00446938);
+INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", _vt$17AnimationTimeBase);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6C58);
 
@@ -208,11 +224,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_002F3EF0", D_004469C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", __tf17AnimationTimeBase);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E78);
+INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E78); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E80); /* return; */
+void func_002F6E80() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E88); /* return; */
+void func_002F6E88() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E90);
 
@@ -220,19 +240,33 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6E98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", __tf18AnimationComponent);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F18); /* return; */
+void func_002F6F18() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F20); /* return; */
+void func_002F6F20() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F28); /* return; */
+void func_002F6F28() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F30); /* return; */
+void func_002F6F30() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F38); /* return; */
+void func_002F6F38() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F40); /* return; */
+void func_002F6F40() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F48); /* return; */
+void func_002F6F48() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F6F50);
 
@@ -322,7 +356,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F71F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F7200);
 
-INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", func_002F7208); /* return; */
+void func_002F7208() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002F3EF0", __tf28AnimationResourceProvider_IF);
 

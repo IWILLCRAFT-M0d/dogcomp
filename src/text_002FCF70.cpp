@@ -9,7 +9,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __14FileSystemDisc); /* FileSystemDisc::FileSystemDisc */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020); /* FileSystemDisc (unk, unk) */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD130);
 
@@ -23,7 +23,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FDCF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE0E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE5C0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE5C0); /* FileSystem */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_10FileSystem);
 
@@ -209,7 +209,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_00447520); /* "c:/coding/fgdk
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFD10);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFF30);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFF30); /* File_MemCard */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_12File_MemCard);
 
@@ -231,7 +231,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300890);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300988);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003009C0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003009C0); /* FileFind_MemCard */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi); /* FileSystemDisc_MemCard::FileSystemDisc_MemCard(int port/slot?); */
 
@@ -287,7 +287,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_16FileFind_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf16FileFind_MemCard);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301CD8); /* StorageDevice_MemCardUpdater::~StorageDevice_MemCardUpdater ? */
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_28StorageDevice_MemCardUpdater);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf28StorageDevice_MemCardUpdater);
 
@@ -303,15 +303,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301F48);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301FB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302070);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __Q24File6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003020B0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_Q24File6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302120);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302120); // belongs to File::Access?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302150);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __Q28FileFind6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302190);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_Q28FileFind6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302200);
 
@@ -361,13 +361,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302A08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302A80);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", D_004477C0);
+INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$Q28FileFind6Access);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$Q24File6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302AD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302B28);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tfQ28FileFind6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302B80);
 

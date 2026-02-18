@@ -1,5 +1,6 @@
 #include "common.h"
-
+#include "unk.h"
+#include <sifdev.h>
 #include "FGDK3/FileSystem_Zip.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310BE8); /* FileAccess_Zip_Stored::FileAccess_Zip_Stored */
@@ -22,7 +23,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448040); /* "c:/coding/fgdk
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311040);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311208);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311208); /* FileAccess_Zip_Deflated */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_23FileAccess_Zip_Deflated);
 
@@ -44,7 +45,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003119A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003119D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311B10);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311B10); /* FileSystemDisc_Zip */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311B88);
 
@@ -166,13 +167,29 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314638);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003146A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314718);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __19File_FileDescriptori);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003147B8);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_19File_FileDescriptor);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314890);
+#ifdef NON_MATCHING
+void File_FileDescriptor::func_00314890() {
+    if (this->m_fd >= 0) {
+        sceClose(this->m_fd);
+        this->m_fd = -1;
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003148E8);
+int File_FileDescriptor::func_003148E8() {
+    return this->unkC;
+}
+
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314890__19File_FileDescriptor); // Close
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003148E8__19File_FileDescriptori);
+#endif
+
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314920); /* in File_FileDescriptor.cpp */
 
@@ -206,7 +223,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf29FileSystemDisc_FileDescripto
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf19File_FileDescriptor);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003154D8);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_29FileFindAccess_FileDescriptor);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf29FileFindAccess_FileDescriptor);
 
@@ -228,7 +245,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003158E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315920);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315990);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315990); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003159C0);
 
@@ -240,7 +257,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315AA8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __29FileSystemDisc_FileDescriptor);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315B60);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315B60); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315B90);
 

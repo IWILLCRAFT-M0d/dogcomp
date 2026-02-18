@@ -1,5 +1,5 @@
 #include "common.h"
-
+// animvar?
 INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9E0);

@@ -299,7 +299,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E58);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E90);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273F68);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_22Resource_LayoutOverlay);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274020);
 

@@ -16,7 +16,9 @@ Status File_CD_Initialise(void);
 void File_CD_Finalise(void);
 
 class File_CD {
-    File_CD(sceCdlFILE *fp);
+    public:
+        File_CD(sceCdlFILE *fp);
+        virtual ~File_CD();
 };
 
 #endif

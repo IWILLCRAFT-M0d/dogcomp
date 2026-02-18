@@ -250,6 +250,24 @@ class StorageDevice {
 
 };
 
+namespace File {
+    struct Access {
+        int unk0;
+        Access();
+        virtual ~Access();
+    };
+};
+
+class File_FileDescriptor : public File::Access {
+    public:
+        int m_fd;
+        int unkC;
+        File_FileDescriptor(int fd);
+        virtual ~File_FileDescriptor();
+        void func_00314890(void);
+        int func_003148E8(void);
+};
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -457,6 +475,23 @@ int func_002F0E50(void);
 int func_002F14B0(void);
 int func_002F36A0(void);
 int func_002F3840(void);
+void func_002F3F88(void);
+void func_002F4068(void);
+float func_002F4368(void);
+void func_002F4378(void);
+void func_002F4608(void);
+int func_002F5BF8(void);
+int func_002F6C50(void);
+void func_002F6E80(void);
+void func_002F6E88(void);
+void func_002F6F18(void);
+void func_002F6F20(void);
+void func_002F6F28(void);
+void func_002F6F30(void);
+void func_002F6F38(void);
+void func_002F6F40(void);
+void func_002F6F48(void);
+void func_002F7208(void);
 Status func_002FBEB0(void);
 int func_0030ACA8(char*, int);
 int func_0030ACD0(char*, unsigned int);
