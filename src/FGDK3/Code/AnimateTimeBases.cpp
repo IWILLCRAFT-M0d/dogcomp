@@ -173,7 +173,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F2520);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F2568);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F25A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F25A8); /* return (float) 0.0 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F25B8);
 
