@@ -29,9 +29,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4290); /* DebugWindow::~DebugWindow*/
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42D8); /* return; */
+void func_002D42D8() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E0); /* return; */
+void func_002D42E0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E8);
 
@@ -51,11 +55,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4600);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4740);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4770); /* return; */
+void func_002D4770() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4778); /* return; */
+void func_002D4778() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4780); /* return; */
+void func_002D4780() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4788);
 
@@ -200,7 +210,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D60);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D68);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5DD0); /* MessageStreamUI::~MessageStreamUI */
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_15MessageStreamUI);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf15MessageStreamUI);
 
@@ -378,7 +388,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D73A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7448);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D74F8); /* return; */
+void func_002D74F8() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7500);
 

@@ -469,7 +469,7 @@ void func_002A65D0(void);
 void func_002AC220(void);
 int func_002AC4A8(void);
 char* func_002D7738(int);
-void func_002D7980(void);
+
 float func_002EFEE0(float, float, float, float, float);
 int func_002F0E50(void);
 int func_002F14B0(void);
@@ -497,8 +497,16 @@ void func_002F7208(void);
 Status func_002FBEB0(void);
 int func_0030ACA8(char*, int);
 int func_0030ACD0(char*, unsigned int);
-
+void func_002D42D8(void);
+void func_002D42E0(void);
+void func_002D4770(void);
+void func_002D4778(void);
+void func_002D4780(void);
 void func_002D5D58(void);
+void func_002D74F8(void);
+void func_002D7980(void);
+
+
 
 Status func_001D5E90(void);
 Status func_0026CFD0(unsigned int, char*, int);

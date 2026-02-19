@@ -920,6 +920,7 @@ __11DebugWindow = 0x002D3988; // type:func
 
 DDE_FatalError = 0x002d5c78; // type:func
 __tf16DebugEnvironment = 0x002d5d18;
+_$_15MessageStreamUI = 0x002D5DD0; // type:func
 __tf15MessageStreamUI = 0x002d5df0;
 __tf11DebugWindow = 0x002d5e40;
 __tf24Debug_DataValueContainer = 0x002d6040;
