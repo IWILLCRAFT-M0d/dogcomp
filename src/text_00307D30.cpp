@@ -2,19 +2,45 @@
 
 #include "FGDK3/Playstation2/File_MemCard.h"
 #include "FGDK3/Playstation2/File_CD.h"
-
+#include "FGDK3/Playstation2/File.h"
 #include <common/libcdvd.h>
 #include <ee/libmc.h>
 #include "unk.h"
 
-
+// Playstation2/File.cpp?
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", File_InternalInitialise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00307E58); // O0 ?
+void File_InternalFinalise() {
 
+}
+
+#ifdef NON_MATCHING
+StdInit_ModuleDescription File_StdInit_Description = {
+    0,
+    &File_StdInit_UsedModules
+};
+
+void * const File_StdInit_UsedModules[] = {
+    &File_InternalInitialise,
+    &File_InternalFinalise,
+    &File_MemCard_Initialise,
+    &File_MemCard_Finalise,
+    0,
+    0,
+};
+
+Status File_Initialise() {
+    return StdInit_InitialisationSequence(&File_StdInit_Description);
+}
+
+void File_Finalise() {
+    StdInit_FinalisationSequence(&File_StdInit_Description);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", File_Initialise__Fv);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", File_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00307F00);
 

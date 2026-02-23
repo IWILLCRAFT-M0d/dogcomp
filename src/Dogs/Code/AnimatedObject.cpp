@@ -2,9 +2,11 @@
 
 #include "unk.h"
 
+#include "Dogs/AnimatedObject.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100100); /* AnimatedObject */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100340); /* ~AnimatedObject */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_14AnimatedObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100408);
 
@@ -78,13 +80,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102B90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102C78);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102DB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_30AnimatedObject_ComplexPlatform);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102E70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102EE0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102F00);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102F00); /* slotmachine ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103050);
 
@@ -224,9 +226,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B48);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf30AnimatedObject_ComplexPlatform);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104058);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104058); /* return D_0044C778 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104060);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_11SlotMachine);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B90);
 

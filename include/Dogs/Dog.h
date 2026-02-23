@@ -8,6 +8,7 @@ class Dog : public WorldObject {
     public:
         Dog(void*, void*, int, short);
         virtual ~Dog();
+        float func_0012E240(void);
 };
 
 

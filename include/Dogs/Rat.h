@@ -6,6 +6,15 @@
 
 class Rat : public SmallThing {
     public:
+        float unk71C;
+        int unk700;
+        int unk704;
+        int unk708;
+        int unk70C;
+        int unk710;
+        int unk714;
+        float unk718;
+        int unk720;
         Rat(void*, void*, int, short);
         virtual ~Rat();
 };

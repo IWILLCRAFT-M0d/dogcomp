@@ -14,7 +14,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304B48); /* File_MemRead 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_12File_MemRead);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304C18);
-
+/*
+int File_MemRead::func_00304C18() {
+    return this->unk10 - this->unk8;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304C58); /* in FGDK3/Code/Common/File.cpp */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D08);
@@ -22,7 +26,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D08);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D78);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DB0);
-
+/*
+int File_MemRead::func_00304DB0() {
+    return this->unkC - this->unk8;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DF0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304ED0);

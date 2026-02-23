@@ -3,7 +3,6 @@
 #include "unk.h"
 
 
-// split
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __12LiveEditablePcPc);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D95D0);
@@ -58,17 +57,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA570); /* return a0->unk2
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA578);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA598);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf23EditableSelectionDialog);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA5E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA628);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA648);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf20EditableCreateAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA698);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA710);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_17Widget_FilterText);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf17Widget_FilterText);
 

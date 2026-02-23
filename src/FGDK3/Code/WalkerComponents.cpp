@@ -85,7 +85,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E3128);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E31A8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E31E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E31E0); /* IKAmblerAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_17IKAmblerAnimation);
 

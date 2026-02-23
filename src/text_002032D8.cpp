@@ -1,7 +1,6 @@
 #include "common.h"
 #include "unk.h"
 
-// split
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_002032D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00203348);

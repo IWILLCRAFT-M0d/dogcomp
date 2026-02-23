@@ -15,8 +15,27 @@ void WorldObj_Finalise(void);
 
 class WorldObject : public SimObj_ObjectWithMomentum {
     public:
+        int unk2E0;
+
+        int unk328;
+        int unk32C;
+        int unk330;
+
+        int unk340;
+
+        int unk544;
+        int unk554;
+        int unk558;
+        int unk5A8;
+        int unk5AC;
+        int unk5B0;
+        float unk5B4;
+        int unk5B8;
+
         WorldObject(void*, void*, int, short);
         virtual ~WorldObject();
+        void func_001884A8(void);
+        void func_001884B8(void);
 };
 
 #ifdef __cplusplus

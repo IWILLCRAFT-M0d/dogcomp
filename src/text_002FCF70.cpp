@@ -170,7 +170,11 @@ Status File_MemCard_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalInitialise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", File_MemCard_InternalFinalise__Fv); // must be compiled as C, O0 optimized?
+
+void File_MemCard_InternalFinalise() {
+
+}
+
 
 #ifdef NON_MATCHING
 
@@ -303,16 +307,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301F48);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301FB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __Q24File6Access);
+File::Access::Access() {
+    this->unk0 = 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_Q24File6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302120); // belongs to File::Access?
 
-//INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __Q28FileFind6Access);
 FileFind::Access::Access() {
 
-};
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_Q28FileFind6Access);
 
@@ -368,13 +373,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$Q28FileFind6Access);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$Q24File6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302AD0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tfQ24File6Access);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tfQ28FileFind6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302B80);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302B80); /* __tf6Thread */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302BD0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302BD0); /* __tf13StorageDevice */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302C28);
 

@@ -16,7 +16,7 @@ float func_0014A840() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A850); // accesory function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014AB50);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014AB50); /* PersonRepulsor(float) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014ADC8);
 
@@ -43,7 +43,12 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C230);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C240);
-
+/*
+int func_0014C240() {
+    this->unk6B8 = 1;
+    return 0;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C250);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C5B0);
@@ -105,7 +110,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf6Person);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBD0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBD8);
-
+/*
+float func_0014CBD8() {
+    return this->unk5C0;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBF0);

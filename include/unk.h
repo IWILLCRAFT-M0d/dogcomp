@@ -253,7 +253,7 @@ class StorageDevice {
 namespace File {
     struct Access {
         int unk0;
-        Access();
+        Access(void);
         virtual ~Access();
     };
 };
@@ -287,6 +287,16 @@ class File_FileDescriptor : public File::Access {
 //         virtual ~GE_TextureStylePkt();
 // };
 
+class GE_PS2PrimVertices : public GE_PrimVertices {
+    public:
+        int unk18;
+        int unk34;
+        GE_PS2PrimVertices(void);
+
+        virtual ~GE_PS2PrimVertices();
+        void func_002A5880(void);
+};
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -305,7 +315,7 @@ void func_001D6A10(void);
 
 
 void func_001DEF10(void);
-
+void func_002C0340(void);
 int func_002C8358(s_func_002C8358* arg0);
 
 void func_002967C8(void* arg0, int arg1);
@@ -319,7 +329,7 @@ int func_002963F8();
 int func_002964C0();
 int func_002A48A8(void);
 int func_002A48B0(void);
-
+void func_002BF2D0(void);
 //void func_003481C8(int);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
 void func_002C3D80();
@@ -572,6 +582,8 @@ Status SimObj_Initialise(void);
 void SimObj_Finalise(void);
 
 Status StdMem_Initialise(void);
+
+
 
 #endif
 

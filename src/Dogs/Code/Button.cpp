@@ -14,7 +14,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370); // button actio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0); // button action?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550); /* return (int) this->unk5EC (button type/height) */
+#ifdef NON_MATCHING
+int Button::func_0010A550() {
+    return this->unk5EC;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550__6Button); /* return (int) this->unk5EC (button type/height) */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 

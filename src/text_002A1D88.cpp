@@ -50,8 +50,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4218);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4230);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44C8); /* D_0045214C = 0;
-D_00452144 = 0; */
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44C8);
+/*
+D_0045214C = 0;
+D_00452144 = 0;
+*/
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A44D8);
 

@@ -6,11 +6,25 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001801A0); /* Whee
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle); /* WheeledVehicle::~WheeledVehicle */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528); /* (float) a0->unk6B0 = f12 */
+#ifdef NON_MATCHING
+void WheeledVehicle::func_00180528(float arg) {
+    this->unk6B0 = arg;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530); /* a0->unk62c = 1 */
+void WheeledVehicle::func_00180530() {
+    this->unk62C = 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540); /* a0->unk62c = 0 */
+void WheeledVehicle::func_00180540() {
+    this->unk62C = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528__14WheeledVehiclef); /* (float) a0->unk6B0 = f12 */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530__14WheeledVehicle); /* a0->unk62c = 1 */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540__14WheeledVehicle); /* a0->unk62c = 0 */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548);
 

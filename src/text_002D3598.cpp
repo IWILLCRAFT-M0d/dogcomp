@@ -27,7 +27,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442D68);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __11DebugWindow);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4290); /* DebugWindow::~DebugWindow*/
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_11DebugWindow);
 
 void func_002D42D8() {
     return;
@@ -491,7 +491,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8750); // in Endian.cpp
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D87E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8850);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_16Endian_ExpandMem);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D88A8);
 
@@ -499,7 +499,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D89A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8AA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8AE8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_11EndianFile);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8B48);
 
@@ -531,7 +531,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9268);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9270);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9278);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_10Endian_Mem);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf10Endian_Mem);
 
@@ -565,7 +565,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9468);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443D98); /* "11Endian_File" */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9488);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf29Endian_GentleModificationFile);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9520);
 

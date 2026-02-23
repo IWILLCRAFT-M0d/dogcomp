@@ -22,13 +22,21 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039D910); /* "Animation" 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010AE50); /* Camera::Camera */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B410);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_6Camera);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B6F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B7F8);
 
+
+#ifdef NON_MATCHING
+void Camera::func_0010B990() {
+    this->unk5D0 = 1;
+}
+#else
+//INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B990__6Camera);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B990);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B9A0); // smellovision nose rendering
 
@@ -264,13 +272,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118118);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001181C0);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039DFF8); /* s_Failed_to_get_camera_mount_objec_0039dff8 */
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039DFF8); /* "Failed to get camera mount object in CutModeSetFocus" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001181E0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039E068); /* "Failed to get camera mount interface in CutModeSetFocus" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039E0A0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039E0A0); /* "Failed to get camera mount object in CutModeSetPos" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118348);
 
@@ -346,11 +354,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001209E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00120D90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001211D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001211D0); /* DefaultIndexUpdater */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001214A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001214A0); /* CameraYawMarker */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00121548);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_15CameraYawMarker);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001215A8);
 
@@ -432,15 +440,15 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039FE18);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_0039FE30);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_003A00E8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", _vt$20CameraSpecialHitTest);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", D_003A0118);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Camera", _vt$13GenericObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00121B90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", __tf13GenericObject);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122028);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_13GenericObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122058);
 
@@ -556,7 +564,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", __tf17CameraMountAction);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122B28);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122BA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_15CameraNUDAction);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", __tf15CameraNUDAction);
 

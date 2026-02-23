@@ -2,7 +2,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016BD80); /* Slidable::Slidable */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016BED0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", _$_8Slidable);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Slidable", D_003C2900);
 

@@ -96,7 +96,7 @@ GE_PrimVertices::GE_PrimVertices(int arg1, int arg2, int arg3) {
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A60D0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A60D0); /* a0->unk8 = a0->unk8 + 1; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A60E0);
 
@@ -219,9 +219,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6AB8); /* GE_PS2PrimCache
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PS2PrimCache);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7008);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7008); /* return a0->unk44 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7010);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7010); /* return a0->unk48 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7018);
 
@@ -327,11 +327,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC540);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC548);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC558);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC558); /* return (short) a0->unk62 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC560);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC560); /* return a0->unk40 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC568);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC568); /* return a0->unk1C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC570);
 
@@ -409,7 +409,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B10B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B10D8); /* GE_GSPageMgr */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B11A0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_12GE_GSPageMgr);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1200);
 
@@ -936,7 +936,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF198);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF290);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF2D0);
+void func_002BF2D0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF2D8);
 
@@ -982,7 +984,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", __11GE_DMAPktRc1i69);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C0320);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C0340);
+void func_002C0340() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C0348);
 
@@ -1364,7 +1368,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7520);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C75A0); // camera rendering?
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7A48);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7A48); /* a0->unkD70 = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7A50);
 

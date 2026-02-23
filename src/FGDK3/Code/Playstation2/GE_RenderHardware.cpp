@@ -2,7 +2,7 @@
 #include <libgraph.h>
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
 #include <stdio.h>
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", _$_20GE_PS2RenderHardware); /* ~GE_PS2RenderHardware */
 
@@ -64,7 +64,7 @@ int func_002A5300(void) {
   return 6;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5308);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5308); /* return D_0045216C */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5310);
 

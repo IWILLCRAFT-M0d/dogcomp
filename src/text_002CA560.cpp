@@ -84,7 +84,6 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CAAB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CAB88);
 
-//INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABB0); /* GE_PrimCache */
 GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, void* arg6, int arg7) {
     this->m_unk0 = arg1;
     this->m_unk1 = 1;

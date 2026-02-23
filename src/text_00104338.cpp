@@ -2,7 +2,7 @@
 #include "unk.h"
 INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104338);
 
-INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104350);
+INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104350); /* Aperture */
 
 INCLUDE_ASM("asm/nonmatchings/text_00104338", func_001043D8);
 
@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104448);
 
 INCLUDE_ASM("asm/nonmatchings/text_00104338", func_001044C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104668);
+INCLUDE_ASM("asm/nonmatchings/text_00104338", func_00104668); /* DiscAperture */
 
 INCLUDE_ASM("asm/nonmatchings/text_00104338", func_001046A8);
 

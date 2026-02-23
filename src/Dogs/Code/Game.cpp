@@ -27,11 +27,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B23D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2430);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2458);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2458); /* a0->unk20 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2460);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2460); /* float (a0->unk24) = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2468);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2468); /* float (a0->unk28) = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2470);
 
@@ -116,7 +116,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI optio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __13Game_Documentff); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6C90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_13Game_Document);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8);
 
@@ -130,7 +130,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C70C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7140);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C71E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C71E8); // pickup object action?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7300);
 

@@ -224,7 +224,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001879A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187EC8);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$21PersistantDataUpdater);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$21PersistentDataUpdater);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D0278);
 
@@ -334,9 +334,18 @@ float func_00188490(void) {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A0); /* return a0->unk5A8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A8); /* a0->unk5AC = a0->unk5AC + 1 */
+#ifdef NON_MATCHING
+void WorldObject::func_001884A8() {
+    this->unk5AC = this->unk5AC + 1;
+}
+void WorldObject::func_001884B8() {
+    this->unk5AC = this->unk5AC - 1;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A8__11WorldObject); /* a0->unk5AC = a0->unk5AC + 1 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884B8__11WorldObject); /* a0-unk5AC = a0->unk5AC - 1 */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884B8); /* a0-unk5AC = a0->unk5AC - 1 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884C8); /* return a0->unk494 */
 
@@ -368,21 +377,21 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188568);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf18AnimPosProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001885E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf22BoneManagerProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188630);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf18AnimVarProvider_IF);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf17WalkerProvider_IF);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf20WalkingFootRayHit_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188720); /* __tft16Tree34Enumerator1Z11SimObj_Base */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tft16Tree34Enumerator1Z11SimObj_Base);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188760);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tft9Interface1Z18AnimPosProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001887A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tft9Interface1Z22BoneManagerProvider_IF);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001887E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tft9Interface1Z18AnimVarProvider_IF);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tft9Interface1Z17WalkerProvider_IF);
 

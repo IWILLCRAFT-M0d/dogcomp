@@ -9,10 +9,13 @@ D_004537F0 = 0x004537f0; // type:s32
 
 // Functions
 entry = 0x00100008; // type:func
+_$_14AnimatedObject = 0x00100340; // type:func
+_$_30AnimatedObject_ComplexPlatform = 0x00102DB8; // type:func
 __tf17AnimatedObject_IF = 0x00103e68;
 __tf14AnimatedObject = 0x00103eb8;
 __tf22AnimatedObject_Complex = 0x00103f58;
 __tf30AnimatedObject_ComplexPlatform = 0x00103fb8;
+_$_11SlotMachine = 0x00104060; // type:func
 __tf11SlotMachine = 0x00104118;
 __tf33AnimatedObject_ComplexHitReceiver = 0x00104178;
 __tf18SimObj_HitFilter = 0x001041d8;
@@ -38,10 +41,14 @@ __tf7Boulder = 0x00109e80;
 // Button
 __6ButtonPvPvis = 0x00109F40; // type:func
 _$_6Button = 0x0010A050; // type:func
+func_0010A550__6Button = 0x0010A550; // type:func
 __tf6Button = 0x0010a698;
 
-
+_$_6Camera = 0x0010B410; // type:func
+//func_0010B990__6Camera = 0x0010B900; // type:func
+_$_15CameraYawMarker = 0x00121548; // type:func
 __tf13GenericObject = 0x00121fe8;
+_$_13GenericObject = 0x00122028; // type:func
 __tf20CameraSpecialHitTest = 0x001220f8;
 __tf6Camera = 0x00122148;
 __tf11CameraMount = 0x00122238;
@@ -50,6 +57,7 @@ __tf29CamGroundAvoidanceHitReceiver = 0x00122458;
 __tf34FollowPlayerCameraSpecialHitResult = 0x00122718;
 __tf16CameraModeAction = 0x001229F8;
 __tf17CameraMountAction = 0x00122AD8;
+_$_15CameraNUDAction = 0x00122BA8; // type:func
 __tf15CameraNUDAction = 0x00122BC8;
 __tf16CameraNextAction = 0x00122CB8;
 __tf17CameraZonesAction = 0x00122D98;
@@ -72,6 +80,7 @@ __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
 
 // Dog
 _$_3Dog = 0x0012DCE0; // type:func
+func_0012E240__3Dog = 0x0012E240; // type:func
 __tf7Jump_IF = 0x0013a008;
 __tf23AnimationMovedObject_IF = 0x0013a058;
 
@@ -200,7 +209,7 @@ __tf6Skidoo = 0x0016AE60;
 _$_11SkiLiftSeat = 0x0016B040; // type:func
 __tf11SkiLiftSeat = 0x0016BCF8;
 
-
+_$_8Slidable = 0x0016BED0; // type:func
 __tf8Slidable = 0x0016d870;
 
 _$_10SmallThing = 0x0016DAA8; // type:func
@@ -232,6 +241,9 @@ __tf17StaticWaterRipple = 0x0017FF90;
 __tf13RippleManager = 0x00180030;
 __tf20CurtainSplashManager = 0x00180110;
 _$_14WheeledVehicle = 0x001803E8; // type:func
+func_00180528__14WheeledVehiclef = 0x00180528; // type:func
+func_00180530__14WheeledVehicle = 0x00180530; // type:func
+func_00180540__14WheeledVehicle = 0x00180540; // type:func
 __tf14WheeledVehicle = 0x001817a8;
 __tf25WheeledVehicleHitReceiver = 0x00181878;
 // WorldObj.cpp
@@ -242,10 +254,18 @@ WorldObj_Finalise__Fv = 0x001819c8; // type:func
 __11WorldObjectPvPvis = 0x00181CB8; // type:func
 _$_11WorldObject = 0x001820D8; // type:func
 __tf11WorldObject = 0x00188120;
+func_001884A8__11WorldObject = 0x001884A8; // type:func
+func_001884B8__11WorldObject = 0x001884B8; // type:func
 __tf21PersistentDataUpdater = 0x00188518;
 __tf18AnimPosProvider_IF = 0x00188590;
+__tf22BoneManagerProvider_IF = 0x001885E0;
+__tf18AnimVarProvider_IF = 0x00188630;
 __tf17WalkerProvider_IF = 0x00188680;
 __tf20WalkingFootRayHit_IF = 0x001886D0;
+__tft16Tree34Enumerator1Z11SimObj_Base = 0x00188720;
+__tft9Interface1Z18AnimPosProvider_IF = 0x00188760;
+__tft9Interface1Z22BoneManagerProvider_IF = 0x001887A0;
+__tft9Interface1Z18AnimVarProvider_IF = 0x001887E0;
 __tft9Interface1Z17WalkerProvider_IF = 0x00188820;
 __tft9Interface1Z20WalkingFootRayHit_IF = 0x00188860;
 __tf4Zone = 0x0018A018;
@@ -339,7 +359,7 @@ _$_9DogScript = 0x001AF328; // type:func
 __tf9DogScript = 0x001af348;
 
 __13Game_Documentff = 0x001c61f8; // type:func
-
+_$_13Game_Document = 0x001C6C90; // type:func
 __tf18SetLevelEnumerator = 0x001af3c0;
 __9Element3DPvs = 0x001AF470; // type:func
 Render__9Element3DPv = 0x001AFD78; // type:func
@@ -899,6 +919,7 @@ __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
 
 _$_18GE_PS2PrimVertices = 0x002A55B8; // type:func
+
 _$_17GE_PS2PrimIndices = 0x002A5D38; // type:func
 __15GE_PrimVerticesiii = 0x002A6070; // type:func
 _$_15GE_PrimVertices = 0x002A60A0; // type:func
@@ -915,6 +936,7 @@ __tf23GE_LoadedPS2PrimIndices = 0x002A68A8;
 _$_15GE_PS2PrimCache = 0x002A6F18; // type:func
 __tf24GE_PS2PrimCacheDMABuffer = 0x002AC150;
 __tf15GE_PS2PrimCache = 0x002AC410;
+_$_12GE_GSPageMgr = 0x002B11A0; // type:func
 __tf12GE_GSPageMgr = 0x002b1b30;
 __18GE_TextureStylePkt = 0x002B2040; // type:func
 __tf18GE_TextureStylePkt = 0x002bfa58;
@@ -945,7 +967,7 @@ _$_9GameShell = 0x002D3188; // type:func
 __tf9GameShell = 0x002d32c0;
 __16DebugEnvironment = 0x002d3808; // type:func
 __11DebugWindow = 0x002D3988; // type:func
-
+_$_11DebugWindow = 0x002D4290; // type:func
 DDE_FatalError = 0x002d5c78; // type:func
 __tf16DebugEnvironment = 0x002d5d18;
 _$_15MessageStreamUI = 0x002D5DD0; // type:func
@@ -966,13 +988,20 @@ FontRes_Finalise__Fv = 0x002d6a38; // type:func
 __tf14Font_Resources = 0x002d6b38;
 __tf18Resource1Z11Font_Header = 0x002d6b98;
 _$_6Endian = 0x002D7950; // type:func
+_$_16Endian_ExpandMem = 0x002D8850; // type:func
+_$_11EndianFile = 0x002D8AE8; // type:func
 __tf6Endian = 0x002d9210;
+_$_10Endian_Mem = 0x002D9278; // type:func
 __tf10Endian_Mem = 0x002d9298;
 __tf16Endian_ExpandMem = 0x002d9328;
 __tf11Endian_File = 0x002d93f8;
+__tf29Endian_GentleModificationFile = 0x002D9488; // type:func
 __12LiveEditablePcPc = 0x002D9560; // type:func
 _$_15EditableManager = 0x002D9980; // type:func
 __tf15EditableManager = 0x002DA518;
+__tf23EditableSelectionDialog = 0x002DA598;
+__tf20EditableCreateAction = 0x002DA648;
+_$_17Widget_FilterText = 0x002DA710; // type:func
 __tf17Widget_FilterText = 0x002da768;
 __tf9DrawShape = 0x002de650;
 __tf22DrawShape_TexturedQuad = 0x002de690;
@@ -1153,7 +1182,9 @@ __Q24File6Access = 0x00302070; // type:func
 _$_Q24File6Access = 0x003020B0; // type:func
 __Q28FileFind6Access = 0x00302150; // type:func
 _$_Q28FileFind6Access = 0x00302190; // type:func
+__tfQ24File6Access = 0x00302AD0;
 __tfQ28FileFind6Access = 0x00302B28; // type:func
+
 File_CD_InternalInitialise__Fv = 0x00302da0; // type:func
 File_CD_InternalFinalise__Fv = 0x00302e28; // type:func
 File_CD_Initialise__Fv = 0x00302E48; // type:func
@@ -1166,6 +1197,7 @@ __17FileSystemDisc_CD = 0x003047A0; // type:func
 _$_12File_MemRead = 0x00304BC0; // type:func
 _$_Q24File11OpenWatcher = 0x00305658; // type:func
 File_InternalInitialise__Fv = 0x00307d30; // type:func
+File_InternalFinalise__Fv = 0x00307E58; // type:func
 File_Initialise__Fv = 0x00307e78; // type:func
 File_Finalise__Fv = 0x00307ec8; // type:func
 __tfQ24File11OpenWatcher = 0x00308078;
@@ -1394,6 +1426,8 @@ _vt$17AnimatedObject_IF = 0x00395a80;
 _vt$12DiscAperture = 0x00395DD0;
 _vt$8Aperture = 0x00395E18;
 _vt$17PHitPrimDisplayer = 0x00397910;
+_vt$20CameraSpecialHitTest = 0x003A00E8;
+_vt$13GenericObject = 0x003A0118;
 _vt$19Particle_PlotObject = 0x003b02e8;
 _vt$24PersonVehicleHitReceiver = 0x003b1e48;
 _vt$23PersonHitSizeCalculator = 0x003b1e68;
@@ -1407,8 +1441,9 @@ _vt$10DebugID_IF = 0x003bf578;
 _vt$15BallHitReceiver = 0x003C7C90;
 _vt$5WheeledVehicleHitReceiver = 0x003CE4A0;
 D_003CFCD0 = 0x003cfcd0;
-_vt$21PersistantDataUpdater = 0x003D0260;
+_vt$21PersistentDataUpdater = 0x003D0260;
 _vt$11WorldObject = 0x003d15b0;
+_vt$20SpeechAniTextBigHint = 0x003D2948;
 _vt$Q212BookMetaphor27ChangeLevelBackgroundThread = 0x003D33C8;
 _vt$Q212BookMetaphor24SaveGameBackgroundThread = 0x003D33F0;
 _vt$Q212BookMetaphor24LoadGameBackgroundThread = 0x003D3418;

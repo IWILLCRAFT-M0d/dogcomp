@@ -25,7 +25,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012DFE8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E050);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E240);
+float Dog::func_0012E240() {
+    return 30.0f;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E250);
 

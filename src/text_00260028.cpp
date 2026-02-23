@@ -4,7 +4,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-// split
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260028);
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260060);
