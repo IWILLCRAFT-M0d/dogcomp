@@ -258,6 +258,14 @@ namespace File {
     };
 };
 
+namespace FileFind {
+    class Access {
+        public:
+            Access(void);
+            virtual ~Access();
+    };
+};
+
 class File_FileDescriptor : public File::Access {
     public:
         int m_fd;
@@ -268,11 +276,26 @@ class File_FileDescriptor : public File::Access {
         int func_003148E8(void);
 };
 
+// class GE_TextureStylePkt {
+//     public:
+//         int unk4;
+//         char unk5;
+//         short unk6;
+//         int unk8;
+//         int unk10;
+//         GE_TextureStylePkt(void);
+//         virtual ~GE_TextureStylePkt();
+// };
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+void func_00104788(void);
 void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
-
+// bookmetaphor
+void func_0019E378(void);
+int func_0019E3A8(void);
+int func_0019E3B0(void);
 
 //void func_001AD180(void);
 void func_001AD560(void);
@@ -287,8 +310,11 @@ int func_002C8358(s_func_002C8358* arg0);
 
 void func_002967C8(void* arg0, int arg1);
 void func_00247B88(int*);
+unsigned int func_002684E8(unsigned int, unsigned int);
+unsigned int func_002684F8(unsigned int, unsigned int);
 Status func_0026CF60(void);
 Status func_0026CF98(void);
+int func_0026D120(void);
 int func_002963F8();
 int func_002964C0();
 int func_002A48A8(void);
@@ -309,7 +335,7 @@ int func_002C9F10(void);
 void func_002C9FB0(void);
 void func_002C9FB8(void);
 int func_002C9FC0(void);
-
+int func_002CA958(void);
 
 
 // text_001E14F8
@@ -389,6 +415,7 @@ int func_0022D470(void);
 void func_002FBEE8(void);
 
 // text_0026C5C8
+void func_002606D0(void);
 void func_0026F8B8(void);
 float func_002704F8(void);
 void func_002717B8(void);
@@ -442,6 +469,8 @@ int func_00274B00(char* name);
 int func_00275288(int arg0, int arg1, int ovlType, int arg3);
 void func_002757F0(void);
 int func_00290D08(void);
+void func_00291770(void);
+void func_00291778(void);
 void func_002963E8(void);
 int func_002963F0(void);
 int func_00296478(void);
@@ -473,6 +502,9 @@ void func_002A65D0(void);
 void func_002AC220(void);
 int func_002AC4A8(void);
 char* func_002D7738(int);
+int func_002DF488(void);
+int func_002DF9D8(void);
+void func_002DFA18(void);
 
 float func_002EFEE0(float, float, float, float, float);
 int func_002F0E50(void);
@@ -516,8 +548,17 @@ Status func_001D5E90(void);
 Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 
-
+int func_002D1BC8(void);
+int func_002D1C78(void);
+int func_002D1D58(void);
+void func_002D1D60(void);
+void func_002D1D68(void);
+void func_002D2250(void);
+void func_002D2258(void);
+void func_002D2328(void);
+float func_002D2350(void);
 void* func_002D3360(void*);
+
 int func_001FD558(char* arg0, char* arg1);
 #ifdef __cplusplus
 }

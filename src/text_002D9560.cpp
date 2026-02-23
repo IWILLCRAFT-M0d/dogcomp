@@ -14,9 +14,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9658);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9848);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D98C8);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D98C8); /* EditableManager */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9980);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_15EditableManager);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D99F8);
 
@@ -48,13 +48,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D9560", _vt$12LiveEditable);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D9560", _vt$23EditableSelectionDialog);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002D9560", D_004441A0);
+INCLUDE_RODATA("asm/nonmatchings/text_002D9560", _vt$15EditableManager);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA518);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf15EditableManager);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA568);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA570);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA570); /* return a0->unk2C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA578);
 
@@ -82,7 +82,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAA0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB10);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB10); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB18);
 

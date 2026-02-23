@@ -22,7 +22,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001890B0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189350);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189400);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189400); /* ~ZoneFromNavGraph */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Zone", D_003D1C58); /* "Position: " */
 
@@ -68,26 +68,27 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", __tf4Zone);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A070);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A078);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A078); /* D_0044DD64 = a0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A080);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A080); /* return D_0044DD64 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A088);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A098);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A098); /* return D_0044DD70 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", __tf10ZoneRadius);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A138);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A138); /* return (float) a0->unk120 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A140);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A140); /* return D_0044DD78 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", __tf16ZoneFromNavGraph);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A1E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A1E0); /* return D_0044DD98 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A1E8);
 
+// split (ActorPersist?)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A208);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_0018A238);

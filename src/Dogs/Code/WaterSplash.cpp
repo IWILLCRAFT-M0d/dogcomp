@@ -82,13 +82,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FF20); /* (float)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", __tf18WaterSplashManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FF80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FF80); /* return D_0044DBCC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FF88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FF88); /* return D_0044DBC0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", __tf17StaticWaterRipple);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FFE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FFE8); /* return D_0044DBC8 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017FFF0);
 

@@ -191,7 +191,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033B610);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033C118);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033C220);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", vsprintf);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033C278);
 
@@ -563,7 +563,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003414C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003414D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003414E0);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", FlushCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003414F0);
 

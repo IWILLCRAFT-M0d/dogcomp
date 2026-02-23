@@ -1,4 +1,5 @@
 #include "common.h"
+// used by slidables and haybales
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/UtilAnimComps", func_002E6550); /* MoveObjectComponent */
 

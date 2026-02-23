@@ -58,17 +58,17 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Boulder", D_0039BF28);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109CF8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109D48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109D48); /* __tf28SimObj_SphereHitPrimReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109D98);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109DF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109DF0); /* __tf25SimObj_RayHitPrimReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109E40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", __tf7Boulder);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109ED8); /* return D_0044c908; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109ED8); /* return D_0044C908; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00109EE0);
 

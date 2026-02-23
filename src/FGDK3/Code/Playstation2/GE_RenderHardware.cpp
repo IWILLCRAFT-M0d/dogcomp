@@ -1,7 +1,7 @@
 #include "common.h"
 #include <libgraph.h>
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
-
+#include <stdio.h>
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware); /* GE_PS2RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", _$_20GE_PS2RenderHardware); /* ~GE_PS2RenderHardware */

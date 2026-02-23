@@ -2,13 +2,13 @@
 #include "unk.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E6FF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E6FF0); /* internalinitialise? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E7078);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E7078); /* internalfinalise */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E70B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E70B0); /* initialise */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E70E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E70E0); /* finalise */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/MusicServices", func_001E7100);
 

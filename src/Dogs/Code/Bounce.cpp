@@ -42,9 +42,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F0D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F0F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F0F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F0F8); /* a0->unk4 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F100);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F100); /* return a0->unkC */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F108);
 

@@ -14,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC08);
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC20);
 
-INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC90);
+INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC90); /* (float) a0->unkC = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC98);
 
@@ -90,7 +90,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_002421A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_002421C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_002421D0);
+INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_002421D0); /* return (float) a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_002421D8);
 

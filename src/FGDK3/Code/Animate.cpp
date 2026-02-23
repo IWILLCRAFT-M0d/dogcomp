@@ -35,9 +35,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4200);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Animate", _vt$22WeightSettingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4248);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf22WeightSettingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4298);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4298); /* AnimationTimeBase */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_17AnimationTimeBase);
 
@@ -116,11 +116,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5850);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5870);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5890);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5890); /* Animation::SetValue ? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5948);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80); /* Animation::SetPosition ? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5B88);
 
@@ -278,13 +278,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf23AnimationWeightModifier
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FA8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FB8); /* return (float) a0->unk18 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FC0); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FC8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FC8); /* return a0->unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FD0); /* a0->unk14 = 1; */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf9Animation);
 
@@ -292,29 +292,29 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7020);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7038);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7058);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7058); /* return a0->unkC */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7060);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7060); /* return a0->unkC */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7068);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7068); /* return a0->unk98 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7070);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7070); /* return a0->unk98 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7078);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7098);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7098); /* return (float) a0-unkD8 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70A0); /* return (float) a0-unkEC */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70A8); /* return (float) a0-unk9C */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70B0); /* return a0->unkFC */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70B8); /* return a0->unk130 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70C0); /* return (float) a0-unkF8 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70C8); /* return a0->unkF4 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F70D0);
 
@@ -340,13 +340,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71A0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71C0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71C8); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71D0); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71D8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71D8); /* return (float) a0-unkE4 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71E0); /* return (float) a0-unkE8 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71E8);
 

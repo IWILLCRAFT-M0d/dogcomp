@@ -8,9 +8,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle); /
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528); /* (float) a0->unk6B0 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530); /* unk62c = 1 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530); /* a0->unk62c = 1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540); /* unk62c = 0 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540); /* a0->unk62c = 0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548);
 

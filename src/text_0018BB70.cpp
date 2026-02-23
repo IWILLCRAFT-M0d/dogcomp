@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018BB70); /* tempR_AnimationComponent::CreateComponents */
 
-INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018C5C8);
+INCLUDE_ASM("asm/nonmatchings/text_0018BB70", _$_39VehicleNavDirectionalBackwardsAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0018BB70", D_003D28C0);
 

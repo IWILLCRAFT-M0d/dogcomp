@@ -3,7 +3,7 @@
 #include "unk.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0558);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0558); /* D_00452B60 = 1 (Walking_EnableIK) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0560);
 
@@ -19,13 +19,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0A20);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0AD0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0B10);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0B10); /* AnimVarWalkingAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0BA0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0BA0); /* AnimPosWalkingAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0C30);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0C30); /* AnimPosWorldWalkingAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0CC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0CC0); /* AnimPosWorldAFSWalkingAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0D50); /* AnimPosLegAnimation */
 
@@ -49,7 +49,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E1200);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E1278); /* LegIKAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E15B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_14LegIKAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E1610);
 
@@ -67,7 +67,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E23B0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E2460);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E27E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_21IKSingleStepAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E2810);
 
@@ -87,7 +87,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E31A8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E31E0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E3C78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_17IKAmblerAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E3D30);
 
@@ -103,13 +103,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E4F40);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5080);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5208);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5208); /* TurnFlexAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5550);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_17TurnFlexAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8); // turnflexanimation animate?
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", _vt$1717TurnFlexAnimation);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", _vt$17TurnFlexAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", _vt$17IKAmblerAnimation);
 

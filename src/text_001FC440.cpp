@@ -3,7 +3,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC440);
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598); // debug actor names?
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0);
 
@@ -25,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC7F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC858);
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC8C0);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC8C0); // get navgraph?
 
 // overlay types and names
 INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB868); /* "Creature" */
@@ -13068,29 +13068,29 @@ INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_0040B520); /* "FinalePounder2
 
 INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_0040B530);
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC928);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC928); // overlayToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCA10);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCA10); // overlayNameToId
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCB38);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCB38); // actorToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCC20);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCC20); // actorNameToId
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCD48);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCD48); // creatureTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCE28);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCE28); // creatureNameToId
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCF48);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCF48); // scriptTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD028);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD028); // scriptNameToId
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD148);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD148); // shapeTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD228);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD228); // shapeNameToId
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD348);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD348); // navgraphTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD428);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD428); // navgraphNameToId
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD548);
 

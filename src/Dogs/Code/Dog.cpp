@@ -43,7 +43,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E998);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E9C8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EB78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EB78); // dog mesh animation?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0);
 

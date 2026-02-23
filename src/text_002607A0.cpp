@@ -613,9 +613,14 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002684C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002684D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002684E8);
+unsigned int func_002684E8(unsigned int arg0, unsigned int arg1) {
+    return (arg1 >= arg0) ? arg1 : arg0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002684F8);
+unsigned int func_002684F8(unsigned int arg0, unsigned int arg1) {
+    return (arg0 >= arg1) ? arg1 : arg0;
+}
+
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00438E98);
 
@@ -695,7 +700,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf12Uint16Editor);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf11Int32Editor);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002686E8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf12UInt32Editor);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf10BoolEditor);
 

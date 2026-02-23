@@ -434,9 +434,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D77A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7808);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0); /* endian */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7950);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_6Endian);
 
 void func_002D7980(void) {
     return;

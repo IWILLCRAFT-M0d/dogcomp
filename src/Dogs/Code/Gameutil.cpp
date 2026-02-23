@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA440);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA588);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA8F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA8F8); // ground collision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DAC68);
 
@@ -35,7 +35,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB190);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB388);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB518);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB518); // level function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB8B0);
 
@@ -81,13 +81,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC070);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC0D0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC1F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC1F0); // control paw updater?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC588);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC620);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC698);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DC698); // 3d number icons?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCA88);
 
@@ -105,7 +105,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCDC8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCE18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCE18); // smellovision ui rendering?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD0B8);
 

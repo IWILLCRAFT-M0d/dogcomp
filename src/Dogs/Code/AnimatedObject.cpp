@@ -216,7 +216,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103F50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf22AnimatedObject_Complex);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103FB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103FB0); /* return D_0044C768 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B38);
 
@@ -232,7 +232,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf11SlotMachine);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104170);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104170); /* return D_0044C780 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf33AnimatedObject_ComplexHitReceiver);
 

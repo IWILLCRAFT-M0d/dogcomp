@@ -98,7 +98,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002783A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002784C8); /* __7PointerPv Pointer::Pointer */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278568);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", _$_7Pointer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278608);
 
@@ -122,9 +122,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D30);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279000);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279000); /* JoystickPointer */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002791C8);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", _$_15JoystickPointer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279238);
 
@@ -136,29 +136,29 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", __tf7Pointer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279618);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279630);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279630); /* return (float) a0-unk8 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279638);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279638); /* return (float) a0-unkC */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279640);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279640); /* return (float) a0-unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279648);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279648); /* return (float) a0-unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279650);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279650); /* return (float) a0-unk18 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279658);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279658); /* return (float) a0-unk1C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279660);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279680);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279680); /* a0-unk54 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279688);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279688); /* a0-unk48 = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279690);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002796B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002796D0);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", _$_15StandardPointer);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002775D0", _vt$15JoystickPointer);
 

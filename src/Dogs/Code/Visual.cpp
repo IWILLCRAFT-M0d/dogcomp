@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236320);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236360);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002363B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002363B0); /* (float) a0->unkEC = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002363B8);
 
@@ -208,13 +208,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E568);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", __tf14Visual_Graphic);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5D8); /* return a0->unkE0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5E0); /* return a0->unkE4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5E8); /* a0->unk104 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023E5F0); /* return a0->unk104 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", __tf14Visual_Counter);
 

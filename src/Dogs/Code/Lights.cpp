@@ -62,7 +62,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001415F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141A10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141A40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141A40); // lighting function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141B50);
 

@@ -10,7 +10,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A398);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A650);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A840);
+float func_0014A840() {
+    return 100.0f;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A850); // accesory function
 
@@ -108,7 +110,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CC08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CC08); /* return D_0044D2E8 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf23PersonHitSizeCalculator);
 

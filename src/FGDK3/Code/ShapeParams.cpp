@@ -1,6 +1,7 @@
 #include "common.h"
 #include "unk.h"
 
+#include "FGDK3/ShapeParams.h"
 //INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __19ShapeParams_Dynamic);
 ShapeParams_Dynamic::ShapeParams_Dynamic() {
 
@@ -13,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B760); /* setsize ? */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7B8); /* __tf11ShapeParams */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7F8);
 
@@ -33,7 +34,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BA18);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BB10);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BEC0);
+void func_0030BEC0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BEC8);
 

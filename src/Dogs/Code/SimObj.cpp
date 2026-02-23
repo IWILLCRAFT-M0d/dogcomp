@@ -83,7 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001627F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162880);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001629A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_24SimObj_UniverseLandscape); /* ~SimObj_UniverseLandscape */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162A20);
 

@@ -19,12 +19,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00171AC8);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_001721A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172870);
+/*
+float func_0029A600(float arg0, float arg1) {
+    return (arg1 >= arg0) ? arg1 : arg0;
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172890);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", __tf5Smell);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172A28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172A28); /* return D_0044D968 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172A30);
 

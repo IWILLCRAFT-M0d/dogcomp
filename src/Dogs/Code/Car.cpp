@@ -2,7 +2,7 @@
 
 #include "Dogs/Car.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00122F50);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00122F50); /* Car */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", _$_3Car);
 

@@ -29,7 +29,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260660);
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260668);
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002606D0); /* return; */
+void func_002606D0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002606D8);
 

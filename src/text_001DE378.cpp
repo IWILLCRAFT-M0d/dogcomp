@@ -55,7 +55,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E16B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E1850);
 
-INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E18E0);
+INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E18E0); // slidable collision?
 
 INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E1D30);
 
@@ -66,7 +66,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001DE378", func_001E25C8);
 #ifdef NON_MATCHING
 
 Status Landscape_InternalInitialise(void) {
-    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Landscape.cpp", 0xc3c);
+    return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Landscape.cpp", 3132);
 }
 
 #else

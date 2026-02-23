@@ -65,7 +65,7 @@ CATEGORY_MAP = {
 O0_SPLITS = [
     "src/FGDK3/Code/Playstation2/Music.cpp",
     "src/FGDK3/Code/Playstation2/GameShell.cpp",
-    "src/text_002FCF70.cpp"
+    "src/text_002FCF70.cpp",
     "src/text_00310BE8.cpp"
 ]
 

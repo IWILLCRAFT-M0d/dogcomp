@@ -20,7 +20,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EFEF0);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EFF18);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EFF48);
+/*
+float func_002EFF48(struct foo* arg0) {
+    float temp_f1;
+    float var_f0;
 
+    temp_f1 = arg0->unk0;
+    var_f0 = arg0->unk4;
+    if (var_f0 < temp_f1) {
+        var_f0 = temp_f1;
+    }
+    return var_f0;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EFF68);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0038);

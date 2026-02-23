@@ -9,7 +9,12 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F78);
-
+/*
+int func_00127F78(struct foo* arg0, float fparg0) {
+    arg0->unk5E0 = fparg0;
+    return 0;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F88);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128030);

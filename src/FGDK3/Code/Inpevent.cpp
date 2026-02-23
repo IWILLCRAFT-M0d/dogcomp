@@ -121,9 +121,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA688);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA6D8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA728);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA728); /* InputEvent_Device */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA798);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", _$_17InputEvent_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA7F0);
 
@@ -175,7 +175,7 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpevent", _vt$17InputEvent_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", __tf17InputEvent_Device);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB710);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB710); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", __tfQ224InputEvent_ValueInstance10LocalTimer);
 

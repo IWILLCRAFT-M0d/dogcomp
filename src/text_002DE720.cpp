@@ -14,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE7C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE7E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE858);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE858); /* a0->unk8 = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE860);
 
@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8C8);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8C8); /* return a0->unk8 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8D0);
 
@@ -50,9 +50,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF180);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF320);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF488); /* return 0; */
+int func_002DF488() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF490);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF490); /* _$_15PlaneClipVolume */
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", __tf15PlaneClipVolume); // clipvolume.cpp?
 
@@ -76,7 +78,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF700);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF708);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF790);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF790); /* ~SixPlaneClipVolume */
 
 INCLUDE_RODATA("asm/nonmatchings/text_002DE720", _vt$18SixPlaneClipVolume);
 
@@ -98,11 +100,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF968);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF9A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF9D8); /* return 0; */
+int func_002DF9D8() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF9E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DFA18); /* return; */
+void func_002DFA18() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DFA20);
 

@@ -63,17 +63,17 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AE98);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B028);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B040);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B040); /* TimSrv_Timer */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B0B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", _$_12TimSrv_Timer);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B130);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B198);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B208);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B208); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B210);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B210); /* a0->unk10 = a1 */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", _vt$12TimSrv_Timer);
 

@@ -85,7 +85,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D108);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D110);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D120); /* return 0; */
+int func_0026D120() {
+  return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", func_0026D128);
 

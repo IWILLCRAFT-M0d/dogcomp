@@ -50,7 +50,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00173038);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", __tf8Snowball);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_001731D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_001731D0); /* return D_0044D9C0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_001731D8);
 

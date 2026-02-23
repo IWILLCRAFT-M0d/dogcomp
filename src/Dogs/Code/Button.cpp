@@ -1,4 +1,4 @@
-#include "common.h"
+    #include "common.h"
 
 #include "Dogs/Button.h"
 
@@ -14,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370); // button actio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0); // button action?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550); /* return (int) this->unk5ec (button state?) */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550); /* return (int) this->unk5EC (button type/height) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 

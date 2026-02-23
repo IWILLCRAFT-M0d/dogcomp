@@ -145,7 +145,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026FFB8", _vt$9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf9SavedGame);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00272B00);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00272B00); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00272B08);
 

@@ -25,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018D438);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor11NewGamePage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018D830);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018D830); /* return D_0035D33C (levelid for newgame?) */
 
 int func_0018D840(void) {
     return 0;
@@ -117,7 +117,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F020);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F070);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A0); /* return a0->unk18 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A8);
 
@@ -159,7 +159,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001905C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor10Stats1Page);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190680);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor10Stats1Page);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190788);
 
@@ -177,7 +177,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001916A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q12BookMetaphor12SettingsPage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00191FE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q12BookMetaphor12SettingsPage);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192010);
 
@@ -189,9 +189,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001928A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192CF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193440);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor10CheatsPage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193498);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor10CheatsPage);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193528);
 
@@ -471,13 +471,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __tfQ212BookMetaphor27Cha
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E348);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E378);
+void func_0019E378() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E380);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E3A8);
+int func_0019E3A8() {
+    return 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E3B0);
+int func_0019E3B0() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019E3B8);
 

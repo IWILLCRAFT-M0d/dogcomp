@@ -23,9 +23,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B440);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B550);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B570);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B570); // fish rendering?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B590);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B590); // fish movement?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B640);
 
@@ -33,7 +33,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B790);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BDE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BE70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BE70); // fish jump?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BEB0);
 

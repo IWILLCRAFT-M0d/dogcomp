@@ -149,7 +149,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Containers", D_003DAEA8); /* "9Contai
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __tf13BasketballNet);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AD070);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AD070); /* return D_0044E570 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __tf4Pram);
 

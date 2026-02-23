@@ -17,7 +17,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D7C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D830);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D830); // player animation?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D8A8);
 

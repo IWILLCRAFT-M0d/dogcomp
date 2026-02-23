@@ -12,5 +12,13 @@ class Person : public WorldObject {
         virtual ~Person();
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+float func_0014A840(void); // belongs to person
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

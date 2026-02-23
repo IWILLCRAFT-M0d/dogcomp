@@ -46,9 +46,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C660);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __6WidgetPci); /* Widget::Widget(char*, int) */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_6Widget); /* ~Widget */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_6Widget);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8); /* return a0->unk10 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7D0); /* return 0; */
 

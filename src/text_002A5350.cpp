@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A54E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5568);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A55B8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_18GE_PS2PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5600);
 
@@ -36,7 +36,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A57C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5868);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5880);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5880); /* a0->unk34 = a0->unk34 + 1 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5890);
 
@@ -64,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5C80);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5CC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5D38);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_17GE_PS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5D80);
 
@@ -94,7 +94,7 @@ GE_PrimVertices::GE_PrimVertices(int arg1, int arg2, int arg3) {
     this->m_unkA = 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PrimVertices); /* ~GE_PrimVertices */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A60D0);
 
@@ -111,7 +111,7 @@ GE_PrimIndices::GE_PrimIndices(int arg1, char arg2, int arg3) {
 
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_14GE_PrimIndices); /* GE_PrimIndices::~GE_PrimIndices */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_14GE_PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62D0);
 
@@ -161,29 +161,29 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6670);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6678);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6680);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6680); /* return a0->unk8 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf18GE_PS2PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A66F8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A66F8); /* return a0->unk34 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6700);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6708);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6708); /* return a0->unk14 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6710);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6728);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6748);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6748); /* return a0->unk1A */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf17GE_PS2PrimIndices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C0); /* return a0->unk18 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C8); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67D0); /* ~GE_LoadedPS2PrimVertices */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_24GE_LoadedPS2PrimVertices);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002A5350", _vt$23GE_LoadedPS2PrimIndices);
 
@@ -207,7 +207,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002A5350", D_0043F7E8); /* "17GE_PS2PrimIn
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf24GE_LoadedPS2PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6888); /* GE_LoadedPS2PrimIndices::~GE_LoadedPS2PrimIndices ? */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_23GE_LoadedPS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf23GE_LoadedPS2PrimIndices);
 
@@ -217,7 +217,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A69F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6AB8); /* GE_PS2PrimCache::GE_PS2PrimCache */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6F18); /* GE_PS2PrimCache::~GE_PS2PrimCache */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PS2PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7008);
 
@@ -303,7 +303,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC460);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC470);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC488);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC488); /* return a0->unk70 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC490);
 
@@ -425,7 +425,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B17D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1878);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B18B8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B18B8); // rendering
 
 INCLUDE_RODATA("asm/nonmatchings/text_002A5350", _vt$12GE_GSPageMgr);
 
@@ -435,7 +435,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1B70);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1B98);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF0); /* return a0->unk28 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF8);
 
@@ -449,8 +449,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1E78);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1F40);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2040);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", __18GE_TextureStylePkt);
 
+// GE_TextureStylePkt::GE_TextureStylePkt() {
+//     this->unk6 = 10;
+//     this->unk4 = 1;
+//     this->unk5 = 0;
+//     this->unk8 = 0;
+//     this->unk10 = 0;
+// }
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2070);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B20E0);
@@ -463,7 +470,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B22C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2528);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2548);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2548); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B25B8);
 
@@ -779,7 +786,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B70E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B7110);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B71E8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B71E8); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B7748);
 
@@ -795,15 +802,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B8D40);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B8DB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9288);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9288); // apply texture?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9348);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B94E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9688);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9688); // texture thing
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9958);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9958); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B9A98);
 
@@ -861,7 +868,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BD368);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BD3E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BD468);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BD468); // update texture thing?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BD568);
 
@@ -939,7 +946,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF3E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF8F8);
 
-INCLUDE_RODATA("asm/nonmatchings/text_002A5350", D_00441158);
+INCLUDE_RODATA("asm/nonmatchings/text_002A5350", _vt$18GE_TextureStylePkt);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf18GE_TextureStylePkt);
 
@@ -1263,13 +1270,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C4BC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C4BF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C4C80);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C4C80); // render ui overlay?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5478); /* GE_Device::EndScene ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5500);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5550);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5550); // fog rendering?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5790);
 
@@ -1279,17 +1286,17 @@ void func_002C57E8(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C57F0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C57F0); // get bookmetaphor image?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5910);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5B28);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5B60);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5B60); // render bones?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5DA8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5E90);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5E90); // lighting?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C5ED0);
 
@@ -1311,17 +1318,17 @@ int func_002C6498(void) {
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C64A0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C64A0); // ui element stuff, shadows?
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C66A8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C66A8); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6AC8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C28);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C30);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C30); // landscape textures?
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C60);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C60); // font rendering
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6C98);
 
@@ -1335,11 +1342,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6D98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6DE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6E68);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6E68); // texture thing
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6EF0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6EF0); // texture thing
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6F88);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C6F88); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7030);
 
@@ -1355,7 +1362,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7468);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7520);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C75A0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C75A0); // camera rendering?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7A48);
 
@@ -1363,7 +1370,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7A50);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7CF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7D30);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C7D30); // render scale in book?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C8218); /* GE_Device::SetTarget ? */
 

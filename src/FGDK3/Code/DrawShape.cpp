@@ -5,7 +5,7 @@
 // DrawShape.cpp?
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB38);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB40); /* return D_00452AD4 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB48);
 
