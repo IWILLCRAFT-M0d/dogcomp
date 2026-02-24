@@ -302,6 +302,7 @@ extern "C" {
 #endif
 
 void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
+void func_0018B978(void);
 // bookmetaphor
 void func_00196418(void);
 void func_0019E378(void);

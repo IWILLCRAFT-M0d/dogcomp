@@ -32,7 +32,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002367F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236848);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236868);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236868); /* return a0->unk104 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00236870);
 
@@ -144,17 +144,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238E98);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238EE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238F48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238F48); // called by 00239A30
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Visual", D_00431400); /* "PawController" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238FF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238FF0); // pawcontroller function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239978);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002399D0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A30); // creates pawcontroller icon? (called from Game_Document)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A50);
 

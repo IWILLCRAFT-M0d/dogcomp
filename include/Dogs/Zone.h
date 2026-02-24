@@ -10,13 +10,4 @@ class Zone : public SimObject {
         virtual ~Zone();
 };
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-void func_0018B978(void);
-#ifdef __cplusplus
-}
-#endif
-
 #endif

@@ -16,13 +16,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00179310);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001794A0);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAC48);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAC48); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAC70);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAC70); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CACA0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CACA0); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CACF0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CACF0); /* "NavGraph" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001798B8);
 
@@ -43,8 +43,18 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C188);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C218);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C238);
+/*
+void TugOfWarGod::func_0017C238() {
+    this->unk5F0 = 4
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C248);
+/*
+void TugOfWarGod::func_0017C248() {
+    this->unk5F0 = 4
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C258);
 
@@ -58,7 +68,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C6F0); /* TugOfWarRo
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C7F8);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAF90);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAF90); /* "TugOfWarGod" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C818);
 
@@ -114,23 +124,23 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017CCD8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D0D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D0E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D0E0); /* (float) a0->unk4 = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D0E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __tf11TugOfWarGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D168);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D168); /* return a0->unk634 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D170);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D170); /* return (float) a0->unk604 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D178);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D1F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D1F8); /* return D_0044DB00 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D200);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_15TugOfWarRopeEnd);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __tf15TugOfWarRopeEnd);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8);
 

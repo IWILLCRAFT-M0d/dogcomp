@@ -243,6 +243,8 @@ __tf11SwingBridge = 0x001785C8;
 // TugOfWar
 _$_11TugOfWarGod = 0x00178818; // type:func
 __tf11TugOfWarGod = 0x0017D110;
+_$_15TugOfWarRopeEnd = 0x0017D200; // type:func
+__tf15TugOfWarRopeEnd = 0x0017D2A0;
 __tf18WaterSplashManager = 0x0017FF28;
 __tf17StaticWaterRipple = 0x0017FF90;
 __tf13RippleManager = 0x00180030;
@@ -275,6 +277,7 @@ __tft9Interface1Z22BoneManagerProvider_IF = 0x001887A0;
 __tft9Interface1Z18AnimVarProvider_IF = 0x001887E0;
 __tft9Interface1Z17WalkerProvider_IF = 0x00188820;
 __tft9Interface1Z20WalkingFootRayHit_IF = 0x00188860;
+_$_16ZoneFromNavGraph = 0x00189400; // type:func
 __tf4Zone = 0x0018A018;
 __tf10ZoneRadius = 0x0018A0A0;
 __tf16ZoneFromNavGraph = 0x0018A148;
