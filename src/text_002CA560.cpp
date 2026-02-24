@@ -52,7 +52,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", GE_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", GE_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA950);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA950); /* return D_0045216C */
 
 int func_002CA958() {
     return 1;

@@ -300,9 +300,10 @@ class GE_PS2PrimVertices : public GE_PrimVertices {
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_00104788(void);
+
 void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
 // bookmetaphor
+void func_00196418(void);
 void func_0019E378(void);
 int func_0019E3A8(void);
 int func_0019E3B0(void);

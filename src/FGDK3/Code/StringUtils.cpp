@@ -63,5 +63,5 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B680);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B688);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B690);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B690); /* return a0->unk8 */
 

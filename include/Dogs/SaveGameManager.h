@@ -4,7 +4,7 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 /*
-class BackgroundSaveThread {
+class BackgroundSaveThread : public Thread {
 };
 */
 

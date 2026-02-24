@@ -24,7 +24,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AE38);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", __tf6Skidoo);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEB8); /* return D_0044D820 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEC0);
 

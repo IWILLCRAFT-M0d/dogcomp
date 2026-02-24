@@ -11,7 +11,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __14FileSystemDisc); /* FileSystem
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020); /* FileSystemDisc (unk, unk) */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD130);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_14FileSystemDisc);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD290);
 
@@ -127,7 +127,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF798);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF7E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF820);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_18FileSystemDiscRoot);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$18FileSystemDiscRoot);
 

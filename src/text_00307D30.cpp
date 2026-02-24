@@ -3,8 +3,7 @@
 #include "FGDK3/Playstation2/File_MemCard.h"
 #include "FGDK3/Playstation2/File_CD.h"
 #include "FGDK3/Playstation2/File.h"
-#include <common/libcdvd.h>
-#include <ee/libmc.h>
+
 #include "unk.h"
 
 // Playstation2/File.cpp?
@@ -101,7 +100,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308858);
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003088C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", __10NullAccess);
+/*
+NullAccess::NullAccess {
 
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308980);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003089B8);
@@ -144,21 +147,21 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308FA8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309028);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", __18FileFindAccess_Nul);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00307D30", _vt$8FileFindAccess_Nul);
+INCLUDE_RODATA("asm/nonmatchings/text_00307D30", _vt$18FileFindAccess_Nul);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00307D30", _vt$10NullAccess);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309080);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309080); /* __tfQ24File6Access */
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", _$_10NullAccess);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf10NullAccess);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309198);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", _$_18FileFindAccess_Nul);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf8FileFindAccess_Nul);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf18FileFindAccess_Nul);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309258);
 
@@ -170,9 +173,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309378);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093D0);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093D0); /* "C:/Coding/FGDK3/Code/Common/File.cpp" string referenced */
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309448);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309448); /* "C:/Coding/FGDK3/Code/Common/File.cpp" string referenced */
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094C0);
 
@@ -192,7 +195,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309620);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309680);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003096B0);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003096B0); /* __tfQ28FileFind6Access */
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309708);
 

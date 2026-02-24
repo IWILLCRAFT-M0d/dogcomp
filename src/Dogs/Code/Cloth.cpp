@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Cloth.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00124EF8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", _$_5Cloth);

@@ -1,8 +1,8 @@
 #ifndef PLAYERANIM_H
 #define PLAYERANIM_H
 
+#include "Animate.h"
 /*
-#include "AnimationComponents.h"
 
 class PlayerMoveAnimation : public AnimationComponent {
 };

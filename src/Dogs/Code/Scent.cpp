@@ -28,7 +28,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD8); /* Scent::Scent */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153E68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", _$_5Scent);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153EA8);
 

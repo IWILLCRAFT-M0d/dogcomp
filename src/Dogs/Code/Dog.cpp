@@ -2,7 +2,6 @@
 
 #include "Dogs/Dog.h"
 
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CD30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CEC8);
@@ -17,7 +16,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A6688);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012D5E8); /* Dog::Dog */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __3DogPvPvis); /* Dog::Dog */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_3Dog);
 

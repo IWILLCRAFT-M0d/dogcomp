@@ -190,4 +190,4 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", __tf28NavGraphCellFromPos
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027EA08);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027EA58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", __tf19NavSphereHitPackage);

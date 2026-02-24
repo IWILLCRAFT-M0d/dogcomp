@@ -50,6 +50,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", __tf11SkiLiftSeat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016BD50);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016BD58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016BD58); /* return D_0044D868 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016BD60);

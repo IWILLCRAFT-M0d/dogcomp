@@ -4,6 +4,7 @@
 class GenericObject {
     public:
         GenericObject(void*, void*, int, short);
+        virtual ~GenericObject();
 };
 
 class SimObj_Base : public GenericObject {
@@ -23,5 +24,9 @@ class SimObj_ObjectWithMomentum : public SimObject {
         SimObj_ObjectWithMomentum(void*, void*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
 };
+/*
+class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {
 
+};
+*/
 #endif

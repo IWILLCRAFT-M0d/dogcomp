@@ -1,7 +1,5 @@
 #include "common.h"
 
-#include "unk.h"
-
 #include "Dogs/AnimatedObject.h"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100100); /* AnimatedObject */

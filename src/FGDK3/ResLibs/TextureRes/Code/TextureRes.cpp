@@ -1,7 +1,5 @@
 #include "common.h"
-
 #include "TextureRes.h"
-#include "unk.h"
 
 #ifdef NON_MATCHING
 Status TextureRes_InternalInitialise(void) {

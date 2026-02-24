@@ -4,9 +4,6 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
-
-
-
 #ifdef NON_MATCHING
 Status Gameutil_InternalInitialise(void) {
 	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Gameutil.cpp", 69);

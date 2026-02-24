@@ -457,7 +457,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6B40); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf20WorldObject_Universe);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6B98);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_11GameDesktop);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E29F0); /* "20WorldObject_Universe" */
 

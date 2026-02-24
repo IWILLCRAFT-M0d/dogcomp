@@ -2,8 +2,6 @@
 
 #include "ShapeRes.h"
 
-#include "unk.h"
-
 #ifdef NON_MATCHING
 
 Status ShapeRes_InternalInitialise(void) {

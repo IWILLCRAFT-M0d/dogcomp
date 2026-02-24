@@ -1,7 +1,6 @@
 #include "common.h"
-#include "debug.h"
-#include "unk.h"
 
+#include "FGDK3/WalkerComponents.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0558); /* D_00452B60 = 1 (Walking_EnableIK) */
 
@@ -65,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E22C8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E23B0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E2460);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E2460); /* IKSingleStepAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_21IKSingleStepAnimation);
 
@@ -153,11 +152,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5EC0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf22WalkingParamsAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5F70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_23AnimVarWalkingAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf23AnimVarWalkingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5FE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_23AnimPosWalkingAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf23AnimPosWalkingAnimation);
 
@@ -181,7 +180,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E6210);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf27AnimPosWorldAFSLegAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E6280);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_22AnimPosAmblerAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf22AnimPosAmblerAnimation);
 

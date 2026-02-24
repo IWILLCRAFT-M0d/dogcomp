@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_002297F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229A18); /* "c:/coding/dogs/Code/Common/SpecialIKComponents.cpp" */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229A18); /* LookAroundIKAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229B40);
 

@@ -83,7 +83,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveKennel", D_003BA9A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152820);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001529E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", _$_10SaveKennel);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152BB8);
 

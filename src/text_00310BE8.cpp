@@ -209,7 +209,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315100);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315330);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315388);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_29FileSystemDisc_FileDescriptor);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448330); /* "c:/coding/fgdk3/Code/Playstation2/File_FileDescriptor.cpp" */
 

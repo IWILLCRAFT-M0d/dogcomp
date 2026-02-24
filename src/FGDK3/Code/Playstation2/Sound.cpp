@@ -3,7 +3,6 @@
 
 #include "FGDK3/Playstation2/Sound.h"
 
-// Sound.cpp
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_InternalFinalise__Fv);
@@ -64,9 +63,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E3D8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E468);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E480);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E480); /* a0->unk8 = 0; a0->unkC = 1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E490);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E490); /* return a0->unk10 */
 
 void func_0026E498() {
     return;
@@ -110,9 +109,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F810);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", __tf19SoundImplementation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A0); /* a0->unk14 = 0 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A8); /* a0->unk14 = 1 */
 
 void func_0026F8B8(void) {
     return;
@@ -126,63 +125,63 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F940);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F948);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9D8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9D8); /* return a0->unk40 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9E0); /* a0->unk40 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9E8); /* return a0->unk44 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9F0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9F0); /* a0->unk44 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9F8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F9F8); /* return a0->unk48 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA00);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA00); /* a0->unk48 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA08); /* return (float) a0->unk4C */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA10);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA10); /* (float) a0->unk4C = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA18); /* return (float) a0->unk50 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA20);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA20); /* (float) a0->unk50 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA28);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA28); /* return (float) a0->unk54 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA30);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA30); /* (float) a0->unk54 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA38);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA38); /* return a0->unk60 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA40); /* a0->unk60 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA48); /* return a0->unk70 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA50);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA50); /* a0->unk70 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA58); /* return a0->unk80 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA60);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA60); /* a0->unk80 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA68); /* return (float) a0->unk90 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA70); /* (float) a0->unk90 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA78); /* return (float) a0->unk94 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA80);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA80); /* (float) a0->unk94 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA88);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA88); /* return (float) a0->unk98 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA90); /* (float) a0->unk98 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FA98); /* return (float) a0-unk9C */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAA0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAA0); /* (float) a0->unk9C = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAA8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAA8); /* return (float) a0->unkA0 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAB0); /* (float) a0->unkA0 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAB8); /* return a0->unkAC */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAC0);
 
@@ -192,9 +191,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FAF8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB18);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB38);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB38); /* a0->unk14 = 1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB48); /* a0->unk14 = 0 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB50);
 

@@ -231,7 +231,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00195930); // destro
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00196320);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00196418);
+void func_00196418() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00196420);
 

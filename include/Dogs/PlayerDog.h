@@ -2,7 +2,7 @@
 #define PLAYERDOG_H
 
 #include "Dog.h"
-
+//#include "WorldObj.h"
 
 class PlayerDog : public Dog {
     public:
@@ -12,6 +12,9 @@ class PlayerDog : public Dog {
 
 //msg AddMove
 
+/*
+class RoverSaysPuzzleGod : public WorldObject {
 
-
+};
+*/
 #endif

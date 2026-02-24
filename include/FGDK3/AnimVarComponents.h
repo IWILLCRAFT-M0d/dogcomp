@@ -1,7 +1,7 @@
 #ifndef ANIMVARCOMPONENTS_H
 #define ANIMVARCOMPONENTS_H
 
-#include "Dogs/AnimationComponents.h"
+#include "Animate.h"
 
 /*
 class AnimVarBaseAnimation : public AnimationComponent {

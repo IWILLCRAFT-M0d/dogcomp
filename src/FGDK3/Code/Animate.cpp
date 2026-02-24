@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+#include "FGDK3/Animate.h"
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F3EF0); /* NothingAnimation */
 
 void func_002F3F88() {
@@ -27,11 +29,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_20NothingForXAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf20NothingForXAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4150);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4150); /* WeightSettingAnimation */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F41B8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4200);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_22WeightSettingAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Animate", _vt$22WeightSettingAnimation);
 

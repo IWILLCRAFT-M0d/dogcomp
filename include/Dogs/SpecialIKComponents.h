@@ -2,6 +2,8 @@
 #define SPECIALIKCOMPONENTS_H
 
 /*
+class LookAroundIKAnimation : public AnimationComponent {
+};
 
 class PickUpStretchAnimation : public AnimationComponent {
 };

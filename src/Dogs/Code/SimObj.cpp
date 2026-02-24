@@ -45,7 +45,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00161420);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001614E8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00161688);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00161688); /* SimObj_HitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001616A8);
 
@@ -81,9 +81,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001626A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001627F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162880);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162880); /* SimObj_UniverseLandscape */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_24SimObj_UniverseLandscape); /* ~SimObj_UniverseLandscape */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_24SimObj_UniverseLandscape);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162A20);
 
@@ -477,7 +477,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B8); /* SimObj_ObjectWithMomentum::~SimObj_ObjectWithMomentum */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_25SimObj_ObjectWithMomentum);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf25SimObj_ObjectWithMomentum);
 
@@ -593,7 +593,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf24SimObj_UniverseLandscape)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C40); /* return D_0044D7D4 */
 
 int func_00168C50(void) {
     return 1;

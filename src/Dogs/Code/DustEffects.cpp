@@ -24,8 +24,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B0C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", __tf17DustEffectManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B258);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B258); /* return D_0044CF08 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B260);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B260); /* return D_0044CF10 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B268);

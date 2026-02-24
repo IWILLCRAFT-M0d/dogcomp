@@ -76,7 +76,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", __tf10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171288);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171290);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171290); /* return D_0044D910 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171298);
 

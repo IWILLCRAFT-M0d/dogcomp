@@ -75,7 +75,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0B50);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0B58);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0C18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0C18); /* TimeProvidingTimeBase */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0C88);
 

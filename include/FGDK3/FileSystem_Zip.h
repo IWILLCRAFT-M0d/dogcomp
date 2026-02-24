@@ -5,5 +5,8 @@
 class FileAccess_Zip_Stored {
 
 };
+
+class FileAccess_Zip_Deflated {
+};
 */
 #endif

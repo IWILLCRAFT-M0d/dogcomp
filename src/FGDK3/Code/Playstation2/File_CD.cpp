@@ -68,7 +68,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303FD0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304008);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003040C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_17FileSystemDisc_CD);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _vt$7File_CD);
 

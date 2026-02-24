@@ -1,7 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
-// split for speechani.cpp?
+#include "Dogs/SpeechAni.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AD48); /* SpeechAniText */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_13SpeechAniText);
@@ -34,11 +35,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B910);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B9F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA18); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA20);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA78); /* SoundEverywhere */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_15SoundEverywhere);
 
@@ -80,7 +81,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C928);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CB68);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CC60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CC60); /* StreamPreload */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpeechAni", D_0042DE48); /* "c:/coding/dogs/Code/Common/SpeechAni.cpp" */
 
@@ -88,7 +89,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpeechAni", D_0042DE78); /* "Stream h
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CD10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CED8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CED8); /* VibrateRumbleAnim */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CF40);
 

@@ -72,7 +72,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8E8); /* return D_0044D8B0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8F0);
 
