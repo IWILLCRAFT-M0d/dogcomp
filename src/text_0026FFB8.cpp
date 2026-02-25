@@ -57,7 +57,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf13ShapeInstance);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
 
@@ -71,7 +71,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A18);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A18); /* return a0->unk20 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A20);
 
@@ -83,7 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271BB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271C58); /* __9SavedGamePcii SavedGame::SavedGame */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271D10);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271D98);
 

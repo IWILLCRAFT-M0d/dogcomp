@@ -18,11 +18,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_0018BB70", D_003D29D0); /* _vt$39VehicleNa
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", __tf39VehicleNavDirectionalBackwardsAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/text_0018BB70", _$_20SpeechAniTextBigHint); /* SpeechAniTextBigHint::~SpeechAniTextBigHint*/
+INCLUDE_ASM("asm/nonmatchings/text_0018BB70", _$_20SpeechAniTextBigHint);
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", __tf20SpeechAniTextBigHint);
 
-INCLUDE_ASM("asm/nonmatchings/text_0018BB70", func_0018C6C0);
+INCLUDE_ASM("asm/nonmatchings/text_0018BB70", _$_21StreamedSpeechTrivial);
 
 INCLUDE_ASM("asm/nonmatchings/text_0018BB70", __tf21StreamedSpeechTrivial);
 

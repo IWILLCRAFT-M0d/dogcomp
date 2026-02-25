@@ -29,6 +29,7 @@ __tft9Interface1Z9Basket_IF = 0x001061A0;
 __tf21SimObj_RayHitReceiver = 0x001072e8;
 _$_4Bird = 0x00107338; // type:func
 __tf4Bird = 0x001073d8;
+__tf17PHitPrimDisplayer = 0x00107438;
 
 // BoneGod
 _$_7BoneGod = 0x00107BC0; // type:func
@@ -72,7 +73,11 @@ _$_5Cloth = 0x001250E8; // type:func
 __tf5Cloth = 0x00127B80;
 
 // DiggablePatch
+__13DiggablePatchPvPvis = 0x00127D30; // type:func
 _$_13DiggablePatch = 0x00127E48; // type:func
+func_00127F78__13DiggablePatch = 0x00127F78; // type:func
+func_00128120__13DiggablePatchf = 0x00128120; // type:func
+
 
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
@@ -285,6 +290,7 @@ _$_39VehicleNavDirectionalBackwardsAnimation = 0x0018C5C8; // type:func
 __tf39VehicleNavDirectionalBackwardsAnimation = 0x0018c5f8;
 _$_20SpeechAniTextBigHint = 0x0018C650; // type:func
 __tf20SpeechAniTextBigHint = 0x0018c670;
+_$_21StreamedSpeechTrivial = 0x0018C6C0; // type:func
 __tf21StreamedSpeechTrivial = 0x0018c6f0;
 __Q212BookMetaphor16GamePositionPagei = 0x0018C960; // type:func
 __Q212BookMetaphor11NewGamePage = 0x0018D7E8; // type:func
@@ -721,6 +727,7 @@ Execute__13ShapeInstance = 0x00270508; // type:func
 Render__13ShapeInstancePv = 0x00271790; // type:func
 __tf11ShapeParams = 0x00271820;
 __tf13ShapeInstance = 0x00271890;
+_$_9SavedGame = 0x00271D10; // type:func
 __tf9SavedGame = 0x00272ac0;
 // RunPath.cpp
 RunPath_InternalInitialise__Fv = 0x00272f50; // type:func

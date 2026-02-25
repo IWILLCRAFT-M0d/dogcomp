@@ -297,6 +297,10 @@ class GE_PS2PrimVertices : public GE_PrimVertices {
         void func_002A5880(void);
 };
 
+class SavedGame {
+
+};
+
 #ifdef __cplusplus
 extern "C" {
 #endif

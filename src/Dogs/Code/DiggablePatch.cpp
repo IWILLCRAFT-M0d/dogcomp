@@ -2,26 +2,34 @@
 
 #include "Dogs/DiggablePatch.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127D30); /* DiggablePatch */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchPvPvis); /* DiggablePatch */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8);
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F78);
-/*
-int func_00127F78(struct foo* arg0, float fparg0) {
-    arg0->unk5E0 = fparg0;
+#ifdef NON_MATCHING
+int DiggablePatch::func_00127F78(float arg) {
+    this->unk5E0 = arg;
     return 0;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F78__13DiggablePatch);
+#endif
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F88);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128030);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128120);
+#ifdef NON_MATCHING
+int DiggablePatch::func_00128120(float arg) {
+    this->unk5C4 = arg;
+    return 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128120__13DiggablePatchf);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128130);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128130); /* return this->unk5C0 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3588);
 

@@ -116,7 +116,7 @@ segments:
       - [0xD92A0, cpp, Dogs/Code/GameState]
       - [0xDB3A0, cpp, Dogs/Code/Gameutil]
       - [0xDE5F0, cpp, Dogs/Code/HitTri]
-      - [0xDF378, cpp, text_001DE378]
+      - [0xDF378, cpp, Dogs/Code/Landscape]
       - [0xE6198, cpp, text_001E5198] # actual start of levelres?
 
       - [0xE6648, cpp, Dogs/Code/Levelres]
@@ -305,7 +305,7 @@ segments:
       - [0x2E41B8, .rodata, Dogs/Code/GameState]
       - [0x2E4740, .rodata, Dogs/Code/Gameutil]
       - [0x2E4AD0, .rodata, Dogs/Code/HitTri]
-      - [0x2E6218, .rodata, text_001DE378]
+      - [0x2E6218, .rodata, Dogs/Code/Landscape]
       - [0x2E6640, .rodata, Dogs/Code/Levelres]
       - [0x2E67C8, .rodata, Dogs/Code/Playstation2/Main]
       - [0x2E6900, .rodata, Dogs/Code/Mien]

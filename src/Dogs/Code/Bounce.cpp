@@ -28,7 +28,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", __tf9BounceHit);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EDE0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EDF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EDF8); /* __tf18SimObj_HitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EE48);
 
@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F0F8); /* a0->unk4 = a
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F100); /* return a0->unkC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F108);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F108); /* a0->unkC = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F110);
 
@@ -54,9 +54,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F120);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F130);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F158);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F158); /* return (float) a0->unk14 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F160);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F160); /* (float) a0->unk14 = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F168);
 

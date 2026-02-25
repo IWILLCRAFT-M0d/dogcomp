@@ -72,7 +72,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf4Bird);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00107430); /* return D_0044C848 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00107438);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf17PHitPrimDisplayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00107488);
 

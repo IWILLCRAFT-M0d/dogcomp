@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144B20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", __tf9Motorbike);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA0); /* return D_0044D1C0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA8);
 
