@@ -69,7 +69,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", _$_11WorldObject);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFD10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182380);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182380); // "Trying to activate a world object that already has a script. This usually means that the world obj has already been activated. ActorID = %d"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001828D8);
 
@@ -83,7 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8); // "SetShape called but there are still animations running!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001833E8);
 
@@ -147,7 +147,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186728);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186748);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186788);
+int func_00186788() {
+    return -1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186790);
 
@@ -179,7 +181,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187288);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872F8); /* return this->unkDC */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187300);
 
@@ -208,13 +210,13 @@ void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t count) {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518); // "Trying to drop an object from an invalid holding point"
 
 int func_00187628() {
     return 1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187630);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187630); // pickup object function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187828);
 
@@ -222,7 +224,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001878F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001879A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187EC8);
+int func_00187EC8(int arg0, int arg1) {
+    return (arg0 >= arg1) ? arg1 : arg0;
+}
+
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$21PersistentDataUpdater);
 
@@ -254,7 +259,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188080);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880D0); /* __tf21SimObj_RayHitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf11WorldObject);
 

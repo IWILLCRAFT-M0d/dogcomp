@@ -54,6 +54,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", __tf11SwingBridge);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00178620);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00178630);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00178630); /* return D_0044DAB8 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00178638);

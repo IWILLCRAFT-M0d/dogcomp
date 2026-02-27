@@ -418,7 +418,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255300);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255308);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002553E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002553E8); // "Widget \'%s\' is already attached elsewhere. Did you really mean this?\n"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255490);
 
@@ -426,15 +426,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002555C8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255638);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002556A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002556A8); // "Attempt to remove non-child window\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255720);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255720); // "Bring to front request on widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002557C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002557C0); // "Send to back request on widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255860);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255860); // "Attempt to demote widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255908);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255908); // "Attempt to promote widget with no parent\n"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002559B0);
 
@@ -450,7 +450,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255BF8);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Widget", D_004332F8); /* "Attempt to place widget above non-hierarchical widget (not allowed)" */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255C40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255C40); // "Attempt to get position of non-child widget \'%s\'\n"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255D18);
 

@@ -3215,7 +3215,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00225C00);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00225C38); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00225C40);
+INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00225C40); // "Attempt to get position of non-child widget \'%s\'\n"
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00225CA8); /* return; */
 

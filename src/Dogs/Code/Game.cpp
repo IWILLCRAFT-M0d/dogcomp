@@ -152,7 +152,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7A80);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7AD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7B08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7B08); // "SetSaveInhibit called when saves are not inhibited"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7BA8);
 
@@ -182,7 +182,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C84C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C88D0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8D40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8D40); // "LevelGateEdit %d not found"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9A58);
 
@@ -270,7 +270,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F58);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F78);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D42A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D42A8); // "Warning: toPos and facingPos the same in MoveActorToFacing. This would be likely to screw up the creature\'s orientation. Will keep creature\'s current orientation."
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0);
 
@@ -310,7 +310,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E1F10); /* "BriberyBone" 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4E40); /* changeCollar */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5B88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5B88); // "Trying to set flow speed for a texture matrix which hasn\'t been set up for having its flow speed adjusted: %d, %.2f"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5C50);
 

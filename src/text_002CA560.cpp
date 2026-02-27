@@ -139,7 +139,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE870);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE8F0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE8F0); // "You've got a NULL text glyph."
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEA98);
 

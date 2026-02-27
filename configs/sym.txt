@@ -96,6 +96,7 @@ __tf14TransientSound = 0x0013a228;
 __tf23DogSphereObjHitReceiver = 0x0013a2b8;
 __tf22DogAntiSnagHitReceiver = 0x0013a348;
 __tf25DogPushOffHitPrimReceiver = 0x0013a460;
+__tf18DogHitPrimReceiver = 0x0013A6B8;
 __tf16HitPrimDisplayer = 0x0013a720;
 __tf19Interface1Z7Jump_IF = 0x0013a838;
 __tft9Interface1Z23AnimationMovedObject_IF = 0x0013A878;
@@ -148,6 +149,8 @@ __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
 // Person.cpp
 __6PersonPvPvis = 0x0014A110; // type:func
 _$_6Person = 0x0014A2C8; // type:func
+func_0014C240__6Person = 0x0014C240; // type:func
+func_0014CBD8__6Person = 0x0014CBD8; // type:func
 __tf6Person = 0x0014cb78;
 
 __tf23PersonHitSizeCalculator = 0x0014cc10;
@@ -247,6 +250,9 @@ __tf11SwingBridge = 0x001785C8;
 
 // TugOfWar
 _$_11TugOfWarGod = 0x00178818; // type:func
+func_0017C218__11TugOfWarGod = 0x0017C218; // type:func
+func_0017C238__11TugOfWarGod = 0x0017C238; // type:func
+func_0017C248__11TugOfWarGod = 0x0017C248; // type:func
 __tf11TugOfWarGod = 0x0017D110;
 _$_15TugOfWarRopeEnd = 0x0017D200; // type:func
 __tf15TugOfWarRopeEnd = 0x0017D2A0;

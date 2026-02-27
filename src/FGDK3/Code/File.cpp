@@ -57,7 +57,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306030);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/File", D_00447A30); /* "C:/Coding/FGDK3/Code/Common/File.cpp" */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003065D0); /* ~File */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003065D0); // "Safe file was not closed before exit"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003067A0);
 

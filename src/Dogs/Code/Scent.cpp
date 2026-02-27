@@ -20,9 +20,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Scent", D_003BADE0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Scent", D_003BAE10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153540);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153540); // "Too many scents in close proximity to camera - relayout level!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153D30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153D30); // "Too many scents registered"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD0);
 
@@ -30,7 +30,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD8); /* Scent::Scent 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", _$_5Scent);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153EA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153EA8); // "Scent (actorID %d) failed to rayhit ground"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00154048);
 
@@ -56,7 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00157078);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00157110);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00157130);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00157130); // scent handler?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00157558);
 
@@ -90,7 +90,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_001587A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00158820);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00158898);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00158898); // explore challenge ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00158AF0);
 
@@ -201,7 +201,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Scent", D_003BB780);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Scent", D_003BB7C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A5B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A5B8); // "ScentMarkingGameNode (actorID %d) failed to rayhit ground"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A8D8);
 
@@ -215,7 +215,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015AD30);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Scent", D_003BB840); /* "ScentMarkingGameGod" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015AEE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015AEE8); // "Excessive links to node %d (from node %d)"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015B090);
 
@@ -233,7 +233,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015D188);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015D228);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015D508);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015D508); // "Attempting to clean up scent marking game whilst in progress. Not so smart."
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015D670);
 

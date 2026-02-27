@@ -417,6 +417,7 @@ void func_002240D0(void);
 void func_00224110(void);
 void func_00224150(void);
 void func_002241D0(void);
+int func_0022B5E0(void);
 void func_0022BB88(void);
 int func_0022BCC8(void);
 void func_0022D2C8(void);

@@ -15,13 +15,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AF20); /* SpeechAni
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_14SpeechAniSound);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B030);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B030); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B038);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B5B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B5E0);
+int func_0022B5E0() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B5E8);
 
@@ -61,7 +63,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BCF0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_14StreamedSpeech);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BEA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BEA0); // "Stream has changed in mid-animation, will ignore change.\n"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C198);
 
@@ -87,7 +89,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpeechAni", D_0042DE48); /* "c:/codin
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpeechAni", D_0042DE78); /* "Stream has changed in mid-animation, will ignore change.\n" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CD10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CD10); // stream preload things
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CED8); /* VibrateRumbleAnim */
 

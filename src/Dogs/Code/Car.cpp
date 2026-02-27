@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", _$_3Car);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00123298);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00123C28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00123C28); // "Unknown extra for Car"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00123CA8);
 

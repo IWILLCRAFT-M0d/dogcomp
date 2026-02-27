@@ -163,7 +163,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5C28);
 
@@ -252,7 +252,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6248);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18TestMessagesAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62B8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62B8); // "Welcome to the debug environment"
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62E8);
 

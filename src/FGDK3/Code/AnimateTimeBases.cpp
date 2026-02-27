@@ -6,7 +6,7 @@
 // split
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EF738);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EF848);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EF848); // "Acos out of range"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002EFBC8);
 

@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", _$_9Motorbike);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143220);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143258);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143258); // "Unknown extra for Motorbike"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_001432D8); // wheel animation?
 

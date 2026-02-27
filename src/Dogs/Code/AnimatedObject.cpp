@@ -50,7 +50,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101CC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101DB8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101F30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101F30); // "Unknown extra for AnimatedObject_Complex creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102088);
 
@@ -66,7 +66,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102648);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102728);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001028D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001028D8); // "Object does not have hitcheck override extra set!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001029E0);
 
@@ -80,15 +80,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102C78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_30AnimatedObject_ComplexPlatform);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102E70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102E70); // "Unknown extra for AnimatedObject_ComplexPlatform creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102EE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102F00); /* slotmachine ? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103050); // "Unknown extra for SlotMachine creature"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103140);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103140); // "Invalid matrix for rotation in slot machine!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103658);
 

@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188968);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001889A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188A30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188A30); // "Unknown extra for ZoneRadius creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188BB8);
 
@@ -30,9 +30,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Zone", D_003D1C68); /* "Radius: " */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Zone", D_003D1C78); /* "Render: " */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189440);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189440); // "Failed to get navigation graph in ZoneFromNavGraph"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001896C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001896C0); // "Unknown extra for ZoneFromNavGraph creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189878);
 

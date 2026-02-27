@@ -80,7 +80,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0B08);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0B90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0D80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0D80); // "Unrecognised command"
 
 // `-snas` Required
 #ifdef NON_MATCHING

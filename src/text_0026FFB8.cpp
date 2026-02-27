@@ -301,7 +301,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E90);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_22Resource_LayoutOverlay);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274020);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274020); // "Ovl % 20s %12s % 10d\n"
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274200); /* Load Resource_LayoutOverlay */
 

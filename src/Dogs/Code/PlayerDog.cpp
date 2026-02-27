@@ -33,7 +33,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerDog", D_003B4E70);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerDog", D_003B4EE0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DA68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DA68); // "Invalid RoverSays move ID in PlayerDog:: msg AddMove"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB48);
 
@@ -43,7 +43,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBC0); // "IsMoveAvailableInCurrentStage: Unknown stage ID"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCB8);
 
@@ -53,7 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EBA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EBA0); // "Could not find a doggy do sequence! Game is likely to crash now."
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE70);
 
@@ -61,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F0A8); /* RoverSaysPuzzleGod */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F188);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F188); // "Unknown extra in RoverSaysPuzzleGod::Extra!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F1F8);
 

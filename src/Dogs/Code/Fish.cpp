@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __4FishPvPvis); /* Fish::Fish */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", _$_4Fish);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B440);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B440); // "Fish can\'t find the surface of the water!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B550);
 
@@ -29,7 +29,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B590); // fish movement?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B640);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B790);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B790); // "Making fish jump when its out of water!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BDE8);
 

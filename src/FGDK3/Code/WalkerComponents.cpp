@@ -58,7 +58,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E2168);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", D_00444800); /* "c:/coding/fgdk3/Code/Common/WalkerComponents.cpp" */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E21D8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E21D8); // "Plant %d"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E22C8);
 

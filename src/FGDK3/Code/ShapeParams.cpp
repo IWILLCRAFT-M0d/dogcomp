@@ -10,7 +10,7 @@ ShapeParams_Dynamic::ShapeParams_Dynamic() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B6B8); /* __19ShapeParams_Dynamici (int size) */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic); /* destructor */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B760); /* setsize ? */
 
@@ -134,7 +134,7 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$15RelocationBlock)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __tf15RelocationBlock);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DEF8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DEF8); /* return a0->unk2C */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DF00);
 

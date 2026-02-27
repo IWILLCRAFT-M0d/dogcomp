@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_15EditableManager);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D99F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9B08);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9B08); // "Duplicate member name \'%s\' in manager %s"
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9C38);
 

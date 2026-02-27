@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279CF8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279D58);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279EA0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279EA0); // "Too many points added - increase m_maxVerts"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027A270);
 

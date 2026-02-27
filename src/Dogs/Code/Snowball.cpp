@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172DF0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172E20);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172E78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172E78); // "Failed to get reset object in Snowball::ProcessScriptRequest"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172FA8);
 

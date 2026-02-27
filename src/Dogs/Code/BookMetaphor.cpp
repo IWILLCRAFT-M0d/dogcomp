@@ -149,7 +149,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2D60);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F790);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018FE80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018FE80); // "No move in PlayerMoveStrings matches move in Stats0Page_MovementList[%d]"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001904D8);
 

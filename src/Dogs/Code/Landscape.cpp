@@ -47,7 +47,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5240);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5270);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBB0); /* landscape_land::render */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBB0); /* landscape_land::render(Resource<Landscape_Land>, landscape_resources address?) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E14F8); // landscape/ik collision ?
 

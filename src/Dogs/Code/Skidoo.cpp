@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", _$_6Skidoo);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169478);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169498);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169498); // "Unknown extra for Skidoo"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169518);
 

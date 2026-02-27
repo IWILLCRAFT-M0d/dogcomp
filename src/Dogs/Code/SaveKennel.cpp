@@ -13,7 +13,7 @@ SaveKennel::SaveKennel(void* arg1, void* arg2, int arg3, short arg4) : HitTri_Ob
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __10SaveKennelPvPvis); /* SaveKennel::SaveKennel */
 #endif
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); /* SaveKennel::Extra ? */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); // "Unknown extra for SaveKennel"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001510C0);
 

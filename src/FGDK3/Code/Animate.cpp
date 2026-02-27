@@ -118,11 +118,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5850);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5870);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5890); /* Animation::SetValue ? */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5890); // "Animation::SetValue index is beyond end of table (idx = %d, tbl = %d)"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5948);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80); /* Animation::SetPosition ? */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80); // "Animation::SetPosition index is beyond end of tabls (idx=%d, tbl=%d)"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5B88);
 
@@ -278,7 +278,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6F60);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf23AnimationWeightModifier);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FA8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FA8); /* a0-unk10 = 1 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FB8); /* return (float) a0->unk18 */
 

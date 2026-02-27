@@ -359,7 +359,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADBE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADC20);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADC40);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADC40); // "Invalid micro-program table in GE_MicroProgMgr.cpp - Exiting\n"
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADEA8);
 
@@ -922,15 +922,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_002A5350", D_00441024);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002A5350", jtbl_00441030);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BECB0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BECB0); // "No texture stage name found"
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BEE08);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BEE70);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BEE70); // "No shader name found"
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BEFC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF030);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF030); // "No texture style name found"
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002BF198);
 
@@ -1032,7 +1032,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C2BE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C2C48);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C2F68);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C2F68); // dma waiting
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3050);
 
@@ -1268,7 +1268,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3D88); /* GE_Device::Begi
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3F08); /* GE_Device::Clear ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3F98);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3F98); // affects camera
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C4BC0);
 

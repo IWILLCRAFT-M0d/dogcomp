@@ -48,7 +48,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB768); /* "13Generi
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", __tf9Element3D);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0540);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0540); /* return D_0044E648 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB788);
 
@@ -56,7 +56,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB7B8);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB7C8); /* "t9Interface1Z11Location_IF" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0548);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0548); /* __tf18AnimVarProvider_IF */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0598);
 

@@ -105,7 +105,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295220);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295298);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295310);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295310); // render distance for level props?
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002953D0);
 

@@ -38,7 +38,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146C70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146D18);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146E48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146E48); // "Unknown extra in ParticleSystem.cpp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146F18);
 

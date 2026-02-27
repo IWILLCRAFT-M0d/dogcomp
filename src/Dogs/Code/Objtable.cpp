@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ECD00);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Objtable", D_003E6528); /* "c:/coding/dogs/Code/Common/Objtable.cpp" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ECDD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ECDD0); // "Something bad happened in the object table"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ECF70);
 

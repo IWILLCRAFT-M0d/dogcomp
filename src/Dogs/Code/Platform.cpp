@@ -6,7 +6,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED440); /* Platform::
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", _$_8Platform);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED660);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED660); // "Failed to get finishing actorID in Platform::Activate!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED7A0);
 

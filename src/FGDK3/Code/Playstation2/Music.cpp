@@ -195,7 +195,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282E48);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282F08);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282FC8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282FC8); // "piece timed out\n"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148);
 

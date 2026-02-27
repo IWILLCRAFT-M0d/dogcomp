@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", Gameutil_Initialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", Gameutil_Finalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA440);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA440); // "ERROR: Jump to high (%dm), disabling it"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA588);
 

@@ -203,7 +203,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001653C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165448);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165520);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165520); // "Expanding collidables table will cause memory fragmentation!\n"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001656A8);
 
@@ -237,9 +237,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165C68);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165D30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165DC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165DC0); // "Objects whose hit check radius is FLT_MAX should override this method!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165EB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165EB0); // "Objects whose hit check radius is FLT_MAX should override this method!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165F98); /* SimObj_ObjectWithMomentum */
 

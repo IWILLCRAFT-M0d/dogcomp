@@ -54,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C0A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C2D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C3A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C3A0); // "Trying to restore pos after cut, but the pos to restore to hasn\'t been set!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C528);
 
@@ -94,7 +94,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C990);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C9C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C9F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010C9F0); // "Invalid cinema mode %d passed to ReqCinemaMode in Camera.cpp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010CA88);
 
@@ -110,11 +110,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010D180);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010D698);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010D978);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010D978); // "Invalid SimObject (AdvanceFollowCamera) in camera.cpp"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010DEB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010DEB8); // "Invalid SimObject (AdvanceHoverCamera) in camera.cpp"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010E380);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010E380); // "Invalid SimObject (AdvanceLookAtCamera) in camera.cpp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010E898);
 
@@ -148,7 +148,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010F9A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010FAC0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010FB78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010FB78); // "Failed to get player focus in Camera::AdvanceCinemaDogThought!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010FD28);
 
@@ -162,13 +162,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001124A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00112948);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001134A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001134A0); // "Invalid other dog for high camera! Second watch actor has not been properly set up."
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00113B10);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00114878);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00114CF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00114CF0); // "Failed to get basket interface in Camera::AdvanceCinemaBasketCam"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001151E8);
 
@@ -188,7 +188,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116CA0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116F08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117110);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117110); // "Unknown extra for CameraMount creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117378);
 
@@ -248,7 +248,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117CB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117CD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117CF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117CF8); // "Animation should be null before new\'ed!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117E98);
 
@@ -360,7 +360,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001214A0); /* CameraYawMar
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_15CameraYawMarker);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001215A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_001215A8); // "Unknown extra for CameraYawMarker creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00121618);
 

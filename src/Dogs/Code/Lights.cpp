@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141378);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141398);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001413D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001413D8); // "Unknown extra for Light creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141558);
 

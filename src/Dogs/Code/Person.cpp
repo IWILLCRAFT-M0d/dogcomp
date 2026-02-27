@@ -18,11 +18,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A850); // accesory fun
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014AB50); /* PersonRepulsor(float) */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014ADC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014ADC8); // "Person may have fallen through floor: %s\n"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014B070);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014B4C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014B4C0); // "Acos out of range"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014BE60);
 
@@ -42,13 +42,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C230);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C240);
-/*
-int func_0014C240() {
+
+#ifdef NON_MATCHING
+int Person::func_0014C240() {
     this->unk6B8 = 1;
     return 0;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C240__6Person);
+#endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C250);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C5B0);
@@ -109,12 +111,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBD0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBD8);
-/*
-float func_0014CBD8() {
+#ifdef NON_MATCHING
+float Person::func_0014CBD8() {
     return this->unk5C0;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBD8__6Person);
+#endif
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBF0);

@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E458);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E488);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E490);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E490); // "Too many points being constrained - arrays will overflow and matrix won\'t solve!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016EDF0);
 

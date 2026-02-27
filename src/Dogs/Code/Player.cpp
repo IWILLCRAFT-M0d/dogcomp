@@ -110,7 +110,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F3800);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F3A48);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F3A88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F3A88); // "Failed to get camera object"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F3C90);
 
@@ -142,7 +142,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F46E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4708);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4728);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4728); // "host0:Grabs\\screen%05d.bmp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4888);
 

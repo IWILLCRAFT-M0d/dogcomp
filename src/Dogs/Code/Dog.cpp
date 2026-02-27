@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E9C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EB78); // dog mesh animation?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0); // "Dog has no hitcheck radius!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012ED58);
 
@@ -282,7 +282,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A528);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A8118);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A6B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __tf18DogHitPrimReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A718); /* return a0->unk14 */
 

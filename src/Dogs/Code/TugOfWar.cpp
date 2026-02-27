@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/TugOfWar.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178658); /* TugOfWarGod::TugOfWarGod */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_11TugOfWarGod);
@@ -36,25 +38,41 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017AF88);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017BDE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017BE28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017BE28); // "Failed to get Gem and/or controllable dog in TugOfWarReset!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C188);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C188); // "TugOfWarRopeEnd (actorID %d) failed to rayhit ground"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C218);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C238);
-/*
+void TugOfWarGod::func_0017C218() {
+    if (this->unk5F0 == 2) {
+        this->unk5F0 = 3;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C218__11TugOfWarGod);
+#endif
+
+#ifdef NON_MATCHING
+
 void TugOfWarGod::func_0017C238() {
-    this->unk5F0 = 4
+    this->unk5F0 = 4;
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C248);
-/*
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C238__11TugOfWarGod);
+#endif
+
+#ifdef NON_MATCHING
+
 void TugOfWarGod::func_0017C248() {
-    this->unk5F0 = 4
+    this->unk5F0 = 4;
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C248__11TugOfWarGod);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C258);
 
@@ -62,7 +80,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C2C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C398);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C538);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C538); // "TugOfWarGod rope particle failed to rayhit ground"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C6F0); /* TugOfWarRopeEnd::TugOfWarRopeEnd */
 
@@ -70,7 +88,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C7F8);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/TugOfWar", D_003CAF90); /* "TugOfWarGod" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C818);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C818); // "TugOfWarRopeEnd (actorID %d) failed to rayhit ground"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017CC98);
 
@@ -142,7 +160,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_15TugOfWarRopeEnd);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __tf15TugOfWarRopeEnd);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8); /* return D_0044DB08 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D300);
 

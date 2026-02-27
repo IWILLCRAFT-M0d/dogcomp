@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018A3D8); // "Actor
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018A460);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018A478);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018A478); // actor persistitem creation?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018A7A8);
 

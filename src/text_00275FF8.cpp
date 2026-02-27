@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276AC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276AE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276B70);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276B70); // "Number of line segments sanity check failed"
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276CD8);
 
