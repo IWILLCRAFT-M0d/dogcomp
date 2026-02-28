@@ -3,16 +3,23 @@
 #include "Dogs/SoundCreature.h"
 
 #ifdef NON_MATCHING
-SoundCreature::SoundCreature(void* arg1, void* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+extern ClassInfo* D_0044DA08;
+SoundCreature::SoundCreature(ClassInfo* arg1, void* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DA08 = arg1;
+    }
     this->unk110 = 0;
     this->unk114 = 0;
     this->unk120 = 0;
     this->unk124 = 0;
     this->unk134 = 0;
     this->unk138 = 0;
+    if (arg1 == 0) {
+        D_0044DA08->unk4 = 1;
+    }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __13SoundCreaturePvPvis);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __13SoundCreatureP9ClassInfoPvis);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", _$_13SoundCreature);

@@ -40,7 +40,7 @@ _$_7Boulder = 0x00108C98; // type:func
 __tf7Boulder = 0x00109e80;
 
 // Button
-__6ButtonPvPvis = 0x00109F40; // type:func
+__6ButtonP9ClassInfoPvis = 0x00109F40; // type:func
 _$_6Button = 0x0010A050; // type:func
 func_0010A550__6Button = 0x0010A550; // type:func
 __tf6Button = 0x0010a698;
@@ -73,7 +73,7 @@ _$_5Cloth = 0x001250E8; // type:func
 __tf5Cloth = 0x00127B80;
 
 // DiggablePatch
-__13DiggablePatchPvPvis = 0x00127D30; // type:func
+__13DiggablePatchP9ClassInfoPvis = 0x00127D30; // type:func
 _$_13DiggablePatch = 0x00127E48; // type:func
 func_00127F78__13DiggablePatch = 0x00127F78; // type:func
 func_00128120__13DiggablePatchf = 0x00128120; // type:func
@@ -84,7 +84,7 @@ __tf23DiggingRaceGodInterface = 0x0012CC60;
 __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
 
 // Dog
-__3DogPvPvis = 0x0012D5E8; // type:func
+__3DogP9ClassInfoPvis = 0x0012D5E8; // type:func
 _$_3Dog = 0x0012DCE0; // type:func
 func_0012E240__3Dog = 0x0012E240; // type:func
 __tf7Jump_IF = 0x0013a008;
@@ -106,7 +106,7 @@ _$_17DustEffectManager = 0x0013ABD8; // type:func
 __tf17DustEffectManager = 0x0013b200;
 
 // Fish
-__4FishPvPvis = 0x0013B288; // type:func
+__4FishP9ClassInfoPvis = 0x0013B288; // type:func
 _$_4Fish = 0x0013B3A0; // type:func
 
 // FlyingHat
@@ -147,7 +147,7 @@ __tf17ParticleSystem_IF = 0x00149FC0;
 __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
 
 // Person.cpp
-__6PersonPvPvis = 0x0014A110; // type:func
+__6PersonP9ClassInfoPvis = 0x0014A110; // type:func
 _$_6Person = 0x0014A2C8; // type:func
 func_0014C240__6Person = 0x0014C240; // type:func
 func_0014CBD8__6Person = 0x0014CBD8; // type:func
@@ -162,7 +162,7 @@ _$_11PlaceHolder = 0x0014D2F0; // type:func
 __tf11PlaceHolder = 0x0014d390;
 
 // PlayerDog
-__9PlayerDogPvPvis = 0x0014D410; // type:func
+__9PlayerDogP9ClassInfoPvis = 0x0014D410; // type:func
 _$_9PlayerDog = 0x0014D678; // type:func
 __tf9PlayerDog = 0x0014f4c0;
 _$_18RoverSaysPuzzleGod = 0x0014F520; // type:func
@@ -173,7 +173,7 @@ _$_3Rat = 0x00150D58; // type:func
 __tf3Rat = 0x00150e10;
 
 // SaveKennel
-__10SaveKennelPvPvis = 0x00150F30; // type:func
+__10SaveKennelP9ClassInfoPvis = 0x00150F30; // type:func
 _$_10SaveKennel = 0x001529E8; // type:func
 __tf10SaveKennel = 0x00152be0;
 __tf21MostInFrontCalculator = 0x00152C40;
@@ -186,7 +186,7 @@ __tf28ScentMarkingGameGodInterface = 0x00160300;
 __tft9Interface1Z28ScentMarkingGameGodInterface = 0x00160350;
 
 // Selector
-__8SelectorPvPvis = 0x001603D0; // type:func
+__8SelectorP9ClassInfoPvis = 0x001603D0; // type:func
 _$_8Selector = 0x001604C0; // type:func
 __tf8Selector = 0x00160fe0;
 
@@ -237,11 +237,11 @@ __tf5Smell = 0x001729d0;
 _$_8Snowball = 0x00172B48; // type:func
 __tf8Snowball = 0x00173178;
 
-__13SoundCreaturePvPvis = 0x001731F8; // type:func
+__13SoundCreatureP9ClassInfoPvis = 0x001731F8; // type:func
 _$_13SoundCreature = 0x00173298; // type:func
 __tf13SoundCreature = 0x00173858;
 
-__9SphereObjPvPvis = 0x001738D8; // type:func
+__9SphereObjP9ClassInfoPvis = 0x001738D8; // type:func
 __tf9SphereObj = 0x00177568;
 __tf15BallHitReceiver = 0x00177688;
 
@@ -271,7 +271,7 @@ WorldObj_InternalInitialise__Fv = 0x00181948; // type:func
 WorldObj_InternalFinalise__Fv = 0x00181990; // type:func
 WorldObj_Initialise__Fv = 0x00181998; // type:func
 WorldObj_Finalise__Fv = 0x001819c8; // type:func
-__11WorldObjectPvPvis = 0x00181CB8; // type:func
+__11WorldObjectP9ClassInfoPvis = 0x00181CB8; // type:func
 _$_11WorldObject = 0x001820D8; // type:func
 __tf11WorldObject = 0x00188120;
 func_001884A8__11WorldObject = 0x001884A8; // type:func
@@ -454,7 +454,7 @@ Gameutil_Initialise__Fv = 0x001da3f0; // type:func
 Gameutil_Finalise__Fv = 0x001da420; // type:func
 
 // HitTri
-__13HitTri_ObjectPvPvis = 0x001DD5F0; // type:func
+__13HitTri_ObjectP9ClassInfoPvis = 0x001DD5F0; // type:func
 _$_13HitTri_Object = 0x001DD740; // type:func
 __tf13HitTri_Object = 0x001de258;
 Landscape_InternalInitialise__Fv = 0x001e3190; // type:func
@@ -932,6 +932,7 @@ IOPMem_InternalFinalise__Fv = 0x002966b8; // type:func
 IOPMem_Initialise__Fv = 0x002966c0; // type:func
 IOPMem_Finalise__Fv = 0x002966f0; // type:func
 InterfaceError = 0x00296818; // type:func
+__9ClassInfo = 0x00296958; // type:func
 __tf9ClassInfo = 0x00297430;
 _$_16GE_TextureTarget = 0x00299600; // type:func
 __tf16GE_TextureTarget = 0x0029a6a0;

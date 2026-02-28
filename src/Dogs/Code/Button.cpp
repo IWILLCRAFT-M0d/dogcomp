@@ -2,7 +2,7 @@
 
 #include "Dogs/Button.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonPvPvis); /* Button */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoPvis); /* Button */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 

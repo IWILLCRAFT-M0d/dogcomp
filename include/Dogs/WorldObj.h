@@ -32,7 +32,7 @@ class WorldObject : public SimObj_ObjectWithMomentum {
         float unk5B4;
         int unk5B8;
 
-        WorldObject(void*, void*, int, short);
+        WorldObject(ClassInfo*, void*, int, short);
         virtual ~WorldObject();
         void func_001884A8(void);
         void func_001884B8(void);

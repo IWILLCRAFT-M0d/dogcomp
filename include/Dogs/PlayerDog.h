@@ -1,12 +1,27 @@
 #ifndef PLAYERDOG_H
 #define PLAYERDOG_H
+#include <eetypes.h> // TODO: move this
+#include "unk.h"
 
 #include "Dog.h"
 //#include "WorldObj.h"
 
+typedef struct {
+    void* unk0;
+    int unk4;
+} s_D_0044D398;
+
 class PlayerDog : public Dog {
     public:
-        PlayerDog(void*, void*, int, short);
+        int unkB34;
+        int unkB38;
+        long128 unkB40;
+        long128 unkB50;
+        int unkB60;
+        int unkB64;
+        int unkBB0;
+        int unkBB8;
+        PlayerDog(ClassInfo*, void*, int, short);
         virtual ~PlayerDog();
 };
 
@@ -17,4 +32,14 @@ class RoverSaysPuzzleGod : public WorldObject {
 
 };
 */
+#ifdef __cplusplus
+extern "C" {
+#endif
+void func_0014EB88(Dog*, short);
+#ifdef __cplusplus
+}
+#endif
+
+
+
 #endif

@@ -6,7 +6,7 @@
 
 class Basket : public Container {
     public:
-        Basket(void*, void*, int, short);
+        Basket(ClassInfo*, void*, int, short);
         virtual ~Basket();
 };
 

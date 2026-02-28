@@ -141,7 +141,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163EB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164008);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001641C0); /* GenericObject */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001641C0); /* SimObj_Base? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001643E0);
 

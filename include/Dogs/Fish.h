@@ -15,7 +15,7 @@ class Fish : public WorldObject {
         int unk5F8;
         int unk5FC;
         int unk600;
-        Fish(void*, void*, int, short);
+        Fish(ClassInfo*, void*, int, short);
         virtual ~Fish();
 };
 

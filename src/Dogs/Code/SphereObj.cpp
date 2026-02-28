@@ -3,7 +3,11 @@
 #include "Dogs/SphereObj.h"
 
 #ifdef NON_MATCHING
-SphereObj::SphereObj(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+extern ClassInfo* D_0044DA60;
+SphereObj::SphereObj(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DA60 = arg1;
+    }
     this->unk5C4 = 1.0;
     this->unk5F0 = -10000.0;
     this->unk5F4 = 10000.0;
@@ -19,9 +23,13 @@ SphereObj::SphereObj(void* arg1, void* arg2, int arg3, short arg4) : WorldObject
     this->unk5E4 = 0;
     this->unk5E8 = 0;
     this->unk5EC = 0;
+
+    if (arg1 == 0) {
+        D_0044DA60->unk4 = 1;
+    }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjPvPvis); /* SphereObj::SphereObj */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjP9ClassInfoPvis); /* SphereObj::SphereObj */
 #endif
 
 

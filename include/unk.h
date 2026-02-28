@@ -301,6 +301,18 @@ class SavedGame {
 
 };
 
+// class ClassInfo : public GenericObject {
+//     public:
+//         int unk4;
+//         void* unk8;
+//         int unkC;
+//         int unk10;
+//         int unk14;
+//         int unk18;
+//         ClassInfo();
+//         virtual ~ClassInfo();
+// };
+
 #ifdef __cplusplus
 extern "C" {
 #endif

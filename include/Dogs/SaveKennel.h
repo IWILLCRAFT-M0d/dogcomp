@@ -11,7 +11,7 @@ class SaveKennel : public HitTri_Object {
         int unk620;
         float unk624;
 
-        SaveKennel(void*, void*, int, short);
+        SaveKennel(ClassInfo*, void*, int, short);
         virtual ~SaveKennel();
 };
 

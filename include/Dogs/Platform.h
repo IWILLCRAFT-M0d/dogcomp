@@ -6,7 +6,7 @@
 
 class Platform : public HitTri_Object {
     public:
-        Platform(void*, void*, int, short);
+        Platform(ClassInfo*, void*, int, short);
         virtual ~Platform();
 };
 

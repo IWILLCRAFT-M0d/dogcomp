@@ -8,7 +8,7 @@ class DiggablePatch : public WorldObject {
         float unk5C0; // patch remaining to be dug? (m_depthRemaining)
         float unk5C4; // patch depth (m_initialDepth)
         float unk5E0; // digging speed? (m_digRate)
-        DiggablePatch(void*, void*, int, short);
+        DiggablePatch(ClassInfo*, void*, int, short);
         virtual ~DiggablePatch();
 
         int func_00128120(float);

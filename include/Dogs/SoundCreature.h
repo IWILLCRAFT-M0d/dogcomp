@@ -13,7 +13,7 @@ class SoundCreature : public SimObject {
         int unk134;
         int unk138;
         int unk144;
-        SoundCreature(void*, void*, int, short);
+        SoundCreature(ClassInfo*, void*, int, short);
         virtual ~SoundCreature();
 };
 

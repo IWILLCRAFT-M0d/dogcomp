@@ -3,7 +3,7 @@
 #include "Dogs/Fish.h"
 
 #ifdef NON_MATCHING
-Fish::Fish(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+Fish::Fish(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     this->unk5F0 = 1500.0;
     this->unk5F4 = 1000.0;
     this->unk600 = 0;
@@ -14,7 +14,7 @@ Fish::Fish(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0,
     this->unk5FC = 0;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __4FishPvPvis); /* Fish::Fish */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __4FishP9ClassInfoPvis); /* Fish::Fish */
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", _$_4Fish);

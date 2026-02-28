@@ -7,7 +7,7 @@
 class Camera : public WorldObject {
     public:
         int unk5D0;
-        Camera(void*, void*, int, short);
+        Camera(ClassInfo*, void*, int, short);
         virtual ~Camera();
         void func_0010B990(void);
 };

@@ -2,14 +2,64 @@
 
 #include "Dogs/PlayerDog.h"
 
-// #ifdef NON_MATCHING
-// PlayerDog::PlayerDog(void* arg1) {
-//
-// }
-//
-// #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogPvPvis); /* PlayerDog::PlayerDog (ClassInfo?)*/
-// #endif
+
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D398;
+extern short D_00450A10;
+extern short D_00450A18;
+PlayerDog::PlayerDog(ClassInfo* arg0, void* arg1, int arg2, short arg3) : Dog(arg0=0, arg1, arg2, arg3) {
+    if (arg0 != 0) {
+        D_0044D398 = arg0;
+    }
+    long128 qword;
+    asm(
+        "pextlw $3, $2, $2\n\t"
+        "pextlw $3, $2, $3\n\t"
+        : "=r"(qword)
+    );
+    this->unkB50 = qword;
+    this->unkBB0 = -1;
+    this->unkB34 = 0;
+    this->unkB38 = 0;
+    this->unkB40 = qword;
+    this->unkB60 = 0;
+    this->unkB64 = 0;
+    this->unkBB8 = 0;
+    if (arg0 == 0) {
+        D_0044D398->unk4 = 1;
+    }
+
+    if (this->unk5C == D_00450A10) { // Gem
+    func_0014EB88(this,2);
+    func_0014EB88(this,3);
+    func_0014EB88(this,4);
+    func_0014EB88(this,5);
+    func_0014EB88(this,8);
+    func_0014EB88(this,23);
+    func_0014EB88(this,27);
+    func_0014EB88(this,28);
+    func_0014EB88(this,29);
+    func_0014EB88(this,1);
+    func_0014EB88(this,24);
+    func_0014EB88(this,25);
+    func_0014EB88(this,7);
+    func_0014EB88(this,6);
+    func_0014EB88(this,31);
+    func_0014EB88(this,32);
+    }
+    else if (this->unk5C == D_00450A18) { // ControllableDog
+        func_0014EB88(this,2);
+        func_0014EB88(this,3);
+        func_0014EB88(this,4);
+        func_0014EB88(this,5);
+        func_0014EB88(this,8);
+        func_0014EB88(this,6);
+    }
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoPvis); /* PlayerDog::PlayerDog (ClassInfo?)*/
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);
 
@@ -49,7 +99,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20); // "Failed to advance slidable in PlayerDog.cpp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88);
 

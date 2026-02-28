@@ -9,7 +9,7 @@ class Selector : public WorldObject {
         int unk5C4;
         int unk5C8;
         int unk5CC;
-        Selector(void*, void*, int, short);
+        Selector(ClassInfo*, void*, int, short);
         virtual ~Selector();
 };
 

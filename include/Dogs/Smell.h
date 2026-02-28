@@ -5,7 +5,7 @@
 
 class Smell : public SimObject {
     public:
-        Smell(void*, void*, int, short);
+        Smell(ClassInfo*, void*, int, short);
         virtual ~Smell();
 };
 

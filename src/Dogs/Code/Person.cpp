@@ -2,7 +2,22 @@
 
 #include "Dogs/Person.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __6PersonPvPvis); /* Person */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D2E8;
+Person::Person(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D2E8 = arg1;
+    }
+    this->unk658 = 50.0f;
+    this->unk65C = 200.0f;
+
+    if (arg1 == 0) {
+        D_0044D2E8->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __6PersonP9ClassInfoPvis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", _$_6Person);
 

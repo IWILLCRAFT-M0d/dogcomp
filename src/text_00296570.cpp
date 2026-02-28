@@ -74,8 +74,21 @@ void InterfaceError(char* file, int line) {
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296840);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296878);
+#ifdef NON_MATCHING
+extern void* D_00451CB8;
+ClassInfo::ClassInfo() {
+    this->unk8 = &D_00451CB8;
+    this->unk4 = 0;
+    this->unk10 = 0;
+    this->unkC = 0;
+    this->unk14 = 0;
+    this->unk18 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00296570", __9ClassInfo); /* ClassInfo */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296958); /* ClassInfo */
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296990);
 

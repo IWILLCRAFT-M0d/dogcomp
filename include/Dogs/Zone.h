@@ -6,7 +6,7 @@
 
 class Zone : public SimObject {
     public:
-        Zone(void*, void*, int, short);
+        Zone(ClassInfo*, void*, int, short);
         virtual ~Zone();
 };
 

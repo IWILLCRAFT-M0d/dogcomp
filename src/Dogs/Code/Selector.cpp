@@ -3,25 +3,24 @@
 #include "Dogs/Selector.h"
 
 #ifdef NON_MATCHING
-Selector::Selector(void* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
-    /*
-    pvVar1 = D_0044D708;
-    if (arg2 != (void *)0x0) {
-        pvVar1 = arg2;
+extern ClassInfo* D_0044D708;
+Selector::Selector(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D708 = arg1;
     }
-    */
+
     this->unk5C0 = 1;
     this->unk5C4 = 0;
     this->unk5C8 = 0;
     this->unk5CC = 0;
-    /*
-    if (arg2 == (void *)0x0) {
-        *(undefined4 *)((int)D_0044D708 + 4) = 1;
+
+    if (arg1 == 0) {
+        D_0044D708->unk4 = 1;
     }
-    */
+
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorPvPvis); /* Selector::Selector */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorP9ClassInfoPvis); /* Selector::Selector */
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", _$_8Selector);

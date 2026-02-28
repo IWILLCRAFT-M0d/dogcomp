@@ -2,7 +2,7 @@
 
 #include "Dogs/DiggablePatch.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchPvPvis); /* DiggablePatch */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchP9ClassInfoPvis); /* DiggablePatch */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 

@@ -5,7 +5,7 @@
 
 class SkiLiftSeat : public WorldObject {
     public:
-        SkiLiftSeat(void*, void*, int, short);
+        SkiLiftSeat(ClassInfo*, void*, int, short);
         virtual ~SkiLiftSeat();
 
 };

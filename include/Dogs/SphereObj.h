@@ -23,7 +23,7 @@ class SphereObj : public WorldObject {
         float unk5F8;
 
 
-        SphereObj(void*, void*, int, short);
+        SphereObj(ClassInfo*, void*, int, short);
         virtual ~SphereObj();
 };
 

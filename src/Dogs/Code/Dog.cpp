@@ -16,7 +16,33 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A6688);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __3DogPvPvis); /* Dog::Dog */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CE58;
+Dog::Dog(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CE58 = arg1;
+    }
+
+    this->unk838 = 3.0f;
+    this->unk83C = 0.03f;
+    this->unk840 = 0.2f;
+    this->unk844 = 2000.0f;
+    this->unk848 = 0.01f;
+    this->unk84C = 2.5f;
+    this->unk850 = 150.0f;
+    this->unk854 = 15000.0f;
+    this->unk858 = 10000.0f;
+
+
+    this->unk868 = 100.0f;
+
+    if (arg1 == 0) {
+        D_0044CE58->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __3DogP9ClassInfoPvis); /* Dog::Dog */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_3Dog);
 
@@ -50,7 +76,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0); // "Dog has no hit
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012ED58);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001317F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001317F8); /* DogHitPrimReceiver::DogHitPrimReceiver(Dog*)? __18DogHitPrimReceiverP3Dog */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131868);
 
@@ -68,7 +94,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0); // animation/movement update?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134550);
 
@@ -148,7 +174,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136878);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136D60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136E80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136E80); // jump function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00138FB8);
 

@@ -2,7 +2,7 @@
 
 #include "Dogs/HitTri.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __13HitTri_ObjectPvPvis); /* HitTri_Object */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __13HitTri_ObjectP9ClassInfoPvis); /* HitTri_Object */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", _$_13HitTri_Object);
 

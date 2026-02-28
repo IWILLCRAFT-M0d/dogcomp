@@ -6,7 +6,7 @@
 
 class PlaceHolder : public WorldObject {
     public:
-        PlaceHolder(void*, void*, int, short);
+        PlaceHolder(ClassInfo*, void*, int, short);
         virtual ~PlaceHolder();
 };
 
