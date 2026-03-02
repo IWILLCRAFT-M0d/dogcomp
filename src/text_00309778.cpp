@@ -1,9 +1,13 @@
 #include "common.h"
 
 #include "unk.h"
+
+#include <string.h>
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309778);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309798);
+int func_00309798(char* arg0, char* arg1) {
+    return strcasecmp(arg0, arg1);
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003097B8);
 
@@ -58,5 +62,5 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030AAA0);
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030AB68);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ABC8);
-// debugid.cpp?
+
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030ABE8);

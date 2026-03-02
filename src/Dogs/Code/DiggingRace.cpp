@@ -2,7 +2,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001292C8); /* DiggingRaceGod */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001294C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001294C8); // destructor
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296A8);
 

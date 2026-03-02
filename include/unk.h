@@ -7,6 +7,8 @@
 #include "Dogs/SimObj.h"
 // Unknown data and functions.
 
+
+
 typedef struct {
     int unk0;
     char unk4[4];
@@ -560,6 +562,7 @@ void func_002F6F40(void);
 void func_002F6F48(void);
 void func_002F7208(void);
 Status func_002FBEB0(void);
+int func_00309798(char*, char*);
 int func_0030ACA8(char*, int);
 int func_0030ACD0(char*, unsigned int);
 void func_002D42D8(void);

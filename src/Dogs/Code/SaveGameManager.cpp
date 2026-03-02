@@ -153,9 +153,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203150);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002031B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203248);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203248); /* return a0->unkC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203250);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203250); /* return a0->unk8 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveGameManager", D_0040C3C8);
 

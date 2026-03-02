@@ -83,13 +83,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003086A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003086D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308708);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308708); // File::OpenWatcher member
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308738);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308738); // File::OpenWatcher member
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308768);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308768); // File::OpenWatcher mmeber
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308798);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308798); // File::OpenWatcher member
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003087C0); /* return D_00453740 */
 
@@ -169,15 +169,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003092C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309308);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309378);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309378); // NullAccess member
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093A0);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093A0); // NullAccess member
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003093D0); /* "C:/Coding/FGDK3/Code/Common/File.cpp" string referenced */
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309448); /* "C:/Coding/FGDK3/Code/Common/File.cpp" string referenced */
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094C0);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094C0); // NullAccess member
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094E8);
 

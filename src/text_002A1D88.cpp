@@ -66,9 +66,9 @@ INCLUDE_RODATA("asm/nonmatchings/text_002A1D88", D_0043F250);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002A1D88", _vt$10ClipVolume);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4838);
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", __tf10ClipVolume);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A4878);
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", _$_10ClipVolume);
 
 int func_002A48A8() {
     return 0;

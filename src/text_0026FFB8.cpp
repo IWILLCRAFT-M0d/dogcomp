@@ -23,9 +23,9 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270468);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270498);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002704D8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002704D8); // shapeinstance member
 
-float func_002704F8(void) {
+float func_002704F8(void) { // shapeinstance member
     return 0.0f;
 }
 
@@ -51,7 +51,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_0026FFB8", _vt$11ShapeParams);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf11ShapeParams);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271860); /* ShapeParams::~ShapeParams */
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_11ShapeParams);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf13ShapeInstance);
 

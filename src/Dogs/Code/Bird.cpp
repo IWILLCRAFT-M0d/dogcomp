@@ -8,15 +8,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106340);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_001063A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106410);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106410__4Birdf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106528);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106528__4Birdf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F30__4Bird);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F68__4Birdf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106F88__4Birdf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106FD0);
 

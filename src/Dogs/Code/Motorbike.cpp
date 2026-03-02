@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143258); // "Unknown 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_001432D8); // wheel animation?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144350); // movement?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144350__9Motorbikef); // movement?
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Motorbike", D_003AE180);
 

@@ -95,7 +95,7 @@ GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, 
     this->m_unk14 = 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0__12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __9GE_Device);
 
@@ -133,11 +133,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE070);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE0F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118__9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE870);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE870__9GE_Device); // text render?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE8F0); // "You've got a NULL text glyph."
 
@@ -239,7 +239,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C68);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C70);
 
-int func_002D1C78() {
+int func_002D1C78() { // GE_PrimCache member
     return 0;
 }
 

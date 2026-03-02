@@ -4693,7 +4693,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002032D8", D_00415180);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002032D8", D_00416388);
 
-INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00227A50);
+INCLUDE_ASM("asm/nonmatchings/text_002032D8", __tf31ScriptMessageAndRequestReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/text_002032D8", func_00227A90);
 

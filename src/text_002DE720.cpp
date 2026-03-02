@@ -2,9 +2,9 @@
 #include "debug.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE720);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE720); // GE_DMARc member?
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE730);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE730); // GE_DMARc member?
 
 INCLUDE_RODATA("asm/nonmatchings/text_002DE720", _vt$8GE_DMARc);
 

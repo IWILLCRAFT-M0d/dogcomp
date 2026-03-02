@@ -32,7 +32,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146810);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146980);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146B20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", _$_14ParticleSystem);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146C70);
 

@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001AFEF8); /* rct3 Elem
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0020); /* rct3 Element3D::GetAnimPos ? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0068);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0068__9Element3D);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0070);
 
@@ -58,7 +58,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Element3D", D_003DB7C8); /* "t9Interf
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0548); /* __tf18AnimVarProvider_IF */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0598);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0598); /* __tf18AnimPosProvider_IF */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B05E8);
 

@@ -25,15 +25,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); // "Unknown
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001510C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001512E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001512E8__10SaveKennelf); // animate kennel door?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001517C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001517C8__10SaveKennel); // render kennels?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152118);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152248);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152248__10SaveKennel);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152288);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152288__10SaveKennel);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001522C8);
 

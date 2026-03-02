@@ -120,7 +120,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D30);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D88);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278D88__15StandardPointerf);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279000); /* JoystickPointer */
 

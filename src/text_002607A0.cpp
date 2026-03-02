@@ -780,7 +780,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf13NameTagEditor);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269050);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002691E8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002691E8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002691F0);
 

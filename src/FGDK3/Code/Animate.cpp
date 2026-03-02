@@ -5,15 +5,15 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F3EF0); /* NothingAnimation */
 
-void func_002F3F88() {
+void func_002F3F88() { // NothingAnimation member
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F3F90); /* NothingForXAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F3FE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F3FE0); // NothingForXAnimation member
 
-void func_002F4068() {
+void func_002F4068() { // NothingForXAnimation member
     return;
 }
 

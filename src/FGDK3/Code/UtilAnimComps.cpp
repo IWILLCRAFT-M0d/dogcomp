@@ -6,7 +6,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/UtilAnimComps", func_002E6550); /* MoveObjectComponent */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/UtilAnimComps", func_002E6AF8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/UtilAnimComps", func_002E6AF8); // MoveObjectComponent member
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/UtilAnimComps", _vt$19MoveObjectComponent);
 

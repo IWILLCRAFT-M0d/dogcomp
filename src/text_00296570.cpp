@@ -90,7 +90,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00296570", __9ClassInfo); /* ClassInfo */
 
 
 
-INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296990);
+INCLUDE_ASM("asm/nonmatchings/text_00296570", _$_9ClassInfo);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296AF0); /* rct ClassInfo::AddInterface ? */
 
@@ -126,7 +126,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00296570", __tf9ClassInfo);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_002974A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296570", func_002974A8);
+INCLUDE_ASM("asm/nonmatchings/text_00296570", func_002974A8); /* return a0->unk18 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_002974B0);
 

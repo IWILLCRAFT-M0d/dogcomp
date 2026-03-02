@@ -6,11 +6,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104B08); /* Basket::Bask
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CC0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CE8__6Basket);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D78); // return 100
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D80__6Basket);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104DA0);
 
@@ -28,7 +28,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105C98);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105D10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105DF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105DF8__6Basket);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105E28);
 // vtables

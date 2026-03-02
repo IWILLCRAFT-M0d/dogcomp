@@ -6,13 +6,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoPvis); /* B
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150__6Button);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178); // button::Extra?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370); // button action updater?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0); // button action?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0__6Button); // button action?
 
 #ifdef NON_MATCHING
 int Button::func_0010A550() {

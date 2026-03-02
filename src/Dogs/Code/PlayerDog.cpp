@@ -85,8 +85,12 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerDog", D_003B4EE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DA68); // "Invalid RoverSays move ID in PlayerDog:: msg AddMove"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB48);
-
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB48__9PlayerDog);
+/*
+void PlayerDog::func_0014DB48() {
+    this->unkBB0 = -1;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80);
@@ -95,9 +99,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBC0); // "IsMoveAvailableInCurrentStage: Unknown stage ID"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCB8__9PlayerDog);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCF0__9PlayerDog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20); // "Failed to advance slidable in PlayerDog.cpp"
 

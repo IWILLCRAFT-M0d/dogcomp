@@ -6,10 +6,18 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C368); /* FlyingHat
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", _$_9FlyingHat);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C518);
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C528);
-
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C518__9FlyingHat);
+/*
+void FlyingHat::func_0013C518() {
+    this->unk700 = 1;
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C528__9FlyingHat);
+/*
+void FlyingHat::func_0013C528() {
+    this->unk700 = 0;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C530);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C570);
@@ -48,8 +56,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CDC8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CDF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CE18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", __tf9FlyingHat);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CE70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CE70); /* return D_0044CFB8 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013CE78);

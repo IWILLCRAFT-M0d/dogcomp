@@ -38,7 +38,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173A20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173AA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173B58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173B58); /* BallHitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173BD0);
 

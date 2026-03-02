@@ -147,7 +147,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186728);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186748);
 
-int func_00186788() {
+int func_00186788() { // worldobject member
     return -1;
 }
 

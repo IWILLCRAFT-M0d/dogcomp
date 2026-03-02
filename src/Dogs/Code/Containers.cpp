@@ -7,15 +7,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB700); /* Containe
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_9Container);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB8B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB8B8__9Container);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB920);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB990);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB990__9Container);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB9D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA10__9Containerf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA78);
 

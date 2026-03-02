@@ -6,13 +6,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __13HitTri_ObjectP9ClassInfoPvi
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", _$_13HitTri_Object);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD818);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD818__13HitTri_Object);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC88);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDCB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDCB0__13HitTri_Objectf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDE90);
 

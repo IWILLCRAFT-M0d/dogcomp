@@ -52,7 +52,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __tf20
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5270);
 
-int func_002A5298(void) {
+int GE_PS2RenderHardware::func_002A5298() {
   return 0;
 }
 
@@ -60,7 +60,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52D0);
 
-int func_002A5300(void) {
+int GE_PS2RenderHardware::func_002A5300() {
   return 6;
 }
 

@@ -6,11 +6,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001888E0); /* Zone::Zone */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188968);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001889A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001889A8); /* ZoneRadius */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188A30); // "Unknown extra for ZoneRadius creature"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188BB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", _$_10ZoneRadius);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188BF8);
 
@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C28);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C88);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001890B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001890B0__10ZoneRadius);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189350); /* ZoneFromNavGraph */
 

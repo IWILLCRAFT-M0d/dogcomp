@@ -19,11 +19,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __4FishP9ClassInfoPvis); /* Fish:
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", _$_4Fish);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B440); // "Fish can\'t find the surface of the water!"
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B440__4Fish); // "Fish can\'t find the surface of the water!"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B550);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B570); // fish rendering?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B570__4Fish); // fish rendering?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B590); // fish movement?
 

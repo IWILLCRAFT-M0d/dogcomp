@@ -36,8 +36,12 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A57C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5868);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5880); /* a0->unk34 = a0->unk34 + 1 */
-
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5880__18GE_PS2PrimVertices);
+/*
+void GE_PS2PrimVertices::func_002A5880() {
+    this->unk34 = this->unk34 + 1;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5890);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5970);
@@ -355,7 +359,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADA08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADAD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADBE0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf10I_GE_DMARc);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADC20);
 
@@ -437,7 +441,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1B98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF0); /* return a0->unk28 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1BF8); /* return D_0045225C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B1C00);
 
@@ -468,7 +472,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2280);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B22C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2528);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2528__18GE_TextureStylePkt);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002B2548); // texture thing
 
@@ -1046,7 +1050,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002A5350", D_004411F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tft11GE_DMAPktRc1i69);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3158);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C3158__11GE_DMAPktRcli69);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf18GE_DMAPktRcGeneric);
 
@@ -1382,7 +1386,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C82A8); /* GE_Device::Susp
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002C8318);
 
-int func_002C8358(s_func_002C8358* arg0) {
+int func_002C8358(s_func_002C8358* arg0) { // ps2device member?
     return arg0->unk75C;
 }
 

@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __7File_CDPG10sc
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_7File_CD);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003030E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003030E8); // File_CD Member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303110);
 
@@ -54,17 +54,17 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", D_00447880); 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303148); // "CD read fail lsn=%d,%d err=%d %d retries to go\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303590);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303590); // File_CD member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303A60);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303A60); // File_CD member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303AD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303AD0); // File_CD member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303B70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303B70__7File_CD); // File_CD Member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303BB0); // "CD search for %s\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303FD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303FD0); // FileSystemDisc_CD member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304008);
 
@@ -108,7 +108,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003046C8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768); // FileSystemDisc_CD member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __17FileSystemDisc_CD);
 

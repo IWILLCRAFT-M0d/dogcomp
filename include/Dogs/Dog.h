@@ -6,6 +6,7 @@
 
 class Dog : public WorldObject {
     public:
+        int unk830; // swimming state
         float unk838;
         float unk83C;
         float unk840;
@@ -15,12 +16,15 @@ class Dog : public WorldObject {
         float unk850;
         float unk854;
         float unk858;
-        float unk868; // bone height
+        int unk85C;
+        float unk868; // status bone height
+
+        union {int i;float f;} unkB0C;
         Dog(ClassInfo*, void*, int, short);
         virtual ~Dog();
         float func_0012E240(void);
 };
-
+// union {int i;float f;}
 // class DogPrimHitReceiver : public SimObj_HitReceiver {
 //     public:
 //         DogPrimHitReceiver(Dog*);

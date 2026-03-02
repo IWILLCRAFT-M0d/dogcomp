@@ -16,13 +16,13 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_0038FFF0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00390020);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100428);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100428); // "Unknown extra for AnimatedObject creature"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100510);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100510__14AnimatedObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100530);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001009F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001009F8); // "Unknown anim type in animatedObject.cpp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101348);
 
@@ -36,13 +36,21 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101820);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101928);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101968);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101968__14AnimatedObject);
+/*
+int AnimatedObject::func_00101968() {
+    if ((this->unk638 == 0) && (this->unk634 == 0)) {
+        return 1;
+    }
+    return 0;
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101990);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101A38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101B08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101B08__14AnimatedObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101BA8);
 

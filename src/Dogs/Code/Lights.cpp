@@ -132,7 +132,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Lights", D_003ADF50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __tf12LightManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001421E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001421E0); /* return a0->unk38 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001421E8);
 
@@ -162,7 +162,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142470);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Lights", D_003ADFC0); /* "8GE_Light" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142EF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __tf12LiveEditable);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __tf8GE_Light);
 

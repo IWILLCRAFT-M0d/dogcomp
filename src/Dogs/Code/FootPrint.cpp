@@ -30,7 +30,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E220);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E230); /* FootPrints::FootPrints */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E338);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", _$_10FootPrints);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E450);
 

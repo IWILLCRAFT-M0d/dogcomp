@@ -47,7 +47,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B380);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B3F0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B458);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", _$_12StringBuffer);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StringUtils", func_0030B4B8);
 
