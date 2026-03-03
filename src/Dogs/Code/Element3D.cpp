@@ -2,7 +2,7 @@
 
 #include "Dogs/Element3D.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", __9Element3DPvs); /* Element3D (ClassInfo, shapeid)?  */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", __9Element3DP9ClassInfos); /* Element3D (ClassInfo, shapeid)?  */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001AF790); /* rct3 Element3D::AdvanceExternal ? */
 

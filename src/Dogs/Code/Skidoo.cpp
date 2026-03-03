@@ -2,7 +2,22 @@
 
 #include "Dogs/Skidoo.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_001691B8); /* Skidoo::Skidoo */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D820;
+Skidoo::Skidoo(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(3, arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D820 = arg1;
+    }
+
+    if (arg1 == 0) {
+        D_0044D820->unk4 = 1;
+    }
+
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", __6SkidooP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", _$_6Skidoo);
 
@@ -24,7 +39,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AE38);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", __tf6Skidoo);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEB8); /* return D_0044D820 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEB8__6Skidoo); /* return D_0044D820 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_0016AEC0);
 

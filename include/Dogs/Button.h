@@ -6,6 +6,7 @@
 
 class Button : public WorldObject {
     public:
+        int unk5C0;
         int unk5C4;
 
         int unk5E0;

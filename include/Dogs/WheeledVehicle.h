@@ -10,21 +10,21 @@ class WheeledVehicle : public HitTri_Object {
         float unk628;
         int unk62C;
         int unk630;
-        float unk634;
+        float unk634; // topspeed?
         int unk638;
         int unk63C;
         int unk640;
         int unk644;
         int unk648;
-        // char unk650[4];
-        // char unk654[4];
-        // char unk658[4];
-        // char unk65C[4];
-        float unk660;
+        // vector unk650[4];
+        // vector unk654[4];
+        // vector unk658[4];
+        // vector unk65C[4];
+        float unk660; // current speed?
         float unk6B0;
         int unk6B4;
         int unk6B8;
-        WheeledVehicle(int wheels, void*, void*, int, short);
+        WheeledVehicle(int wheels, ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WheeledVehicle();
         void func_00180528(float);
         void func_00180530(void);

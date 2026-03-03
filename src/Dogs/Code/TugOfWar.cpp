@@ -2,8 +2,47 @@
 
 #include "Dogs/TugOfWar.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178658); /* TugOfWarGod::TugOfWarGod */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044DB00;
+TugOfWarGod::TugOfWarGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DB00 = arg1;
+    }
 
+    this->unk5F0 = 5;
+    this->unk604 = 13.5f;
+    this->unk654 = 0.025f;
+    this->unk5F4 = 0.0f;
+    this->unk5F8 = 0.0f;
+    this->unk5FC = 0.0f;
+    this->unk600 = 0;
+    this->unk608 = 0;
+    this->unk60C = 0;
+    this->unk610 = 0;
+    this->unk618 = 0;
+    this->unk61C = 0;
+    this->unk620 = 0;
+    this->unk624 = 0;
+    this->unk628 = 0;
+    this->unk62C = 0;
+    this->unk630 = 0;
+    this->unk634 = 0;
+    this->unk63C = 0;
+    this->unk640 = 0;
+    this->unk644 = 0;
+    this->unk64C = 0;
+    this->unk658 = 10;
+    this->unk65C = 1;
+    this->unk660 = 0;
+    this->unk664 = 0;
+    this->unk668 = 0;
+    //
+    this->unk66C = 0;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __11TugOfWarGodP9ClassInfoP15SimObj_Universeis);
+#endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_11TugOfWarGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001789D0);
@@ -82,7 +121,26 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C398);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C538); // "TugOfWarGod rope particle failed to rayhit ground"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C6F0); /* TugOfWarRopeEnd::TugOfWarRopeEnd */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044DB08;
+TugOfWarRopeEnd::TugOfWarRopeEnd(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DB08 = arg1;
+    }
+
+    //unk5C4
+    //
+    this->unk5C0 = 0;
+    this->unk5C8 = 0;
+    this->unk5E0 = 0;
+
+    if (arg1 == 0) {
+        D_0044DB08->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __15TugOfWarRopeEndP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C7F8);
 
@@ -160,7 +218,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_15TugOfWarRopeEnd);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __tf15TugOfWarRopeEnd);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8); /* return D_0044DB08 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8__15TugOfWarRopeEnd); /* return D_0044DB08 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D300);
 

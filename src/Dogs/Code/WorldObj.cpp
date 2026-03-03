@@ -63,7 +63,45 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181B60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __11WorldObjectP9ClassInfoP15SimObj_Universeis); /* worldobject ? */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044DCA0;
+WorldObject::WorldObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObj_ObjectWithMomentum(arg1 = 0, arg2, arg3, arg4) {
+    //shapeinstance
+    if (arg1 != 0) {
+        D_0044DCA0 = arg1;
+    }
+    this->unk2E0 = 0;
+    //
+    //this->unk314
+    this->unk328 = 0;
+    //this->unk318
+    this->unk32C = 0;
+    this->unk330 = 0;
+    //
+    this->unk340 = 0;
+    //this->unk334
+    this->unk344 = 0;
+    this->unk348 = 0;
+    this->unk34C = 0;
+    this->unk350 = 0;
+    //
+    this->unk544 = 0;
+    //
+    this->unk55C = -1;
+    this->unk5B4 = 3.0;
+    this->unk554 = 0;
+    this->unk558 = -1;
+    this->unk5A8 = 0;
+    this->unk5AC = 0;
+    this->unk5B0 = 0;
+    this->unk5B8 = 0;
+    //
+    this->unk5BC = 0;
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __11WorldObjectP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", _$_11WorldObject);
 

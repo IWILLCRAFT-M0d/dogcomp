@@ -2,7 +2,22 @@
 
 #include "Dogs/HitTri.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __13HitTri_ObjectP9ClassInfoP15SimObj_Universeis); /* HitTri_Object */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044ECA8;
+HitTri_Object::HitTri_Object(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044ECA8 = arg1;
+    }
+
+    this->unk5DC = 1;
+    this->unk5D0 = 0;
+    this->unk5D4 = 0;
+
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __13HitTri_ObjectP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", _$_13HitTri_Object);
 

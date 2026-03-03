@@ -133,7 +133,7 @@ SimObj_Universe::SimObj_Universe() {
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __15SimObj_Universe); /* SimObj_Universe::SimObj_Universe */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __15SimObj_Universe);
 #endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_15SimObj_Universe);
 
@@ -229,8 +229,35 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165050);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001650D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165110); /* SimObject::SimObject */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D7B8;
+SimObject::SimObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObj_Base(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D7B8 = arg1;
+    }
 
+    //
+    this->unkB0 = 0;
+    //
+    this->unkC0 = -1;
+    //
+    this->unkD4 = 2e+06f;
+    //unkC4
+    this->unkDC = 0xFFFF;
+    //
+    this->unkF8 = 0;
+    this->unkFC = 1.0f;
+    this->unkC8 = 0;
+    this->unkCC = 0;
+    this->unkD0 = 2e+06f;
+    this->unkD8 = 0;
+    this->unkF0 = 0;
+    //
+    this->unkF4 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __9SimObjectP9ClassInfoP15SimObj_Universeis);
+#endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_9SimObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001653A8);
@@ -277,7 +304,33 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165DC0); // "Objects who
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165EB0); // "Objects whose hit check radius is FLT_MAX should override this method!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165F98); /* SimObj_ObjectWithMomentum */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D7D0;
+SimObj_ObjectWithMomentum::SimObj_ObjectWithMomentum(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D7D0 = arg1;
+    }
+
+    //
+    this->unk154 = 3700.0f;
+    this->unk144 = 300.0f;
+    this->unk148 = 600.0f;
+    this->unk14C = 1500.0f;
+    this->unk150 = 2500.0f;
+    this->unk158 = 4700.0f;
+    this->unk140 = 0;
+    this->unk15C = 0;
+    this->unk164 = -1.0f;
+    this->unk160 = 0;
+    //
+    this->unk1D4 = 1.0f;
+    //
+    this->unk1D0 = 1.0f;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __25SimObj_ObjectWithMomentumP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001661E0);
 

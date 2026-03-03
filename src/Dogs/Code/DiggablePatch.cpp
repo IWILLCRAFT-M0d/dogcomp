@@ -2,13 +2,37 @@
 
 #include "Dogs/DiggablePatch.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchP9ClassInfoP15SimObj_Universeis); /* DiggablePatch */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CD80;
+DiggablePatch::DiggablePatch(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CD80 = arg1;
+    }
+
+    //
+    this->unk5C4 = 1.0f;
+    //this->unk5D0
+    this->unk5C0.f = 1.0f;
+    //this->unk5C8
+    //this->unk5CC
+    this->unk5D4 = 0;
+    this->unk5D8 = 0;
+    this->unk5DC = 0;
+    this->unk5E0 = 0.0f;
+
+    if (arg1 == 0) {
+        D_0044CD80->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8);
 #ifdef NON_MATCHING
-int DiggablePatch::func_00127F78(float arg) {
+int DiggablePatch::func_00127F78(float arg) { // set digRate?
     this->unk5E0 = arg;
     return 0;
 }
@@ -21,7 +45,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F88);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128030);
 
 #ifdef NON_MATCHING
-int DiggablePatch::func_00128120(float arg) {
+int DiggablePatch::func_00128120(float arg) { // set depth?
     this->unk5C4 = arg;
     return 0;
 }
@@ -29,8 +53,13 @@ int DiggablePatch::func_00128120(float arg) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128120__13DiggablePatchf);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128130); /* return this->unk5C0 */
-
+#ifdef NON_MATCHING
+int DiggablePatch::func_00128130() {
+    return this->unk5C0.i;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128130__13DiggablePatch);
+#endif
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3588);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A35B0);

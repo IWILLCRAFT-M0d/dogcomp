@@ -6,6 +6,13 @@
 
 class Bird : public WorldObject {
     public:
+        int unk648;
+        int unk64C;
+        int unk650;
+        int unk654;
+        //
+        int unk670;
+        int unk674;
         Bird(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Bird();
 };

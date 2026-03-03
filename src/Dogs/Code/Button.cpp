@@ -1,8 +1,28 @@
-    #include "common.h"
+#include "common.h"
 
 #include "Dogs/Button.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoP15SimObj_Universeis); /* Button */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044C948;
+Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044C948 = arg1;
+    }
+    //
+
+    this->unk5C0 = 0;
+    this->unk5E0 = 0;
+    this->unk5E4 = 0;
+    this->unk5E8 = 1;
+    this->unk5EC = 0;
+
+    if (arg1 == 0) {
+        D_0044C948->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
@@ -19,7 +39,7 @@ int Button::func_0010A550() {
     return this->unk5EC;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550__6Button); /* return (int) this->unk5EC (button type/height) */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550__6Button);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);

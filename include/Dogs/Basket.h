@@ -6,6 +6,12 @@
 
 class Basket : public Container {
     public:
+
+        int unk620;
+        //unk624
+        int unk628;
+        //
+        int unk660;
         Basket(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Basket();
 };

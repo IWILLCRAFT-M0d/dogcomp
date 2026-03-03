@@ -678,7 +678,7 @@ extern void* D_00453698;
 void Console::IsMediaReady(s32 arg0) {
     char str[128];
 
-    s32 slot;
+    int slot;
     u32 temp_4;
 
 

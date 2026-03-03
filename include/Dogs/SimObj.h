@@ -64,12 +64,39 @@ class SimObj_Base : public GenericObject {
 
 class SimObject : public SimObj_Base {
     public:
+        int unkB0;
+        int unkC0;
+        int unkC8;
+        int unkCC;
+        float unkD0;
+        float unkD4;
+        int unkD8;
+
+        short unkDC;
+        int unkF0;
+        int unkF4;
+        int unkF8;
+        float unkFC;
+
         SimObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObject();
 };
 
 class SimObj_ObjectWithMomentum : public SimObject {
     public:
+        int unk140;
+        float unk144;
+        float unk148;
+        float unk14C;
+        float unk150;
+        float unk154;
+        float unk158;
+        int unk15C;
+        int unk160;
+        float unk164;
+
+        float unk1D0;
+        float unk1D4;
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
 };

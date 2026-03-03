@@ -1,6 +1,33 @@
 #include "common.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001292C8); /* DiggingRaceGod */
+#include "Dogs/DiggingRace.h"
+
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CDD8;
+DiggingRaceGod::DiggingRaceGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CDD8 = arg1;
+    }
+
+    this->unk5D0 = 0;
+    this->unk5D4 = 0;
+    this->unk5DC = 0;
+    this->unk5E0 = 0;
+    this->unk5E4 = 0;
+    this->unk5E8 = 0;
+    this->unk5EC = 0;
+    this->unk5F0 = 0;
+    this->unk5F4 = 0;
+    this->unk5F8 = 0;
+    //
+    this->unk630 = 0;
+    this->unk634 = 0;
+    this->unk638 = 0;
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", __14DiggingRaceGodP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001294C8); // destructor
 

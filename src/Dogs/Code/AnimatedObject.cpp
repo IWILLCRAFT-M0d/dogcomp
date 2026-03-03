@@ -2,7 +2,30 @@
 
 #include "Dogs/AnimatedObject.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100100); /* AnimatedObject */
+
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044C738;
+AnimatedObject::AnimatedObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044C738 = arg1;
+    }
+
+    //
+
+    this->unk690 = 1;
+    this->unk634 = 0;
+    this->unk638 = 0;
+    this->unk63C = 0;
+    this->unk644 = 0;
+    this->unk648 = 0;
+    this->unk680 = 0;
+
+    this->unk694 = 0;
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __14AnimatedObjectP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_14AnimatedObject);
 

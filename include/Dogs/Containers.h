@@ -6,18 +6,26 @@
 
 class Container : public WorldObject {
     public:
+        int unk600;
         Container(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Container();
 };
 
 class BasketballNet : public Container {
     public:
+        int unk610;
+        int unk614;
+        int unk618;
         BasketballNet(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~BasketballNet();
 };
 
 class Pram : public Container {
     public:
+        int unk610;
+        int unk614;
+        int unk618;
+        int unk61C;
         Pram(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Pram();
 };

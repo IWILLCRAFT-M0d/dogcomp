@@ -9,6 +9,9 @@ D_004537F0 = 0x004537f0; // type:s32
 
 // Functions
 entry = 0x00100008; // type:func
+
+// AnimatedObject
+__14AnimatedObjectP9ClassInfoP15SimObj_Universeis = 0x00100100; // type:func
 _$_14AnimatedObject = 0x00100340; // type:func
 func_00100510__14AnimatedObject = 0x00100510; // type:func
 func_00101968__14AnimatedObject = 0x00101968; // type:func
@@ -26,6 +29,7 @@ __tft9Interface1Z17AnimatedObject_IF = 0x00104228;
 __tf8Aperture = 0x00104A48;
 __tf12DiscAperture = 0x00104A98;
 // Basket
+__6BasketP9ClassInfoP15SimObj_Universeis = 0x00104B08; // type:func
 func_00104CE8__6Basket = 0x00104CE8; // type:func
 func_00104D78__6Basket = 0x00104D78; // type:func
 func_00104D80__6Basket = 0x00104D80; // type:func
@@ -34,6 +38,9 @@ __tf9Basket_IF = 0x00105FF0;
 _$_6Basket = 0x00106040; // type:func
 __tf6Basket = 0x001060f8;
 __tft9Interface1Z9Basket_IF = 0x001061A0;
+
+// Bird
+__4BirdP9ClassInfoP15SimObj_Universeis = 0x00106220; // type:func
 func_00106410__4Birdf = 0x00106410; // type:func
 func_00106528__4Birdf = 0x00106528; // type:func
 func_00106F30__4Bird = 0x00106F30; // type:func
@@ -81,7 +88,7 @@ __tf16CameraNextAction = 0x00122CB8;
 __tf17CameraZonesAction = 0x00122D98;
 
 // Car.cpp
-// __3Car = 0x00122F50; // type:func
+__3CarP9ClassInfoP15SimObj_Universeis = 0x00122F50; // type:func
 _$_3Car = 0x001231C0; // type:func
 func_00123298__3Car = 0x00123298; // type:func
 func_00123CA8__3Carf = 0x00123CA8; // type:func
@@ -97,7 +104,8 @@ __13DiggablePatchP9ClassInfoP15SimObj_Universeis = 0x00127D30; // type:func
 _$_13DiggablePatch = 0x00127E48; // type:func
 func_00127F78__13DiggablePatch = 0x00127F78; // type:func
 func_00128120__13DiggablePatchf = 0x00128120; // type:func
-
+func_00128130__13DiggablePatch = 0x00128130; // type:func
+__14DiggingRaceGodP9ClassInfoP15SimObj_Universeis = 0x001292C8; // type:func
 func_00129AB0__14DiggingRaceGodf = 0x00129AB0; // type:func
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
@@ -194,6 +202,7 @@ __tf12LiveEditable = 0x00142EF8;
 __tf8GE_Light = 0x00142f38;
 
 // Motorbike.cpp
+__9MotorbikeP9ClassInfoP15SimObj_Universeis = 0x00142FB8; // type:func
 _$_9Motorbike = 0x00143168; // type:func
 func_00144350__9Motorbikef = 0x00144350; // type:func
 __tf9Motorbike = 0x00144b48;
@@ -276,7 +285,9 @@ SimObj_Finalise__Fv = 0x001610e8; // type:func
 _$_24SimObj_UniverseLandscape = 0x001629A0; // type:func
 __15SimObj_Universe = 0x001630A8; // type:func
 _$_15SimObj_Universe = 0x001631E8; // type:func
+__9SimObjectP9ClassInfoP15SimObj_Universeis = 0x00165110; // type:func
 _$_9SimObject = 0x001652E8; // type:func
+__25SimObj_ObjectWithMomentumP9ClassInfoP15SimObj_Universeis = 0x00165F98; // type:func
 __tf9SimObject = 0x00167fb8;
 __tf10DebugID_IF = 0x00168160;
 _$_25SimObj_ObjectWithMomentum = 0x001686B8; // type:func
@@ -296,7 +307,9 @@ __tft9Interface1Z11Movement_IF = 0x00169118;
 __tft9Interface1Z19CameraSpecialHit_IF = 0x00169158;
 
 // Skidoo
+__6SkidooP9ClassInfoP15SimObj_Universeis = 0x001691B8; // type:func
 _$_6Skidoo = 0x001693A0; // type:func
+func_0016AEB8__6Skidoo = 0x0016AEB8; // type:func
 __tf6Skidoo = 0x0016AE60;
 
 // SkiLiftSeat
@@ -331,17 +344,23 @@ _$_11SwingBridge = 0x00177898; // type:func
 __tf11SwingBridge = 0x001785C8;
 
 // TugOfWar
+__11TugOfWarGodP9ClassInfoP15SimObj_Universeis = 0x00178658; // type:func
 _$_11TugOfWarGod = 0x00178818; // type:func
 func_0017C218__11TugOfWarGod = 0x0017C218; // type:func
 func_0017C238__11TugOfWarGod = 0x0017C238; // type:func
 func_0017C248__11TugOfWarGod = 0x0017C248; // type:func
+__15TugOfWarRopeEndP9ClassInfoP15SimObj_Universeis = 0x0017C6F0; // type:func
+
 __tf11TugOfWarGod = 0x0017D110;
 _$_15TugOfWarRopeEnd = 0x0017D200; // type:func
 __tf15TugOfWarRopeEnd = 0x0017D2A0;
+func_0017D2F8__15TugOfWarRopeEnd = 0x0017D2F8; // type:func
 __tf18WaterSplashManager = 0x0017FF28;
 __tf17StaticWaterRipple = 0x0017FF90;
 __tf13RippleManager = 0x00180030;
 __tf20CurtainSplashManager = 0x00180110;
+// wheeledvehicle
+__14WheeledVehicleiP9ClassInfoP15SimObj_Universeis = 0x001801A0; // type:func
 _$_14WheeledVehicle = 0x001803E8; // type:func
 func_00180528__14WheeledVehiclef = 0x00180528; // type:func
 func_00180530__14WheeledVehicle = 0x00180530; // type:func
@@ -373,12 +392,24 @@ __tft9Interface1Z18AnimVarProvider_IF = 0x001887E0;
 __tft9Interface1Z17WalkerProvider_IF = 0x00188820;
 __tft9Interface1Z20WalkingFootRayHit_IF = 0x00188860;
 // Zone
+__4ZoneP9ClassInfoP15SimObj_Universeis = 0x001888E0; // type:func
+_$_4Zone = 0x00188968; // type:func
+__10ZoneRadiusP9ClassInfoP15SimObj_Universeis = 0x001889A8; // type:func
 _$_10ZoneRadius = 0x00188BB8; // type:func
+func_00188C88__10ZoneRadius = 0x00188C88; // type:func
 func_001890B0__10ZoneRadius = 0x001890B0; // type:func
+__16ZoneFromNavGraphP9ClassInfoP15SimObj_Universeis = 0x00189350; // type:func
 _$_16ZoneFromNavGraph = 0x00189400; // type:func
+func_00189440__16ZoneFromNavGraph = 0x00189440; // type:func
+func_00189878__16ZoneFromNavGraph = 0x00189878; // type:func
+func_00189A18__16ZoneFromNavGraph = 0x00189A18; // type:func
+func_00189AB0__16ZoneFromNavGraph = 0x00189AB0; // type:func
 __tf4Zone = 0x0018A018;
+func_0018A098__4Zone = 0x0018A098; // type:func
 __tf10ZoneRadius = 0x0018A0A0;
+func_0018A140__10ZoneRadius = 0x0018A140; // type:func
 __tf16ZoneFromNavGraph = 0x0018A148;
+func_0018A1E0__16ZoneFromNavGraph = 0x0018A1E0; // type:func
 _$_39VehicleNavDirectionalBackwardsAnimation = 0x0018C5C8; // type:func
 __tf39VehicleNavDirectionalBackwardsAnimation = 0x0018c5f8;
 _$_20SpeechAniTextBigHint = 0x0018C650; // type:func
@@ -448,14 +479,19 @@ __12ConsoleLayer = 0x001A9CD0; // type:func
 _$_12ConsoleLayer = 0x001A9E18; // type:func
 
 // Containers
+__9ContainerP9ClassInfoP15SimObj_Universeis = 0x001AB700; // type:func
 _$_9Container = 0x001AB7E8; // type:func
 func_001AB8B8__9Container = 0x001AB8B8; // type:func
 func_001AB990__9Container = 0x001AB990; // type:func
 func_001ABA10__9Containerf = 0x001ABA10; // type:func
+__13BasketballNetP9ClassInfoP15SimObj_Universeis = 0x001ABAE8; // type:func
 _$_13BasketballNet = 0x001ABBD8; // type:func
+__4Pram9ClassInfoP15SimObj_Universeis = 0x001AC3A0; // type:func
 _$_4Pram = 0x001AC490; // type:func
 __tf9Container = 0x001acf60;
+func_001ACFD0 = 0x001ACFD0; // type:func
 __tf13BasketballNet = 0x001acfd8;
+func_001AD070__13BasketballNet = 0x001AD070; // type:func
 __tf4Pram = 0x001ad078;
 
 
@@ -474,7 +510,7 @@ __tf9DogScript = 0x001af348;
 __13Game_Documentff = 0x001c61f8; // type:func
 _$_13Game_Document = 0x001C6C90; // type:func
 __tf18SetLevelEnumerator = 0x001af3c0;
-__9Element3DPvs = 0x001AF470; // type:func
+__9Element3DP9ClassInfos = 0x001AF470; // type:func
 Render__9Element3DPv = 0x001AFD78; // type:func
 func_001B0068__9Element3D = 0x001B0068; // type:func
 __tf9Element3D = 0x001b04a8;

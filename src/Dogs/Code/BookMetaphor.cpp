@@ -305,7 +305,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B480);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B5A0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __17BookMetaphorLayer); /* BookMetaphorLayer::BookMetaphorLayer */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __17BookMetaphorLayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B7A0);
 

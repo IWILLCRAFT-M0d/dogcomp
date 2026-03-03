@@ -2,9 +2,36 @@
 
 #include "Dogs/WheeledVehicle.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001801A0); /* WheeledVehicle::WheeledVehicle */
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle); /* WheeledVehicle::~WheeledVehicle */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044DC20;
+WheeledVehicle::WheeledVehicle(int wheels, ClassInfo* arg2, SimObj_Universe* arg3, int arg4, short arg5) : HitTri_Object(arg2 = 0, arg3, arg4, arg5) {
+    if (arg2 != 0) {
+        D_0044DC20 = arg2;
+    }
+    //
+    this->unk634 = 1.2f;
+    // unk650
+    this->unk660 = 0.0f;
+    this->unk6B0 = 15000.0f;
+    this->unk624 = 1.0f;
+    this->unk628 = 1.0f;
+    this->unk62C = 0;
+    this->unk630 = 0;
+    this->unk638 = 0;
+    this->unk63C = 0;
+    this->unk640 = 0;
+    this->unk644 = 0;
+    this->unk648 = 0;
+    this->unk6B4 = 0;
+    this->unk6B8 = 0;
+    if (arg2 == 0) {
+        D_0044DC20->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", __14WheeledVehicleiP9ClassInfoP15SimObj_Universeis);
+#endif
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", _$_14WheeledVehicle);
 
 #ifdef NON_MATCHING
 void WheeledVehicle::func_00180528(float arg) {

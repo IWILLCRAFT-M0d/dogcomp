@@ -16,21 +16,28 @@ void WorldObj_Finalise(void);
 class WorldObject : public SimObj_ObjectWithMomentum {
     public:
         int unk2E0;
-
+        //unk314
+        //unk318
         int unk328;
         int unk32C;
         int unk330;
-
+        //unk334
         int unk340;
+        int unk344;
+        int unk348;
+        int unk34C;
+        int unk350;
 
         int unk544;
         int unk554;
         int unk558;
+        int unk55C;
         int unk5A8;
         int unk5AC;
         int unk5B0;
         float unk5B4;
         int unk5B8;
+        int unk5BC;
 
         WorldObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WorldObject();

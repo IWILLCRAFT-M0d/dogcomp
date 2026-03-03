@@ -10,8 +10,8 @@ SaveKennel::SaveKennel(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short a
     }
     this->unk604 = 0;
     this->unk620 = 0;
-
-    this->unk624 = 1.0;
+    this->unk624 = 1.0f;
+    // element3d unk630
 
     if (arg1 == 0) {
         D_0044D448->unk4 = 1;

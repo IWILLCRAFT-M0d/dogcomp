@@ -8,12 +8,27 @@ Person::Person(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : W
     if (arg1 != 0) {
         D_0044D2E8 = arg1;
     }
+
+    this->unk5C0 = 0.0f;
+    this->unk5C4 = 0.0f;
+    this->unk5C8 = 0.0f;
+    //
+
     this->unk658 = 50.0f;
     this->unk65C = 200.0f;
+    // animvars here?
+    this->unk6B0 = 0;
+    this->unk6B4 = 0;
+    this->unk6B8 = 0;
+    this->unk6BC = 0;
+    this->unk6C0 = 0;
+    this->unk6C4 = 0;
+    this->unk6C8 = 0;
 
     if (arg1 == 0) {
         D_0044D2E8->unk4 = 1;
     }
+    //
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __6PersonP9ClassInfoP15SimObj_Universeis);

@@ -2,7 +2,21 @@
 
 #include "Dogs/Basket.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104B08); /* Basket::Basket */
+
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044C7F8;
+Basket::Basket(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Container(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044C7F8 = arg1;
+    }
+
+    this->unk620 = 0;
+    this->unk628 = 0;
+    this->unk660 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", __6BasketP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CC0);
 

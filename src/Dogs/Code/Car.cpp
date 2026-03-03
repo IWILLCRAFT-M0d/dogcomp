@@ -2,7 +2,22 @@
 
 #include "Dogs/Car.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00122F50); /* Car */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CC80;
+Car::Car(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(4, arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CC80 = arg1;
+    }
+
+    if (arg1 == 0) {
+        D_0044CC80->unk4 = 1;
+    }
+
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", __3CarP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", _$_3Car);
 
