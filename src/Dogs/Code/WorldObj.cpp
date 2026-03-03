@@ -63,7 +63,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181B60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __11WorldObjectP9ClassInfoPvis); /* worldobject ? */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __11WorldObjectP9ClassInfoP15SimObj_Universeis); /* worldobject ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", _$_11WorldObject);
 

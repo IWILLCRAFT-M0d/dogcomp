@@ -12,7 +12,7 @@ class Button : public WorldObject {
         int unk5E4;
         int unk5E8; // toggle state?
         int unk5EC; // button press height?
-        Button(ClassInfo*, void*, int, short);
+        Button(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Button();
         int func_0010A550(void);
 };

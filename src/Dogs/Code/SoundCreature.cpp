@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 extern ClassInfo* D_0044DA08;
-SoundCreature::SoundCreature(ClassInfo* arg1, void* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+SoundCreature::SoundCreature(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DA08 = arg1;
     }
@@ -19,7 +19,7 @@ SoundCreature::SoundCreature(ClassInfo* arg1, void* arg2, int arg3, short arg4) 
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __13SoundCreatureP9ClassInfoPvis);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __13SoundCreatureP9ClassInfoP15SimObj_Universeis);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", _$_13SoundCreature);

@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 extern ClassInfo* D_0044D448;
-SaveKennel::SaveKennel(ClassInfo* arg1, void* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+SaveKennel::SaveKennel(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D448 = arg1;
     }
@@ -19,7 +19,7 @@ SaveKennel::SaveKennel(ClassInfo* arg1, void* arg2, int arg3, short arg4) : HitT
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __10SaveKennelP9ClassInfoPvis); /* SaveKennel::SaveKennel */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __10SaveKennelP9ClassInfoP15SimObj_Universeis); /* SaveKennel::SaveKennel */
 #endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); // "Unknown extra for SaveKennel"
 

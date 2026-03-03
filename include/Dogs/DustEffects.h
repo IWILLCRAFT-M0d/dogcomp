@@ -5,7 +5,7 @@
 
 class DustEffectManager : public SimObject {
     public:
-        DustEffectManager(ClassInfo*, void*, int, short);
+        DustEffectManager(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~DustEffectManager();
 };
 

@@ -6,7 +6,7 @@
 
 class Bird : public WorldObject {
     public:
-        Bird(ClassInfo*, void*, int, short);
+        Bird(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Bird();
 };
 

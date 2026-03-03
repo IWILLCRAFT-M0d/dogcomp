@@ -10,7 +10,7 @@ class Person : public WorldObject {
         float unk65C;
         int unk6B8;
         float unk5C0;
-        Person(ClassInfo*, void*, int, short);
+        Person(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Person();
         int func_0014C240(void);
         float func_0014CBD8(void);

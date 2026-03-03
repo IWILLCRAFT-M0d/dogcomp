@@ -28,7 +28,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540__14Wheele
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180A68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180A68__14WheeledVehicle);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180A98);
 

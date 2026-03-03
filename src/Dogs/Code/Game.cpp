@@ -522,7 +522,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E29C0); /* "13SimObj_Filt
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf23SimObj_FilterFlagsAndEq);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6B40); /* return 1; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6B40__23SimObj_FilterFlagsAndEq); /* return 1; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf20WorldObject_Universe);
 
@@ -564,7 +564,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DE8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DF8); /* a0->unk4D8 = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E00);
 

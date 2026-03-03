@@ -6,7 +6,7 @@
 
 class Car : public WheeledVehicle {
     public:
-        Car(ClassInfo*, void*, int, short);
+        Car(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Car();
 };
 

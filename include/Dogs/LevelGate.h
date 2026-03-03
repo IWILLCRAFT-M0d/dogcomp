@@ -5,7 +5,7 @@
 
 class LevelGate : public SimObject {
     public:
-        LevelGate(ClassInfo*, void*, int, short);
+        LevelGate(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~LevelGate();
 };
 

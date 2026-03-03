@@ -6,7 +6,7 @@
 
 class FootPrints : public WorldObject {
     public:
-        FootPrints(ClassInfo*, void*, int, short);
+        FootPrints(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~FootPrints();
 };
 

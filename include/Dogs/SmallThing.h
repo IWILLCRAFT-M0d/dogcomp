@@ -23,7 +23,7 @@ class SmallThing : public HitTri_Object {
         int unk6F0;
         int unk6F4;
         int unk6F8;
-        SmallThing(ClassInfo*, void*, int, short);
+        SmallThing(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SmallThing();
 };
 

@@ -6,7 +6,7 @@
 
 class ParticleSystem : public WorldObject {
     public:
-        ParticleSystem(ClassInfo*, void*, int, short);
+        ParticleSystem(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~ParticleSystem();
 };
 

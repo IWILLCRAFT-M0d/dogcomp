@@ -7,7 +7,7 @@
 class Camera : public WorldObject {
     public:
         int unk5D0;
-        Camera(ClassInfo*, void*, int, short);
+        Camera(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Camera();
         void func_0010B990(void);
 };

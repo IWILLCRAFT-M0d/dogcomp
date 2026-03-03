@@ -6,7 +6,7 @@
 
 class FlyingHat : public SmallThing {
     public:
-        FlyingHat(ClassInfo*, void*, int, short);
+        FlyingHat(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~FlyingHat();
 };
 

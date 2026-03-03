@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172C88);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172D90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172DF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172DF0__8Snowball);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172E20);
 

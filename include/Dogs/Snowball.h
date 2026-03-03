@@ -7,7 +7,7 @@
 class Snowball : public SphereObj {
     public:
 
-        Snowball(ClassInfo*, void*, int, short);
+        Snowball(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Snowball();
 };
 

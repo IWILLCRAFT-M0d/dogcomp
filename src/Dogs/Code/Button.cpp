@@ -2,7 +2,7 @@
 
 #include "Dogs/Button.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoPvis); /* Button */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoP15SimObj_Universeis); /* Button */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150__6Button);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178); // button::Extra?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370); // button action updater?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370__6Buttonf); // button action updater?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0__6Button); // button action?
 

@@ -6,7 +6,7 @@
 
 class BoneGod : public WorldObject {
     public:
-        BoneGod(ClassInfo*, void*, int, short);
+        BoneGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~BoneGod();
 };
 

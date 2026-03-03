@@ -9,7 +9,7 @@ class TugOfWarGod : public WorldObject {
         float unk5F4; // visual brightness?
         float unk5F8; // jake pull power?
         float unk5FC; // opponent dog pull power?
-        TugOfWarGod(ClassInfo*, void*, int, short);
+        TugOfWarGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~TugOfWarGod();
         void func_0017C238(void);
         void func_0017C248(void);

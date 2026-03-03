@@ -6,7 +6,7 @@
 
 class SwingBridge : public HitTri_Object {
     public:
-        SwingBridge(ClassInfo*, void*, int, short);
+        SwingBridge(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SwingBridge();
 };
 

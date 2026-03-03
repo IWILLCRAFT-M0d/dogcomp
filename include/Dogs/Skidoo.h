@@ -6,7 +6,7 @@
 
 class Skidoo : public WheeledVehicle {
     public:
-        Skidoo(ClassInfo*, void*, int, short);
+        Skidoo(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Skidoo();
 };
 

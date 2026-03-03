@@ -6,7 +6,7 @@
 
 class PlaceHolder : public WorldObject {
     public:
-        PlaceHolder(ClassInfo*, void*, int, short);
+        PlaceHolder(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~PlaceHolder();
 };
 

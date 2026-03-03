@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 extern ClassInfo* D_0044D708;
-Selector::Selector(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+Selector::Selector(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D708 = arg1;
     }
@@ -20,7 +20,7 @@ Selector::Selector(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObj
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorP9ClassInfoPvis); /* Selector::Selector */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorP9ClassInfoP15SimObj_Universeis); /* Selector::Selector */
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", _$_8Selector);
