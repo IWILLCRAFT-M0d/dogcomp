@@ -17,7 +17,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330D50);
 
 INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330E50); /* asinf */
 
-INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330F50);
+INCLUDE_ASM("asm/nonmatchings/text_00330930", atan2f);
 
 INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00331078);
 

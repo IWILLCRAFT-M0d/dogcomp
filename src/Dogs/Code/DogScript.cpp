@@ -37,7 +37,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD7E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD850);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD8D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD8D0__9DogScript);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD928);
 

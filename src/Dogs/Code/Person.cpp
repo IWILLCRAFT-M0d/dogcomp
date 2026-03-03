@@ -21,11 +21,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __6PersonP9ClassInfoPvis);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", _$_6Person);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A398);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A398__6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A650);
 
-float func_0014A840() {
+float func_0014A840() { // Person member
     return 100.0f;
 }
 
@@ -39,11 +39,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014B070);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014B4C0); // "Acos out of range"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014BE60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014BE60__6Person);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014BF90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014BF90__6Person);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C000);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C000__6Personf); // advance animvars?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C068);
 
@@ -51,9 +51,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1B8); /* return 0x64 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1B8__6Person); /* return 0x64 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0__6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C230);
 

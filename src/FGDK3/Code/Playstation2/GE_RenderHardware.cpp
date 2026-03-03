@@ -6,7 +6,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", _$_20GE_PS2RenderHardware); /* ~GE_PS2RenderHardware */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4BF8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4BF8__20GE_PS2RenderHardware);
 /*
 Status func_002A4BF8(void) {
    Status(0x4002, "c:/coding/fgdk3/Code/playstation2/GE_RenderHardware.cpp", 207)

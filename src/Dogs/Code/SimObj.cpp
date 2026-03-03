@@ -97,8 +97,44 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CE8); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __15SimObj_Universe); /* SimObj_Universe::SimObj_Universe */
+#ifdef NON_MATCHING
+SimObj_Universe::SimObj_Universe() {
+    this->unk2C = 0;
+    this->unk38 = 0;
+    this->unk28 = 0;
+    //this->unk24
+    this->unk30 = 0;
+    //this->unk34
+    this->unk44 = 0;
+    this->unk50 = 0;
+    this->unk40 = 0;
+    //this->unk3C
+    this->unk48 = 0;
+    //this->unk4C
 
+    //this->unkB0
+    this->unk58 = 0;
+    this->unk60 = 0;
+    this->unk68 = 0;
+    this->unkA4 = 0;
+    //this->unk6C
+    //this->unk54
+    this->unk5C = 254;
+    this->unk64 = 1.0f;
+    //this->unk90
+
+    //this->unk70
+    this->unkA8 = 64;
+
+    //this->unk74
+
+    //this->unk7C
+    this->unk78 = 0;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __15SimObj_Universe); /* SimObj_Universe::SimObj_Universe */
+#endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_15SimObj_Universe);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163270);
@@ -163,7 +199,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164880);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164AD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164B08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164B08); // "Trying to restore persist data for an object that doesn\'t have any"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164BC8);
 
@@ -581,7 +617,7 @@ void func_00168B80(void) {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B88); /* return D_0044d7d0; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B88); /* return D_0044D7D0; */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SimObj", D_003BF6D0);
 
@@ -611,7 +647,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf11YDRRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168CB8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168DD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf32SimObj_ObjectTestHitPrimReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168E20);
 

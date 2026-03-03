@@ -44,4 +44,37 @@ class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {
 
 };
 */
+class SimObj_ChildHolder {
+
+};
+
+class SimObj_Universe : public SimObj_ChildHolder {
+    public:
+        //unk24
+        int unk28;
+        int unk2C;
+        int unk30;
+        //unk34
+        int unk38;
+        //unk3C
+        int unk40;
+        int unk44;
+        int unk48;
+        //unk4C
+        int unk50;
+        // unk54
+        int unk58;
+        int unk5C;
+        int unk60;
+        float unk64;
+        int unk68;
+        // unk70
+        // unk74
+        int unk78;
+        // unk7C
+        int unkA4;
+        int unkA8;
+        SimObj_Universe();
+        virtual ~SimObj_Universe();
+};
 #endif

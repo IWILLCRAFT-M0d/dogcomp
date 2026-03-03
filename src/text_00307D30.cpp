@@ -179,21 +179,29 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309448); /* "C:/Coding/FGDK
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094C0); // NullAccess member
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094E8);
-
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309518);
-
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003094E8__10NullAccess);
+/*
+int NullAccess::func_003094E8() {
+    return 0;
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309518__10NullAccess);
+/*
+int NullAccess::func_00309518() {
+    return 1;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309548);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309588);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095C8);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095C8__18FileFindAccess_Nul);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309620);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309680);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309680__18FileFindAccess_Nul);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003096B0); /* __tfQ28FileFind6Access */
 

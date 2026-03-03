@@ -9,7 +9,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_21FileAccess_Zip_Stored); /* Fi
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310CC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310CE8);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310CE8__21FileAccess_Zip_Stored);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310D20);
 
@@ -17,7 +17,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310F10);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310F80);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311008);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311008__21FileAccess_Zip_Stored);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00310BE8", D_00448040); /* "c:/coding/fgdk3/Code/Common/FileSystem_Zip.cpp" */
 
@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311300);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00311430);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003114C0);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003114C0__23FileAccess_Zip_Deflated);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003114E8);
 
@@ -147,9 +147,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003142C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003143A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003143D8);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003143D8__18FileSystemDisc_Zip);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314410);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314410__18FileSystemDisc_Zip);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314448);
 
@@ -193,9 +193,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003148E8__19File_FileDescript
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314920); /* in File_FileDescriptor.cpp */
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314C38);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314C38__19File_FileDescriptorPvi);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314D38);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314D38__19File_FileDescriptori);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314D68);
 
@@ -265,11 +265,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315BF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315C58);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315CC0);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315CC0__29FileFindAccess_FileDescriptor);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315CF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315D58);
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315D58__29FileFindAccess_FileDescriptor);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00315DA0);
 

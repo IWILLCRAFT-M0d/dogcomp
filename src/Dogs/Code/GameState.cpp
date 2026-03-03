@@ -4,7 +4,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __Q29GameState12GameStateReqPv); /* Q29GameState12GameStateReq */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D82D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_Q29GameState12GameStateReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8328);
 

@@ -58,7 +58,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Lights", D_003ADCC0); /* "Light Manag
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __12LightManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001415F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001415F0__12LightManager);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141A10);
 

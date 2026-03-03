@@ -40,9 +40,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E490);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E4C8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E4E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E4E8__10FootPrintsf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E568);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E568__10FootPrints);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E630);
 
@@ -52,11 +52,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E948);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E9A0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E9F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013E9F8__10FootPrints);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EA70); /* StaticFootPrint::StaticFootPrint */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EB20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", _$_15StaticFootPrint);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EB60);
 
@@ -64,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EB80);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EC00);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EC40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013EC40__15StaticFootPrint);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/FootPrint", D_003AB800); /* "FootPrints" */
 
@@ -112,7 +112,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013F120); /* return; *
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013F128); /* return; */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013F130);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013F130__15StaticFootPrint); /* return D_0044D020 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FootPrint", func_0013F138);
 

@@ -106,7 +106,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5208); /* T
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_17TurnFlexAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8); // turnflexanimation animate?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8__17TurnFlexAnimation); // turnflexanimation animate?
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", _vt$17TurnFlexAnimation);
 

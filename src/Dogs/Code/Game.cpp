@@ -7,6 +7,9 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
 
+#include "FGDK3/Playstation2/InpKeybd.h"
+#include "FGDK3/Playstation2/InpMouse.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1F70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8); // PS2 config options (language, aspect)
@@ -113,9 +116,75 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C54C8);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI options? (return Status)
+#ifdef NON_MATCHING
+Game_Document::Game_Document(float fps, float gamespeed) : GameShell(fps, gamespeed) {
+	// float f24 = 1.0f;
+	//SimObj_Universe
+	this->unk148 = 0;
+	this->unk154 = 0;
+	this->unk144 = 0;
+	//this->unk140
+	this->unk14C = 0;
+	//this->unk150
+	//DogScript()
+	//this->unk1C4 = f24;
+	this->unk1C8 = 0;
+	this->unk1CC = 0;
+	this->unk1D0 = 0;
+	this->unk1D4 = 0;
+	this->unk1D8 = 0;
+	this->unk1DC = 0;
+	//this->unk1B8
+	//this->unk1B4
 
+	this->unk1E8 = 1;
+	this->unk1EC = 0;
+	this->unk1F0 = 0;
+	this->unk1F4 = 0;
+	this->unk1F8 = 0;
+	this->unk1FC = 0;
+	//this->unk1E0
+	//FUN_0018b528(&this->field408_0x210);
+	this->unk3E8 = 0;
+	this->unk3F8 = 800;
+	this->unk3EC = 0;
+	this->unk3F0 = 1;
+	this->unk3F4 = 1;
+	this->unk3FC = 600;
+	this->unk404 = 3;
+	this->unk400 = 0;
+	//this->unk408
+	this->unk4B0 = 0;
+	//ShapeInstance
+	this->unk55C = 0;
+	this->unk560 = 0;
+	//this->unk564
+	this->unk568 = 0;
+	this->unk56C = 0;
+	this->unk570 = 0;
+	this->unk574 = 0;
+	this->unk578 = 0;
+	this->unk57C = 0;
+	this->unk580 = 0;
+	this->unk59C = 0;
+	this->unk5A0 = 0;
+	this->unk5A4 = 0;
+	this->unk5A8 = 0;
+	this->unk5AC = 0;
+	this->unk58C = 0.015f;
+	this->unk590 = 0.035f;
+	this->unk594 = -0.5f;
+	this->unk598 = -400.0f;
+	this->unk588 = -0.08f;
+	func_002F8E40();
+	func_002F8760();
+
+	this->unk200 = 0;
+	this->unk204 = 5;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __13Game_Documentff); /* Game_Document::Game_Document(float framerate,float gamespeed) __13Game_Documentff */
-
+#endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_13Game_Document);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8);
@@ -208,7 +277,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CADD8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAE08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CB1D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CB1D8__13Game_Document);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E0FA0);
 
@@ -258,7 +327,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2900);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2940);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2980);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2980__13Game_Documentf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2F28);
 
@@ -467,9 +536,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6C40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf13Game_Document);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D60); /* return a0->unk3F0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D68); /* return a0->unk3F4 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D70);
 
@@ -577,7 +646,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E2A28);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf11DSLRenderer);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D70E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D70E8); // dslrenderer action?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D71D0); /* StatusBar::~StatusBar ? */
 
@@ -617,7 +686,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", _vt$10DebugLayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7768);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D77A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D77A8); /* __tf15SimObj_Universe */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D77F8);
 

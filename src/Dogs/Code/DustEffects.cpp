@@ -6,9 +6,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8); /* DustEff
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", _$_17DustEffectManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AC80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AC80__17DustEffectManager);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AD58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AD58__17DustEffectManagerf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B030);
 

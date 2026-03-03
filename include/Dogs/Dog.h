@@ -20,7 +20,7 @@ class Dog : public WorldObject {
         float unk868; // status bone height
 
         union {int i;float f;} unkB0C;
-        Dog(ClassInfo*, void*, int, short);
+        Dog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Dog();
         float func_0012E240(void);
 };

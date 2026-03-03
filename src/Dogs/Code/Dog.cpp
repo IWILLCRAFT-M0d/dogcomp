@@ -18,7 +18,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
 #ifdef NON_MATCHING
 extern ClassInfo* D_0044CE58;
-Dog::Dog(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044CE58 = arg1;
     }
@@ -41,7 +41,7 @@ Dog::Dog(ClassInfo* arg1, void* arg2, int arg3, short arg4) : WorldObject(arg1 =
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __3DogP9ClassInfoPvis);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __3DogP9ClassInfoP15SimObj_Universeis);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_3Dog);
@@ -94,7 +94,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0); // animation/movement update?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0__3Dogf); // animation/movement update?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134550);
 
@@ -108,7 +108,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134788);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001349B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134B10); // playerdog rendering function?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134B10__3Dog); // playerdog rendering function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DB0);
 

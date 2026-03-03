@@ -8,11 +8,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", _$_10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DB80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DCD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DCD0__10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E1A0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E388);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E388__10SmallThing);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E458);
 

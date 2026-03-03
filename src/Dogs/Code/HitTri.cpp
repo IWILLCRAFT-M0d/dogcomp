@@ -50,9 +50,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE118);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __tf13HitTri_Object);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2B8); /* return (float) a0->unk5D8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2C0); /* return D_0044ECA8 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/HitTri", D_003E50F8);
 

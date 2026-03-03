@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001298A0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_00129AB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_00129AB0__14DiggingRaceGodf);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggingRace", D_003A4D98);
 

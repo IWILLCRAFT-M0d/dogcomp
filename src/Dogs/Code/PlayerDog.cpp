@@ -7,7 +7,7 @@
 extern ClassInfo* D_0044D398;
 extern short D_00450A10;
 extern short D_00450A18;
-PlayerDog::PlayerDog(ClassInfo* arg0, void* arg1, int arg2, short arg3) : Dog(arg0=0, arg1, arg2, arg3) {
+PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg3) : Dog(arg0=0, arg1, arg2, arg3) {
     if (arg0 != 0) {
         D_0044D398 = arg0;
     }
@@ -58,7 +58,7 @@ PlayerDog::PlayerDog(ClassInfo* arg0, void* arg1, int arg2, short arg3) : Dog(ar
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoPvis); /* PlayerDog::PlayerDog (ClassInfo?)*/
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoP15SimObj_Universeis); /* PlayerDog::PlayerDog (ClassInfo?)*/
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);

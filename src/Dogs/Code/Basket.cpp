@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CE8__6Basket);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D78); // return 100
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D78__6Basket); // return 100
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D80__6Basket);
 

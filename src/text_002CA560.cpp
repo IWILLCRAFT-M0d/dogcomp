@@ -251,17 +251,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf9GE_Device);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CE8);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CE8); /* return D_00452898 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D00);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D00); /* return D_0045289C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D08);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D18);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D18); /* return D_004528A0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20);
 

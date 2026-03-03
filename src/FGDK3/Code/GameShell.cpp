@@ -27,7 +27,7 @@ GameShell::GameShell(float fps, float gamespeed) {
   this->m_fps = fps; // unk10
   this->m_gamespeed = gamespeed; // unk14
   this->unk1C = 0; // input is disabled when != 0 ?
-  if (D_004528EC != 0) {
+  if (D_004528EC != 0) { // m_me?
     DDE_FatalError("More than one GameShell instance not allowed");
   }
   //D_004528EC = this;
@@ -37,7 +37,6 @@ GameShell::GameShell(float fps, float gamespeed) {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", __9GameShellff);
 #endif
 
-// GameShell::~GameShell
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", _$_9GameShell);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3210);

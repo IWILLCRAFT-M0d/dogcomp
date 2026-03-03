@@ -27,6 +27,7 @@ __tf8Aperture = 0x00104A48;
 __tf12DiscAperture = 0x00104A98;
 // Basket
 func_00104CE8__6Basket = 0x00104CE8; // type:func
+func_00104D78__6Basket = 0x00104D78; // type:func
 func_00104D80__6Basket = 0x00104D80; // type:func
 func_00105DF8__6Basket = 0x00105DF8; // type:func
 __tf9Basket_IF = 0x00105FF0;
@@ -96,13 +97,13 @@ _$_13DiggablePatch = 0x00127E48; // type:func
 func_00127F78__13DiggablePatch = 0x00127F78; // type:func
 func_00128120__13DiggablePatchf = 0x00128120; // type:func
 
-
+func_00129AB0__14DiggingRaceGodf = 0x00129AB0; // type:func
 __tf14DiggingRaceGod = 0x0012CBF8;
 __tf23DiggingRaceGodInterface = 0x0012CC60;
 __tft9Interface1Z23DiggingRaceGodInterface = 0x0012CCB0;
 
 // Dog
-__3DogP9ClassInfoPvis = 0x0012D5E8; // type:func
+__3DogP9ClassInfoP15SimObj_Universeis = 0x0012D5E8; // type:func
 _$_3Dog = 0x0012DCE0; // type:func
 func_0012E240__3Dog = 0x0012E240; // type:func
 func_0012E2B8__3Dog = 0x0012E2B8; // type:func
@@ -111,6 +112,8 @@ func_0012E960__3Dog = 0x0012E960; // type:func
 func_0012E998__3Dog = 0x0012E998; // type:func
 func_0012E9C8__3Dogf = 0x0012E9C8; // type:func
 func_0012EB78__3Dogf = 0x0012EB78; // type:func
+func_001324B0__3Dogf = 0x001324B0; // type:func
+func_00134B10__3Dog = 0x00134B10; // type:func
 func_001364F0__3Dog = 0x001364F0; // type:func
 func_00136558__3Dogf = 0x00136558; // type:func
 func_00136578__3Dog = 0x00136578; // type:func
@@ -145,6 +148,8 @@ __tft9Interface1Z23AnimationMovedObject_IF = 0x0013A878;
 
 // DustEffect
 _$_17DustEffectManager = 0x0013ABD8; // type:func
+func_0013AC80__17DustEffectManager = 0x0013AC80; // type:func
+func_0013AD58__17DustEffectManagerf = 0x0013AD58; // type:func
 __tf17DustEffectManager = 0x0013b200;
 
 // Fish
@@ -152,6 +157,8 @@ __4FishP9ClassInfoPvis = 0x0013B288; // type:func
 _$_4Fish = 0x0013B3A0; // type:func
 func_0013B440__4Fish = 0x0013B440; // type:func
 func_0013B570__4Fish = 0x0013B570; // type:func
+
+
 // FlyingHat
 _$_9FlyingHat = 0x0013C460; // type:func
 func_0013C518__9FlyingHat = 0x0013C518; // type:func
@@ -159,7 +166,13 @@ func_0013C528__9FlyingHat = 0x0013C528; // type:func
 __tf9FlyingHat = 0x0013CE18;
 
 _$_10FootPrints = 0x0013E338; // type:func
+func_0013E4E8__10FootPrintsf = 0x0013E4E8; // type:func
+func_0013E568__10FootPrints = 0x0013E568; // type:func
+func_0013E9F8__10FootPrints = 0x0013E9F8; // type:func
+_$_15StaticFootPrint = 0x0013EB20; // type:func
+func_0013EC40__15StaticFootPrint = 0x0013EC40; // type:func
 __tf15StaticFootPrint = 0x0013f0c8;
+func_0013F130__15StaticFootPrint = 0x0013F130; // type:func
 
 // LevelGate
 _$_9LevelGate = 0x0013F2A8; // type:func
@@ -169,6 +182,7 @@ __tf9LevelGate = 0x0013fcb0;
 // Light
 _$_5Light = 0x00140130; // type:func
 __12LightManager = 0x00141588; // type:func
+func_001415F0__12LightManager = 0x001415F0; // type:func
 __tf5Light = 0x00141f08;
 __tf12LightManager = 0x00142190;
 __tf15EditLightAction = 0x00142210;
@@ -199,6 +213,12 @@ __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
 // Person.cpp
 __6PersonP9ClassInfoPvis = 0x0014A110; // type:func
 _$_6Person = 0x0014A2C8; // type:func
+func_0014A398__6Person = 0x0014A398; // type:func
+func_0014BE60__6Person = 0x0014BE60; // type:func
+func_0014BF90__6Person = 0x0014BF90; // type:func
+func_0014C000__6Personf = 0x0014C000; // type:func
+func_0014C1B8__6Person = 0x0014C1B8; // type:func
+func_0014C1C0__6Person = 0x0014C1C0; // type:func
 func_0014C240__6Person = 0x0014C240; // type:func
 func_0014CBD8__6Person = 0x0014CBD8; // type:func
 __tf6Person = 0x0014cb78;
@@ -212,7 +232,7 @@ _$_11PlaceHolder = 0x0014D2F0; // type:func
 __tf11PlaceHolder = 0x0014d390;
 
 // PlayerDog
-__9PlayerDogP9ClassInfoPvis = 0x0014D410; // type:func
+__9PlayerDogP9ClassInfoP15SimObj_Universeis = 0x0014D410; // type:func
 _$_9PlayerDog = 0x0014D678; // type:func
 func_0014DB48__9PlayerDog = 0x0014DB48; // type:func
 func_0014DCB8__9PlayerDog = 0x0014DCB8; // type:func
@@ -262,6 +282,7 @@ _$_25SimObj_ObjectWithMomentum = 0x001686B8; // type:func
 __tf25SimObj_ObjectWithMomentum = 0x001686f8;
 __tf24SimObj_UniverseLandscape = 0x00168b90;
 __tf11YDRRenderer = 0x00168c68;
+__tf32SimObj_ObjectTestHitPrimReceiver = 0x00168DD0;
 __tft9Interface1Z10DebugID_IF = 0x00168e58;
 __tf11Location_IF = 0x00168e98;
 __tf12TextRenderer = 0x00168ee8;
@@ -285,6 +306,8 @@ _$_8Slidable = 0x0016BED0; // type:func
 __tf8Slidable = 0x0016d870;
 
 _$_10SmallThing = 0x0016DAA8; // type:func
+func_0016DCD0__10SmallThing = 0x0016DCD0; // type:func
+func_0016E388__10SmallThing = 0x0016E388; // type:func
 __tf10SmallThing = 0x00171230;
 
 // Smell
@@ -441,6 +464,7 @@ Creatres_Finalise__Fv = 0x001AD1B8; // type:func
 __tf18Creature_Resources = 0x001ad2b8;
 __tft8Resource1Z24Creature_TypeDescription = 0x001ad328;
 __9DogScriptPvii = 0x001AD378; // type:func
+func_001AD8D0__9DogScript = 0x001AD8D0; // type:func
 _$_9DogScript = 0x001AF328; // type:func
 __tf9DogScript = 0x001af348;
 
@@ -452,6 +476,8 @@ Render__9Element3DPv = 0x001AFD78; // type:func
 func_001B0068__9Element3D = 0x001B0068; // type:func
 __tf9Element3D = 0x001b04a8;
 // Game.cpp
+func_001CB1D8__13Game_Document = 0x001CB1D8; // type:func
+func_001D2980__13Game_Documentf = 0x001D2980; // type:func
 Game_InternalInitialise__Fv = 0x001d5d80; // type:func
 Game_InternalFinalise__Fv = 0x001d5e08; // type:func
 Game_Initialise__Fv = 0x001d5e40; // type:func
@@ -478,6 +504,7 @@ __tfQ214ToggleScreenMR13BounceDisplay = 0x001d7f70;
 __tfQ27DebugMR7MAction = 0x001d8008;
 __tfQ28CameraMR19CameraControlAction = 0x001d8110;
 __Q29GameState12GameStateReqPv = 0x001D82A0; // type:func
+_$_Q29GameState12GameStateReq = 0x001D82D8; // type:func
 __16LoadSavedGameReqi = 0x001D8720; // type:func
 __16BMStateChangeReqi = 0x001D8780; // type:func
 __15BMPageChangeReqi = 0x001D87E0; // type:func
@@ -1025,6 +1052,7 @@ __tf10ClipVolume = 0x002A4838;
 _$_10ClipVolume = 0x002A4878; // type:func
 __20GE_PS2RenderHardware = 0x002A49A0; // type:func
 _$_20GE_PS2RenderHardware = 0x002A4B90; // type:func
+func_002A4BF8__20GE_PS2RenderHardware = 0x002A4BF8; // type:func
 __tf17GE_RenderHardware = 0x002a5190;
 __tf20GE_PS2RenderHardware = 0x002a5200;
 func_002A5298__20GE_PS2RenderHardware = 0x002A5298; // type:func
@@ -1131,6 +1159,7 @@ _$_14LegIKAnimation = 0x002E15B8; // type:func
 _$_21IKSingleStepAnimation = 0x002E27E8; // type:func
 _$_17IKAmblerAnimation = 0x002E3C78; // type:func
 _$_17TurnFlexAnimation = 0x002E5550; // type:func
+func_002E55A8__17TurnFlexAnimation = 0x002E55A8; // type:func
 __tf19WalkingBobAnimation = 0x002e5e70;
 __tf22WalkingParamsAnimation = 0x002E5F20;
 _$_23AnimVarWalkingAnimation = 0x002E5F70; // type:func
@@ -1225,16 +1254,14 @@ InputMouse_InternalInitialise__Fv = 0x002f8350; // type:func
 InputMouse_InternalFinalise__Fv = 0x002f8688; // type:func
 InputMouse_Initialise__Fv = 0x002f8710; // type:func
 InputMouse_Finalise__Fv = 0x002f8740; // type:func
-func_002F8760 = 0x002f8760; // type:func
-func_002F8788 = 0x002f8788; // type:func
+
 __tf17InputMouse_Device = 0x002f87d0;
 // InpKeybd.cpp
 InputKeyboard_InternalInitialise__Fv = 0x002f8b28; // type:func
 InputKeyboard_InternalFinalise__Fv = 0x002f8d98; // type:func
 InputKeyboard_Initialise__Fv = 0x002f8df0; // type:func
 InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
-func_002F8E40 = 0x002f8e40; // type:func
-func_002F8E68 = 0x002f8e68; // type:func
+
 __tf20InputKeyboard_Device = 0x002f8eb0;
 // InpJoys1.cpp
 _$_21InputJoystick1_Device = 0x002F8F68; // type:func
@@ -1243,15 +1270,13 @@ InputJoystick1_InternalFinalise__Fv = 0x002f91d8; // type:func
 InputJoystick1_Initialise__Fv = 0x002f9248; // type:func
 InputJoystick1_Finalise__Fv = 0x002f9278; // type:func
 __tf21InputJoystick1_Device = 0x002f9298;
-func_002F93C0 = 0x002f93c0; // type:func
-func_002F9400 = 0x002f9400; // type:func
+
 // InpJoy5.cpp
 InputJoy5_InternalInitialise__Fv = 0x002f9408; // type:func
 InputJoy5_InternalFinalise__Fv = 0x002f9450; // type:func
 InputJoy5_Initialise__Fv = 0x002f9458; // type:func
 InputJoy5_Finalise__Fv = 0x002f9488; // type:func
-func_002F94E0 = 0x002f94e0; // type:func
-func_002F9520 = 0x002f9520; // type:func
+
 // Inpevent.cpp
 InputEvent_InternalInitialise__Fv = 0x002f9528; // type:func
 // Inpevent.cpp
@@ -1285,14 +1310,25 @@ _$_13StorageDevice = 0x002FE7F8; // type:func
 __tf14FileSystemDisc = 0x002fe988;
 __tf10FileSystem = 0x002fe9e0;
 __tf13StorageDevice = 0x002fea38;
+func_002FF0F8__13StorageDevice = 0x002FF0F8; // type:func
+func_002FF128__13StorageDevice = 0x002FF128; // type:func
+func_002FF158__13StorageDevice = 0x002FF158; // type:func
 __18FileSystemDiscRoot = 0x002FF188; // type:func
 _$_18FileSystemDiscRoot = 0x002FF820; // type:func
 __tf18FileSystemDiscRoot = 0x002ff870;
+func_002FFA20__18FileSystemDiscRoot = 0x002FFA20; // type:func
+func_002FFA58__18FileSystemDiscRoot = 0x002FFA58; // type:func
+func_002FFA90__18FileSystemDiscRoot = 0x002FFA90; // type:func
+func_002FFAC0__18FileSystemDiscRoot = 0x002FFAC0; // type:func
+func_002FFAF8__18FileSystemDiscRoot = 0x002FFAF8; // type:func
 File_MemCard_InternalInitialise__Fv = 0x002ffbb0; // type:func
 File_MemCard_InternalFinalise__Fv = 0x002FFC68; // type:func
 File_MemCard_Initialise__Fv = 0x002ffc88; // type:func
 File_MemCard_Finalise__Fv = 0x002ffcd8; // type:func
 _$_12File_MemCard = 0x002FFFE0; // type:func
+func_00300040__12File_MemCard = 0x00300040; // type:func
+func_00300140__12File_MemCard = 0x00300140; // type:func
+func_00300988__12File_MemCard = 0x00300988; // type:func
 __22FileSystemDisc_MemCardi = 0x00300BE8;
 __21StorageDevice_MemCardi = 0x00301548; // type:func
 __tf21StorageDevice_MemCard = 0x00301ac8;
@@ -1306,6 +1342,9 @@ __Q24File6Access = 0x00302070; // type:func
 _$_Q24File6Access = 0x003020B0; // type:func
 __Q28FileFind6Access = 0x00302150; // type:func
 _$_Q28FileFind6Access = 0x00302190; // type:func
+func_00302998__16FileFind_MemCard = 0x00302998; // type:func
+func_003029D8__16FileFind_MemCard = 0x003029D8; // type:func
+func_00302A80__16FileFind_MemCard = 0x00302A80; // type:func
 __tfQ24File6Access = 0x00302AD0;
 __tfQ28FileFind6Access = 0x00302B28; // type:func
 
@@ -1334,7 +1373,10 @@ _$_10NullAccess = 0x003090D8; // type:func
 __tf10NullAccess = 0x00309128;
 _$_18FileFindAccess_Nul = 0x00309198; // type:func
 __tf18FileFindAccess_Nul = 0x003091e8;
-
+func_003094E8__10NullAccess = 0x003094E8; // type:func
+func_00309518__10NullAccess = 0x00309518; // type:func
+func_003095C8__18FileFindAccess_Nul = 0x003095C8; // type:func
+func_00309680__18FileFindAccess_Nul = 0x00309680; // type:func
 _$_12StringBuffer = 0x0030B458; // type:func
 __tf12StringBuffer = 0x0030b630;
 __19ShapeParams_Dynamic = 0x0030B698; // type:func
@@ -1345,7 +1387,10 @@ __tf26CustomParameterBlockWriter = 0x0030d080;
 __tf15RelocationBlock = 0x0030dea8;
 __tf14MeshTransforms = 0x00310b58;
 _$_21FileAccess_Zip_Stored = 0x00310C68; // type:func
+func_00310CE8__21FileAccess_Zip_Stored = 0x00310CE8; // type:func
+func_00311008__21FileAccess_Zip_Stored = 0x00311008; // type:func
 _$_23FileAccess_Zip_Deflated = 0x00311298; // type:func
+func_003114C0__23FileAccess_Zip_Deflated = 0x003114C0; // type:func
 __tf14FileSystem_Zip = 0x00313560;
 __tf18FileSystemDisc_Zip = 0x003135d0;
 __tf21FileAccess_Zip_Stored = 0x00313640;
@@ -1353,16 +1398,22 @@ __tf23FileAccess_Zip_Deflated = 0x003136b0;
 _$_18FileFindAccess_Zip = 0x00313720; // type:func
 __tf18FileFindAccess_Zip = 0x003137b0;
 __14FileSystem_Zip = 0x00313ED8; // type:func
+func_003143D8__18FileSystemDisc_Zip = 0x003143D8; // type:func
+func_00314410__18FileSystemDisc_Zip = 0x00314410; // type:func
 __19File_FileDescriptori = 0x00314718; // type:func
 _$_19File_FileDescriptor = 0x003147B8; // type:func
 func_00314890__19File_FileDescriptor = 0x00314890; // type:func
 func_003148E8__19File_FileDescriptori = 0x003148E8; // type:func
+func_00314C38__19File_FileDescriptorPvi = 0x00314C38; // type:func
+func_00314D38__19File_FileDescriptori = 0x00314D38; // type:func
 _$_29FileSystemDisc_FileDescriptor = 0x00315388; // type:func
 __tf29FileSystemDisc_FileDescriptor = 0x003153d8;
 __tf19File_FileDescriptor = 0x00315458;
 _$_29FileFindAccess_FileDescriptor = 0x003154D8; // type:func
 __tf29FileFindAccess_FileDescriptor = 0x00315540;
 __29FileSystemDisc_FileDescriptor = 0x00315AE0; // type:func
+func_00315CC0__29FileFindAccess_FileDescriptor = 0x00315CC0; // type:func
+func_00315D58__29FileFindAccess_FileDescriptor = 0x00315D58; // type:func
 // inflate.c
 inflateReset = 0x00315F28; // type:func
 inflate = 0x00316160; // type:func
@@ -1495,6 +1546,7 @@ sceMcInit = 0x0032ea48; // type:func
 sceScfGetLanguage = 0x003302f0; // type:func
 sceScfGetAspect = 0x00330370; // type:func
 tanf = 0x00330cc8; // type:func
+atan2f = 0x00330F50; // type:func
 fabsf = 0x003349d0; // type:func
 memalign = 0x00334DC8; // type:func
 malloc = 0x00334FC8; // type:func

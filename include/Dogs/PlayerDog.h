@@ -21,7 +21,7 @@ class PlayerDog : public Dog {
         int unkB64;
         int unkBB0;
         int unkBB8;
-        PlayerDog(ClassInfo*, void*, int, short);
+        PlayerDog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~PlayerDog();
 };
 
