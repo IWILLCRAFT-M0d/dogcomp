@@ -42,12 +42,17 @@ class Widget {
 //
 // };
 
-// class Widget_WithChildren : public Widget {
-// };
+class Widget_WithChildren : public Widget {
+    public:
+        Widget_WithChildren(char*, int, int);
+        virtual ~Widget_WithChildren();
+};
 
-// class Widget_Compositor : public Widget_WithChildren {
-//
-// };
+class Widget_Compositor : public Widget_WithChildren {
+    public:
+        Widget_Compositor(float, char*, int, int);
+        virtual ~Widget_Compositor();
+};
 //
 // class Widget_Splitter : public Widget_Compositor {
 //

@@ -144,24 +144,45 @@ class GE_PrimCache {
 
 class GE_PrimVertices {
     public:
-        int m_unk0;
-        int m_unk4;
-        short m_unk8;
-        short m_unkA;
-        int m_unkC;
-
+        int unk0;
+        int unk4;
+        short unk8;
+        short unkA;
+        int unkC;
 
     GE_PrimVertices(int, int, int);
     virtual ~GE_PrimVertices();
+    int func_002A65C0(void);
+    int func_002A65C8(void);
+    void func_002A65D0(void);
 };
+
+class GE_PS2PrimVertices : public GE_PrimVertices {
+    public:
+        int unk14;
+        int unk18;
+        //
+        int unk20;
+        int unk24;
+        //
+        int unk34;
+        GE_PS2PrimVertices(void);
+
+        virtual ~GE_PS2PrimVertices();
+        int func_002A5868(int, int);
+        void func_002A5880(void);
+        //
+        void func_002A5A50(void);
+};
+
 
 class GE_PrimIndices {
     public:
-        short m_unk0;
-        char m_unk2;
-        char m_unk3;
-        int m_unk4;
-        int m_unk8;
+        short unk0;
+        char unk2;
+        char unk3;
+        int unk4;
+        int unk8;
     GE_PrimIndices(int, char, int);
     virtual ~GE_PrimIndices();
 };
@@ -305,15 +326,6 @@ class File_FileDescriptor : public File::Access {
 //         virtual ~GE_TextureStylePkt();
 // };
 
-class GE_PS2PrimVertices : public GE_PrimVertices {
-    public:
-        int unk18;
-        int unk34;
-        GE_PS2PrimVertices(void);
-
-        virtual ~GE_PS2PrimVertices();
-        void func_002A5880(void);
-};
 
 class SavedGame {
     public:
@@ -402,6 +414,14 @@ namespace BookMetaphor {
             CheatsPage();
             virtual ~CheatsPage();
     };
+};
+
+class GameLayer {
+
+};
+
+class BookMetaphorLayer : public GameLayer {
+
 };
 
 #ifdef __cplusplus
@@ -614,11 +634,10 @@ void func_002A1B98(void);
 void func_002A1BA8(void);
 void func_002A1BB8(void);
 void func_002A1BC8(void);
-void func_002A5A50(void);
+
 int func_002A6598(void);
-int func_002A65C0(void);
-int func_002A65C8(void);
-void func_002A65D0(void);
+
+
 void func_002AC220(void);
 int func_002AC4A8(void);
 char* func_002D7738(int);

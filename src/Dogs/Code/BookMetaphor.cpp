@@ -352,8 +352,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B360);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B480);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B5A0);
-
+#ifdef NON_MATCHING
+// BookMetaphorLayer::BookMetaphorLayer() : GameLayer(0, 384, 0) {
+//
+// }
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __17BookMetaphorLayer);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B7A0);
 
