@@ -7,6 +7,21 @@ class Widget_StdNotification {
 
 class Widget {
     public:
+        int unk0;
+        int unk4;
+        int unk8;
+        int unkC;
+        int unk10;
+        int unk14;
+        int unk18;
+        //
+        int unk70;
+        //
+        int unk88;
+        //
+        int unk9C;
+        //
+        int unkA0;
         Widget(char*, int);
         virtual ~Widget();
 };

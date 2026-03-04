@@ -2,7 +2,7 @@
 
 #include "FGDK3/Playstation2/InpKeybd.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8820);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", __20InputKeyboard_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8870);
 
@@ -64,8 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E68);
 #endif
 
 
-// InputKeyboard_Device::~InputKeyboard_Device
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", _$_20InputKeyboard_Device);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", _vt$20InputKeyboard_Device);
 

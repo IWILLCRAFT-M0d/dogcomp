@@ -3,6 +3,10 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+class InputDevice_Device {
+
+};
+
 extern void * const InputDevice_StdInit_UsedModules[];
 
 Status InputDevice_InternalInitialise(void);

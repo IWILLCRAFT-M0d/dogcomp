@@ -9,12 +9,20 @@
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Inpdev.h"
 
+class InputKeyboard_Device : public InputDevice_Device {
+    public:
+        InputKeyboard_Device();
+        virtual ~InputKeyboard_Device();
+};
+
 extern void * const InputKeyboard_StdInit_UsedModules[];
 
 Status InputKeyboard_InternalInitialise(void);
 void InputKeyboard_InternalFinalise(void);
 Status InputKeyboard_Initialise(void);
 void InputKeyboard_Finalise(void);
+
+
 
 #ifdef __cplusplus
 extern "C" {

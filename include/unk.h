@@ -268,10 +268,26 @@ namespace FileFind {
     };
 };
 
+class NullAccess : public File::Access {
+    public:
+        NullAccess();
+        virtual ~NullAccess();
+};
+
+class FileFindAccess_Nul : public FileFind::Access {
+    public:
+        FileFindAccess_Nul();
+        virtual ~FileFindAccess_Nul();
+};
+
 class File_FileDescriptor : public File::Access {
     public:
         int m_fd;
         int unkC;
+        int unk10;
+        int m_offset;
+        int unk18;
+        int unk1C;
         File_FileDescriptor(int fd);
         virtual ~File_FileDescriptor();
         void func_00314890(void);
@@ -300,20 +316,93 @@ class GE_PS2PrimVertices : public GE_PrimVertices {
 };
 
 class SavedGame {
+    public:
+        int unk0;
+        int unk4;
+        char* unk8;
+        //unkC
+        int unk10;
+        int unk14;
+        int unk18;
+        //unk1C
+        int unk20;
+        int unk24;
+        int unk28;
+        int unk2C;
+        SavedGame(char*, int, int);
+        virtual ~SavedGame();
 
 };
 
-// class ClassInfo : public GenericObject {
-//     public:
-//         int unk4;
-//         void* unk8;
-//         int unkC;
-//         int unk10;
-//         int unk14;
-//         int unk18;
-//         ClassInfo();
-//         virtual ~ClassInfo();
-// };
+namespace BookMetaphor {
+    class Page {
+        public:
+            int unk0;
+            virtual ~Page();
+
+    };
+
+    class GamePositionPage : public Page {
+        public:
+            //unk8
+            int unkC;
+            GamePositionPage(int);
+            virtual ~GamePositionPage();
+    };
+
+    class LoadGamePage : public GamePositionPage {
+        public:
+            int unk10;
+            int unk14; // m_state
+            LoadGamePage(int, int);
+            virtual ~LoadGamePage();
+    };
+
+    class NewGamePage : public GamePositionPage {
+        public:
+            int unk10; // m_state?
+
+            NewGamePage();
+            virtual ~NewGamePage();
+    };
+    class Stats1Page : public Page {
+        public:
+            //unk8
+            int unk10;
+            // unk10
+            // unkC
+            int unk14;
+            int unk18;
+            Stats1Page();
+            virtual ~Stats1Page();
+    };
+
+    class Stats0Page : public Page {
+        public:
+            Stats0Page();
+            virtual ~Stats0Page();
+    };
+
+    class SettingsPage : public Page {
+        public:
+            int unk8; // m_cursorPos
+            int unkC; // action?
+            int unk10;
+            int m_cheatsAvailable; // 0x14
+            SettingsPage();
+            virtual ~SettingsPage();
+    };
+
+    class CheatsPage : public Page {
+        public:
+            // unk8
+            int unk10; // m_cursorPos
+            int unk14; // m_state?
+            int unk1C;
+            CheatsPage();
+            virtual ~CheatsPage();
+    };
+};
 
 #ifdef __cplusplus
 extern "C" {

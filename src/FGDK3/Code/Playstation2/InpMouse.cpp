@@ -2,7 +2,7 @@
 
 #include "FGDK3/Playstation2/InpMouse.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F7F28);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", __17InputMouse_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F7F80);
 
@@ -87,7 +87,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8760);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8788);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F87B0); /* InputMouse_Device::~InputMouse_Device */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", _$_17InputMouse_Device);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", _vt$17InputMouse_Device);
 

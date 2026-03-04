@@ -99,12 +99,10 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308858);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003088C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", __10NullAccess);
-/*
-NullAccess::NullAccess {
+NullAccess::NullAccess() {
 
 }
-*/
+
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308980);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003089B8);
@@ -147,7 +145,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308FA8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", __18FileFindAccess_Nul);
+FileFindAccess_Nul::FileFindAccess_Nul() {
+
+}
 
 INCLUDE_RODATA("asm/nonmatchings/text_00307D30", _vt$18FileFindAccess_Nul);
 

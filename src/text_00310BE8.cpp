@@ -5,7 +5,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310BE8); /* FileAccess_Zip_Stored::FileAccess_Zip_Stored */
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_21FileAccess_Zip_Stored); /* FileAccess_Zip_Stored::~FileAccess_Zip_Stored */
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_21FileAccess_Zip_Stored);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00310CC0);
 
@@ -95,7 +95,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf21FileAccess_Zip_Stored);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf23FileAccess_Zip_Deflated);
 
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_18FileFindAccess_Zip); /* FileFindAccess_Zip::~FileFindAccess_Zip */
+INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_18FileFindAccess_Zip);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __tf18FileFindAccess_Zip);
 
@@ -166,12 +166,22 @@ INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003145F0);
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314638);
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003146A8);
-
+#ifdef NON_MATCHING
+File_FileDescriptor::File_FileDescriptor(int fd) {
+    this->m_fd = fd;
+    this->unk10 = 0;
+    this->m_offset = 0;
+    this->unk18 = 0;
+    this->unk1C = 0;
+    //FUN_003087f8((long)(int)(this + 1));
+    this->unkC = sceLseek(this->m_fd, 0, 2);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", __19File_FileDescriptori);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", _$_19File_FileDescriptor);
 
-#ifdef NON_MATCHING
 void File_FileDescriptor::func_00314890() {
     if (this->m_fd >= 0) {
         sceClose(this->m_fd);
@@ -182,14 +192,6 @@ void File_FileDescriptor::func_00314890() {
 int File_FileDescriptor::func_003148E8() {
     return this->unkC;
 }
-
-
-#else
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314890__19File_FileDescriptor); // Close
-INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_003148E8__19File_FileDescriptori);
-#endif
-
-
 
 INCLUDE_ASM("asm/nonmatchings/text_00310BE8", func_00314920); /* in File_FileDescriptor.cpp */
 

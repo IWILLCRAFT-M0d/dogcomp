@@ -80,8 +80,32 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271AD8);
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271B30);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271BB8);
-
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271C58); /* __9SavedGamePcii SavedGame::SavedGame */
+#ifdef NON_MATCHING
+SavedGame::SavedGame(char* arg1, int arg2, int arg3) {
+    this->unk4 = 0;
+    this->unk14 = 0;
+    this->unk18 = 0;
+    this->unk20 = 0;
+    this->unk2C = 0;
+    this->unk0 = arg2;
+    this->unk28 = arg3;
+    this->unk10 = 8192;
+    this->unk24 = 64;
+    /*
+    uVar1 = __builtin_vec_new((undefined *)0x2000);
+    this->field3_0xc = uVar1;
+    sVar2 = strlen(filename);
+    dest = (char *)__builtin_vec_new((undefined *)((int)sVar2 + 5));
+    this->field2_0x8 = dest;
+    strcpy(dest,filename);
+    strcat(this->field2_0x8,s_.sav_00451ad0);
+    uVar1 = __builtin_vec_new((undefined *)(this->field9_0x24 << 3));
+    this->field7_0x1c = uVar1;
+    */
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __9SavedGamePcii); /* __9SavedGamePcii SavedGame::SavedGame */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_9SavedGame);
 

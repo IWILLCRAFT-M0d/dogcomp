@@ -44,8 +44,25 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C510);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C660);
 
+#ifdef NON_MATCHING
+Widget::Widget(char* arg1, int arg2) {
+    this->unk18 = arg2;
+    this->unk0 = 0;
+    this->unk4 = 0;
+    this->unk8 = 0;
+    this->unkC = 0;
+    this->unk10 = 0;
+    this->unk14 = 0;
+    this->unk70 = 0;
+    //this->unk7C
+    this->unk88 = 0;
+    this->unk9C = 0;
+    this->unkA0 = 0;
+    //
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __6WidgetPci); /* Widget::Widget(char*, int) */
-
+#endif
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_6Widget);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8); /* return a0->unk10 */

@@ -436,10 +436,12 @@ _$_21StreamedSpeechTrivial = 0x0018C6C0; // type:func
 __tf21StreamedSpeechTrivial = 0x0018c6f0;
 __Q212BookMetaphor16GamePositionPagei = 0x0018C960; // type:func
 __Q212BookMetaphor11NewGamePage = 0x0018D7E8; // type:func
+__Q212BookMetaphor12LoadGamePageii = 0x0018DFF0; // type:func
 __Q212BookMetaphor10Stats1Page = 0x00190618; // type:func
+__Q212BookMetaphor10Stats0Page = 0x0018F720; // type:func
 _$_Q212BookMetaphor10Stats1Page = 0x00190680; // type:func
-__Q12BookMetaphor12SettingsPage = 0x00191FB0; // type:func
-_$_Q12BookMetaphor12SettingsPage = 0x00191FE0; // type:func
+__Q212BookMetaphor12SettingsPage = 0x00191FB0; // type:func
+_$_Q212BookMetaphor12SettingsPage = 0x00191FE0; // type:func
 __Q212BookMetaphor10CheatsPage = 0x00193440; // type:func
 _$_Q212BookMetaphor10CheatsPage = 0x00193498; // type:func
 __Q212BookMetaphor27ChangeLevelBackgroundThreadii = 0x00194770; // type:func
@@ -887,6 +889,7 @@ Render__13ShapeInstancePv = 0x00271790; // type:func
 __tf11ShapeParams = 0x00271820;
 _$_11ShapeParams = 0x00271860; // type:func
 __tf13ShapeInstance = 0x00271890;
+__9SavedGamePcii = 0x00271C58; // type:func
 _$_9SavedGame = 0x00271D10; // type:func
 __tf9SavedGame = 0x00272ac0;
 // RunPath.cpp
@@ -1308,18 +1311,20 @@ InputUtil_InternalFinalise__Fv = 0x002f74d0; // type:func
 InputUtil_Initialise__Fv = 0x002f7578; // type:func
 InputUtil_Finalise__Fv = 0x002f75a8; // type:func
 // InpMouse.cpp
+__17InputMouse_Device = 0x002F7F28; // type:func
 InputMouse_InternalInitialise__Fv = 0x002f8350; // type:func
 InputMouse_InternalFinalise__Fv = 0x002f8688; // type:func
 InputMouse_Initialise__Fv = 0x002f8710; // type:func
 InputMouse_Finalise__Fv = 0x002f8740; // type:func
-
+_$_17InputMouse_Device = 0x002F87B0; // type:func
 __tf17InputMouse_Device = 0x002f87d0;
 // InpKeybd.cpp
+__20InputKeyboard_Device = 0x002F8820; // type:func
 InputKeyboard_InternalInitialise__Fv = 0x002f8b28; // type:func
 InputKeyboard_InternalFinalise__Fv = 0x002f8d98; // type:func
 InputKeyboard_Initialise__Fv = 0x002f8df0; // type:func
 InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
-
+_$_20InputKeyboard_Device = 0x002F8E90; // type:func
 __tf20InputKeyboard_Device = 0x002f8eb0;
 // InpJoys1.cpp
 _$_21InputJoystick1_Device = 0x002F8F68; // type:func
@@ -1461,7 +1466,7 @@ func_00314410__18FileSystemDisc_Zip = 0x00314410; // type:func
 __19File_FileDescriptori = 0x00314718; // type:func
 _$_19File_FileDescriptor = 0x003147B8; // type:func
 func_00314890__19File_FileDescriptor = 0x00314890; // type:func
-func_003148E8__19File_FileDescriptori = 0x003148E8; // type:func
+func_003148E8__19File_FileDescriptor = 0x003148E8; // type:func
 func_00314C38__19File_FileDescriptorPvi = 0x00314C38; // type:func
 func_00314D38__19File_FileDescriptori = 0x00314D38; // type:func
 _$_29FileSystemDisc_FileDescriptor = 0x00315388; // type:func
@@ -1691,7 +1696,7 @@ _vt$Q212BookMetaphor24LoadGameBackgroundThread = 0x003D3418;
 _vt$Q212BookMetaphor23NewGameBackgroundThread = 0x003D3440;
 _vt$Q212BookMetaphor16BackgroundThread = 0x003D3468;
 _vt$Q212BookMetaphor10CheatsPage = 0x003D3490;
-_vt$Q12BookMetaphor12SettingsPage = 0x003d34e8;
+_vt$Q212BookMetaphor12SettingsPage = 0x003d34e8;
 _vt$Q212BookMetaphor10Stats1Page = 0x003D3540;
 _vt$Q212BookMetaphor10Stats0Page = 0x003D3598;
 _vt$Q212BookMetaphor19CurrentPositionPage = 0x003D35F0;
