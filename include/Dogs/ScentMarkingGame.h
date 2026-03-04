@@ -1,0 +1,4 @@
+#ifndef SCENTMARKINGGAME_H
+#define SCENTMARKINGGAME_H
+
+#endif

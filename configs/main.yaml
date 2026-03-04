@@ -84,6 +84,7 @@ segments:
       - [0x50640, cpp, Dogs/Code/Rat]
       - [0x51F30, cpp, Dogs/Code/SaveKennel]
       - [0x53DD0, cpp, Dogs/Code/Scent]
+      - [0x5B528, cpp, Dogs/Code/ScentMarkingGame]
       - [0x613D0, cpp, Dogs/Code/Selector]
       - [0x62068, cpp, Dogs/Code/SimObj]
 
@@ -106,11 +107,11 @@ segments:
       - [0x8CB70, cpp, text_0018BB70]
       - [0x8D748, cpp, Dogs/Code/BookMetaphor]
       - [0x9F5A0, cpp, Dogs/Code/Bounce]
-      - [0xA0570,  cpp, Dogs/Code/Console]
-      - [0xAC700,  cpp, Dogs/Code/Containers]
-      - [0xAE138,  cpp, Dogs/Code/Creatres]
-      - [0xAE378,  cpp, Dogs/Code/DogScript]
-      - [0xB0470,  cpp, Dogs/Code/Element3D]
+      - [0xA0570, cpp, Dogs/Code/Console]
+      - [0xAC700, cpp, Dogs/Code/Containers]
+      - [0xAE138, cpp, Dogs/Code/Creatres]
+      - [0xAE378, cpp, Dogs/Code/DogScript]
+      - [0xB0470, cpp, Dogs/Code/Element3D]
       - [0xB17A8, cpp, text_001B07A8]
       - [0xB2F70, cpp, Dogs/Code/Game]
       - [0xD92A0, cpp, Dogs/Code/GameState]
@@ -274,6 +275,7 @@ segments:
 
       - [0x2BA5F8, .rodata, Dogs/Code/SaveKennel]
       - [0x2BBDB8, .rodata, Dogs/Code/Scent]
+      - [0x2BC728, .rodata, Dogs/Code/ScentMarkingGame]
       - [0x2BE2F8, .rodata, Dogs/Code/Selector]
       - [0x2BFA88, .rodata, Dogs/Code/SimObj]
 
