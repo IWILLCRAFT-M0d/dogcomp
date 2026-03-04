@@ -2,7 +2,26 @@
 
 #include "Dogs/Rat.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F640); /* Rat::Rat */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D3F0;
+Rat::Rat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SmallThing(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D3F0 = arg1;
+    }
+
+    this->unk71C = -1.0f;
+    this->unk700 = 0;
+    this->unk704 = 0;
+    this->unk708 = 0;
+    this->unk70C = 0;
+    this->unk710 = 0;
+    this->unk714 = 0;
+    this->unk718 = -1.0f;
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", __3RatP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F7A8);
 

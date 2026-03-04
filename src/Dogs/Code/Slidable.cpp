@@ -1,6 +1,35 @@
 #include "common.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016BD80); /* Slidable::Slidable */
+#include "Dogs/Slidable.h"
+
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D8B0;
+Slidable::Slidable(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D8B0 = arg1;
+    }
+
+    //
+    this->unk5F0 = 0;
+    this->unk610 = 0xFFFF;
+    this->unk618 = -1.0f;
+    this->unk624 = -1;
+    this->unk5C0 = 0;
+    this->unk5C4 = 0;
+    this->unk5C8 = 0;
+    this->unk5D0 = 0;
+    this->unk614 = -1.0f;
+    this->unk61C = 0;
+    this->unk620 = 0;
+
+    if (arg1 == 0) {
+        D_0044D8B0->unk4 = 1;
+    }
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", __8SlidableP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", _$_8Slidable);
 

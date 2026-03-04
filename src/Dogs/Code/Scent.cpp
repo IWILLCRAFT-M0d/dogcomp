@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "Dogs/Scent.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00152DD0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00152E98);
@@ -26,7 +28,22 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153D30); // "Too many sce
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD8); /* Scent::Scent */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D4E8;
+Scent::Scent(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+
+    this->unk118 = -1.0f;
+    this->unk120 = -1;
+    this->unk114 = -1.0f;
+    this->unk11C = 0;
+
+    if (arg1 == 0) {
+        D_0044D4E8->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", __5ScentP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", _$_5Scent);
 
@@ -190,6 +207,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A420);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A508);
 
+// split? (ScentMarkingGame.cpp?)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A528); /* ScentMarkingGameNode::ScentMarkingGameNode */
 

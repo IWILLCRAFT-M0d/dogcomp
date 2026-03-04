@@ -27,11 +27,13 @@ class PlayerDog : public Dog {
 
 //msg AddMove
 
-/*
-class RoverSaysPuzzleGod : public WorldObject {
 
+class RoverSaysPuzzleGod : public WorldObject {
+    public:
+        RoverSaysPuzzleGod(ClassInfo*, SimObj_Universe*, int, short);
+        virtual ~RoverSaysPuzzleGod();
 };
-*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif

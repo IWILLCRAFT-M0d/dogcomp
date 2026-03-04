@@ -2,7 +2,41 @@
 
 #include "Dogs/SmallThing.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016D910); /* SmallThing::SmallThing */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D910;
+SmallThing::SmallThing(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D910 = arg1;
+    }
+    this->unk5F0 = 0;
+    //
+    this->unk690 = 0;
+    this->unk694 = 0;
+    this->unk698 = 0;
+    this->unk69C = 0;
+    this->unk6A0 = 0;
+    this->unk6A4 = 0;
+    this->unk6A8 = 0;
+    this->unk6AC = 0;
+    this->unk6B0 = 0;
+    this->unk6B4 = 0;
+    this->unk6B8 = 0;
+    this->unk6BC = 0;
+    this->unk6C0 = 0;
+    this->unk6C4 = 0;
+    this->unk6F0 = 0;
+    this->unk6F4 = 0;
+    this->unk6F8 = 0;
+
+    if (arg1 == 0) {
+        D_0044D910->unk4 = 1;
+    }
+
+    //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", __10SmallThingP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", _$_10SmallThing);
 

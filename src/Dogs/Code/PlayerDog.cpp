@@ -58,7 +58,7 @@ PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoP15SimObj_Universeis); /* PlayerDog::PlayerDog (ClassInfo?)*/
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoP15SimObj_Universeis);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);
@@ -113,7 +113,20 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F0A8); /* RoverSaysPuzzleGod */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D3B0;
+RoverSaysPuzzleGod::RoverSaysPuzzleGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D3B0 = arg1;
+    }
+
+    if (arg1 == 0) {
+        D_0044D3B0->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __18RoverSaysPuzzleGodP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F188); // "Unknown extra in RoverSaysPuzzleGod::Extra!"
 

@@ -29,7 +29,7 @@ SphereObj::SphereObj(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjP9ClassInfoP15SimObj_Universeis); /* SphereObj::SphereObj */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjP9ClassInfoP15SimObj_Universeis);
 #endif
 
 

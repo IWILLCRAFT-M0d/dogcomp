@@ -2,7 +2,6 @@
 
 #include "Dogs/AnimatedObject.h"
 
-
 #ifdef NON_MATCHING
 extern ClassInfo* D_0044C738;
 AnimatedObject::AnimatedObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {

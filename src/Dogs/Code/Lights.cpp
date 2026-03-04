@@ -2,7 +2,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_0013FD48);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_0013FF10); /* Light::Light */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __5LightP9ClassInfoP15SimObj_Universeis);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", _$_5Light);
 

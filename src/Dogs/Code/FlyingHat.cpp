@@ -2,7 +2,23 @@
 
 #include "Dogs/FlyingHat.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", func_0013C368); /* FlyingHat::FlyingHat */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CFB8;
+FlyingHat::FlyingHat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SmallThing(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CFB8 = arg1;
+    }
+
+    this->unk700 = 0;
+    this->unk704 = 0;
+
+    if (arg1 == 0) {
+        D_0044CFB8->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", __9FlyingHatP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/FlyingHat", _$_9FlyingHat);
 

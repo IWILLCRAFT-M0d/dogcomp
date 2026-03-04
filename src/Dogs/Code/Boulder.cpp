@@ -2,7 +2,7 @@
 
 #include "Dogs/Boulder.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", func_00108B68); /* Boulder */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", __7BoulderP9ClassInfoP15SimObj_Universeis);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Boulder", _$_7Boulder);
 

@@ -6,6 +6,12 @@
 
 class SwingBridge : public HitTri_Object {
     public:
+        int unk5F0;
+        int unk5F4;
+        float unk5F8;
+        float unk5FC;
+        float unk600; // angleLimit?
+        float unk604; // strength required?
         SwingBridge(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SwingBridge();
 };

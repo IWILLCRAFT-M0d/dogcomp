@@ -2,7 +2,18 @@
 
 #include "Dogs/DustEffects.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013A8F8); /* DustEffectManager */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044CF10;
+DustEffectManager::DustEffectManager(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044CF10 = arg1;
+    }
+    this->unk11C = 50;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", __17DustEffectManagerP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", _$_17DustEffectManager);
 

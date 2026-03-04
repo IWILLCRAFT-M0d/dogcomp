@@ -2,7 +2,23 @@
 
 #include "Dogs/Snowball.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172A50); /* Snowball::Snowball */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044D9C0;
+Snowball::Snowball(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SphereObj(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D9C0 = arg1;
+    }
+
+    this->unk5C4 = 0.2f;
+    this->unk600 = 1;
+
+    if (arg1 == 0) {
+        D_0044D9C0->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", __8SnowballP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", _$_8Snowball);
 

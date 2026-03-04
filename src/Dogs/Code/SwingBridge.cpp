@@ -2,7 +2,27 @@
 
 #include "Dogs/SwingBridge.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177788); /* SwingBridge::SwingBridge */
+#ifdef NON_MATCHING
+extern ClassInfo* D_0044DAB8;
+SwingBridge::SwingBridge(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DAB8 = arg1;
+    }
+
+    this->unk600 = 360.0f;
+    this->unk5F0 = 0;
+    this->unk5F4 = 0;
+    this->unk5F8 = 0.0f;
+    this->unk5FC = 0.0f;
+    this->unk604 = 0.0f;
+
+    if (arg1 == 0) {
+        D_0044DAB8->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", __11SwingBridgeP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", _$_11SwingBridge);
 

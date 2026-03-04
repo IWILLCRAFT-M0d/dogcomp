@@ -6,6 +6,8 @@
 
 class SmallThing : public HitTri_Object {
     public:
+        int unk5F0;
+
         int unk690;
         int unk694;
         int unk698;

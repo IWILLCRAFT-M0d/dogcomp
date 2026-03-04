@@ -56,6 +56,7 @@ _$_7BoneGod = 0x00107BC0; // type:func
 __tf7BoneGod = 0x00108a48;
 
 // Boulder
+__7BoulderP9ClassInfoP15SimObj_Universeis = 0x00108B68; // type:func
 _$_7Boulder = 0x00108C98; // type:func
 __tf7Boulder = 0x00109e80;
 
@@ -156,6 +157,7 @@ __tf19Interface1Z7Jump_IF = 0x0013a838;
 __tft9Interface1Z23AnimationMovedObject_IF = 0x0013A878;
 
 // DustEffect
+__17DustEffectManagerP9ClassInfoP15SimObj_Universeis = 0x0013A8F8; // type:func
 _$_17DustEffectManager = 0x0013ABD8; // type:func
 func_0013AC80__17DustEffectManager = 0x0013AC80; // type:func
 func_0013AD58__17DustEffectManagerf = 0x0013AD58; // type:func
@@ -169,6 +171,7 @@ func_0013B570__4Fish = 0x0013B570; // type:func
 
 
 // FlyingHat
+__9FlyingHatP9ClassInfoP15SimObj_Universeis = 0x0013C368; // type:func
 _$_9FlyingHat = 0x0013C460; // type:func
 func_0013C518__9FlyingHat = 0x0013C518; // type:func
 func_0013C528__9FlyingHat = 0x0013C528; // type:func
@@ -184,11 +187,13 @@ __tf15StaticFootPrint = 0x0013f0c8;
 func_0013F130__15StaticFootPrint = 0x0013F130; // type:func
 
 // LevelGate
+__9LevelGateP9ClassInfoP15SimObj_Universeis = 0x0013F1F8; // type:func
 _$_9LevelGate = 0x0013F2A8; // type:func
 func_0013F808__9LevelGate = 0x0013F808; // type:func
 __tf9LevelGate = 0x0013fcb0;
 
 // Light
+__5LightP9ClassInfoP15SimObj_Universeis = 0x0013FF10; // type:func
 _$_5Light = 0x00140130; // type:func
 __12LightManager = 0x00141588; // type:func
 func_001415F0__12LightManager = 0x001415F0; // type:func
@@ -247,11 +252,13 @@ _$_9PlayerDog = 0x0014D678; // type:func
 func_0014DB48__9PlayerDog = 0x0014DB48; // type:func
 func_0014DCB8__9PlayerDog = 0x0014DCB8; // type:func
 func_0014DCF0__9PlayerDog = 0x0014DCF0; // type:func
+__18RoverSaysPuzzleGodP9ClassInfoP15SimObj_Universeis = 0x0014F0A8; // type:func
 __tf9PlayerDog = 0x0014f4c0;
 _$_18RoverSaysPuzzleGod = 0x0014F520; // type:func
 __tf18RoverSaysPuzzleGod = 0x0014f5c0;
 
 // Rat
+__3RatP9ClassInfoP15SimObj_Universeis = 0x0014F640; // type:func
 _$_3Rat = 0x00150D58; // type:func
 __tf3Rat = 0x00150e10;
 
@@ -265,6 +272,8 @@ _$_10SaveKennel = 0x001529E8; // type:func
 __tf10SaveKennel = 0x00152be0;
 __tf21MostInFrontCalculator = 0x00152C40;
 
+// Scent
+__5ScentP9ClassInfoP15SimObj_Universeis = 0x00153DD8; // type:func
 _$_5Scent = 0x00153E68; // type:func
 __tf5Scent = 0x0015a1e0;
 __tf20ScentMarkingGameNode = 0x00160238;
@@ -316,18 +325,25 @@ __tf6Skidoo = 0x0016AE60;
 _$_11SkiLiftSeat = 0x0016B040; // type:func
 __tf11SkiLiftSeat = 0x0016BCF8;
 
+// Slidable
+__8SlidableP9ClassInfoP15SimObj_Universeis = 0x0016BD80; // type:func
 _$_8Slidable = 0x0016BED0; // type:func
 __tf8Slidable = 0x0016d870;
 
+// SmallThing
+__10SmallThingP9ClassInfoP15SimObj_Universeis = 0x0016D910; // type:func
 _$_10SmallThing = 0x0016DAA8; // type:func
 func_0016DCD0__10SmallThing = 0x0016DCD0; // type:func
 func_0016E388__10SmallThing = 0x0016E388; // type:func
 __tf10SmallThing = 0x00171230;
 
 // Smell
+__5SmellP9ClassInfoP15SimObj_Universeis = 0x00171368; // type:func
 _$_5Smell = 0x00171400; // type:func
 __tf5Smell = 0x001729d0;
 
+// Snowball
+__8SnowballP9ClassInfoP15SimObj_Universeis = 0x00172A50; // type:func
 _$_8Snowball = 0x00172B48; // type:func
 func_00172DF0__8Snowball = 0x00172DF0; // type:func
 __tf8Snowball = 0x00173178;
@@ -340,6 +356,8 @@ __9SphereObjP9ClassInfoP15SimObj_Universeis = 0x001738D8; // type:func
 __tf9SphereObj = 0x00177568;
 __tf15BallHitReceiver = 0x00177688;
 
+
+__11SwingBridgeP9ClassInfoP15SimObj_Universeis = 0x00177788; // type:func
 _$_11SwingBridge = 0x00177898; // type:func
 __tf11SwingBridge = 0x001785C8;
 

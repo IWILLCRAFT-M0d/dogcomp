@@ -6,7 +6,7 @@
 
 class Rat : public SmallThing {
     public:
-        float unk71C;
+
         int unk700;
         int unk704;
         int unk708;
@@ -14,7 +14,8 @@ class Rat : public SmallThing {
         int unk710;
         int unk714;
         float unk718;
-        int unk720;
+        float unk71C;
+        //unk720;
         Rat(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Rat();
 };
