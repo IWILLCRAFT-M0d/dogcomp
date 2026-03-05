@@ -18,19 +18,19 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5350);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A53B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5430);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5430); /* GE_LoadedPS2PrimVertices ? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5468);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5468); /* GE_PS2PrimVertices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A54E8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A54E8); /* GE_PS2PrimVertices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5568);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5568); /* GE_PS2PrimVertices? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_18GE_PS2PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5600);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5600); // called by constructor
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5778);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5778); // called by deconstructor
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A57C0); // GE_PS2PrimVertices member
 
@@ -66,35 +66,39 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5A58);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5AC0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B38);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B38); /* GE_LoadedPS2PrimIndices? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B70);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5BA8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5BA8); /* GE_PS2PrimIndices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5C10);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5C10); /* GE_PS2PrimIndices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5C80);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5C80); /* GE_PS2PrimIndices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5CC0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5CC0); /* GE_PS2PrimIndices? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_17GE_PS2PrimIndices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5D80);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5D80); // called by constructor
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5DB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5DF0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5DF0); // GE_PS2PrimIndices member
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5EB0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5EB0); // GE_PS2PrimIndices member
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5EC0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5EC0__17GE_PS2PrimIndices);
+/*
+void GE_PS2PrimIndices::func_002A5EC0() {
+    this->unk18 = this->unk18 + 1;
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5ED0); // GE_PS2PrimIndices member
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5ED0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F68); // GE_PS2PrimIndices member
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F68);
-
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F90);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F90); // GE_PS2PrimIndices member
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5FB8);
 
@@ -172,7 +176,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6650);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6668);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6670);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6670); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6678);
 
@@ -288,7 +292,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AB778);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABAE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABF00);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABF00); // GE_PS2PrimCache member
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC030);
 

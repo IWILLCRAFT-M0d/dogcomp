@@ -7,7 +7,8 @@
 #include "Dogs/SimObj.h"
 // Unknown data and functions.
 
-
+extern int D_0034C300[];
+extern int D_003593C0[];
 
 typedef struct {
     int unk0;
@@ -315,7 +316,7 @@ class File_FileDescriptor : public File::Access {
         int func_003148E8(void);
 };
 
-// class GE_TextureStylePkt {
+// class GE_TextureStylePkt : public GE_DMARc {
 //     public:
 //         int unk4;
 //         char unk5;
@@ -422,6 +423,66 @@ class GameLayer {
 
 class BookMetaphorLayer : public GameLayer {
 
+};
+
+class GE_GSPageMgr {
+    public:
+        //unk0
+        int unk4;
+        int unk8;
+        int unkC;
+        //unk10
+        int unk14;
+        int unk18;
+        int unk1C;
+        int unk20;
+        int unk24;
+        int unk28;
+        int unk2C;
+        int unk30;
+        int unk34;
+        //
+        int unk40;
+        int unk44;
+        int unk48;
+        //unk4C
+        int unk50;
+        //unk54
+        int unk58;
+        int unk5C;
+        int unk60;
+        //unk64
+        int unk68;
+        GE_GSPageMgr(int, int);
+        virtual ~GE_GSPageMgr();
+};
+
+class DebugEnvironment {
+    public:
+        //unk0
+        int unk4;
+        int unk8;
+        int unkC;
+        //unk10
+        int unk14;
+        //unk18
+        int unk1C;
+        int unk20;
+        int unk24;
+        //unk28
+        int unk2C;
+        int unk30;
+        int unk34;
+        DebugEnvironment();
+        virtual ~DebugEnvironment();
+        void func_002D5D58(void);
+
+};
+
+class Endian {
+    public:
+        virtual ~Endian();
+        void func_002D7980(void);
 };
 
 #ifdef __cplusplus
@@ -615,11 +676,13 @@ void func_002963E8(void);
 int func_002963F0(void);
 int func_00296478(void);
 int func_00296480(int);
-int func_0029A610(void);
+void func_00299448(void);
 int func_0029A600(int, int);
+int func_0029A610(void);
 int func_0029A618(void);
 void func_0029A620(void);
 void func_0029A628(void);
+void func_0029A738(void);
 void func_0029AA28(void);
 void func_0029AA30(void);
 int func_002A1A58(void);
@@ -640,6 +703,8 @@ int func_002A6598(void);
 
 void func_002AC220(void);
 int func_002AC4A8(void);
+//void func_002ADEA8(void);
+void func_002AE320(void);
 char* func_002D7738(int);
 int func_002DF488(void);
 int func_002DF9D8(void);
@@ -678,9 +743,9 @@ void func_002D42E0(void);
 void func_002D4770(void);
 void func_002D4778(void);
 void func_002D4780(void);
-void func_002D5D58(void);
+
 void func_002D74F8(void);
-void func_002D7980(void);
+int func_002D77A8(char*);
 
 
 

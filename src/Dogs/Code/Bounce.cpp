@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019E9A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EA38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EAB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019EAB0); // BounceHit member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Bounce", _vt$9BounceHit);
 

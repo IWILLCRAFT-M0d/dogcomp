@@ -34,21 +34,21 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE910);
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE998);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEA10);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEA10); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEA88);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEA88); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEB10);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEB10); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEDF8);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEDF8); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEE68);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEE68); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEEE8);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEEE8); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF180);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF180); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF320);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF320); // SixPlaneClipVolume member
 
 int func_002DF488() {
     return 0;

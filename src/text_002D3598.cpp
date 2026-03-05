@@ -4,6 +4,8 @@
 
 #include "FGDK3/FontRes.h"
 
+#include "string.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3598); /* StreamRenderer ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3628);
@@ -16,10 +18,32 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3760);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D37B8);
 
+#ifdef NON_MATCHING
+DebugEnvironment::DebugEnvironment() {
+    this->unk8 = 0;
+    this->unk14 = 0;
+    //this->unk0
+    this->unk4 = 0;
+    //this->unk10
+    this->unkC = 0;
+    this->unk20 = 0;
+    this->unk2C = 0;
+    this->unk1C = 0;
+    //this->unk18
+    this->unk24 = 0;
+    //this->unk28
+    this->unk30 = 0;
+    this->unk34 = 0;
+    //
+    func_002D42D8();
+    //
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __16DebugEnvironment);
-/* DebugEnvironment::DebugEnvironment */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D38A0); /* DebugEnvironment::~DebugEnvironment */
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950);
 
@@ -202,7 +226,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16DebugEnvironment);
 
-void func_002D5D58(void) {
+void DebugEnvironment::func_002D5D58(void) {
     return;
 }
 
@@ -430,7 +454,20 @@ char* func_002D7738(int arg0) {
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7738);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D77A8);
+int func_002D77A8(char* arg0) {
+    int var_16;
+
+    var_16 = 0;
+loop_1:
+    if (strcasecmp(arg0, func_002D7738(var_16)) != 0) {
+        var_16 += 1;
+        if (var_16 >= 4) {
+            return 4;
+        }
+        goto loop_1;
+    }
+    return var_16;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7808);
 
@@ -438,7 +475,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0); /* endian */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_6Endian);
 
-void func_002D7980(void) {
+void Endian::func_002D7980(void) {
     return;
 }
 

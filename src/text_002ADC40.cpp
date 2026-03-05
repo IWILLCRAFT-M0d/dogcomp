@@ -13,7 +13,20 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002ADC40); // "Invalid micro-program table in GE_MicroProgMgr.cpp - Exiting\n"
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002ADEA8);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002ADEA8); // DMAC stuff
+
+/*
+void func_002ADEA8(void) {
+    FlushCache(0);
+    DPUT_D0_QWC(0);
+    DPUT_D0_TADR(&D_003593C0);
+    __asm__ volatile( " sync.l " );
+    DPUT_D0_CHCR(0x105);
+    DPUT_D1_QWC(0);
+    DPUT_D1_TADR(&D_0034C300);
+    __asm__ volatile( " sync.l " );
+    DPUT_D1_CHCR(0x105);
+};*/
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002ADF28);
 
@@ -23,7 +36,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE048);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE070);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE320);
+void func_002AE320() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE328);
 
@@ -59,7 +74,41 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1090);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B10B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B10D8); /* GE_GSPageMgr */
+
+#ifdef NON_MATCHING
+GE_GSPageMgr::GE_GSPageMgr(int arg1, int arg2) {
+  this->unk8 = 0;
+  this->unk14 = 0;
+  //unk0
+  this->unk24 = arg2;
+  this->unk28 = arg1;
+  this->unk2C = arg1 + arg2;
+  this->unk4 = 0;
+  //unk10
+  this->unkC = 0;
+  this->unk18 = 0;
+  this->unk1C = arg1;
+  this->unk20 = arg1 + arg2;
+  this->unk30 = 0;
+  this->unk34 = 0;
+  this->unk44 = 0;
+  this->unk50 = 0;
+  this->unk40 = 0;
+  //this->unk3C
+  this->unk48 = 0;
+  //this->unk4C
+  this->unk5C = 0;
+  this->unk68 = 0;
+  this->unk58 = 0;
+  //this->unk54
+  //
+  this->unk60 = 0;
+  //this->unk64
+  //
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", __12GE_GSPageMgrii);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", _$_12GE_GSPageMgr);
 
