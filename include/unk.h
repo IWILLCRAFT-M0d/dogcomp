@@ -711,14 +711,13 @@ int func_002DF9D8(void);
 void func_002DFA18(void);
 
 float func_002EFEE0(float, float, float, float, float);
-int func_002F0E50(void);
-int func_002F14B0(void);
-int func_002F34F0(void);
-int func_002F36A0(void);
-int func_002F3840(void);
-int func_002F38E0(void);
-void func_002F3F88(void);
-void func_002F4068(void);
+
+
+
+
+
+
+
 float func_002F4368(void);
 void func_002F4378(void);
 void func_002F4608(void);
@@ -733,7 +732,7 @@ void func_002F6F30(void);
 void func_002F6F38(void);
 void func_002F6F40(void);
 void func_002F6F48(void);
-void func_002F7208(void);
+
 Status func_002FBEB0(void);
 int func_00309798(char*, char*);
 int func_0030ACA8(char*, int);
