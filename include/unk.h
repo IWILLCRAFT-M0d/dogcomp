@@ -54,19 +54,19 @@ typedef struct {
   /* 0x03C */ bool  unk3C;       // DOF
 } s_0044EB68_1E0;
 
-typedef struct {
-    int             unk0[120];
-    s_0044EB68_1E0* unk1E0;
-    int             unk1E4[190];
-    int             m_renderOrient;
-    int             m_renderRadius;
-    int             m_renderActorName;
-    int             m_renderHoldingPoints;
-    int             m_renderCarryHandles;
-    int             m_renderHitSpheres;
-    int             unk4F4[4];
-    int             unk504;
-} s_0044EB68; // Game_Document
+// typedef struct {
+//     int             unk0[120];
+//     s_0044EB68_1E0* unk1E0;
+//     int             unk1E4[190];
+//     int             m_renderOrient;
+//     int             m_renderRadius;
+//     int             m_renderActorName;
+//     int             m_renderHoldingPoints;
+//     int             m_renderCarryHandles;
+//     int             m_renderHitSpheres;
+//     int             unk4F4[4];
+//     int             unk504;
+// } s_0044EB68; // Game_Document
 
 /*
 struct Texture_Resources : public Resource_Generic {
@@ -111,7 +111,7 @@ struct Mien {
 };
 
 // Replace struct for class `Game_Document` and move to a proper file.
-extern s_0044EB68* TheGame;
+//extern Game_Document* TheGame;
 
 
 

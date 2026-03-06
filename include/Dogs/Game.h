@@ -1,11 +1,12 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "unk.h"
+
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "FGDK3/GameShell.h"
 
-#include "unk.h"
 
 Status Game_InternalInitialise(void);
 void Game_InternalFinalise(void);
@@ -26,6 +27,9 @@ class Game_Document : public GameShell {
         int unk1D4;
         int unk1D8;
         int unk1DC;
+        //
+        s_0044EB68_1E0* unk1E0;
+        //
         int unk1E8;
         int unk1EC; // musicEnabled?
         int unk1F0;
@@ -44,6 +48,16 @@ class Game_Document : public GameShell {
         int unk404;
         //unk408
         int unk4B0;
+        //
+        int m_renderOrient;
+        int m_renderRadius;
+        int m_renderActorName;
+        int m_renderHoldingPoints;
+        int m_renderCarryHandles;
+        int m_renderHitSpheres;
+        //
+        int unk504;
+        //
         int unk55C;
         int unk560;
         int unk56C;
@@ -70,10 +84,12 @@ class Game_Document : public GameShell {
 
 };
 
+extern Game_Document* TheGame;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_001D3F58(s_0044EB68*);
+void func_001D3F58(Game_Document*);
 #ifdef __cplusplus
 }
 #endif

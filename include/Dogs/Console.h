@@ -4,6 +4,8 @@
 #include <stdarg.h>
 #include <eekernel.h>
 
+#include "Game.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
