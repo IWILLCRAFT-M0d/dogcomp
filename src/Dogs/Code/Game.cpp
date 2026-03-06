@@ -291,7 +291,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCE58);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CEA98); /* (Game_Document *)  rendering stuff */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CF828);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CF828); // this function deals with scripts (first argument a0 definitely pointer to Game_Document)
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E10B0); /* "LGFarmhouseVillageHouses" */
 
@@ -313,7 +313,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D1F70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2008);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D22B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D22B0); // change map function? (gamedoc*, levelid, entry)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2480);
 
@@ -335,7 +335,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3EB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F58); // fade to black function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F78);
 

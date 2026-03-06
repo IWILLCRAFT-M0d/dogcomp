@@ -445,7 +445,11 @@ _$_Q212BookMetaphor12SettingsPage = 0x00191FE0; // type:func
 __Q212BookMetaphor10CheatsPage = 0x00193440; // type:func
 _$_Q212BookMetaphor10CheatsPage = 0x00193498; // type:func
 __Q212BookMetaphor27ChangeLevelBackgroundThreadii = 0x00194770; // type:func
-__17BookMetaphorLayer = 0x0019b6c0; // type:func
+func_0019E378__Q212BookMetaphor4Page = 0x0019E378; // type:func
+func_0019E3A8__Q212BookMetaphor4Page = 0x0019E3A8; // type:func
+func_0019E3B0__Q212BookMetaphor4Page = 0x0019E3B0; // type:func
+__17BookMetaphorLayer = 0x0019B6C0; // type:func
+_$_17BookMetaphorLayer = 0x0019B7A0; // type:func
 __tf9GameLayer = 0x0019d5c0;
 __tf6Thread = 0x0019d620;
 __tfQ212BookMetaphor4Page = 0x0019d6d0;
@@ -595,8 +599,10 @@ _$_18BMHighlightMoveReq = 0x001D9CF0; // type:func
 __tf18BMHighlightMoveReq = 0x001D9D10;
 _$_15BMPageActionReq = 0x001D9DE8; // type:func
 __tf15BMPageActionReq = 0x001D9E08;
+func_001D9FB0__15BMPageActionReq = 0x001D9FB0; // type:func
 _$_10FadeOutReq = 0x001D9FB8; // type:func
 __tf10FadeOutReq = 0x001d9fd8;
+func_001DA048__10FadeOutReq = 0x001DA048; // type:func
 _$_9FadeInReq = 0x001DA0A8; // type:func
 __tf9FadeInReq = 0x001da0c8;
 // Gameutil.cpp
@@ -639,6 +645,9 @@ Objtable_InternalInitialise__Fv = 0x001ec730; // type:func
 Objtable_InternalFinalise__Fv = 0x001ec808; // type:func
 Objtable_Initialise__Fv = 0x001ec888; // type:func
 Objtable_Finalise__Fv = 0x001ec8b8; // type:func
+
+// Paused
+__11PausedLayer = 0x001ED1F8; // type:func
 __tf11PausedLayer = 0x001ed318;
 
 // Platform

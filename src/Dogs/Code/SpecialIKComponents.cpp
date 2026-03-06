@@ -6,15 +6,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_002297F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229A18); /* LookAroundIKAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229B40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_00229B40); // LookAroundIKAnimation member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A298); /* PickUpStretchAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A5C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A5C0); // PickUpStretchAnimation member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A770); /* GroundConformanceAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A9A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022A9A0); // GroundConformanceAnimation member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpecialIKComponents", func_0022ABB8);
 

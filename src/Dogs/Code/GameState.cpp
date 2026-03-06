@@ -1,6 +1,9 @@
 #include "common.h"
 
 #include "Dogs/GameState.h"
+#include "Dogs/Game.h"
+
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __Q29GameState12GameStateReqPv); /* Q29GameState12GameStateReq */
 
@@ -182,17 +185,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_18BMHighlightClueReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf18BMHighlightClueReq);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9C88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9C88); // BMHighlightClueReq member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9CC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9CC0); // BMHighlightClueReq member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_18BMHighlightMoveReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf18BMHighlightMoveReq);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9D80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9D80); // BMHighlightMoveReq member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9DB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9DB8); // BMHighlightMoveReq member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_15BMPageActionReq);
 
@@ -200,7 +203,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf15BMPageActionReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9E78);
 
-int func_001D9FB0(void) {
+int BMPageActionReq::func_001D9FB0() {
 	return 1;
 }
 
@@ -208,9 +211,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_10FadeOutReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf10FadeOutReq);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA048); /* doFadeOut */
+#ifdef NON_MATCHING
+void FadeOutReq::func_001DA048() {
+	func_001D3F58(TheGame);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA048__10FadeOutReq); /* doFadeOut */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA070);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA070); // FadeOutReq member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_9FadeInReq);
 

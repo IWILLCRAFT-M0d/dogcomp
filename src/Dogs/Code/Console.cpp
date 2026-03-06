@@ -76,7 +76,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A09A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0A30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0B08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0B08); // print to console function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0B90);
 

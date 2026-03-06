@@ -1,6 +1,6 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
-/*
+
 namespace GameState {
     class GameStateReq {
 
@@ -12,7 +12,7 @@ namespace GameState {
     };
 
 };
-*/
+
 /*
 class BMPageChangeReq : GameState::GameStateReq {
     public:
@@ -47,20 +47,22 @@ class BMPageChangeReq : GameState::GameStateReq {
 //         BMHighlightMoveReq(int move);
 // };
 //
-// class BMPageActionReq : public GameState::GameStateReq {
-//     public:
-//         BMPageActionReq(int);
-// };
-//
+class BMPageActionReq : public GameState::GameStateReq {
+    public:
+        BMPageActionReq(int);
+        int func_001D9FB0();
+};
+
 // class FadeInReq : public GameState::GameStateReq {
 //     public:
 //         FadeInReq(float);
 // };
 //
-// class FadeOutReq : public GameState::GameStateReq {
-//     public:
-//         FadeOutReq(float);
-// };
+class FadeOutReq : public GameState::GameStateReq {
+    public:
+        FadeOutReq(float);
+        void func_001DA048(); // do fadeout
+};
 
 #ifdef __cplusplus
 extern "C" {
@@ -69,7 +71,7 @@ int func_001D95B0(void);
 int func_001D9A50(void);
 int func_001D9B20(void);
 int func_001D9BF0(void);
-int func_001D9FB0(void);
+
 void func_001DA1B8(void);
 #ifdef __cplusplus
 }

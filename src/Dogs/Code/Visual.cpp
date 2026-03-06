@@ -122,7 +122,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238678);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002386E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238730);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238730); // scrolling text/credits function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002387D8);
 
@@ -166,7 +166,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239C48);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239C90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239CD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239CD8); // Countdown function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239CF8);
 

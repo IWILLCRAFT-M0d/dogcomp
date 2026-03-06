@@ -4,9 +4,15 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED1D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED1F8); /* PausedLayer */
+#ifdef NON_MATCHING
+PausedLayer::PausedLayer() {
+    this->unkD0 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", __11PausedLayer);
+#endif
 
-void func_001ED248() {
+void func_001ED248() { // PausedLayer::func_001ED248
     return;
 }
 

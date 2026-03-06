@@ -5,6 +5,8 @@
 
 #include "FGDK3/GameShell.h"
 
+#include "unk.h"
+
 Status Game_InternalInitialise(void);
 void Game_InternalFinalise(void);
 Status Game_Initialise(void);
@@ -68,5 +70,12 @@ class Game_Document : public GameShell {
 
 };
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+void func_001D3F58(s_0044EB68*);
+#ifdef __cplusplus
+}
+#endif
 
 #endif

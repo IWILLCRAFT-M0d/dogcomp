@@ -321,7 +321,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E20);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E58);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E90);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00273E90); /* Resource_LayoutOverlay */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_22Resource_LayoutOverlay);
 
@@ -333,7 +333,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002742B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274400); /* Unload Resource_LayoutOverlay */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002744B0);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002744B0); // Resource_LayoutOverlay ember
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002744F8);
 
@@ -349,27 +349,27 @@ Resource_LayoutGroup::Resource_LayoutGroup(void* arg0, int arg1, void* arg2) :  
 }
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_20Resource_LayoutGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274730);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274730); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274790);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274790); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002747F0);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002747F0);  // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274850);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274850); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002748B0);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002748B0); /* Resource_LayoutExclusiveGroup) */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002748E8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002748E8); // Resource_LayoutExclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274918);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274918); // Resource_LayoutExclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002749C8);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002749C8); /* Resource_LayoutInclusiveGroup */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A00);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A00); // 29Resource_LayoutInclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A60);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A60); // Resource_LayoutInclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274B00);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274B00); // overlay loading function?
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274C10);
 
@@ -385,7 +385,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274F78);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275038);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002750E0);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002750E0); // preload.dat referenced
 
 int func_00275288(int arg0, int arg1, int ovlType, int arg3) {
     char* format;
@@ -449,7 +449,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275600);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002756E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275718); /* resource loading? */
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275718); /* "Resource %s:%d loaded twice\n" */
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002757B0);
 
@@ -529,19 +529,19 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F88); /* return a0->unk4
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00275F90); /* return D_00451B50 */
 
-int func_00275F98(void) {
+int func_00275F98(void) { // buncha resources member (Resource_Generic?)
     return 0;
 }
 
-int func_00275FA0(void) {
+int func_00275FA0(void) { // buncha resources member (Resource_Generic?)
     return 1;
 }
 
-void func_00275FA8(void) {
+void func_00275FA8(void) { // buncha resources member (Resource_Generic?)
     return;
 }
 
-void func_00275FB0(void) {
+void func_00275FB0(void) { // buncha resources member (Resource_Generic?)
     return;
 }
 

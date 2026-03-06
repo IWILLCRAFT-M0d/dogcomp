@@ -85,7 +85,14 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128__13StorageDevice);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158__13StorageDevice);
 
+
+#ifdef NON_MATCHING // TODO: finish parent classes
+FileSystemDiscRoot::FileSystemDiscRoot() {
+
+};
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __18FileSystemDiscRoot);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF1E0);
 
@@ -141,9 +148,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF9B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA20__18FileSystemDiscRoot);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA58__18FileSystemDiscRoot);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA58__18FileSystemDiscRoot); // needs more arguments?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA90__18FileSystemDiscRoot);
+int FileSystemDiscRoot::func_002FFA90() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFAC0__18FileSystemDiscRoot);
 

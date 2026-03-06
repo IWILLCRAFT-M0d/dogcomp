@@ -42,7 +42,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", File_CD_Initiali
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", File_CD_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __7File_CDPG10sceCdlFILE); /*File_CD::File_CD(sceCdlFILE * fp) */
+#ifdef NON_MATCHING
+File_CD::File_CD(sceCdlFILE* fp) {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __7File_CDPG10sceCdlFILE);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_7File_CD);
 

@@ -5,6 +5,9 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "Dogs/SimObj.h"
+#include "FGDK3/Widget.h"
+
+
 // Unknown data and functions.
 
 extern int D_0034C300[];
@@ -207,72 +210,101 @@ struct ShapeParams_Dynamic : public ShapeParams {
 
 class ShapeInstance {
     public:
-
-    ShapeInstance();
-    virtual ~ShapeInstance();
+        ShapeInstance();
+        virtual ~ShapeInstance();
 };
 
-struct GE_DMAPktRc1i69 {
-    GE_DMAPktRc1i69();
-    virtual ~GE_DMAPktRc1i69();
+class GE_DMAPktRc1i69 { // GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric
+    public:
+        GE_DMAPktRc1i69();
+        virtual ~GE_DMAPktRc1i69();
 };
 
-struct Action {
-    int unk0;
-    Action();
-    virtual ~Action();
-    virtual void func_002462a8() = 0;
+class Action {
+    public:
+        int unk0;
+        Action();
+        virtual ~Action();
+        virtual void func_002462a8() = 0;
 };
 
-struct Resource_LayoutUnit {
-    int unk0;
-    void* unk4;
-    Resource_LayoutUnit(void*);
-    virtual ~Resource_LayoutUnit();
+class Resource_LayoutUnit {
+    public:
+        int unk0;
+        void* unk4;
+        Resource_LayoutUnit(void*);
+        virtual ~Resource_LayoutUnit();
 };
 /*
-struct Resource_LayoutOverlay : public Resource_LayoutUnit {
-    int unkC;
-    void* unk10;
+class Resource_LayoutOverlay : public Resource_LayoutUnit {
+    public:
+        int unkC;
+        void* unk10;
+        //Resource_LayoutOverlay
+        virtual ~Resource_LayoutOverlay();
 
 }*/
 
 
-struct Resource_LayoutGroup : public Resource_LayoutUnit {
-    int unkC;
-    void* unk10;
-    Resource_LayoutGroup(void*, int, void*);
-    virtual ~Resource_LayoutGroup();
+class Resource_LayoutGroup : public Resource_LayoutUnit {
+    public:
+        int unkC;
+        void* unk10;
+        Resource_LayoutGroup(void*, int, void*);
+        virtual ~Resource_LayoutGroup();
 };
-/*
+
+// class Resource_LayoutInclusiveGroup : public Resource_LayoutGroup {
+//     public:
+//         virtual ~Resource_LayoutInclusiveGroup();
+//
+// };
+
+
 class FileSystemDisc {
+    public:
+        FileSystemDisc();
+        FileSystemDisc(int, void*);
+        virtual ~FileSystemDisc();
 };
 
 class FileSystemDisc_CD : public FileSystemDisc {
+    public:
+        FileSystemDisc_CD();
+        virtual ~FileSystemDisc_CD();
 };
 
 class FileSystemDiscRoot : public FileSystemDisc {
+    public:
+        FileSystemDiscRoot();
+        // func_002FFA20
+        // func_002FFA58
+        // func_002FFAC0
+        // func_002FFAF8
+        virtual ~FileSystemDiscRoot();
+        int func_002FFA90();
 };
-*/
+
+
+
+class StorageDevice {
+    public:
+        //StorageDevice
+        virtual ~StorageDevice();
+};
 
 /*
-class StorageDevice {
-};
-
 class StorageDevice_MemCard : public StorageDevice {
     public:
         StorageDevice_MemCard(int card);
-};
-*/
+};*/
+
 
 /*
 class Widget_Desktop : public Widget_Border {
 };
 */
 
-class StorageDevice {
-
-};
 
 namespace File {
     struct Access {
@@ -352,6 +384,9 @@ namespace BookMetaphor {
         public:
             int unk0;
             virtual ~Page();
+            void func_0019E378();
+            int func_0019E3A8();
+            int func_0019E3B0();
 
     };
 
@@ -417,12 +452,16 @@ namespace BookMetaphor {
     };
 };
 
-class GameLayer {
-
+class GameLayer : public Widget_WithChildren {
+    public:
+        int unkD0;
+        GameLayer();
 };
 
 class BookMetaphorLayer : public GameLayer {
-
+    public:
+        BookMetaphorLayer();
+        virtual ~BookMetaphorLayer();
 };
 
 class GE_GSPageMgr {
@@ -493,9 +532,9 @@ void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
 
 // bookmetaphor
 void func_00196418(void);
-void func_0019E378(void);
-int func_0019E3A8(void);
-int func_0019E3B0(void);
+
+
+
 
 //void func_001AD180(void);
 void func_001AD560(void);
