@@ -333,7 +333,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2F28);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3EB8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F38); // fade in function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F58); // fade to black function?
 

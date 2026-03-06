@@ -54,19 +54,10 @@ typedef struct {
   /* 0x03C */ bool  unk3C;       // DOF
 } s_0044EB68_1E0;
 
-// typedef struct {
-//     int             unk0[120];
-//     s_0044EB68_1E0* unk1E0;
-//     int             unk1E4[190];
-//     int             m_renderOrient;
-//     int             m_renderRadius;
-//     int             m_renderActorName;
-//     int             m_renderHoldingPoints;
-//     int             m_renderCarryHandles;
-//     int             m_renderHitSpheres;
-//     int             unk4F4[4];
-//     int             unk504;
-// } s_0044EB68; // Game_Document
+typedef struct {
+    char unk0[0x4F8];
+    int unk4F8;
+} s_func_001C6DC8;
 
 /*
 struct Texture_Resources : public Resource_Generic {
@@ -359,6 +350,12 @@ class File_FileDescriptor : public File::Access {
 //         virtual ~GE_TextureStylePkt();
 // };
 
+class GameLayer : public Widget_WithChildren {
+    public:
+        int unkD0;
+        GameLayer();
+};
+
 
 class SavedGame {
     public:
@@ -379,6 +376,7 @@ class SavedGame {
 
 };
 
+// BookMetaphor classes
 namespace BookMetaphor {
     class Page {
         public:
@@ -398,20 +396,57 @@ namespace BookMetaphor {
             virtual ~GamePositionPage();
     };
 
-    class LoadGamePage : public GamePositionPage {
-        public:
-            int unk10;
-            int unk14; // m_state
-            LoadGamePage(int, int);
-            virtual ~LoadGamePage();
-    };
-
     class NewGamePage : public GamePositionPage {
         public:
             int unk10; // m_state?
 
             NewGamePage();
             virtual ~NewGamePage();
+            //
+            short func_0018D830();
+            int func_0018D840();
+            int func_0018D848();
+            int func_0018D850();
+            int func_0018D858();
+            int func_0018D860();
+            //func_0018D868
+    };
+
+    class LoadGamePage : public GamePositionPage {
+        public:
+            int unk10;
+            int unk14; // m_state
+            LoadGamePage(int, int);
+            virtual ~LoadGamePage();
+            //func_0018E0D0
+            //func_0018E0F0
+            //func_0018E110
+            //func_0018E138
+            //func_0018E168
+    };
+
+    // class SaveGamePage : public GamePositionPage {
+    //  public:
+    //      //SaveGamePage
+    //      virtual ~SaveGamePage();
+            //func_0018E9E8
+            //func_0018EA08
+            //func_0018EA28
+            //func_0018EA50
+            //func_0018EA80
+    //};
+
+    // class CurrentPositionPage : public GamePositionPage {
+    //     public:
+    //         //CurrentPositionPage
+    //         virtual ~CurrentPositionPage();
+    //         //func_0018F070
+    // };
+
+    class Stats0Page : public Page {
+        public:
+            Stats0Page();
+            virtual ~Stats0Page();
     };
     class Stats1Page : public Page {
         public:
@@ -423,12 +458,6 @@ namespace BookMetaphor {
             int unk18;
             Stats1Page();
             virtual ~Stats1Page();
-    };
-
-    class Stats0Page : public Page {
-        public:
-            Stats0Page();
-            virtual ~Stats0Page();
     };
 
     class SettingsPage : public Page {
@@ -450,12 +479,30 @@ namespace BookMetaphor {
             CheatsPage();
             virtual ~CheatsPage();
     };
-};
 
-class GameLayer : public Widget_WithChildren {
-    public:
-        int unkD0;
-        GameLayer();
+    class BackgroundThread : public Thread {
+        public:
+
+            int unk8;
+            BackgroundThread();
+            virtual ~BackgroundThread();
+    };
+
+    // class NewGameBackgroundThread : public BackgroundThread
+    // class LoadGameBackgroundThread : public BackgroundThread
+    // class SaveGameBackgroundThread : public BackgroundThread
+
+    class ChangeLevelBackgroundThread : public BackgroundThread {
+        public:
+            int m_level;
+            int m_gate;
+            ChangeLevelBackgroundThread(int level, int gate);
+            virtual ~ChangeLevelBackgroundThread();
+            //func_00194678
+            void func_001947C8();
+    };
+
+
 };
 
 class BookMetaphorLayer : public GameLayer {
@@ -463,6 +510,8 @@ class BookMetaphorLayer : public GameLayer {
         BookMetaphorLayer();
         virtual ~BookMetaphorLayer();
 };
+
+//
 
 class GE_GSPageMgr {
     public:
@@ -529,7 +578,7 @@ extern "C" {
 #endif
 
 void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
-
+short func_0018C980(int level, int gate);
 // bookmetaphor
 void func_00196418(void);
 
@@ -538,9 +587,8 @@ void func_00196418(void);
 
 //void func_001AD180(void);
 void func_001AD560(void);
-void func_001C8120(void);
-void func_001D4650(void);
-void func_001D6A10(void);
+
+
 
 
 void func_001DEF10(void);
@@ -554,6 +602,7 @@ unsigned int func_002684F8(unsigned int, unsigned int);
 Status func_0026CF60(void);
 Status func_0026CF98(void);
 int func_0026D120(void);
+void func_00273A80(int);
 int func_002963F8();
 int func_002964C0();
 int func_002A48A8(void);
