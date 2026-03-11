@@ -2,8 +2,9 @@
 
 #include "Dogs/Motorbike.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D1C0;
+
+#ifdef NON_MATCHING
 Motorbike::Motorbike(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(2, arg1, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D1C0 = arg1;
@@ -59,7 +60,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144B20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", __tf9Motorbike);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA0); /* return D_0044D1C0 */
+ClassInfo* Motorbike::func_00144BA0() {
+    return D_0044D1C0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA8);
 

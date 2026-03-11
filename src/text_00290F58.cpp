@@ -134,11 +134,20 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296008);
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
+#ifdef NON_MATCHING
+int Main_RunGame() {
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", Main_RunGame); /* Main_RunGame */
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", Main_RunGame__Fv); /* Main_RunGame */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963D0); /* Main_Terminate */
-
+/*
+void Main_Terminate() {
+    Main_CloseRequest = 1;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963E0); /* return tempR__Main_CloseRequest; */
 
 void func_002963E8() {

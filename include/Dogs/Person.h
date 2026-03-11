@@ -22,6 +22,7 @@ class Person : public WorldObject {
 
         Person(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Person();
+        ClassInfo* func_0014CC08();
         int func_0014C240(void);
         float func_0014CBD8(void);
 };

@@ -13,7 +13,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D2F98);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3020);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D30A8);
+#ifdef NON_MATCHING
+void GameShell::func_002D30A8(int arg1) {
+    this->unk1C = arg1 ^ 1;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D30A8__9GameShelli);
+#endif
 
 #ifdef NON_MATCHING
 GameShell* D_004528EC;

@@ -71,7 +71,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003368A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003368D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00336934);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", setjmp);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_0033696C);
 

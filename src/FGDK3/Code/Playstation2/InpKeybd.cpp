@@ -2,7 +2,13 @@
 
 #include "FGDK3/Playstation2/InpKeybd.h"
 
+#ifdef NON_MATCHING
+InputKeyboard_Device::InputKeyboard_Device() : InputDevice_Device(0,256,0,0,0,0) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", __20InputKeyboard_Device);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8870);
 
@@ -48,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_F
 
 #ifdef NON_MATCHING
 // keyboard thread
-int D_00453594;
+extern int D_00453594;
 
 void func_002F8E40() {
     SuspendThread(D_00453594);

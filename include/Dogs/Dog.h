@@ -3,7 +3,6 @@
 
 #include "WorldObj.h"
 
-
 class Dog : public WorldObject {
     public:
         int unk830; // swimming state
@@ -25,11 +24,11 @@ class Dog : public WorldObject {
         float func_0012E240(void);
 };
 // union {int i;float f;}
-// class DogPrimHitReceiver : public SimObj_HitReceiver {
-//     public:
-//         DogPrimHitReceiver(Dog*);
-//         virtual ~DogPrimHitReceiver();
-// };
+class DogHitPrimReceiver : public SimObj_HitReceiver {
+    public:
+        DogHitPrimReceiver(Dog*);
+        virtual ~DogHitPrimReceiver();
+};
 
 #ifdef __cplusplus
 extern "C" {

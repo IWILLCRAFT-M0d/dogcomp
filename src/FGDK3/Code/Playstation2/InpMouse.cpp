@@ -2,7 +2,13 @@
 
 #include "FGDK3/Playstation2/InpMouse.h"
 
+#ifdef NON_MATCHING
+InputMouse_Device::InputMouse_Device() : InputDevice_Device(1,2,3,0,0,0) {
+    this->unk28 = 0x80000000; // INT_MAX + 1?
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", __17InputMouse_Device);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F7F80);
 
@@ -73,7 +79,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Fina
 
 #ifdef NON_MATCHING
 // mouse thread
-int D_00453574;
+extern int D_00453574;
 void func_002F8760() {
     SuspendThread(D_00453574);
 };

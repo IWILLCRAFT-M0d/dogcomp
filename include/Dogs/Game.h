@@ -8,6 +8,7 @@
 #include "FGDK3/GameShell.h"
 
 
+
 Status Game_InternalInitialise(void);
 void Game_InternalFinalise(void);
 Status Game_Initialise(void);
@@ -56,10 +57,14 @@ class Game_Document : public GameShell {
         int m_renderCarryHandles;
         int m_renderHitSpheres;
         //
+        int unk500;
         int unk504;
+        //
+        int* unk550;
         //
         int unk55C;
         int unk560;
+        float unk564;
         int unk56C;
         //unk564;
         int unk568;
@@ -86,12 +91,26 @@ class Game_Document : public GameShell {
 
 extern Game_Document* TheGame;
 
+class SimObj_Filter {
+
+};
+
+class SimObj_FilterFlagsAndEq : public SimObj_Filter {
+    public:
+        int func_001D6B40();
+};
+
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 s_func_001C6DC8* func_001C6DC8(Game_Document*);
 void func_001C8120(void);
+int func_001C8128();
 void func_001C88D0(Game_Document*, int level, int gate);
+void func_001CCE58(Game_Document*);
+void func_001D1F70(Game_Document*);
+void func_001D22B0(Game_Document*, int level, int gate);
 void func_001D3F38(Game_Document*);
 void func_001D3F58(Game_Document*);
 void func_001D4650(void);

@@ -9,19 +9,22 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_13SpeechAniText);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AE18);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AF18); /* return; */
-
+void SpeechAniText::func_0022AF18() {
+    return;
+}
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AF20); /* SpeechAniSound */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_14SpeechAniSound);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B030); /* return; */
+void SpeechAniSound::func_0022B030() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B038);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B5B0);
 
-int func_0022B5E0() {
+int SpeechAniSound::func_0022B5E0() {
     return 1;
 }
 
@@ -37,7 +40,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B910);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B9F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA18); /* return 1; */
+int SpeechAniSoundWithControl::func_0022BA18() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA20);
 
@@ -45,7 +50,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BA78); /* SoundEver
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_15SoundEverywhere);
 
-void func_0022BB88() {
+void SoundEverywhere::func_0022BB88() {
     return;
 }
 
@@ -53,7 +58,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BB90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BC98);
 
-int func_0022BCC8() {
+int SoundEverywhere::func_0022BCC8() {
     return 1;
 }
 
@@ -79,9 +84,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C778); /* StreamedV
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_24StreamedVoiceoverTrivial);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C928);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C928); // StreamedVoiceoverTrivial member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CB68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CB68); // StreamedVoiceoverTrivial member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CC60); /* StreamPreload */
 
@@ -93,9 +98,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CD10); // stream pr
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CED8); /* VibrateRumbleAnim */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CF40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CF40); // VibrateRumbleAnim member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CF80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022CF80); // VibrateRumbleAnim member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SpeechAni", _vt$17VibrateRumbleAnim);
 
@@ -141,31 +146,31 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __tf15SoundEverywhere);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __tf14StreamedSpeech);
 
-void func_0022D2C8() {
+void StreamedSpeech::func_0022D2C8() {
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D2D0); /* return a0->unk14 */
 
-int func_0022D2D8() {
+int StreamedSpeech::func_0022D2D8() {
     return 1;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __tf17StreamedVoiceover);
 
-void func_0022D340() {
+void StreamedVoiceover::func_0022D340() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D348); /* return a0->unk14 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D348__17StreamedVoiceover); /* return a0->unk14 */
 
-int func_0022D350() {
+int StreamedVoiceover::func_0022D350() {
     return 1;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __tf24StreamedVoiceoverTrivial);
 
-void func_0022D3B8() {
+void StreamedVoiceoverTrivial::func_0022D3B8() {
     return;
 }
 
@@ -175,7 +180,7 @@ int StreamedVoiceoverTrivial::func_0022D3C0() {
     return a0->unk14
 }
 */
-int func_0022D3C8() {
+int StreamedVoiceoverTrivial::func_0022D3C8() {
     return 1;
 }
 
@@ -183,13 +188,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __tf13StreamPreload);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_13StreamPreload);
 
-void func_0022D460() {
+void StreamPreload::func_0022D460() {
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D468); /* return a0->unk14 */
 
-int func_0022D470() {
+int StreamPreload::func_0022D470() {
     return 1;
 }
 

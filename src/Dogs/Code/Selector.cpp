@@ -20,22 +20,22 @@ Selector::Selector(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorP9ClassInfoP15SimObj_Universeis); /* Selector::Selector */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __8SelectorP9ClassInfoP15SimObj_Universeis);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", _$_8Selector);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160560);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160560); // Selector member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160738);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160738); // Selector member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160758);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160758__8Selector); // Selector member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160778);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160778); // Selector member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160B68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160B68); // Selector member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160D10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160D10); // Selector member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD2F8);
 

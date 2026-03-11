@@ -141,7 +141,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D00D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184738);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90); // this function deals with rendering
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E28);
 
@@ -250,7 +250,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518); // "Trying to drop an object from an invalid holding point"
 
-int func_00187628() {
+int func_00187628() { // worldobject member?
     return 1;
 }
 

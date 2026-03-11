@@ -100,10 +100,22 @@ class SimObj_ObjectWithMomentum : public SimObject {
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
 };
-/*
+
 class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {
+    public:
+        SimObj_UniverseLandscape(ClassInfo*, SimObj_Universe*);
+        virtual ~SimObj_UniverseLandscape();
+        void func_00162CE8();
+};
+
+class SimObj_HitFilter {
 
 };
-*/
+
+class SimObj_HitReceiver : public SimObj_HitFilter {
+    public:
+        SimObj_HitReceiver(SimObject*, int, int);
+        virtual ~SimObj_HitReceiver();
+};
 
 #endif

@@ -2,21 +2,27 @@
 
 #include "Dogs/Title.h"
 
+#ifdef NON_MATCHING
+TitleView::TitleView() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", __9TitleView);
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E630); /* "C:/Coding/Dogs/Code/Common/SaveGameManager.h" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E660); /* "m_mode==Mode_Inactive" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022D588);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022D588); // TitleView member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8); // TitleView member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD18); // TitleView member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0); // TitleView member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E300);
 

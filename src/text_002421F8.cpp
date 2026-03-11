@@ -205,7 +205,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002460A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002460F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002461A8);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", __main);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002461C8);
 

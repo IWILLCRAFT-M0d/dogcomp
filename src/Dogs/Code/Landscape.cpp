@@ -47,7 +47,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5240);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5270);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBB0); /* landscape_land::render(Resource<Landscape_Land>, landscape_resources address?) */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBB0); /* landscape_land::render(Resource<Landscape_Land>, GE_DEvice address?) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E14F8); // landscape/ik collision ?
 
@@ -180,9 +180,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48E8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48F8); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4900);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4900); // render collision mesh
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4F10);
 

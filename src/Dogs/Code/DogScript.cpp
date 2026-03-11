@@ -21,12 +21,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD590); // DogScript
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD5E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD5F8);
-/*
 int DogScript::func_001AD5F8() {
 	return -1;
 }
-*/
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD600);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD648);
@@ -131,7 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF180);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF288);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF2E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF2E8); // DogScript member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF300);
 

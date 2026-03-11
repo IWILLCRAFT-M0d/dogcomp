@@ -23,7 +23,7 @@ Mien::Mien(){
 
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", _$_4Mien); /* Mien::~Mien */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", _$_4Mien);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Mien", D_003E5900);
 

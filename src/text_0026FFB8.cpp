@@ -21,11 +21,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270408); /* rct3 ShapeInsta
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270468);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270498);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270498); // shapeinstance member
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002704D8); // shapeinstance member
 
-float func_002704F8(void) { // shapeinstance member
+float ShapeInstance::func_002704F8() {
     return 0.0f;
 }
 
@@ -365,7 +365,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274918); // Resource_Layout
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002749C8); /* Resource_LayoutInclusiveGroup */
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A00); // 29Resource_LayoutInclusiveGroup member
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A00__29Resource_LayoutInclusiveGroup); // 29Resource_LayoutInclusiveGroup member
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00274A60); // Resource_LayoutInclusiveGroup member
 

@@ -297,7 +297,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263130);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263158);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263160);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263160); /* return a0->unk1BC */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263168);
 
@@ -371,9 +371,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F50);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F90);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263FF8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263FF8); // FloatEditor member
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264048);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264048); // FloatEditor member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264068);
 

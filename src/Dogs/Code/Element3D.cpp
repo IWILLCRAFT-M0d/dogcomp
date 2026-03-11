@@ -60,9 +60,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0548); /* __tf18Ani
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0598); /* __tf18AnimPosProvider_IF */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B05E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B05E8); /* __tf22BoneManagerProvider_IF */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0638);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0638); /* __tf11Location_IF */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0688);
 

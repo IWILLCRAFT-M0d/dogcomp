@@ -23,9 +23,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", _$_13HitTri_Object);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DD818__13HitTri_Object);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC50);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC50); // HitTri_Object member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC88);
+#ifdef NON_MATCHING
+void HitTri_Object::func_001DDC88() {
+    if (this->unk5E0 == 0) {
+        func_00184A90(this);
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC88__13HitTri_Object);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDCB0__13HitTri_Objectf);
 
@@ -67,7 +75,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __tf13HitTri_Object);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2B8); /* return (float) a0->unk5D8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2C0); /* return D_0044ECA8 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2C0__13HitTri_Object); /* return D_0044ECA8 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/HitTri", D_003E50F8);
 

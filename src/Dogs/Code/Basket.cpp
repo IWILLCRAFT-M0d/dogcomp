@@ -18,15 +18,17 @@ Basket::Basket(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : C
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", __6BasketP9ClassInfoP15SimObj_Universeis);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CC0); // Basket member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104CE8__6Basket);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D78__6Basket); // return 100
+int Basket::func_00104D78() {
+    return 100;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D80__6Basket);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104DA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104DA0); // Basket member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_001057C0);
 
@@ -40,7 +42,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105C10);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105C98);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105D10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105D10); // Basket member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105DF8__6Basket);
 

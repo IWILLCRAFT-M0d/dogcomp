@@ -2,9 +2,8 @@
 
 #include "Dogs/PlayerDog.h"
 
-
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D398;
+#ifdef NON_MATCHING
 extern short D_00450A10;
 extern short D_00450A18;
 PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg3) : Dog(arg0=0, arg1, arg2, arg3) {
@@ -130,7 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __18RoverSaysPuzzleGodP9Clas
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F188); // "Unknown extra in RoverSaysPuzzleGod::Extra!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F1F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F1F8); // RoverSaysPuzzleGod member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerDog", D_003B4FF0);
 
@@ -186,7 +185,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F498);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf9PlayerDog);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F518); /* return D_0044D398 */
+ClassInfo* PlayerDog::func_0014F518() {
+    return D_0044D398;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_18RoverSaysPuzzleGod);
 

@@ -38,9 +38,13 @@ void func_0030BEC0() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BEC8);
+void func_0030BEC8() {
+    func_00291770();
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BEE8);
+void func_0030BEE8() {
+    func_00291778();
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF08);
 
@@ -86,7 +90,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CD60);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CE18);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CF98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CF98); // ShapeDataNamedBoneWriter member
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$24ShapeDataNamedBoneWriter);
 

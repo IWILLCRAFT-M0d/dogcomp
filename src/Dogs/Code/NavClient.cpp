@@ -44,7 +44,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E86F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E8AF8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E90C0); /* return; */
+void func_001E90C0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E90C8);
 

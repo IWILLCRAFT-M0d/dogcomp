@@ -8,6 +8,7 @@
 #include "FGDK3/Widget.h"
 
 
+
 // Unknown data and functions.
 
 extern int D_0034C300[];
@@ -203,6 +204,8 @@ class ShapeInstance {
     public:
         ShapeInstance();
         virtual ~ShapeInstance();
+        //
+        float func_002704F8();
 };
 
 class GE_DMAPktRc1i69 { // GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric
@@ -248,6 +251,7 @@ class Resource_LayoutGroup : public Resource_LayoutUnit {
 // class Resource_LayoutInclusiveGroup : public Resource_LayoutGroup {
 //     public:
 //         virtual ~Resource_LayoutInclusiveGroup();
+            //func_00274A00
 //
 // };
 
@@ -573,6 +577,16 @@ class Endian {
         void func_002D7980(void);
 };
 
+class Script {
+
+};
+
+class DogScript : public Script {
+    public:
+        int func_001AD5F8();
+};
+
+int Main_RunGame();
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -603,6 +617,7 @@ Status func_0026CF60(void);
 Status func_0026CF98(void);
 int func_0026D120(void);
 void func_00273A80(int);
+
 int func_002963F8();
 int func_002964C0();
 int func_002A48A8(void);
@@ -689,24 +704,14 @@ void func_002240D0(void);
 void func_00224110(void);
 void func_00224150(void);
 void func_002241D0(void);
-int func_0022B5E0(void);
-void func_0022BB88(void);
-int func_0022BCC8(void);
-void func_0022D2C8(void);
-int func_0022D2D8(void);
-void func_0022D340(void);
-int func_0022D350(void);
-void func_0022D3B8(void);
-int func_0022D3C8(void);
-void func_0022D460(void);
-int func_0022D470(void);
+
 
 void func_002FBEE8(void);
 
 // text_0026C5C8
 void func_002606D0(void);
-void func_0026F8B8(void);
-float func_002704F8(void);
+
+
 void func_002717B8(void);
 void func_00271EF8(void);
 int func_00275520(void);
@@ -837,6 +842,7 @@ int func_002D77A8(char*);
 
 
 Status func_001D5E90(void);
+
 Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 

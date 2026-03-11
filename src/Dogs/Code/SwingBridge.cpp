@@ -26,9 +26,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", __11SwingBridgeP9ClassInfo
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", _$_11SwingBridge);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177950);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177950); // SwingBridge member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779C0); // SwingBridge member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779E0);
 

@@ -2,8 +2,9 @@
 
 #include "Dogs/Person.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D2E8;
+
+#ifdef NON_MATCHING
 Person::Person(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D2E8 = arg1;
@@ -153,7 +154,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CBF0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CC08); /* return D_0044D2E8 */
+ClassInfo* Person::func_0014CC08() {
+    return D_0044D2E8;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf23PersonHitSizeCalculator);
 

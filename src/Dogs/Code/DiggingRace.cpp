@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", __14DiggingRaceGodP9ClassI
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001294C8); // destructor
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296A8); // DiggingRaceGod member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296E8);
 

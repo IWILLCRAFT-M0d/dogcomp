@@ -52,11 +52,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBAA8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBAD0);
 
-void func_002FBB70(void) {
+void InputDevice_Device::func_002FBB70() {
     return;
 }
 
-void func_002FBB78(void) {
+void InputDevice_Device::func_002FBB78() {
     return;
 }
 
@@ -68,11 +68,11 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Inpdev", _vt$18InputDevice_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", __tf18InputDevice_Device);
 
-void func_002FBCA0() {
+void InputDevice_Device::func_002FBCA0() {
     return;
 }
 
-void func_002FBCA8() {
+void InputDevice_Device::func_002FBCA8() {
     return;
 }
 

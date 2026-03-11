@@ -19,7 +19,13 @@ BookMetaphor::GamePositionPage::GamePositionPage(int arg1) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor16GamePositionPagei);
 #endif
 
+#ifdef NON_MATCHING
+short func_0018C980(int level, int gate) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018C980);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018CA10);
 
@@ -41,6 +47,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor11NewGa
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018D830__Q212BookMetaphor11NewGamePage); /* return D_0035D33C (levelid for newgame?) */
 
+/*
+short BookMetaphor::NewGamePage::func_0018D830() {
+    return D_0035D33C;
+}
+*/
 int BookMetaphor::NewGamePage::func_0018D840() {
     return 0;
 }
@@ -77,7 +88,7 @@ BookMetaphor::LoadGamePage::LoadGamePage(int arg1, int arg2) : GamePositionPage 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor12LoadGamePageii);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018E038); // LoadGamePage member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018E038__Q212BookMetaphor12LoadGamePage);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018E090); // LoadGamePage member
 
@@ -117,11 +128,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EA50); // SaveGa
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EA80); // SaveGamePage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EB40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EB40); // SaveGamePage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018ED70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018ED70); // SaveGamePage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EE28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EE28); // SaveGamePage member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018EE50); // SaveGamePage member
 
@@ -137,9 +148,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F020); /* Curren
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F070); // CurrentPositionPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A0); /* return a0->unk18 */
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A0__Q212BookMetaphor19CurrentPositionPage);
+/*
+short BookMetaphor::CurrentPositionPage::func_0018F0A0() {
+    return this->unk18;
+}
+*/
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F0A8); // CurrentPositionPage member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F100); // CurrentPositionPage member
 
@@ -157,9 +172,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F3E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F498);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F4F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F4F0); // CurrentPositionPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F6D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F6D0); // CurrentPositionPage member
+
 #ifdef NON_MATCHING
 BookMetaphor::Stats0Page::Stats0Page() {
     //func_0018eea0
@@ -168,19 +184,19 @@ BookMetaphor::Stats0Page::Stats0Page() {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor10Stats0Page);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F770);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F770__Q212BookMetaphor10Stats0Page); // Stats0Page member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2D60);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F790);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018F790); // Stats0Page member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018FE80); // "No move in PlayerMoveStrings matches move in Stats0Page_MovementList[%d]"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001904D8); // Stats0Page member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190508);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190508); // Stats0Page member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001905C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001905C0); // Stats0Page member
 #ifdef NON_MATCHING
 BookMetaphor::Stats1Page::Stats1Page() {
     this->unk0 = 0;
@@ -202,13 +218,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190C18); /* a0->un
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2E58); /* "memcard1:" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190C20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00190C20); // Stats1Page member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00191180);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00191180); // Stats1Page member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00191678);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00191678); // Stats1Page member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001916A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001916A8); // Stats1Page member
 
 BookMetaphor::SettingsPage::SettingsPage() {
     this->unk10 = 1;
@@ -243,15 +259,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", __Q212BookMetaphor10Cheat
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor10CheatsPage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193528);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193528); // CheatsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001935F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001935F0); // CheatsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193D38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193D38); // CheatsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193DC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193DC0); // CheatsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193F60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00193F60); // CheatsPage member
 
 #ifdef NON_MATCHING
 BookMetaphor::BackgroundThread::BackgroundThread() {

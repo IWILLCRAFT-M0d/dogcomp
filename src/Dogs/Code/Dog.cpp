@@ -76,9 +76,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0); // "Dog has no hit
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012ED58); /* DogPushOffHitPrimReceiver */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001317F8); /* DogHitPrimReceiver::DogHitPrimReceiver(Dog*)? __18DogHitPrimReceiverP3Dog */
+#ifdef NON_MATCHING
+DogHitPrimReceiver::DogHitPrimReceiver(Dog* dog) : SimObj_HitReceiver(dog,1,0) {
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131868);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __18DogHitPrimReceiverP3Dog);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_18DogHitPrimReceiver);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001318C8);
 
@@ -96,19 +102,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C60);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0__3Dogf); // animation/movement update?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134550);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134550); // handles movement/world positon
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134650);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134650); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134670);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134688);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134688); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134788);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001349B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001349B8); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134B10__3Dog); // playerdog rendering function?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134B10__3Dog); // dog rendering function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DB0);
 
@@ -263,7 +269,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139190);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001397E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139858); /* return 0x64; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139858__3Dog); /* return 0x64; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139860);
 

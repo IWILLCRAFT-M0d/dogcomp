@@ -1,5 +1,7 @@
 #include "common.h"
 
+#include "text_001B07A8.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B07A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B07D0);

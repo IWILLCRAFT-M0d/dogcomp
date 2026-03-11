@@ -93,7 +93,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162BB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162C80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CE8); /* return; */
+void SimObj_UniverseLandscape::func_00162CE8() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00162CF0);
 
@@ -145,7 +147,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163370);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001633E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163418);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00163418); /* func__00163418(SimObj_Universe*) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001634F8);
 

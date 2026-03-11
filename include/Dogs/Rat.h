@@ -18,12 +18,15 @@ class Rat : public SmallThing {
         //unk720;
         Rat(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Rat();
+        ClassInfo* func_00150EE8();
+
+        int func_00150648();
 };
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-int func_00150648(void);
+
 
 #ifdef __cplusplus
 }

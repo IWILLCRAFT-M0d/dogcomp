@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_In
 
 #ifdef NON_MATCHING
 
-int D_004535C0;
+extern int D_004535C0;
 
 void func_002FCC10() {
     SuspendThread(D_004535C0); // suspend controller thread

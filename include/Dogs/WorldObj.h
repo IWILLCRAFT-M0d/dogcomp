@@ -5,6 +5,7 @@
 
 #include "SimObj.h"
 
+
 extern void * const WorldObj_StdInit_UsedModules[];
 
 Status WorldObj_InternalInitialise(void);
@@ -48,6 +49,7 @@ class WorldObject : public SimObj_ObjectWithMomentum {
 #ifdef __cplusplus
 extern "C" {
 #endif
+void func_00184A90(WorldObject*);
 int func_00186788(void);
 int func_00187628(void);
 int func_00187EC8(int, int);

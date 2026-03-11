@@ -13,6 +13,8 @@ class GameShell {
         int unk1C;
         GameShell(float fps, float gamespeed);
         virtual ~GameShell();
+
+        void func_002D30A8(int);
 };
 
 #endif

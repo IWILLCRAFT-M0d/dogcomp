@@ -72,7 +72,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F28D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F29C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F2AB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F2AB0); // Camera stuff
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9D00); /* "Camera object null in Player.cpp" */
 

@@ -2,8 +2,9 @@
 
 #include "Dogs/Rat.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D3F0;
+
+#ifdef NON_MATCHING
 Rat::Rat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SmallThing(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D3F0 = arg1;
@@ -39,7 +40,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_001503B0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_001505D8);
 
-int func_00150648() {
+int Rat::func_00150648() {
     return 0x64;
 }
 
@@ -83,7 +84,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", __tf3Rat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150E68);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150EE8); /* return D_0044D3F0 */
+ClassInfo* Rat::func_00150EE8() {
+    return D_0044D3F0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150EF0);
 

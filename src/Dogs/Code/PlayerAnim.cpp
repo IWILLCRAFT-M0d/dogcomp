@@ -17,7 +17,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8028);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8048);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8050); /* a0->unk4 = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", _$_19PlayerMoveAnimation);
 
@@ -29,7 +29,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerAnim", _vt$19PlayerMoveAnimatio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", __tf19PlayerMoveAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", _$_19PlayerLookAnimation); /* PlayerLookAnimation::~PlayerLookAnimation */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", _$_19PlayerLookAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", __tf19PlayerLookAnimation);
 

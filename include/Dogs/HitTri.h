@@ -12,6 +12,8 @@ class HitTri_Object : public WorldObject {
         int unk5E0;
         HitTri_Object(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~HitTri_Object();
+
+        void func_001DDC88();
 };
 
 

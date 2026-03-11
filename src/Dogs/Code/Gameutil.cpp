@@ -43,6 +43,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB9E8);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBC90);
 
 #ifdef NON_MATCHING
+// convertLangId?
 int func_001DBD50(int arg0) {
 	switch (arg0) {
 

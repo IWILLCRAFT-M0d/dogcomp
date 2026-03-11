@@ -67,7 +67,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E480); /*
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E490); /* return a0->unk10 */
 
-void func_0026E498() {
+void SoundImplementation::func_0026E498() {
     return;
 }
 
@@ -113,7 +113,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A0); /*
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F8A8); /* a0->unk14 = 1 */
 
-void func_0026F8B8(void) {
+void SoundImplementation::func_0026F8B8() {
     return;
 }
 

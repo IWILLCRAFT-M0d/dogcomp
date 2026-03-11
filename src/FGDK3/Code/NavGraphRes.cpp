@@ -178,9 +178,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E970);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E998);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E9A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E9A0); /* a0->unk4 = f12 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E9A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E9A8); /* return (float) a0->unk8 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E9B0);
 
