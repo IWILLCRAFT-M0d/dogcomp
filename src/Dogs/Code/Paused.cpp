@@ -12,15 +12,15 @@ PausedLayer::PausedLayer() {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", __11PausedLayer);
 #endif
 
-void func_001ED248() { // PausedLayer::func_001ED248
+void PausedLayer::func_001ED248() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED250);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED250); // PausedLayer member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED2A0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED2E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", _$_11PausedLayer);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Paused", D_003E6708);
 
@@ -34,9 +34,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Paused", D_003E6918);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Paused", D_003E6958);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED3A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED3A0); /* __tf9GameLayer */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Paused", D_003E6B90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED400);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED400); /* __tf12InputBinding */
 

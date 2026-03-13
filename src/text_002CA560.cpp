@@ -97,7 +97,13 @@ GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, 
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0__12GE_PrimCache);
 
+#ifdef NON_MATCHING
+GE_Device::GE_Device() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __9GE_Device);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_9GE_Device);
 
@@ -135,7 +141,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE0F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118__9GE_Device);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0); // GE_Device member
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE870__9GE_Device); // text render?
 
@@ -229,15 +235,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_12GE_PrimCache); /* GE_PrimCach
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C40);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C50);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C50); /* return a0->unk8 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C58);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C58); /* return a0->unkC */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C60);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C60); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C68);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C68); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C70);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C70); /* return a0->unk2 */
 
 int func_002D1C78() { // GE_PrimCache member
     return 0;
@@ -245,15 +251,15 @@ int func_002D1C78() { // GE_PrimCache member
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C80);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C88);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C88); /* a0->unk14 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C90);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C90); /* return a0->unk14 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CE8); /* return D_00452898 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF0); /* return a0->unk78 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF8);
 
@@ -263,17 +269,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D18); /* return D_004528A0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20); // GE_Device member
 
-int func_002D1D58() {
+int GE_Device::func_002D1D58() {
     return 0;
 }
 
-void func_002D1D60() {
+void GE_Device::func_002D1D60() {
     return;
 }
 
-void func_002D1D68() {
+void GE_Device::func_002D1D68() {
     return;
 }
 
@@ -307,23 +313,23 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D21B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2228);
 
-void func_002D2250() {
+void GE_Device::func_002D2250() {
     return;
 }
 
-void func_002D2258() {
+void GE_Device::func_002D2258() {
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2260);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2280);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2280); /* return (float) a0->unk194 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2288);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2288); /* return a0->unk98 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22B8);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22B8); /* return a0->unk94 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22C0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22C0); /* return a0->unk9C */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22C8);
 
@@ -339,7 +345,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2300);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2318);
 
-void func_002D2328() {
+void GE_Device::func_002D2328() {
     return;
 }
 

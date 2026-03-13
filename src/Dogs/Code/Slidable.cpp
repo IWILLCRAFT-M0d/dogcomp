@@ -2,8 +2,9 @@
 
 #include "Dogs/Slidable.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D8B0;
+
+#ifdef NON_MATCHING
 Slidable::Slidable(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D8B0 = arg1;
@@ -101,7 +102,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8E8); /* return D_0044D8B0 */
+ClassInfo* Slidable::func_0016D8E8() {
+    return D_0044D8B0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Slidable", func_0016D8F0);
 

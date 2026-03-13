@@ -1,5 +1,9 @@
 #include "common.h"
 
+#include "Dogs/WaterSplash.h"
+
+extern ClassInfo* D_0044DBC8;
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017D340);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017D4B8);
@@ -28,7 +32,20 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017EBF8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017F300);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017F468); /* StaticWaterRipple::StaticWaterRipple */
+
+#ifdef NON_MATCHING
+StaticWaterRipple::StaticWaterRipple(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044DBC8 = arg1;
+    }
+
+    if (arg1 == 0) {
+        D_0044DBC8->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", __17StaticWaterRippleP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WaterSplash", func_0017F528);
 

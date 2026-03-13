@@ -27,6 +27,7 @@ class SmallThing : public HitTri_Object {
         int unk6F8;
         SmallThing(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SmallThing();
+        ClassInfo* func_00171290();
 };
 
 

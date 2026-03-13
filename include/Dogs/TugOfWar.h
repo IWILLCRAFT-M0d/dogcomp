@@ -40,6 +40,7 @@ class TugOfWarGod : public WorldObject {
         int unk66C;
         TugOfWarGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~TugOfWarGod();
+        ClassInfo* func_0017D1F8();
         void func_0017C238(void);
         void func_0017C248(void);
         void func_0017C218(void);
@@ -54,6 +55,7 @@ class TugOfWarRopeEnd : public WorldObject {
         int unk5E0;
         TugOfWarRopeEnd(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~TugOfWarRopeEnd();
+        ClassInfo* func_0017D2F8();
 };
 
 #endif

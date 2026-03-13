@@ -1,8 +1,20 @@
 #include "common.h"
 
+#include "Dogs/Lights.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_0013FD48);
 
+extern ClassInfo* D_0044D0D8;
+
+#ifdef NON_MATCHING
+Light::Light(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 != 0) {
+        D_0044D0D8 = arg1;
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __5LightP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", _$_5Light);
 

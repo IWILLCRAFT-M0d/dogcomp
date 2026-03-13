@@ -2,8 +2,12 @@
 
 #include "Dogs/Zone.h"
 
-#ifdef NON_MATCHING
+
 extern ClassInfo* D_0044DD70;
+extern ClassInfo* D_0044DD78;
+extern ClassInfo* D_0044DD98;
+
+#ifdef NON_MATCHING
 Zone::Zone(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DD70 = arg1;
@@ -20,7 +24,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", __4ZoneP9ClassInfoP15SimObj_Unive
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", _$_4Zone);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044DD78;
 ZoneRadius::ZoneRadius(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Zone(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DD78 = arg1;
@@ -48,7 +51,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C88__10ZoneRadius);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001890B0__10ZoneRadius);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044DD98;
 ZoneFromNavGraph::ZoneFromNavGraph(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Zone(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DD98 = arg1;

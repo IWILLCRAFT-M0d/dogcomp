@@ -2,8 +2,9 @@
 
 #include "Dogs/DiggablePatch.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044CD80;
+
+#ifdef NON_MATCHING
 DiggablePatch::DiggablePatch(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044CD80 = arg1;
@@ -30,7 +31,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", __13DiggablePatchP9Class
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", _$_13DiggablePatch);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127EE8); // DiggablePatch member
+
 #ifdef NON_MATCHING
 int DiggablePatch::func_00127F78(float arg) { // set digRate?
     this->unk5E0 = arg;
@@ -40,9 +42,9 @@ int DiggablePatch::func_00127F78(float arg) { // set digRate?
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F78__13DiggablePatch);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00127F88); // DiggablePatch member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128030);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128030); // DiggablePatch member
 
 #ifdef NON_MATCHING
 int DiggablePatch::func_00128120(float arg) { // set depth?
@@ -64,19 +66,19 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3588);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A35B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128138);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128138); // DiggablePatch member
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3660);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3660); /* "BriberyBone" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3670);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3670); /* "DiggingRaceGod" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3680);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3680); /* "BriberyBonePatch" */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128498);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128498); // DiggablePatch member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001285B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001286D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001286D8); // DiggablePatch member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128BB0);
 

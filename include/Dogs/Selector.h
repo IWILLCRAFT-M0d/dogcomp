@@ -11,6 +11,7 @@ class Selector : public WorldObject {
         int unk5CC;
         Selector(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Selector();
+        ClassInfo* func_00161038();
         void func_00160758();
 };
 

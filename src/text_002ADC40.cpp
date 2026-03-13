@@ -767,7 +767,13 @@ s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0) {
     return arg0;
 }
 
+#ifdef NON_MATCHING
+GE_PS2Device::GE_PS2Device() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", __12GE_PS2Device);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", _$_12GE_PS2Device);
 

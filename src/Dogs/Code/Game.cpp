@@ -396,9 +396,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D42A8); // "Warning: toPos and facingPos the same in MoveActorToFacing. This would be likely to screw up the creature\'s orientation. Will keep creature\'s current orientation."
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0); // isolate actor?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498); // remove (maroon) actor function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4578);
 
@@ -426,13 +426,18 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4D48);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4D90);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4DD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4DD8); // unlockAllClues
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E1F00); /* "ResPatch.tmp" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E1F10); /* "BriberyBone" */
+#ifdef NON_MATCHING
+void func_001D4E40(Game_Document* gamedoc) {
 
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4E40); /* changeCollar(Game_Document*) */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5B88); // "Trying to set flow speed for a texture matrix which hasn\'t been set up for having its flow speed adjusted: %d, %.2f"
 
@@ -442,7 +447,24 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5CE0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E2138);
 
+#ifdef NON_MATCHING
+int func_001D5D48(Game_Document* arg0, int arg1) {
+    switch (arg1) {
+    case 8:
+    case 21:
+    case 23:
+    case 24:
+    case 28:
+    case 30:
+    case 32:
+        return 0x64;
+    default:
+        return 0x19;
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5D48);
+#endif
 
 #ifdef NON_MATCHING
 
@@ -705,15 +727,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf11DSLRenderer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D70E8); // dslrenderer action?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D71D0); /* StatusBar::~StatusBar ? */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_9StatusBar);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf9StatusBar);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf28Game_ClosestVisibleInFrontOf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D72B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D72B0); // Game_ClosestVisibleInFrontOf member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D74F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D74F0); /* __tf21PersistentDataUpdater */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7540);
 
@@ -727,7 +749,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7628);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf25BeforeMapChangeEnumerator);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D76F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D76F0); // BeforeMapChangeEnumerator member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E2AF0);
 
@@ -747,7 +769,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D77A8); /* __tf15SimObj_U
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D77F8); /* __tft16Tree34Enumerator1Z11SimObj_Base */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7838);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7838); /* ~DebugLayer ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf10DebugLayer);
 

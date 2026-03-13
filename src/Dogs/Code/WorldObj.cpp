@@ -115,7 +115,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182A70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AD0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 
@@ -175,7 +175,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185CE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185DD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8__11WorldObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186398);
 

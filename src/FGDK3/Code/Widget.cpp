@@ -17,8 +17,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BF18);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BF40);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BF58);
+#ifdef NON_MATCHING
+Widget_Desktop::Widget_Desktop() {
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __14Widget_Desktop); /* Widget_Desktop */
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __14Widget_Desktop);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C198); /* return 0; */
 

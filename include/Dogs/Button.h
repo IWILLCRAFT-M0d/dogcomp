@@ -7,7 +7,7 @@
 class Button : public WorldObject {
     public:
         int unk5C0;
-        int unk5C4;
+        float unk5C4; // button hold time (seconds)?
 
         int unk5E0;
         int unk5E4;
@@ -15,7 +15,11 @@ class Button : public WorldObject {
         int unk5EC; // button press height?
         Button(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Button();
+        ClassInfo* func_0010A6F0();
+        void func_0010A4E0();
         int func_0010A550(void);
+
+
 };
 
 

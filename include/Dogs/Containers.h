@@ -18,6 +18,7 @@ class BasketballNet : public Container {
         int unk618;
         BasketballNet(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~BasketballNet();
+        ClassInfo* func_001AD070();
 };
 
 class Pram : public Container {

@@ -2,7 +2,17 @@
 
 #include "Dogs/ScentMarkingGame.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015A528); /* ScentMarkingGameNode::ScentMarkingGameNode */
+extern ClassInfo* D_0044D660;
+
+#ifdef NON_MATCHING
+ScentMarkingGameNode::ScentMarkingGameNode(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
+    if (arg1 == 0) {
+        D_0044D660->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __20ScentMarkingGameNodeP9ClassInfoP15SimObj_Universeis); /* ScentMarkingGameNode::ScentMarkingGameNode */
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/ScentMarkingGame", D_003BB728);
 
@@ -138,11 +148,13 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/ScentMarkingGame", D_003BCFC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015FF70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_001601F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", _$_20ScentMarkingGameNode);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __tf20ScentMarkingGameNode);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_00160290);
+ClassInfo* ScentMarkingGameNode::func_00160290() {
+    return D_0044D660;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __tf19ScentMarkingGameGod);
 

@@ -2,8 +2,9 @@
 
 #include "Dogs/Button.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044C948;
+
+#ifdef NON_MATCHING
 Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044C948 = arg1;
@@ -32,7 +33,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178); // button::Extr
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A370__6Buttonf); // button action updater?
 
+#ifdef NON_MATCHING
+void Button::func_0010A4E0() {
+    this->unk5C4 = 2.0f;
+    //
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0__6Button); // button action?
+#endif
 
 #ifdef NON_MATCHING
 int Button::func_0010A550() {
@@ -46,7 +54,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __tf6Button);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F0); /* return D_0044C948; */
+ClassInfo* Button::func_0010A6F0() {
+    return D_0044C948;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F8);
 // vtables

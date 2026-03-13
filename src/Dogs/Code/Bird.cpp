@@ -2,9 +2,9 @@
 
 #include "Dogs/Bird.h"
 
+extern ClassInfo* D_0044C848; // s_classInfo?
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044C848; // s_classInfo?
 Bird::Bird(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044C848 = arg1;
@@ -26,7 +26,7 @@ Bird::Bird(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : World
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __4BirdP9ClassInfoP15SimObj_Universeis);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106340);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00106340); // Bird member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_001063A8);
 
@@ -92,7 +92,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", _$_4Bird);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf4Bird);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", func_00107430); /* return D_0044C848 */
+ClassInfo* Bird::func_00107430() {
+    return D_0044C848;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bird", __tf17PHitPrimDisplayer);
 

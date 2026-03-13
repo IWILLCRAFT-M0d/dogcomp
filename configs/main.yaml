@@ -160,6 +160,7 @@ segments:
       - [0x16EF68, cpp, FGDK3/Code/Playstation2/Sound]
       - [0x170BA0, cpp, FGDK3/Code/Playstation2/sifManager]
       - [0x170FB8, cpp, text_0026FFB8]
+      - [0x172A20, cpp, text_00271A20]
       - [0x176FF8, cpp, text_00275FF8]
       - [0x1785D0, cpp, text_002775D0]
       - [0x17A880, cpp, FGDK3/Code/NavGraphRes] # navgraph functions
@@ -168,6 +169,7 @@ segments:
       - [0x17FA98, cpp, FGDK3/Code/Playstation2/MusicRes]
       - [0x17FD98, cpp, FGDK3/Code/Playstation2/Music] # -O0
       - [0x189B30, cpp, text_00288B30] # Sound.c?
+      #- [0x1900B0, cpp, text_0028F0B0]
       - [0x190150, cpp, text_0028F150]
       - [0x191F58, cpp, text_00290F58]
       - [0x1975D0, cpp, text_002965D0]
@@ -178,10 +180,6 @@ segments:
       - [0x1A6350, cpp, text_002A5350]
       - [0x1AEC40, cpp, text_002ADC40]
       - [0x1CB560, cpp, text_002CA560]
-
-
-      #- [0x1900B0, cpp, text_0028F0B0]
-
       - [0x1D3D80, cpp, FGDK3/Code/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
       - [0x1DA560, cpp, text_002D9560]
@@ -351,7 +349,7 @@ segments:
       - [0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
       - [0x33CAD0, .rodata, FGDK3/Code/Playstation2/sifManager]
       - [0x33CBC0, .rodata, text_0026FFB8]
-      #- [0x33CE40, .rodata, FGDK3/Code/SavedGame]
+      - [0x33CE40, .rodata, text_00271A20]
       #- [0x33CE68, .rodata, FGDK3/Code/Playstation2/RunPath]
       #- [0x33CEE0]
       - [0x33D280, .rodata, text_00275FF8]
@@ -370,6 +368,7 @@ segments:
       - [0x33DA50, .rodata, FGDK3/Code/Playstation2/Music]
       #-[0x33E030, .rodata, sound]
       - [0x33E030, .rodata, text_00288B30]
+      #- [0x33FA98, .rodata, text_0028F0B0]
       - [0x33FAF0, .rodata, text_00290F58]
       - [0x33FC60, .rodata, text_002965D0]
       - [0x33FC70, .rodata, text_00296570]
@@ -379,7 +378,7 @@ segments:
       - [0x340490, .rodata, text_002A5350]
       - [0x340970, .rodata, text_002ADC40]
       - [0x3438E0, .rodata, text_002CA560]
-      #- [0x33FA98, .rodata, text_0028F0B0]
+
 
       #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
       - [0x343CE8, .rodata, FGDK3/Code/GameShell]

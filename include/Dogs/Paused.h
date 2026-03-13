@@ -7,14 +7,13 @@ class PausedLayer : public GameLayer {
     public:
         PausedLayer();
         virtual ~PausedLayer();
+        void func_001ED248();
 };
 
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-void func_001ED248(void);
 
 #ifdef __cplusplus
 }

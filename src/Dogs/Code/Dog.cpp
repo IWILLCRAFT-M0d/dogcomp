@@ -58,7 +58,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E250);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E270); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E290);
+
+
+void Dog::func_0012E290(int arg1) {
+    if (arg1 < 33) {
+    func_00182AF0(arg1);
+    }
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E2B8__3Dog);
 
@@ -70,7 +77,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E998__3Dog); // movement/
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E9C8__3Dogf); // animation function
 
+#ifdef NON_MATCHING
+void Dog::func_0012EB78(float fparg1) {
+    //FUN_00260590
+    func_001861B8();
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EB78__3Dogf); // dog mesh animation?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012EBC0); // "Dog has no hitcheck radius!"
 

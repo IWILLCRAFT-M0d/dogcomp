@@ -2,8 +2,9 @@
 
 #include "Dogs/TugOfWar.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044DB00;
+
+#ifdef NON_MATCHING
 TugOfWarGod::TugOfWarGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DB00 = arg1;
@@ -121,8 +122,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C398);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017C538); // "TugOfWarGod rope particle failed to rayhit ground"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044DB08;
+#ifdef NON_MATCHING
 TugOfWarRopeEnd::TugOfWarRopeEnd(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DB08 = arg1;
@@ -212,13 +213,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D170); /* return (fl
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D178);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D1F8); /* return D_0044DB00 */
+ClassInfo* TugOfWarGod::func_0017D1F8(){
+    return D_0044DB00;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_15TugOfWarRopeEnd);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __tf15TugOfWarRopeEnd);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D2F8__15TugOfWarRopeEnd); /* return D_0044DB08 */
+ClassInfo* TugOfWarRopeEnd::func_0017D2F8() {
+    return D_0044DB08;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_0017D300);
 

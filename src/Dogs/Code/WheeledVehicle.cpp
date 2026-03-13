@@ -2,8 +2,9 @@
 
 #include "Dogs/WheeledVehicle.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044DC20;
+
+#ifdef NON_MATCHING
 WheeledVehicle::WheeledVehicle(int wheels, ClassInfo* arg2, SimObj_Universe* arg3, int arg4, short arg5) : HitTri_Object(arg2 = 0, arg3, arg4, arg5) {
     if (arg2 != 0) {
         D_0044DC20 = arg2;
@@ -117,7 +118,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181848);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181860);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181870); /* return D_0044DC20 */
+ClassInfo* WheeledVehicle::func_00181870(){
+    return D_0044DC20;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", __tf25WheeledVehicleHitReceiver);
 

@@ -14,6 +14,7 @@ class SwingBridge : public HitTri_Object {
         float unk604; // strength required?
         SwingBridge(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SwingBridge();
+        ClassInfo* func_00178630();
 };
 
 

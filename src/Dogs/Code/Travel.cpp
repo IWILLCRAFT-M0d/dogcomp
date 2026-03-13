@@ -210,11 +210,11 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Travel", D_00430E40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf28TravelToExternalPosAnimation);
 
-int func_00234DC8() {
+int TravelToExternalPosAnimation::func_00234DC8() {
     return 1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00234DD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", _$_23TravelToObjectAnimation);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Travel", D_00430EC0);
 

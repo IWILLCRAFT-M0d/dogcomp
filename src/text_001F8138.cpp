@@ -1,7 +1,7 @@
 #include "common.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8138);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8138); // enter bookmetaphor?
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8158);
 
@@ -31,7 +31,7 @@ void func_001F8628(void) {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8630);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8630); // PlayingLayer member
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F87A0);
 
@@ -105,11 +105,11 @@ INCLUDE_RODATA("asm/nonmatchings/text_001F8138", D_003EB2B8);
 
 INCLUDE_RODATA("asm/nonmatchings/text_001F8138", D_003EB2F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8F68);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8F68); /* __tf9GameLayer */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001F8138", D_003EB570);
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8FC8);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8FC8); /* __tf12InputBinding */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001F8138", D_003EB688); /* "NavGraph" */
 

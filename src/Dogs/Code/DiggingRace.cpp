@@ -2,8 +2,9 @@
 
 #include "Dogs/DiggingRace.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044CDD8;
+
+#ifdef NON_MATCHING
 DiggingRaceGod::DiggingRaceGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044CDD8 = arg1;
@@ -29,7 +30,7 @@ DiggingRaceGod::DiggingRaceGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3,
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", __14DiggingRaceGodP9ClassInfoP15SimObj_Universeis);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001294C8); // destructor
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", _$_14DiggingRaceGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_001296A8); // DiggingRaceGod member
 
@@ -123,7 +124,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012CA78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", __tf14DiggingRaceGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012CC58);
+ClassInfo* DiggingRaceGod::func_0012CC58() {
+    return D_0044CDD8;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggingRace", D_003A6540);
 

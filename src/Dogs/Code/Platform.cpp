@@ -2,13 +2,15 @@
 
 #include "Dogs/Platform.h"
 
+extern ClassInfo* D_0044F018;
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED440); /* Platform::Platform */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", _$_8Platform);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED660); // "Failed to get finishing actorID in Platform::Activate!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED7A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED7A0); // Platform member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED7D8);
 
@@ -102,7 +104,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F0770);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F0778);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F07C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F07C8__19PlatformHitReceiver);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Platform", D_003E9A10);
 

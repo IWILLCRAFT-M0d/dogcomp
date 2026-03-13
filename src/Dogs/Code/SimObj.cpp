@@ -7,6 +7,10 @@
 
 #include "Dogs/SimObj.h"
 
+
+extern ClassInfo* D_0044D7B8;
+extern ClassInfo* D_0044D7D0;
+
 // beginning of SimObj.cpp
 #ifdef NON_MATCHING
 Status SimObj_InternalInitialise(void) {
@@ -199,7 +203,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SimObj", D_003BEC28); /* "< Y:%3.0f D
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164880);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164AD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164AD8); // SimObj_Base member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164B08); // "Trying to restore persist data for an object that doesn\'t have any"
 
@@ -225,14 +229,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164EC8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164F18);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164FB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164FB0); // set actor state?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165050);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001650D8);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044D7B8;
+
 SimObject::SimObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObj_Base(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D7B8 = arg1;
@@ -307,7 +311,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165DC0); // "Objects who
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165EB0); // "Objects whose hit check radius is FLT_MAX should override this method!"
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044D7D0;
+
 SimObj_ObjectWithMomentum::SimObj_ObjectWithMomentum(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D7D0 = arg1;
@@ -548,25 +552,26 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168648); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168650);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168658);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168658); /* return 0.0f */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168668);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168670);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168670); /* return 0.0f */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168680);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168688); /* return 0; */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168688);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168690); /* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168698); /* return 0; */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A0); /* return (float) a0->unkF4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686A8); /* return (float) a0->unkFC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001686B0); // SimObj member
+/* return D_0044D7B8; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", _$_25SimObj_ObjectWithMomentum);
 
@@ -576,7 +581,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168758);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168760);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168768);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168768); /* a0->unk160 = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168770);
 
@@ -672,7 +677,9 @@ void func_00168B80(void) {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B88); /* return D_0044D7D0; */
+ClassInfo* SimObj_ObjectWithMomentum::func_00168B88() {
+    return D_0044D7D0;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SimObj", D_003BF6D0);
 
@@ -684,7 +691,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf24SimObj_UniverseLandscape)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C40); /* return D_0044D7D4 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C40);  // floor collision?
+/* return D_0044D7D4 */
 
 int func_00168C50(void) {
     return 1;

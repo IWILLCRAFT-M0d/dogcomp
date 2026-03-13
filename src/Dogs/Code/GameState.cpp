@@ -11,7 +11,7 @@ GameState::GameStateReq::GameStateReq(void* arg1) {
 	this->unkC = arg1;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __Q29GameState12GameStateReqPv); /* Q29GameState12GameStateReq */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __Q29GameState12GameStateReqPv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_Q29GameState12GameStateReq);

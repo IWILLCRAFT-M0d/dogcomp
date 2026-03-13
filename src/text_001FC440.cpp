@@ -7,23 +7,23 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598); // debug actor nam
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5E0);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5E0); // texture resources
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC648);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC648); // shape resources
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC6B0);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC6B0); // text resources
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC718);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC718); // music resources
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC780);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC780); // sound resources
 
 int func_001FC7E8(void) {
     return 1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC7F0);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC7F0); // script resources
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC858);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC858); // animation resources
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC8C0); // get navgraph?
 

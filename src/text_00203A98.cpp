@@ -841,7 +841,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00210358);
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002103F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00210498);
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00210498); // test doggy do animations function?
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00210538);
 

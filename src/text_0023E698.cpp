@@ -1,4 +1,5 @@
 #include "common.h"
+#include "unk.h"
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023E698);
 
@@ -17,7 +18,11 @@ INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC20);
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC90); /* (float) a0->unkC = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC98);
-
+/*
+void func_0023EC98(s_0044EB68_1E0* arg0) {
+    arg0->unkC = 0.3f;
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023ECB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EF28);

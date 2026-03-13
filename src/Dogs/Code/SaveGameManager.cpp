@@ -45,7 +45,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FEAB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FEB70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FEC78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FEC78); // gameslot function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FEC88);
 
@@ -67,19 +67,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002002A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201AF8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201CA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201CA8); // format memcard
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201D68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201D68); // unformat memcard
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201E98);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002020D0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002021D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002021D0); // deals with settings stuff
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202258);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202258); // Load saved game function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002023C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002023C8); // Save game function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002024C8);
 

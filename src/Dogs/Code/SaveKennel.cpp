@@ -2,8 +2,8 @@
 
 #include "Dogs/SaveKennel.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D448;
+#ifdef NON_MATCHING
 SaveKennel::SaveKennel(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D448 = arg1;
@@ -97,7 +97,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152BB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __tf10SaveKennel);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152C38); /* return D_0044d448; */
+ClassInfo* SaveKennel::func_00152C38() {
+    return D_0044D448;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __tf21MostInFrontCalculator);
 

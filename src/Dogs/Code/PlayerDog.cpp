@@ -3,6 +3,7 @@
 #include "Dogs/PlayerDog.h"
 
 extern ClassInfo* D_0044D398;
+
 #ifdef NON_MATCHING
 extern short D_00450A10;
 extern short D_00450A18;
@@ -90,7 +91,7 @@ void PlayerDog::func_0014DB48() {
     this->unkBB0 = -1;
 }
 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58); // PlayerDog member; doggy do function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80);
 
@@ -185,7 +186,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F498);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf9PlayerDog);
 
-ClassInfo* PlayerDog::func_0014F518() {
+ClassInfo* PlayerDog::func_0014F518() { // GetClassInfoA?
     return D_0044D398;
 }
 

@@ -238,13 +238,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor12Sett
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192010);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192110);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192110); // SettingsPage member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192820);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001928A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192CF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192CF0); // Settings Page member
+
 #ifdef NON_MATCHING
 BookMetaphor::CheatsPage::CheatsPage() {
     this->unk0 = 0;

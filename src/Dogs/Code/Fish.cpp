@@ -2,8 +2,9 @@
 
 #include "Dogs/Fish.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044CF60;
+
+#ifdef NON_MATCHING
 Fish::Fish(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044CF60 = arg1;
@@ -74,7 +75,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013C1E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", __tf4Fish);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013C290); /* return D_0044cf60; */
+ClassInfo* Fish::func_0013C290() {
+    return D_0044CF60;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013C298);
 

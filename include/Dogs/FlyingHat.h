@@ -10,6 +10,7 @@ class FlyingHat : public SmallThing {
         int unk704;
         FlyingHat(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~FlyingHat();
+        ClassInfo* func_0013CE70();
 };
 
 

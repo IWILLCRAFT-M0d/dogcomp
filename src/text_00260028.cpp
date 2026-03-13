@@ -1,8 +1,6 @@
 #include "common.h"
 #include "unk.h"
-#include "debug.h"
-
-#include "FGDK3/Playstation2/Thread.h"
+// WalkerProvider_IF functions?
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260028);
 

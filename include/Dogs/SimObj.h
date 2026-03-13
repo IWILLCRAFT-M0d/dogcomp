@@ -99,6 +99,7 @@ class SimObj_ObjectWithMomentum : public SimObject {
         float unk1D4;
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
+        ClassInfo* func_00168B88();
 };
 
 class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {

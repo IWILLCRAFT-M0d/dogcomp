@@ -19,6 +19,7 @@ class AnimatedObject : public HitTri_Object {
         int unk694;
         AnimatedObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~AnimatedObject();
+        ClassInfo* func_00103F50();
 };
 
 #endif

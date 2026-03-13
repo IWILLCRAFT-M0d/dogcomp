@@ -2,9 +2,9 @@
 
 #include "Dogs/Basket.h"
 
+extern ClassInfo* D_0044C7F8;
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044C7F8;
 Basket::Basket(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Container(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044C7F8 = arg1;
@@ -86,7 +86,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", __tf6Basket);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00106190);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00106198);
+ClassInfo* Basket::func_00106198() {
+    return D_0044C7F8;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Basket", D_00397730);
 

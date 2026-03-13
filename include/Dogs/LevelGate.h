@@ -9,6 +9,7 @@ class LevelGate : public SimObject {
         int unk134;
         LevelGate(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~LevelGate();
+        ClassInfo* func_0013FD20();
 };
 
 #endif

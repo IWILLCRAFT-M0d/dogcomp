@@ -1,10 +1,17 @@
 #ifndef TRAVEL_H
 #define TRAVEL_H
 
+class TravelToExternalPosAnimation { // : public AnimationComponent
+    public:
+        virtual ~TravelToExternalPosAnimation();
+        //
+        int func_00234DC8();
+};
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-int func_00234DC8(void);
+
 int func_00234E60(void);
 int func_00234EF8(void);
 int func_00234F90(void);

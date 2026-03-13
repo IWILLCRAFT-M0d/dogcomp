@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146980);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", _$_14ParticleSystem);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146C70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146C70); // ParticleSystem member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00146D18);
 
@@ -84,7 +84,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149880);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_001498B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149908);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149908); // ParticleSystem member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149940);
 

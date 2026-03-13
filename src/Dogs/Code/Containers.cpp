@@ -2,8 +2,11 @@
 
 #include "Dogs/Containers.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044E568;
+extern ClassInfo* D_0044E570;
+extern ClassInfo* D_0044E580;
+
+#ifdef NON_MATCHING
 Container::Container(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
 	if (arg1 != 0) {
 		D_0044E568 = arg1;
@@ -33,7 +36,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA10__9Containerf)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA78);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044E570;
 BasketballNet::BasketballNet(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Container(arg1 = 0, arg2, arg3, arg4) {
 	if (arg1 != 0) {
 		D_0044E570 = arg1;
@@ -68,8 +70,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC1F8);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC2F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC350);
+
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044E580;
 Pram::Pram(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Container(arg1 = 0, arg2, arg3, arg4) {
 	if (arg1 != 0) {
 		D_0044E580 = arg1;
@@ -193,7 +195,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Containers", D_003DAEA8); /* "9Contai
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __tf13BasketballNet);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AD070__13BasketballNet); /* return D_0044E570 */
+ClassInfo* BasketballNet::func_001AD070() {
+	return D_0044E570;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __tf4Pram);
 

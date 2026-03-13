@@ -200,7 +200,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_004375D8); /* "Hierarchy Stac
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_004375E8); /* "No context sensitive help is available" */
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262128);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262128); // VirtualDesktop member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __14VirtualDesktop);
 
@@ -232,15 +232,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262EF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf21PointerMessageHandler);
 
-void func_00262F70(void) {
+void PointerMessageHandler::func_00262F70() {
     return;
 }
 
-void func_00262F78(void) {
+void PointerMessageHandler::func_00262F78() {
     return;
 }
 
-void func_00262F80(void) {
+void PointerMessageHandler::func_00262F80() {
     return;
 }
 
@@ -248,14 +248,14 @@ void func_00262F88(void) {
     return;
 }
 
-void func_00262F90(void) {
+void PointerMessageHandler::func_00262F90() {
     return;
 }
 
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262F98);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262F98); /* __tf16MenuRegisterable */
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262FD8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_11PrimaryMenu);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437970); /* _vt$10HelpAction */
 
@@ -287,9 +287,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf11PrimaryMenu);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf14VirtualDesktop);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002630F8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002630F8); /* return a0->unk1B0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263100);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263100); /* return a0->unk1B4 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263108);
 
@@ -339,11 +339,11 @@ int func_00263640(void) {
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263648);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_13VD_FocusStack);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf13VD_FocusStack);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002636B8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002636B8); // VD_FocusStack member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263748);
 
@@ -367,9 +367,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263EE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F10);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F50);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F50); // FloatEditor member
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F90);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263F90); // FloatEditor member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263FF8); // FloatEditor member
 
@@ -477,7 +477,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264EE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264F48);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264F70);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264F70); // IntEditor member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264FA0);
 
@@ -772,17 +772,19 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268EB0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf19Vector3EditorWidget);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268F58);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268F58); // Vector3DataEditorWidget member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf23Vector3DataEditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf13NameTagEditor);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269050);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269050); // NameTagEditor member
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002691E8); /* return; */
+void NameTagEditor::func_002691E8() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002691F0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_19NameTagEditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf19NameTagEditorWidget);
 
@@ -807,11 +809,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002693F0);
 // tree34 split?
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269410);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002694C8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_20Tree34_NodeAllocator);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269598);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269598); // Tree34_NodeAllocator member
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269600);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269600); // Tree34_NodeAllocator member
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269610);
 

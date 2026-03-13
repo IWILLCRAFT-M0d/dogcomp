@@ -26,7 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F5C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F630);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F708);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F708); // check valid console parameter?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F878);
 
@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FC38);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FD38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FDE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FDE0); // check valid map id?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FE00);
 
@@ -833,6 +833,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9A20); /* Console::Mo
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9BB0); /* Console::SetScreenFader */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9C70); /* Console::SetGameTime */
+// D_0044EBB8 gametime variable
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", __12ConsoleLayer);
 

@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ECFF0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ED058);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ED0D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ED0D0); // set var?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001ED188);
 

@@ -21,7 +21,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", __6SkidooP9ClassInfoP15SimObj_U
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", _$_6Skidoo);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169478);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169478__6Skidoo);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Skidoo", func_00169498); // "Unknown extra for Skidoo"
 

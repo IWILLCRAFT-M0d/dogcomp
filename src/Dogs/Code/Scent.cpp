@@ -2,6 +2,8 @@
 
 #include "Dogs/Scent.h"
 
+extern ClassInfo* D_0044D4E8;
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00152DD0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00152E98);
@@ -28,8 +30,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153D30); // "Too many sce
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153DD0);
 
+
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044D4E8;
 Scent::Scent(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
 
     this->unk118 = -1.0f;
@@ -181,17 +183,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A290);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2D0); /* return a0->unk110 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2D8); /* return (float) a0->unk114 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2E0); /* return (float) a0->unk118 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2E8); /* return a0->unk120 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2F0); /* a0->unk120 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A2F8);
+ClassInfo* Scent::func_0015A2F8() {
+    return D_0044D4E8;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_0015A300);
 

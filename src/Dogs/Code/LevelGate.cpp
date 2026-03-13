@@ -2,8 +2,9 @@
 
 #include "Dogs/LevelGate.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D088;
+
+#ifdef NON_MATCHING
 LevelGate::LevelGate(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D088 = arg1;
@@ -31,9 +32,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/LevelGate", D_003AD1F0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/LevelGate", D_003AD220);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F380);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F380); // LevelGate member; called multiple times when entering new level
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F420);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F420); // func_0013F420(LevelGate*) ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013F680);
 
@@ -59,6 +60,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD10); /* return a0
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD18); /* return a0->unk134 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD20); /* return D_0044D088 */
+ClassInfo* LevelGate::func_0013FD20() {
+    return D_0044D088;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD28);

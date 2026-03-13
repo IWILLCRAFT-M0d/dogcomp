@@ -229,16 +229,25 @@ class Resource_LayoutUnit {
         Resource_LayoutUnit(void*);
         virtual ~Resource_LayoutUnit();
 };
-/*
-class Resource_LayoutOverlay : public Resource_LayoutUnit {
+
+class Resource_LayoutOverlay { // : public Resource_LayoutUnit
     public:
-        int unkC;
+        int unkC; // overlay id?
         void* unk10;
         //Resource_LayoutOverlay
         virtual ~Resource_LayoutOverlay();
+        void func_00274200();
 
-}*/
+};
 
+typedef struct {
+    int m_overlayId;
+    char* m_overlayName;
+} overlayInfo;
+
+typedef struct {
+    overlayInfo m_overlays[115];
+} s_D_0035FC48;
 
 class Resource_LayoutGroup : public Resource_LayoutUnit {
     public:
@@ -293,12 +302,17 @@ class StorageDevice_MemCard : public StorageDevice {
     public:
         StorageDevice_MemCard(int card);
 };*/
+class Widget_Border {
 
-
-/*
-class Widget_Desktop : public Widget_Border {
 };
-*/
+
+
+class Widget_Desktop : public Widget_Border {
+    public:
+        Widget_Desktop();
+        virtual ~Widget_Desktop();
+};
+
 
 
 namespace File {
@@ -586,6 +600,49 @@ class DogScript : public Script {
         int func_001AD5F8();
 };
 
+class PointerMessageHandler {
+    public:
+        void func_00262F70();
+        void func_00262F78();
+        void func_00262F80();
+        //001d6a10
+        void func_00262F90();
+};
+
+class ValueEditor {
+
+};
+
+class NameTagEditor : public ValueEditor {
+    public:
+        void func_002691E8();
+};
+
+class GE_TransformState {
+
+};
+
+class GE_Device : public GE_TransformState {
+    public:
+        GE_Device();
+        virtual ~GE_Device();
+        int func_002D1D58();
+        //
+        void func_002D1D60();
+        void func_002D1D68();
+        //
+        void func_002D2250();
+        void func_002D2258();
+        //
+        void func_002D2328();
+};
+
+class GE_PS2Device : public GE_Device {
+    public:
+        GE_PS2Device();
+        virtual ~GE_PS2Device();
+};
+
 int Main_RunGame();
 #ifdef __cplusplus
 extern "C" {
@@ -746,7 +803,7 @@ int func_0018D860(void);
 int func_002C6498(void);
 
 // FGDK3/Code/Widget
-void func_00262F70(void);
+
 void func_00262F78(void);
 void func_00262F80(void);
 void func_00262F88(void);
@@ -848,12 +905,12 @@ Status func_0026CFF8(int, char*,char* ,int);
 
 int func_002D1BC8(void);
 int func_002D1C78(void);
-int func_002D1D58(void);
-void func_002D1D60(void);
-void func_002D1D68(void);
-void func_002D2250(void);
-void func_002D2258(void);
-void func_002D2328(void);
+
+
+
+
+
+
 float func_002D2350(void);
 void* func_002D3360(void*);
 

@@ -23,7 +23,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", __5SmellP9ClassInfoP15SimObj_Uni
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", _$_5Smell);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00171470);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00171470); // Smell member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00171490);
 

@@ -2,8 +2,9 @@
 
 #include "Dogs/HitTri.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044ECA8;
+
+#ifdef NON_MATCHING
 HitTri_Object::HitTri_Object(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044ECA8 = arg1;
@@ -75,7 +76,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", __tf13HitTri_Object);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2B8); /* return (float) a0->unk5D8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DE2C0__13HitTri_Object); /* return D_0044ECA8 */
+ClassInfo* HitTri_Object::func_001DE2C0() {
+    return D_0044ECA8;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/HitTri", D_003E50F8);
 

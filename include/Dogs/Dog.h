@@ -21,6 +21,11 @@ class Dog : public WorldObject {
         union {int i;float f;} unkB0C;
         Dog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Dog();
+        //
+        void func_0012E290(int);
+        //
+        void func_0012EB78(float);
+        //
         float func_0012E240(void);
 };
 // union {int i;float f;}

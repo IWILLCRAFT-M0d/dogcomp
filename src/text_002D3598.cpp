@@ -165,7 +165,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D55F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5690);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D56E0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D56E0); // Debug_StructContainer member
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5788); /* rct3 DebugEnvironment::Get (pretty sure) */
 
@@ -198,7 +198,7 @@ void DDE_FatalError(char* message, ...) {
     va_end(args);
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CC0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CC0__11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CE0);
 

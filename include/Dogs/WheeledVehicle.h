@@ -26,6 +26,7 @@ class WheeledVehicle : public HitTri_Object {
         int unk6B8;
         WheeledVehicle(int wheels, ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WheeledVehicle();
+        ClassInfo* func_00181870();
         void func_00180528(float);
         void func_00180530(void);
         void func_00180540(void);

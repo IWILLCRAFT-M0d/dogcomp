@@ -192,7 +192,7 @@ void StreamPreload::func_0022D460() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D468); /* return a0->unk14 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D468__13StreamPreload); /* return a0->unk14 */
 
 int StreamPreload::func_0022D470() {
     return 1;

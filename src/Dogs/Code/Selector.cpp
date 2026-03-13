@@ -2,8 +2,9 @@
 
 #include "Dogs/Selector.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D708;
+
+#ifdef NON_MATCHING
 Selector::Selector(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D708 = arg1;
@@ -37,11 +38,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160B68); // Selector m
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160D10); // Selector member
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD2F8);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD2F8); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD320);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD320); /* "_actorID >= -1 && _actorID <= m_actorTblSize" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD350);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD350); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Selector", D_003BD3B0);
 
@@ -71,7 +72,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00160FB8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", __tf8Selector);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00161038);
+ClassInfo* Selector::func_00161038() {
+    return D_0044D708;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Selector", func_00161040);
 

@@ -114,6 +114,8 @@ void func_001D22B0(Game_Document*, int level, int gate);
 void func_001D3F38(Game_Document*);
 void func_001D3F58(Game_Document*);
 void func_001D4650(void);
+void func_001D4E40(Game_Document*);
+int func_001D5D48(Game_Document*, int);
 void func_001D6A10(void);
 #ifdef __cplusplus
 }
