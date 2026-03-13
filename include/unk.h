@@ -198,14 +198,51 @@ struct ShapeParams_Dynamic : public ShapeParams {
     virtual ~ShapeParams_Dynamic();
 };
 
+class GE_TransformState {
 
+};
+
+class GE_Device : public GE_TransformState {
+    public:
+        GE_Device();
+        virtual ~GE_Device();
+        int func_002D1D58();
+        //
+        void func_002D1D60();
+        void func_002D1D68();
+        //
+        void func_002D2250();
+        void func_002D2258();
+        //
+        void func_002D2328();
+};
+
+class GE_PS2Device : public GE_Device {
+    public:
+        GE_PS2Device();
+        virtual ~GE_PS2Device();
+};
 
 class ShapeInstance {
     public:
+        void* unk0; // shading data?
+        /* 0x4 */ void* m_shapeData; // shapeData pointer?
+        //ShapeParams_Dynamic unk8
+        //ShapeParams_Dynamic unk14
+        void* unk20; // mesh data?
+        void* unk24;
+        void* unk28; // animations?
         ShapeInstance();
         virtual ~ShapeInstance();
-        //
-        float func_002704F8();
+        void Empty();
+        void Fill();
+        virtual void SetShape(void*); // SetShape(ShapeData* const)
+        //virtual ? func_00270468
+        // virtual ? func_00270498
+        // virtual ? func_002704D8
+        virtual float func_002704F8();
+        void Execute();
+        void Render(GE_Device*);
 };
 
 class GE_DMAPktRc1i69 { // GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric
@@ -353,8 +390,8 @@ class File_FileDescriptor : public File::Access {
         int unk1C;
         File_FileDescriptor(int fd);
         virtual ~File_FileDescriptor();
-        void func_00314890(void);
-        int func_003148E8(void);
+        virtual void func_00314890(void);
+        virtual int func_003148E8(void);
 };
 
 // class GE_TextureStylePkt : public GE_DMARc {
@@ -517,7 +554,7 @@ namespace BookMetaphor {
             ChangeLevelBackgroundThread(int level, int gate);
             virtual ~ChangeLevelBackgroundThread();
             //func_00194678
-            void func_001947C8();
+            virtual void func_001947C8();
     };
 
 
@@ -618,30 +655,7 @@ class NameTagEditor : public ValueEditor {
         void func_002691E8();
 };
 
-class GE_TransformState {
 
-};
-
-class GE_Device : public GE_TransformState {
-    public:
-        GE_Device();
-        virtual ~GE_Device();
-        int func_002D1D58();
-        //
-        void func_002D1D60();
-        void func_002D1D68();
-        //
-        void func_002D2250();
-        void func_002D2258();
-        //
-        void func_002D2328();
-};
-
-class GE_PS2Device : public GE_Device {
-    public:
-        GE_PS2Device();
-        virtual ~GE_PS2Device();
-};
 
 int Main_RunGame();
 #ifdef __cplusplus

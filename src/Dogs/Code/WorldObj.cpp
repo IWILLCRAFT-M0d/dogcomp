@@ -120,8 +120,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
+#ifdef NON_MATCHING
+void WorldObject::func_00182FF8(void* shape) {
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8); // "SetShape called but there are still animations running!"
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8__11WorldObjectPv);  // set shape for worldobject?
+// "SetShape called but there are still animations running!"
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001833E8);
 

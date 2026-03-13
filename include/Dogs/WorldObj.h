@@ -42,13 +42,15 @@ class WorldObject : public SimObj_ObjectWithMomentum {
 
         WorldObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WorldObject();
-        void func_001884A8(void);
-        void func_001884B8(void);
+        virtual void func_001884A8(void);
+        virtual void func_001884B8(void);
         //
-        void func_00182AF0(int);
+         void func_00182AF0(int);
 
         //?
-        void func_001861B8();
+        virtual void func_001861B8();
+
+        virtual void func_00182FF8(void* shape);
 };
 
 #ifdef __cplusplus

@@ -91,7 +91,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCA88);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCAF8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCB60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCB60); // numbers stuff
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD08);
 

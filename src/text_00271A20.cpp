@@ -14,6 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271AD8);
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271B30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271BB8);
+
 #ifdef NON_MATCHING
 SavedGame::SavedGame(char* arg1, int arg2, int arg3) {
     this->unk4 = 0;
