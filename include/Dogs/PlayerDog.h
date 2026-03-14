@@ -23,7 +23,7 @@ class PlayerDog : public Dog {
         int unkBB8;
         PlayerDog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~PlayerDog();
-        ClassInfo* func_0014F518();
+        virtual ClassInfo* func_0014F518();
 };
 
 //msg AddMove

@@ -105,7 +105,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCF0__9PlayerDog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20); // "Failed to advance slidable in PlayerDog.cpp"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88); // add move
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EBA0); // "Could not find a doggy do sequence! Game is likely to crash now."
 

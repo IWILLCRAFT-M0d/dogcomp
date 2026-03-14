@@ -2,8 +2,9 @@
 
 #include "Dogs/Skidoo.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D820;
+
+#ifdef NON_MATCHING
 Skidoo::Skidoo(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(3, arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D820 = arg1;

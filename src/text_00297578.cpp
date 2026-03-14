@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298688);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002987C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298D50);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298D50); // texture function
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299190);
 

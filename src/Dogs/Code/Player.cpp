@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F10F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F12D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1308);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1308); // movement/jake dirty
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1A58);
 
@@ -132,7 +132,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F43A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F43F0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4418);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4418); // dpad action input?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F46A8);
 
@@ -192,7 +192,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F66C0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", _vt$17Player_GrowlTimer);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6720);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6720); // player moves function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7368);
 

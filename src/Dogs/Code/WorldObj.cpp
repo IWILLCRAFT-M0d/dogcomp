@@ -5,6 +5,8 @@
 #include "unk.h"
 #include <string.h>
 
+extern ClassInfo* D_0044DCA0;
+
 // Beginning of WorldObj
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFBF8); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 
@@ -56,7 +58,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", WorldObj_Finalise__Fv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001819E8);
-
+// func_001819E8(SimObj_Universe *param_1,WorldObject *param_2)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A10);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A30);
@@ -64,7 +66,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181A30);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00181B60);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044DCA0;
 WorldObject::WorldObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObj_ObjectWithMomentum(arg1 = 0, arg2, arg3, arg4) {
     //shapeinstance
     if (arg1 != 0) {
@@ -122,7 +123,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 #ifdef NON_MATCHING
 void WorldObject::func_00182FF8(void* shape) {
-
+    //
+    this->unk240.SetShape(shape);
 }
 
 #else
@@ -130,7 +132,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8__11WorldObjectP
 // "SetShape called but there are still animations running!"
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001833E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001833E8); // world object update? (if nopped, food items never disappear when eaten)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00183428);
 

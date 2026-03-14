@@ -231,7 +231,7 @@ int func_002D1BC8() {
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf12GE_PrimCache);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_12GE_PrimCache); /* GE_PrimCache::~GE_PrimCache */
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C40);
 

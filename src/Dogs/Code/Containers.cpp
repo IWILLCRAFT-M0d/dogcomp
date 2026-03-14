@@ -57,9 +57,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABCA8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFB8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFE0); // ball detection?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC098);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC098); // rendering thing
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC0B8);
 

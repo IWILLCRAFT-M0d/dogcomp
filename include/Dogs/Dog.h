@@ -5,7 +5,8 @@
 
 class Dog : public WorldObject {
     public:
-        int unk830; // swimming state
+        float unk684;
+        /* 0x830 */ bool m_isSwimming;
         float unk838;
         float unk83C;
         float unk840;
@@ -22,11 +23,22 @@ class Dog : public WorldObject {
         Dog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Dog();
         //
-        void func_0012E290(int);
+        virtual void func_0012E290(int);
         //
-        void func_0012EB78(float);
-        //
-        float func_0012E240(void);
+        virtual void func_0012EB78(float);
+        //? 001878f8
+        //? 00188400
+        //? 00188408
+        //0012e998
+        //0012e9c8
+        virtual float func_0012E240(void);
+
+        virtual bool GetSwimmingState();
+        virtual int func_001365B0();
+        //FUN_0021f3d8
+        //? 0021f488
+        //? 0021f548
+
 };
 // union {int i;float f;}
 class DogHitPrimReceiver : public SimObj_HitReceiver {

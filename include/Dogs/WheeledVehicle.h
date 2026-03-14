@@ -12,7 +12,7 @@ class WheeledVehicle : public HitTri_Object {
         int unk630;
         float unk634; // topspeed?
         int unk638;
-        int unk63C;
+        int unk63C; // direction variable?
         int unk640;
         int unk644;
         int unk648;
@@ -27,9 +27,9 @@ class WheeledVehicle : public HitTri_Object {
         WheeledVehicle(int wheels, ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WheeledVehicle();
         ClassInfo* func_00181870();
-        void func_00180528(float);
-        void func_00180530(void);
-        void func_00180540(void);
+        virtual void func_00180528(float);
+        virtual void func_00180530(void);
+        virtual void func_00180540(void);
 };
 
 

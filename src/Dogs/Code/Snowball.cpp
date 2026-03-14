@@ -2,8 +2,8 @@
 
 #include "Dogs/Snowball.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044D9C0;
+#ifdef NON_MATCHING
 Snowball::Snowball(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SphereObj(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D9C0 = arg1;

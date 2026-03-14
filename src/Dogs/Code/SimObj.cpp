@@ -290,7 +290,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165988); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165990);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165A20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165A20); // texture thing (jake collar/render fade out of distance?)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00165B20);
 

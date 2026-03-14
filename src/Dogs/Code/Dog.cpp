@@ -2,6 +2,8 @@
 
 #include "Dogs/Dog.h"
 
+extern ClassInfo* D_0044CE58;
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CD30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CEC8);
@@ -17,7 +19,6 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A6688);
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044CE58;
 Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044CE58 = arg1;
@@ -177,13 +178,15 @@ int Dog::func_00136588() {
     return this->unk674;
 }
 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136590__3Dog);
-/*
-// get swimming state
-int Dog::func_00136590() {
-    return this->unk830;
+
+#ifdef NON_MATCHING
+bool Dog::GetSwimmingState() {
+    return this->m_isSwimming;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", GetSwimmingState__3Dog);
+#endif
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136598__3Dog);
 /*
 int Dog::func_00136598() {
@@ -197,14 +200,17 @@ int Dog::func_001365A0(float arg) {
     return 0;
 }
 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365B0__3Dog);
-/*
+#ifdef NON_MATCHING
 // How many secs to show sniff bone status
 int Dog::func_001365B0() {
     this->unk684 = 5.0f;
     return 0;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365B0__3Dog);
+#endif
+
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365C8__3Dogf);
 /*
 void Dog::func_001365C8(float arg) {
@@ -240,7 +246,7 @@ int Dog::func_00136648(float arg) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136658__3Dogf);
 /*
 int Dog::func_00136658(float arg) {
-    this->unk854 = arg;
+    this->unk854 = isarg;
     return 0;
 }
 */
@@ -292,6 +298,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001398B8);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139928);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139B60);
+
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A6820); /* _vt$16HitPrimDisplayer */
 

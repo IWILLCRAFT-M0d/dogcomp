@@ -520,7 +520,7 @@ namespace BookMetaphor {
             int unk8; // m_cursorPos
             int unkC; // action?
             int unk10;
-            int m_cheatsAvailable; // 0x14
+            /* 0x14 */ bool m_cheatsAvailable;
             SettingsPage();
             virtual ~SettingsPage();
     };

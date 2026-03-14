@@ -91,7 +91,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5040);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5088);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F50F0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F50F0); // Animation::Initialise ?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F51E8);
 

@@ -16,6 +16,7 @@ void WorldObj_Finalise(void);
 
 class WorldObject : public SimObj_ObjectWithMomentum {
     public:
+        ShapeInstance unk240;
         int unk2E0;
         //unk314
         //unk318

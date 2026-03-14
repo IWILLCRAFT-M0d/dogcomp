@@ -9,7 +9,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE378);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE3E0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE608);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE608); // ground collision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DEDF0);
 
@@ -23,7 +23,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF4B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF590);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF810);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF810); // gravity function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF828);
 
@@ -33,7 +33,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF940);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFA30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFAF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFAF0); // first arg is landscape_land* ?; water color/texture?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB80);
 
