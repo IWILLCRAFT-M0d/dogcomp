@@ -9,7 +9,7 @@ class PlaceHolder : public WorldObject {
         PlaceHolder(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~PlaceHolder();
 
-        ClassInfo* func_0014D3E8();
+        virtual ClassInfo* func_0014D3E8();
 };
 
 

@@ -24,7 +24,7 @@ SphereObj::SphereObj(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg
     this->unk5E8 = 0;
     this->unk5EC = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DA60->unk4 = 1;
     }
 }

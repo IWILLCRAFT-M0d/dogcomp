@@ -13,7 +13,7 @@ Container::Container(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg
 	}
 	this->unk600 = 0;
 
-	if (arg1 == 0) {
+	if (arg1 == NULL) {
 		D_0044E568->unk4 = 1;
 	}
 }
@@ -43,7 +43,7 @@ BasketballNet::BasketballNet(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, s
 	this->unk610 = 0;
 	this->unk614 = 0;
 	this->unk618 = 1;
-	if (arg1 == 0) {
+	if (arg1 == NULL) {
 		D_0044E570->unk4 = 1;
 	}
 }
@@ -82,7 +82,7 @@ Pram::Pram(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Conta
 	this->unk618 = 0;
 	this->unk61C = 0;
 
-	if (arg1 == 0) {
+	if (arg1 == NULL) {
 		D_0044E580->unk4 = 1;
 	}
 }

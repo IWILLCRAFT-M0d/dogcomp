@@ -16,9 +16,10 @@ class DiggablePatch : public WorldObject {
         float unk5E0; // digging speed? (m_digRate)
         DiggablePatch(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~DiggablePatch();
-        int func_00128130(void);
-        int func_00128120(float);
-        int func_00127F78(float);
+        virtual int func_00128130();
+        virtual int func_00128120(float);
+        // virtual ? 00127F88
+        virtual int func_00127F78(float);
 };
 
 #endif

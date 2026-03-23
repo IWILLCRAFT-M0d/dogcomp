@@ -14,7 +14,7 @@ SoundCreature::SoundCreature(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, s
     this->unk124 = 0;
     this->unk134 = 0;
     this->unk138 = 0;
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DA08->unk4 = 1;
     }
 }

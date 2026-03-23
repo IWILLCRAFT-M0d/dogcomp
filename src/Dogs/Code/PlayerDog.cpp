@@ -120,7 +120,7 @@ RoverSaysPuzzleGod::RoverSaysPuzzleGod(ClassInfo* arg1, SimObj_Universe* arg2, i
         D_0044D3B0 = arg1;
     }
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D3B0->unk4 = 1;
     }
 }

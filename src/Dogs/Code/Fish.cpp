@@ -6,7 +6,7 @@ extern ClassInfo* D_0044CF60;
 
 #ifdef NON_MATCHING
 Fish::Fish(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
-    if (arg1 != 0) {
+    if (arg1 != NULL) {
         D_0044CF60 = arg1;
     }
     this->unk5F0 = 1500.0;
@@ -17,7 +17,7 @@ Fish::Fish(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : World
     this->unk5D8 = 0;
     this->unk5F8 = 0;
     this->unk5FC = 0;
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044CF60->unk4 = 1;
     }
 }

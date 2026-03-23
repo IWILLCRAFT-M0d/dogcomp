@@ -11,7 +11,7 @@ PlaceHolder::PlaceHolder(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short
         D_0044D348 = arg1;
     }
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D348->unk4 = 1;
     }
 }

@@ -6,7 +6,7 @@ extern ClassInfo* D_0044D660;
 
 #ifdef NON_MATCHING
 ScentMarkingGameNode::ScentMarkingGameNode(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D660->unk4 = 1;
     }
 }

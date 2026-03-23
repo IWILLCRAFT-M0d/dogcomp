@@ -12,7 +12,7 @@ Snowball::Snowball(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
     this->unk5C4 = 0.2f;
     this->unk600 = 1;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D9C0->unk4 = 1;
     }
 }

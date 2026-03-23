@@ -5,9 +5,10 @@
 
 class Element3D : public ShapeInstance {
     public:
+        /* 0x108 */ short m_shapeId;
         Element3D(ClassInfo*, short);
         virtual ~Element3D();
-        /* 0x108 */ short m_shapeId;
+
 };
 
 #endif

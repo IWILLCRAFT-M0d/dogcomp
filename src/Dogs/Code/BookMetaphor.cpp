@@ -231,7 +231,7 @@ BookMetaphor::SettingsPage::SettingsPage() {
     this->unk0 = 0;
     this->unk8 = 0;
     this->unkC = 0;
-    this->m_cheatsAvailable = 0;
+    this->m_cheatsAvailable = false;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor12SettingsPage);

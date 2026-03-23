@@ -7,7 +7,7 @@ class PausedLayer : public GameLayer {
     public:
         PausedLayer();
         virtual ~PausedLayer();
-        void func_001ED248();
+        virtual void func_001ED248();
 };
 
 

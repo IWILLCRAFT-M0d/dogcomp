@@ -43,10 +43,10 @@ class WorldObject : public SimObj_ObjectWithMomentum {
 
         WorldObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WorldObject();
-        virtual void func_001884A8(void);
-        virtual void func_001884B8(void);
+        virtual void func_001884A8();
+        virtual void func_001884B8();
         //
-         void func_00182AF0(int);
+        void func_00182AF0(int);
 
         //?
         virtual void func_001861B8();

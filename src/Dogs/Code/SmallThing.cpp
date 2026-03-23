@@ -28,7 +28,7 @@ SmallThing::SmallThing(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short a
     this->unk6F4 = 0;
     this->unk6F8 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D910->unk4 = 1;
     }
 

@@ -13,7 +13,7 @@ FlyingHat::FlyingHat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg
     this->unk700 = 0;
     this->unk704 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044CFB8->unk4 = 1;
     }
 }

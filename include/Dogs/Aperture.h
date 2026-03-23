@@ -3,17 +3,18 @@
 
 
 class Aperture {
-
+    public:
+        // virtual ? func_001043D8
 };
 
 class DiscAperture : public Aperture {
-
+    public:
+        void func_00104788(); // virtual
 };
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_00104788(void);
 
 #ifdef __cplusplus
 }

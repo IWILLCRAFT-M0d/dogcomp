@@ -23,7 +23,7 @@ Slidable::Slidable(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
     this->unk61C = 0;
     this->unk620 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D8B0->unk4 = 1;
     }
 

@@ -27,6 +27,7 @@ __tf11SlotMachine = 0x00104118;
 __tf33AnimatedObject_ComplexHitReceiver = 0x00104178;
 __tf18SimObj_HitFilter = 0x001041d8;
 __tft9Interface1Z17AnimatedObject_IF = 0x00104228;
+func_00104788__12DiscAperture = 0x00104788; // type:func
 __tf8Aperture = 0x00104A48;
 __tf12DiscAperture = 0x00104A98;
 // Basket
@@ -815,7 +816,8 @@ __builtin_delete = 0x00247b88; // type:func
 __builtin_new = 0x00247c00; // type:func
 __builtin_vec_delete = 0x00247d28; // type:func
 __builtin_vec_new = 0x00247da0; // type:func
-__rtti_si = 0x00247eb0; // type:func
+fptoui = 0x00247A48; // type:func
+__rtti_si = 0x00247EB0; // type:func
 __rtti_user = 0x00247ed0; // type:func
 SoundRes_InternalInitialise__Fv = 0x0024ba80; // type:func
 SoundRes_InternalFinalise__Fv = 0x0024bae8; // type:func

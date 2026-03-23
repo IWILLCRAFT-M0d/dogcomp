@@ -18,7 +18,7 @@ Bird::Bird(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : World
     this->unk670 = 0;
     this->unk674 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044C848->unk4 = 1;
     }
 }

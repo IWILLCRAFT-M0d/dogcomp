@@ -13,7 +13,7 @@ Zone::Zone(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimOb
         D_0044DD70 = arg1;
     }
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DD70->unk4 = 1;
     }
     this->unk114 = 0;
@@ -30,7 +30,7 @@ ZoneRadius::ZoneRadius(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short a
     }
     this->unk120 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DD78->unk4 = 1;
     }
 }
@@ -64,7 +64,7 @@ ZoneFromNavGraph::ZoneFromNavGraph(ClassInfo* arg1, SimObj_Universe* arg2, int a
     this->unk128 = 0;
     this->unk130 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DD98->unk4 = 1;
     }
 

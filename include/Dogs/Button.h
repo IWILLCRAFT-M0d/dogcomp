@@ -15,9 +15,9 @@ class Button : public WorldObject {
         int unk5EC; // button press height?
         Button(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Button();
-        ClassInfo* func_0010A6F0();
-        void func_0010A4E0();
-        int func_0010A550(void);
+        virtual ClassInfo* func_0010A6F0();
+        virtual void func_0010A4E0();
+        virtual int func_0010A550();
 
 
 };

@@ -8,7 +8,7 @@ class Skidoo : public WheeledVehicle {
     public:
         Skidoo(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Skidoo();
-        void func_00169478();
+        virtual void func_00169478();
 };
 
 

@@ -17,7 +17,7 @@ class Fish : public WorldObject {
         int unk600;
         Fish(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Fish();
-        ClassInfo* func_0013C290();
+        virtual ClassInfo* func_0013C290();
 };
 
 

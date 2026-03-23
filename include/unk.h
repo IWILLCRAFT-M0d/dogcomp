@@ -541,6 +541,7 @@ namespace BookMetaphor {
             int unk8;
             BackgroundThread();
             virtual ~BackgroundThread();
+            //virtual ? func_00194678
     };
 
     // class NewGameBackgroundThread : public BackgroundThread
@@ -549,11 +550,11 @@ namespace BookMetaphor {
 
     class ChangeLevelBackgroundThread : public BackgroundThread {
         public:
-            int m_level;
-            int m_gate;
+            /* 0xC */ int m_level;
+            /* 0x10 */ int m_gate;
             ChangeLevelBackgroundThread(int level, int gate);
             virtual ~ChangeLevelBackgroundThread();
-            //func_00194678
+
             virtual void func_001947C8();
     };
 
@@ -618,14 +619,15 @@ class DebugEnvironment {
         int unk34;
         DebugEnvironment();
         virtual ~DebugEnvironment();
-        void func_002D5D58(void);
+        // virtual ? func_002D3950
+        virtual void func_002D5D58();
 
 };
 
 class Endian {
     public:
         virtual ~Endian();
-        void func_002D7980(void);
+        virtual void func_002D7980();
 };
 
 class Script {
@@ -634,7 +636,7 @@ class Script {
 
 class DogScript : public Script {
     public:
-        int func_001AD5F8();
+        int func_001AD5F8(); // virtual
 };
 
 class PointerMessageHandler {
@@ -652,7 +654,7 @@ class ValueEditor {
 
 class NameTagEditor : public ValueEditor {
     public:
-        void func_002691E8();
+        void func_002691E8(); // virtual
 };
 
 

@@ -17,7 +17,7 @@ SwingBridge::SwingBridge(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short
     this->unk5FC = 0.0f;
     this->unk604 = 0.0f;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DAB8->unk4 = 1;
     }
 }

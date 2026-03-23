@@ -7,7 +7,7 @@ class ScentMarkingGameNode : public SimObject {
     public:
         ScentMarkingGameNode(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~ScentMarkingGameNode();
-        ClassInfo* func_00160290();
+        virtual ClassInfo* func_00160290();
 };
 
 #endif

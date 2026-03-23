@@ -21,7 +21,7 @@ DiggablePatch::DiggablePatch(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, s
     this->unk5DC = 0;
     this->unk5E0 = 0.0f;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044CD80->unk4 = 1;
     }
 }

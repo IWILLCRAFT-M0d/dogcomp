@@ -23,7 +23,7 @@ class Slidable : public WorldObject {
         int unk624;
         Slidable(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Slidable();
-        ClassInfo* func_0016D8E8();
+        virtual ClassInfo* func_0016D8E8();
 };
 
 #endif

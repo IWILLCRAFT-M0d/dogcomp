@@ -39,7 +39,7 @@ StaticWaterRipple::StaticWaterRipple(ClassInfo* arg1, SimObj_Universe* arg2, int
         D_0044DBC8 = arg1;
     }
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DBC8->unk4 = 1;
     }
 }

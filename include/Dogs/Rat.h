@@ -18,9 +18,9 @@ class Rat : public SmallThing {
         //unk720;
         Rat(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Rat();
-        ClassInfo* func_00150EE8();
+        virtual ClassInfo* func_00150EE8();
 
-        int func_00150648();
+        virtual int func_00150648();
 };
 
 #ifdef __cplusplus

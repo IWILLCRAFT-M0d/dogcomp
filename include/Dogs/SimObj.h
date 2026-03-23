@@ -99,14 +99,14 @@ class SimObj_ObjectWithMomentum : public SimObject {
         float unk1D4;
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
-        ClassInfo* func_00168B88();
+        virtual ClassInfo* func_00168B88();
 };
 
 class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {
     public:
         SimObj_UniverseLandscape(ClassInfo*, SimObj_Universe*);
         virtual ~SimObj_UniverseLandscape();
-        void func_00162CE8();
+        virtual void func_00162CE8();
 };
 
 class SimObj_HitFilter {

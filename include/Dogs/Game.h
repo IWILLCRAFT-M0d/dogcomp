@@ -50,12 +50,12 @@ class Game_Document : public GameShell {
         //unk408
         int unk4B0;
         //
-        int m_renderOrient;
-        int m_renderRadius;
-        int m_renderActorName;
-        int m_renderHoldingPoints;
-        int m_renderCarryHandles;
-        int m_renderHitSpheres;
+        /* 0x4DC */ int m_renderOrient;
+        /* 0x4E0 */ int m_renderRadius;
+        /* 0x4E4 */ int m_renderActorName;
+        /* 0x4E8 */ int m_renderHoldingPoints;
+        /* 0x4EC */ int m_renderCarryHandles;
+        /* 0x4F0 */ int m_renderHitSpheres;
         //
         int unk500;
         int unk504;
@@ -97,7 +97,7 @@ class SimObj_Filter {
 
 class SimObj_FilterFlagsAndEq : public SimObj_Filter {
     public:
-        int func_001D6B40();
+        int func_001D6B40(); // virtual
 };
 
 

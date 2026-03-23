@@ -16,7 +16,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Aperture", func_00104668); /* DiscApertu
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Aperture", func_001046A8);
 
-void func_00104788() {
+void DiscAperture::func_00104788() {
     return;
 }
 

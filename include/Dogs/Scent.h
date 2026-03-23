@@ -11,7 +11,7 @@ class Scent : public SimObject {
         int unk120;
         Scent(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Scent();
-        ClassInfo* func_0015A2F8();
+        virtual ClassInfo* func_0015A2F8();
 };
 
 #endif

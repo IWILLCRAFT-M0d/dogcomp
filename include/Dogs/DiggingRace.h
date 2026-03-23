@@ -22,7 +22,7 @@ class DiggingRaceGod : public WorldObject {
         int unk638;
         DiggingRaceGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~DiggingRaceGod();
-        ClassInfo* func_0012CC58();
+        virtual ClassInfo* func_0012CC58();
 };
 
 #endif

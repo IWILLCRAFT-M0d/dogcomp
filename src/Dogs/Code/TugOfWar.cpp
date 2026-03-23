@@ -135,7 +135,7 @@ TugOfWarRopeEnd::TugOfWarRopeEnd(ClassInfo* arg1, SimObj_Universe* arg2, int arg
     this->unk5C8 = 0;
     this->unk5E0 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044DB08->unk4 = 1;
     }
 }

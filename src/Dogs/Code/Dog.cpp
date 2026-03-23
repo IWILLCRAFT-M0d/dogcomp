@@ -37,7 +37,7 @@ Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldOb
 
     this->unk868 = 100.0f;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044CE58->unk4 = 1;
     }
 }

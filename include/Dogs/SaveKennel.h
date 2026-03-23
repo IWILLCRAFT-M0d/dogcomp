@@ -13,7 +13,7 @@ class SaveKennel : public HitTri_Object {
 
         SaveKennel(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SaveKennel();
-        ClassInfo* func_00152C38();
+        virtual ClassInfo* func_00152C38();
 };
 
 

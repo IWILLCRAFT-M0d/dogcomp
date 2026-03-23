@@ -15,7 +15,7 @@ class Bird : public WorldObject {
         int unk674;
         Bird(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Bird();
-        ClassInfo* func_00107430();
+        virtual ClassInfo* func_00107430();
 };
 
 

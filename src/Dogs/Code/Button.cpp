@@ -17,7 +17,7 @@ Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : W
     this->unk5E8 = 1;
     this->unk5EC = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044C948->unk4 = 1;
     }
 }

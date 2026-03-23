@@ -8,7 +8,7 @@ class Car : public WheeledVehicle {
     public:
         Car(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Car();
-        ClassInfo* func_00124ED0();
+        virtual ClassInfo* func_00124ED0();
 };
 
 

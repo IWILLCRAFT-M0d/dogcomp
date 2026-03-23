@@ -14,9 +14,9 @@ class Basket : public Container {
         int unk660;
         Basket(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Basket();
-        ClassInfo* func_00106198();
+        virtual ClassInfo* func_00106198();
 
-        int func_00104D78();
+        virtual int func_00104D78();
 };
 
 

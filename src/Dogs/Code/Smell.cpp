@@ -13,7 +13,7 @@ Smell::Smell(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Sim
     this->unk118 = 0;
     this->unk134 = 0;
 
-    if (arg1 == 0) {
+    if (arg1 == NULL) {
         D_0044D968->unk4 = 1;
     }
 }
