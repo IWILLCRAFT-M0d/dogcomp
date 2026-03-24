@@ -70,6 +70,13 @@ O0_SPLITS = [
     "src/text_00310BE8.cpp"
 ]
 
+UNCOMPATIBLE_SN_AS_SPLITS = [
+    "src/text_002421F8.cpp",
+    "src/text_0031FC50.cpp",
+    "src/text_00330930.cpp",
+    "src/text_00334BD0.cpp"
+]
+
 COMPLETED_SPLITS = [
 ]
 
@@ -96,7 +103,7 @@ def clean():
     shutil.rmtree("target", ignore_errors=True)
     shutil.rmtree(BUILD_DIR, ignore_errors=True)
 
-def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_checksum: bool):
+def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_checksum: bool, use_sn_as: bool = False):
 
     if objdiff_mode:
         ninja_file             = ninja_syntax.Writer(open("matching.ninja", "w", encoding="utf-8"), width=9999)
@@ -168,10 +175,17 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
         
         split_state = ""
         
-        for split in COMPLETED_SPLITS:
-            if split == str(entry.src_paths[0]):
-                split_state = "-snas"
-                break
+        if use_sn_as:
+            split_state = "-snas"
+            for split in UNCOMPATIBLE_SN_AS_SPLITS:
+                if split == str(entry.src_paths[0]):
+                    split_state = ""
+                    break
+        else:
+            for split in COMPLETED_SPLITS:
+                if split == str(entry.src_paths[0]):
+                    split_state = "-snas"
+                    break
         
         # Matching file
         match seg.type:
@@ -279,6 +293,58 @@ def ninja_build(linker_entries: List[LinkerEntry], objdiff_mode: bool, skip_chec
     else:
         print("Skipping checksum step")
 
+COMMENT_PART = r"\/\* (.+) ([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2})([0-9A-Z]{2}) \*\/"
+INSTRUCTION_PART = r"(\b(vadda\.xyz)\b.*)"
+OPCODE_PATTERN = re.compile(f"{COMMENT_PART}  {INSTRUCTION_PART}")
+
+PROBLEMATIC_FUNCS = {
+    "func_001F9CD0",
+    "func_00234A28",
+    "func_00147650",
+    "func_00110A08",
+    "func_001134A0",
+    "func_00113B10",
+    "func_00116250",
+    "func_0017A110",
+    "func_00131970",
+    "func_00169B38",
+    "func_001E86F8",
+    "func_00104DA0",
+    "func_0017EBF8",
+    "func_002EAD28",
+    "func_002EA480",
+    "func_002EBFC8",
+    "func_002EB508",
+    "func_002EB958",
+    "func_002E55A8__17TurnFlexAnimation",
+    "func_002E3E60",
+    "func_002E1680",
+    "func_002886B0"
+}
+
+def replace_instructions_with_opcodes(asm_folder: Path) -> None:
+    nm_folder = ROOT / asm_folder / "nonmatchings"
+    for p in nm_folder.rglob("*.s"):
+        
+        if p.stem not in PROBLEMATIC_FUNCS:
+            continue
+        
+        with p.open("r") as file:
+            content = file.read()
+
+        if re.search(OPCODE_PATTERN, content):
+            # Reference found
+            # Embed the opcode, we have to swap byte order for correct endianness
+            content = re.sub(
+                OPCODE_PATTERN,
+                r"/* \1 \2\3\4\5 */  .word      0x\5\4\3\2 /* \6 */",
+                content,
+            )
+
+            # Write the updated content back to the file
+            with p.open("w") as file:
+                file.write(content)
+
 def main():
     parser = argparse.ArgumentParser(description="Configure the project")
     parser.add_argument(
@@ -300,6 +366,12 @@ def main():
         action="store_true",
     )
     parser.add_argument(
+        "-sn_as",
+        "--sn_assembler",
+        help="Build the entire game and engine using the alternative SN Assembler",
+        action="store_true",
+    )
+    parser.add_argument(
         "-diff",
         "--objdiff",
         help="Create Objdiff's configuration and compiles target object files. Note: the game can still be fully compilable as matching file by using \'ninja -f matching.ninja\'",
@@ -310,6 +382,7 @@ def main():
     do_clean         = (args.clean or args.clean_only) or False
     do_skip_checksum = args.skip_checksum or False
     do_objects       = args.objdiff or False
+    use_sn_as        = args.sn_assembler or False
 
     if do_clean:
         clean()
@@ -319,11 +392,13 @@ def main():
     
     split.main([YAML_FILE], modes="all", verbose=False, disassemble_all=True, make_full_disasm_for_code=do_objects)
     
-    ninja_build(split.linker_writer.entries, do_objects, do_skip_checksum)
+    ninja_build(split.linker_writer.entries, do_objects, do_skip_checksum, use_sn_as)
     
     if do_objects:
         subprocess.call(["ninja", "-f", "objdiff.ninja"])
     
+    if use_sn_as:
+        replace_instructions_with_opcodes(split.config["options"]["asm_path"])
 
 if __name__ == "__main__":
     main()

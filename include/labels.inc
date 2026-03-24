@@ -1,6 +1,10 @@
 # This file is used by the original compiler/assembler.
 # Defines the expected assembly macros.
 
+.macro c1 label
+    cop1 \label
+.endm
+
 # A function symbol.
 .macro glabel label, visibility=global
     .\visibility \label
@@ -11,7 +15,7 @@
 
 # The end of a function symbol.
 .macro endlabel label
-    .size \label, . - \label
+    #.size \label, . - \label
     .end \label
 .endm
 
@@ -51,8 +55,8 @@
 
 # Label to signal the symbol haven't been matched yet.
 .macro nonmatching label, size=1
-    .global \label\().NON_MATCHING
-    .type \label\().NON_MATCHING, @object
-    .size \label\().NON_MATCHING, \size
-    \label\().NON_MATCHING:
+    #.global \label\().NON_MATCHING
+    #.type \label\().NON_MATCHING, @object
+    #.size \label\().NON_MATCHING, \size
+    #\label\().NON_MATCHING:
 .endm
