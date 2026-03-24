@@ -6,6 +6,41 @@ D_0045345C = 0x0045345c; // type:s32
 D_004534C8 = 0x004534c8; // type:s32
 D_004534CC = 0x004534cc; // type:s32 size:8
 D_004537F0 = 0x004537f0; // type:s32
+D_00453282 = 0x00453282;
+D_00453284 = 0x00453284;
+D_00453286 = 0x00453286;
+D_00453288 = 0x00453288;
+D_0045328A = 0x0045328A;
+D_0045328C = 0x0045328C;
+D_0045328E = 0x0045328E;
+
+
+func_001F9CD0 = 0x001F9CD0; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00234A28 = 0x00234A28; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00147650 = 0x00147650; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00110A08 = 0x00110A08; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_001134A0 = 0x001134A0; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00113B10 = 0x00113B10; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00116250 = 0x00116250; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_0017A110 = 0x0017A110; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00131970 = 0x00131970; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00169B38 = 0x00169B38; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_001E86F8 = 0x001E86F8; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_00104DA0 = 0x00104DA0; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_0017EBF8 = 0x0017EBF8; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002EAD28 = 0x002EAD28; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002EA480 = 0x002EA480; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002EBFC8 = 0x002EBFC8; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002EB508 = 0x002EB508; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002EB958 = 0x002EB958; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002E3E60 = 0x002E3E60; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002E1680 = 0x002E1680; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+func_002886B0 = 0x002886B0; // note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
+
+
+
+
+
 
 // Functions
 entry = 0x00100008; // type:func
@@ -1377,7 +1412,7 @@ _$_14LegIKAnimation = 0x002E15B8; // type:func
 _$_21IKSingleStepAnimation = 0x002E27E8; // type:func
 _$_17IKAmblerAnimation = 0x002E3C78; // type:func
 _$_17TurnFlexAnimation = 0x002E5550; // type:func
-func_002E55A8__17TurnFlexAnimation = 0x002E55A8; // type:func
+func_002E55A8__17TurnFlexAnimation = 0x002E55A8; // type:func note - function noted in `PROBLEMATIC_FUNCS` list at `configure.py`
 __tf19WalkingBobAnimation = 0x002e5e70;
 __tf22WalkingParamsAnimation = 0x002E5F20;
 _$_23AnimVarWalkingAnimation = 0x002E5F70; // type:func
