@@ -3,6 +3,7 @@
 #include "Dogs/PlayerDog.h"
 
 extern ClassInfo* D_0044D398;
+extern ClassInfo* D_0044D3B0;
 
 #ifdef NON_MATCHING
 extern short D_00450A10;
@@ -114,7 +115,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE70);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80);
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044D3B0;
 RoverSaysPuzzleGod::RoverSaysPuzzleGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044D3B0 = arg1;
@@ -194,6 +194,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_18RoverSaysPuzzleGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf18RoverSaysPuzzleGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F618);
+ClassInfo* RoverSaysPuzzleGod::func_0014F618() {
+    return D_0044D3B0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F620);

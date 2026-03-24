@@ -135,7 +135,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
 #ifdef NON_MATCHING
-int Main_RunGame() {
+void Main_RunGame() {
 
 }
 #else

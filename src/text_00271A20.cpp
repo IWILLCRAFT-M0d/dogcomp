@@ -39,7 +39,7 @@ SavedGame::SavedGame(char* arg1, int arg2, int arg3) {
     */
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", __9SavedGamePcii); /* __9SavedGamePcii SavedGame::SavedGame */
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", __9SavedGamePcii);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", _$_9SavedGame);

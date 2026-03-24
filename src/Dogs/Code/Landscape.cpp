@@ -13,7 +13,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE608); // ground co
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DEDF0);
 
-void func_001DEF10(void) {
+void func_001DEF10(void) { // called by func_001DF858
 	return;
 }
 

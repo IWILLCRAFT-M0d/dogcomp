@@ -7,7 +7,17 @@
 
 
 // GameShell::Step? (rct3 mac)
+#ifdef NON_MATCHING
+extern float D_00452910;
+void GameShell::Step() {
+
+if (this->m_gamespeed <= D_00452910) {
+
+}
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", Step__9GameShellG9GameShell);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D2F98);
 
@@ -61,7 +71,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D33C0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3428);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3460); /* return * */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3460); /* return m_me */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3490);
 

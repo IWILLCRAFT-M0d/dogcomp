@@ -33,6 +33,7 @@ class RoverSaysPuzzleGod : public WorldObject {
     public:
         RoverSaysPuzzleGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~RoverSaysPuzzleGod();
+        virtual ClassInfo* func_0014F618();
 };
 
 #ifdef __cplusplus

@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105D10); // Basket membe
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105DF8__6Basket);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105E28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105E28); // min<float> ?
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Basket", D_003960E8);
 

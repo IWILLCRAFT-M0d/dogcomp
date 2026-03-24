@@ -6,15 +6,15 @@
 class GameShell {
     public:
         int unk0;
-        float m_gametime;
+        /* 0x4 */ float m_gametime;
         long unk8;
-        float m_fps;
-        float m_gamespeed;
+        /* 0xC */ float m_fps;
+        /* 0x10 */ float m_gamespeed;
         int unk1C;
         GameShell(float fps, float gamespeed);
         virtual ~GameShell();
-
-        void func_002D30A8(int);
+        virtual void func_002D30A8(int);
+        void Step();
 };
 
 #endif

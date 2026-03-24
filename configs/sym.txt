@@ -275,6 +275,7 @@ __tf9PlayerDog = 0x0014f4c0;
 func_0014F518__9PlayerDog = 0x0014F518; // type:func
 _$_18RoverSaysPuzzleGod = 0x0014F520; // type:func
 __tf18RoverSaysPuzzleGod = 0x0014f5c0;
+func_0014F618__18RoverSaysPuzzleGod = 0x0014F618; // type:func
 
 // Rat
 __3RatP9ClassInfoP15SimObj_Universeis = 0x0014F640; // type:func

@@ -46,8 +46,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6C80);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CC8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CD0);
-/* food health logic/set mien ?
- * negative values in float parameter make jake lose health/go sad */
+
+// food health logic/set mien ?
+// negative values in float parameter make jake lose health/go sad */
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CF8); /* Mien::Set(float) ? */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6EC0);

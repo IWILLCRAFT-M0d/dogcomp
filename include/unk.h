@@ -110,9 +110,9 @@ struct Mien {
 
 class StdAllocator {
     public:
-        void* Alloc(size_t nbytes);
-        void Free(void* ptr);
-        void* MemAlign(size_t alignment, size_t size);
+        /*virtual*/ void* Alloc(size_t nbytes);
+        /*virtual*/ void Free(void* ptr);
+        /*virtual*/ void* MemAlign(size_t alignment, size_t size);
 };
 
 class GE_RenderHardware {
@@ -659,7 +659,7 @@ class NameTagEditor : public ValueEditor {
 
 
 
-int Main_RunGame();
+void Main_RunGame();
 #ifdef __cplusplus
 extern "C" {
 #endif

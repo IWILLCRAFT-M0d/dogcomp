@@ -4,7 +4,7 @@
 #include "Dogs/SimObj.h"
 
 class AnimationComponent {
-
+    public:
 };
 
 class NothingAnimation : public AnimationComponent {
