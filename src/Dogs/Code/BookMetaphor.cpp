@@ -236,15 +236,15 @@ BookMetaphor::SettingsPage::SettingsPage() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_Q212BookMetaphor12SettingsPage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192010);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192010); // SettingsPage member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192110); // SettingsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192820);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192820); // SettingsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001928A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001928A8); // SettingsPage member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192CF0); // Settings Page member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00192CF0); // SettingsPage member
 
 #ifdef NON_MATCHING
 BookMetaphor::CheatsPage::CheatsPage() {
@@ -312,7 +312,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194990); // unload
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194AE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194B08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194B08); // element3d stuff
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194D40);
 
@@ -419,7 +419,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", _$_17BookMetaphorLayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B870); // BookMetaphorLayer member; this function seems to handle animations in BM
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B8B8); // BookMetaphorLayer member; nopping out this function makes the bookmetaphor scene not render
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B8B8); // BookMetaphorLayer member; stubbing this function makes the bookmetaphor scene not render
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B8F0); // BookMetaphorLayer member; this function seems to handle BookMetaphor input
 

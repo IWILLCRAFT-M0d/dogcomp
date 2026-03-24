@@ -1,0 +1,4 @@
+#ifndef SLIDABLEBLOCKPUZZLE_H
+#define SLIDABLEBLOCKPUZZLE_H
+
+#endif

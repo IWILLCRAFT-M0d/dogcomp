@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+#include "Dogs/SlidableBlockPuzzle.h"
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", func_002282D8); /* SlidableBlockPuzzle */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", _$_19SlidableBlockPuzzle);

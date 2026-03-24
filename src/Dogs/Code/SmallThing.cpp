@@ -3,6 +3,7 @@
 #include "Dogs/SmallThing.h"
 
 extern ClassInfo* D_0044D910;
+
 #ifdef NON_MATCHING
 SmallThing::SmallThing(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
