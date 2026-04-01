@@ -24,9 +24,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0020); /* rct3 Elem
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0068__9Element3D);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0070);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0070); // Element3D member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0078);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0078); // Element3D member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", func_001B0168);
 // vtables

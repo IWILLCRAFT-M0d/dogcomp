@@ -2,8 +2,9 @@
 
 #include "Dogs/SoundCreature.h"
 
-#ifdef NON_MATCHING
 extern ClassInfo* D_0044DA08;
+
+#ifdef NON_MATCHING
 SoundCreature::SoundCreature(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
         D_0044DA08 = arg1;
@@ -24,9 +25,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __13SoundCreatureP9Class
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", _$_13SoundCreature);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173318);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173318); // extra?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173588);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173588); // SoundCreature member
+
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SoundCreature", D_003C7818);
 
@@ -38,7 +40,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_00173718);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", __tf13SoundCreature);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_001738B0); /* return D_0044DA08; */
+ClassInfo* SoundCreature::func_001738B0() {
+    return D_0044DA08;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SoundCreature", func_001738B8);
 

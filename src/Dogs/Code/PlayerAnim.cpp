@@ -7,11 +7,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F74B8); /* PlayerMo
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F75F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F7678);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F7678); // PlayerMoveAnimation member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F7C90); /* PlayerLookAnimation::PlayerLookAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F7CD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F7CD0); // PlayerLookAnimation member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerAnim", func_001F8028);
 

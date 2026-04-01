@@ -7,19 +7,19 @@
 class LookAroundIKAnimation : public AnimationComponent {
     public:
         virtual ~LookAroundIKAnimation();
-        // func_00229B40
+        //virtual ? func_00229B40
 };
 
 class PickUpStretchAnimation : public AnimationComponent {
     public:
         virtual ~PickUpStretchAnimation();
-        // func_0022A5C0
+        // virtual ? func_0022A5C0
 };
 
 class GroundConformanceAnimation : public AnimationComponent {
     public:
         virtual ~GroundConformanceAnimation();
-        // func_0022A9A0
+        // virtual ? func_0022A9A0
 };
 
 

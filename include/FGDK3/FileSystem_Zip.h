@@ -1,12 +1,14 @@
 #ifndef FILESYSTEM_ZIP_H
 #define FILESYSTEM_ZIP_H
 
-/*
-class FileAccess_Zip_Stored {
+#include "unk.h"
+
+
+class FileAccess_Zip_Stored : public File::Access {
 
 };
 
-class FileAccess_Zip_Deflated {
+class FileAccess_Zip_Deflated : public File::Access {
 };
-*/
+
 #endif

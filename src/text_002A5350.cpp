@@ -310,7 +310,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC1A0__24GE_PS2PrimCacheDM
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC1B0);
 
-void func_002AC220() { // GE_PS2PrimCacheDMABuffer::func_002AC220()
+void GE_PS2PrimCacheDMABuffer::func_002AC220() {
     return;
 }
 
@@ -326,7 +326,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC488); /* return a0->unk7
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC490);
 
-int func_002AC4A8() { // int GE_PS2PrimCache::func_002AC4A8()
+int GE_PS2PrimCache::func_002AC4A8() {
     return 0;
 }
 

@@ -3,7 +3,6 @@
 
 #include "WorldObj.h"
 
-
 class Camera : public WorldObject {
     public:
         int unk5D0;

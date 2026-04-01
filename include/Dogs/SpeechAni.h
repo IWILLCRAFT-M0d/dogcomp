@@ -7,15 +7,23 @@
 
 class SpeechAniText : public AnimationComponent {
     public:
+        /* 0x14 */ bool m_isBigHint;
+        SpeechAniText(void*, void*, bool);
         virtual ~SpeechAniText();
+        virtual void func_0022AE18();
         virtual void func_0022AF18();
 };
 
+class SpeechAniTextBigHint /*: public SpeechAniText*/ {
+
+};
 
 class SpeechAniSound : public AnimationComponent {
     public:
         virtual ~SpeechAniSound();
         virtual void func_0022B030();
+        virtual void func_0022B038();
+
         virtual int func_0022B5E0();
 
 };
@@ -23,6 +31,9 @@ class SpeechAniSound : public AnimationComponent {
 class SpeechAniSoundWithControl : public AnimationComponent {
     public:
         virtual ~SpeechAniSoundWithControl();
+        virtual void func_0022B820();
+
+        // virtual ? func_0022BA20
         virtual int func_0022BA18();
 };
 
@@ -37,6 +48,8 @@ class StreamedSpeech : public AnimationComponent {
     public:
         virtual ~StreamedSpeech();
         virtual void func_0022D2C8();
+        virtual void func_0022BEA0();
+        //
         virtual int func_0022D2D8();
 };
 
@@ -48,6 +61,7 @@ class StreamedVoiceover : public AnimationComponent {
     public:
         virtual ~StreamedVoiceover();
         virtual void func_0022D340();
+        virtual void func_0022C440();
         //virtual ? func_0022D348();
         virtual int func_0022D350();
 };

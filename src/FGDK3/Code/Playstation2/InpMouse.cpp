@@ -78,19 +78,18 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_Fina
 #endif
 
 #ifdef NON_MATCHING
-// mouse thread
-extern int D_00453574;
-void func_002F8760() {
+extern int D_00453574; // mouse thread
+void InputMouse_SuspendThread() {
     SuspendThread(D_00453574);
 };
 
-void func_002F8788() {
+void InputMouse_ResumeThread() {
     ResumeThread(D_00453574);
 };
 
 #else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8760);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8788);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_SuspendThread__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", InputMouse_ResumeThread__Fv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", _$_17InputMouse_Device);

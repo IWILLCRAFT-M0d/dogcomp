@@ -1,11 +1,17 @@
 #ifndef TRAVEL_H
 #define TRAVEL_H
 
-class TravelToExternalPosAnimation { // : public AnimationComponent
+class TravelToExternalPosAnimation /* : public AnimationComponent */ {
     public:
         virtual ~TravelToExternalPosAnimation();
         //
-        int func_00234DC8();
+        virtual int func_00234DC8();
+};
+
+class NavToPosAnimation /* : public */ {
+    public:
+        // virtual ? func_002334C0();
+        /*virtual*/ int func_002353C8();
 };
 
 #ifdef __cplusplus
@@ -23,7 +29,6 @@ int func_00235228(void);
 int func_00235290(void);
 int func_002352F8(void);
 int func_00235360(void);
-int func_002353C8(void);
 int func_00235430(void);
 int func_00235438(void);
 int func_002354A0(void);

@@ -6,6 +6,7 @@
 
 class WheeledVehicle : public HitTri_Object {
     public:
+        static ClassInfo* s_classInfo;
         float unk624;
         float unk628;
         int unk62C;
@@ -32,5 +33,9 @@ class WheeledVehicle : public HitTri_Object {
         virtual void func_00180540();
 };
 
+class WheeledVehicleHitReceiver /* : public SimObj_HitReceiver */ {
+    public:
+        virtual void func_001818C8();
+};
 
 #endif

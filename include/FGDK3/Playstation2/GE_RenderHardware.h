@@ -7,18 +7,9 @@ class GE_PS2RenderHardware : public GE_RenderHardware {
     public:
         GE_PS2RenderHardware();
         virtual ~GE_PS2RenderHardware();
-        int func_002A5300(void);
-        int func_002A5298(void);
+        virtual int func_002A5300();
+        virtual int func_002A5298();
 };
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-
-#ifdef __cplusplus
-}
-#endif
 
 
 #endif

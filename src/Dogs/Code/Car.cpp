@@ -2,16 +2,14 @@
 
 #include "Dogs/Car.h"
 
-extern ClassInfo* D_0044CC80;
-
 #ifdef NON_MATCHING
 Car::Car(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(4, arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044CC80 = arg1;
+        s_classInfo = arg1;
     }
 
     if (arg1 == NULL) {
-        D_0044CC80->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 
     //
@@ -36,8 +34,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124E50);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", __tf3Car);
 
-ClassInfo* Car::func_00124ED0(){
-    return D_0044CC80;
+ClassInfo* Car::func_00124ED0() {
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124ED8);

@@ -114,7 +114,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002378C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002380C8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238490);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238490); // big hint function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00238630);
 
@@ -158,7 +158,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A30); // creates pawc
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A50);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239AD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239AD0); // ui elements rendering
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239BC0);
 

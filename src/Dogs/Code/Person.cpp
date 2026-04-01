@@ -39,9 +39,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", _$_6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A398__6Person);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A650);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014A650); // Person member
 
-float func_0014A840() { // Person member
+float Person::func_0014A840() {
     return 100.0f;
 }
 
@@ -63,9 +63,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C000__6Personf); // ad
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C068);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0D8); // Person member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C0F0); // Person member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1B8__6Person); /* return 0x64 */
 
@@ -82,6 +82,7 @@ int Person::func_0014C240() {
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C240__6Person);
 #endif
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C250);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C5B0);
@@ -160,7 +161,7 @@ ClassInfo* Person::func_0014CC08() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf23PersonHitSizeCalculator);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CC60);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014CC60); // PersonHitSizeCalculator member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", __tf24PersonVehicleHitReceiver);
 

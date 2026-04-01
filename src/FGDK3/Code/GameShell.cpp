@@ -14,6 +14,7 @@ void GameShell::Step() {
 if (this->m_gamespeed <= D_00452910) {
 
 }
+
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", Step__9GameShellG9GameShell);
@@ -24,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D2F98);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3020);
 
 #ifdef NON_MATCHING
-void GameShell::func_002D30A8(int arg1) {
+void GameShell::func_002D30A8(int arg1) { // rct3 GameShell::Activate?
     this->unk1C = arg1 ^ 1;
 }
 #else
@@ -43,7 +44,7 @@ GameShell::GameShell(float fps, float gamespeed) {
   this->m_fps = fps; // unk10
   this->m_gamespeed = gamespeed; // unk14
   this->unk1C = 0; // input is disabled when != 0 ?
-  if (D_004528EC != 0) { // m_me?
+  if (D_004528EC != NULL) { // m_me?
     DDE_FatalError("More than one GameShell instance not allowed");
   }
   //D_004528EC = this;

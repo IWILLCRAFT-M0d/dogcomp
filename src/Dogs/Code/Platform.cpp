@@ -104,7 +104,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F0770);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F0778);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F07C8__19PlatformHitReceiver);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001F07C8__19PlatformHitReceiver); /* a0->unk10 = 1 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Platform", D_003E9A10);
 

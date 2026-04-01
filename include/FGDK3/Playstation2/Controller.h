@@ -16,17 +16,16 @@ typedef struct {
 	int unk18;
 } s_func_002FC270;
 
-/*
-class Controller_Device : public InputDevice_Device {
+
+class Controller_Device /*: public InputDevice_Device*/ {
+	public:
+
 };
-*/
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 s_func_002FC270* func_002FC270(s_func_002FC270* arg0);
-void func_002FCC10(void);
-void func_002FCC38(void);
 #ifdef __cplusplus
 }
 #endif
@@ -37,5 +36,8 @@ Status Controller_InternalInitialise(void);
 void Controller_InternalFinalise(void);
 Status Controller_Initialise(void);
 void Controller_Finalise(void);
+
+void Controller_SuspendThread(void);
+void Controller_ResumeThread(void);
 
 #endif

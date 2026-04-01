@@ -9,8 +9,8 @@ Fish::Fish(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : World
     if (arg1 != NULL) {
         D_0044CF60 = arg1;
     }
-    this->unk5F0 = 1500.0;
-    this->unk5F4 = 1000.0;
+    this->unk5F0 = 1500.0f;
+    this->unk5F4 = 1000.0f;
     this->unk600 = 0;
     this->unk5D0 = 0;
     this->unk5D4 = 1;

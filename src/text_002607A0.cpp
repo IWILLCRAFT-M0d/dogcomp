@@ -228,7 +228,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262C10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262DD0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262EF0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262EF0); /* __tf12InputBinding */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf21PointerMessageHandler);
 

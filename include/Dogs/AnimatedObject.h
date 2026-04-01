@@ -5,6 +5,7 @@
 
 class AnimatedObject : public HitTri_Object {
     public:
+        static ClassInfo* s_classInfo;
         //unk630
         int unk634;
         int unk638;
@@ -19,7 +20,12 @@ class AnimatedObject : public HitTri_Object {
         int unk694;
         AnimatedObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~AnimatedObject();
-        ClassInfo* func_00103F50();
+        virtual ClassInfo* func_00103F50();
+};
+
+class AnimatedObject_ComplexHitReceiver /* : public SimObj_HitReceiver */ {
+    public:
+        virtual void func_001041C8();
 };
 
 #endif

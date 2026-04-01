@@ -30,7 +30,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8C8); /* return a0->unk8
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE8D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE910);
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE910); // culling function?
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DE998);
 

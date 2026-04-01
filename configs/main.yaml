@@ -156,14 +156,14 @@ segments:
       - [0x16C2A8, cpp, FGDK3/Code/ThrowCat]
       - [0x16C710, cpp, FGDK3/Code/Playstation2/Thread]
       - [0x16D380, cpp, FGDK3/Code/TextRes]
-      - [0x16D5C8, cpp, text_0026C5C8]
+      - [0x16D5C8, cpp, text_0026C5C8] # StdMem.cpp?
       - [0x16E178, cpp, FGDK3/Code/Playstation2/SoundManager]
       - [0x16EF68, cpp, FGDK3/Code/Playstation2/Sound]
       - [0x170BA0, cpp, FGDK3/Code/Playstation2/sifManager]
       - [0x170FB8, cpp, text_0026FFB8] # shape.cpp?
       - [0x172A20, cpp, text_00271A20]
       - [0x176FF8, cpp, text_00275FF8]
-      - [0x1785D0, cpp, text_002775D0]
+      - [0x1785D0, cpp, text_002775D0] # beginning of RelRecv.cpp?
       - [0x17A880, cpp, FGDK3/Code/NavGraphRes] # navgraph functions
 
       #- [0x16D5C8, cpp, FGDK3/Code/StdMem]
@@ -206,7 +206,7 @@ segments:
       - [0x1FCD40, cpp, text_002FBD40]
       - [0x1FCFF0, cpp, FGDK3/Code/Playstation2/Controller]
       - [0x1FDF70, cpp, text_002FCF70] # -O0
-      - [0x203D50, cpp, FGDK3/Code/Playstation2/File_CD] # File_CD
+      - [0x203D50, cpp, FGDK3/Code/Playstation2/File_CD]
       - [0x205B48, cpp, FGDK3/Code/File]
       - [0x208D30, cpp, text_00307D30]
       - [0x20A778, cpp, text_00309778]
@@ -239,9 +239,6 @@ segments:
       - [0x231240, asm, sce/libscf]
       - [0x231930, cpp, text_00330930]
       - [0x235BD0, cpp, text_00334BD0]
-
-
-
       - [0x24D300, textbin, vutext]
       - [0x25A680, data, text]
       - [0x290EC0, data, vudata]
@@ -270,10 +267,6 @@ segments:
       - [0x2B4740, .rodata, Dogs/Code/PlaceHolder]
       - [0x2B5E18, .rodata, Dogs/Code/PlayerDog]
       - [0x2B8DD0, .rodata, Dogs/Code/Rat]
-
-      #- [0x2A2C48, .rodata, Dogs/Code/Cloth]
-      #- [0x29A148, .rodata, Dogs/Code/BoneGod]
-
       - [0x2BA5F8, .rodata, Dogs/Code/SaveKennel]
       - [0x2BBDB8, .rodata, Dogs/Code/Scent]
       - [0x2BC728, .rodata, Dogs/Code/ScentMarkingGame]
@@ -347,6 +340,8 @@ segments:
       - [0x33C820, .rodata, FGDK3/Code/TextRes]
 
       - [0x33C8E0, .rodata, text_0026C5C8]
+      #-[0x33C8E0, .rodata, FGDK3/Code/StdMem]
+      #-[0x33C918, .rodata, FGDK3/Code/StdInit]
       - [0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
       - [0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
       - [0x33CAD0, .rodata, FGDK3/Code/Playstation2/sifManager]
@@ -356,21 +351,13 @@ segments:
       #- [0x33CEE0]
       - [0x33D280, .rodata, text_00275FF8]
       - [0x33D2B0, .rodata, text_002775D0]
-
-
       - [0x33D7A8, .rodata, FGDK3/Code/NavGraphRes]
-
-      #-[0x33C8E0, .rodata, FGDK3/Code/StdMem]
-      #-[0x33C918, .rodata, FGDK3/Code/StdInit]
-      #-[0x33C978, .rodata, FGDK3/Code/Playstation2/SoundManager]
-      #-[0x33C9E0, .rodata, FGDK3/Code/Playstation2/Sound]
-      #-[0x33CAD0, .rodata, FGDK3/Code/Playstation2/sifManager]
-      #-[0x33D7A8, .rodata, FGDK3/Code/NavGraphRes]
       - [0x33D968, .rodata, FGDK3/Code/Playstation2/MusicRes]
       - [0x33DA50, .rodata, FGDK3/Code/Playstation2/Music]
       #-[0x33E030, .rodata, sound]
       - [0x33E030, .rodata, text_00288B30]
       #- [0x33FA98, .rodata, text_0028F0B0]
+      #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
       - [0x33FAF0, .rodata, text_00290F58]
       - [0x33FC60, .rodata, text_002965D0]
       - [0x33FC70, .rodata, text_00296570]
@@ -382,7 +369,6 @@ segments:
       - [0x3438E0, .rodata, text_002CA560]
 
 
-      #-[0x33FA98, .rodata, FGDK3/Code/Playstation2/IOPMem]
       - [0x343CE8, .rodata, FGDK3/Code/GameShell]
       - [0x343D68, .rodata, text_002D3598]
       - [0x344DC8, .rodata, text_002D9560]
@@ -398,14 +384,6 @@ segments:
       - [0x346590, .rodata, FGDK3/Code/AnimPosComponents]
       - [0x346CE8, .rodata, FGDK3/Code/AnimateTimeBases]
       - [0x347610, .rodata, FGDK3/Code/Animate]
-      #CLIOpts 345658
-      #WalkerComponents 345800
-      #UtilAnimComps
-      #IKComponents
-      #AnimVarComponents
-      #AnimPosComponents
-      #AnimateTimeBases
-      #Animate
 
       - [0x347AA8, .rodata, FGDK3/Code/InpUtil]
       - [0x347AA8, .rodata, FGDK3/Code/Playstation2/InpMouse]
@@ -417,7 +395,6 @@ segments:
       - [0x3481A0, .rodata, text_002FBD40]
       - [0x348290, .rodata, FGDK3/Code/Playstation2/Controller]
 
-      #File_CD
       #File
       #Playstation2/File
       #FileSystem_Zip
@@ -442,8 +419,6 @@ segments:
       - [0x34AC70, .rodata, text_0031FC50]
       - [0x34B180, rodata, sce/eecdvd] # libcdvd
       - [0x34B490, rodata, sce/text_00329C38] # libgraph
-
-
       - [0x34B6D8, rodata, sce/libdma]
       - [0x34B750, .rodata, text_0032BC90] # libdev
       - [0x34B788, rodata, sce/libpad]

@@ -24,7 +24,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/ScentMarkingGame", D_003BB7C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015A5B8); // "ScentMarkingGameNode (actorID %d) failed to rayhit ground"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015A8D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015A8D8); // ScentMarkingGameNode member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_0015A970); /* ScentMarkingGameGod::ScentMarkingGameGod */
 
@@ -158,7 +158,7 @@ ClassInfo* ScentMarkingGameNode::func_00160290() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __tf19ScentMarkingGameGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_001602F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", func_001602F8__19ScentMarkingGameGod);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/ScentMarkingGame", D_003BD1D0);
 

@@ -3,10 +3,9 @@
 #include "Dogs/Smell.h"
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044D968;
 Smell::Smell(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044D968 = arg1;
+        s_classInfo = arg1;
     }
     this->unk110 = 0xFFFF;
     this->unk114 = 0;
@@ -14,7 +13,7 @@ Smell::Smell(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Sim
     this->unk134 = 0;
 
     if (arg1 == NULL) {
-        D_0044D968->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -41,7 +40,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172890);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", __tf5Smell);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172A28); /* return D_0044D968 */
+ClassInfo* Smell::func_00172A28() {
+    return s_classInfo;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Smell", func_00172A30);
 

@@ -63,7 +63,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", __tf19SlidableBloc
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", func_00229750);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", func_00229758); /* return D_00450E88 */
+ClassInfo* SlidableBlockPuzzle::func_00229758() {
+    return s_classInfo;
+};
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SlidableBlockPuzzle", _$_25PlayerSlideBlockAnimation);
 

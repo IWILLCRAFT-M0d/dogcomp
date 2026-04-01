@@ -4,15 +4,14 @@
 
 extern ClassInfo* D_0044D448;
 #ifdef NON_MATCHING
-SaveKennel::SaveKennel(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
-    if (arg1 != 0) {
+SaveKennel::SaveKennel(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = NULL, arg2, arg3, arg4) {
+    if (arg1 != NULL) {
         D_0044D448 = arg1;
     }
     this->unk604 = 0;
     this->unk620 = 0;
     this->unk624 = 1.0f;
     // element3d unk630
-
     if (arg1 == NULL) {
         D_0044D448->unk4 = 1;
     }

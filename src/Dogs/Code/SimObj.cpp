@@ -217,11 +217,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164D78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164D98);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164DB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164DB8); // creature/script header set??
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164E40);
+void func_00164E40(void) { // SimObj_Base member?
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164E48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164E48); // objects update function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00164EB8);
 

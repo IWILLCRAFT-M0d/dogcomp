@@ -3,12 +3,12 @@
 
 #include "Animate.h"
 
-/*
+
 class AnimVarBaseAnimation : public AnimationComponent {
 };
 
 class AnimVarLoopedBaseAnimation : public AnimationComponent {
 };
 
-*/
+
 #endif

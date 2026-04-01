@@ -36,6 +36,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018CAC0);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018CBA0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018D438);
+
 #ifdef NON_MATCHING
 BookMetaphor::NewGamePage::NewGamePage() : GamePositionPage(2) {
     this->unk10 = 0;
@@ -400,7 +401,7 @@ BookMetaphorLayer::BookMetaphorLayer() {
     //func_00306cd8(&this->field194_0xe0);
     func_00273A80(7);
     //pGVar1 = TheGame;
-    TheGame->m_fps = 0.01;
+    TheGame->m_fps = 0.01f;
     //piVar2 = (int *)func_001c6dc8(pGVar1);
     func_001C6DC8(TheGame);
 

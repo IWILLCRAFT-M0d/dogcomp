@@ -1,15 +1,23 @@
 #ifndef CONSOLE_H
 #define CONSOLE_H
 
+#include <stdio.h>
 #include <stdarg.h>
 #include <eekernel.h>
 
 #include "Game.h"
 
+typedef struct {
+	/* 0x13C */ bool m_textEnabled;
+} consoleStruct;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+void func_001A0810();
+void func_001A0900();
+void func_001A0968(void*, int);
+void func_001A0B08(consoleStruct*, int, char*);
 void func_001A0D80(int, int, int); 
 void func_001A0B90(int, char*, int);
 
@@ -81,20 +89,32 @@ int func_001AADF8(void);
 
 class Console {
 	public:
+		void Help(consoleStruct*);
+		void Time(consoleStruct*);
+		void ListActors(consoleStruct*);
+		void ToggleDebugConsole(consoleStruct*);
 		void Break();
+		void Save(consoleStruct*);
+		void Load(consoleStruct*);
+		void IsMediaReady(consoleStruct*);
+		void DirMemCard(consoleStruct*);
+		void FormatMemCard(consoleStruct*);
+		void UnformatMemCard(consoleStruct*);
 		void TestDoggyDoAnims();
 		void Parse();
 		void Patch();
-		int RenderActorName();
-		int RenderHoldingPoints();
-		int RenderCarryHandles();
+		bool RenderActorName();
+		bool RenderHoldingPoints();
+		bool RenderCarryHandles();
 		void UnlockBegMoves();
 		void UnlockClues();
 		void Quit();
 		void FogSharpness(void* arg0);
 };
-/*
-class ConsoleLayer {};
-*/
+
+class ConsoleLayer /* : public Widget_Border, public InputBinding */ {
+
+};
+
 
 #endif

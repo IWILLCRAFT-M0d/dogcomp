@@ -54,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FB70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", __tf9LevelGate);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD08); // LevelGate member (called by func_001C8D40?)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/LevelGate", func_0013FD10); /* return a0->unk130 */
 

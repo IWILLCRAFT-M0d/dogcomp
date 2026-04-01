@@ -34,7 +34,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __9SphereObjP9ClassInfoP15Si
 
 
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173A20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173A20); // SphereObj member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173AA0);
 

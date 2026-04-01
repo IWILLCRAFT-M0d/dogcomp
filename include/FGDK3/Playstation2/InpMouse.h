@@ -22,16 +22,8 @@ void InputMouse_InternalFinalise(void);
 Status InputMouse_Initialise(void);
 void InputMouse_Finalise(void);
 
+void InputMouse_SuspendThread(void);
+void InputMouse_ResumeThread(void);
 
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-    void func_002F8760(void);
-    void func_002F8788(void);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

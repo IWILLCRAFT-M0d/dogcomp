@@ -10,6 +10,8 @@
 #include "FGDK3/Playstation2/RunPath.h"
 //StdMem header goes here
 
+#include "unk.h"
+
 class Music_Performance {
     public:
         int unk0;
@@ -27,9 +29,14 @@ class Music_PS2Performance : public Music_Performance {
         int m_paused; // 0x128
         Music_PS2Performance();
         virtual ~Music_PS2Performance();
-        void PauseNow();
-        void ResumeNow();
+        virtual void PauseNow();
+        virtual void ResumeNow();
 };
+
+class Music_PS2Track : public Music_Track {
+
+};
+
 
 class Music_Piece {
     public:
@@ -39,11 +46,11 @@ class Music_Piece {
         Music_Piece();
         virtual ~Music_Piece();
 };
-/*
-class Music_PS2Piece : public Music_Piece {
+
+class Music_PS2Piece /*: public Music_Piece*/ {
 
 };
-*/
+
 
 Status Music_InternalInitialise(void);
 void Music_InternalFinalise(void);

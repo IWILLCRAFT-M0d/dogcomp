@@ -5,6 +5,7 @@
 
 class DiggablePatch : public WorldObject {
     public:
+        static ClassInfo* s_classInfo;
         union {int i;float f;} unk5C0; // patch remaining to be dug? (m_depthRemaining)
         float unk5C4; // patch depth (m_initialDepth)
         //unk5C8

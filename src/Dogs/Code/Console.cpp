@@ -5,6 +5,13 @@
 #include "debug.h"
 #include "unk.h"
 
+#include "Dogs/SaveGameManager.h"
+
+extern s_D_00453698* D_00453698;
+
+
+extern void* D_00453748;
+
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D49E8);
 
@@ -12,13 +19,13 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A10);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A40);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A70);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A70); /* "Animation" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A80);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A80); /* "DogsTaleLand" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A90);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4A90); /* "Creature" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4AA0);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4AA0); /* "NavGraph" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019F570);
 
@@ -52,7 +59,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FE20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0020);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0208);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0208); // check valid number?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0250);
 
@@ -70,7 +77,20 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0810); /* open debug 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0900); /* close debug console */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0968);
+#ifdef NON_MATCHING
+void func_001A0968(void* arg0, int arg1) {
+    if (arg1 != 0) {
+        if (D_00453748 != 0) {
+            func_001A0900();
+            return;
+        }
+        func_001A0810();
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0968); // open/close debug console
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A09A8);
 
@@ -531,13 +551,34 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4BC8);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4BD0); /* "Possible actors:" */
 
+#ifdef NON_MATCHING
+void Console::Help(consoleStruct* console) {
+    func_001A0B08(console, 2, "Commands are as follows :");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2BA8); /* Console::Help */
+#endif
 
+#ifdef NON_MATCHING
+void Console::Time(consoleStruct* console) {
+    char str[256];
+    //sprintf(str, "Time: %f", time);
+    func_001A0B08(console, 2, str);
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C18); /* Console::Time */
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2C90); // Called by ListActors
 
+#ifdef NON_MATCHING
+void Console::ListActors(consoleStruct* console) {
+    func_001A0B08(console, 2, "Actors are as follows :");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A2D28); /* Console::ListActors */
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4C70); /* "Invalid actor name" */
 
@@ -555,7 +596,21 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A37C0); /* Console::Se
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D4D08); /* "Actor not found in this level" */
 
+#ifdef NON_MATCHING
+void Console::ToggleDebugConsole(consoleStruct* console) {
+    if (console->m_textEnabled == false) {
+        console->m_textEnabled = true;
+        func_001A0B08(console, 2, "Debug Console text enabled");
+    }
+    else {
+        console->m_textEnabled = false;
+        func_001A0B08(console, 2, "Debug Console text disabled");
+    }
+    return;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A3998); /* Console::ToggleDebugConsole */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A39F0);
 
@@ -621,7 +676,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A56B0); /* Console::Am
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D53B0); /* "need 3 numbers between 0.0 and 1.0" */
 
+#ifdef NON_MATCHING
+void Console::Save(consoleStruct* console) {
+    char str[128];
+
+    sprintf(str,"Saving save game to card %d, game slot %d", D_00453698->m_cardSlot, D_00453698->m_gameSlot);
+    //func_002023C8
+    func_001A0B08(console, 1, "Unknown error occurred");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A58A8); /* Console::Save */
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5408); /* "Game slot not specified" */
 
@@ -637,7 +702,55 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5AB0); /* Console::Sp
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5C38); /* Console::AngVel */
 
+#ifdef NON_MATCHING
+void Console::Load(consoleStruct* console) {
+    char str[128];
+    char* consoleMessage;
+    sprintf(str, "Loading save game from card %d, game slot %d", D_00453698->m_cardSlot, D_00453698->m_gameSlot);
+
+    switch(func_00202258(D_00453698)) {
+    case 0:
+        func_001A0B08(console, 2, "Completed successfully");
+        return;
+    case 1:
+        consoleMessage = "Cannot access device";
+        break;
+    case 2:
+        consoleMessage = "No mem card present";
+        break;
+    case 3:
+        consoleMessage = "Mem card not formatted";
+        break;
+    default:
+        return;
+    case 5:
+        consoleMessage = "Not enough space on mem card";
+        break;
+    case 6:
+        consoleMessage = "No such file on mem card";
+        break;
+    case 8:
+        consoleMessage = "Too many file handles already open for that mem card";
+        break;
+    case 9:
+        consoleMessage = "Could not write to that mem card";
+        break;
+    case 11:
+        consoleMessage = "Game slot not specified";
+        break;
+    case 12:
+        consoleMessage = "Card slot not specified";
+        break;
+    case 13:
+        func_001A0B08(console, 1, "Some kind of error occurred");
+        return;
+    func_001A0B08(console, 1, consoleMessage);
+
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5DC0); /* Console::Load */
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D55E0); /* "Some kind of error occurred" */
 
@@ -671,19 +784,12 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6630); /* Console::Se
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A68D8); /* Console::IsAdvance */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6A70); /* Console::IsMediaReady */
-/*
-extern void* D_00453698;
-
-void Console::IsMediaReady(s32 arg0) {
+#ifdef NON_MATCHING
+void Console::IsMediaReady(consoleStruct* console) {
     char str[128];
+    int slot = D_00453698->m_cardSlot;
 
-    int slot;
-    u32 temp_4;
-
-
-    slot = D_00453698->m_cardSlot; // unk20
-    switch (D_00453698->m_mediaReady) { // unk 28
+    switch (D_00453698->m_mediaReady) {
     case 1:
         sprintf(str, "Cannot access card slot %d", slot);
         break;
@@ -700,21 +806,62 @@ void Console::IsMediaReady(s32 arg0) {
         sprintf(str, "Media ready in card slot %d", slot);
         break;
     }
-    func_001A0B08(arg0, 2, str);
+    func_001A0B08(console, 2, str);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6A70); /* Console::IsMediaReady */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6B48); /* Console::IsRender */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6C88); /* Console::IsShadowed */
 
+#ifdef NON_MATCHING
+void Console::DirMemCard(consoleStruct* console) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A6DC8); /* Console::DirMemCard */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7200); /* Console::Dist */
 
+#ifdef NON_MATCHING
+void Console::FormatMemCard(consoleStruct* console) {
+//     int iVar1;
+//
+//     iVar1 = func_00201CA8(&PTR_00453698->field0_0x0);
+//     if (iVar1 == 0) {
+//         func_001A0B08(console, 1,"Mem card formatted successfully");
+//     }
+//    else {
+//       func_001A0B08(console,1,"Some kind of error occurred");
+//   }
+//   return;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7438); /* Console::FormatMemCard */
+#endif
 
+#ifdef NON_MATCHING
+
+void Console::UnformatMemCard(consoleStruct* console) {
+  // int iVar1;
+  //
+  // iVar1 = func_00201D68(&PTR_00453698->field0_0x0);
+  // if (iVar1 == 0) {
+  //    func_001A0B08(console, 1,"Mem card unformatted successfully");
+  // }
+  // else {
+  //    func_001A0B08(console, 1, "Some kind of error occurred");
+  // }
+  // return;
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A7498); /* Console::UnformatMemCard */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A74F8); /* Console::Pos */
 
@@ -794,16 +941,16 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9110); /* Console::Re
 
 // `-snas` Required
 #ifdef NON_MATCHING
-int Console::RenderActorName() {
-   return TheGame->m_renderActorName ^= 1;
+bool Console::RenderActorName() {
+   return TheGame->m_renderActorName = !TheGame->m_renderActorName;
 }
 
-int Console::RenderHoldingPoints() {
-   return TheGame->m_renderHoldingPoints ^= 1;
+bool Console::RenderHoldingPoints() {
+   return TheGame->m_renderHoldingPoints = !TheGame->m_renderHoldingPoints;
 }
 
-int Console::RenderCarryHandles() {
-   return TheGame->m_renderCarryHandles ^= 1;
+bool Console::RenderCarryHandles() {
+   return TheGame->m_renderCarryHandles = !TheGame->m_renderCarryHandles;
 }
 
 #else
@@ -824,9 +971,21 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A95F8); /* Console::Di
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A97F0); /* Console::RenderHitSpheres */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", UnlockBegMoves__7Console); /* Console::UnlockBegMoves */
+#ifdef NON_MATCHING
+void Console::UnlockBegMoves() {
 
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", UnlockBegMoves__7Console); /* Console::UnlockBegMoves */
+#endif
+
+#ifdef NON_MATCHING
+void Console::UnlockClues() {
+    func_001D4DD8(TheGame);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", UnlockClues__7Console); /* Console::UnlockClues */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9A20); /* Console::MoveForward */
 
@@ -839,9 +998,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", __12ConsoleLayer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", _$_12ConsoleLayer);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9E78);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9E78); // ConsoleLayer member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA3C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA3C8); // ConsoleLayer member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA418);
 

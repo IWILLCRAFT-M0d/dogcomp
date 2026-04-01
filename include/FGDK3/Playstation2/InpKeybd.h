@@ -22,15 +22,7 @@ void InputKeyboard_InternalFinalise(void);
 Status InputKeyboard_Initialise(void);
 void InputKeyboard_Finalise(void);
 
-
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-    void func_002F8E40(void);
-    void func_002F8E68(void);
-#ifdef __cplusplus
-}
-#endif
+void InputKeyboard_SuspendThread(void);
+void InputKeyboard_ResumeThread(void);
 
 #endif

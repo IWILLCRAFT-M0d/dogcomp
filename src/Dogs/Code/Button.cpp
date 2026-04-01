@@ -2,12 +2,10 @@
 
 #include "Dogs/Button.h"
 
-extern ClassInfo* D_0044C948;
-
 #ifdef NON_MATCHING
 Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044C948 = arg1;
+        s_classInfo = arg1;
     }
     //
 
@@ -18,7 +16,7 @@ Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : W
     this->unk5EC = 0;
 
     if (arg1 == NULL) {
-        D_0044C948->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -27,7 +25,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __6ButtonP9ClassInfoP15SimObj_U
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", _$_6Button);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150__6Button);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A150__6Button); // activate?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A178); // button::Extra?
 
@@ -55,7 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __tf6Button);
 
 ClassInfo* Button::func_0010A6F0() {
-    return D_0044C948;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F8);

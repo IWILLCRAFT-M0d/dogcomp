@@ -13,6 +13,7 @@ typedef struct {
 
 class PlayerDog : public Dog {
     public:
+        static ClassInfo* s_classInfo;
         int unkB34;
         int unkB38;
         long128 unkB40;

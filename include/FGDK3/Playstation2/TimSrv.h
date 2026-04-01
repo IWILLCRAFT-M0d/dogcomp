@@ -19,12 +19,12 @@ void TimSrv_InternalFinalise(void);
 Status TimSrv_Initialise(void);
 void TimSrv_Finalise(void);
 
-/*
+
 class TimSrv_TimerImplementation {
 };
 
 class TimSrv_Timer : public TimSrv_TimerImplementation {
 
 };
-*/
+
 #endif

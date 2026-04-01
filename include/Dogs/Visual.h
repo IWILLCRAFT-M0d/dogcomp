@@ -1,9 +1,13 @@
 #ifndef VISUAL_H
 #define VISUAL_H
 
-/*
-class Visual_Graphic : public Widget_Graphic {
+#include "FGDK3/Widget.h"
+
+
+class Visual_Graphic  : public Widget_Graphic  {
+    public:
+        // virtual ? func_00235680
 };
-*/
+
 
 #endif

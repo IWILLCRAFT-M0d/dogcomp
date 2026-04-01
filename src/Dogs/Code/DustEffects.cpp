@@ -3,10 +3,9 @@
 #include "Dogs/DustEffects.h"
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044CF10;
 DustEffectManager::DustEffectManager(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SimObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044CF10 = arg1;
+        s_classInfo = arg1;
     }
     this->unk11C = 50;
 
@@ -23,7 +22,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AD58__17DustEffec
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B030);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B0A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B0A0); // DustEffectManager member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DustEffects", D_003A83D0);
 
@@ -37,6 +36,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", __tf17DustEffectManager);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B258); /* return D_0044CF08 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B260); /* return D_0044CF10 */
+ClassInfo* DustEffectManager::func_0013B260() {
+    return s_classInfo;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B268);

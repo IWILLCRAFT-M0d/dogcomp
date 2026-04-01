@@ -15,13 +15,6 @@ extern int D_0034C300[];
 extern int D_003593C0[];
 
 typedef struct {
-    int unk0;
-    char unk4[4];
-    void* unk8;
-} s_func_00187490;
-
-
-typedef struct {
     int   unk0[17];
     int   unk44;
     int   unk48;
@@ -55,18 +48,6 @@ typedef struct {
   /* 0x03C */ bool  unk3C;       // DOF
 } s_0044EB68_1E0;
 
-typedef struct {
-    char unk0[0x4F8];
-    int unk4F8;
-} s_func_001C6DC8;
-
-/*
-struct Texture_Resources : public Resource_Generic {
-
-    int unk14;
-    Texture_Resources();
-    virtual ~Texture_Resources();
-};*/
 
 struct Resource_Generic {
     int m_unk0;
@@ -86,27 +67,22 @@ class ShapeData {
 
 };
 
-struct Mien {
-    int unk0;
-    int unk4;
-    int unk8;
-    float unkC;
-    int unk10;
-    int unk14;       // 0x14 - Missing field
-    int unk18;
-    int unk1C;
-    float unk20;
-    int unk24;       // 0x24 - Missing field
+class Mien {
+    public:
+        int unk0;
+        int unk4;
+        int unk8;
+        float unkC;
+        int unk10;
+        int unk14;       // 0x14 - Missing field
+        int unk18;
+        int unk1C;
+        float unk20;
+        int unk24;       // 0x24 - Missing field
 
-    Mien();
-    virtual ~Mien();
+        Mien();
+        virtual ~Mien();
 };
-
-// Replace struct for class `Game_Document` and move to a proper file.
-//extern Game_Document* TheGame;
-
-
-
 
 class StdAllocator {
     public:
@@ -119,9 +95,9 @@ class GE_RenderHardware {
     public:
         float m_unk0;
         int m_unk4;
-    GE_RenderHardware();
-    virtual ~GE_RenderHardware();
-    virtual void func_002CA950();
+        GE_RenderHardware();
+        virtual ~GE_RenderHardware();
+        virtual void func_002CA950();
 };
 
 class GE_PrimCache {
@@ -138,6 +114,13 @@ class GE_PrimCache {
     virtual ~GE_PrimCache();
 };
 
+class GE_PS2PrimCache /* : public GE_PrimCache */ {
+    public:
+        virtual ~GE_PS2PrimCache();
+
+        virtual int func_002AC4A8();
+};
+
 class GE_PrimVertices {
     public:
         int unk0;
@@ -146,11 +129,11 @@ class GE_PrimVertices {
         short unkA;
         int unkC;
 
-    GE_PrimVertices(int, int, int);
-    virtual ~GE_PrimVertices();
-    int func_002A65C0(void);
-    int func_002A65C8(void);
-    void func_002A65D0(void);
+        GE_PrimVertices(int, int, int);
+        virtual ~GE_PrimVertices();
+        virtual int func_002A65C0();
+        virtual int func_002A65C8();
+        virtual void func_002A65D0();
 };
 
 class GE_PS2PrimVertices : public GE_PrimVertices {
@@ -162,13 +145,15 @@ class GE_PS2PrimVertices : public GE_PrimVertices {
         int unk24;
         //
         int unk34;
-        GE_PS2PrimVertices(void);
-
+        GE_PS2PrimVertices();
         virtual ~GE_PS2PrimVertices();
-        int func_002A5868(int, int);
-        void func_002A5880(void);
+        //002a57c0
+        virtual int func_002A5868(int, int);
+        virtual void func_002A5880();
         //
-        void func_002A5A50(void);
+        virtual void func_002A5A50();
+
+        virtual short func_002A6748();
 };
 
 
@@ -179,8 +164,8 @@ class GE_PrimIndices {
         char unk3;
         int unk4;
         int unk8;
-    GE_PrimIndices(int, char, int);
-    virtual ~GE_PrimIndices();
+        GE_PrimIndices(int, char, int);
+        virtual ~GE_PrimIndices();
 };
 
 
@@ -202,6 +187,10 @@ class GE_TransformState {
 
 };
 
+class MeshTransforms : public GE_TransformState {
+
+};
+
 class GE_Device : public GE_TransformState {
     public:
         GE_Device();
@@ -211,8 +200,8 @@ class GE_Device : public GE_TransformState {
         void func_002D1D60();
         void func_002D1D68();
         //
-        void func_002D2250();
-        void func_002D2258();
+        virtual void func_002D2250();
+        virtual void func_002D2258();
         //
         void func_002D2328();
 };
@@ -227,8 +216,8 @@ class ShapeInstance {
     public:
         void* unk0; // shading data?
         /* 0x4 */ void* m_shapeData; // shapeData pointer?
-        //ShapeParams_Dynamic unk8
-        //ShapeParams_Dynamic unk14
+        //ShapeParams_Dynamic unk8;
+        //ShapeParams_Dynamic unk14;
         void* unk20; // mesh data?
         void* unk24;
         void* unk28; // animations?
@@ -256,7 +245,7 @@ class Action {
         int unk0;
         Action();
         virtual ~Action();
-        virtual void func_002462a8() = 0;
+        virtual void func_002462A8() = 0;
 };
 
 class Resource_LayoutUnit {
@@ -273,7 +262,7 @@ class Resource_LayoutOverlay { // : public Resource_LayoutUnit
         void* unk10;
         //Resource_LayoutOverlay
         virtual ~Resource_LayoutOverlay();
-        void func_00274200();
+        virtual void func_00274200();
 
 };
 
@@ -285,6 +274,127 @@ typedef struct {
 typedef struct {
     overlayInfo m_overlays[115];
 } s_D_0035FC48;
+
+// @ 0x0035FC48
+// overlayInfo ovl[] = {
+//     {0, "Editor"},
+//     {1, "Root"},
+//     {2, "NullBanners"},
+//     {3, "NullSection"},
+//     {4, "Banners"},
+//     {5, "Gem"},
+//     {6, "NullMain"},
+//     {7, "Main"},
+//     {8, "SaveIsland"},
+//     {9, "Hicksville"},
+//     {10, "SkiResort"},
+//     {11, "Town"},
+//     {12, "Hicksville_Farmhouse"},
+//     {13, "Hicksville_Watermill"},
+//     {14, "Hicksville_BigField"},
+//     {15, "Hicksville_VillageHouses"},
+//     {16, "Hicksville_Centre"},
+//     {17, "Hicksville_Centre_Cutscene"},
+//     {18, "Hicksville_ChickenFarm"},
+//     {19, "SkiResort_Cafe"},
+//     {20, "SkiResort_Cafe_Cutscene"},
+//     {21, "SkiResort_HighStreet"},
+//     {22, "SkiResort_SkiSlope"},
+//     {23, "SkiResort_MountainTop"},
+//     {24, "SkiResort_MountainSide"},
+//     {25, "SkiResort_Hotel"},
+//     {26, "Town_Station"},
+//     {27, "Town_Park"},
+//     {28, "Town_DogPound"},
+//     {29, "Town_Centre"},
+//     {30, "Town_Finale"},
+//     {31, "Town_Finale_Cutscene"},
+//     {32, "Town_Epilogue"},
+//     {33, "SI_LevelImage"},
+//     {34, "H_F_LevelImage"},
+//     {35, "H_F_LG_W_LevelImage"},
+//     {36, "H_F_LG_W_NUD_LevelImage"},
+//     {37, "H_F_LG_WW_LevelImage"},
+//     {38, "H_F_LG_WW_NUD_LevelImage"},
+//     {39, "H_F_LG_BF_LevelImage"},
+//     {40, "H_F_LG_BF_NUD_LevelImage"},
+//     {41, "H_F_LG_VH_LevelImage"},
+//     {42, "H_F_LG_VH_NUD_LevelImage"},
+//     {43, "H_W_LevelImage"},
+//     {44, "H_W_LG_FH_LevelImage"},
+//     {45, "H_W_LG_FH_NUD_LevelImage"},
+//     {46, "H_W_LG_FHW_LevelImage"},
+//     {47, "H_W_LG_FHW_NUD_LevelImage"},
+//     {48, "H_BF_LevelImage"},
+//     {49, "H_BF_LG_FH_LevelImage"},
+//     {50, "H_BF_LG_FH_NUD_LevelImage"},
+//     {51, "H_BF_LG_CF_LevelImage"},
+//     {52, "H_BF_LG_CF_NUD_LevelImage"},
+//     {53, "H_C_LevelImage"},
+//     {54, "H_C_LG_VH_LevelImage"},
+//     {55, "H_C_LG_VH_NUD_LevelImage"},
+//     {56, "H_CF_LevelImage"},
+//     {57, "H_CF_LG_BF_LevelImage"},
+//     {58, "H_CF_LG_BF_NUD_LevelImage"},
+//     {59, "H_VH_LevelImage"},
+//     {60, "H_VH_LG_FH_LevelImage"},
+//     {61, "H_VH_LG_FH_NUD_LevelImage"},
+//     {62, "H_VH_LG_C_LevelImage"},
+//     {63, "H_VH_LG_C_NUD_LevelImage"},
+//     {64, "S_C_LevelImage"},
+//     {65, "S_C_LG_HS_LevelImage"},
+//     {66, "S_C_LG_HS_NUD_LevelImage"},
+//     {67, "S_C_LG_SS_LevelImage"},
+//     {68, "S_C_LG_SS_NUD_LevelImage"},
+//     {69, "S_HS_LevelImage"},
+//     {70, "S_HS_LG_H_LevelImage"},
+//     {71, "S_HS_LG_H_NUD_LevelImage"},
+//     {72, "S_HS_LG_C_LevelImage"},
+//     {73, "S_HS_LG_C_NUD_LevelImage"},
+//     {74, "S_HS_LG_MT_LevelImage"},
+//     {75, "S_HS_LG_MT_NUD_LevelImage"},
+//     {76, "S_HS_LG_SS_LevelImage"},
+//     {77, "S_HS_LG_SS_NUD_LevelImage"},
+//     {78, "S_SS_LevelImage"},
+//     {79, "S_SS_LG_HS_LevelImage"},
+//     {80, "S_SS_LG_HS_NUD_LevelImage"},
+//     {81, "S_SS_LG_C_LevelImage"},
+//     {82, "S_SS_LG_C_NUD_LevelImage"},
+//     {83, "S_MT_LevelImage"},
+//     {84, "S_MT_LG_HS_LevelImage"},
+//     {85, "S_MT_LG_HS_NUD_LevelImage"},
+//     {86, "S_MT_LG_MS_LevelImage"},
+//     {87, "S_MT_LG_MS_NUD_LevelImage"},
+//     {88, "S_MS_LevelImage"},
+//     {89, "S_MS_LG_MT_LevelImage"},
+//     {90, "S_MS_LG_MT_NUD_LevelImage"},
+//     {91, "S_H_LevelImage"},
+//     {92, "S_H_LG_HS_LevelImage"},
+//     {93, "S_H_LG_HS_NUD_LevelImage"},
+//     {94, "T_C_LevelImage"},
+//     {95, "T_C_LG_P_LevelImage"},
+//     {96, "T_C_LG_P_NUD_LevelImage"},
+//     {97, "T_F_LevelImage"},
+//     {98, "T_F_LG_DP_LevelImage"},
+//     {99, "T_F_LG_DP_NUD_LevelImage"},
+//     {100, "T_DP_LevelImage"},
+//     {101, "T_DP_LG_P_LevelImage"},
+//     {102, "T_DP_LG_P_NUD_LevelImage"},
+//     {103, "T_DP_LG_F_LevelImage"},
+//     {104, "T_DP_LG_F_NUD_LevelImage"},
+//     {105, "T_P_LevelImage"},
+//     {106, "T_P_LG_C_LevelImage"},
+//     {107, "T_P_LG_C_NUD_LevelImage"},
+//     {108, "T_P_LG_DP_LevelImage"},
+//     {109, "T_P_LG_DP_NUD_LevelImage"},
+//     {110, "T_P_LG_S_LevelImage"},
+//     {111, "T_P_LG_S_NUD_LevelImage"},
+//     {112, "T_S_LevelImage"},
+//     {113, "T_S_LG_P_LevelImage"},
+//     {114, "T_S_LG_P_NUD_LevelImage"},
+//     {115, "Demo"}
+//     };
+
 
 class Resource_LayoutGroup : public Resource_LayoutUnit {
     public:
@@ -323,7 +433,7 @@ class FileSystemDiscRoot : public FileSystemDisc {
         // func_002FFAC0
         // func_002FFAF8
         virtual ~FileSystemDiscRoot();
-        int func_002FFA90();
+        virtual int func_002FFA90();
 };
 
 
@@ -355,7 +465,7 @@ class Widget_Desktop : public Widget_Border {
 namespace File {
     struct Access {
         int unk0;
-        Access(void);
+        Access();
         virtual ~Access();
     };
 };
@@ -363,7 +473,7 @@ namespace File {
 namespace FileFind {
     class Access {
         public:
-            Access(void);
+            Access();
             virtual ~Access();
     };
 };
@@ -394,23 +504,45 @@ class File_FileDescriptor : public File::Access {
         virtual int func_003148E8(void);
 };
 
-// class GE_TextureStylePkt : public GE_DMARc {
-//     public:
-//         int unk4;
-//         char unk5;
-//         short unk6;
-//         int unk8;
-//         int unk10;
-//         GE_TextureStylePkt(void);
-//         virtual ~GE_TextureStylePkt();
-// };
+class I_GE_DMARc {
 
-class GameLayer : public Widget_WithChildren {
+};
+
+class GE_PS2PrimCacheDMABuffer : public I_GE_DMARc {
+    public:
+        virtual ~GE_PS2PrimCacheDMABuffer();
+
+        virtual void func_002AC220();
+};
+
+class GE_DMARc : public I_GE_DMARc {
+
+};
+
+class GE_TextureStylePkt : public GE_DMARc {
+    public:
+        int unk4;
+        char unk5;
+        short unk6;
+        int unk8;
+        int unk10;
+        GE_TextureStylePkt();
+        virtual ~GE_TextureStylePkt();
+};
+
+class InputBinding {
+
+};
+
+class GameLayer : public Widget_WithChildren /*, public InputBinding */ {
     public:
         int unkD0;
         GameLayer();
 };
 
+class PlayingLayer /* : public GameLayer */ {
+
+};
 
 class SavedGame {
     public:
@@ -641,11 +773,11 @@ class DogScript : public Script {
 
 class PointerMessageHandler {
     public:
-        void func_00262F70();
-        void func_00262F78();
-        void func_00262F80();
+        /* virtual */ void func_00262F70();
+        /* virtual */ void func_00262F78();
+        /* virtual */ void func_00262F80();
         //001d6a10
-        void func_00262F90();
+        /* virtual */ void func_00262F90();
 };
 
 class ValueEditor {
@@ -657,33 +789,61 @@ class NameTagEditor : public ValueEditor {
         void func_002691E8(); // virtual
 };
 
+class ClipVolume {
+
+};
+
+class PlaneClipVolume : public ClipVolume {
+
+};
+
+class SixPlaneClipVolume : public PlaneClipVolume {
+
+};
+
+class LiveEditable {
+
+};
+
+class MenuRegisterable {
+
+};
+
+class EditableManager : public MenuRegisterable {
+
+};
+
+class Music_Track {
+
+};
 
 
-void Main_RunGame();
+
+
+class DebugLayer /* : public Widget_Pane */ {
+
+};
+
+typedef struct {
+    /* 0x20 */ int m_cardSlot;
+    /* 0X20 */ int m_gameSlot;
+    /* 0x28 */ int m_mediaReady;
+} s_D_00453698;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
+// BookMetaphor
 short func_0018C980(int level, int gate);
-// bookmetaphor
 void func_00196418(void);
 
-
-
-
-//void func_001AD180(void);
 void func_001AD560(void);
 
-
-
-
-void func_001DEF10(void);
 void func_002C0340(void);
 int func_002C8358(s_func_002C8358* arg0);
 
 void func_002967C8(void* arg0, int arg1);
-void func_00247B88(int*);
 unsigned int func_002684E8(unsigned int, unsigned int);
 unsigned int func_002684F8(unsigned int, unsigned int);
 Status func_0026CF60(void);
@@ -692,11 +852,10 @@ int func_0026D120(void);
 void func_00273A80(int);
 
 int func_002963F8();
-int func_002964C0();
+bool func_002964C0();
 int func_002A48A8(void);
 int func_002A48B0(void);
 void func_002BF2D0(void);
-//void func_003481C8(int);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
 void func_002C3D80();
 void func_002C57E8(void);
@@ -713,13 +872,10 @@ void func_002C9FB8(void);
 int func_002C9FC0(void);
 int func_002CA958(void);
 
-
-// text_001E14F8
-void func_001E5008(void);
-
+int func_001E72D0(void);
 void func_001F8628(void);
 int func_001FC7E8(void);
-int func_001E72D0(void);
+
 void func_00222EC8(void);
 void func_00222F08(void);
 void func_00222F48(void);
@@ -781,7 +937,6 @@ void func_002241D0(void);
 
 void func_002FBEE8(void);
 
-// text_0026C5C8
 void func_002606D0(void);
 
 
@@ -799,38 +954,10 @@ void func_00275FA8(void);
 void func_00275FB0(void);
 void func_0027C4E8(void);
 
-// text_00150120
-
-int func_00168B60(void);
-void func_00168B68(void);
-void func_00168B70(void);
-void func_00168B78(void);
-void func_00168B80(void);
-int func_00168C50(void);
-int func_00168C58(void);
-
-int func_0018D840(void);
-int func_0018D848(void);
-int func_0018D850(void);
-int func_0018D858(void);
-int func_0018D860(void);
-
-// text_00288B30
 int func_002C6498(void);
 
-// FGDK3/Code/Widget
-
-void func_00262F78(void);
-void func_00262F80(void);
 void func_00262F88(void);
-void func_00262F90(void);
 int func_00263640(void);
-
-// text_001AB700
-
-
-//void func_00247D28(void*);
-
 
 int func_00274B00(char* name);
 int func_00275288(int arg0, int arg1, int ovlType, int arg3);
@@ -866,9 +993,6 @@ void func_002A1BC8(void);
 
 int func_002A6598(void);
 
-
-void func_002AC220(void);
-int func_002AC4A8(void);
 //void func_002ADEA8(void);
 void func_002AE320(void);
 char* func_002D7738(int);
@@ -878,16 +1002,7 @@ void func_002DFA18(void);
 
 float func_002EFEE0(float, float, float, float, float);
 
-
-
-
-
-
-
-float func_002F4368(void);
-void func_002F4378(void);
 void func_002F4608(void);
-int func_002F5BF8(void);
 int func_002F6C50(void);
 void func_002F6E80(void);
 void func_002F6E88(void);
@@ -912,20 +1027,11 @@ void func_002D4780(void);
 void func_002D74F8(void);
 int func_002D77A8(char*);
 
-
-
-Status func_001D5E90(void);
-
 Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 
 int func_002D1BC8(void);
 int func_002D1C78(void);
-
-
-
-
-
 
 float func_002D2350(void);
 void* func_002D3360(void*);
@@ -944,7 +1050,7 @@ void SimObj_Finalise(void);
 
 Status StdMem_Initialise(void);
 
-
+void Main_RunGame();
 
 #endif
 

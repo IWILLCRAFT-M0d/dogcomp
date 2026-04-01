@@ -25,15 +25,8 @@ class Person : public WorldObject {
         virtual ClassInfo* func_0014CC08();
         virtual int func_0014C240();
         virtual float func_0014CBD8();
+        virtual float func_0014A840();
 };
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-float func_0014A840(void); // belongs to person
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

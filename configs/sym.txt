@@ -48,6 +48,7 @@ entry = 0x00100008; // type:func
 // AnimatedObject
 __14AnimatedObjectP9ClassInfoP15SimObj_Universeis = 0x00100100; // type:func
 _$_14AnimatedObject = 0x00100340; // type:func
+func_00100408__14AnimatedObject = 0x00100408; // type:func
 func_00100510__14AnimatedObject = 0x00100510; // type:func
 func_00101968__14AnimatedObject = 0x00101968; // type:func
 func_00101B08__14AnimatedObject = 0x00101B08; // type:func
@@ -56,10 +57,13 @@ __tf17AnimatedObject_IF = 0x00103e68;
 __tf14AnimatedObject = 0x00103EB8;
 func_00103F50__14AnimatedObject = 0x00103F50; // type:func
 __tf22AnimatedObject_Complex = 0x00103f58;
+func_00103FB0__22AnimatedObject_Complex = 0x00103FB0; // type:func
 __tf30AnimatedObject_ComplexPlatform = 0x00103fb8;
 _$_11SlotMachine = 0x00104060; // type:func
 __tf11SlotMachine = 0x00104118;
+func_00104170__11SlotMachine = 0x00104170; // type:func
 __tf33AnimatedObject_ComplexHitReceiver = 0x00104178;
+func_001041C8__33AnimatedObject_ComplexHitReceiver = 0x001041C8; // type:func
 __tf18SimObj_HitFilter = 0x001041d8;
 __tft9Interface1Z17AnimatedObject_IF = 0x00104228;
 func_00104788__12DiscAperture = 0x00104788; // type:func
@@ -193,7 +197,9 @@ __tf7Jump_IF = 0x0013a008;
 __tf23AnimationMovedObject_IF = 0x0013a058;
 
 
-__tf3Dog = 0x0013a0a8;
+__tf3Dog = 0x0013A0A8;
+func_0013A1F8__3Dog = 0x0013A1F8; // type:func
+func_0013A200__3Dog = 0x0013A200; // type:func
 __tf14TransientSound = 0x0013a228;
 __tf23DogSphereObjHitReceiver = 0x0013a2b8;
 __tf22DogAntiSnagHitReceiver = 0x0013a348;
@@ -208,7 +214,8 @@ __17DustEffectManagerP9ClassInfoP15SimObj_Universeis = 0x0013A8F8; // type:func
 _$_17DustEffectManager = 0x0013ABD8; // type:func
 func_0013AC80__17DustEffectManager = 0x0013AC80; // type:func
 func_0013AD58__17DustEffectManagerf = 0x0013AD58; // type:func
-__tf17DustEffectManager = 0x0013b200;
+__tf17DustEffectManager = 0x0013B200;
+func_0013B260__17DustEffectManager = 0x0013B260; // type:func
 
 // Fish
 __4FishP9ClassInfoP15SimObj_Universeis = 0x0013B288; // type:func
@@ -266,7 +273,8 @@ func_00144BA0__9Motorbike = 0x00144BA0; // type:func
 _$_14ParticleSystem = 0x00146B20; // type:func
 __tf10ParticleID = 0x00149cb0;
 __tf13AttractorSpec = 0x00149D08;
-__tf11EmitterSpec = 0x00149d60;
+__tf11EmitterSpec = 0x00149D60;
+func_00149DB0__11EmitterSpec = 0x00149DB0; // type:func
 __tf9SpawnSpec = 0x00149db8;
 __tf12ParticleSpec = 0x00149e10;
 // ParticleSystem.cpp
@@ -280,6 +288,7 @@ __tft9Interface1Z17ParticleSystem_IF = 0x0014A010;
 __6PersonP9ClassInfoP15SimObj_Universeis = 0x0014A110; // type:func
 _$_6Person = 0x0014A2C8; // type:func
 func_0014A398__6Person = 0x0014A398; // type:func
+func_0014A840__6Person = 0x0014A840; // type:func
 func_0014BE60__6Person = 0x0014BE60; // type:func
 func_0014BF90__6Person = 0x0014BF90; // type:func
 func_0014C000__6Personf = 0x0014C000; // type:func
@@ -314,7 +323,9 @@ func_0014F618__18RoverSaysPuzzleGod = 0x0014F618; // type:func
 
 // Rat
 __3RatP9ClassInfoP15SimObj_Universeis = 0x0014F640; // type:func
+func_0014F7A8__3Rat = 0x0014F7A8; // type:func
 func_00150648__3Rat = 0x00150648; // type:func
+func_00150660__3Rat = 0x00150660; // type:func
 _$_3Rat = 0x00150D58; // type:func
 __tf3Rat = 0x00150e10;
 func_00150EE8__3Rat = 0x00150EE8; // type:func
@@ -341,6 +352,7 @@ _$_20ScentMarkingGameNode = 0x001601F8; // type:func
 __tf20ScentMarkingGameNode = 0x00160238;
 func_00160290__20ScentMarkingGameNode = 0x00160290; // type:func
 __tf19ScentMarkingGameGod = 0x00160298;
+func_001602F8__19ScentMarkingGameGod = 0x001602F8; // type:func
 __tf28ScentMarkingGameGodInterface = 0x00160300;
 __tft9Interface1Z28ScentMarkingGameGodInterface = 0x00160350;
 
@@ -410,7 +422,8 @@ func_00171290__10SmallThing = 0x00171290; // type:func
 // Smell
 __5SmellP9ClassInfoP15SimObj_Universeis = 0x00171368; // type:func
 _$_5Smell = 0x00171400; // type:func
-__tf5Smell = 0x001729d0;
+__tf5Smell = 0x001729D0;
+func_00172A28__5Smell = 0x00172A28; // type:func
 
 // Snowball
 __8SnowballP9ClassInfoP15SimObj_Universeis = 0x00172A50; // type:func
@@ -421,6 +434,7 @@ __tf8Snowball = 0x00173178;
 __13SoundCreatureP9ClassInfoP15SimObj_Universeis = 0x001731F8; // type:func
 _$_13SoundCreature = 0x00173298; // type:func
 __tf13SoundCreature = 0x00173858;
+func_001738B0__13SoundCreature = 0x001738B0; // type:func
 
 __9SphereObjP9ClassInfoP15SimObj_Universeis = 0x001738D8; // type:func
 __tf9SphereObj = 0x00177568;
@@ -435,6 +449,7 @@ func_00178630__11SwingBridge = 0x00178630; // type:func
 // TugOfWar
 __11TugOfWarGodP9ClassInfoP15SimObj_Universeis = 0x00178658; // type:func
 _$_11TugOfWarGod = 0x00178818; // type:func
+func_00178D58__11TugOfWarGod = 0x00178D58; // type:func
 func_0017C218__11TugOfWarGod = 0x0017C218; // type:func
 func_0017C238__11TugOfWarGod = 0x0017C238; // type:func
 func_0017C248__11TugOfWarGod = 0x0017C248; // type:func
@@ -461,6 +476,7 @@ func_00181438__14WheeledVehiclef = 0x00181438; // type:func
 __tf14WheeledVehicle = 0x001817a8;
 func_00181870__14WheeledVehicle = 0x00181870; // type:func
 __tf25WheeledVehicleHitReceiver = 0x00181878;
+func_001818C8__25WheeledVehicleHitReceiver = 0x001818C8; // type:func
 // WorldObj.cpp
 WorldObj_InternalInitialise__Fv = 0x00181948; // type:func
 WorldObj_InternalFinalise__Fv = 0x00181990; // type:func
@@ -776,6 +792,7 @@ __tf20BackgroundSaveThread = 0x002030e0;
 __tf31ScriptMessageAndRequestReceiver = 0x00227A50;
 _$_19SlidableBlockPuzzle = 0x002283F0; // type:func
 __tf19SlidableBlockPuzzle = 0x002296F8;
+func_00229758__19SlidableBlockPuzzle = 0x00229758; // type:func
 _$_25PlayerSlideBlockAnimation = 0x00229760; // type:func
 __tf25PlayerSlideBlockAnimation = 0x00229780;
 _$_21LookAroundIKAnimation = 0x0022ABF8; // type:func
@@ -784,18 +801,24 @@ _$_22PickUpStretchAnimation = 0x0022AC68; // type:func
 __tf22PickUpStretchAnimation = 0x0022AC88;
 _$_26GroundConformanceAnimation = 0x0022ACD8; // type:func
 __tf26GroundConformanceAnimation = 0x0022acf8;
+__13SpeechAniTextPvT1b = 0x0022AD48; // type:func
 _$_13SpeechAniText = 0x0022ADC0; // type:func
+func_0022AE18__13SpeechAniText = 0x0022AE18; // type:func
 func_0022AF18__13SpeechAniText = 0x0022AF18; // type:func
 _$_14SpeechAniSound = 0x0022AFC0; // type:func
+func_0022B038__14SpeechAniSound = 0x0022B038; // type:func
 func_0022B030__14SpeechAniSound = 0x0022B030; // type:func
 func_0022B5E0__14SpeechAniSound = 0x0022B5E0; // type:func
 _$_25SpeechAniSoundWithControl = 0x0022B7A0; // type:func
+func_0022B820__25SpeechAniSoundWithControl = 0x0022B820; // type:func
 func_0022BA18__25SpeechAniSoundWithControl = 0x0022BA18; // type:func
 _$_15SoundEverywhere = 0x0022BB18; // type:func
 func_0022BB88__15SoundEverywhere = 0x0022BB88; // type:func
 func_0022BCC8__15SoundEverywhere = 0x0022BCC8; // type:func
 _$_14StreamedSpeech = 0x0022BD90; // type:func
+func_0022BEA0__14StreamedSpeech = 0x0022BEA0; // type:func
 _$_17StreamedVoiceover = 0x0022C320; // type:func
+func_0022C440__17StreamedVoiceover = 0x0022C440; // type:func
 _$_24StreamedVoiceoverTrivial = 0x0022C808; // type:func
 __tf13SpeechAniText = 0x0022D0F8;
 __tf14SpeechAniSound = 0x0022D148;
@@ -839,6 +862,7 @@ __tf19DogRaceNavAnimation = 0x00235230;
 __tf25VehicleNavToDestAnimation = 0x00235298;
 __tf30VehicleNavDirectionalAnimation = 0x00235300;
 __tf17NavToPosAnimation = 0x00235368;
+func_002353C8__17NavToPosAnimation = 0x002353C8; // type:func
 __tf21RandomWanderAnimation = 0x002353D0;
 __tf20TurnToAngleAnimation = 0x00235440;
 _$_14Visual_Counter = 0x002367F0; // type:func
@@ -1245,7 +1269,7 @@ SOUND_GetPCMInfo = 0x0028c7f8; // type:func
 SOUND_SetPCMType = 0x0028c820; // type:func
 SOUND_SetPCMVolume = 0x0028c878; // type:func
 SOUND_MemFree = 0x0028ec20; // type:func
-func_002963F8 = 0x002963f8; // type:func
+
 Main_RunGame__Fv = 0x00296248; // type:func
 IOPMem_InternalInitialise__Fv = 0x00296670; // type:func
 IOPMem_InternalFinalise__Fv = 0x002966b8; // type:func
@@ -1317,7 +1341,9 @@ func_002A7008__15GE_PS2PrimCache = 0x002A7008; // type:func
 func_002A7010__15GE_PS2PrimCache = 0x002A7010; // type:func
 __tf24GE_PS2PrimCacheDMABuffer = 0x002AC150;
 func_002AC1A0__24GE_PS2PrimCacheDMABuffer = 0x002AC1A0; // type:func
+func_002AC220__24GE_PS2PrimCacheDMABuffer = 0x002AC220; // type:func
 __tf15GE_PS2PrimCache = 0x002AC410;
+func_002AC4A8__15GE_PS2PrimCache = 0x002AC4A8; // type:func
 __tf10I_GE_DMARc = 0x002ADBE0; // type:func
 __12GE_GSPageMgrii = 0x002B10D8; // type:func
 _$_12GE_GSPageMgr = 0x002B11A0; // type:func
@@ -1573,6 +1599,8 @@ InputMouse_InternalInitialise__Fv = 0x002f8350; // type:func
 InputMouse_InternalFinalise__Fv = 0x002f8688; // type:func
 InputMouse_Initialise__Fv = 0x002f8710; // type:func
 InputMouse_Finalise__Fv = 0x002f8740; // type:func
+InputMouse_SuspendThread__Fv = 0x002F8760; // type:func
+InputMouse_ResumeThread__Fv = 0x002F8788; // type:func
 _$_17InputMouse_Device = 0x002F87B0; // type:func
 __tf17InputMouse_Device = 0x002f87d0;
 // InpKeybd.cpp
@@ -1581,6 +1609,8 @@ InputKeyboard_InternalInitialise__Fv = 0x002f8b28; // type:func
 InputKeyboard_InternalFinalise__Fv = 0x002f8d98; // type:func
 InputKeyboard_Initialise__Fv = 0x002f8df0; // type:func
 InputKeyboard_Finalise__Fv = 0x002f8e20; // type:func
+InputKeyboard_SuspendThread__Fv = 0x002F8E40; // type:func
+InputKeyboard_ResumeThread__Fv = 0x002F8E68; // type:func
 _$_20InputKeyboard_Device = 0x002F8E90; // type:func
 __tf20InputKeyboard_Device = 0x002f8eb0;
 // InpJoys1.cpp
@@ -1621,12 +1651,14 @@ func_002FBCA8__18InputDevice_Device = 0x002FBCA8; // type:func
 __tf11InputCD_PS2 = 0x002fbf48;
 __tf7InputCD = 0x002fbfb0;
 // Controller.cpp
-Controller_InternalInitialise__Fv = 0x002fc9b0; // type:func
-Controller_InternalFinalise__Fv = 0x002fcc60; // type:func
-Controller_Initialise__Fv = 0x002fcd98; // type:func
-Controller_Finalise__Fv = 0x002fcdc8; // type:func
+Controller_InternalInitialise__Fv = 0x002FC9B0; // type:func
+Controller_SuspendThread__Fv = 0x002FCC10; // type:func
+Controller_ResumeThread__Fv = 0x002FCC38; // type:func
+Controller_InternalFinalise__Fv = 0x002FCC60; // type:func
+Controller_Initialise__Fv = 0x002FCD98; // type:func
+Controller_Finalise__Fv = 0x002FCDC8; // type:func
 _$_17Controller_Device = 0x002FCEE0; // type:func
-__tf17Controller_Device = 0x002fcf00;
+__tf17Controller_Device = 0x002FCF00;
 __14FileSystemDisc = 0x002FCF70; // type:func
 _$_14FileSystemDisc = 0x002FD130; // type:func
 _$_10FileSystem = 0x002FE680; // type:func
@@ -1811,6 +1843,7 @@ sceCdInitEeCb = 0x00328220; // type:func
 sceCdLayerSearchFile = 0x00328638; // type:func
 sceCdSearchFile = 0x00328950; // type:func
 sceCdRead = 0x00329390; // type:func
+sceCdStatus = 0x003296A0; // type:func
 sceCdStRead = 0x00329858; // type:func
 sceCdStPause = 0x003299e0; // type:func
 sceCdStResume = 0x00329a30; // type:func
@@ -2207,7 +2240,9 @@ _vt$15Shape_Resources = 0x00449870;
 _vt$22DogsTaleLand_Resources = 0x00449a18;
 // TextureRes
 _vt$17Texture_Resources = 0x00449be0;
-TheGame = 0x0044eb68;
+
+
+TheGame = 0x0044EB68;
 _23PS2ThreadImplementation$m_threadMutex = 0x00451930;
 _6Status$m_file = 0x004519f4;
 _6Status$m_line = 0x004519f8;
@@ -2216,3 +2251,17 @@ _23PS2ThreadImplementation$m_topThread = 0x00453864;
 __tiQ29Semaphore14Implementation = 0x00453870; // align:8
 _6Status$m_errorString = 0x0049f3b8;
 __ti26PS2SemaphoreImplementation = 0x004a0798;
+
+_14AnimatedObject$s_classInfo = 0x0044C738;
+_4Bird$s_classInfo = 0x0044C848;
+_6Button$s_classInfo = 0x0044C948;
+_3Car$s_classInfo = 0x0044CC80;
+_13DiggablePatch$s_classInfo = 0x0044CD80;
+_3Dog$s_classInfo = 0x0044CE58;
+_17DustEffectManager$s_classInfo = 0x0044CF10;
+_9Motorbike$s_classInfo = 0x0044D1C0;
+_9PlayerDog$s_classInfo = 0x0044D398;
+_5Smell$s_classInfo = 0x0044D968;
+_14WheeledVehicle$s_classInfo = 0x0044DC20;
+_19SlidableBlockPuzzle$s_classInfo = 0x00450E88;
+

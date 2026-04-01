@@ -15,7 +15,7 @@ class File_CD : public File::Access{
         int unkC;
         File_CD(sceCdlFILE *fp);
         virtual ~File_CD();
-        int func_00303110();
+        virtual int func_00303110();
 };
 
 extern void * const File_CD_StdInit_UsedModules[];

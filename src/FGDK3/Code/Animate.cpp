@@ -247,7 +247,7 @@ void func_002F6E88() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E90__17AnimationTimeBase);
 /*
-? AnimationTimeBase::func_002F6E90() {
+ClassInfo* AnimationTimeBase::func_002F6E90() {
     return D_00452D28;
 }
 */

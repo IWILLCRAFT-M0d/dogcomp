@@ -170,7 +170,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E47F0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4828);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4858);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4858); // called by loading function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4878);
 

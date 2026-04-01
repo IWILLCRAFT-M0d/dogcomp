@@ -6,6 +6,7 @@
 
 class Bird : public WorldObject {
     public:
+        static ClassInfo* s_classInfo;
         int unk648;
         int unk64C;
         int unk650;

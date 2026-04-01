@@ -3,7 +3,6 @@
 
 #include "SmallThing.h"
 
-
 class Rat : public SmallThing {
     public:
 

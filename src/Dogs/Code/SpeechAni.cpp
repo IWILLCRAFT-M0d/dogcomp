@@ -3,11 +3,38 @@
 
 #include "Dogs/SpeechAni.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AD48); /* SpeechAniText */
+#ifdef NON_MATCHING
+SpeechAniText::SpeechAniText(void* arg1, void* arg2, bool isBigHint) /* : AnimationComponent(arg1, 0, 0, 0) */ {
+//     this->unk8 = arg2;
+//     this->unk10 = tempR_OnceThroughTimeBase::FindOne((long)(int)param_2);
+    this->m_isBigHint = isBigHint;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", __13SpeechAniTextPvT1b); /* SpeechAniText */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_13SpeechAniText);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AE18);
+#ifdef NON_MATCHING
+void SpeechAniText::func_0022AE18() {
+    float temp_f12;
+    float var_f1;
+    // s32 temp_18;
+
+
+    // func_002F0C90(arg0->unk10, (f32) func_002F5850(arg0->unk0, arg0->unk8->unk4 + 0x20000000) * 0.000001f);
+    // temp_18 = func_002F5850(arg0->unk0, arg0->unk8->unk0 + 0x20000000);
+
+    var_f1 = 405.0f;
+    // temp_f12 = (f32) func_002F5850(arg0->unk0, arg0->unk8->unk4 + 0x20000000) * 0.000001f;
+    if (m_isBigHint) {
+        var_f1 = 320.0f;
+    }
+    // arg0->unkC = func_00238490(D_00453778, temp_18, sp, 0x14, temp_8, 0, temp_f12, 320.0f, var_f1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022AE18__13SpeechAniText);
+#endif
 
 void SpeechAniText::func_0022AF18() {
     return;
@@ -20,7 +47,7 @@ void SpeechAniSound::func_0022B030() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B038);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B038__14SpeechAniSound); // SpeechAniSound member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B5B0);
 
@@ -34,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B608); /* SpeechAni
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_25SpeechAniSoundWithControl);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B820);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B820__25SpeechAniSoundWithControl);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022B910);
 
@@ -68,7 +95,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BCF0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_14StreamedSpeech);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BEA0); // "Stream has changed in mid-animation, will ignore change.\n"
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BEA0__14StreamedSpeech); // Play streamed speech?
+// "Stream has changed in mid-animation, will ignore change.\n"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C198);
 
@@ -76,7 +104,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C290); /* StreamedV
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", _$_17StreamedVoiceover);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C440);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C440__17StreamedVoiceover);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022C680);
 

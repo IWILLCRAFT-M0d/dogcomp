@@ -46,12 +46,20 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", __11TugOfWarGodP9ClassInfoP15
 #endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", _$_11TugOfWarGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001789D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_001789D0); // TugOfWarGod member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178D38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178D38); // TugOfWarGod member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178D58);
-
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178D58__11TugOfWarGod); // TugOfWarGod member
+/*
+void TugOfWarGod::func_00178D58() {
+  if (this->unk5F0 != 5) {
+    func_00178DA0(this);
+    func_001798B8(this);
+    func_001794A0(this);
+  }
+}
+*/
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00178DA0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/TugOfWar", func_00179310);

@@ -10,8 +10,8 @@ class InputDevice_Device {
         void func_002FBCA8();
         InputDevice_Device(int, int, int, int, int, int);
         virtual ~InputDevice_Device();
-        void func_002FBB70();
-        void func_002FBB78();
+        virtual void func_002FBB70();
+        virtual void func_002FBB78();
 };
 
 extern void * const InputDevice_StdInit_UsedModules[];
@@ -21,13 +21,5 @@ void InputDevice_InternalFinalise(void);
 Status InputDevice_Initialise(void);
 void InputDevice_Finalise(void);
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-    void func_002FBB70(void);
-    void func_002FBB78(void);
-#ifdef __cplusplus
-}
-#endif
 
 #endif

@@ -26,21 +26,21 @@ class Widget {
         virtual ~Widget();
 };
 
-// class Widget_Text : public Widget {
-//
-// };
-//
-// class Widget_FormattedText : public Widget_Text {
-//
-// };
+class Widget_Text /*: public Widget */{
 
-// class Widget_LiveText : public Widget_Text {
-//
-// };
+};
 
-// class Widget_Graphic : public Widget {
-//
-// };
+class Widget_FormattedText : public Widget_Text {
+
+};
+
+class Widget_LiveText : public Widget_Text {
+
+};
+
+class Widget_Graphic /*: public Widget */{
+
+};
 
 class Widget_WithChildren : public Widget {
     public:

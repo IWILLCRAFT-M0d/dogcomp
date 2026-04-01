@@ -202,7 +202,7 @@ int func_00296480(int arg0) {
 }
 
 // isWidescreen
-int func_002964C0() {
+bool func_002964C0() {
     return sceScfGetAspect() == SCE_ASPECT_169;
 }
 

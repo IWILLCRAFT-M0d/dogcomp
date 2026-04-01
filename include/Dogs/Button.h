@@ -6,6 +6,7 @@
 
 class Button : public WorldObject {
     public:
+        static ClassInfo* s_classInfo;
         int unk5C0;
         float unk5C4; // button hold time (seconds)?
 

@@ -5,9 +5,10 @@
 
 class Dog : public WorldObject {
     public:
+        static ClassInfo* s_classInfo;
         float unk684;
         /* 0x830 */ bool m_isSwimming;
-        float unk838;
+        float unk838; // sink/swim (mass?)
         float unk83C;
         float unk840;
         float unk844;
@@ -19,9 +20,10 @@ class Dog : public WorldObject {
         int unk85C;
         float unk868; // status bone height
 
-        union {int i;float f;} unkB0C;
+        union {int i;float f;} unkB0C; // shinyness?
         Dog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Dog();
+        virtual ClassInfo* func_0013A200();
         //
         virtual void func_0012E290(int);
         //
@@ -35,7 +37,7 @@ class Dog : public WorldObject {
 
         virtual bool GetSwimmingState();
         virtual int func_001365B0();
-        //FUN_0021f3d8
+        //func_0021f3d8
         //? 0021f488
         //? 0021f548
 

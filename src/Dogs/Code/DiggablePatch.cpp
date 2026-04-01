@@ -2,12 +2,10 @@
 
 #include "Dogs/DiggablePatch.h"
 
-extern ClassInfo* D_0044CD80;
-
 #ifdef NON_MATCHING
 DiggablePatch::DiggablePatch(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044CD80 = arg1;
+        s_classInfo = arg1;
     }
 
     //
@@ -22,7 +20,7 @@ DiggablePatch::DiggablePatch(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, s
     this->unk5E0 = 0.0f;
 
     if (arg1 == NULL) {
-        D_0044CD80->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -62,6 +60,7 @@ int DiggablePatch::func_00128130() {
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128130__13DiggablePatch);
 #endif
+
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A3588);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A35B0);

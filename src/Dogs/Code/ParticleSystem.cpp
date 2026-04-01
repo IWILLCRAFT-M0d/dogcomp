@@ -156,7 +156,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149D58); /* retu
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", __tf11EmitterSpec);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", func_00149DB0); /* return 0; */
+int EmitterSpec::func_00149DB0() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ParticleSystem", __tf9SpawnSpec);
 

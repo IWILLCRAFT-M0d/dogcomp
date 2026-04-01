@@ -44,9 +44,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", Objects_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", Objects_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EA6A8); // despawn
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EA6A8); // despawn objects function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EB100); // spawn
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EB100); // spawn objects function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBBE8);
 

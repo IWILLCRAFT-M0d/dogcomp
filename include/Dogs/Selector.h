@@ -5,10 +5,10 @@
 
 class Selector : public WorldObject {
     public:
-        int unk5C0;
-        int unk5C4;
-        int unk5C8;
-        int unk5CC;
+        int unk5C0; // game slot selection (0-2)
+        float unk5C4;
+        float unk5C8;
+        bool unk5CC; // selector unlocked (m_selectorUnlocked?)
         Selector(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Selector();
         virtual ClassInfo* func_00161038();

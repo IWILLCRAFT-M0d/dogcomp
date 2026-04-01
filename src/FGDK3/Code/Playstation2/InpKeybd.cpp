@@ -53,20 +53,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_F
 #endif
 
 #ifdef NON_MATCHING
-// keyboard thread
-extern int D_00453594;
+extern int D_00453594; // keyboard thread
 
-void func_002F8E40() {
+void InputKeyboard_SuspendThread() {
     SuspendThread(D_00453594);
 };
 
-void func_002F8E68() {
+void InputKeyboard_ResumeThread() {
     ResumeThread(D_00453594);
 };
 
 #else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E40);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", func_002F8E68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_SuspendThread__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_ResumeThread__Fv);
 #endif
 
 

@@ -2,12 +2,10 @@
 
 #include "Dogs/WheeledVehicle.h"
 
-extern ClassInfo* D_0044DC20;
-
 #ifdef NON_MATCHING
 WheeledVehicle::WheeledVehicle(int wheels, ClassInfo* arg2, SimObj_Universe* arg3, int arg4, short arg5) : HitTri_Object(arg2 = 0, arg3, arg4, arg5) {
     if (arg2 != 0) {
-        D_0044DC20 = arg2;
+        s_classInfo = arg2;
     }
     //
     this->unk634 = 1.2f;
@@ -26,7 +24,7 @@ WheeledVehicle::WheeledVehicle(int wheels, ClassInfo* arg2, SimObj_Universe* arg
     this->unk6B4 = 0;
     this->unk6B8 = 0;
     if (arg2 == 0) {
-        D_0044DC20->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -47,11 +45,11 @@ void WheeledVehicle::func_00180540() {
     this->unk62C = 0;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528__14WheeledVehiclef); /* (float) a0->unk6B0 = f12 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180528__14WheeledVehiclef);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530__14WheeledVehicle); /* a0->unk62c = 1 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530__14WheeledVehicle);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540__14WheeledVehicle); /* a0->unk62c = 0 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540__14WheeledVehicle);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548);
@@ -119,14 +117,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181848);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181860);
 
 ClassInfo* WheeledVehicle::func_00181870(){
-    return D_0044DC20;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", __tf25WheeledVehicleHitReceiver);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001818C8); /* a0->unk10 = 1 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001818C8__25WheeledVehicleHitReceiver); /* a0->unk10 = 1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001818D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_001818D8); /* __tf18SimObj_HitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181928);
 

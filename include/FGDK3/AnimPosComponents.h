@@ -9,7 +9,7 @@ class AnimPosBaseAnimation {
 
 };
 
-class AnimPosLocalBaseAnimation {
+class AnimPosLocalBaseAnimation : public AnimPosBaseAnimation {
 
 };
 

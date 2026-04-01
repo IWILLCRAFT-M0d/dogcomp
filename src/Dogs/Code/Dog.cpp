@@ -2,8 +2,6 @@
 
 #include "Dogs/Dog.h"
 
-extern ClassInfo* D_0044CE58;
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CD30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012CEC8);
@@ -20,8 +18,8 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A66B8);
 
 #ifdef NON_MATCHING
 Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
-    if (arg1 != 0) {
-        D_0044CE58 = arg1;
+    if (arg1 != NULL) {
+        s_classInfo = arg1;
     }
 
     this->unk838 = 3.0f;
@@ -38,7 +36,7 @@ Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldOb
     this->unk868 = 100.0f;
 
     if (arg1 == NULL) {
-        D_0044CE58->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -80,7 +78,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E9C8__3Dogf); // animatio
 
 #ifdef NON_MATCHING
 void Dog::func_0012EB78(float fparg1) {
-    //FUN_00260590
+    //func_00260590
     func_001861B8();
 }
 #else
@@ -107,9 +105,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131970);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131AD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131B40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131B40); // DogHitPrimReceiver member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131B80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131B80); // DogHitPrimReceiver member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131C40);
 
@@ -125,7 +123,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134670);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134688); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134788);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134788); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001349B8); // Dog member
 
@@ -147,9 +145,9 @@ void Dog::func_001364F0() {
     this->unkB0C = 0;
 }
 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001364F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001364F8); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136520);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136520); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136558__3Dogf);
 /*
@@ -246,7 +244,7 @@ int Dog::func_00136648(float arg) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136658__3Dogf);
 /*
 int Dog::func_00136658(float arg) {
-    this->unk854 = isarg;
+    this->unk854 = arg;
     return 0;
 }
 */
@@ -281,9 +279,9 @@ void func_00139048(void) { // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139050__3Dog); // return qword unk5F0
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139058);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139058); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001390F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001390F8); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00139190);
 
@@ -374,9 +372,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F0); /* return &a0->unk6D0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F8); /* return (float) a0->unk5E4 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A1F8__3Dog); /* return (float) a0->unk5E4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A200); /* return D_0044CE58 */
+ClassInfo* Dog::func_0013A200() {
+    return s_classInfo;
+}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A208);
 

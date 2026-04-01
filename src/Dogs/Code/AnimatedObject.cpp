@@ -2,12 +2,10 @@
 
 #include "Dogs/AnimatedObject.h"
 
-extern ClassInfo* D_0044C738;
-
 #ifdef NON_MATCHING
 AnimatedObject::AnimatedObject(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044C738 = arg1;
+        s_classInfo = arg1;
     }
 
     //
@@ -29,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __14AnimatedObjectP9Cla
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", _$_14AnimatedObject);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100408);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00100408__14AnimatedObject); // AnimatedObject member
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_0038FF00);
 
@@ -244,12 +242,12 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B08); /* "17A
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf14AnimatedObject);
 
 ClassInfo* AnimatedObject::func_00103F50() {
-    return D_0044C738;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf22AnimatedObject_Complex);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103FB0); /* return D_0044C768 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103FB0__22AnimatedObject_Complex); /* return D_0044C768 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B38);
 
@@ -265,11 +263,11 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395B90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf11SlotMachine);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104170); /* return D_0044C780 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00104170__11SlotMachine); /* return D_0044C780 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __tf33AnimatedObject_ComplexHitReceiver);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001041C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001041C8__33AnimatedObject_ComplexHitReceiver); /* this->unk10 = 1 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/AnimatedObject", D_00395BD8); /* "t9Interface1Z17AnimatedObject_IF" */
 

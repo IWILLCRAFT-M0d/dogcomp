@@ -15,6 +15,7 @@ class SoundCreature : public SimObject {
         int unk144;
         SoundCreature(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SoundCreature();
+        virtual ClassInfo* func_001738B0();
 };
 
 

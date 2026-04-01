@@ -104,7 +104,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeInstance member
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938);
 

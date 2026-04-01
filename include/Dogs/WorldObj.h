@@ -5,6 +5,12 @@
 
 #include "SimObj.h"
 
+typedef struct {
+    int unk0;
+    char unk4[4];
+    void* unk8;
+} s_func_00187490;
+
 
 extern void * const WorldObj_StdInit_UsedModules[];
 
@@ -16,7 +22,7 @@ void WorldObj_Finalise(void);
 
 class WorldObject : public SimObj_ObjectWithMomentum {
     public:
-        ShapeInstance unk240;
+        /* 0x240 */ ShapeInstance m_shapeInstance;
         int unk2E0;
         //unk314
         //unk318
@@ -59,6 +65,7 @@ extern "C" {
 #endif
 void func_00184A90(WorldObject*);
 int func_00186788(void);
+void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t arg3);
 int func_00187628(void);
 int func_00187EC8(int, int);
 int func_00188400(void);

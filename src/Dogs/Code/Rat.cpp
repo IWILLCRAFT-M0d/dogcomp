@@ -24,13 +24,13 @@ Rat::Rat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : SmallTh
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", __3RatP9ClassInfoP15SimObj_Universeis);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F7A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F7A8__3Rat);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F7C8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F818);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F818); // Rat member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F9B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014F9B0); // Rat member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_0014FAE0);
 
@@ -44,9 +44,9 @@ int Rat::func_00150648() {
     return 0x64;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150650);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150650); // Rat member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150660);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150660__3Rat); /* return this->unk70C */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Rat", func_00150668);
 

@@ -8,7 +8,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B50);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F08F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F08F8); // called by Game_Document
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F0F68);
 
@@ -160,7 +160,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F52D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F52E8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F5310);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F5310); // dirt texture function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F61C8);
 
@@ -200,13 +200,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7370);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", __tf17Player_GrowlTimer);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73C8); // Player_GrowlTimer member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7408);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7458);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7458); /* __tf26TimSrv_TimerImplementation */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7498);
 

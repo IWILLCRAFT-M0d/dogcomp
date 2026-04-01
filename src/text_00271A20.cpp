@@ -196,7 +196,7 @@ char * func_00272FF0() {
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272FF0);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273000);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273000); // file related function
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273158);
 

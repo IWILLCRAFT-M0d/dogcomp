@@ -95,7 +95,7 @@ class SimObj_ObjectWithMomentum : public SimObject {
         int unk160;
         float unk164;
 
-        float unk1D0;
+        float unk1D0; // gravity thing/mass?
         float unk1D4;
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
@@ -118,5 +118,20 @@ class SimObj_HitReceiver : public SimObj_HitFilter {
         SimObj_HitReceiver(SimObject*, int, int);
         virtual ~SimObj_HitReceiver();
 };
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+void func_00164E40(void);
+int func_00168B60(void);
+void func_00168B68(void);
+void func_00168B70(void);
+void func_00168B78(void);
+void func_00168B80(void);
+int func_00168C50(void);
+int func_00168C58(void);
+#ifdef __cplusplus
+}
+#endif
 
 #endif

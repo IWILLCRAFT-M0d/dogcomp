@@ -61,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFE0); // ball det
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC098); // rendering thing
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC0B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC0B8); // virtual BasketballNet member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC120);
 
@@ -185,7 +185,7 @@ int func_001ACFC0(void) {
 	return 0;
 }
 
-void func_001ACFC8(void) {
+void func_001ACFC8(void) { // Container member
 	return;
 }
 

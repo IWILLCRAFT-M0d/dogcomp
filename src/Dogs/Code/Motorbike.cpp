@@ -2,16 +2,14 @@
 
 #include "Dogs/Motorbike.h"
 
-extern ClassInfo* D_0044D1C0;
-
 #ifdef NON_MATCHING
 Motorbike::Motorbike(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WheeledVehicle(2, arg1, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044D1C0 = arg1;
+        s_classInfo = arg1;
     }
 
     if (arg1 == NULL) {
-        D_0044D1C0->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 
     //
@@ -29,6 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143258); // "Unknown 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_001432D8); // wheel animation?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144350__9Motorbikef); // movement?
+
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Motorbike", D_003AE180);
 
@@ -61,7 +60,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144B20);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", __tf9Motorbike);
 
 ClassInfo* Motorbike::func_00144BA0() {
-    return D_0044D1C0;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00144BA8);

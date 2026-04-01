@@ -12,6 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F228); /* rct3 MeshInstan
 int func_00290D08() {
     return 0;
 }
+
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290D10);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290E50);

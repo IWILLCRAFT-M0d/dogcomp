@@ -124,7 +124,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 #ifdef NON_MATCHING
 void WorldObject::func_00182FF8(void* shape) {
     //
-    this->unk240.SetShape(shape);
+    this->m_shapeInstance.SetShape(shape);
 }
 
 #else
@@ -198,13 +198,13 @@ int func_00186788() { // worldobject member
     return -1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186790);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186790); /* a0->unk5A8 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186798);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186798); // animation resources related function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186800);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186808);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186808); // animation related function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186918);
 
@@ -228,7 +228,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187288);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872F8); /* return this->unkDC */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872F8); /* return (short) this->unkDC */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187300);
 

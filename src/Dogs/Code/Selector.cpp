@@ -11,9 +11,9 @@ Selector::Selector(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
     }
 
     this->unk5C0 = 1;
-    this->unk5C4 = 0;
-    this->unk5C8 = 0;
-    this->unk5CC = 0;
+    this->unk5C4 = 0.0f;
+    this->unk5C8 = 0.0f;
+    this->unk5CC = false;
 
     if (arg1 == NULL) {
         D_0044D708->unk4 = 1;

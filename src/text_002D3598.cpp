@@ -187,7 +187,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure (int func_002D5B40(char*,...?)
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5C28);
 

@@ -26,8 +26,8 @@ class SoundImplementation {
         int unk28;
         SoundImplementation(void*);
         virtual ~SoundImplementation();
-        void func_0026F8B8();
-        void func_0026E498();
+        virtual void func_0026F8B8();
+        virtual void func_0026E498();
 };
 
 #ifdef __cplusplus

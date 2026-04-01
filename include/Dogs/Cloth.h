@@ -3,9 +3,9 @@
 
 #include "WorldObj.h"
 
-/*
-class Cloth : public WorldObject {
+class Cloth /*: public WorldObject*/ {
+
 };
-*/
+
 
 #endif

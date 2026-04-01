@@ -9,7 +9,7 @@ class Aperture {
 
 class DiscAperture : public Aperture {
     public:
-        void func_00104788(); // virtual
+        /* virtual */ void func_00104788();
 };
 
 #ifdef __cplusplus

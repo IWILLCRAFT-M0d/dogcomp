@@ -24,7 +24,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276CD8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276E70);
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA0);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA0); /* (short) a0->unk8 = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA8);
 

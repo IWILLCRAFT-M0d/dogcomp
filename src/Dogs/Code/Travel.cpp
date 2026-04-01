@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002301C8); /* TravelToObje
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230240);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230460);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_00230460); // TravelToObject2 member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", func_002305B0); /* TravelToObjectsHead */
 
@@ -296,7 +296,7 @@ int func_00235360() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf17NavToPosAnimation);
 
-int func_002353C8() {
+int NavToPosAnimation::func_002353C8() {
     return 1;
 }
 

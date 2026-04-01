@@ -2,7 +2,6 @@
 
 #include "Dogs/PlayerDog.h"
 
-extern ClassInfo* D_0044D398;
 extern ClassInfo* D_0044D3B0;
 
 #ifdef NON_MATCHING
@@ -10,7 +9,7 @@ extern short D_00450A10;
 extern short D_00450A18;
 PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg3) : Dog(arg0=0, arg1, arg2, arg3) {
     if (arg0 != 0) {
-        D_0044D398 = arg0;
+        s_classInfo = arg0;
     }
     long128 qword;
     asm(
@@ -27,7 +26,7 @@ PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg
     this->unkB64 = 0;
     this->unkBB8 = 0;
     if (arg0 == 0) {
-        D_0044D398->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 
     if (this->unk5C == D_00450A10) { // Gem
@@ -64,15 +63,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoP15Si
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740); // PlayerDog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D7C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D7C0); // PlayerDog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D830); // player animation?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D8A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D8A8); // PlayerDog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D968);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D968); /* "Failed to advance slidable in PlayerDog.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DA60);
 
@@ -96,7 +95,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58); // PlayerDog
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0); // PlayerDog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBC0); // "IsMoveAvailableInCurrentStage: Unknown stage ID"
 
@@ -187,7 +186,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014F498);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __tf9PlayerDog);
 
 ClassInfo* PlayerDog::func_0014F518() { // GetClassInfoA?
-    return D_0044D398;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_18RoverSaysPuzzleGod);

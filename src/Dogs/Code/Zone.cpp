@@ -87,7 +87,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001896C0); // "Unknown extra
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189878__16ZoneFromNavGraph);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001898A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_001898A8); // ZoneFromNavGraph member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00189988);
 

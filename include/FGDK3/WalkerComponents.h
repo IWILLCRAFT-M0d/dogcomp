@@ -1,7 +1,9 @@
 #ifndef WALKERCOMPONENTS_H
 #define WALKERCOMPONENTS_H
 
-class WalkingBobAnimation {
+#include "Animate.h"
+
+class WalkingBobAnimation : public AnimationComponent {
 
 };
 
@@ -57,7 +59,7 @@ class IKSingleStepAnimation {
 
 };
 
-class IKAmblerAnimation {
+class IKAmblerAnimation : public AnimationComponent {
 
 };
 

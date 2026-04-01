@@ -5,6 +5,7 @@
 
 class Smell : public SimObject {
     public:
+        static ClassInfo* s_classInfo;
         short unk110;
         int unk114;
         int unk118;
@@ -12,6 +13,7 @@ class Smell : public SimObject {
         int unk134;
         Smell(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Smell();
+        virtual ClassInfo* func_00172A28();
 };
 
 #endif

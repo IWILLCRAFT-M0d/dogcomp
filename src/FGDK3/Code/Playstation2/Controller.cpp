@@ -27,19 +27,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_In
 
 #ifdef NON_MATCHING
 
-extern int D_004535C0;
+extern int D_004535C0; // controller thread
 
-void func_002FCC10() {
-    SuspendThread(D_004535C0); // suspend controller thread
+void Controller_SuspendThread() {
+    SuspendThread(D_004535C0);
 }
 
-void func_002FCC38() {
+void Controller_ResumeThread() {
     ResumeThread(D_004535C0);
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC10);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCC38);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_SuspendThread__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_ResumeThread__Fv);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_InternalFinalise__Fv);

@@ -13,9 +13,9 @@ class OnceThroughTimeBase : public TimeProvidingTimeBase {
     public:
         virtual ~OnceThroughTimeBase();
         //? func_002F3500();
-        int func_002F0E50();
+        virtual int func_002F0E50();
         //func_002F0E58
-        int func_002F34F0();
+        virtual int func_002F34F0();
         //func_002F0F58
         // void func_002F34F8(?);
 

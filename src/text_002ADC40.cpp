@@ -150,22 +150,27 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1E78);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1F40);
 
+#ifdef NON_MATCHING
+GE_TextureStylePkt::GE_TextureStylePkt() {
+    this->unk6 = 10;
+    this->unk4 = 1;
+    this->unk5 = 0;
+    this->unk8 = 0;
+    this->unk10 = 0;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", __18GE_TextureStylePkt);
+#endif
 
-// GE_TextureStylePkt::GE_TextureStylePkt() {
-//     this->unk6 = 10;
-//     this->unk4 = 1;
-//     this->unk5 = 0;
-//     this->unk8 = 0;
-//     this->unk10 = 0;
-// }
+
+
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2070); // GE_TextureStylePkt?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B20E0); // GE_TextureStylePkt?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B21F0); // GE_TextureStylePkt?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2280);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2280); // texture/material function? (called by func_002C0708)
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B22C8);
 
@@ -173,7 +178,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2528__18GE_TextureStylePk
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2548); // texture thing
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B25B8);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B25B8); // DGF file function
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B2630);
 
