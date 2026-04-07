@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 
-Status ShapeRes_InternalInitialise(void) {
+Status ShapeRes_InternalInitialise() {
     func_002757E8();
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/ShapeRes/Code/ShapeRes.cpp", 89);
 }
@@ -12,7 +12,7 @@ Status ShapeRes_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ShapeRes/Code/ShapeRes", ShapeRes_InternalInitialise__Fv);
 #endif
 
-void ShapeRes_InternalFinalise(void) {
+void ShapeRes_InternalFinalise() {
     func_002757F0();
 }
 
@@ -32,11 +32,11 @@ void * const ShapeRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status ShapeRes_Initialise(void) {
+Status ShapeRes_Initialise() {
     return StdInit_InitialisationSequence(&ShapeRes_StdInit_Description);
 }
 
-void ShapeRes_Finalise(void) {
+void ShapeRes_Finalise() {
     StdInit_FinalisationSequence(&ShapeRes_StdInit_Description);
 }
 

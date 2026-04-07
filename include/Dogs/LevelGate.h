@@ -5,8 +5,8 @@
 
 class LevelGate : public SimObject {
     public:
-        int unk130;
-        int unk134;
+        int unk130; // actorId P?
+        int unk134; // actorId E?
         LevelGate(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~LevelGate();
         virtual ClassInfo* func_0013FD20();

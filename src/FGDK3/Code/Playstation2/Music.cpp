@@ -230,7 +230,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284018);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284090);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002841D8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002841D8); // Music_PS2Piece virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284880);
 
@@ -241,7 +241,7 @@ Music_PS2Performance::Music_PS2Performance() {
     //
     this->unk120 = 0;
     this->unk124 = 0;
-    this->m_paused = 0;
+    this->m_paused = false;
     //
 }
 #else
@@ -258,23 +258,20 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284C28);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284CE0);
 
-// Music_PS2Performance::PauseNow
 #ifdef NON_MATCHING
 
 void Music_PS2Performance::PauseNow() {
-  scePrintf("Music_PS2Performance::PauseNow\n");
-  this->m_paused = 1;
-  SOUND_Pause();
-  FlushIOPCommand(0);
-
-
+    scePrintf("Music_PS2Performance::PauseNow\n");
+    this->m_paused = true;
+    SOUND_Pause();
+    FlushIOPCommand(0);
 }
 
 void Music_PS2Performance::ResumeNow() {
-  scePrintf("Music_PS2Performance::ResumeNow\n");
-  this->m_paused = 0;
-  SOUND_Resume();
-  FlushIOPCommand(0);
+    scePrintf("Music_PS2Performance::ResumeNow\n");
+    this->m_paused = false;
+    SOUND_Resume();
+    FlushIOPCommand(0);
 }
 
 #else

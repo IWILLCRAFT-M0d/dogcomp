@@ -12,7 +12,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B6B8); /* __19Sh
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B760); /* setsize ? */
+#ifdef NON_MATCHING
+void ShapeParams_Dynamic::SetSize(int size) {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", SetSize__19ShapeParams_Dynamici);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7B8); /* __tf11ShapeParams */
 
@@ -46,9 +52,9 @@ void func_0030BEE8() {
     func_00291778();
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF08); // RCT3 ShapeData::ReceiveContents(File*) ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF28);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF28); // RCT3 ShapeData::EmptyContents?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF48);
 

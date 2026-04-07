@@ -77,10 +77,10 @@ ChangeLevelReq::ChangeLevelReq(int level, int gate) : GameState::GameStateReq::G
 
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __14ChangeLevelReqii); /* ChangeLevelReq::ChangeLevelReq(int map, int entry); */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __14ChangeLevelReqii);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8910); /* StartNewGameReq */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8910); /* StartNewGameReq(int level, int gate, ?, ?) */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D89D0); /* BMHighlightClueReq */
 

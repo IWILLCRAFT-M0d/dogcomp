@@ -30,30 +30,30 @@ PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg
     }
 
     if (this->unk5C == D_00450A10) { // Gem
-    func_0014EB88(this,2);
-    func_0014EB88(this,3);
-    func_0014EB88(this,4);
-    func_0014EB88(this,5);
-    func_0014EB88(this,8);
-    func_0014EB88(this,23);
-    func_0014EB88(this,27);
-    func_0014EB88(this,28);
-    func_0014EB88(this,29);
-    func_0014EB88(this,1);
-    func_0014EB88(this,24);
-    func_0014EB88(this,25);
-    func_0014EB88(this,7);
-    func_0014EB88(this,6);
-    func_0014EB88(this,31);
-    func_0014EB88(this,32);
+    func_0014EB88(2);
+    func_0014EB88(3);
+    func_0014EB88(4);
+    func_0014EB88(5);
+    func_0014EB88(8);
+    func_0014EB88(23);
+    func_0014EB88(27);
+    func_0014EB88(28);
+    func_0014EB88(29);
+    func_0014EB88(1);
+    func_0014EB88(24);
+    func_0014EB88(25);
+    func_0014EB88(7);
+    func_0014EB88(6);
+    func_0014EB88(31);
+    func_0014EB88(32);
     }
     else if (this->unk5C == D_00450A18) { // ControllableDog
-        func_0014EB88(this,2);
-        func_0014EB88(this,3);
-        func_0014EB88(this,4);
-        func_0014EB88(this,5);
-        func_0014EB88(this,8);
-        func_0014EB88(this,6);
+        func_0014EB88(2);
+        func_0014EB88(3);
+        func_0014EB88(4);
+        func_0014EB88(5);
+        func_0014EB88(8);
+        func_0014EB88(6);
     }
 
 }
@@ -93,7 +93,7 @@ void PlayerDog::func_0014DB48() {
 */
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58); // PlayerDog member; doggy do function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80); // PlayerDog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0); // PlayerDog member
 
@@ -105,13 +105,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DCF0__9PlayerDog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DD20); // "Failed to advance slidable in PlayerDog.cpp"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88); // add move
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EB88__9PlayerDogi); // add move
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EBA0); // "Could not find a doggy do sequence! Game is likely to crash now."
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014EE80); // PlayerDog method (nonvirtual); beg moves related?
 
 #ifdef NON_MATCHING
 RoverSaysPuzzleGod::RoverSaysPuzzleGod(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {

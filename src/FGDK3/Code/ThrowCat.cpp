@@ -28,11 +28,11 @@ void * const ThrowCatch_StdInit_UsedModules[] = {
     0,
 };
 
-Status ThrowCatch_Initialise(void) {
+Status ThrowCatch_Initialise() {
     return StdInit_InitialisationSequence(&ThrowCatch_StdInit_Description);
 }
 
-void ThrowCatch_Finalise(void) {
+void ThrowCatch_Finalise() {
     StdInit_FinalisationSequence(&ThrowCatch_StdInit_Description);
 }
 

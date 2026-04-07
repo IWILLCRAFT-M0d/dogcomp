@@ -9,10 +9,10 @@
 
 extern void * const LevelRes_StdInit_UsedModules[];
 
-Status LevelRes_InternalInitialise(void);
-void LevelRes_InternalFinalise(void);
-Status LevelRes_Initialise(void);
-void LevelRes_Finalise(void);
+Status LevelRes_InternalInitialise();
+void LevelRes_InternalFinalise();
+Status LevelRes_Initialise();
+void LevelRes_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

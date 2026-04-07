@@ -13,7 +13,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", func_0024BA
 #endif
 
 #ifdef NON_MATCHING
-Status SoundRes_InternalInitialise(void) {
+Status SoundRes_InternalInitialise() {
     func_002757E8();
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/SoundRes/Code/SoundRes.cpp", 0x79);
 }
@@ -21,7 +21,7 @@ Status SoundRes_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/SoundRes/Code/SoundRes", SoundRes_InternalInitialise__Fv);
 #endif
 
-void SoundRes_InternalFinalise(void) {
+void SoundRes_InternalFinalise() {
     func_002757F0();
 }
 
@@ -45,11 +45,11 @@ void * const SoundRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status SoundRes_Initialise(void) {
+Status SoundRes_Initialise() {
         return StdInit_InitialisationSequence(&SoundRes_StdInit_Description);
 }
 
-void SoundRes_Finalise(void) {
+void SoundRes_Finalise() {
     StdInit_FinalisationSequence(&SoundRes_StdInit_Description);
 }
 

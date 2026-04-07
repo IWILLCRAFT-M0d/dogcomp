@@ -16,10 +16,10 @@ class InputDevice_Device {
 
 extern void * const InputDevice_StdInit_UsedModules[];
 
-Status InputDevice_InternalInitialise(void);
-void InputDevice_InternalFinalise(void);
-Status InputDevice_Initialise(void);
-void InputDevice_Finalise(void);
+Status InputDevice_InternalInitialise();
+void InputDevice_InternalFinalise();
+Status InputDevice_Initialise();
+void InputDevice_Finalise();
 
 
 #endif

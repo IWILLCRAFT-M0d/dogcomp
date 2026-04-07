@@ -2,6 +2,7 @@
 #define UNK_H
 
 #include <stdlib.h>
+#include <sys/types.h>
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "Dogs/SimObj.h"
@@ -49,14 +50,17 @@ typedef struct {
 } s_0044EB68_1E0;
 
 
-struct Resource_Generic {
-    int m_unk0;
-    int m_unk4;
-    int m_unk8;
-    StdInit_ClientBase m_unkC;
+class Resource_Generic {
+    public:
+        void* unk0; // resource pointer
+        /* 0x4 */ unsigned int m_resourceCount;
+        /* 0x8 */ int m_resourceType;
 
-    Resource_Generic();
-    virtual ~Resource_Generic();
+        StdInit_ClientBase unkC;
+
+
+        Resource_Generic();
+        virtual ~Resource_Generic();
 };
 
 template <typename T> struct Resource : Resource_Generic {
@@ -166,21 +170,25 @@ class GE_PrimIndices {
         int unk8;
         GE_PrimIndices(int, char, int);
         virtual ~GE_PrimIndices();
+        void func_002A62D0();
 };
 
 
-struct ShapeParams {
-    int unk0;
-    int unk1;
-    ShapeParams() {
-        unk0 = 0;
-        unk1 = 1;
-    }
+class ShapeParams {
+    public:
+        int unk0;
+        int unk1;
+        ShapeParams() {
+            unk0 = 0;
+            unk1 = 1;
+        }
 };
-struct ShapeParams_Dynamic : public ShapeParams {
-    ShapeParams_Dynamic();
-    ShapeParams_Dynamic(int);
-    virtual ~ShapeParams_Dynamic();
+class ShapeParams_Dynamic : public ShapeParams {
+    public:
+        ShapeParams_Dynamic();
+        //ShapeParams_Dynamic(int);
+        virtual ~ShapeParams_Dynamic();
+        void SetSize(int);
 };
 
 class GE_TransformState {
@@ -191,6 +199,8 @@ class MeshTransforms : public GE_TransformState {
 
 };
 
+// RCT3 "GE_Device::s_theDevice"
+// 0x78 - texture resources address
 class GE_Device : public GE_TransformState {
     public:
         GE_Device();
@@ -206,19 +216,25 @@ class GE_Device : public GE_TransformState {
         void func_002D2328();
 };
 
+// 0x00452660 is s_theDevice? (this)
 class GE_PS2Device : public GE_Device {
     public:
         GE_PS2Device();
         virtual ~GE_PS2Device();
 };
 
+class MeshInstance {
+    public:
+        void Render(GE_Device*);
+};
+
 class ShapeInstance {
     public:
         void* unk0; // shading data?
         /* 0x4 */ void* m_shapeData; // shapeData pointer?
-        //ShapeParams_Dynamic unk8;
-        //ShapeParams_Dynamic unk14;
-        void* unk20; // mesh data?
+        ShapeParams_Dynamic unk8;
+        ShapeParams_Dynamic unk14;
+        MeshInstance* unk20; // MeshInstance?
         void* unk24;
         void* unk28; // animations?
         ShapeInstance();
@@ -226,6 +242,7 @@ class ShapeInstance {
         void Empty();
         void Fill();
         virtual void SetShape(void*); // SetShape(ShapeData* const)
+        int func_00270408(int, int);
         //virtual ? func_00270468
         // virtual ? func_00270498
         // virtual ? func_002704D8
@@ -256,7 +273,7 @@ class Resource_LayoutUnit {
         virtual ~Resource_LayoutUnit();
 };
 
-class Resource_LayoutOverlay { // : public Resource_LayoutUnit
+class Resource_LayoutOverlay /* : public Resource_LayoutUnit */ {
     public:
         int unkC; // overlay id?
         void* unk10;
@@ -275,8 +292,46 @@ typedef struct {
     overlayInfo m_overlays[115];
 } s_D_0035FC48;
 
+#include "FGDK3/TextRes.h"
+#include "FGDK3/Playstation2/MusicRes.h"
+#include "FGDK3/NavGraphRes.h"
+#include "FGDK3/FontRes.h"
+
+extern Text_Resources* D_0035FB10; // Text
+extern void* D_0035FB28; // Texture
+extern Font_Resources* D_0035FB40; // Font
+extern void* D_0035FB58; // Shape
+extern void* D_0035FB70; // Sound
+extern void* D_0035FB88; // Creature
+extern void* D_0035FBA0; // DogsTaleLand
+extern void* D_0035FBB8; // Animation
+extern void* D_0035FBD0; // Script
+extern NavGraph_Resources* D_0035FBE8; // NavGraph
+extern Music_Resources* D_0035FC00; // Music
+
+#ifdef NON_MATCHING
+/*const*/ int D_0044F5A0 = 11; // Resource type count
+
+
+// @ 0x0035FC18
+const void* D_0035FC18[] = { // Resources
+    D_0035FB10, // Text
+    D_0035FB28, // Texture
+    D_0035FB40, // Font
+    D_0035FB58, // Shape
+    D_0035FB70, // Sound
+    D_0035FB88, // Creature
+    D_0035FBA0, // DogsTaleLand
+    D_0035FBB8, // Animation
+    D_0035FBD0, // Script
+    D_0035FBE8, // NavGraph
+    D_0035FC00, // Music
+    0 // padding?
+};
+#endif
+
 // @ 0x0035FC48
-// overlayInfo ovl[] = {
+// overlayInfo D_0035FC48[] = { // Overlays
 //     {0, "Editor"},
 //     {1, "Root"},
 //     {2, "NullBanners"},
@@ -393,8 +448,482 @@ typedef struct {
 //     {113, "T_S_LG_P_LevelImage"},
 //     {114, "T_S_LG_P_NUD_LevelImage"},
 //     {115, "Demo"}
+//
 //     };
 
+// D_0035FFF0 // Actors
+// {0, "Null"},
+// {1, "Engine"},
+// {2, "Camera"},
+// {3, "Dynamic1"},
+// {4, "Dynamic2"},
+// {5, "Dynamic3"},
+// {6, "Dynamic4"},
+// {7, "Dynamic5"},
+// {8, "Dynamic6"},
+// {9, "Dynamic7"},
+// {10, "Dynamic8"},
+// {11, "Dynamic9"},
+// {12, "Dynamic10"},
+// {13, "Dynamic11"},
+// {14, "Dynamic12"},
+// {15, "Dynamic13"},
+// {16, "Dynamic14"},
+// {17, "Dynamic15"},
+// {18, "Dynamic16"},
+// {19, "Dynamic17"},
+// {20, "Dynamic18"},
+// {21, "Dynamic19"},
+// {22, "Dynamic20"},
+// {23, "Gem"},
+// {24, "GemShakeParticles"},
+// {25, "GemFartScent"},
+// {26, "Gem2"},
+// {27, "GameStateGod"},
+// {28, "HintGod"},
+// {29, "MusicGod"},
+// {30, "Shit"},
+// {31, "GemShitScent"},
+// {32, "TrickTreat"},
+// {
+
+#ifdef NON_MATCHING
+const char* D_003665C0[] = {
+    "Text",
+    "Texture",
+    "Font",
+    "Shape",
+    "Sound",
+    "Creature",
+    "DogsTaleLand",
+    "Animation",
+    "Script",
+    "NavGraph",
+    "Music",
+    0 // padding?
+};
+
+const int D_003665F0[] = { // Resource counts
+    283, // Text
+    1191, // Texture
+    2, // Font
+    322, // Shape
+    237, // Sound
+    155, // Creature
+    5, // DogsTaleLand
+    1445, // Animation
+    297, // Script
+    281, // NavGraph
+    1025, // Music
+    0 // padding?
+};
+#endif
+
+// const char* D_00366620[] = { // Text names
+//     "NewGame",
+//     "NewGameOverOld",
+//     "SaveGameOverOld",
+//     "NewGameOverOldAreYouSure",
+//     "SaveGameOverOldAreYouSure",
+//     "LoadGame",
+//     "SaveGame",
+//     "ResumeGame",
+//     "SelectPage",
+//     "Moves",
+//     "SitDownAndDown",
+//     "SitUpAndStand",
+//     "ShakeBody",
+//     "Beg2",
+//     "Beg1",
+//     "Beg3",
+//     "Fart",
+//     "PeeLeft",
+//     "PeeRight",
+//     "Beg4",
+//     "Beg5",
+//     "Bark",
+//     "TitleOpts",
+//     "Setting_Title",
+//
+// };
+
+// const char* D_00366A90[] = { // Texture names
+// "VirtualHotDog",
+// "VirtualDogCollar",
+// "VirtualDogTag",
+// "camera",
+// "construct",
+// "cross3d",
+// "lightdirection",
+// "lightpoint",
+// "lightspot",
+// "particles",
+// "query",
+// "ring",
+// "speaker",
+// "scent",
+// "Ball",
+// "BaseFont",
+// "Blaar",
+// "black",
+// "BlankPageLeft",
+// "BlankPageRight",
+// "BMDarkBlueScent",
+// "BMGreenScent",
+// "BMLightBlueScent",
+// "BMOrangeScent",
+// "BMPinkScent",
+// "BMPurpleScent",
+// "BMRedScent",
+// "BMVioletScent",
+// "BMYellowScent",
+// "bone",
+// "BoneAppearParticle",
+// "BoneAppearParticle2",
+// "bonehighlight",
+// "BoneScentParticle",
+// "Book",
+// "Bookfence",
+// "brass",
+// "bridgewood",
+// "brown",
+// "ButtonCircle",
+// "ButtonCross",
+// "ButtonL1",
+// "ButtonL2",
+// "ButtonR1",
+// "ButtonR2",
+// "ButtonSquare",
+// "ButtonTriangle",
+// "cablecarglass",
+// "carchrome",
+// "clue01",
+// "dig"
+// "DigDust",
+// "digParticle",
+// "Dogbowl",
+// "DogFartScentParticle",
+// "DogKennel",
+// "DogScentParticle",
+// "DPadDown",
+// "DPadLeft",
+// "DPadRight",
+// "DPadUp",
+// "DrawSolidColour",
+// "DrawSolidColourNoZWrite",
+// "edgepapers",
+// "FartScentParticle",
+// "finishline"
+// "Foodstuffs",
+// "FootDust",
+// "FootPrintBoneBoot",
+// "FootPrintBoneDog",
+// "FootPrintBoot",
+// "FootPrintFox",
+// "FootPrintFoxVisible",
+// "FootPrintHumanVisible",
+// "GUINumber",
+// "HotDogNose",
+// "Jake",
+// "Jakebowl",
+// "JakeEyes",
+// "Lightbulb",
+// "LightbulbEmissive",
+// "LucidaConsole",
+// "Mat",
+// "NewGamePicture",
+// "note",
+// "nudmask",
+// "nullbmp",
+// "nulltex",
+// "numb2",
+// "outsidegroundDark"
+// "outsidegroundLight",
+// "Page1",
+// "Page1Backing",
+// "Page27Bones",
+// "Page28Bones",
+// "Page29Bones",
+// "Page2Bone1",
+// "Page2Bone2",
+// "Page2Bone3",
+// "Page2Bone4",
+// "Page2Bone5",
+// "Page2Bone6",
+// "Page2Bone7",
+// "Page2Bone8",
+// "Page2Bone9",
+// "Page3",
+// "Page4",
+// "Pagecolors",
+// "PawController",
+// "pedican",
+// "PersonBoneScentParticle",
+// "PersonScentParticle",
+// "picture",
+// "PinkScentParticle",
+// "puffblack",
+// "puffgrey",
+// "puffred",
+// "puffwhite",
+// "scentGroundBlue",
+// "scentGroundCyan",
+// "scentGroundDarkBlue",
+// "scentGroundExploreChallenge",
+
+// "FloorTR",
+// "Grinder1",
+// "Grinder2",
+// "Gubbins",
+// "LoveHeart",
+// "PeachesCan",
+// "Pounder01",
+// "Roof1",
+// "SmallDoor1",
+// "vats",
+// "VidDisplay",
+// "VidDisplay2",
+// "Wall01a",
+// "Wall01b",
+// "Wall02a",
+// "Wall02b",
+// "Wall03a",
+// "Wall03b",
+// "Daisy",
+// "Daisyback",
+// "Banjo256",
+// "been",
+// "BinderCover01",
+// "BinderCover02",
+// "BinderCover03",
+// "BinderCover04",
+// "Grampa256",
+// "GroundblendGrass",
+// "GroupPic01",
+// "GroupPic02",
+// "JakeAndDaisy256",
+// "partyhat",
+// "WayneDwayne256",
+// "BMClue0",
+// "BMClue1",
+// "LevelImage",
+// "loading"
+// };
+//
+// const char* D_00367D30[] = { // Shape names
+// };
+//
+// const char* D_00368238[] = { // Sound names
+// };
+//
+
+#ifdef NON_MATCHING
+const char* D_003685F0[] = { // Creature names
+    "DogShakeParticles",
+    "DiggablePatch",
+    "DiggablePatchParticles",
+    "Basket",
+    "LevelGate",
+    "Ball",
+    "Marker",
+    "StaticCreature",
+    "StaticCreatureShadow",
+    "Treat",
+    "MovingTreat",
+    "Bone",
+    "HiddenBone",
+    "GodCreature",
+    "RaceGodCreature",
+    "LevelGatePartner",
+    "LevelGateExit",
+    "SoundCreature",
+    "Pram",
+    "Button",
+    "GenericSmallThing",
+    "GenericSmallThingNonPersist",
+    "GenericSmallThingPerson",
+    "GenericSmallThingNoPickUp",
+    "GenericSmallThingHitTriNoPickUp",
+    "GenericSmallThingCarryableWhenHeld",
+    "Hat",
+    "RoverSaysPuzzleGod",
+    "Tune",
+    "SphereObj",
+    "HitTri_Object",
+    "SaveKennel",
+    "ScentMarkingGameNode",
+    "ScentMarkingGameGod",
+    "DiggingRaceGod",
+    "FlyingHat",
+    "BoneGod",
+    "Raven",
+    "Rat",
+    "Kitten",
+    "pigeon",
+    "GenericBirdNoShadow",
+    "GenericBirdNoShadowPersistent",
+    "AnimatedObjectComplexPersistentGrab",
+    "AnimatedObjectComplexPersistent",
+    "AnimatedObjectComplex",
+    "AnimatedObjectComplexGlobalAlpha",
+    "AnimatedObjectComplexShadow",
+    "AnimatedObjectComplexHitTri",
+    "AnimatedObjectComplexHitTriShadow",
+    "AnimatedObjectComplexPersistentHitTri",
+    "AnimatedObjectComplexPersistentHitTriShadow",
+    "AnimatedObjectComplexButton",
+    "AnimatedObjectComplexButtonHitTri",
+    "AnimatedObjectPersistent",
+    "AnimatedObject",
+    "AnimatedObjectComplexPlatform",
+    "SlotMachine",
+    "Camera",
+    "CameraMount",
+    "ZoneRadius",
+    "LightPoint",
+    "LightSpot",
+    "LightDirectional",
+    "ZoneFromNavGraph",
+    "CameraYawMarker",
+    "GenericDog",
+    "PlayerDog",
+    "FootPrints",
+    "FootPrintTrail",
+    "EggSmashing",
+    "SteamJet",
+    "BreathPuff",
+    "BoneScent",
+    "PersonScent",
+    "PersonFearScent",
+    "FartScent",
+    "DogFartScent",
+    "AnimalScent",
+    "TuneScent",
+    "PinkScent",
+    "DogScent",
+    "RocketParticleSystem",
+    "HelicopterParticleSystem",
+    "RocketPieceParticleTrail",
+    "BoneAppearParticles",
+    "Person",
+    "PersonNoShadow",
+    "PersonNotPersistent",
+    "PersonNotPersistentNoShadow",
+    "ScentExploreChallenge",
+    "ScentGreen",
+    "ScentRed",
+    "ScentViolet",
+    "ScentOrange",
+    "ScentBlue",
+    "ScentYellow",
+    "ScentCyan",
+    "ScentPursuit",
+    "Slidable",
+    "SlidableBlockPuzzle",
+    "GenericWheeledVehicle",
+    "GenericWheeledVehicleNoShadow",
+    "Motorbike",
+    "Skidoo",
+    "WaterSplashManager",
+    "StaticWaterRipple",
+    "DustEffectManager",
+    "CrateSmashingParticles",
+    "Selector",
+    "TitleObject",
+    "SaveIslandDog",
+    "Cloth",
+    "WhiteEgg",
+    "BasketballNet",
+    "fox",
+    "Sheep",
+    "SkiLiftSeat",
+    "SkiSnowPuff",
+    "SkiSnowTrail",
+    "RatTrashCan",
+    "SwingBridge",
+    "DogFartBubbles",
+    "chicken",
+    "ChickenFeathers",
+    "BeeSwarm",
+    "Fish",
+    "TugOfWarGod",
+    "TugOfWarRopeEnd",
+    "Skunk",
+    "SkunkFur",
+    "SkunkSprayParticles",
+    "Cat",
+    "CatFur",
+    "ParrotFeathers",
+    "ParlourParticles",
+    "DustPuff",
+    "Snowman",
+    "Snowball",
+    "SnowballHit1",
+    "SnowballHit2",
+    "SndwballHit3",
+    "ThrowSnowball",
+    "ThrowSnowballNoPickUp",
+    "Boulder",
+    "TomatoHit1",
+    "TomatoHit2",
+    "TomatoHit3",
+    "TomatoHit4",
+    "Platform",
+    "SwingPlatform",
+    "CanningMachine",
+    "Spanner",
+    "FlamerFlames",
+    "FlamerFlames2",
+    0 // padding?
+};
+#endif
+
+#ifdef NON_MATCHING
+const char* D_00368860[] = { // DogsTaleLand names
+    "construction",
+    "GameCreatures",
+    "DogKennel",
+    "Landscape",
+    "StageCreatures",
+    0
+};
+#endif
+
+// const char* D_00368878[] = { // Animation names
+// "Null",
+// "HotdogCanter",
+// "HotDogCanterHappy",
+// "HotDogCanterSad",
+// "HotdogWalk",
+// "HotDogWalkHappy",
+// "HotDogWalkSad",
+// "
+// };
+//
+// const char* D_00369F10[] = { // Script names
+// };
+//
+// const char* D_0036A3B8[] = { // NavGraph names
+// };
+//
+// const char* D_0036A820[] = { // Music names
+// };
+//
+#ifdef NON_MATCHING
+const char** D_0036B828[] = {
+//     D_00366620,
+//     D_00366A90,
+//     D_00367D30,
+//     D_00368238,
+//     D_003685F0,
+    D_00368860,
+//     D_00368878,
+//     D_00369F10,
+//     D_0036A3B8,
+//     D_0036A820,
+    0 // padding?s
+};
+#endif
 
 class Resource_LayoutGroup : public Resource_LayoutUnit {
     public:
@@ -404,12 +933,12 @@ class Resource_LayoutGroup : public Resource_LayoutUnit {
         virtual ~Resource_LayoutGroup();
 };
 
-// class Resource_LayoutInclusiveGroup : public Resource_LayoutGroup {
-//     public:
-//         virtual ~Resource_LayoutInclusiveGroup();
+class Resource_LayoutInclusiveGroup /*: public Resource_LayoutGroup*/ {
+    public:
+        virtual ~Resource_LayoutInclusiveGroup();
             //func_00274A00
-//
-// };
+
+};
 
 
 class FileSystemDisc {
@@ -444,11 +973,12 @@ class StorageDevice {
         virtual ~StorageDevice();
 };
 
-/*
-class StorageDevice_MemCard : public StorageDevice {
+
+class StorageDevice_MemCard /*: public StorageDevice*/ {
     public:
         StorageDevice_MemCard(int card);
-};*/
+};
+
 class Widget_Border {
 
 };
@@ -492,10 +1022,10 @@ class FileFindAccess_Nul : public FileFind::Access {
 
 class File_FileDescriptor : public File::Access {
     public:
-        int m_fd;
+        /* 0x8 */ int m_fd;
         int unkC;
         int unk10;
-        int m_offset;
+        /* 0x14 */ int m_offset;
         int unk18;
         int unk1C;
         File_FileDescriptor(int fd);
@@ -825,10 +1355,45 @@ class DebugLayer /* : public Widget_Pane */ {
 };
 
 typedef struct {
+
+    // 4 bytes? unk1C (popup text thing?)
+    // 0x0 - no text
+    // 0x1 - checking memory card
+    // 0x2 - checking memory card?
+    // 0x3 - no memory card inserted
+    // 0x4 - memory card not formatted
+    // 0x5 - formatting memory card
+    // 0x6 - failed to format
+    // 0x7 - memory card 1 has no save file
+    // 0x8 - creating a save file
+    // 0x9 - failed to create save file
+    // 0xA - memory card 1 has insufficient space
+    // 0xB - A game file is corrupt
+    // 0xC - saving game data to memory card 1 (paw)
+    // 0xD - saving game data to memory card 1 (no paw)
+    // 0xE - choose a game file
+    // 0xF - the existing saved game will be lost
+    // 0x10 - select language
+    // 0x11 - ?
+    // 0x12 - controller disconnected
+    // 0x13 - controller connected
+    // 0x14 - ?
+    // 0x15 - game save failed
+    // 0x16 - memory card was removed
+    // 0x17 - insert disc
+    // 0x18 - press start
+    // 0x19 - loading data
+    // 0x1A - ?
+
     /* 0x20 */ int m_cardSlot;
     /* 0X20 */ int m_gameSlot;
     /* 0x28 */ int m_mediaReady;
+
+    // 4 bytes? unk30 (fade out thing?)
 } s_D_00453698;
+
+
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -1041,14 +1606,14 @@ int func_001FD558(char* arg0, char* arg1);
 }
 #endif
 
-void IOPMem_Finalise(void);
+void IOPMem_Finalise();
 
-Status SimObj_InternalInitialise(void);
-void SimObj_InternalFinalise(void);
-Status SimObj_Initialise(void);
-void SimObj_Finalise(void);
+Status SimObj_InternalInitialise();
+void SimObj_InternalFinalise();
+Status SimObj_Initialise();
+void SimObj_Finalise();
 
-Status StdMem_Initialise(void);
+Status StdMem_Initialise();
 
 void Main_RunGame();
 

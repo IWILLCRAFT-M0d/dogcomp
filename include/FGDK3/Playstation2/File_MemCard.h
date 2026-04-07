@@ -12,8 +12,8 @@
 class File_MemCard : public File::Access {
     public:
         void* unk8;
-        int m_fd; // sce filedescriptor
-        int m_offset; // sce offset
+        /* 0xC */ int m_fd; // sce filedescriptor
+        /* 0x10 */ int m_offset; // sce offset
         int unk14;
         // File_MemCard(void*, int, int)
         virtual ~File_MemCard();
@@ -21,9 +21,9 @@ class File_MemCard : public File::Access {
 
 extern void * const File_MemCard_StdInit_UsedModules[];
 
-Status File_MemCard_InternalInitialise(void);
-void File_MemCard_InternalFinalise(void);
-Status File_MemCard_Initialise(void);
-void File_MemCard_Finalise(void);
+Status File_MemCard_InternalInitialise();
+void File_MemCard_InternalFinalise();
+Status File_MemCard_Initialise();
+void File_MemCard_Finalise();
 
 #endif

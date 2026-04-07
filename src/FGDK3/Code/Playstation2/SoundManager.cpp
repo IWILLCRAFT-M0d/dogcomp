@@ -30,11 +30,11 @@ void * const SoundManager_StdInit_UsedModules[] = {
     0,
 };
 
-Status SoundManager_Initialise(void) {
+Status SoundManager_Initialise() {
         return StdInit_InitialisationSequence(&SoundManager_StdInit_Description);
 }
 
-void SoundManager_Finalise(void) {
+void SoundManager_Finalise() {
     StdInit_FinalisationSequence(&SoundManager_StdInit_Description);
 }
 

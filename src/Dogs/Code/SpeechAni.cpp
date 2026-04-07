@@ -81,7 +81,7 @@ void SoundEverywhere::func_0022BB88() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BB90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BB90); // SoundEverywhere member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022BC98);
 

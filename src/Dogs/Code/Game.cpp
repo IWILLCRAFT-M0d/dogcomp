@@ -291,15 +291,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9F20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA000);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA038);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA038); // ? func_001CA038(Game_Document*,)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA9A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAA00);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAC10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAC10); // ? func_001CAC10(Game_Document*,)
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CADD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CADD8); // ? func_001CADD8(Game_Document*,)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAE08);
 
@@ -307,7 +307,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CB1D8__13Game_Document);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E0FA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCB68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCB68); // used for profile script ui
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCD78);
 

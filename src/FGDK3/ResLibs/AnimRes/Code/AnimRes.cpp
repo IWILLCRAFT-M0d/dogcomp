@@ -8,7 +8,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0
 
 #ifdef NON_MATCHING
 
-Status AnimationRes_InternalInitialise(void) {
+Status AnimationRes_InternalInitialise() {
     func_002757E8();
     return Status(0xFFFFFFFF,"c:/coding/fgdk3/ResLibs/AnimRes/Code/AnimRes.cpp", 75);
 }
@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_
 #endif
 
 //INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalFinalise__Fv);
-void AnimationRes_InternalFinalise(void) {
+void AnimationRes_InternalFinalise() {
     func_002757F0();
 }
 
@@ -40,11 +40,11 @@ void * const AnimationRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status AnimationRes_Initialise(void) {
+Status AnimationRes_Initialise() {
     return StdInit_InitialisationSequence(&AnimationRes_StdInit_Description);
 }
 
-void AnimationRes_Finalise(void) {
+void AnimationRes_Finalise() {
     StdInit_FinalisationSequence(&AnimationRes_StdInit_Description);
 }
 

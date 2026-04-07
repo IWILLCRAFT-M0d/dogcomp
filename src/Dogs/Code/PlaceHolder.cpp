@@ -19,9 +19,9 @@ PlaceHolder::PlaceHolder(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", __11PlaceHolderP9ClassInfoP15SimObj_Universeis);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D138);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D138); // PlaceHolder virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D160);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D160); // PlaceHolder virtual (float arg1)
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlaceHolder", D_003B3740);
 

@@ -10,10 +10,10 @@
 
 extern void * const Creatres_StdInit_UsedModules[];
 
-Status Creatres_InternalInitialise(void);
-void Creatres_InternalFinalise(void);
-Status Creatres_Initialise(void);
-void Creatres_Finalise(void);
+Status Creatres_InternalInitialise();
+void Creatres_InternalFinalise();
+Status Creatres_Initialise();
+void Creatres_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

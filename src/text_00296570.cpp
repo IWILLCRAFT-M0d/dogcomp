@@ -85,7 +85,7 @@ ClassInfo::ClassInfo() {
     this->unk18 = 0;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00296570", __9ClassInfo); /* ClassInfo */
+INCLUDE_ASM("asm/nonmatchings/text_00296570", __9ClassInfo);
 #endif
 
 
@@ -97,6 +97,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296AF0); /* rct ClassInfo::
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296CB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296D40); /* rct3 InterfaceTag::InterfaceTag */
+// "There are more than %i interfaces (%i, in fact): the ClassInfo interface arrays should become cleverer."
 
 INCLUDE_ASM("asm/nonmatchings/text_00296570", func_00296FB0);
 

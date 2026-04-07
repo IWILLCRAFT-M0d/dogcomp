@@ -8,10 +8,10 @@
 
 extern void * const Sound_StdInit_UsedModules[];
 
-Status Sound_InternalInitialise(void);
-void Sound_InternalFinalise(void);
-Status Sound_Initialise(void);
-void Sound_Finalise(void);
+Status Sound_InternalInitialise();
+void Sound_InternalFinalise();
+Status Sound_Initialise();
+void Sound_Finalise();
 
 class SoundImplementation {
     public:

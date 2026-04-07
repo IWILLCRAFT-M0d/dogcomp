@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AB08);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026ABD8);
 
-Status TimSrv_InternalInitialise(void) {
+Status TimSrv_InternalInitialise() {
     return func_0026ABD8();
 }
 
@@ -34,11 +34,11 @@ void * const TimSrv_StdInit_UsedModules[] = {
     0,
 };
 
-Status TimSrv_Initialise(void) {
+Status TimSrv_Initialise() {
     return StdInit_InitialisationSequence(&TimSrv_StdInit_Description);
 }
 
-void TimSrv_Finalise(void) {
+void TimSrv_Finalise() {
     StdInit_FinalisationSequence(&TimSrv_StdInit_Description);
 }
 
@@ -50,7 +50,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_Finalise__
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_GetTime);
 /*
-long TimSrv_GetTime(void) {
+long TimSrv_GetTime() {
     long temp_16;
 
     DisableIntc(9);

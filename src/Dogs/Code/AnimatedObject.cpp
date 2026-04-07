@@ -113,17 +113,24 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102E70); // "Unk
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102EE0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102F00); /* slotmachine ? */
+#ifdef NON_MATCHING
+SlotMachine::SlotMachine(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    this->m_numSlots = 0;
+    this->m_pulled = false;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", __11SlotMachineP9ClassInfoP15SimObj_Universeis);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103050); // "Unknown extra for SlotMachine creature"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103140); // "Invalid matrix for rotation in slot machine!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103658);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103658); // SlotMachine function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103750);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103750); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103818);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00103818); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001038C0);
 

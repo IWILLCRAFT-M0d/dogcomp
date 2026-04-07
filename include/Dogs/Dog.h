@@ -19,6 +19,8 @@ class Dog : public WorldObject {
         float unk858;
         int unk85C;
         float unk868; // status bone height
+        // 0x86C float boneScale
+        // 0x870 float boneRotation
 
         union {int i;float f;} unkB0C; // shinyness?
         Dog(ClassInfo*, SimObj_Universe*, int, short);

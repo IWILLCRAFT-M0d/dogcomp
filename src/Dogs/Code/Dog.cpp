@@ -129,13 +129,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001349B8); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134B10__3Dog); // dog rendering function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DB0); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DD0); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135DF0); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135E08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00135E08); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001364A0);
 
@@ -215,9 +215,9 @@ void Dog::func_001365C8(float arg) {
     this->unk844 = arg;
 }
 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365D0); // Dog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365F8); // Dog member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136628__3Dogf);
 /*

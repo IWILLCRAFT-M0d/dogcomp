@@ -5,7 +5,7 @@
 
 #ifdef NON_MATCHING
 
-Status InputEvent_InternalInitialise(void) {
+Status InputEvent_InternalInitialise() {
     int D_00452E30 = 0;
     int D_00452E34 = 0;
     int D_00452E40 = 0;
@@ -39,11 +39,11 @@ void * const InputEvent_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputEvent_Initialise(void) {
+Status InputEvent_Initialise() {
     return StdInit_InitialisationSequence(&InputEvent_StdInit_Description);
 }
 
-void InputEvent_Finalise(void) {
+void InputEvent_Finalise() {
     StdInit_FinalisationSequence(&InputEvent_StdInit_Description);
 }
 

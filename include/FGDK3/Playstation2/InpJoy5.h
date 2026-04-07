@@ -7,10 +7,10 @@
 
 extern void * const InputJoy5_StdInit_UsedModules[];
 
-Status InputJoy5_InternalInitialise(void);
-void InputJoy5_InternalFinalise(void);
-Status InputJoy5_Initialise(void);
-void InputJoy5_Finalise(void);
+Status InputJoy5_InternalInitialise();
+void InputJoy5_InternalFinalise();
+Status InputJoy5_Initialise();
+void InputJoy5_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

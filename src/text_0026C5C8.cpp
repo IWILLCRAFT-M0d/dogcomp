@@ -8,7 +8,7 @@
 
 #ifdef NON_MATCHING
 
-Status StdMem_InternalInitialise(void) {
+Status StdMem_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/StdMem.cpp", 986);
 }
 
@@ -16,7 +16,7 @@ Status StdMem_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/text_0026C5C8", StdMem_InternalInitialise__Fv);
 #endif
 
-void StdMem_InternalFinalise(void) {
+void StdMem_InternalFinalise() {
     return;
 }
 

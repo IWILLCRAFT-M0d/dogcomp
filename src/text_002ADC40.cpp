@@ -538,7 +538,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BBEF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BBF38);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BBF48);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BBF48); // set texture?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BC3D8);
 
@@ -1010,13 +1010,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5B28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5B60); // render bones?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5DA8);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5DA8); // texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5E90); // lighting?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5ED0);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C5ED0); // shading thing?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6358);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6358); // texture thing
 
 void func_002C6480(void) {
 	return;
@@ -1036,17 +1036,17 @@ int func_002C6498(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C64A0); // ui element stuff, shadows?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C66A8); // texture thing
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C66A8); // texture thing; ge_device/GE_PS2Device virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6AC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C28);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C28); /* return a0->unk764 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C30); // landscape textures?
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C30); // set Landscape texture (GE_PS2Device, texture*)
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C60); // font rendering
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C60); // font rendering/texture (GE_PS2Device*, texture*)
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C98);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6C98); // landscape texture thing?; GE_PS2Device virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6CD0);
 
@@ -1058,9 +1058,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6D98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6DE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6E68); // texture thing
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6E68); //GE_PS2Device/GE_Device virtual; texture thing
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6EF0); // texture thing
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6EF0); // GE_PS2Device/GE_Device virtual; texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6F88); // texture thing
 
@@ -1068,27 +1068,58 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7030);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C70E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C71B0);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C71B0); // GE_PS2Device/GE_Device virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7288);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7370);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7468);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7468); //GE_PS2Device/GE_Device virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7520);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7520); // GE_PS2Device/GE_Device virtual; culling function?
+/*
+s32 func_002C7520(s32 arg0, s32 arg1) {
+    switch (arg1) {
+    case 1:
+        return arg0 + 0x830;
+    case 2:
+        return arg0 + 0x7B0;
+    case 3:
+        return arg0 + 0x7F0;
+    case 4:
+        return arg0 + 0x870;
+    case 5:
+        return arg0 + 0x8B0;
+    case 6:
+        return arg0 + 0x8F0;
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+        return arg0 + ((arg1 << 6) + 0x570);
+    case 24:
+        return arg0 + 0x930;
+    default:
+        return 0;
+    }
+}
+*/
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C75A0); // camera rendering?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7A48); /* a0->unkD70 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7A50);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7A50); // texture/font related, GE_Device/GE_PS2Device virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7CF8);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7CF8); // actor rendering?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7D30); // render scale in book?
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C7D30); // (GE_PS2Device*,) ; render scale in book?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8218); /* GE_Device::SetTarget ? */
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8218); /* GE_Device::SetTarget(GE_Target*) ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C82A8); /* GE_Device::Suspend ? */
 
@@ -1118,7 +1149,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8FC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8FF8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C9048);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C9048); // GE_Device/GE_PS2Device member
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C9070);
 

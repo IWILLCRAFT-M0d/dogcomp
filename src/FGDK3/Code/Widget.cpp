@@ -202,7 +202,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E810);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E868); /* return 0xe0; */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E870);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E870); // Widget_Graphic virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E928);
 

@@ -28,4 +28,13 @@ class AnimatedObject_ComplexHitReceiver /* : public SimObj_HitReceiver */ {
         virtual void func_001041C8();
 };
 
+
+class SlotMachine : public HitTri_Object {
+    public:
+        /* 0x638 */ int m_numSlots; // 0-3
+        /* 0x63C */ bool m_pulled;
+        SlotMachine(ClassInfo*, SimObj_Universe*, int, short);
+        virtual ~SlotMachine();
+};
+
 #endif

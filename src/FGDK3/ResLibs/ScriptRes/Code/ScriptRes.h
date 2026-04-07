@@ -7,10 +7,18 @@
 
 extern void * const ScriptRes_StdInit_UsedModules[];
 
-Status ScriptRes_InternalInitialise(void);
-void ScriptRes_InternalFinalise(void);
-Status ScriptRes_Initialise(void);
-void ScriptRes_Finalise(void);
+Status ScriptRes_InternalInitialise();
+void ScriptRes_InternalFinalise();
+Status ScriptRes_Initialise();
+void ScriptRes_Finalise();
+
+
+// class ScriptHeader {
+// };
+
+class Script_Resources /* : public Resource<ScriptHeader> */ {
+
+};
 
 #ifdef __cplusplus
 extern "C" {
@@ -66,7 +74,5 @@ void func_0031EA48(void);
 }
 #endif
 
-class ScriptHeader {
-};
 
 #endif

@@ -59,7 +59,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00335D90); /* qsort */
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003367B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003367C8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", rand);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003367F8);
 
@@ -383,7 +383,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00340F20);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00340F30);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00340F40);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", AddIntcHandler2);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00340F50);
 

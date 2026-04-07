@@ -41,7 +41,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A4E0__6Button); // but
 #endif
 
 #ifdef NON_MATCHING
-int Button::func_0010A550() {
+int Button::func_0010A550() { // GetButtonType?
     return this->unk5EC;
 }
 #else
@@ -57,6 +57,7 @@ ClassInfo* Button::func_0010A6F0() {
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A6F8);
+
 // vtables
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Button", D_0039C1D0);
 

@@ -4,7 +4,6 @@
 
 #include "FGDK3/Playstation2/IOPMem.h"
 #include <libscf.h>
-#include <sound.h>
 #include <ee/sifdev.h>
 #include "FGDK3/ThrowCat.h"
 
@@ -111,7 +110,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CAF00);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC1C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC250);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC250); // ? func_002CC250(GE_Device*,)
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC2E0);
 
@@ -129,7 +128,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC4A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC4B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CD060);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CD060); // ? func_002CD060(GE_Device*,)
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CD0C0);
 
@@ -151,9 +150,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEA98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB20);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB78);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB78); // font icons function?
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEC18);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEC18); // this function deals with font rendering
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CF2D8);
 

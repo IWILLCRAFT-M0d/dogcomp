@@ -9,9 +9,9 @@
 
 extern void * const InputEvent_StdInit_UsedModules[];
 
-Status InputEvent_InternalInitialise(void);
-void InputEvent_InternalFinalise(void);
-Status InputEvent_Initialise(void);
-void InputEvent_Finalise(void);
+Status InputEvent_InternalInitialise();
+void InputEvent_InternalFinalise();
+Status InputEvent_Initialise();
+void InputEvent_Finalise();
 
 #endif

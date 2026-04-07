@@ -4,7 +4,7 @@
 #include "unk.h"
 
 #ifdef NON_MATCHING
-Status TextRes_InternalInitialise(void) {
+Status TextRes_InternalInitialise() {
   return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/TextRes.cpp", 45);
 }
 #else
@@ -31,11 +31,11 @@ void * const TextRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status TextRes_Initialise(void) {
+Status TextRes_Initialise() {
     return StdInit_InitialisationSequence(&TextRes_StdInit_Description);
 }
 
-void TextRes_Finalise(void) {
+void TextRes_Finalise() {
     StdInit_FinalisationSequence(&TextRes_StdInit_Description);
 }
 

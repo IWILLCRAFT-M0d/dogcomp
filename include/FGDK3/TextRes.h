@@ -5,14 +5,14 @@
 
 #include "FGDK3/ThrowCat.h"
 
-#include "unk.h"
+//#include "unk.h"
 
 extern void * const TextRes_StdInit_UsedModules[];
 
-Status TextRes_InternalInitialise(void);
-void TextRes_InternalFinalise(void);
-Status TextRes_Initialise(void);
-void TextRes_Finalise(void);
+Status TextRes_InternalInitialise();
+void TextRes_InternalFinalise();
+Status TextRes_Initialise();
+void TextRes_Finalise();
 
 #ifdef __cplusplus
 extern "C" {
@@ -22,7 +22,7 @@ void func_0026C4E0(void*, char*);
 }
 #endif
 
-class Text_Resources : Resource<char> {
+class Text_Resources /*: Resource<char>*/ {
 
 };
 

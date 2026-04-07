@@ -11,7 +11,7 @@
 extern float D_00452910;
 void GameShell::Step() {
 
-if (this->m_gamespeed <= D_00452910) {
+if (this->m_gameSpeed <= D_00452910) {
 
 }
 
@@ -20,31 +20,25 @@ if (this->m_gamespeed <= D_00452910) {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", Step__9GameShellG9GameShell);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D2F98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D2F98); // (GameShell*,)
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3020);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3020); // (GameShell*,)
 
-#ifdef NON_MATCHING
-void GameShell::func_002D30A8(int arg1) { // rct3 GameShell::Activate?
-    this->unk1C = arg1 ^ 1;
+
+void GameShell::func_002D30A8(bool arg1) { // rct3 GameShell::Activate?
+    this->m_disabled = !arg1;
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D30A8__9GameShelli);
-#endif
+
 
 #ifdef NON_MATCHING
-GameShell* D_004528EC;
-GameShell::GameShell(float fps, float gamespeed) {
-  long uVar1;
-
+GameShell::GameShell(float fps, float gameSpeed) {
   func_002D3360(this);
-  this->m_gametime = 0.0f;
-  uVar1 = TimSrv_GetTime();
-  this->unk8= uVar1;
-  this->m_fps = fps; // unk10
-  this->m_gamespeed = gamespeed; // unk14
-  this->unk1C = 0; // input is disabled when != 0 ?
-  if (D_004528EC != NULL) { // m_me?
+  this->m_gameTime = 0.0f;
+  this->unk8 = TimSrv_GetTime();
+  this->m_fps = fps;
+  this->m_gameSpeed = gameSpeed;
+  this->m_disabled = false;
+  if (D_004528EC != NULL) {
     DDE_FatalError("More than one GameShell instance not allowed");
   }
   //D_004528EC = this;
@@ -70,16 +64,16 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3360); /* TimSrv_C
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D33C0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3428);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3428); /* return (float) unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3460); /* return m_me */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3490);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3490); /* return (float) unk20 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D34C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D34C8); /* return (float) unk24 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3500);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3500); /* float 0x10 = arg1 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3530);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3530); /* float 0x14 = arg1 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3560);

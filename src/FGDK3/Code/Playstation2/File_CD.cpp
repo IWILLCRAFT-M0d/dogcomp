@@ -29,11 +29,11 @@ void * const File_CD_StdInit_UsedModules[] = {
     0,
 };
 
-Status File_CD_Initialise(void) {
+Status File_CD_Initialise() {
     return StdInit_InitialisationSequence(&File_CD_StdInit_Description);
 }
 
-void File_CD_Finalise(void) {
+void File_CD_Finalise() {
     StdInit_FinalisationSequence(&File_CD_StdInit_Description);
 }
 
@@ -53,6 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __7File_CDPG10sc
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_7File_CD);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003030E8); // File_CD Member
+
 #ifdef NON_MATCHING
 int File_CD::func_00303110() {
     return this->unkC;
@@ -117,13 +118,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304660);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003046C8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730); // FileSystemDisc_CD member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768); // FileSystemDisc_CD member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __17FileSystemDisc_CD);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304830);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304830); // FileSystemDisc_CD member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304860);
 

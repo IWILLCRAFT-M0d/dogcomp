@@ -17,12 +17,12 @@ class InputKeyboard_Device : public InputDevice_Device {
 
 extern void * const InputKeyboard_StdInit_UsedModules[];
 
-Status InputKeyboard_InternalInitialise(void);
-void InputKeyboard_InternalFinalise(void);
-Status InputKeyboard_Initialise(void);
-void InputKeyboard_Finalise(void);
+Status InputKeyboard_InternalInitialise();
+void InputKeyboard_InternalFinalise();
+Status InputKeyboard_Initialise();
+void InputKeyboard_Finalise();
 
-void InputKeyboard_SuspendThread(void);
-void InputKeyboard_ResumeThread(void);
+void InputKeyboard_SuspendThread();
+void InputKeyboard_ResumeThread();
 
 #endif

@@ -9,10 +9,14 @@
 
 extern void * const SoundRes_StdInit_UsedModules[];
 
-Status SoundRes_InternalInitialise(void);
-void SoundRes_InternalFinalise(void);
-Status SoundRes_Initialise(void);
-void SoundRes_Finalise(void);
+Status SoundRes_InternalInitialise();
+void SoundRes_InternalFinalise();
+Status SoundRes_Initialise();
+void SoundRes_Finalise();
+
+class Sound_Resources /* : public Resource<SoundEffect> */ {
+
+};
 
 #ifdef __cplusplus
 extern "C" {

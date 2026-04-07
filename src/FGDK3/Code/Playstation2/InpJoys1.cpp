@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F9020);
 
 #ifdef NON_MATCHING
 
-Status InputJoystick1_InternalInitialise(void) {
+Status InputJoystick1_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/InpJoys1.cpp", 61);
 }
 
@@ -48,11 +48,11 @@ void * const InputJoystick1_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputJoystick1_Initialise(void) {
+Status InputJoystick1_Initialise() {
     return StdInit_InitialisationSequence(&InputJoystick1_StdInit_Description);
 }
 
-void InputJoystick1_Finalise(void) {
+void InputJoystick1_Finalise() {
     StdInit_FinalisationSequence(&InputJoystick1_StdInit_Description);
 }
 

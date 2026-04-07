@@ -6,9 +6,9 @@
 extern void * const Objects_StdInit_UsedModules[];
 
 
-Status Objects_InternalInitialise(void);
-void Objects_InternalFinalise(void);
-Status Objects_Initialise(void);
-void Objects_Finalise(void);
+Status Objects_InternalInitialise();
+void Objects_InternalFinalise();
+Status Objects_Initialise();
+void Objects_Finalise();
 
 #endif

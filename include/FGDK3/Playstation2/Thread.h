@@ -200,10 +200,10 @@ class PS2SemaphoreImplementation : /* 0x00 */ public Semaphore::Implementation {
     /* vtbl[4] */ virtual int Poll();
 };
 
-Status Thread_InternalInitialise(void);
-void Thread_InternalFinalise(void);
-Status Thread_Initialise(void);
-void Thread_Finalise(void);
+Status Thread_InternalInitialise();
+void Thread_InternalFinalise();
+Status Thread_Initialise();
+void Thread_Finalise();
 
 
 #endif

@@ -5,10 +5,10 @@
 
 extern void * const Landscape_StdInit_UsedModules[];
 
-Status Landscape_InternalInitialise(void);
-void Landscape_InternalFinalise(void);
-Status Landscape_Initialise(void);
-void Landscape_Finalise(void);
+Status Landscape_InternalInitialise();
+void Landscape_InternalFinalise();
+Status Landscape_Initialise();
+void Landscape_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

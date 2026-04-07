@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 //     s32 temp_2_8;
     int var_16;
 //     s32 var_16_2;
-//     s32 var_17;
+    int var_17;
 //     void* temp_2;
 //     void* temp_2_2;
 //     void* temp_2_3;
@@ -36,18 +36,18 @@ int main(int argc, char* argv[]) {
 //     void* temp_8_2;
 //     void** temp_20_2;
 
-//     var_17 = 0;
+    var_17 = 0;
 
     Semaphore_Initialise();
     IOPMem_Initialise();
     GE_Initialise();
     RunPath_Initialise();
     if (argc >= 2) {
-//         if (strcmp(argv->unk4, "spongebob") == 0) {
-//             var_17 = 1;
-//             goto block_7;
-//         }
-//         func_001C5518(sp, argv->unk4);
+        if (strcmp(argv[1], "spongebob") == 0) {
+            var_17 = 1;
+            goto block_7;
+        }
+//         func_001C5518(sp, argv[1]);
 //         sp14 = &_vt$6Status;
 //         sp10 = (s32* )0xFFFFFFFF;
 //         _6Status$m_file = "c:/coding/dogs/Code/Playstation2/Main.cpp";

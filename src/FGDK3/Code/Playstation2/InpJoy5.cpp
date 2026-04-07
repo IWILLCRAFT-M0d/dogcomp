@@ -3,7 +3,7 @@
 #include "FGDK3/Playstation2/InpJoy5.h"
 
 #ifdef NON_MATCHING
-Status InputJoy5_InternalInitialise(void) {
+Status InputJoy5_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/InpJoy5.cpp", 41);
 }
 
@@ -31,11 +31,11 @@ void * const InputJoy5_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputJoy5_Initialise(void) {
+Status InputJoy5_Initialise() {
     return StdInit_InitialisationSequence(&InputJoy5_StdInit_Description);
 }
 
-void InputJoy5_Finalise(void) {
+void InputJoy5_Finalise() {
     StdInit_FinalisationSequence(&InputJoy5_StdInit_Description);
 }
 
@@ -46,7 +46,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoy5", InputJoy5_Finali
 
 #ifdef NON_MATCHING
 
-Status func_002F94A8(void) {
+Status func_002F94A8() {
     return Status(0xFFFFFFFF, 0, -1);
 }
 
@@ -59,7 +59,7 @@ void func_002F94E0() {
 }
 #ifdef NON_MATCHING
 
-Status func_002F94E8(void) {
+Status func_002F94E8() {
     return Status(0xFFFFFFFF, 0, -1);
 }
 

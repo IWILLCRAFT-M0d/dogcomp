@@ -5,7 +5,7 @@
 #include "Dogs/Gameutil.h"
 
 #ifdef NON_MATCHING
-Status Gameutil_InternalInitialise(void) {
+Status Gameutil_InternalInitialise() {
 	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Gameutil.cpp", 69);
 }
 #else

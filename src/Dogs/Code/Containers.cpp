@@ -53,7 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __13BasketballNetP9ClassInf
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_13BasketballNet);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABCA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABCA8); // virtual BasketballNet member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFB8);
 

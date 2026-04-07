@@ -9,9 +9,9 @@
 
 extern void * const SoundManager_StdInit_UsedModules[];
 
-Status SoundManager_InternalInitialise(void);
-void SoundManager_InternalFinalise(void);
-Status SoundManager_Initialise(void);
-void SoundManager_Finalise(void);
+Status SoundManager_InternalInitialise();
+void SoundManager_InternalFinalise();
+Status SoundManager_Initialise();
+void SoundManager_Finalise();
 
 #endif

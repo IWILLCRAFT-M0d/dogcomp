@@ -8,10 +8,10 @@
 
 extern void * const MusicRes_StdInit_UsedModules[];
 
-Status MusicRes_InternalInitialise(void);
-void MusicRes_InternalFinalise(void);
-Status MusicRes_Initialise(void);
-void MusicRes_Finalise(void);
+Status MusicRes_InternalInitialise();
+void MusicRes_InternalFinalise();
+Status MusicRes_Initialise();
+void MusicRes_Finalise();
 
 #ifdef __cplusplus
 extern "C" {
@@ -21,5 +21,9 @@ char * func_0027ED38(void);
 #ifdef __cplusplus
 }
 #endif
+
+class Music_Resources /* : public Resource<Music_Piece> */ {
+
+};
 
 #endif

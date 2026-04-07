@@ -17,13 +17,13 @@ class InputMouse_Device : public InputDevice_Device {
 
 extern void * const InputMouse_StdInit_UsedModules[];
 
-Status InputMouse_InternalInitialise(void);
-void InputMouse_InternalFinalise(void);
-Status InputMouse_Initialise(void);
-void InputMouse_Finalise(void);
+Status InputMouse_InternalInitialise();
+void InputMouse_InternalFinalise();
+Status InputMouse_Initialise();
+void InputMouse_Finalise();
 
-void InputMouse_SuspendThread(void);
-void InputMouse_ResumeThread(void);
+void InputMouse_SuspendThread();
+void InputMouse_ResumeThread();
 
 
 #endif

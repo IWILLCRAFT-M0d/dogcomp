@@ -11,10 +11,11 @@
 #include "FGDK3/Playstation2/InpJoy5.h"
 // other headers go here
 
+extern void * const InputUtil_StdInit_UsedModules[];
 
-Status InputUtil_InternalInitialise(void);
-void InputUtil_InternalFinalise(void);
-Status InputUtil_Initialise(void);
-void InputUtil_Finalise(void);
+Status InputUtil_InternalInitialise();
+void InputUtil_InternalFinalise();
+Status InputUtil_Initialise();
+void InputUtil_Finalise();
 
 #endif

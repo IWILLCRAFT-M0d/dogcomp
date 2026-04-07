@@ -14,10 +14,10 @@ typedef struct {
 
 extern void * const WorldObj_StdInit_UsedModules[];
 
-Status WorldObj_InternalInitialise(void);
-void WorldObj_InternalFinalise(void);
-Status WorldObj_Initialise(void);
-void WorldObj_Finalise(void);
+Status WorldObj_InternalInitialise();
+void WorldObj_InternalFinalise();
+Status WorldObj_Initialise();
+void WorldObj_Finalise();
 
 
 class WorldObject : public SimObj_ObjectWithMomentum {

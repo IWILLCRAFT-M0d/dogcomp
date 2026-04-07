@@ -9,10 +9,10 @@
 
 extern void * const InputJoystick1_StdInit_UsedModules[];
 
-Status InputJoystick1_InternalInitialise(void);
-void InputJoystick1_InternalFinalise(void);
-Status InputJoystick1_Initialise(void);
-void InputJoystick1_Finalise(void);
+Status InputJoystick1_InternalInitialise();
+void InputJoystick1_InternalFinalise();
+Status InputJoystick1_Initialise();
+void InputJoystick1_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

@@ -4,7 +4,7 @@
 #include "unk.h"
 
 #ifdef NON_MATCHING
-Status ScriptRes_InternalInitialise(void) {
+Status ScriptRes_InternalInitialise() {
     func_002757E8();
     func_0031CB30();
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/ScriptRes/Code/ScriptRes.cpp", 124);
@@ -31,11 +31,11 @@ void * const ScriptRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status ScriptRes_Initialise(void) {
+Status ScriptRes_Initialise() {
     return StdInit_InitialisationSequence(&ScriptRes_StdInit_Description);
 }
 
-void ScriptRes_Finalise(void) {
+void ScriptRes_Finalise() {
     StdInit_FinalisationSequence(&ScriptRes_StdInit_Description);
 }
 

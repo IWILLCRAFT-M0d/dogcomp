@@ -5,7 +5,7 @@
 
 #ifdef NON_MATCHING
 
-Status Objects_InternalInitialise(void) {
+Status Objects_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Objects.cpp", 205);
 }
 
@@ -13,7 +13,7 @@ Status Objects_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", Objects_InternalInitialise__Fv);
 #endif
 
-void Objects_InternalFinalise(void) {
+void Objects_InternalFinalise() {
     return;
 }
 
@@ -31,11 +31,11 @@ void * const Objects_StdInit_UsedModules[] = {
     0,
 };
 
-Status Objects_Initialise(void) {
+Status Objects_Initialise() {
     return StdInit_InitialisationSequence(&Objects_StdInit_Description);
 }
 
-void Objects_Finalise(void) {
+void Objects_Finalise() {
     StdInit_FinalisationSequence(&Objects_StdInit_Description);
 }
 

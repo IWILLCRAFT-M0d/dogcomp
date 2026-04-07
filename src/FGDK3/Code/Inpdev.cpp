@@ -28,11 +28,11 @@ void * const InputDevice_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputDevice_Initialise(void) {
+Status InputDevice_Initialise() {
     return StdInit_InitialisationSequence(&InputDevice_StdInit_Description);
 }
 
-void InputDevice_Finalise(void) {
+void InputDevice_Finalise() {
     StdInit_FinalisationSequence(&InputDevice_StdInit_Description);
 }
 

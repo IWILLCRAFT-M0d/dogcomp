@@ -6,9 +6,9 @@
 
 extern void * const File_StdInit_UsedModules[];
 
-Status File_InternalInitialise(void);
-void File_InternalFinalise(void);
-Status File_Initialise(void);
-void File_Finalise(void);
+Status File_InternalInitialise();
+void File_InternalFinalise();
+Status File_Initialise();
+void File_Finalise();
 
 #endif

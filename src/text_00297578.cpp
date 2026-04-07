@@ -5,7 +5,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297578);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297608);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297658);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297658); // texture function (called by GE_TextureTarget constructor?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297808);
 
@@ -33,15 +33,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002987C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298D50); // texture function
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299190);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299190); // texture function; called by GE_TextureTarget constructor?
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991F8);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991F8); // set texture scale? used by button icons
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299250); /* return a0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299258);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299258); // called by GE_TextureTarget constructor?; texture related function
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299270); /* return a0 */
 

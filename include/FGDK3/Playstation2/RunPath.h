@@ -7,10 +7,10 @@
 
 extern void * const RunPath_StdInit_UsedModules[];
 
-Status RunPath_InternalInitialise(void);
-void RunPath_InternalFinalise(void);
-Status RunPath_Initialise(void);
-void RunPath_Finalise(void);
+Status RunPath_InternalInitialise();
+void RunPath_InternalFinalise();
+Status RunPath_Initialise();
+void RunPath_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

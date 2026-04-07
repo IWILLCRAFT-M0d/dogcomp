@@ -32,12 +32,12 @@ s_func_002FC270* func_002FC270(s_func_002FC270* arg0);
 
 extern void * const Controller_StdInit_UsedModules[];
 
-Status Controller_InternalInitialise(void);
-void Controller_InternalFinalise(void);
-Status Controller_Initialise(void);
-void Controller_Finalise(void);
+Status Controller_InternalInitialise();
+void Controller_InternalFinalise();
+Status Controller_Initialise();
+void Controller_Finalise();
 
-void Controller_SuspendThread(void);
-void Controller_ResumeThread(void);
+void Controller_SuspendThread();
+void Controller_ResumeThread();
 
 #endif

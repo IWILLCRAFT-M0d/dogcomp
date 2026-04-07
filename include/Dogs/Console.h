@@ -8,14 +8,16 @@
 #include "Game.h"
 
 typedef struct {
+	/* 0x120 */ int m_lines;
+	// 0x124 scroll
 	/* 0x13C */ bool m_textEnabled;
 } consoleStruct;
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_001A0810();
-void func_001A0900();
+void func_001A0810(void);
+void func_001A0900(void);
 void func_001A0968(void*, int);
 void func_001A0B08(consoleStruct*, int, char*);
 void func_001A0D80(int, int, int); 

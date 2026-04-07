@@ -4,7 +4,7 @@
 
 #include "FGDK3/NavGraphRes.h"
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/NavGraphRes", D_0043C7A8);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/NavGraphRes", D_0043C7A8); /* "NavGraph" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_InternalInitialise__Fv);
 
@@ -12,18 +12,36 @@ void NavGraphRes_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_Initialise__Fv);
-/*
-Status NavGraphRes_Initialise(void) {
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription NavGraphRes_StdInit_Description = {
+    0,
+    &NavGraphRes_StdInit_UsedModules
+};
+
+void * const NavGraphRes_StdInit_UsedModules[] = {
+    &NavGraphRes_InternalInitialise,
+    &NavGraphRes_InternalFinalise,
+    &ThrowCatch_Initialise,
+    &ThrowCatch_Finalise,
+    &RelRecv_Initialise,
+    &RelRecv_Finalise,
+    0,
+    0,
+};
+
+Status NavGraphRes_Initialise() {
     return StdInit_InitialisationSequence(&NavGraphRes_StdInit_Description);
 }
-*/
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_Finalise__Fv);
-/*
-void NavGraphRes_Finalise(void) {
+void NavGraphRes_Finalise() {
     StdInit_FinalisationSequence(&NavGraphRes_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_Finalise__Fv);
+#endif
+
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279920); /* load? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_002799E0); /* unload? */

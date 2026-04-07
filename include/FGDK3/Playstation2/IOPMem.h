@@ -7,9 +7,9 @@
 
 extern void * const IOPMem_StdInit_UsedModules[];
 
-Status IOPMem_InternalInitialise(void);
-void IOPMem_InternalFinalise(void);
-Status IOPMem_Initialise(void);
-void IOPMem_Finalise(void);
+Status IOPMem_InternalInitialise();
+void IOPMem_InternalFinalise();
+Status IOPMem_Initialise();
+void IOPMem_Finalise();
 
 #endif

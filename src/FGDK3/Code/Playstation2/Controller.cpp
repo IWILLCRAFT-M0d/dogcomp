@@ -1,7 +1,8 @@
 #include "common.h"
-#include "FGDK3/Playstation2/Controller.h"
 
 #include <eekernel.h>
+#include <libpad.h>
+#include "FGDK3/Playstation2/Controller.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0);
 
@@ -23,7 +24,16 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC288
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC798);
 
+#ifdef NON_MATCHING
+Status Controller_InternalInitialise() {
+    if (scePadInit(0) != 1) {
+
+    }
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_InternalInitialise__Fv);
+#endif
 
 #ifdef NON_MATCHING
 
@@ -66,11 +76,11 @@ void * const Controller_StdInit_UsedModules[] = {
     0,
 };
 
-Status Controller_Initialise(void) {
+Status Controller_Initialise() {
     return StdInit_InitialisationSequence(&Controller_StdInit_Description);
 }
 
-void Controller_Finalise(void) {
+void Controller_Finalise() {
     StdInit_FinalisationSequence(&Controller_StdInit_Description);
 }
 

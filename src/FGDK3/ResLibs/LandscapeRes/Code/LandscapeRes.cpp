@@ -7,7 +7,7 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", 
 
 #ifdef NON_MATCHING
 
-Status LandscapeRes_InternalInitialise(void) {
+Status LandscapeRes_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/Fgdk3/ResLibs/LandscapeRes/Code/LandscapeRes.cpp", 79);
 }
 
@@ -37,11 +37,11 @@ void * const LandscapeRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status LandscapeRes_Initialise(void) {
+Status LandscapeRes_Initialise() {
     return StdInit_InitialisationSequence(&LandscapeRes_StdInit_Description);
 }
 
-void LandscapeRes_Finalise(void) {
+void LandscapeRes_Finalise() {
     StdInit_FinalisationSequence(&LandscapeRes_StdInit_Description);
 }
 

@@ -10,20 +10,10 @@
 
 extern void * const TextureRes_StdInit_UsedModules[];
 
-Status TextureRes_InternalInitialise(void);
-void TextureRes_InternalFinalise(void);
-Status TextureRes_Initialise(void);
-void TextureRes_Finalise(void);
-
-
-
-
-// struct Texture_Resources : public Resource_Generic {
-//
-//     int unk14;
-//     Texture_Resources();
-//     virtual ~Texture_Resources();
-// };
+Status TextureRes_InternalInitialise();
+void TextureRes_InternalFinalise();
+Status TextureRes_Initialise();
+void TextureRes_Finalise();
 
 class GE_Texture {
 

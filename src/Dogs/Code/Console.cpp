@@ -9,9 +9,7 @@
 
 extern s_D_00453698* D_00453698;
 
-
 extern void* D_00453748;
-
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D49E8);
 
@@ -69,7 +67,39 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0418);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0560);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0628);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0628); // create console window? (consoleStruct); called by Game_Document
+/*
+  short sVar1;
+  undefined4 uVar2;
+  int *piVar3;
+
+  param_1->field2_0x8 = 0;
+  param_1->field5_0x14 = 0;
+  param_1->field7_0x1c = 0;
+  param_1->field1_0x4 = 0;
+  sVar1 = DAT_00450a00;
+  param_1->field4_0x10 = param_1;
+  param_1->field3_0xc = 0;
+  param_1->field263_0x11c = 0;
+  param_1->field265_0x124 = 0;
+  param_1->field266_0x128 = 0;
+  param_1->field267_0x12c = 0;
+  param_1->field269_0x134 = 0;
+  param_1->field270_0x138 = 0;
+  param_1->field264_0x120 = 0x19;
+  param_1->field0_0x0 = (int)&param_1->field3_0xc;
+  uVar2 = __builtin_vec_new((undefined *)((int)sVar1 << 2));
+  param_1->field268_0x130 = uVar2;
+  piVar3 = (int *)__builtin_new((int *)0x18);
+  param_1->field271_0x13c = 0;
+  piVar3[2] = 0;
+  piVar3[5] = 0;
+  *piVar3 = (int)(piVar3 + 3);
+  param_1->field6_0x18 = piVar3;
+  piVar3[1] = 0;
+  piVar3[4] = (int)piVar3;
+  piVar3[3] = 0;
+  */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A06D0);
 
@@ -90,7 +120,6 @@ void func_001A0968(void* arg0, int arg1) {
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0968); // open/close debug console
 #endif
-
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A09A8);
 

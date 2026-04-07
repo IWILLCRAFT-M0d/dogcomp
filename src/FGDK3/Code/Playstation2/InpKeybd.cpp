@@ -40,11 +40,11 @@ void * const InputKeyboard_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputKeyboard_Initialise(void) {
+Status InputKeyboard_Initialise() {
     return StdInit_InitialisationSequence(&InputKeyboard_StdInit_Description);
 }
 
-void InputKeyboard_Finalise(void) { StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
+void InputKeyboard_Finalise() { StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
 }
 
 #else
@@ -53,7 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpKeybd", InputKeyboard_F
 #endif
 
 #ifdef NON_MATCHING
-extern int D_00453594; // keyboard thread
+extern int D_00453594; // keyboard thread (g_keyboardThread?)
 
 void InputKeyboard_SuspendThread() {
     SuspendThread(D_00453594);

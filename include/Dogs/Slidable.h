@@ -18,8 +18,6 @@ class Slidable : public WorldObject {
         int unk61C;
         int unk620;
 
-
-
         int unk624;
         Slidable(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Slidable();

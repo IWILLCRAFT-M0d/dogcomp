@@ -10,6 +10,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2B80);
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2BB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018C748);
+
 #ifdef NON_MATCHING
 BookMetaphor::GamePositionPage::GamePositionPage(int arg1) {
     this->unk0 = arg1;
@@ -283,7 +284,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194678);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_001946B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194710);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194710__Q212BookMetaphor24LoadGameBackgroundThread);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_00194738);
 
@@ -427,6 +428,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B8F0); // BookMe
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B968); // BookMetaphorLayer member; called when back (triangle) button is pressed in BM
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B9B0); // BookMetaphorLayer member; called when switching languages
+/* void func_0019B9B0(void) {
+    void* foo[2];
+} */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B9C0);
 

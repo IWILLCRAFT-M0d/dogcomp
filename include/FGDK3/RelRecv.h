@@ -7,9 +7,9 @@
 
 extern void * const RelRecv_StdInit_UsedModules[];
 
-Status RelRecv_InternalInitialise(void);
-void RelRecv_InternalFinalise(void);
-Status RelRecv_Initialise(void);
-void RelRecv_Finalise(void);
+Status RelRecv_InternalInitialise();
+void RelRecv_InternalFinalise();
+Status RelRecv_Initialise();
+void RelRecv_Finalise();
 
 #endif

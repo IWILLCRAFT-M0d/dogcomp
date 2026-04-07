@@ -64,11 +64,11 @@ void * const InputMouse_StdInit_UsedModules[] = {
     0,
 };
 
-Status InputMouse_Initialise(void) {
+Status InputMouse_Initialise() {
     return StdInit_InitialisationSequence(&InputMouse_StdInit_Description);
 }
 
-void InputMouse_Finalise(void) {
+void InputMouse_Finalise() {
     StdInit_FinalisationSequence(&InputMouse_StdInit_Description);
 }
 

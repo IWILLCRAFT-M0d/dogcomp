@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 
-Status MusicRes_InternalInitialise(void) {
+Status MusicRes_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/MusicRes.cpp", 77);
 }
 
@@ -35,11 +35,11 @@ void * const MusicRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status MusicRes_Initialise(void) {
+Status MusicRes_Initialise() {
     return StdInit_InitialisationSequence(&MusicRes_StdInit_Description);
 }
 
-void MusicRes_Finalise(void) {
+void MusicRes_Finalise() {
     StdInit_FinalisationSequence(&MusicRes_StdInit_Description);
 }
 

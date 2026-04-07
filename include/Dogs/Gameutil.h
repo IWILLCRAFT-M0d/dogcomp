@@ -6,10 +6,10 @@
 // overlay header? goes here
 #include "FGDK3/Inpevent.h"
 
-Status Gameutil_InternalInitialise(void);
-void Gameutil_InternalFinalise(void);
-Status Gameutil_Initialise(void);
-void Gameutil_Finalise(void);
+Status Gameutil_InternalInitialise();
+void Gameutil_InternalFinalise();
+Status Gameutil_Initialise();
+void Gameutil_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

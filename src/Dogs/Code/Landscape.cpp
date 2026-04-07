@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF858);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF940);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFA30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFA30); // water function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFAF0); // first arg is landscape_land* ?; water color/texture?
 
@@ -59,13 +59,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E18E0); // slidable 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E1D30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E2188);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E2188); // water/collision function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E25C8); // "Creature type not found, DTL may define a creature of a type which is not in this overlay"
 
 #ifdef NON_MATCHING
 
-Status Landscape_InternalInitialise(void) {
+Status Landscape_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Landscape.cpp", 3132);
 }
 
@@ -91,11 +91,11 @@ void * const Landscape_StdInit_UsedModules[] = {
     0,
 };
 
-Status Landscape_Initialise(void) {
+Status Landscape_Initialise() {
     return StdInit_InitialisationSequence(&Landscape_StdInit_Description);
 }
 
-void Landscape_Finalise(void) {
+void Landscape_Finalise() {
     StdInit_FinalisationSequence(&Landscape_StdInit_Description);
 }
 

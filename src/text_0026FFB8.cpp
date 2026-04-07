@@ -12,7 +12,13 @@ ShapeInstance::ShapeInstance() {
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __13ShapeInstance);
 #endif
 
+#ifdef NON_MATCHING
+ShapeInstance::~ShapeInstance() {
+    this->Empty();
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_13ShapeInstance);
+#endif
 
 #ifdef NON_MATCHING
 void ShapeInstance::Empty() {
@@ -43,15 +49,15 @@ void ShapeInstance::SetShape(void* shapeData) {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270408); /* rct3 ShapeInstance::GetParameterBlock ? */
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270408__13ShapeInstanceii); // RCT3 ShapeInstance::GetParameterBlock ?
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270468);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270468); // RCT3 ShapeInstance::GetMatrix33 ?
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270498); // shapeinstance member
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270498); // RCT3 ShapeInstance::GetMatrix44 ?
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002704D8); // shapeinstance member
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002704D8); // RCT3 ShapeInstance::GetVector3 ?
 
-float ShapeInstance::func_002704F8() {
+float ShapeInstance::func_002704F8() { // RCT3 ShapeInstance::GetFloat ?
     return 0.0f;
 }
 
@@ -68,15 +74,11 @@ void ShapeInstance::Execute() {
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", Execute__13ShapeInstance); /* rct3 ShapeInstance::Execute*/
 #endif
 
-#ifdef NON_MATCHING
 void ShapeInstance::Render(GE_Device* arg1) {
     if (this->unk20 != NULL) {
-        //func_0028F228
+        this->unk20->Render(arg1);
     }
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", Render__13ShapeInstanceP9GE_Device); /* rct3 ShapeInstance::Render */
-#endif
 
 void func_002717B8(void) {
     return;

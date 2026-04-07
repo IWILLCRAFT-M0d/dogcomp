@@ -13,15 +13,19 @@ typedef struct {
 } s_func_001C6DC8;
 
 
-Status Game_InternalInitialise(void);
-void Game_InternalFinalise(void);
-Status Game_Initialise(void);
-void Game_Finalise(void);
+Status Game_InternalInitialise();
+void Game_InternalFinalise();
+Status Game_Initialise();
+void Game_Finalise();
 
+class WorldObject_Universe  : public SimObj_Universe {
 
-class Game_Document : public GameShell {
+};
+
+class Game_Document : public GameShell, public WorldObject_Universe {
     public:
-        /* 0x30 */ SimObj_Universe m_universe;
+        /* 0x30 */ WorldObject_Universe m_universe;
+        // 0xE4 GE_Device*
         int unk144;
         int unk148;
         int unk14C;
@@ -65,6 +69,7 @@ class Game_Document : public GameShell {
         /* 0x4F0 */ bool m_renderHitSpheres;
         int unk4F4; // navcells actorId
         int unk4F8; // navcells thing
+        // 0x4FC GameStateReq?
         int unk500;
         int unk504;
         //
@@ -92,7 +97,7 @@ class Game_Document : public GameShell {
         float unk598;
 
         int unk59C;
-        Game_Document(float fps, float gamespeed);
+        Game_Document(float fps, float gameSpeed);
         virtual ~Game_Document();
 
 };

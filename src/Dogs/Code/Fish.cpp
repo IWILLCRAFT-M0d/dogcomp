@@ -39,9 +39,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B640);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013B790); // "Making fish jump when its out of water!"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BDE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BDE8); // Fish member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BE70); // fish jump?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BE70); // Fish member; fish jump?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Fish", func_0013BEB0);
 

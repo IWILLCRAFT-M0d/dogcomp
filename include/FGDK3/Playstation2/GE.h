@@ -5,9 +5,9 @@
 #include "FGDK3/Playstation2/File.h"
 #include "FGDK3/ThrowCat.h"
 
-Status GE_InternalInitialise(void);
-void GE_InternalFinalise(void);
-Status GE_Initialise(void);
-void GE_Finalise(void);
+Status GE_InternalInitialise();
+void GE_InternalFinalise();
+Status GE_Initialise();
+void GE_Finalise();
 
 #endif

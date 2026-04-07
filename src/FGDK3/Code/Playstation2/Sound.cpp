@@ -25,11 +25,11 @@ void * const Sound_StdInit_UsedModules[] = {
     0,
 };
 
-Status Sound_Initialise(void) {
+Status Sound_Initialise() {
     return StdInit_InitialisationSequence(&Sound_StdInit_Description);
 }
 
-void Sound_Finalise(void) {
+void Sound_Finalise() {
     StdInit_FinalisationSequence(&Sound_StdInit_Description);
 }
 

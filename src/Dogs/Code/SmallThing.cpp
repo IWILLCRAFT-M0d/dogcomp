@@ -41,11 +41,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", __10SmallThingP9ClassInfoP1
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", _$_10SmallThing);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DB80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DB80); // SmallThing member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016DCD0__10SmallThing);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E1A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E1A0); // SmallThing virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_0016E388__10SmallThing);
 
@@ -105,7 +105,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171190);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_001711B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_001711E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_001711E0); /* __tf21SimObj_RayHitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", __tf10SmallThing);
 
@@ -114,6 +114,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171288);
 ClassInfo* SmallThing::func_00171290() {
     return D_0044D910;
 }
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_00171298);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SmallThing", func_001712B8);

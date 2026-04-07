@@ -95,7 +95,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4788);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4930);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D49C8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D49C8); // DebugEnvironment::CreateStream?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4A78);
 
@@ -324,7 +324,7 @@ Status FontRes_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_InternalInitialise__Fv);
 #endif
 
-void FontRes_InternalFinalise(void) {
+void FontRes_InternalFinalise() {
     return;
 }
 
@@ -346,11 +346,11 @@ void * const FontRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status FontRes_Initialise(void) {
+Status FontRes_Initialise() {
     return StdInit_InitialisationSequence(&FontRes_StdInit_Description);
 }
 
-void FontRes_Finalise(void) {
+void FontRes_Finalise() {
     StdInit_FinalisationSequence(&FontRes_StdInit_Description);
 }
 

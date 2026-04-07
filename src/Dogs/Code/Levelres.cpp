@@ -4,7 +4,7 @@
 
 #ifdef NON_MATCHING
 
-Status LevelRes_InternalInitialise(void) {
+Status LevelRes_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Levelres.cpp", 44);
 }
 
@@ -32,11 +32,11 @@ void * const LevelRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status LevelRes_Initialise(void) {
+Status LevelRes_Initialise() {
     return StdInit_InitialisationSequence(&LevelRes_StdInit_Description);
 }
 
-void LevelRes_Finalise(void) {
+void LevelRes_Finalise() {
     StdInit_FinalisationSequence(&LevelRes_StdInit_Description);
 }
 

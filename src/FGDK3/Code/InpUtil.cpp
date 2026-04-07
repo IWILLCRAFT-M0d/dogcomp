@@ -6,21 +6,45 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalInitialise_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Initialise__Fv);
 
-/*
-Status InputUtil_Initialise(void) {
+#ifdef NON_MATCHING
+
+StdInit_ModuleDescription InputUtil_StdInit_Description = {
+    0,
+    &InputUtil_StdInit_UsedModules
+};
+
+void * const InputUtil_StdInit_UsedModules[] = {
+    &InputUtil_InternalInitialise,
+    &InputUtil_InternalFinalise,
+    &InputEvent_Initialise,
+    &InputEvent_Finalise,
+    &InputKeyboard_Initialise,
+    &InputKeyboard_Finalise,
+    &InputMouse_Initialise,
+    &InputMouse_Finalise,
+    //
+    &InputJoystick1_Initialise,
+    &InputJoystick1_Finalise,
+    &InputJoy5_Initialise,
+    &InputJoy5_Finalise,
+    //
+    0,
+    0,
+};
+
+Status InputUtil_Initialise() {
     return StdInit_InitialisationSequence(&InputUtil_StdInit_Description);
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Finalise__Fv);
-
-/*
-void InputUtil_Finalise(void) {
-StdInit_FinalisationSequence(&InputUtil_StdInit_Description);
+void InputUtil_Finalise() {
+    StdInit_FinalisationSequence(&InputUtil_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F75C8);
 

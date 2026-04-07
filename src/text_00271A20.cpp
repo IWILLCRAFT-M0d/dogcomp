@@ -360,21 +360,19 @@ int func_00275288(int arg0, int arg1, int ovlType, int arg3) {
 
 
 #ifdef NON_MATCHING
-extern void* D_0035FC18[];
-extern int D_0044F5A0;
 Resource_Generic::Resource_Generic(){
     int i;
 
-    this->m_unk0 = 0;
-    this->m_unk4 = 0;
-    this->m_unk8 = 0;
+    this->unk0 = NULL;
+    this->m_resourceCount = 0;
+    this->m_resourceType = 0;
 
-    StdInit_ClientBase *a0 = &this->m_unkC;
+    StdInit_ClientBase *a0 = &this->unkC;
     a0->CheckError(StdMem_Initialise());
 
     for (i = 0; i < D_0044F5A0; i++) {
         if (D_0035FC18[i] == this) {
-            this->m_unk8 = i;
+            this->m_resourceType = i;
             break;
         }
     }

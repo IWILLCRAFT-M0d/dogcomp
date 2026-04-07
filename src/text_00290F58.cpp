@@ -1,8 +1,10 @@
 #include "common.h"
 #include "debug.h"
 #include "unk.h"
+#include "Dogs/Game.h"
 
 #include <libscf.h>
+
 
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58);
@@ -134,6 +136,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296008);
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
+
 #ifdef NON_MATCHING
 void Main_RunGame() {
 

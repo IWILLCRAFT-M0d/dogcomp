@@ -131,9 +131,11 @@ GE_PrimIndices::GE_PrimIndices(int arg1, char arg2, int arg3) {
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_14GE_PrimIndices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62D0);
+void GE_PrimIndices::func_002A62D0() {
+    this->unk0 += 1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62E0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62E0); // GE_PrimIndices method
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6350);
 

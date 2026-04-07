@@ -2,7 +2,7 @@
 #include "TextureRes.h"
 
 #ifdef NON_MATCHING
-Status TextureRes_InternalInitialise(void) {
+Status TextureRes_InternalInitialise() {
     func_002757E8();
     return Status(0xFFFFFFFF, "c:/coding/fgdk3/ResLibs/TextureRes/Code/TextureRes.cpp", 66);
 }
@@ -30,11 +30,11 @@ void * const TextureRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status TextureRes_Initialise(void) {
+Status TextureRes_Initialise() {
     return StdInit_InitialisationSequence(&TextureRes_StdInit_Description);
 }
 
-void TextureRes_Finalise(void) {
+void TextureRes_Finalise() {
     StdInit_FinalisationSequence(&TextureRes_StdInit_Description);
 }
 

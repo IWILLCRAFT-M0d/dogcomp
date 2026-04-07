@@ -6,12 +6,21 @@
 #include "FGDK3/ThrowCat.h"
 #include "FGDK3/RelRecv.h"
 
+class Font_Resources /* : public Resource<Font_Header> */ {
+
+};
+
+// font header?
+// float unk0 - character size?
+// float unk4
+// char[8] unk8
+/* 0x14 */ // short m_textureId;
 extern void * const FontRes_StdInit_UsedModules[];
 
-Status FontRes_InternalInitialise(void);
-void FontRes_InternalFinalise(void);
-Status FontRes_Initialise(void);
-void FontRes_Finalise(void);
+Status FontRes_InternalInitialise();
+void FontRes_InternalFinalise();
+Status FontRes_Initialise();
+void FontRes_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

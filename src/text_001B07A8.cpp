@@ -14,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B08F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0AC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0B90);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0B90); // landscape/rendering thing?
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0BB0);
 

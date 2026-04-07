@@ -5,10 +5,10 @@
 
 extern void * const ThrowCatch_StdInit_UsedModules[];
 
-Status ThrowCatch_InternalInitialise(void);
-void ThrowCatch_InternalFinalise(void);
-Status ThrowCatch_Initialise(void);
-void ThrowCatch_Finalise(void);
+Status ThrowCatch_InternalInitialise();
+void ThrowCatch_InternalFinalise();
+Status ThrowCatch_Initialise();
+void ThrowCatch_Finalise();
 
 void ThrowCatch_DefiniteThrow(Status);
 

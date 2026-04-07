@@ -26,7 +26,7 @@ class Music_PS2Performance : public Music_Performance {
     public:
         int unk120;
         int unk124;
-        int m_paused; // 0x128
+        /* 0x128 */ bool m_paused;
         Music_PS2Performance();
         virtual ~Music_PS2Performance();
         virtual void PauseNow();
@@ -48,14 +48,15 @@ class Music_Piece {
 };
 
 class Music_PS2Piece /*: public Music_Piece*/ {
-
+    public:
+        /* 0x60 */ u_int headerinfo; // MIH address
 };
 
 
-Status Music_InternalInitialise(void);
-void Music_InternalFinalise(void);
-Status Music_Initialise(void);
-void Music_Finalise(void);
+Status Music_InternalInitialise();
+void Music_InternalFinalise();
+Status Music_Initialise();
+void Music_Finalise();
 
 #ifdef __cplusplus
 extern "C" {

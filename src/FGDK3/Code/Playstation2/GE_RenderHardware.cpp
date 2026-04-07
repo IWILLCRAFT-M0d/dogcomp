@@ -24,9 +24,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_0
   }
 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D38);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D38); // GE_PS2RenderHardware member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D98); // GE_PS2RenderHardware member
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", D_0043F320); /* "c:/coding/fgdk3/Code/playstation2/GE_RenderHardware.cpp" */
 
@@ -56,7 +56,7 @@ int GE_PS2RenderHardware::func_002A5298() {
   return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52A0); // GE_PS2RenderHardware member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52D0);
 

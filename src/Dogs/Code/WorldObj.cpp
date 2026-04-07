@@ -150,7 +150,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D00D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184738);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90); // this function deals with rendering
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90); // this function deals with rendering; member function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E28);
 

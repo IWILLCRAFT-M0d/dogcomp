@@ -3,8 +3,8 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-Status sifManager_InternalInitialise(void);
-void sifManager_InternalFinalise(void);
+Status sifManager_InternalInitialise();
+void sifManager_InternalFinalise();
 
 
 #endif

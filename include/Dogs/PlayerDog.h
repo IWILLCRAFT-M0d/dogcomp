@@ -21,9 +21,10 @@ class PlayerDog : public Dog {
         int unkB60;
         int unkB64;
         int unkBB0;
-        int unkBB8;
+        int unkBB8; // unlockedMoves
         PlayerDog(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~PlayerDog();
+        void func_0014EB88(int moveId); // addMove?
         virtual ClassInfo* func_0014F518();
 };
 
@@ -40,7 +41,7 @@ class RoverSaysPuzzleGod : public WorldObject {
 #ifdef __cplusplus
 extern "C" {
 #endif
-void func_0014EB88(Dog*, short);
+
 #ifdef __cplusplus
 }
 #endif

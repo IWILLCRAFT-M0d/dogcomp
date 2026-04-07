@@ -14,10 +14,10 @@ long TimSrv_GetTime(void);
 }
 #endif
 
-Status TimSrv_InternalInitialise(void);
-void TimSrv_InternalFinalise(void);
-Status TimSrv_Initialise(void);
-void TimSrv_Finalise(void);
+Status TimSrv_InternalInitialise();
+void TimSrv_InternalFinalise();
+Status TimSrv_Initialise();
+void TimSrv_Finalise();
 
 
 class TimSrv_TimerImplementation {

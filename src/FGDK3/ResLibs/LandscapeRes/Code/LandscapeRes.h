@@ -8,10 +8,14 @@
 
 extern void * const LandscapeRes_StdInit_UsedModules[];
 
-Status LandscapeRes_InternalInitialise(void);
-void LandscapeRes_InternalFinalise(void);
-Status LandscapeRes_Initialise(void);
-void LandscapeRes_Finalise(void);
+Status LandscapeRes_InternalInitialise();
+void LandscapeRes_InternalFinalise();
+Status LandscapeRes_Initialise();
+void LandscapeRes_Finalise();
+
+class DogsTaleLand_Resources /* : public Resource<Landscape_Land> */ {
+
+};
 
 #ifdef __cplusplus
 extern "C" {
