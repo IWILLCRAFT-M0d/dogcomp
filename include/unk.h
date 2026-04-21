@@ -75,12 +75,12 @@ class Mien {
     public:
         int unk0;
         int unk4;
-        int unk8;
+        float unk8;
         float unkC;
-        int unk10;
-        int unk14;       // 0x14 - Missing field
-        int unk18;
-        int unk1C;
+        float unk10;
+        float unk14;       // 0x14 - Missing field
+        float unk18;
+        float unk1C;
         float unk20;
         int unk24;       // 0x24 - Missing field
 
@@ -116,6 +116,7 @@ class GE_PrimCache {
         int m_unk14;
     GE_PrimCache(char, short, int, int, int, void*, int);
     virtual ~GE_PrimCache();
+    virtual int func_002D1C78();
 };
 
 class GE_PS2PrimCache /* : public GE_PrimCache */ {
@@ -176,17 +177,17 @@ class GE_PrimIndices {
 
 class ShapeParams {
     public:
-        int unk0;
-        int unk1;
+        void* unk0;
+        int unk4;
         ShapeParams() {
             unk0 = 0;
-            unk1 = 1;
+            unk4 = 1;
         }
 };
 class ShapeParams_Dynamic : public ShapeParams {
     public:
         ShapeParams_Dynamic();
-        //ShapeParams_Dynamic(int);
+        ShapeParams_Dynamic(int);
         virtual ~ShapeParams_Dynamic();
         void SetSize(int);
 };
@@ -196,13 +197,20 @@ class GE_TransformState {
 };
 
 class MeshTransforms : public GE_TransformState {
-
+    public:
+        // virtual 00310438
+        // virtual 00310448
 };
 
 // RCT3 "GE_Device::s_theDevice"
 // 0x78 - texture resources address
 class GE_Device : public GE_TransformState {
     public:
+        float unk50;
+        float unk54;
+        //
+        float unk80;
+        float unk90;
         GE_Device();
         virtual ~GE_Device();
         int func_002D1D58();
@@ -223,8 +231,16 @@ class GE_PS2Device : public GE_Device {
         virtual ~GE_PS2Device();
 };
 
+class MeshData {
+
+};
+
 class MeshInstance {
     public:
+        int unk0;
+        const MeshData* unk4; // m_meshData?
+        MeshInstance(const MeshData*);
+        ~MeshInstance();
         void Render(GE_Device*);
 };
 
@@ -251,11 +267,7 @@ class ShapeInstance {
         void Render(GE_Device*);
 };
 
-class GE_DMAPktRc1i69 { // GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric
-    public:
-        GE_DMAPktRc1i69();
-        virtual ~GE_DMAPktRc1i69();
-};
+
 
 class Action {
     public:
@@ -265,21 +277,51 @@ class Action {
         virtual void func_002462A8() = 0;
 };
 
+class NullAction /* : public Action */ {
+
+};
+
+class CreateAction : public Action {
+    public:
+        CreateAction();
+        virtual ~CreateAction();
+};
+
+class ClearAction /* : public Action */ {
+
+};
+
 class Resource_LayoutUnit {
     public:
         int unk0;
-        void* unk4;
-        Resource_LayoutUnit(void*);
+        Resource_LayoutUnit* unk4;
+        Resource_LayoutUnit(Resource_LayoutUnit*);
         virtual ~Resource_LayoutUnit();
 };
 
 class Resource_LayoutOverlay /* : public Resource_LayoutUnit */ {
     public:
+        static char* D_00487600;
         int unkC; // overlay id?
         void* unk10;
         //Resource_LayoutOverlay
         virtual ~Resource_LayoutOverlay();
         virtual void func_00274200();
+
+};
+
+class Resource_LayoutGroup : public Resource_LayoutUnit {
+    public:
+        int unkC;
+        void* unk10;
+        Resource_LayoutGroup(Resource_LayoutUnit*, int, void*);
+        virtual ~Resource_LayoutGroup();
+};
+
+class Resource_LayoutInclusiveGroup /*: public Resource_LayoutGroup*/ {
+    public:
+        virtual ~Resource_LayoutInclusiveGroup();
+            //func_00274A00
 
 };
 
@@ -925,20 +967,7 @@ const char** D_0036B828[] = {
 };
 #endif
 
-class Resource_LayoutGroup : public Resource_LayoutUnit {
-    public:
-        int unkC;
-        void* unk10;
-        Resource_LayoutGroup(void*, int, void*);
-        virtual ~Resource_LayoutGroup();
-};
 
-class Resource_LayoutInclusiveGroup /*: public Resource_LayoutGroup*/ {
-    public:
-        virtual ~Resource_LayoutInclusiveGroup();
-            //func_00274A00
-
-};
 
 
 class FileSystemDisc {
@@ -948,12 +977,17 @@ class FileSystemDisc {
         virtual ~FileSystemDisc();
 };
 
+class FileSystemDisc_Zip /* : public FileSystemDisc */ {
+
+};
+
 class FileSystemDisc_CD : public FileSystemDisc {
     public:
         FileSystemDisc_CD();
         virtual ~FileSystemDisc_CD();
 };
 
+// static FileSystemRoot* D_00452EAC?
 class FileSystemDiscRoot : public FileSystemDisc {
     public:
         FileSystemDiscRoot();
@@ -966,7 +1000,7 @@ class FileSystemDiscRoot : public FileSystemDisc {
 };
 
 
-
+// 004539C4 RCT3 static m_storageDevices?
 class StorageDevice {
     public:
         //StorageDevice
@@ -976,13 +1010,24 @@ class StorageDevice {
 
 class StorageDevice_MemCard /*: public StorageDevice*/ {
     public:
+        /* 0x14 */ int m_port;
+        int unk18;
+        int unk1C;
         StorageDevice_MemCard(int card);
+
+        virtual void func_00301798();
 };
 
-class Widget_Border {
+class Widget_Border /* : public Widget_WithChildren */{
+    public:
+        float unkD0; // x scale/size?
+        float unkD4; // y scale/size?
 
 };
 
+class StatusBar : public Widget_Border {
+
+};
 
 class Widget_Desktop : public Widget_Border {
     public:
@@ -993,10 +1038,17 @@ class Widget_Desktop : public Widget_Border {
 
 
 namespace File {
-    struct Access {
-        int unk0;
-        Access();
-        virtual ~Access();
+    class Access {
+        public:
+            int unk0;
+            Access();
+            virtual ~Access();
+    };
+    class CallBack {
+
+    };
+    class OpenWatcher {
+
     };
 };
 
@@ -1060,18 +1112,48 @@ class GE_TextureStylePkt : public GE_DMARc {
         virtual ~GE_TextureStylePkt();
 };
 
+class GE_Target {
+
+};
+
+class GE_PS2Target : public GE_Target {
+    public:
+        int unk0;
+        // void*
+        // void*
+        GE_PS2Device* unk8;
+        GE_PS2Target(GE_PS2Device*);
+};
+
+class GE_PS2DisplayTarget : public GE_PS2Target {
+    public:
+        GE_PS2DisplayTarget(GE_PS2Device*);
+};
+
+
 class InputBinding {
 
 };
 
-class GameLayer : public Widget_WithChildren /*, public InputBinding */ {
+
+class Pointer : public InputBinding {
+
+};
+
+class JoystickPointer : public Pointer {
+
+};
+
+class GameLayer : public Widget_WithChildren , public InputBinding  {
     public:
         int unkD0;
         GameLayer();
+        virtual ~GameLayer();
 };
 
-class PlayingLayer /* : public GameLayer */ {
-
+class PlayingLayer : public GameLayer {
+    public:
+        PlayingLayer();
 };
 
 class SavedGame {
@@ -1079,11 +1161,11 @@ class SavedGame {
         int unk0;
         int unk4;
         char* unk8;
-        //unkC
+        void* unkC;
         int unk10;
         int unk14;
         int unk18;
-        //unk1C
+        void* unk1C;
         int unk20;
         int unk24;
         int unk28;
@@ -1102,6 +1184,9 @@ namespace BookMetaphor {
             void func_0019E378();
             int func_0019E3A8();
             int func_0019E3B0();
+
+    };
+    class CurrentPositionPageResponder {
 
     };
 
@@ -1153,14 +1238,14 @@ namespace BookMetaphor {
             //func_0018EA80
     //};
 
-    // class CurrentPositionPage : public GamePositionPage {
+    // class CurrentPositionPage : public GamePositionPage, public CurrentPositionPageResponder {
     //     public:
     //         //CurrentPositionPage
     //         virtual ~CurrentPositionPage();
     //         //func_0018F070
     // };
 
-    class Stats0Page : public Page {
+    class Stats0Page : public Page, public CurrentPositionPageResponder {
         public:
             Stats0Page();
             virtual ~Stats0Page();
@@ -1187,7 +1272,7 @@ namespace BookMetaphor {
             virtual ~SettingsPage();
     };
 
-    class CheatsPage : public Page {
+    class CheatsPage : public Page, public CurrentPositionPageResponder {
         public:
             // unk8
             int unk10; // m_cursorPos
@@ -1223,7 +1308,7 @@ namespace BookMetaphor {
 
 };
 
-class BookMetaphorLayer : public GameLayer {
+class BookMetaphorLayer : public GameLayer, public File::CallBack {
     public:
         BookMetaphorLayer();
         virtual ~BookMetaphorLayer();
@@ -1282,7 +1367,10 @@ class DebugEnvironment {
         DebugEnvironment();
         virtual ~DebugEnvironment();
         // virtual ? func_002D3950
+
         virtual void func_002D5D58();
+
+        void VFatalError(const char*, char*);
 
 };
 
@@ -1292,13 +1380,30 @@ class Endian {
         virtual void func_002D7980();
 };
 
-class Script {
+class Endian_Mem : public Endian {
 
+};
+
+class Endian_File : public Endian {
+
+};
+
+class Endian_ExpandMem : public Endian_Mem {
+
+};
+
+class Script {
+    public:
+        virtual ~Script();
+        virtual void func_0031E8C0();
+        // virtual ? 0031E6D8
 };
 
 class DogScript : public Script {
     public:
-        int func_001AD5F8(); // virtual
+        virtual ~DogScript();
+        //
+        virtual int func_001AD5F8();
 };
 
 class PointerMessageHandler {
@@ -1310,7 +1415,78 @@ class PointerMessageHandler {
         /* virtual */ void func_00262F90();
 };
 
-class ValueEditor {
+class TextRenderer {
+
+};
+
+class YDRRenderer : public TextRenderer {
+    public:
+        // virtual ? func_00168CB8
+};
+
+class DSLRenderer : public TextRenderer {
+    public:
+        // virtual ? func_001D70E8
+};
+
+class ValueEditor : public TextRenderer {
+
+};
+
+class StreamRenderer : public TextRenderer {
+    public:
+        // virtual ? func_002D63F0
+};
+
+class FloatEditor : public ValueEditor {
+
+};
+
+class Int8Editor : public ValueEditor {
+
+};
+
+class Uint8Editor : public ValueEditor {
+
+};
+
+class Int16Editor : public ValueEditor {
+
+};
+
+class Uint16Editor : public ValueEditor {
+
+};
+
+class Int32Editor : public ValueEditor {
+
+};
+
+class UInt32Editor : public ValueEditor {
+
+};
+
+class BoolEditor : public ValueEditor {
+
+};
+
+class IntEditor : public ValueEditor {
+
+};
+
+class UIntEditor : public ValueEditor {
+
+};
+
+class V3XEditor : public ValueEditor {
+
+};
+
+class V3YEditor : public ValueEditor {
+
+};
+
+class V3ZEditor : public ValueEditor {
 
 };
 
@@ -1318,6 +1494,8 @@ class NameTagEditor : public ValueEditor {
     public:
         void func_002691E8(); // virtual
 };
+
+
 
 class ClipVolume {
 
@@ -1332,31 +1510,52 @@ class SixPlaneClipVolume : public PlaneClipVolume {
 };
 
 class LiveEditable {
-
+    public:
+        LiveEditable* unk8;
+        int unk10;
+        int unk14;
+        LiveEditable(char*, char*);
 };
 
 class MenuRegisterable {
+    public:
+        void* unk0;
+        MenuRegisterable();
+        virtual ~MenuRegisterable();
+};
 
+class Music_MenuRegisterable : public MenuRegisterable {
+    public:
+        Music_MenuRegisterable();
+        virtual ~Music_MenuRegisterable();
 };
 
 class EditableManager : public MenuRegisterable {
+    public:
+        char* unk2C;
+        EditableManager(char*);
 
 };
 
 class Music_Track {
+    public:
+        int unk0;
 
+        int unk20;
 };
-
-
 
 
 class DebugLayer /* : public Widget_Pane */ {
 
 };
 
+class FileSystem {
+
+};
+
 typedef struct {
 
-    // 4 bytes? unk1C (popup text thing?)
+    // 4 bytes? unk1C (popup text thing?) enum
     // 0x0 - no text
     // 0x1 - checking memory card
     // 0x2 - checking memory card?
@@ -1392,8 +1591,130 @@ typedef struct {
     // 4 bytes? unk30 (fade out thing?)
 } s_D_00453698;
 
+class TransientSound /* : public Sound */ {
+
+};
+
+class DrawShape {
+
+};
+
+class DrawShape_TexturedQuad : public DrawShape {
+
+};
 
 
+
+class Tree34_Node {
+    public:
+        ///* 0x4 */ Tree34_Node
+        //Tree34_Node(Tree34_Basic*, Tree34_Node*);
+        void Empty();
+};
+
+class Tree34_Basic {
+    public:
+        ///* 0x4 */ Tree34_Node
+        void Empty();
+};
+
+class Tree34_Unit {
+    public:
+        void* unk0;
+        void* unk4;
+        void* unk8;
+        void Zero();
+};
+
+class InterfaceTag {
+    public:
+        // static ? s_count
+        // static ? s_interfaces
+        // static ? s_bigSillyIntArray
+};
+
+class NameTagEditorWidget /* : public Widget_Compositor */ {
+
+};
+
+class ScriptMessageAndRequestReceiver {
+
+};
+
+class GameDesktop /* : public VirtualDesktop*/ {
+
+};
+
+class InputCD {
+
+};
+
+class InputCD_PS2 : public InputCD {
+
+};
+
+class DebugWindow /*: public Widget_Window*/ {
+
+};
+
+class Debug_DataValueContainer : public Widget_TableRow {
+
+};
+
+class Debug_StructContainer : public Debug_DataValueContainer {
+
+};
+
+class GE_DMAPktRcGeneric : public GE_DMARc {
+
+};
+
+class GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric {
+    public:
+        GE_DMAPktRc1i69();
+        virtual ~GE_DMAPktRc1i69();
+};
+
+class GE_TexturePage {
+
+};
+
+class GE_TextureTarget : /*public GE_PS2Target,*/ public GE_TexturePage {
+
+};
+
+class SetLevelEnumerator /* : public Tree34Enumerator<SimObj_Base> */ {
+
+};
+
+class Movement_IF /* : public Interface<Movement_IF> */ {
+
+};
+
+class VehicleNavDirectionalAnimation /*: public AnimationComponent, public ComponentDeterminedTimeBase::Component */ {
+
+};
+
+class VehicleNavDirectionalBackwardsAnimation : public VehicleNavDirectionalAnimation {
+    public:
+        virtual ~VehicleNavDirectionalBackwardsAnimation();
+};
+
+class ObjectNewMessage /* : public Message<ObjectActionRx> */ {
+
+};
+
+class c_func_00276AC0 {
+    public:
+        void* unk0;
+        void* unk4;
+        short unk8;
+        void* unkC;
+        void* unk10;
+        void* unk14;
+        c_func_00276AC0();
+        void func_00276FA0(short);
+};
 
 #ifdef __cplusplus
 extern "C" {
@@ -1402,6 +1723,7 @@ extern "C" {
 // BookMetaphor
 short func_0018C980(int level, int gate);
 void func_00196418(void);
+
 
 void func_001AD560(void);
 
@@ -1531,7 +1853,7 @@ int func_00290D08(void);
 void func_00291770(void);
 void func_00291778(void);
 void func_002963E8(void);
-int func_002963F0(void);
+int func_002963F0(char*, bool);
 int func_00296478(void);
 int func_00296480(int);
 void func_00299448(void);
@@ -1561,6 +1883,8 @@ int func_002A6598(void);
 //void func_002ADEA8(void);
 void func_002AE320(void);
 char* func_002D7738(int);
+void func_002DAB38(short);
+short func_002DAB40(void);
 int func_002DF488(void);
 int func_002DF9D8(void);
 void func_002DFA18(void);
@@ -1586,7 +1910,7 @@ int func_0030ACD0(char*, unsigned int);
 void func_002D42D8(void);
 void func_002D42E0(void);
 void func_002D4770(void);
-void func_002D4778(void);
+void func_002D4778(char*, const char*); // RCT3 Main_QueryUser or DebugEnvironment::SendToFile ?
 void func_002D4780(void);
 
 void func_002D74F8(void);
@@ -1596,12 +1920,13 @@ Status func_0026CFD0(unsigned int, char*, int);
 Status func_0026CFF8(int, char*,char* ,int);
 
 int func_002D1BC8(void);
-int func_002D1C78(void);
 
 float func_002D2350(void);
 void* func_002D3360(void*);
 
 int func_001FD558(char* arg0, char* arg1);
+
+int func_002D5B40(char*,...);
 #ifdef __cplusplus
 }
 #endif
@@ -1614,6 +1939,7 @@ Status SimObj_Initialise();
 void SimObj_Finalise();
 
 Status StdMem_Initialise();
+void StdMem_Finalise();
 
 void Main_RunGame();
 

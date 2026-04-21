@@ -1,7 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
-class Widget_StdNotification {
+class Widget_StdNotification /*: public Action */ {
 
 };
 
@@ -53,13 +53,54 @@ class Widget_Compositor : public Widget_WithChildren {
         Widget_Compositor(float, char*, int, int);
         virtual ~Widget_Compositor();
 };
-//
-// class Widget_Splitter : public Widget_Compositor {
-//
-// };
-//
-// class GUI_TitleBar : public Widget_Compositor {
-//
-// };
+
+class Widget_Splitter /*: public Widget_Compositor*/ {
+
+};
+
+class GUI_TitleBar /*: public Widget_Compositor*/ {
+
+};
+
+
+class Widget_Pane /* : public Widget_Border */ {
+
+};
+
+class Widget_VScrollBar /* : public Widget_WithChildren */ {
+
+};
+
+class Widget_ListBox : public Widget_VScrollBar {
+
+};
+
+class Widget_Button /* : public Widget_Border */ {
+
+};
+
+class Widget_MenuItem : public Widget_Button {
+
+};
+
+class Widget_SubMenu : public Widget_MenuItem {
+
+};
+
+class Widget_Bar /* : public Widget */ {
+
+};
+
+class Widget_Slider : public Widget_Bar {
+
+};
+
+class Widget_Layout /* : public Widget_WithChildren */ {
+
+};
+
+class Widget_TableRow /* : public Widget_Border */ {
+
+};
 
 #endif

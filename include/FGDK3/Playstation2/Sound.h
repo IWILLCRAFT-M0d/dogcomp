@@ -30,13 +30,11 @@ class SoundImplementation {
         virtual void func_0026E498();
 };
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+class Sound /* : public SoundImplementation */ {
+    public:
+        virtual ~Sound();
+};
 
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif

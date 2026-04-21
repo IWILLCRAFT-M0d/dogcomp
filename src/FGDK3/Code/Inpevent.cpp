@@ -159,7 +159,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB0D8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB198);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB3A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB3A0); // called by GameShell::Step
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB410);
 
@@ -179,12 +179,12 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB710); /* return a0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", __tfQ224InputEvent_ValueInstance10LocalTimer);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB768);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB768); // Q224InputEvent_ValueInstance10LocalTimer virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", __tf25InputDevice_ChangeCatcher);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB7C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB7C8); /* __tf12TimSrv_Timer */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB818);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB818); /* __tf26TimSrv_TimerImplementation */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB858);

@@ -1,11 +1,13 @@
 #ifndef ANIMPOSCOMPONENTS_H
 #define ANIMPOSCOMPONENTS_H
 
-class AnimPosFromExternalParameterAnimation {
+#include "Animate.h"
+
+class AnimPosFromExternalParameterAnimation : public AnimationComponent {
 
 };
 
-class AnimPosBaseAnimation {
+class AnimPosBaseAnimation : public AnimationComponent {
 
 };
 
@@ -13,7 +15,7 @@ class AnimPosLocalBaseAnimation : public AnimPosBaseAnimation {
 
 };
 
-class AnimPosWorldBaseAnimation {
+class AnimPosWorldBaseAnimation : public AnimPosBaseAnimation {
 
 };
 

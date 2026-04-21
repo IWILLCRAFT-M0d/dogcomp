@@ -15,7 +15,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC20); /* "_actorID 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFC50); /* "_actorID >= -1 && _actorID < m_actorTblSize" */
 
 #ifdef NON_MATCHING
-Status WorldObj_InternalInitialise(void) {
+Status WorldObj_InternalInitialise() {
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/WorldObj.cpp", 150);
 }
 #else
@@ -44,11 +44,11 @@ void * const WorldObj_StdInit_UsedModules[] = {
     0,
 };
 
-Status WorldObj_Initialise(void) {
+Status WorldObj_Initialise() {
     return StdInit_InitialisationSequence(&WorldObj_StdInit_Description);
 }
 
-void WorldObj_Finalise(void) {
+void WorldObj_Finalise() {
     StdInit_FinalisationSequence(&WorldObj_StdInit_Description);
 }
 
@@ -122,13 +122,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 #ifdef NON_MATCHING
-void WorldObject::func_00182FF8(void* shape) {
+void WorldObject::func_00182FF8(ShapeData* shape) {
     //
-    this->m_shapeInstance.SetShape(shape);
+    ShapeInstance::SetShape(shape);
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8__11WorldObjectPv);  // set shape for worldobject?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8__11WorldObjectP9ShapeData);  // set shape for worldobject?
 // "SetShape called but there are still animations running!"
 #endif
 
@@ -150,7 +150,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D00D8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184738);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90); // this function deals with rendering; member function?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90__11WorldObject); // this function deals with rendering; member function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E28);
 
@@ -172,7 +172,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185510);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185518);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185550);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185550); // WorldObject updating
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185680);
 
@@ -182,6 +182,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185878);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185CE0);
 
+// ANIMPK 0x0044DC8C
+// PKACTOR 0x0044DC90
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185DD8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8__11WorldObject);
@@ -216,9 +218,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186B90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186BB0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186BD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186BD0); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186BF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186BF0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186F80);
 

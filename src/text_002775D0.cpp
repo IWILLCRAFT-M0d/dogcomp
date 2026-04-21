@@ -76,7 +76,7 @@ void * StdAllocator::Alloc(size_t nbytes) {
   return malloc(nbytes);
 }
 
- void StdAllocator::Free(void* ptr) {
+void StdAllocator::Free(void* ptr) {
   free(ptr);
 }
 

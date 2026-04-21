@@ -13,4 +13,8 @@ int func_0031C5E8(void);
 class ScriptThread {
 };
 
+class ScriptThread_BroadcastEnumerator {
+
+};
+
 #endif

@@ -6,8 +6,8 @@
 
 class SphereObj : public WorldObject {
     public:
-        int unk5C0;
-        float unk5C4;
+        float unk5C0; // hitbox diameter?
+        float unk5C4; // current diameter
         int unk5C8;
         int unk5CC;
         int unk5D0;
@@ -20,7 +20,7 @@ class SphereObj : public WorldObject {
         int unk5EC;
         float unk5F0;
         float unk5F4;
-        float unk5F8;
+        float unk5F8; // bounciness?
 
 
         SphereObj(ClassInfo*, SimObj_Universe*, int, short);

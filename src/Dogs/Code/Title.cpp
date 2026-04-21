@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022D588); // TitleView mem
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8); // TitleView member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD08);
-
+// bool D_0044E974 (isRendering?)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD18); // TitleView member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0); // TitleView member

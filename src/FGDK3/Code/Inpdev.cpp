@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", InputDevice_Finalise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FB980);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FB9B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FB9B0); /* InputDevice_Device */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", _$_18InputDevice_Device);
 

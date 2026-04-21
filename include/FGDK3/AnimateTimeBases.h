@@ -3,14 +3,16 @@
 
 #include "Animate.h"
 
-class TimeProvidingTimeBase : public AnimationTimeBase {
+class TimeProvidingTimeBase /*: public AnimationTimeBase*/ {
     public:
+        TimeProvidingTimeBase(ClassInfo*, Animation*);
         virtual ~TimeProvidingTimeBase();
         // ? func_002F3428();
 };
 
-class OnceThroughTimeBase : public TimeProvidingTimeBase {
+class OnceThroughTimeBase /*: public TimeProvidingTimeBase*/ {
     public:
+        OnceThroughTimeBase(ClassInfo*, Animation*);
         virtual ~OnceThroughTimeBase();
         //? func_002F3500();
         virtual int func_002F0E50();
@@ -22,27 +24,35 @@ class OnceThroughTimeBase : public TimeProvidingTimeBase {
 
 };
 
-class OnceThroughTimeBaseFinder : public AnimationTimeBaseFinder {
+class AnimationTimeBaseFinder {
+    public:
+        ClassInfo* unk0;
+        AnimationTimeBaseFinder(ClassInfo*);
+};
+
+class OnceThroughTimeBaseFinder /*: public AnimationTimeBaseFinder */{
     public:
         //func_002f0cf0
 };
 
 
-class WalkSyncedTimeBase : public TimeProvidingTimeBase {
+class WalkSyncedTimeBase /*: public TimeProvidingTimeBase*/ {
     public:
+        WalkSyncedTimeBase(ClassInfo*, Animation*);
         virtual ~WalkSyncedTimeBase();
         int func_002F14B0();
         //? func_002F14B8();
         int func_002F36A0();
 };
 
-class WalkSyncedTimeBaseFinder : public AnimationTimeBaseFinder {
+class WalkSyncedTimeBaseFinder /*: public AnimationTimeBaseFinder*/ {
     public:
         // func_002F12A8
 };
 
-class LoopingTimeBase : public TimeProvidingTimeBase {
+class LoopingTimeBase /*: public TimeProvidingTimeBase*/ {
     public:
+        LoopingTimeBase(ClassInfo*, Animation*);
         virtual ~LoopingTimeBase();
         //? func_002F35D8();
         int func_002F1118();
@@ -55,14 +65,14 @@ class LoopingTimeBase : public TimeProvidingTimeBase {
 
 };
 
-class LoopingTimeBaseFinder : public AnimationTimeBaseFinder {
+class LoopingTimeBaseFinder /*: public AnimationTimeBaseFinder */{
     public:
         //func_002F0FB8
 };
 
 
 
-class ForeverTimeBase : public AnimationTimeBase {
+class ForeverTimeBase /*: public AnimationTimeBase*/ {
     public:
         virtual ~ForeverTimeBase();
         // ? func_002F33A8();
@@ -72,12 +82,12 @@ class ForeverTimeBase : public AnimationTimeBase {
         int func_002F33A0();
 };
 
-class ForeverTimeBaseFinder : public AnimationTimeBaseFinder {
+class ForeverTimeBaseFinder /*: public AnimationTimeBaseFinder */{
     public:
         // func_002F09F0
 };
 
-class AmblerSyncedTimeBase : public TimeProvidingTimeBase {
+class AmblerSyncedTimeBase /*: public TimeProvidingTimeBase*/ {
     public:
         virtual ~AmblerSyncedTimeBase();
         // ? func_002F3848();
@@ -87,7 +97,7 @@ class AmblerSyncedTimeBase : public TimeProvidingTimeBase {
         int func_002F3840();
 };
 
-class LegSyncedTimeBase : public TimeProvidingTimeBase {
+class LegSyncedTimeBase /*: public TimeProvidingTimeBase*/ {
     public:
         virtual ~LegSyncedTimeBase();
         // ? func_002F3778();
@@ -97,7 +107,7 @@ class LegSyncedTimeBase : public TimeProvidingTimeBase {
         int func_002F3770();
 };
 
-class AdvanceTimeRecordingTimeBase : public AnimationTimeBase {
+class AdvanceTimeRecordingTimeBase /*: public AnimationTimeBase */{
     public:
         virtual ~AdvanceTimeRecordingTimeBase();
         // ? func_002F38E8();
@@ -105,7 +115,7 @@ class AdvanceTimeRecordingTimeBase : public AnimationTimeBase {
         int func_002F38E0();
 };
 
-class ComponentDeterminedTimeBase : public AnimationTimeBase {
+class ComponentDeterminedTimeBase /*: public AnimationTimeBase */{
     public:
         virtual ~ComponentDeterminedTimeBase();
         // ? func_002F39E8();

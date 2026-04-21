@@ -115,7 +115,8 @@ class Console {
 };
 
 class ConsoleLayer /* : public Widget_Border, public InputBinding */ {
-
+	public:
+		float unk100; // cursor blink?
 };
 
 

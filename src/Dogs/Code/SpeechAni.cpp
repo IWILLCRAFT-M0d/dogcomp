@@ -202,7 +202,7 @@ void StreamedVoiceoverTrivial::func_0022D3B8() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D3C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SpeechAni", func_0022D3C0__24StreamedVoiceoverTrivial);
 /*
 int StreamedVoiceoverTrivial::func_0022D3C0() {
     return a0->unk14

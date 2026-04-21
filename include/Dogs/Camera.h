@@ -3,7 +3,7 @@
 
 #include "WorldObj.h"
 
-class Camera : public WorldObject {
+class Camera : public WorldObject/**/ {
     public:
         int unk5D0;
         Camera(ClassInfo*, SimObj_Universe*, int, short);

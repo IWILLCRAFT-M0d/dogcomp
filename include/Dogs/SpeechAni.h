@@ -28,7 +28,7 @@ class SpeechAniSound : public AnimationComponent {
 
 };
 
-class SpeechAniSoundWithControl : public AnimationComponent {
+class SpeechAniSoundWithControl : public AnimationComponent/*, public ComponentDeterminedTimeBase::Component*/ {
     public:
         virtual ~SpeechAniSoundWithControl();
         virtual void func_0022B820();

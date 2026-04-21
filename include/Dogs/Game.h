@@ -7,24 +7,41 @@
 
 #include "FGDK3/GameShell.h"
 
+
+
 typedef struct {
     char unk0[0x4F8];
     int unk4F8;
 } s_func_001C6DC8;
 
 
+typedef struct {
+    /* 0x8 */ int m_screenPositionX;
+    /* 0xC */ int m_screenPositionY;
+    /* 0x10 */ bool m_rumble;
+    /* 0x14 */ bool m_pawController;
+    /* 0x18 */ bool m_soundEffects;
+    /* 0x1C */ bool m_music;
+    /* 0x20 */ bool m_widescreen;
+    float unk24;
+    float unk28;
+    /* 0x2C */ int m_language;
+} s_Game_Document_584;
+// constructed by 001B1FA8
+
+extern void * const Game_StdInit_UsedModules[];
+
 Status Game_InternalInitialise();
 void Game_InternalFinalise();
 Status Game_Initialise();
 void Game_Finalise();
 
-class WorldObject_Universe  : public SimObj_Universe {
+class WorldObject_Universe : public SimObj_Universe {
 
 };
 
-class Game_Document : public GameShell, public WorldObject_Universe {
+class Game_Document : public GameShell, public WorldObject_Universe, public DogScript {
     public:
-        /* 0x30 */ WorldObject_Universe m_universe;
         // 0xE4 GE_Device*
         int unk144;
         int unk148;
@@ -49,6 +66,7 @@ class Game_Document : public GameShell, public WorldObject_Universe {
         int unk1FC; // script thread profiling actorId
         int unk200;
         int unk204;
+        // 0x3E0 GameDesktop (virtualdesktop)
         int unk3E8;
         int unk3EC;
         int unk3F0; // windowed mode?
@@ -59,8 +77,9 @@ class Game_Document : public GameShell, public WorldObject_Universe {
         int unk404;
         //unk408
         int unk4B0;
+        // unk4D0 LightManager
         /* 0x4D4 */ bool m_verbose;
-        /* 0x4D4 */ bool m_renderSkeleton;
+        /* 0x4D8 */ bool m_renderSkeleton;
         /* 0x4DC */ bool m_renderOrient;
         /* 0x4E0 */ bool m_renderRadius;
         /* 0x4E4 */ bool m_renderActorName;
@@ -86,6 +105,7 @@ class Game_Document : public GameShell, public WorldObject_Universe {
         int unk578;
         int unk57C; // current collar
         int unk580;
+        s_Game_Document_584* unk584; // settings
         float unk588;
         float unk58C;
         float unk5A0;
@@ -113,10 +133,18 @@ class SimObj_FilterFlagsAndEq : public SimObj_Filter {
         /* virtual */ int func_001D6B40();
 };
 
+const char* func_001B2470(s_Game_Document_584*, int);
+const char* func_001B24F8(s_Game_Document_584*);
+const char* func_001B2578(s_Game_Document_584*);
+void func_001B25F8(s_Game_Document_584*);
+void func_001B2620(s_Game_Document_584*);
+void func_001B2640(s_Game_Document_584*, int);
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+void func_0019A860(s_func_001C6DC8*, int, int); // TODO:Move to unk.h or BookMetaphor header
+void func_00196470(s_func_001C6DC8*, int); // TODO:Move to unk.h or BookMetaphor header
 s_func_001C6DC8* func_001C6DC8(Game_Document*);
 void func_001C8120(void);
 int func_001C8128();

@@ -47,7 +47,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_3Dog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012DFE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E050); // Dog virtual; footprints
 
 float Dog::func_0012E240() {
     return 30.0f;
@@ -208,16 +208,17 @@ int Dog::func_001365B0() {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365B0__3Dog);
 #endif
 
-
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365C8__3Dogf);
-/*
+#ifdef NON_MATCHING
 void Dog::func_001365C8(float arg) {
     this->unk844 = arg;
 }
-*/
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365D0); // Dog member
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365C8__3Dogf);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365F8); // Dog member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365D0__3Dogf); // Dog virtual; set dog mien?
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001365F8); // Dog member; mien function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00136628__3Dogf);
 /*
@@ -422,7 +423,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A7A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A7F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __tf19Interface1Z7Jump_IF);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __tf9Interface1Z7Jump_IF);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __tft9Interface1Z23AnimationMovedObject_IF);
 

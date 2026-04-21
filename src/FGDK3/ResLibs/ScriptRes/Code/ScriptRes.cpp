@@ -129,9 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031E6D8); // Script member
 
-
-
-void /*Script::*/func_0031E8C0() {
+void Script::func_0031E8C0() {
     return;
 }
 

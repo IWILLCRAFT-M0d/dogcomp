@@ -3,9 +3,16 @@
 #include "unk.h"
 
 // DrawShape.cpp?
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB38);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB40); /* return D_00452AD4 */
+extern short D_00452AD4;
+
+void func_002DAB38(short arg0) {
+    D_00452AD4 = arg0;
+}
+
+short func_002DAB40() {
+    return D_00452AD4;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DAB48);
 
@@ -25,7 +32,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB780);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB988);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DC088);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DC088); // debug name rendering does not happen if stubbed
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DC638);
 

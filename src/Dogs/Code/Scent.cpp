@@ -51,7 +51,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", _$_5Scent);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00153EA8); // "Scent (actorID %d) failed to rayhit ground"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00154048);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00154048); // Scent virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00154080);
 

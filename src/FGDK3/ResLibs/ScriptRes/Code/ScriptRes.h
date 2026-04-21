@@ -25,7 +25,6 @@ extern "C" {
 #endif
 void func_0031CB30(void);
 int func_0031CB68(int, int);
-void func_0031E8C0(void);
 int func_0031E8C8(void);
 int func_0031E8D8(void);
 int func_0031E8E0(void);

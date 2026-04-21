@@ -142,7 +142,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3D70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3DE8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3EF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3EF8); // vector?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3FB0);
 
@@ -200,7 +200,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", _vt$16ObjectNewMessage);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", __tf16ObjectNewMessage);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E50B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E50B8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E50E8);
 

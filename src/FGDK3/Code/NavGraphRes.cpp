@@ -56,6 +56,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279A60);  /* retur
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", __tft8Resource1Z8NavGraph);
 
+// Beginning of NavGraph.cpp?
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279AC0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_00279C78);

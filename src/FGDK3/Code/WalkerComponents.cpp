@@ -2,7 +2,7 @@
 
 #include "FGDK3/WalkerComponents.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0558); /* D_00452B60 = a0 (Walking_EnableIK) */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0558); /* D_00452B5C = a0 (Walking_EnableIK) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0560);
 

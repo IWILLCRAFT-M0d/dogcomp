@@ -295,15 +295,13 @@ BookMetaphor::ChangeLevelBackgroundThread::ChangeLevelBackgroundThread(int level
 }
 
 void BookMetaphor::ChangeLevelBackgroundThread::func_001947C8() {
-    short sVar1;
     s_func_001C6DC8* unk;
 
     while (unk = func_001C6DC8(TheGame), unk->unk4F8 != 0) {
         Thread::SwitchToNext();
   }
     printf("Loading next set of overlays\n");
-    sVar1 = func_0018C980(m_level, m_gate);
-    func_00273A80(sVar1);
+    func_00273A80(func_0018C980(m_level, m_gate));
     printf("Changing level\n");
     func_001C88D0(TheGame, m_level, m_gate);
 }
@@ -368,9 +366,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A6E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A788);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A860);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A860); // called when level changing
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A8C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A8C0); // called when closing pause menu
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019A940);
 
@@ -402,7 +400,7 @@ BookMetaphorLayer::BookMetaphorLayer() {
     //func_00306cd8(&this->field194_0xe0);
     func_00273A80(7);
     //pGVar1 = TheGame;
-    TheGame->m_fps = 0.01f;
+    TheGame->m_deltaTime = 0.01f;
     //piVar2 = (int *)func_001c6dc8(pGVar1);
     func_001C6DC8(TheGame);
 

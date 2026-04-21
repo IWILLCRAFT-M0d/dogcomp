@@ -9,5 +9,8 @@ class Visual_Graphic  : public Widget_Graphic  {
         // virtual ? func_00235680
 };
 
+class Visual_Counter : public Widget_Pane {
+
+};
 
 #endif

@@ -111,6 +111,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __10FadeOutReqf);
 #ifdef NON_MATCHING
 FadeInReq::FadeInReq(float arg) : GameState::GameStateReq::GameStateReq(this) {
 	this->unk0 = arg;
+
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __9FadeInReqf);
@@ -196,7 +197,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_15BMPageChangeReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf15BMPageChangeReq);
 
+#ifdef NON_MATCHING
+void BMPageChangeReq::func_001D9748() {
+	func_00196470(func_001C6DC8(TheGame), m_page);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9748__15BMPageChangeReq);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9780); // BMPageChangeReq member
 
@@ -222,7 +229,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_14ChangeLevelReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf14ChangeLevelReq);
 
+#ifdef NON_MATCHING
+void ChangeLevelReq::func_001D9AE8() {
+	func_0019A860(func_001C6DC8(TheGame), m_level, m_gate);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9AE8__14ChangeLevelReq);
+#endif
 
 int ChangeLevelReq::func_001D9B20() {
 	return 1;
@@ -232,7 +245,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_15StartNewGameReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf15StartNewGameReq);
 
+#ifdef NON_MATCHING
+void StartNewGameReq::func_001D9BB8() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9BB8__15StartNewGameReq);
+#endif
 
 int StartNewGameReq::func_001D9BF0() {
 	return 1;
@@ -242,7 +261,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", _$_18BMHighlightClueReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf18BMHighlightClueReq);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9C88); // BMHighlightClueReq member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9C88__18BMHighlightClueReq); // BMHighlightClueReq member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9CC0); // BMHighlightClueReq member
 
@@ -294,6 +313,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA138__9FadeInReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA160); // FadeInReq member
 
+// GameTime?
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA190); // internalinitialise?
 
 void func_001DA1B8(void) { // internalfinalise?

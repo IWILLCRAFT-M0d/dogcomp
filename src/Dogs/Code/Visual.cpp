@@ -80,7 +80,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00237080);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002370C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002370F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_002370F0); // set controllabledog timer function? ; 0x0045369C
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00237290);
 

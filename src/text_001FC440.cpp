@@ -5,7 +5,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC440);
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598); // debug actor names?
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0); // text resources
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5E0); // texture resources
 

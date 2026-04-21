@@ -35,7 +35,7 @@ PRE_ELF_PATH = f"{OUT_DIR}/{BASENAME}.elf"
 TARGET_DIR   = "target"
 
 # Compilation Flags
-INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common -I include/Dogs -I include/FGDK3"
+INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I include/ee -I include/ee_gcc/gcc-lib -I include/ee_gcc/machine -I include/ee_gcc/sys -I include/common -I include/Dogs -I include/FGDK3 -I include/zlib-1.1.3"
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.3"
 COMMON_COMPILE_FLAGS = f"-g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
@@ -67,7 +67,7 @@ O0_SPLITS = [
     "src/FGDK3/Code/GameShell.cpp",
     "src/text_002FCF70.cpp",
     "src/text_00307D30.cpp",
-    "src/text_00310BE8.cpp"
+    "src/FGDK3/Code/FileSystem_Zip.cpp"
 ]
 
 UNCOMPATIBLE_SN_AS_SPLITS = [

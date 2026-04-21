@@ -29,11 +29,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", _$_11SwingBridge);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_00177950); // SwingBridge member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779C0); // SwingBridge member
+void SwingBridge::func_001779C0() {
+    HitTri_Object::func_001DDC88();
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001779E0); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001780F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001780F0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SwingBridge", func_001782A0);
 

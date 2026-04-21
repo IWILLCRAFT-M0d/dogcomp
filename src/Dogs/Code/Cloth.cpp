@@ -76,7 +76,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001273C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00127958);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001279A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001279A8); // max<int> ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001279B8);
 

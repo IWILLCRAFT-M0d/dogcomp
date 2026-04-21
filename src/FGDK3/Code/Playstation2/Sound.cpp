@@ -3,7 +3,31 @@
 
 #include "FGDK3/Playstation2/Sound.h"
 
+#include <eekernel.h>
+#include <libsdr.h>
+
+#ifdef NON_MATCHING
+// TODO: Use macro values where possible for sceSdRemote
+Status Sound_InternalInitialise() {
+    FlushCache(0); // FlushCache(WRITEBACK_DCACHE);
+    sceSdRemote(1, rSdSetAddr, 0x1D01, 0x1FFFFF);
+    sceSdRemote(1, rSdSetAddr, 0x1D00, 0x1DFFFF);
+    //
+    //sceSdRemote(1, rSdSetEffectAttr, SD_CORE_1,)
+    //sceSdRemote(1, rSdSetEffectAttr, SD_CORE_0,)
+    sceSdRemote(1, rSdSetParam, 0x801, 0xFCC);
+    sceSdRemote(1, rSdSetParam, 0x800, 0xFC0);
+    sceSdRemote(1, rSdSetCoreAttr, 3, 1);
+    sceSdRemote(1, rSdSetCoreAttr, 2, 1);
+    sceSdRemote(1, rSdSetParam, 0xB81, 0x3FFF);
+    sceSdRemote(1, rSdSetParam, 0xC81, 0x3FFF);
+    sceSdRemote(1, rSdSetParam, 0xB80, 0x3FFF);
+    sceSdRemote(1, rSdSetParam, 0xC80, 0x3FFF);
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/Sound.cpp", 280);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", Sound_InternalFinalise__Fv);
 
@@ -54,7 +78,7 @@ SoundImplementation::SoundImplementation(void* arg1) {
 };
 
 #else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", __19SoundImplementationPv); /* SoundImplementation::SoundImplementation */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", __19SoundImplementationPv); // SoundImplementation::SoundImplementation(const SoundEffect* ?)
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", _$_19SoundImplementation);
@@ -73,7 +97,7 @@ void SoundImplementation::func_0026E498() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E4A0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E500);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026E500); // SoundImplementation::Advance
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026ED08);
 
@@ -83,13 +107,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026EE30);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026EF50);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F048);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F048); // Sound constructor
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F180);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F2B0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F330);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F330); // Sound::Advance
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F4F0);
 
@@ -97,9 +121,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F580);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F5E0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F5F0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F5F0); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F638);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F638); // Sound virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026F678);
 
@@ -197,7 +221,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB48); /*
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB50);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB70); /* return D_00451A60 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB70); /* return D_00451A60 (s_soundCount) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Sound", func_0026FB78); /* return D_00451A64; */
 

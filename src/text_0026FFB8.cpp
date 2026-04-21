@@ -1,6 +1,8 @@
 #include "common.h"
 #include "unk.h"
 
+// Beginning of Shape.cpp?
+
 #ifdef NON_MATCHING
 ShapeInstance::ShapeInstance() {
     this->m_shapeData = NULL;
@@ -34,6 +36,10 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", Empty__13ShapeInstance);
 #ifdef NON_MATCHING
 void ShapeInstance::Fill() {
     if (this->m_shapeData != NULL) {
+        //this->unk8->SetSize
+        //this->unk14->SetSize
+        //this->unk20 = new MeshInstance
+
 
     }
 }
@@ -106,7 +112,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeInstance member
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeInstance member; RCT3 ShapeInstance::GetShapeName?
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938);
 

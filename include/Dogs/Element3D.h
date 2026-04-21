@@ -2,8 +2,9 @@
 #define ELEMENT3D_H
 
 #include "unk.h"
+#include "SimObj.h"
 
-class Element3D : public ShapeInstance {
+class Element3D : public ShapeInstance, public GenericObject/*, public Location_IF, public BoneManagerProvider_IF, public AnimPosProvider_IF, public AnimVarProvider_IF*/  {
     public:
         /* 0x108 */ short m_shapeId;
         Element3D(ClassInfo*, short);

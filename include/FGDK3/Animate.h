@@ -26,18 +26,6 @@ class WeightSettingAnimation : public AnimationComponent {
         virtual void func_002F41B8();
 };
 
-
-
-class AnimationTimeBase : public GenericObject {
-    public:
-
-        float func_002F4368();
-        void func_002F4378();
-};
-
-class AnimationTimeBaseFinder {
-};
-
 class Animation {
     public:
         virtual ~Animation();
@@ -46,6 +34,22 @@ class Animation {
         virtual int func_002F5BF8();
         virtual void func_002F7208();
 };
+
+class AnimationTimeBase : public GenericObject {
+    public:
+        static ClassInfo* s_classInfo;
+
+        AnimationTimeBase* unkC;
+        Animation* unk10;
+        AnimationTimeBase(ClassInfo*, Animation*);
+        virtual ~AnimationTimeBase();
+        virtual ClassInfo* func_002F6E90();
+        virtual float func_002F4368();
+        virtual void func_002F4378();
+};
+
+
+
 
 class AnimationWeightModifier {
     public:

@@ -3,6 +3,14 @@
 
 #include "WorldObj.h"
 
+class PersonRepulsor /*: public SimObj_HitReceiver, public SimObj_HitPrimReceiver*/ {
+
+};
+
+class PersonHitSizeCalculator : public SimObj_HitPrimReceiver {
+    public:
+        // virtual func_0014CC60
+};
 
 class Person : public WorldObject {
     public:

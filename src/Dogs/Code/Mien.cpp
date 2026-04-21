@@ -14,11 +14,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E60C8);
 Mien::Mien() {
     this->unk0 = 3;
     this->unk4 = -1;
-    this->unk8 = 0;
+    this->unk8 = 0.0f;
     this->unkC = 0.5f;
-    this->unk10 = 0;
-    this->unk18 = 0;
-    this->unk1C = 0;
+    this->unk10 = 0.0f;
+    this->unk18 = 0.0f;
+    this->unk1C = 0.0f;
     this->unk20 = 5.0f;
 
 }
@@ -39,11 +39,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E64A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6958);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6C68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6C68); // Used by Console::Mien
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6C80);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CC8); /* a0->unk20 = f12 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CD0);
 

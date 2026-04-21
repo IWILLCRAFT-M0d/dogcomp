@@ -39,7 +39,17 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Animate", _vt$22WeightSettingAnimati
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf22WeightSettingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4298); /* AnimationTimeBase */
+#ifdef NON_MATCHING
+AnimationTimeBase::AnimationTimeBase(ClassInfo* arg1, Animation* arg2) {
+    this->unk10 = arg2;
+    this->unkC = this;
+    if (arg1 == NULL) {
+        s_classInfo->unk4 = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __17AnimationTimeBaseP9ClassInfoP9Animation); // AnimationTimeBase (ClassInfo*, Animation*?)
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_17AnimationTimeBase);
 
@@ -53,7 +63,7 @@ void AnimationTimeBase::func_002F4378() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4380); /* AnimationTimeBaseFinder */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __23AnimationTimeBaseFinderP9ClassInfo); /* AnimationTimeBaseFinder */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4398); /* AnimationComponent */
 
@@ -65,9 +75,9 @@ void func_002F4608() { // AnimationComponent member?
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4610);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4610); // RCT3 Animation::ComponentsByLevel::ComponentsByLevel ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4628); /* Animation */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4628); // Animation::Animation(AnimationStore*, GenericObject*, AnimationHeader*?)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4900);
 
@@ -119,7 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5870);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5890); // "Animation::SetValue index is beyond end of table (idx = %d, tbl = %d)"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5948);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5948); // Animation function
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80); // "Animation::SetPosition index is beyond end of tabls (idx=%d, tbl=%d)"
 
@@ -245,13 +255,11 @@ void func_002F6E88() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E90__17AnimationTimeBase);
-/*
 ClassInfo* AnimationTimeBase::func_002F6E90() {
-    return D_00452D28;
+    return s_classInfo;
 }
-*/
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E98); /* __tf23AnimationTimeBaseFinder */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf18AnimationComponent);
 
@@ -259,7 +267,7 @@ void func_002F6F18() {
     return;
 }
 
-void func_002F6F20() {
+void func_002F6F20() { // virtual
     return;
 }
 

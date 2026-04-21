@@ -5,7 +5,7 @@
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED1D8);
 
 #ifdef NON_MATCHING
-PausedLayer::PausedLayer() {
+PausedLayer::PausedLayer() /* : WidgetWithChildren(0,0x180,0) */ {
     this->unkD0 = 0;
 }
 #else

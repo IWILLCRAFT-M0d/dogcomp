@@ -44,7 +44,8 @@ Status InputKeyboard_Initialise() {
     return StdInit_InitialisationSequence(&InputKeyboard_StdInit_Description);
 }
 
-void InputKeyboard_Finalise() { StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
+void InputKeyboard_Finalise() {
+    StdInit_FinalisationSequence(&InputKeyboard_StdInit_Description);
 }
 
 #else

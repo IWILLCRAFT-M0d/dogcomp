@@ -10,6 +10,12 @@ class BackgroundSaveThread : public Thread {
 };
 */
 
+namespace SaveGameManager {
+    class MyInputBinding : public InputBinding {
+
+    };
+}
+
 #ifdef __cplusplus
 extern "C" {
 #endif

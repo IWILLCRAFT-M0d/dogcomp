@@ -12,6 +12,16 @@
 
 #include "unk.h"
 
+extern void * const Music_StdInit_UsedModules[];
+
+class Music_Channel {
+    public:
+        char unk[4];
+        void* unk4;
+        Music_Channel();
+        virtual ~Music_Channel();
+};
+
 class Music_Performance {
     public:
         int unk0;
@@ -22,7 +32,7 @@ class Music_Performance {
         virtual ~Music_Performance();
 };
 
-class Music_PS2Performance : public Music_Performance {
+class Music_PS2Performance : public Music_Performance/*, public Thread*/ {
     public:
         int unk120;
         int unk124;
@@ -47,9 +57,11 @@ class Music_Piece {
         virtual ~Music_Piece();
 };
 
-class Music_PS2Piece /*: public Music_Piece*/ {
+class Music_PS2Piece : public Music_Piece {
     public:
+        char* unk58; // name?
         /* 0x60 */ u_int headerinfo; // MIH address
+        Music_PS2Piece(char*);
 };
 
 

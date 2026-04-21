@@ -2,19 +2,26 @@
 #include "unk.h"
 
 #include "FGDK3/ShapeParams.h"
-//INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __19ShapeParams_Dynamic);
-ShapeParams_Dynamic::ShapeParams_Dynamic() {
 
+ShapeParams_Dynamic::ShapeParams_Dynamic() {
+    // this->unk0 = 0;
+    // this->unk4 = 1;
 }
 
+ShapeParams_Dynamic::ShapeParams_Dynamic(int size) {
+    // this->unk0 = 0;
+    // this->unk4 = 1;
+    SetSize(size);
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B6B8); /* __19ShapeParams_Dynamici (int size) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", _$_19ShapeParams_Dynamic);
 
 #ifdef NON_MATCHING
 void ShapeParams_Dynamic::SetSize(int size) {
-
+    if (this->unk0 != NULL) {
+        delete[] this->unk0;
+    }
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", SetSize__19ShapeParams_Dynamici);
@@ -232,5 +239,5 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$14MeshTransforms);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __tf14MeshTransforms);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310BA8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310BA8); /* __tf17GE_TransformState */
 

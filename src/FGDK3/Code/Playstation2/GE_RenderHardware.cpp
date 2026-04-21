@@ -1,8 +1,18 @@
 #include "common.h"
+#include <eeregs.h>
 #include <libgraph.h>
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
 #include <stdio.h>
+
+#ifdef NON_MATCHING
+GE_PS2RenderHardware::GE_PS2RenderHardware() {
+    DPUT_GIF_MODE(4);
+    DPUT_D_PCR(0x60002);
+    asm("sync");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", __20GE_PS2RenderHardware);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", _$_20GE_PS2RenderHardware); /* ~GE_PS2RenderHardware */
 

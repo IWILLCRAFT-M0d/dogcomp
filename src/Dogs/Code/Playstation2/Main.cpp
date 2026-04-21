@@ -66,7 +66,6 @@ block_7:
 //     temp_2 = func_002CA950();
 //     temp_8 = temp_2->unk8;
 //     temp_8->unk2C(temp_2 + temp_8->unk28, 0, sp, 0, temp_8);
-//     temp_20 = "Dogs.dgf\0\0C:/Coding/FGDK3/Code/Common/StdMem.h\0m_defaultHeapStackSize < c_maxDefaultHeapStackSize\0\0m_defaultHeapStackSize > 0\0\0m_defaultHeapStack[m_defaultHeapStackSize-1] == this";
 // loop_9:
 //     temp_2_2 = func_002CA950();
 //     temp_3 = temp_2_2->unk8;
@@ -86,7 +85,7 @@ block_7:
 //     }
 //     temp_20_2 = func_002A4C58(D_0045216C, sp, 0, 0, var_17 == 0);
 //     func_002D6EA8(&sp20, func_00272FF0());
-//     func_002D70C0(&sp10, &sp20, temp_20, strlen(temp_20));
+//     func_002D70C0(&sp10, &sp20, "Dogs.dgf", strlen("Dogs.dgf"));
 //     func_002D7050(&sp10, sp10->unk4 + 1);
 //     *(sp10->unkC + sp10->unk4) = 0;
 //     func_002BEA88(&D_00388918, sp10->unkC);

@@ -18,7 +18,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F8078);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", func_002F80C0);
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", D_00446AA8);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", D_00446AA8); /* "c:/coding/fgdk3/Code/Common/InpUtil.cpp" */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpMouse", D_00446B28);
 

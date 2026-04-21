@@ -1,9 +1,21 @@
 #include "common.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F150); // MeshInstance constructor?
+// MeshUtil or MeshManage?
+#ifdef NON_MATCHING
+MeshInstance::MeshInstance(const MeshData* meshdata) {
+    this->unk4 = meshdata;
+    this->unk0 = 0x40;
+    // this->unk14 = 0;
+    // this->unk18 = 0;
+    //
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F1A8);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_0028F150", __12MeshInstancePC8MeshData); // RCT3 MeshInstance::MeshInstance
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/text_0028F150", _$_12MeshInstance);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F208);
 

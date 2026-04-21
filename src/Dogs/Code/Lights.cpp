@@ -68,7 +68,13 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Lights", D_003ADAF0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Lights", D_003ADCC0); /* "Light Manager" */
 
+#ifdef NON_MATCHING
+LightManager::LightManager() : LiveEditable("Light Manager", "Game Objects") {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __12LightManager);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_001415F0__12LightManager);
 

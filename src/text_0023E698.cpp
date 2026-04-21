@@ -9,7 +9,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023E7B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023E850);
 
-INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023E968);
+INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023E968); // fog function?
 
 INCLUDE_ASM("asm/nonmatchings/text_0023E698", func_0023EC08);
 

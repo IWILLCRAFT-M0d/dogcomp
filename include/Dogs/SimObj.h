@@ -3,6 +3,10 @@
 
 #include "unk.h"
 
+class DebugID_IF {
+
+};
+
 class SimObj_ChildHolder {
 
 };
@@ -33,6 +37,8 @@ class SimObj_Universe : public SimObj_ChildHolder {
         // unk7C
         int unkA4;
         int unkA8;
+        //
+        //Shape_Resources* unkB0;
         SimObj_Universe();
         virtual ~SimObj_Universe();
 };
@@ -55,14 +61,15 @@ class ClassInfo : public GenericObject {
         virtual ~ClassInfo();
 };
 
-class SimObj_Base : public GenericObject {
+class SimObj_Base : public GenericObject/*, public DebugID_IF, public LiveEditable*/ {
     public:
-        short unk5C;
+        short unk5C; // actorId
         SimObj_Base(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_Base();
 };
 
-class SimObject : public SimObj_Base {
+// 0x80 scale/position/rotation?
+class SimObject : public SimObj_Base/*, public Location_IF*/ {
     public:
         int unkB0;
         int unkC0;
@@ -74,15 +81,15 @@ class SimObject : public SimObj_Base {
 
         short unkDC;
         int unkF0;
-        int unkF4;
-        int unkF8;
+        bool unkF4; // render?
+        float unkF8;
         float unkFC;
 
         SimObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObject();
 };
 
-class SimObj_ObjectWithMomentum : public SimObject {
+class SimObj_ObjectWithMomentum : public SimObject/*, public Movement_IF */{
     public:
         int unk140;
         float unk144;
@@ -92,17 +99,17 @@ class SimObj_ObjectWithMomentum : public SimObject {
         float unk154;
         float unk158;
         int unk15C;
-        int unk160;
+        float unk160; // friction_in_1000ths? (from default.hfc)
         float unk164;
 
         float unk1D0; // gravity thing/mass?
-        float unk1D4;
+        float unk1D4; // mass?
         SimObj_ObjectWithMomentum(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_ObjectWithMomentum();
         virtual ClassInfo* func_00168B88();
 };
 
-class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum {
+class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum/*, public CameraSpecialHit_IF */ {
     public:
         SimObj_UniverseLandscape(ClassInfo*, SimObj_Universe*);
         virtual ~SimObj_UniverseLandscape();
@@ -117,6 +124,18 @@ class SimObj_HitReceiver : public SimObj_HitFilter {
     public:
         SimObj_HitReceiver(SimObject*, int, int);
         virtual ~SimObj_HitReceiver();
+};
+
+class SimObj_RayHitReceiver : public SimObj_HitFilter {
+
+};
+
+class SimObj_RayHitReceiverIgnore2 : public SimObj_RayHitReceiver {
+
+};
+
+class SimObj_HitPrimReceiver {
+
 };
 
 #ifdef __cplusplus

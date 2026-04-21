@@ -10,4 +10,9 @@ class Light : public SimObject {
         virtual ~Light();
 };
 
+class LightManager : public LiveEditable {
+    public:
+        LightManager();
+};
+
 #endif

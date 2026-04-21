@@ -27,13 +27,13 @@ INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F83A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", __12PlayingLayer);
 
-void func_001F8628(void) {
+void func_001F8628(void) { // virtual
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8630); // PlayingLayer member
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F87A0);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F87A0); // PlayingLayer virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F88B8);
 

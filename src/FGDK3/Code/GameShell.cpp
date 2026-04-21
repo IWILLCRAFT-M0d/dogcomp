@@ -31,17 +31,17 @@ void GameShell::func_002D30A8(bool arg1) { // rct3 GameShell::Activate?
 
 
 #ifdef NON_MATCHING
-GameShell::GameShell(float fps, float gameSpeed) {
+GameShell::GameShell(float deltaTime, float gameSpeed) {
   func_002D3360(this);
   this->m_gameTime = 0.0f;
   this->unk8 = TimSrv_GetTime();
-  this->m_fps = fps;
+  this->m_deltaTime = deltaTime;
   this->m_gameSpeed = gameSpeed;
   this->m_disabled = false;
-  if (D_004528EC != NULL) {
+  if (m_me != NULL) {
     DDE_FatalError("More than one GameShell instance not allowed");
   }
-  //D_004528EC = this;
+  m_me = this;
 
 }
 #else

@@ -6,6 +6,8 @@
 
 #include "string.h"
 
+#include <stdio.h>
+
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3598); /* StreamRenderer ? */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3628);
@@ -45,7 +47,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_16DebugEnvironment);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950); // RCT3 DebugEnvironment::OnNewMessage(const TextMessage*) ?
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442D68);
 
@@ -53,7 +55,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_11DebugWindow);
 
-void func_002D42D8() {
+void func_002D42D8() { // RCT3 DebugEnvironment::InitialiseStreams()?
     return;
 }
 
@@ -61,7 +63,7 @@ void func_002D42E0() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E8); // RCT3 DebugEnvironment::SetState(DebugEnvironment::State*)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D43A0);
 
@@ -83,11 +85,11 @@ void func_002D4770() {
     return;
 }
 
-void func_002D4778() {
+void func_002D4778(char* arg1, const char* arg2) {
     return;
 }
 
-void func_002D4780() {
+void func_002D4780() { // RCT3 DebugEnvironment::ResetFile(const char*)?
     return;
 }
 
@@ -168,6 +170,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5690);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D56E0); // Debug_StructContainer member
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5788); /* rct3 DebugEnvironment::Get (pretty sure) */
+// DebugEnvironment* D_00452948;
+// if (D_00452948 == NULL) {
+// D_00452948 = new DebugEnvironment();
+//
+//}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D57C0); /* rct3 DebugEnvironment::Terminate */
 
@@ -181,17 +188,40 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D58D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5910);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5958); /* rct3 DebugEnvironment::VFatalError */
+#ifdef NON_MATCHING
+void DebugEnvironment::VFatalError(const char* fmt, char* arg2) {
+    char str[1024];
+    vsprintf(str, fmt, arg2);
+    printf("%s\n", str);
+    func_002D4778("\r\n*** FATAL ERROR *** : ", 0);
+    func_002D4778(str, 0);
+    func_002D4778("\r\n", 0);
+    strcat(str,"\n\nThis error has also been sent to Debug.log");
+    strcat(str,"\n\nOK: <Attempt to continue>      Cancel: <Exit>");
+    if (func_002963F0(str, 0) == 0) {
+        asm("break 0x1");
+    }
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5958); /* RCT3 DebugEnvironment::VFatalError */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure (int func_002D5B40(char*,...?)
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure (int func_002D5B40(char*,...?) ; CustomAssert?
+
+// char str[1024];
+// sprintf(str, "Assertion failure:\n\n");
+
+// printf("*** Assertion failure *** : %s\n", );
+// strcat(str, "\n\nAbort:<IGNORE ALL>    Retry:<DEBUG>    Ignore:<IGNORE>");
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5C28);
 
-void DDE_FatalError(char* message, ...) {
+void DDE_FatalError(const char* message, ...) {
     va_list args;
     va_start(args, message);
     func_002D5958(message, args);
@@ -200,7 +230,7 @@ void DDE_FatalError(char* message, ...) {
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CC0__11DebugWindow);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CE0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CE0); // DebugWindow virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D08);
 
@@ -226,7 +256,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16DebugEnvironment);
 
-void DebugEnvironment::func_002D5D58(void) {
+void DebugEnvironment::func_002D5D58(void) { // RCT3 DebugEnvironment::OnRebuild() ?
     return;
 }
 
@@ -286,7 +316,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6358);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14StreamRenderer);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0); // StreamRenderer virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6480);
 
@@ -359,16 +389,16 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", FontRes_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A58);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6A58); // load
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B18);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B18); // unload
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$14Font_Resources);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14Font_Resources);
 
 #ifdef NON_MATCHING
-char * func_002D6B88() {
+char * func_002D6B88() { // Font_Resources virtual
     return "Font";
 }
 
@@ -471,7 +501,7 @@ loop_1:
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7808);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0); /* endian */
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0); /* Endian::Endian */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_6Endian);
 

@@ -2,17 +2,15 @@
 
 #include "Dogs/PlaceHolder.h"
 
-extern ClassInfo* D_0044D348;
-
 #ifdef NON_MATCHING
 
 PlaceHolder::PlaceHolder(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044D348 = arg1;
+        s_classInfo = arg1;
     }
 
     if (arg1 == NULL) {
-        D_0044D348->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -21,7 +19,16 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", __11PlaceHolderP9ClassInfo
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D138); // PlaceHolder virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D160); // PlaceHolder virtual (float arg1)
+#ifdef NON_MATCHING
+void PlaceHolder::func_0014D160(float fparg0) {
+    if (fparg0 != 0.0f) {
+        //func_00185550();
+        //func_00185DD8(arg0, fparg0);
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D160__11PlaceHolderf);
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlaceHolder", D_003B3740);
 
@@ -52,7 +59,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", _$_11PlaceHolder);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", __tf11PlaceHolder);
 
 ClassInfo* PlaceHolder::func_0014D3E8() {
-    return D_0044D348;
+    return s_classInfo;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlaceHolder", func_0014D3F0);

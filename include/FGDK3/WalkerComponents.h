@@ -7,7 +7,7 @@ class WalkingBobAnimation : public AnimationComponent {
 
 };
 
-class WalkingParamsAnimation {
+class WalkingParamsAnimation : public AnimationComponent {
 
 };
 

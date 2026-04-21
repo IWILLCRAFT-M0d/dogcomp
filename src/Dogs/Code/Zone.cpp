@@ -42,9 +42,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188A30); // "Unknown extra
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", _$_10ZoneRadius);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188BF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188BF8); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C28); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Zone", func_00188C88__10ZoneRadius);
 

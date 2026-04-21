@@ -20,9 +20,8 @@ Status WorldObj_Initialise();
 void WorldObj_Finalise();
 
 
-class WorldObject : public SimObj_ObjectWithMomentum {
+class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance/*, public ScriptMessageAndRequestReceiver, public AnimPosProvider_IF, public AnimVarProvider_IF, BoneManagerProvider_IF, public WalkerProvider_IF, public WalkingFootRayHit_IF, public AnimationResourceProvider_IF*/ {
     public:
-        /* 0x240 */ ShapeInstance m_shapeInstance;
         int unk2E0;
         //unk314
         //unk318
@@ -43,12 +42,13 @@ class WorldObject : public SimObj_ObjectWithMomentum {
         int unk5A8;
         int unk5AC;
         int unk5B0;
-        float unk5B4;
+        float unk5B4; // scale in smellovision/NUD while held
         int unk5B8;
         int unk5BC;
 
         WorldObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WorldObject();
+        //00188510
         virtual void func_001884A8();
         virtual void func_001884B8();
         //
@@ -57,7 +57,9 @@ class WorldObject : public SimObj_ObjectWithMomentum {
         //?
         virtual void func_001861B8();
 
-        virtual void func_00182FF8(void* shape);
+        virtual void func_00182FF8(ShapeData* shape);
+
+        virtual void func_00184A90();
 };
 
 #ifdef __cplusplus

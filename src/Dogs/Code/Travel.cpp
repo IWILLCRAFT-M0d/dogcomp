@@ -302,17 +302,17 @@ int NavToPosAnimation::func_002353C8() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf21RandomWanderAnimation);
 
-int func_00235430() {
+int /*RandomWanderAnimation::*/func_00235430() {
     return 0;
 }
 
-int func_00235438() {
+int /*RandomWanderAnimation::*/func_00235438() {
     return 0;
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf20TurnToAngleAnimation);
 
-int func_002354A0() {
+int /*TurnToAngleAnimation::*/func_002354A0() {
     return 1;
 }
 

@@ -15,6 +15,8 @@ class SwingBridge : public HitTri_Object {
         SwingBridge(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SwingBridge();
         virtual ClassInfo* func_00178630();
+        //
+        virtual void func_001779C0();
 };
 
 

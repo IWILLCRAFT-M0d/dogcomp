@@ -8,7 +8,11 @@ class EmitterSpec /* : public Widget_Editable */ {
         /* virtual */ int func_00149DB0();
 };
 
-class ParticleSystem : public WorldObject {
+class ParticleSystem_IF /**/ {
+
+};
+
+class ParticleSystem : public WorldObject, public ParticleSystem_IF {
     public:
         ParticleSystem(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~ParticleSystem();

@@ -28,8 +28,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC50); // HitTri_Objec
 
 #ifdef NON_MATCHING
 void HitTri_Object::func_001DDC88() {
-    if (this->unk5E0 == 0) {
-        func_00184A90(this);
+    if (this->unk5E0 == false) {
+        func_00184A90();
     }
 }
 #else

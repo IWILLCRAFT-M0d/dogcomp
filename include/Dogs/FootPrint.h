@@ -3,6 +3,10 @@
 
 #include "WorldObj.h"
 
+class StaticFootPrint /*: public SimObject */ {
+    public:
+        int unk11C;
+};
 
 class FootPrints : public WorldObject {
     public:

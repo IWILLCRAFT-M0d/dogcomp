@@ -55,7 +55,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243480);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243718);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243868);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243868); // movie? (from SDK mpeg samples)
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002438B0);
 
@@ -63,9 +63,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243B10);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243B30);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243B60);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243B60); // initAll? (from SDK mpeg samples)
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243DA0);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243DA0); // termAll? (from SDK mpeg samples)
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243E38);
 
@@ -91,7 +91,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00244250);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00244298);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002442C0);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002442C0); // strFileOpen? (from SDK mpeg samples)
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002445A0);
 

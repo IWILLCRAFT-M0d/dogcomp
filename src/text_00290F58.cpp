@@ -5,7 +5,7 @@
 
 #include <libscf.h>
 
-
+// MeshManage?
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58);
 
@@ -35,9 +35,9 @@ void func_00291778() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291780);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291780); // RCT3 MeshData::ReceiveContents
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291CC0);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291CC0); // RCT3 MeshData::EmptyContents?
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291DC8);
 
@@ -157,7 +157,7 @@ void func_002963E8() {
     return;
 }
 
-int func_002963F0() {
+int func_002963F0(char* arg1, bool arg2) {
     return 0;
 }
 

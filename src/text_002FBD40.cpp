@@ -7,7 +7,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD40); /* InputCD_PS2::InputCD_PS2 ?*/
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD70);
+INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD70); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBE78);
 

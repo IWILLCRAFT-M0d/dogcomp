@@ -528,7 +528,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002ADC40", D_00440AC0);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002ADC40", D_00440AE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B9BE8);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B9BE8); // vector?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BBBC8);
 
@@ -615,6 +615,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE660);
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE808);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE900);
+
+// ? ParseDGF(*, const char* file) {
+//
+//     if ( < 1) {
+//         DDE_FatalError("Failed to open downgrades file '%s'\n", file);
+//     }
+//     else {
+//
+//     }
+// }
+//
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BEA88);
 

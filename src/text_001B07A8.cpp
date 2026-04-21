@@ -14,9 +14,18 @@ INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B08F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0AC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0B90); // landscape/rendering thing?
+#ifdef NON_MATCHING
+s_func_001B0B90::s_func_001B0B90(float fparg0) {
+    this->unk0 = 0;
+    this->unk4 = -1;
+    this->unk8 = 0;
+    this->unkC = fparg0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0B90); // landscape/rendering thing?; used for font rendering?
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0BB0);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0BB0); // destructor for 001B0B90?
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0BD8);
 

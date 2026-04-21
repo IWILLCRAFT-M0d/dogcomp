@@ -83,7 +83,7 @@ int Person::func_0014C240() {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C240__6Person);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C250);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C250); // Person virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C5B0);
 

@@ -39,7 +39,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B990);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B9A0); // smellovision nose rendering
-
+//m_noseShape.Render()
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010B9C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_0010BAF0);
@@ -186,7 +186,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116B08);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116CA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116F08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00116F08); /* CameraMount::CameraMount */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00117110); // "Unknown extra for CameraMount creature"
 

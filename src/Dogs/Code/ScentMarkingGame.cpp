@@ -11,7 +11,7 @@ ScentMarkingGameNode::ScentMarkingGameNode(ClassInfo* arg1, SimObj_Universe* arg
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __20ScentMarkingGameNodeP9ClassInfoP15SimObj_Universeis); /* ScentMarkingGameNode::ScentMarkingGameNode */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ScentMarkingGame", __20ScentMarkingGameNodeP9ClassInfoP15SimObj_Universeis);
 #endif
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/ScentMarkingGame", D_003BB728);

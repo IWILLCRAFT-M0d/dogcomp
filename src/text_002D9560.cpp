@@ -2,8 +2,17 @@
 #include "debug.h"
 #include "unk.h"
 
+// Editables.cpp?
 
+#ifdef NON_MATCHING
+LiveEditable::LiveEditable(char* arg1, char* arg2) { // member, manager?
+    this->unk8 = this;
+    this->unk14 = 0;
+    this->unk10 = 0;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __12LiveEditablePcPc);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D95D0);
 
@@ -13,11 +22,18 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9658);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9848);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D98C8); /* EditableManager */
+#ifdef NON_MATCHING
+EditableManager::EditableManager(char* arg1) {
+    this->unk2C = new char[strlen(arg1) + 1];
+    strcpy(this->unk2C, arg1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", __15EditableManagerPc); /* EditableManager */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_15EditableManager);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D99F8);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D99F8); // EditableManager virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9B08); // "Duplicate member name \'%s\' in manager %s"
 

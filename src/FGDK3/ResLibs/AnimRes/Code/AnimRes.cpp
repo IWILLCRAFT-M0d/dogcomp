@@ -17,7 +17,6 @@ Status AnimationRes_InternalInitialise() {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalInitialise__Fv);
 #endif
 
-//INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", AnimationRes_InternalFinalise__Fv);
 void AnimationRes_InternalFinalise() {
     func_002757F0();
 }

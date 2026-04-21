@@ -9,6 +9,7 @@ class Zone : public SimObject {
         int unk114;
         Zone(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Zone();
+        virtual ClassInfo* func_0018A098();
 };
 
 class ZoneRadius : public Zone {

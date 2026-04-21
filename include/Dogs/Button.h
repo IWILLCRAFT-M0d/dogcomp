@@ -7,7 +7,7 @@
 class Button : public WorldObject {
     public:
         static ClassInfo* s_classInfo;
-        int unk5C0; // receiver actorId
+        int unk5C0; // button receiver actorId
         float unk5C4; // button hold time (seconds)?
 
         int unk5E0;

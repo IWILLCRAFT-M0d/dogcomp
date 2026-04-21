@@ -31,7 +31,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE738); /* StorageDevice *
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_13StorageDevice);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE8B0);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE8B0); // RCT3 StorageDevice::Get ?
 
 INCLUDE_RODATA("asm/nonmatchings/text_002FCF70", _vt$13StorageDevice);
 
@@ -79,11 +79,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF080);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0F8__13StorageDevice);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0F8__13StorageDevice); // RCT3 StorageDevice::IsValidDevice ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128__13StorageDevice);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128__13StorageDevice); // RCT3 StorageDevice::IsCorrupt ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158__13StorageDevice);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158__13StorageDevice); // RCT3 StorageDevice::IsDamaged ?
 
 
 #ifdef NON_MATCHING // TODO: finish parent classes
@@ -164,7 +164,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB70);
 
 #ifdef NON_MATCHING
 int D_00452ECC = 0; // memcard initialised var?
-Status File_MemCard_InternalInitialise(void) {
+Status File_MemCard_InternalInitialise() {
     int mcerror;
     if (D_00452ECC == 0) {
         mcerror = sceMcInit();
@@ -205,11 +205,11 @@ void * const File_MemCard_StdInit_UsedModules[] = {
     0,
 };
 
-Status File_MemCard_Initialise(void) {
+Status File_MemCard_Initialise() {
     return StdInit_InitialisationSequence(&File_MemCard_StdInit_Description);
 }
 
-void File_MemCard_Finalise(void) {
+void File_MemCard_Finalise() {
     StdInit_FinalisationSequence(&File_MemCard_StdInit_Description);
 }
 
@@ -226,7 +226,34 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFF30); /* File_MemCard */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_12File_MemCard);
 
+#ifdef NON_MATCHING
+void File_MemCard::func_00300040() {
+    if (this->unk424 == 0) {
+        this->unk424 = 1;
+        //FUN_00300720(this);
+        //FUN_00286a30((int *)&DAT_00452ec8);
+        if (sceMcClose(this->m_fd) == sceMcResSucceed) {
+        //     do {
+        //       retSync = sceMcSync(1,(int *)0x0,&result);
+        //     } while (retSync == 0);
+        //     if (result < 0) {
+        //       FUN_002869c8((int *)&DAT_00452ec8);
+        //       FUN_002ffd10(result);
+        //     }
+        //   }
+        //   else {
+        //     FUN_002869c8((int *)&DAT_00452ec8);
+        //     FUN_002ffd10(-1);
+        //   }
+        //   FUN_002869c8((int *)&DAT_00452ec8);
+        }
+        // return;
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300040__12File_MemCard);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300140__12File_MemCard);
 
@@ -264,15 +291,33 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003014E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __21StorageDevice_MemCardi); /* int card */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301648);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301648); // StorageDevice_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003016A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301798);
+#ifdef NON_MATCHING
+void StorageDevice_MemCard::func_00301798() {
+  //     FUN_00286a30((int *)&DAT_00452ec8);
+  //
+    if (sceMcUnformat(this->m_port,0) == sceMcResSucceed) {
+        this->unk18 = 1;
+        this->unk1C = 1;
+  //   *(undefined4 *)&param_1->field_0x20 = 0;
+  }
+  // else {
+  //   FUN_002869c8((int *)&DAT_00452ec8);
+  //   FUN_002ffd10(-1);
+  // }
+  // FUN_002869c8((int *)&DAT_00452ec8);
+  // return;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301798__21StorageDevice_MemCard);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301860);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301860); // StorageDevice_MemCard virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301958);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301958); // StorageDevice_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301A50);
 

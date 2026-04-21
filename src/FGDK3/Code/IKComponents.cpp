@@ -7,15 +7,21 @@
 // split (ikcomponents.cpp?)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E75B0); /* PositionIKAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E76B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E76B0); // PositionIKAnimation virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7708); /* MatrixPositionIKAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7808);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7808); // MatrixPositionIKAnimation virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7860); /* LookAtIKAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7960);
+#ifdef NON_MATCHING
+void LookAtIKAnimation::func_002E7960() {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", func_002E7960__17LookAtIKAnimation);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/IKComponents", _$_19PositionIKAnimation);
 

@@ -1,13 +1,23 @@
 #include "common.h"
 #include "unk.h"
-
+#include <eekernel.h>
 #include <common/libcdvd.h>
 
 #include "FGDK3/Playstation2/File_CD.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00302D50);
+#ifdef NON_MATCHING
+static u_char cb_stack[0x1000] __attribute__ ((aligned(16))); // D_00495680
 
+Status File_CD_InternalInitialise() {
+    sceCdInitEeCB(1, (void *)cb_stack, 0x1000);
+    sceCdCallback(func_00302D50);
+    return func_0026CFD0(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/File_CD.cpp", 91);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", File_CD_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", File_CD_InternalFinalise__Fv);
 
@@ -55,14 +65,14 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_7File_CD);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003030E8); // File_CD Member
 
 #ifdef NON_MATCHING
-int File_CD::func_00303110() {
+u_int File_CD::func_00303110() {
     return this->unkC;
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303110__7File_CD);
 #endif
 
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", D_00447880); /* "c:/coding/FGDK3/Code/Playstation2/File_CD_CD.cpp" */
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", D_00447880); /* "c:/coding/FGDK3/Code/Playstation2/File_CD.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303148); // "CD read fail lsn=%d,%d err=%d %d retries to go\n"
 

@@ -7,7 +7,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Creatres", D_003DAF80); /* "Creature"
 
 #ifdef NON_MATCHING
 
-Status Creatres_InternalInitialise(void) {
+Status Creatres_InternalInitialise() {
   return Status(0xffffffff, "c:/coding/dogs/Code/Common/Creatres.cpp", 44);
 }
 
@@ -15,7 +15,7 @@ Status Creatres_InternalInitialise(void) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Creatres", Creatres_InternalInitialise__Fv);
 #endif
 
-void Creatres_InternalFinalise(void) {
+void Creatres_InternalFinalise() {
 	return;
 }
 
@@ -38,11 +38,11 @@ void * const Creatres_StdInit_UsedModules[] = {
     0,
 };
 
-Status Creatres_Initialise(void) {
+Status Creatres_Initialise() {
     return StdInit_InitialisationSequence(&Creatres_StdInit_Description);
 }
 
-void Creatres_Finalise(void) {
+void Creatres_Finalise() {
     StdInit_FinalisationSequence(&Creatres_StdInit_Description);
 }
 

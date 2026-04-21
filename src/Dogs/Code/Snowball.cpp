@@ -10,7 +10,7 @@ Snowball::Snowball(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
     }
 
     this->unk5C4 = 0.2f;
-    this->unk600 = 1;
+    this->m_canRoll = true;
 
     if (arg1 == NULL) {
         D_0044D9C0->unk4 = 1;
@@ -22,9 +22,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", __8SnowballP9ClassInfoP15SimO
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", _$_8Snowball);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172BE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172BE8); // Snowball virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172C08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172C08); // Snowball virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172C30);
 

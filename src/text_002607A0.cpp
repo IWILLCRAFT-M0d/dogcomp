@@ -4,6 +4,8 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "FGDK3/VirtualDesktop.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002607A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002608B0);
@@ -202,7 +204,13 @@ INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_004375E8); /* "No context sen
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262128); // VirtualDesktop member
 
+#ifdef NON_MATCHING
+VirtualDesktop::VirtualDesktop() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __14VirtualDesktop);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_14VirtualDesktop);
 
@@ -273,7 +281,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437A40);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437C58); /* _vt$11PrimaryMenu */
 
-INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437E48);
+INCLUDE_RODATA("asm/nonmatchings/text_002607A0", _vt$16MenuRegisterable);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437E60); /* _vt$21PointerMessageHandler */
 
@@ -815,29 +823,33 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269598); // Tree34_NodeAllo
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269600); // Tree34_NodeAllocator member
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269610);
+void Tree34_Unit::Zero() {
+    this->unk0 = 0;
+    this->unk4 = 0;
+    this->unk8 = 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269620);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269620); // RCT3 Tree34_Node::Tree34_Node(Tree34_Basic*, Tree34_Node*) ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269630);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269630); // RCT3 Tree34_Node::Empty() ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002696B0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", NewNode__12Tree34_BasicP12Tree34_BasicP11Tree34_Node); // RCT3 Tree34_Basic::NewNode(Tree34_Basic*, Tree34_Node*) ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269718);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269718); // RCT3 Tree34_Basic::DeleteNode(Tree34_Node*) ?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269760);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002697C0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", Empty__12Tree34_Basic); // RCT3 Tree34_Basic::Empty() ?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269810);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269868);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269868); // RCT3_Tree34_Node::IntFind ?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269930);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002699B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002699C8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002699C8); // RCT3 Tree34_Node::Merge(Tree34_Node*) ?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269C90);
 

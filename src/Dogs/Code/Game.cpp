@@ -17,7 +17,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1F70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8); // PS2 config options (language, aspect)
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8); // settings constructor
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B20A0);
 
@@ -41,17 +41,105 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2460); /* float (a0->unk
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2468); /* float (a0->unk28) = f12 */
 
+#ifdef NON_MATCHING
+const char* func_001B2470(s_Game_Document_584* arg0, int arg1) {
+    const char* D_003DBD08[] = {
+    "English",
+    "Netherlands",
+    "Français",
+    "Italiano",
+    "Deutsch",
+    "Español",
+    "Português",
+    "Dansk",
+    "Norsk",
+    "Svenska",
+    "Suomi",
+    };
+    if (arg1 != -1) {
+        return D_003DBD08[arg1];
+    }
+    return D_003DBD08[arg0->m_language];
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2470);
+#endif
 
+#ifdef NON_MATCHING
+const char* func_001B24F8(s_Game_Document_584* arg0) {
+    const char* D_003DBD38[] = {
+    "EN",
+    "NL",
+    "FR",
+    "IT",
+    "GE",
+    "SP",
+    "PT",
+    "DK",
+    "NO",
+    "SW",
+    "FI",
+};
+    return D_003DBD38[arg0->m_language];
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B24F8);
+#endif
 
+#ifdef NON_MATCHING
+const char* func_001B2578(s_Game_Document_584* arg0) {
+    const char* D_003DBD88[] = {
+    "english",
+    "dutch",
+    "french",
+    "italian",
+    "german",
+    "spanish",
+    "portugue",
+    "danish",
+    "norwegia",
+    "swedish",
+    "finnish",
+    };
+
+    return D_003DBD88[arg0->m_language];
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2578);
+#endif
 
+#ifdef NON_MATCHING
+void func_001B25F8(s_Game_Document_584* arg0) {
+    arg0->m_language += 1;
+
+    if (arg0->m_language == 11) {
+        arg0->m_language -= 11;
+    }
+}
+
+void func_001B2620(s_Game_Document_584* arg0) {
+    arg0->m_language -= 1;
+
+    if (arg0->m_language < 0) {
+       arg0->m_language += 11;
+    }
+}
+
+void func_001B2640(s_Game_Document_584* arg0, int arg1) {
+    arg0->m_language = arg1;
+    if (arg1 < 0) {
+        arg0->m_language = arg1 + 11;
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B25F8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2620);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2640);
+#endif
+
+
+
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2658);
 
@@ -77,9 +165,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBCE8); /* "Italiano" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBCF8); /* "Português" */
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD08);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD08); // array?
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD38);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD38); // array?
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD68); /* "portugue" */
 
@@ -124,7 +212,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI optio
 
 #ifdef NON_MATCHING
 extern short D_004509F0; // null actorId
-Game_Document::Game_Document(float fps, float gamespeed) : GameShell(fps, gamespeed) {
+Game_Document::Game_Document(float deltaTime, float gamespeed) : GameShell(deltaTime, gamespeed) {
 	// float f24 = 1.0f;
 	this->unk148 = 0;
 	this->unk154 = 0;
@@ -198,12 +286,16 @@ Game_Document::Game_Document(float fps, float gamespeed) : GameShell(fps, gamesp
 	InputKeyboard_ResumeThread();
 	InputMouse_SuspendThread();
 
+	//TheGame = this;
+	//this->unk584 = new s_func_001B1FA8();
+
 	this->unk200 = 0;
 	this->unk204 = 5;
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __13Game_Documentff);
 #endif
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_13Game_Document);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8);
@@ -244,7 +336,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7B08); // "SetSaveInhibi
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7BA8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8050);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8050); // Game_Document nonvirtual?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C80C8); // debug stats toggle
 
@@ -386,7 +478,7 @@ void func_001D2480(Game_Document* gamedoc) {
 	}
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2480);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2480); // called when opening pause menu
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D27F8);
@@ -422,19 +514,20 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D3F78);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D42A8); // "Warning: toPos and facingPos the same in MoveActorToFacing. This would be likely to screw up the creature\'s orientation. Will keep creature\'s current orientation."
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0); // isolate actor?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0); // isolate actor? (Game_Document*, Actor*/WorldObject*)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498); // remove (maroon) actor function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4578);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4578); // Game_Document virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D45B8); // Game_Document member
+// new SavedGame("ResPatch.tmp", 1, 0);
 
 void func_001D4650(void) {
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4658);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4658); // start mpeg handler? (Game_Document*, )
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D46E0);
 
@@ -451,7 +544,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4B00);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4D48);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4D90);
-
+// D_0035D134 menu bones, clues struct
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4DD8); // unlockAllClues
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E1F00); /* "ResPatch.tmp" */
@@ -492,10 +585,10 @@ int func_001D5D48(Game_Document* arg0, int arg1) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5D48);
 #endif
 
-#ifdef NON_MATCHING
 
-Status Game_InternalInitialise(void) {
-    new Game_Document::Game_Document(0.01, 0.125);
+#ifdef NON_MATCHING // Game_Document class/constructor is yet to be completed
+Status Game_InternalInitialise() {
+    new Game_Document(0.01, 0.125);
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 8544);
 }
 #else
@@ -504,18 +597,34 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_InternalInitialise__Fv);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_InternalFinalise__Fv);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_Initialise__Fv);
+#ifdef NON_MATCHING
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_Finalise__Fv);
-/*
-Status Game_Initialise(void) {
+StdInit_ModuleDescription Game_StdInit_Description = {
+    0,
+    &Game_StdInit_UsedModules
+};
+
+void * const Game_StdInit_UsedModules[] = {
+    &Game_InternalInitialise,
+    &Game_InternalFinalise,
+	//
+    0,
+    0,
+};
+
+Status Game_Initialise() {
     return StdInit_InitialisationSequence(&Game_StdInit_Description);
 }
 
-void Game_Finalise(void) {
+void Game_Finalise() {
     StdInit_FinalisationSequence(&Game_StdInit_Description);
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_Finalise__Fv);
+#endif
+
 
 #ifdef NON_MATCHING
 Status func_001D5E90(void) {
@@ -529,13 +638,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5ED8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D5F80);
 
+// VirtualDesktop/GameDesktop* D_004512E0
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6028);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D60D0); // exit?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6218);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6218); // GameDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6288);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6288); // GameDesktop virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D62D0);
 

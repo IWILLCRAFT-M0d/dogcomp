@@ -21,11 +21,11 @@ int File_MemRead::func_00304C18() {
 */
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304C58); // File_MemRead member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D08); // File_MemRead virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304D78); // File_MemCard virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DB0); // File_MemRead virtual
 /*
 int File_MemRead::func_00304DB0() {
     return this->unkC - this->unk8;
@@ -33,7 +33,7 @@ int File_MemRead::func_00304DB0() {
 */
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DF0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304ED0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304ED0); // temp file function
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304F68);
 
@@ -51,9 +51,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_Q24File11OpenWatcher);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305768);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003059F0); /* File::File */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003059F0); // RCT3 File::File(const char*, File::IOType) ?*/
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306030);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306030); // used for streamed files (music, dialogue, etc)
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/File", D_00447A30); /* "C:/Coding/FGDK3/Code/Common/File.cpp" */
 

@@ -9,7 +9,7 @@
 
 extern s_D_00453698* D_00453698;
 
-extern void* D_00453748;
+extern void* D_00453748; // ConsoleLayer*
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D49E8);
 
@@ -51,15 +51,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FD38);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FDE0); // check valid map id?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FE00);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FE00); // called by Console::Cells
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FE20);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0020);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0020); // check valid thread ID?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0208); // check valid number?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0250);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A0250); // check valid float?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A03D0);
 
@@ -566,7 +566,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A1E68);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A1E98);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A1EC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A1EC8); // actor vars?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A1FF8);
 
@@ -1035,7 +1035,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA418);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA460);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA4A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA4A0); // RCT3  Resource_NullContextData::Output(string_unicode const&, Resource_ErrorLevel) ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA760);
 

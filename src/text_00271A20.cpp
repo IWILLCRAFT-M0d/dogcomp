@@ -1,5 +1,6 @@
 #include "common.h"
 #include <stdio.h>
+#include <string.h>
 #include "unk.h"
 #include "mem.h"
 #include <eekernel.h>
@@ -26,17 +27,13 @@ SavedGame::SavedGame(char* arg1, int arg2, int arg3) {
     this->unk28 = arg3;
     this->unk10 = 8192;
     this->unk24 = 64;
-    /*
-    uVar1 = __builtin_vec_new((undefined *)0x2000);
-    this->field3_0xc = uVar1;
-    sVar2 = strlen(filename);
-    dest = (char *)__builtin_vec_new((undefined *)((int)sVar2 + 5));
-    this->field2_0x8 = dest;
-    strcpy(dest,filename);
-    strcat(this->field2_0x8,s_.sav_00451ad0);
-    uVar1 = __builtin_vec_new((undefined *)(this->field9_0x24 << 3));
-    this->field7_0x1c = uVar1;
-    */
+
+    this->unkC = new char[8192];
+    this->unk8 = new char[strlen(arg1) + 5];
+    strcpy(this->unk8,arg1);
+    strcat(this->unk8,".sav");
+    this->unk1C = new char[this->unk24 << 3];
+
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", __9SavedGamePcii);
@@ -54,7 +51,7 @@ void func_00271EF8(void) {
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271F00);
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272130);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272130); // (SavedGame* ?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272440);
 
@@ -221,6 +218,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002736E8);
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273778);
 
 // split???
+// 004534B5 lang variable
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002737A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273900);
@@ -239,7 +237,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273C38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273CB0);
 
-Resource_LayoutUnit::Resource_LayoutUnit(void* arg0){
+Resource_LayoutUnit::Resource_LayoutUnit(Resource_LayoutUnit* arg0){
     this->unk0 = 0;
     this->unk4 = arg0;
 }
@@ -263,7 +261,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", _$_22Resource_LayoutOverlay);
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274020); // "Ovl % 20s %12s % 10d\n"
 
 extern s_D_0035FC48* D_0035FC48;
-extern char* D_00487600;
+//extern char* D_00487600;
 
 #ifdef NON_MATCHING
 void Resource_LayoutOverlay::func_00274200() {
@@ -292,7 +290,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274588);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002745D0);
 
-Resource_LayoutGroup::Resource_LayoutGroup(void* arg0, int arg1, void* arg2) :  Resource_LayoutUnit(arg0) {
+Resource_LayoutGroup::Resource_LayoutGroup(Resource_LayoutUnit* arg0, int arg1, void* arg2) :  Resource_LayoutUnit(arg0) {
     this->unkC = arg1;
     this->unk10 = arg2;
 }
@@ -320,7 +318,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274A60); // Resource_Layout
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274B00); // overlay loading function?
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274C10);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274C10); // used for preload.dat?
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274CB0);
 
@@ -397,15 +395,16 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00275600);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002756E0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00275718); /* "Resource %s:%d loaded twice\n" */
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00275718);
+//scePrintf("Resource %s:%d loaded twice\n",type,id)
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002757B0);
 
-void func_002757E8(void) {
+void func_002757E8(void) { // called by resource internalinitialise functions
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002757F0);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002757F0); // called by resource internalfinalise functions
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002758F8); /* return D_00451B54 != 0 */
 
