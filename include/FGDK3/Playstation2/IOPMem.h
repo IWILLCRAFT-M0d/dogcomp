@@ -3,8 +3,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/Playstation2/sifManager.h"
-
 extern void * const IOPMem_StdInit_UsedModules[];
 
 Status IOPMem_InternalInitialise();

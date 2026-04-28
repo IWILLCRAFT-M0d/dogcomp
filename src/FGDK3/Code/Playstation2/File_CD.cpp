@@ -4,6 +4,8 @@
 #include <common/libcdvd.h>
 
 #include "FGDK3/Playstation2/File_CD.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/Playstation2/sifManager.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00302D50);
 #ifdef NON_MATCHING
@@ -132,7 +134,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730); 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768); // FileSystemDisc_CD member
 
+#ifdef NON_MATCHING
+FileSystemDisc_CD::FileSystemDisc_CD() : FileSystemDisc(0, string_ascii("cdrom0:")) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __17FileSystemDisc_CD);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304830); // FileSystemDisc_CD member
 

@@ -1,6 +1,7 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/TimSrv.h"
+#include <eekernel.h>
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026A940);
 
@@ -16,7 +17,22 @@ Status TimSrv_InternalInitialise() {
     return func_0026ABD8();
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AD98);
+#ifdef NON_MATCHING
+extern int D_00453480;
+extern void* D_00453860;
+
+void func_0026AD98() {
+    DisableIntc(INTC_TIM0);
+    RemoveIntcHandler(INTC_TIM0, D_00453480);
+    if (D_00453860 != 0) {
+        delete[] D_00453860;
+    }
+    D_00453860 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AD98__Fv);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_InternalFinalise__Fv);
 
@@ -53,10 +69,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", TimSrv_GetTime);
 long TimSrv_GetTime() {
     long temp_16;
 
-    DisableIntc(9);
+    DisableIntc(INTC_TIM0);
     func_0026A940();
     temp_16 = D_00453468;
-    EnableIntc(9);
+    EnableIntc(INTC_TIM0);
     return temp_16;
 }*/
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026AE98);
@@ -68,6 +84,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B040); /
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", _$_12TimSrv_Timer);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B130);
+// DisableIntc(INTC_TIM0);
+//
+// EnableIntc(INTC_TIM0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/TimSrv", func_0026B198);
 

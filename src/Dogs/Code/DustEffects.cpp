@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AC80__17DustEffec
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013AD58__17DustEffectManagerf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B030);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B030); // a0 is DustEffectManager *; create particles?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DustEffects", func_0013B0A0); // DustEffectManager member
 

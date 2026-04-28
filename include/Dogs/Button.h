@@ -2,14 +2,14 @@
 #define BUTTON_H
 
 #include "WorldObj.h"
-
+#include <libvu0.h>
 
 class Button : public WorldObject {
     public:
         static ClassInfo* s_classInfo;
         int unk5C0; // button receiver actorId
         float unk5C4; // button hold time (seconds)?
-
+        sceVu0FVECTOR unk5D0;
         int unk5E0;
         int unk5E4;
         int unk5E8; // toggle state?

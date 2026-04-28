@@ -21,7 +21,12 @@ Dog::Dog(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldOb
     if (arg1 != NULL) {
         s_classInfo = arg1;
     }
-
+    asm volatile("
+    vmove.xyzw $vf4, $vf0
+    vmr32.xyzw $vf3, $vf4
+    vmr32.xyzw $vf2, $vf3
+    vmr32.xyzw $vf1, $vf2
+    ");
     this->unk838 = 3.0f;
     this->unk83C = 0.03f;
     this->unk840 = 0.2f;
@@ -57,14 +62,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E250);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E270); // Dog member
 
-
-
 void Dog::func_0012E290(int arg1) {
     if (arg1 < 33) {
     func_00182AF0(arg1);
     }
 }
-
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0012E2B8__3Dog);
 

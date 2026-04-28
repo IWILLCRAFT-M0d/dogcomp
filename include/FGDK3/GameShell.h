@@ -10,7 +10,7 @@ class GameShell {
         /* 0x4 */ float m_gameTime;
         long unk8;
         /* 0x10 */ float m_deltaTime;
-        /* 0x14 */ float m_gameSpeed;
+        /* 0x14 */ float m_gameSpeed; // normally set to 0.125f, see also 0x1C4 in Game_Document
         void* unk18;
         /* 0x1C */ bool m_disabled;
         // 0x20 float m_currentFps

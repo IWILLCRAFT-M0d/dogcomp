@@ -363,7 +363,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002639A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263A40);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263C10);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263C10); /* ~VD_HelpWindow */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf13VD_HelpWindow);
 

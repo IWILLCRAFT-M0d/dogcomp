@@ -38,7 +38,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDC88__13HitTri_Object)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDCB0__13HitTri_Objectf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDE90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDE90); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/HitTri", func_001DDF50);
 

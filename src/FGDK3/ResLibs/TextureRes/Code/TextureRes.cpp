@@ -1,5 +1,10 @@
 #include "common.h"
-#include "TextureRes.h"
+#include "FGDK3/ResLibs/TextureRes/TextureRes.h"
+
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+
+#include "FGDK3/Playstation2/GE.h"
 
 #ifdef NON_MATCHING
 Status TextureRes_InternalInitialise() {
@@ -47,10 +52,26 @@ Texture_Resources::Texture_Resources(){
     this->unk14 = 0;
 }
 
+#ifdef NON_MATCHING
+Texture_Resources::~Texture_Resources() {
+    if (this->unk14 != 0) {
+        GE_Finalise();
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _$_17Texture_Resources);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _$_17Texture_Resources); /* Texture_Resources::~Texture_Resources */
-
+#ifdef NON_MATCHING
+void* Texture_Resources::func_0031F5E0() {
+    if (this->unk14 == 0) {
+        GE_Initialise();
+        this->unk14 = 1;
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031F5E0); /* load */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", func_0031FAB8); /* unload */
 

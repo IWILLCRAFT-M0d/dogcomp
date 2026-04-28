@@ -610,14 +610,14 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE5C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE608);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE660);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE660); // dgf function?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE808);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BE900);
 
-// ? ParseDGF(*, const char* file) {
-//
+// ? ParseDGF(*, const char* filename) {
+// File file(filename, 0, 0);
 //     if ( < 1) {
 //         DDE_FatalError("Failed to open downgrades file '%s'\n", file);
 //     }

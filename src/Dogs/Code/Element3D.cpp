@@ -5,6 +5,15 @@
 #ifdef NON_MATCHING
 Element3D::Element3D(ClassInfo* arg1, short shapeId) {
 
+
+    if (this->m_shapeData == NULL) {
+
+
+        //SetShape( )
+
+    }
+
+
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Element3D", __9Element3DP9ClassInfos); /* Element3D (ClassInfo, shapeid)?  */

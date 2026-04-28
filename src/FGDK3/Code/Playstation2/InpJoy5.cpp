@@ -1,6 +1,7 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/InpJoy5.h"
+#include "FGDK3/Playstation2/Controller.h"
 
 #ifdef NON_MATCHING
 Status InputJoy5_InternalInitialise() {

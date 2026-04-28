@@ -1,6 +1,10 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/InpJoys1.h"
+#include "FGDK3/Playstation2/TimSrv.h"
+#include "FGDK3/Inpdev.h"
+#include "FGDK3/ThrowCat.h"
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", func_002F8F00); /* InputJoystick1_Device::InputJoystick1_Device */
 

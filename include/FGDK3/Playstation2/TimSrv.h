@@ -15,6 +15,7 @@ long TimSrv_GetTime(void);
 #endif
 
 Status TimSrv_InternalInitialise();
+void func_0026AD98();
 void TimSrv_InternalFinalise();
 Status TimSrv_Initialise();
 void TimSrv_Finalise();

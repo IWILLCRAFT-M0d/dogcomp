@@ -10,6 +10,8 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2B80);
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2BB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0018C748);
+// string_ascii("INTRO\\INTRO")
+//string_ascii(func_001B24F8(TheGame->unk584))
 
 #ifdef NON_MATCHING
 BookMetaphor::GamePositionPage::GamePositionPage(int arg1) {

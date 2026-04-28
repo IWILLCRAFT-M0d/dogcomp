@@ -3,11 +3,37 @@
 #include "FGDK3/Playstation2/File_MemCard.h"
 #include "FGDK3/Playstation2/File_CD.h"
 #include "FGDK3/Playstation2/File.h"
+#include "FGDK3/FileSystem_Zip.h"
 
 #include "unk.h"
 
 // Playstation2/File.cpp?
+
+#ifdef NON_MATCHING
+//extern FileSystemDisc_FileDescriptor* D_00452F48;
+extern FileSystemDisc_CD* D_004535EC;
+extern FileSystemDisc_MemCard* D_004535F0;
+extern FileSystemDisc_MemCard* D_004535F4;
+extern FileSystem_Zip* D_004535F8;
+
+Status File_InternalInitialise() {
+static FileSystemDisc_FileDescriptor* D_00452F48;
+// static FileSystemDisc_CD* D_004535EC;
+// static FileSystemDisc_MemCard* D_004535F0;
+// static FileSystemDisc_MemCard* D_004535F4;
+// static FileSystem_Zip* D_004535F8;
+    if (D_00452F48 == NULL) {
+        D_00452F48 = new FileSystemDisc_FileDescriptor();
+        D_004535EC = new FileSystemDisc_CD();
+        D_004535F0 = new FileSystemDisc_MemCard(1);
+        D_004535F4 = new FileSystemDisc_MemCard(2);
+        D_004535F8 = new FileSystem_Zip();
+    }
+    return func_0026CFD0(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/File.cpp", 61);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", File_InternalInitialise__Fv);
+#endif
 
 void File_InternalFinalise() {
 
@@ -72,8 +98,10 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308430);
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003084E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308530);
+// File_Initialise();
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308590);
+// File_Finalise();
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003085F8);
 

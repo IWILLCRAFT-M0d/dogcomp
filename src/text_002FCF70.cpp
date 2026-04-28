@@ -1,6 +1,10 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/File_MemCard.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Playstation2/TimSrv.h"
+
 #include "FGDK3/Playstation2/File_CD.h"
 
 #include <common/libcdvd.h>
@@ -9,7 +13,13 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __14FileSystemDisc); /* FileSystemDisc::FileSystemDisc */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020); /* FileSystemDisc (unk, unk) */
+#ifdef NON_MATCHING
+FileSystemDisc::FileSystemDisc(void* arg1, string_ascii arg2) {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FD020);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_14FileSystemDisc);
 
@@ -23,11 +33,23 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FDCF0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE0E8);
 
+#ifdef NON_MATCHING
+FileSystem::FileSystem(string_ascii arg1) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE5C0); /* FileSystem */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_10FileSystem);
 
+#ifdef NON_MATCHING
+StorageDevice::StorageDevice(string_ascii arg1) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FE738); /* StorageDevice */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_13StorageDevice);
 
@@ -165,11 +187,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFB70);
 #ifdef NON_MATCHING
 int D_00452ECC = 0; // memcard initialised var?
 Status File_MemCard_InternalInitialise() {
-    int mcerror;
+
     if (D_00452ECC == 0) {
-        mcerror = sceMcInit();
-        if (mcerror != sceMcIniSucceed) {
-            return func_0026CFF8(mcerror,"Could not initialise memory card interface", "c:/coding/fgdk3/Code/Playstation2/File_MemCard.cpp", 76);
+        int mcError = sceMcInit();
+        if (mcError != sceMcIniSucceed) {
+            return func_0026CFF8(mcError,"Could not initialise memory card interface", "c:/coding/fgdk3/Code/Playstation2/File_MemCard.cpp", 76);
     }
     D_00452ECC = 1;
   }
@@ -273,11 +295,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300988__12File_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003009C0); /* FileFind_MemCard */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi); /* FileSystemDisc_MemCard::FileSystemDisc_MemCard(int port/slot?); */
+#ifdef NON_MATCHING
+FileSystemDisc_MemCard::FileSystemDisc_MemCard(int slot): FileSystemDisc(0, string_ascii(slot == 1 ? "memcard1:" : "memcard2:")) {
+    this->unk20 = new StorageDevice_MemCard(slot);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __22FileSystemDisc_MemCardi);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300CC8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_22FileSystemDisc_MemCard);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300D50);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300D50); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301058);
 
@@ -289,17 +317,42 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301290);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003014E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __21StorageDevice_MemCardi); /* int card */
+#ifdef NON_MATCHING
+StorageDevice_MemCard::StorageDevice_MemCard(int slot) : StorageDevice(string_ascii(slot == 1 ? "memcard1:" : "memcard2:")) {
+//this->unk18 = 1;
+//this->unk1C = 0;
+//this->unk28 = new StorageDevice_MemCardUpdater(this);
+}
+
+
+
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __21StorageDevice_MemCardi); /* int slot */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301648); // StorageDevice_MemCard virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003016A0);
+#ifdef NON_MATCHING
+void StorageDevice_MemCard::func_003016A0() {
+    //
+    if (sceMcFormat(this->m_port, 0) == sceMcResSucceed) {
+        //
+    }
+    else {
+        this->unk18 = 1;
+        this->unk1C = 1;
+    }
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003016A0__21StorageDevice_MemCard);
+#endif
 
 #ifdef NON_MATCHING
 void StorageDevice_MemCard::func_00301798() {
   //     FUN_00286a30((int *)&DAT_00452ec8);
   //
-    if (sceMcUnformat(this->m_port,0) == sceMcResSucceed) {
+    if (sceMcUnformat(this->m_port, 0) == sceMcResSucceed) {
         this->unk18 = 1;
         this->unk1C = 1;
   //   *(undefined4 *)&param_1->field_0x20 = 0;
@@ -397,7 +450,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003025D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302608);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302658);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302658); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302690);
 

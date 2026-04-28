@@ -8,7 +8,6 @@
 extern "C" {
 #endif
 
-void func_002963D0(void); /* rct3 Main_Terminate */
 void func_002D5958(const char*, va_list);
 void InterfaceError(char* name, int line);
 void DDE_FatalError(const char* message, ...);

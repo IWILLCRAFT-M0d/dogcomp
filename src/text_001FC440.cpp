@@ -13084,7 +13084,17 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCF48); // scriptTypeToStr
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD028); // scriptNameToId
 
+#ifdef NON_MATCHING
+string_ascii func_001FD148(short shape) {
+    if (shape == -1) {
+        //return string_ascii( )
+    }
+
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD148); // shapeTypeToString
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD228); // shapeNameToId
 

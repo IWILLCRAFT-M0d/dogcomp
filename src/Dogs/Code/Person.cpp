@@ -15,6 +15,7 @@ Person::Person(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : W
     this->unk5C8 = 0.0f;
     //
 
+    //this->unk654 = 0.0f;
     this->unk658 = 50.0f;
     this->unk65C = 200.0f;
     // animvars here?

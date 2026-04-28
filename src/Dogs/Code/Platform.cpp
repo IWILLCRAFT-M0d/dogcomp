@@ -20,9 +20,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001ED8A8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001EE078);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001EE840);
+#ifdef NON_MATCHING
+SwingPlatform::SwingPlatform(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : HitTri_Object(arg1 = 0, arg2, arg3, arg4) {
+    this->m_swingAngle = 0.0f;
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001EEA08);
+    this->m_oscillationRate = 0.0f;
+
+    this->unk694 = -1.0f;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", __13SwingPlatformP9ClassInfoP15SimObj_Universeis);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", _$_13SwingPlatform);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Platform", func_001EEB08);
 

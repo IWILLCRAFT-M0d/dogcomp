@@ -49,7 +49,7 @@ class StreamedSpeech : public AnimationComponent {
         virtual ~StreamedSpeech();
         virtual void func_0022D2C8();
         virtual void func_0022BEA0();
-        //
+        //virtual ? func_0022D2D0();
         virtual int func_0022D2D8();
 };
 
@@ -74,7 +74,7 @@ class StreamedVoiceoverTrivial : public AnimationComponent {
         virtual int func_0022D3C8();
 };
 
-class StreamPreload : public AnimationComponent {
+class StreamPreload : public AnimationComponent/*, public ComponentDeterminedTimeBase::Component*/ {
     public:
         virtual ~StreamPreload();
         virtual void func_0022D460();

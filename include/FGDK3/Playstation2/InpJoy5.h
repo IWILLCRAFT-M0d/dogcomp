@@ -3,8 +3,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/Playstation2/Controller.h"
-
 extern void * const InputJoy5_StdInit_UsedModules[];
 
 Status InputJoy5_InternalInitialise();

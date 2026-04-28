@@ -1,6 +1,9 @@
 #include "common.h"
 
-#include "ShapeRes.h"
+#include "FGDK3/ResLibs/ShapeRes/ShapeRes.h"
+#include "FGDK3/ThrowCat.h"
+
+#include "unk.h"
 
 #ifdef NON_MATCHING
 

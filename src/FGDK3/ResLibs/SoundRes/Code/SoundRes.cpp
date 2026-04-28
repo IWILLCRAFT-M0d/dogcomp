@@ -1,8 +1,12 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/Thread.h"
-#include "SoundRes.h"
-#include "unk.h"
+#include "FGDK3/ResLibs/SoundRes/SoundRes.h"
+
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+#include "FGDK3/Playstation2/Sound.h"
+
 
 #ifdef NON_MATCHING
 char * func_0024BA70() {
@@ -46,7 +50,7 @@ void * const SoundRes_StdInit_UsedModules[] = {
 };
 
 Status SoundRes_Initialise() {
-        return StdInit_InitialisationSequence(&SoundRes_StdInit_Description);
+    return StdInit_InitialisationSequence(&SoundRes_StdInit_Description);
 }
 
 void SoundRes_Finalise() {

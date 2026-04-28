@@ -1,6 +1,9 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/MusicRes.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+
 
 #ifdef NON_MATCHING
 
@@ -58,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/MusicRes", __tf15Music_Res
 
 #ifdef NON_MATCHING
 
-char * func_0027ED38() {
+char * func_0027ED38() { // virtual?
     return "Music";
 }
 #else

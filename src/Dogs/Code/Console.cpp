@@ -989,7 +989,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", RenderCarryHandles__7Console);
 #endif
 
 void Console::Quit() {
-    func_002963D0(); /* Main_Terminate */
+    Main_Terminate();
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A9278); /* Console::Debug */
@@ -1035,7 +1035,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA418);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA460);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA4A0); // RCT3  Resource_NullContextData::Output(string_unicode const&, Resource_ErrorLevel) ?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA4A0); // RCT3  Resource_NullContextData::Output(string_ascii const&, Resource_ErrorLevel) ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001AA760);
 

@@ -5,7 +5,8 @@
 
 
 class MoveObjectComponent : public AnimationComponent {
-
+    public:
+        MoveObjectComponent(/**/);
 };
 
 #endif

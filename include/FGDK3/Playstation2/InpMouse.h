@@ -2,11 +2,7 @@
 #define INPMOUSE_H
 
 #include "FGDK3/Playstation2/Thread.h"
-
-#include "FGDK3/Playstation2/sifManager.h"
-#include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Inpdev.h"
-#include "FGDK3/Playstation2/InpKeybd.h"
 
 class InputMouse_Device : public InputDevice_Device {
     public:

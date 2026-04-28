@@ -51,7 +51,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_Q24File11OpenWatcher);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305768);
 
+#ifdef NON_MATCHING
+File::File(const char* name, int arg2, int arg3) {
+    //002D6EA8(, name);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003059F0); // RCT3 File::File(const char*, File::IOType) ?*/
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306030); // used for streamed files (music, dialogue, etc)
 

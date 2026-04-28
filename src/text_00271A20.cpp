@@ -7,6 +7,8 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "FGDK3/Playstation2/RunPath.h"
+#include "FGDK3/Playstation2/File_CD.h"
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271A20);
 
@@ -185,15 +187,14 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", RunPath_Finalise__Fv);
 #endif
 
 #ifdef NON_MATCHING
-// getRunPath
-char * func_00272FF0() {
+char * RunPath_Get() {
     return "cdrom0:\\";
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272FF0);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", RunPath_Get__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273000); // file related function
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273000); // file related function (, char*)
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00273158);
 
@@ -317,7 +318,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274A00__29Resource_LayoutIn
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274A60); // Resource_LayoutInclusiveGroup member
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274B00); // overlay loading function?
-
+// RunPath_Get();
+//
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274C10); // used for preload.dat?
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274CB0);
@@ -332,10 +334,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00274F78);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00275038);
 
+#ifdef NON_MATCHING
+void func_002750E0(void) {
+    func_00274B00("preload.dat");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002750E0); // preload.dat referenced
+#endif
 
 int func_00275288(int arg0, int arg1, int ovlType, int arg3) {
-    char* format;
     char ovlName[256];
 
     switch (arg3) {
@@ -385,7 +392,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00275448);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002754E8);
 
-int func_00275520(void) {
+int Resource_Generic::func_00275520() {
     return 0;
 }
 

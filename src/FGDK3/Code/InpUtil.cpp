@@ -1,8 +1,21 @@
 #include "common.h"
 
 #include "FGDK3/InpUtil.h"
+#include "FGDK3/Inpevent.h"
+#include "FGDK3/Playstation2/InpKeybd.h"
+#include "FGDK3/Playstation2/InpMouse.h"
+// other headers go here
+#include "FGDK3/Playstation2/InpJoys1.h"
+#include "FGDK3/Playstation2/InpJoy5.h"
+// other headers go here
 
+#ifdef NON_MATCHING
+Status InputUtil_InternalInitialise() {
+    //return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/InpUtil.cpp", 140);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", InputUtil_InternalFinalise__Fv);
 

@@ -15,7 +15,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003098D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309908);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309988);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309988); // get id? (, char*)
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309A68);
 

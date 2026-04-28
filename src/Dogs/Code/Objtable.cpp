@@ -7,9 +7,9 @@
 
 #ifdef NON_MATCHING
 extern void* D_0044EF84;
-extern void* D_0044EF88;
+extern int D_0044EF88;
 extern void* D_00452944;
-extern void* D_0045298C;
+extern int D_0045298C;
 extern s_D_004533D4* D_004533D4;
 
 s_func_001EC630* func_001EC630(s_func_001EC630* arg0) {
@@ -37,6 +37,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC718);
 
 #ifdef NON_MATCHING
 Status Objtable_InternalInitialise() {
+
     return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Objtable.cpp", 357);
 }
 #else

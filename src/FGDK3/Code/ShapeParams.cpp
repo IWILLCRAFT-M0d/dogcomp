@@ -22,6 +22,9 @@ void ShapeParams_Dynamic::SetSize(int size) {
     if (this->unk0 != NULL) {
         delete[] this->unk0;
     }
+    if (size != 0) {
+        this->unk0 = new char[size << 2];
+    }
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", SetSize__19ShapeParams_Dynamici);

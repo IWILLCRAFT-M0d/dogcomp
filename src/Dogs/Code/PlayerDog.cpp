@@ -63,7 +63,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", __9PlayerDogP9ClassInfoP15Si
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", _$_9PlayerDog);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740); // PlayerDog member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D740); // PlayerDog member; creature function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014D7C0); // PlayerDog member
 
@@ -85,12 +85,16 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/PlayerDog", D_003B4EE0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DA68); // "Invalid RoverSays move ID in PlayerDog:: msg AddMove"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB48__9PlayerDog);
-/*
+
+#ifdef NON_MATCHING
 void PlayerDog::func_0014DB48() {
     this->unkBB0 = -1;
 }
-*/
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB48__9PlayerDog);
+#endif
+
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58); // PlayerDog member; doggy do function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80); // PlayerDog member

@@ -3,9 +3,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/ThrowCat.h"
-#include "FGDK3/RelRecv.h"
-
 extern void * const MusicRes_StdInit_UsedModules[];
 
 Status MusicRes_InternalInitialise();

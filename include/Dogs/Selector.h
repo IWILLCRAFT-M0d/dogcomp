@@ -12,6 +12,10 @@ class Selector : public WorldObject {
         Selector(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Selector();
         virtual ClassInfo* func_00161038();
+        //00160738
+
+
+
         virtual void func_00160758();
 };
 

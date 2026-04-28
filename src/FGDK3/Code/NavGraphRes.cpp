@@ -6,7 +6,13 @@
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/NavGraphRes", D_0043C7A8); /* "NavGraph" */
 
+#ifdef NON_MATCHING
+Status NavGraphRes_InternalInitialise() {
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/NavGraphRes.cpp", 50);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", NavGraphRes_InternalInitialise__Fv);
+#endif
 
 void NavGraphRes_InternalFinalise() {
     return;

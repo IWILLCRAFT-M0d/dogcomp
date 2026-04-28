@@ -28,7 +28,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00123CA8__3Carf);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124900__3Carf);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124D10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124D10); // static constructors
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Car", func_00124E50);
 

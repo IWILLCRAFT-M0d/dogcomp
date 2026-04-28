@@ -6,7 +6,7 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "FGDK3/GameShell.h"
-
+#include "Dogs/Lights.h"
 
 
 typedef struct {
@@ -77,7 +77,7 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk404;
         //unk408
         int unk4B0;
-        // unk4D0 LightManager
+        LightManager* unk4D0;
         /* 0x4D4 */ bool m_verbose;
         /* 0x4D8 */ bool m_renderSkeleton;
         /* 0x4DC */ bool m_renderOrient;
@@ -95,7 +95,7 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         ShapeInstance unk51C; // backdrop (sky)
         int* unk550;
         //
-        int unk55C;
+        bool unk55C; // makes speech/music quieter?
         int unk560;
         float unk564;
         int unk56C;
@@ -122,7 +122,7 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
 
 };
 
-extern Game_Document* TheGame;
+extern Game_Document* TheGame; // should this be a static in Game_Document?
 
 class SimObj_Filter {
 
@@ -147,12 +147,13 @@ void func_0019A860(s_func_001C6DC8*, int, int); // TODO:Move to unk.h or BookMet
 void func_00196470(s_func_001C6DC8*, int); // TODO:Move to unk.h or BookMetaphor header
 s_func_001C6DC8* func_001C6DC8(Game_Document*);
 void func_001C8120(void);
-int func_001C8128();
+bool func_001C8128();
 void func_001C88D0(Game_Document*, int level, int gate);
 void func_001CCE58(Game_Document*);
 void func_001D1F70(Game_Document*);
 void func_001D22B0(Game_Document*, int level, int gate);
 void func_001D2480(Game_Document*);
+void func_001D27F8(Game_Document*);
 void func_001D3F38(Game_Document*);
 void func_001D3F58(Game_Document*);
 void func_001D4650(void);

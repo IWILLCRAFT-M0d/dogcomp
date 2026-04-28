@@ -137,20 +137,35 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
 
+extern int D_00453538; // CloseRequest
 #ifdef NON_MATCHING
-void Main_RunGame() {
 
+extern int D_00453530; // CurrentSuspendState
+extern int D_00453534; // RequestedSuspendState
+void Main_RunGame() {
+    // if
+    Game_Initialise();
+
+    while (D_00453538 == 0) {
+        if (D_00453530 != D_00453534) {
+            //
+        }
+        GameShell::m_me->Step();
+    }
+    Game_Finalise();
+
+    // else
+
+    D_00453538 = 1;
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", Main_RunGame__Fv); /* Main_RunGame */
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963D0); /* Main_Terminate */
-/*
 void Main_Terminate() {
-    Main_CloseRequest = 1;
+    D_00453538 = 1;
 }
-*/
+
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963E0); /* return tempR__Main_CloseRequest; */
 
 void func_002963E8() {

@@ -1,11 +1,13 @@
 #ifndef INPJOYS1_H
-#define INPYJOYS1_H
+#define INPJOYS1_H
 
 #include "FGDK3/Playstation2/Thread.h"
-
-#include "FGDK3/Playstation2/TimSrv.h"
 #include "FGDK3/Inpdev.h"
-#include "FGDK3/ThrowCat.h"
+#include "FGDK3/Playstation2/TimSrv.h"
+
+class InputJoystick1_Device : /*public InputDevice_Device,*/ public TimSrv_Timer {
+
+};
 
 extern void * const InputJoystick1_StdInit_UsedModules[];
 

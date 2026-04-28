@@ -1,5 +1,6 @@
 #include "common.h"
 #include "ScriptRes.h"
+#include "FGDK3/ThrowCat.h"
 
 #include "unk.h"
 
@@ -133,13 +134,13 @@ void Script::func_0031E8C0() {
     return;
 }
 
-int func_0031E8C8() {
+int Script::func_0031E8C8() {
     return 0;
 }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031E8D0);
 
-int func_0031E8D8(void) {
+int Script::func_0031E8D8() {
     return 1;
 }
 
@@ -147,7 +148,7 @@ int func_0031E8E0(void) {
     return 0;
 }
 
-void func_0031E8E8(void) {
+void Script::func_0031E8E8() {
     return;
 }
 
@@ -302,11 +303,11 @@ void func_0031EA38(void) {
     return;
 }
 
-int func_0031EA40(void) {
+int Script::func_0031EA40() {
     return 1;
 }
 
-void func_0031EA48(void) {
+void Script::func_0031EA48() {
     return;
 }
 

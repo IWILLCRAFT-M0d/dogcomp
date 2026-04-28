@@ -2,9 +2,28 @@
 #include "mem.h"
 #include "unk.h"
 
-#include "FGDK3/Playstation2/SoundManager.h"
+#include <libsdr.h>
 
+#include "FGDK3/Playstation2/SoundManager.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Playstation2/RunPath.h"
+
+
+
+#ifdef NON_MATCHING
+Status SoundManager_InternalInitialise() {
+    //
+    sceSdRemoteInit();
+    sceSdRemoteCallbackInit(0);
+    //sceSdRemote
+    //sceSdRemote
+    //sceSdRemote
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Playstation2/SoundManager.cpp", 103);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/SoundManager", SoundManager_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/SoundManager", SoundManager_InternalFinalise__Fv);
 

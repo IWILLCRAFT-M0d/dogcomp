@@ -121,6 +121,12 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
+// string_ascii WorldObject::func_00182EC0() {
+// if (ShapeInstance.m_shapeData == NULL) {
+// return string_ascii("<no shape>");
+//}
+//}
+
 #ifdef NON_MATCHING
 void WorldObject::func_00182FF8(ShapeData* shape) {
     //

@@ -3,6 +3,8 @@
 #include "unk.h"
 
 #include "FGDK3/Playstation2/IOPMem.h"
+#include "FGDK3/Playstation2/sifManager.h"
+
 #include <ee/sifdev.h>
 #include "FGDK3/ThrowCat.h"
 

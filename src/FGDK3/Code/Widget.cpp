@@ -198,7 +198,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E620);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E760); /* Widget_Graphic */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E810);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_14Widget_Graphic);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E868); /* return 0xe0; */
 
@@ -208,9 +208,19 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024E928);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FCA8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FD70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FD70); // virtual
 
+#ifdef NON_MATCHING
+Widget_WithChildren::Widget_WithChildren(char* arg1, int arg2, int arg3) : Widget(arg1, arg2) {
+    this->unkC8 = 0.04f;
+
+    if (arg3 != 0) {
+        //002555C8
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FF08); /* Widget_WithChildren */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024FF88); /* return 0xd0; */
 
@@ -364,7 +374,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002532B0); /* return 1; *
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002532B8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00253508);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00253508); // Widget_Window virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00253558);
 

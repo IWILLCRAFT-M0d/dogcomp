@@ -58,7 +58,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", CheckError__18StdInit_ClientBa
 #endif
 
 // status.cpp?
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", PrepareReport_6StatusPci); /* Status::PrepareReport(char*, int) */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", PrepareReport__6StatusPci); /* Status::PrepareReport(char*, int) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026CED0);
 
@@ -75,7 +75,13 @@ Status func_0026CF98(void) {
 }
 
 
+#ifdef NON_MATCHING
+Status func_0026CFD0(unsigned int arg0, char* file, int line) {
+    return Status(arg0, file, line);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026CFD0);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026CFF8);
 

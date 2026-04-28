@@ -11,9 +11,9 @@
 extern float D_00452910;
 void GameShell::Step() {
 
-if (this->m_gameSpeed <= D_00452910) {
+  if (this->m_gameSpeed <= D_00452910) {
 
-}
+  }
 
 }
 #else

@@ -1,7 +1,9 @@
 #include "common.h"
 
 #include "FGDK3/Inpevent.h"
-
+#include "FGDK3/Playstation2/TimSrv.h"
+#include "FGDK3/Inpdev.h"
+#include "FGDK3/ThrowCat.h"
 
 #ifdef NON_MATCHING
 

@@ -1,8 +1,11 @@
 #include "common.h"
 
+#include <string.h>
+
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/CLIOpts", D_00444658); /* "c:/coding/fgdk3/Code/Common/CLIOpts.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002DFA70); /* rct3 CLIOptions_Options ?*/
+// string_ascii("Unrecognised argument :")
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002DFD70); /* rct3 CLIOptions_ProcessLine ?*/
 

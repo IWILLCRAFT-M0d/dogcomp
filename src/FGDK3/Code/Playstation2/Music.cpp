@@ -1,6 +1,13 @@
 #include "common.h"
 
 #include "FGDK3/Playstation2/Music.h"
+#include "FGDK3/Playstation2/IOPMem.h"
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Playstation2/SoundManager.h"
+//Music_ObjectService header goes here
+#include "FGDK3/Playstation2/RunPath.h"
+//StdMem header goes here
+
 
 #include <ee_gcc/sys/types.h>
 #include <MultiStream/sound.h>
@@ -197,9 +204,17 @@ Music_Performance::Music_Performance() {
     this->unk8 = 0;
     this->unkC = 0;
 
+    this->unk24 = 1.0f;
+    this->unk28 = 1.0f;
+
+    this->unk9C = 1.0f;
+    this->unkA0 = 1.0f;
+
     if (D_00453744 != 0) {
         DDE_FatalError("More than one Music_Performance instance not allowed");
     }
+
+    this->unk48 = new Music_MenuRegisterable();
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __17Music_Performance);
@@ -258,6 +273,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002826B0);
 #ifdef NON_MATCHING
 Music_PS2Piece::Music_PS2Piece(char* arg1) {
     this->unk58 = arg1;
+    //
+
+    if (arg1 != 0) {
+
+    }
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __14Music_PS2PiecePc); /* Music_PS2Piece::Music_PS2Piece(char* name?) */
@@ -304,6 +324,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __20Music_PS2Perfo
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _$_20Music_PS2Performance);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284AF0); // Music_PS2Performance virtual
+// new Music_PS2Piece( )
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284B60); // Music_PS2Performance virtual
 
@@ -332,7 +353,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", PauseNow_20Music_P
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", ResumeNow_20Music_PS2Performance);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284DF0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284DF0); // file loading for music?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00285338);
 
@@ -400,7 +421,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286450);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002864C8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286548);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00286548); // RCT3 string_ascii::compare ?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002865B8);
 
@@ -508,7 +529,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002875D0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287628);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287660);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287660); // return D_00453744; // GetMusicPerformance()?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00287698);
 

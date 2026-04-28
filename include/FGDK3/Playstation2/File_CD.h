@@ -5,9 +5,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/ThrowCat.h"
-#include "FGDK3/Playstation2/sifManager.h"
-
 #include "unk.h"
 
 class File_CD : public File::Access {

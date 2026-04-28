@@ -18,7 +18,7 @@ Status RelRecv_InternalInitialise() {
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", RelRecv_InternalInitialise__Fv);
 #endif
 
-void RelRecv_InternalFinalise(void) {
+void RelRecv_InternalFinalise() {
     return;
 }
 
@@ -37,11 +37,11 @@ void * const RelRecv_StdInit_UsedModules[] = {
     0,
 };
 
-Status RelRecv_Initialise(void) {
+Status RelRecv_Initialise() {
     return StdInit_InitialisationSequence(&RelRecv_StdInit_Description);
 }
 
-void RelRecv_Finalise(void) {
+void RelRecv_Finalise() {
     StdInit_FinalisationSequence(&RelRecv_StdInit_Description);
 }
 

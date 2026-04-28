@@ -5,7 +5,7 @@
 
 #include "FGDK3/ThrowCat.h"
 
-//#include "unk.h"
+#include "unk.h"
 
 extern void * const TextRes_StdInit_UsedModules[];
 
@@ -22,7 +22,7 @@ void func_0026C4E0(void*, char*);
 }
 #endif
 
-class Text_Resources /*: Resource<char>*/ {
+class Text_Resources : public Resource<char> {
 
 };
 

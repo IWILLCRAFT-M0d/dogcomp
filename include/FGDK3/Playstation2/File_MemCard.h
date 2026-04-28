@@ -3,10 +3,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/ThrowCat.h"
-#include "FGDK3/Playstation2/sifManager.h"
-#include "FGDK3/Playstation2/TimSrv.h"
-
 #include "unk.h"
 
 class File_MemCard : public File::Access {

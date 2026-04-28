@@ -2,13 +2,17 @@
 
 #include <eekernel.h>
 #include <libpad.h>
+
 #include "FGDK3/Playstation2/Controller.h"
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Inpdev.h"
+#include "FGDK3/Playstation2/RunPath.h"
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC160);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC1A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC1A8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC1F0);
 

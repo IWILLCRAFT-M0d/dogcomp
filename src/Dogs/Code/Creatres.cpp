@@ -2,6 +2,9 @@
 #include "unk.h"
 
 #include "Dogs/Creatres.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Creatres", D_003DAF80); /* "Creature" */
 

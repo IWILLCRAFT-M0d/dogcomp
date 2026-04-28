@@ -17,7 +17,7 @@ class Person : public WorldObject {
         float unk5C0;
         float unk5C4;
         float unk5C8;
-
+        float unk654; // sitting/standing, height offset?
         float unk658;
         float unk65C;
         int unk6B0;

@@ -26,6 +26,13 @@ class PlayerDog : public Dog {
         virtual ~PlayerDog();
         void func_0014EB88(int moveId); // addMove?
         virtual ClassInfo* func_0014F518();
+
+
+
+
+        // 0014DA68
+        // 0014da60
+        virtual void func_0014DB48();
 };
 
 //msg AddMove

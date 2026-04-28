@@ -30,7 +30,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104D80__6Basket);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00104DA0); // Basket member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_001057C0); /* "its triggering from bottom" */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_001057C0); // Basket virtual
+// func_002D5B40("its triggering from bottom")
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105998);
 
@@ -44,7 +45,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105C98); // Basket membe
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105D10); // Basket member
 
+#ifdef NON_MATCHING
+void Basket::func_00105DF8() {
+    //func_00186BF0
+    this->unk628 = false;
+    this->unk620 = false;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105DF8__6Basket);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Basket", func_00105E28); // min<float> ?
 // vtables

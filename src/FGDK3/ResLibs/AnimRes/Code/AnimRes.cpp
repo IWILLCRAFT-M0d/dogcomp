@@ -1,7 +1,11 @@
 #include "common.h"
 
-#include "AnimRes.h"
+#include "FGDK3/ResLibs/AnimRes/AnimRes.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
+
 #include "unk.h"
+
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", D_00448C08); /* "Animation" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/AnimRes/Code/AnimRes", func_00318FD0);

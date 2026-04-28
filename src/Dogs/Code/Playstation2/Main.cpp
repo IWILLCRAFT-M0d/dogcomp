@@ -38,7 +38,7 @@ int main(int argc, char* argv[]) {
 
     var_17 = 0;
 
-    Semaphore_Initialise();
+    Semaphore_Initialise(); // sifManager
     IOPMem_Initialise();
     GE_Initialise();
     RunPath_Initialise();
@@ -84,7 +84,7 @@ block_7:
 //         spC = sp1C;
 //     }
 //     temp_20_2 = func_002A4C58(D_0045216C, sp, 0, 0, var_17 == 0);
-//     func_002D6EA8(&sp20, func_00272FF0());
+//     func_002D6EA8(&sp20, RunPath_Get());
 //     func_002D70C0(&sp10, &sp20, "Dogs.dgf", strlen("Dogs.dgf"));
 //     func_002D7050(&sp10, sp10->unk4 + 1);
 //     *(sp10->unkC + sp10->unk4) = 0;
@@ -115,7 +115,7 @@ block_7:
 //     if ((var_16_2 != 0) || (var_16_2 = func_00337A40(argv->unk0, 0x3A), (var_16_2 != 0))) {
 //         temp_16 = var_16_2 + 1;
 //         sp420 = "spongebob";
-//         func_002D6EA8(&sp20, func_00272FF0());
+//         func_002D6EA8(&sp20, RunPath_Get());
 //         func_002D70C0(&sp10, &sp20, temp_16, strlen(temp_16));
 //         func_002D7050(&sp10, sp10->unk4 + 1);
 //         *(sp10->unkC + sp10->unk4) = 0;
@@ -143,4 +143,4 @@ block_7:
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Playstation2/Main", main);
 #endif
-/* Status(0xFFFFFFFF, "c:/coding/dogs/Code/Playstation2/Main.cpp", 141) */
+

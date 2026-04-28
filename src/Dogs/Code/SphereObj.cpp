@@ -40,7 +40,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173AA0); // SphereObj
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173B58); /* BallHitReceiver */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173BD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00173BD0); // virtual
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SphereObj", D_003C7AD8);
 
@@ -120,13 +120,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001774C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", __tf9SphereObj);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775C0);
+#ifdef NON_MATCHING
+float SphereObj::func_001775C0() {
+    return this->unk5C0 * this->unk5C4;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775C0__9SphereObj);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775D8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775F8); /* __tf14TransientSound */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_00177648);
 

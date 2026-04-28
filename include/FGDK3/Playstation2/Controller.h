@@ -2,10 +2,8 @@
 #define CONTROLLER_H
 
 #include "FGDK3/Playstation2/Thread.h"
-
-#include "FGDK3/Playstation2/sifManager.h"
 #include "FGDK3/Inpdev.h"
-#include "FGDK3/Playstation2/RunPath.h"
+
 
 typedef struct {
 	int unk0;

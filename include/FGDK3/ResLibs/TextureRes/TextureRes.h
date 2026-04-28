@@ -3,9 +3,6 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/ThrowCat.h"
-#include "FGDK3/RelRecv.h"
-
 #include "unk.h"
 
 extern void * const TextureRes_StdInit_UsedModules[];
@@ -21,9 +18,11 @@ class GE_Texture {
 
 class Texture_Resources : Resource<GE_Texture> {
     public:
-        int unk14;
+        int unk14; // bool g_geInitialized?
         Texture_Resources();
         virtual ~Texture_Resources();
+        //
+        virtual void* func_0031F5E0();
 };
 
 #ifdef __cplusplus

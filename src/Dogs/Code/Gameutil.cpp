@@ -3,6 +3,9 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "Dogs/Gameutil.h"
+// overlay header? goes here
+#include "FGDK3/Inpevent.h"
+
 
 #ifdef NON_MATCHING
 Status Gameutil_InternalInitialise() {

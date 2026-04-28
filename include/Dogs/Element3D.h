@@ -6,6 +6,7 @@
 
 class Element3D : public ShapeInstance, public GenericObject/*, public Location_IF, public BoneManagerProvider_IF, public AnimPosProvider_IF, public AnimVarProvider_IF*/  {
     public:
+        // 0xD0 BoneManager?
         /* 0x108 */ short m_shapeId;
         Element3D(ClassInfo*, short);
         virtual ~Element3D();

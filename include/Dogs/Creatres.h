@@ -3,16 +3,16 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "FGDK3/ThrowCat.h"
-#include "FGDK3/RelRecv.h"
-
-
 extern void * const Creatres_StdInit_UsedModules[];
 
 Status Creatres_InternalInitialise();
 void Creatres_InternalFinalise();
 Status Creatres_Initialise();
 void Creatres_Finalise();
+
+class Creature_Resources /**/ {
+
+};
 
 #ifdef __cplusplus
 extern "C" {

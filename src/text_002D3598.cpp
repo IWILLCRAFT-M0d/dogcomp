@@ -3,14 +3,27 @@
 #include "unk.h"
 
 #include "FGDK3/FontRes.h"
-
-#include "string.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
 
 #include <stdio.h>
+#include <string.h>
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3598); /* StreamRenderer ? */
 
+#ifdef NON_MATCHING
+MessageStream::MessageStream(const char* arg1, int arg2, int arg3) {
+    this->unk1C = this;
+    this->unk0 = arg2;
+    this->unk4 = arg3;
+    this->unkC = 1;
+    this->unk8 = 1;
+    this->unk10 = new char[strlen(arg1) + 1];
+    strcpy(this->unk10, arg1);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3628);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3690);
 
@@ -37,7 +50,9 @@ DebugEnvironment::DebugEnvironment() {
     this->unk30 = 0;
     this->unk34 = 0;
     //
+    //002d42e8
     func_002D42D8();
+    //002d4780
     //
 }
 #else
@@ -147,7 +162,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5190);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D51D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5208);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5208); /* Debug_StructContainer */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D52E0);
 
@@ -211,13 +226,33 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
+#ifdef NON_MATCHING
+extern int D_0045298C;
+int func_002D5B40(char* arg0, ...) {
+    va_list args;
+    char str[1024];
+    size_t len;
+    sprintf(str, "Assertion failure:\n\n");
+    len = strlen(str);
+    vsprintf(str + len, str, args);
+    //
+    printf("*** Assertion failure *** : %s\n", str + len);
+    strcat(str, "\n\nAbort:<IGNORE ALL>    Retry:<DEBUG>    Ignore:<IGNORE>");
+    int var1 = func_002963F0(str, 1);
+    D_0045298C = 0;
+    if (var1 == 3) {
+
+        return 1;
+    }
+    else if (var1 == 2) {
+        D_0045298C = 1;
+        return 0;
+    }
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5B40); // assertion failure (int func_002D5B40(char*,...?) ; CustomAssert?
-
-// char str[1024];
-// sprintf(str, "Assertion failure:\n\n");
-
-// printf("*** Assertion failure *** : %s\n", );
-// strcat(str, "\n\nAbort:<IGNORE ALL>    Retry:<DEBUG>    Ignore:<IGNORE>");
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5C28);
 
@@ -256,7 +291,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16DebugEnvironment);
 
-void DebugEnvironment::func_002D5D58(void) { // RCT3 DebugEnvironment::OnRebuild() ?
+void DebugEnvironment::func_002D5D58() { // RCT3 DebugEnvironment::OnRebuild() ?
     return;
 }
 
@@ -406,234 +441,6 @@ char * func_002D6B88() { // Font_Resources virtual
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6B88);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18Resource1Z11Font_Header);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tft8Resource1Z11Font_Header);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6BE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6C40);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6CB8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6D50);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6DE8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6E68);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6EA8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6EF0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6F48);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6FE0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7050);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D70C0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7178);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7228);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D72D0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D73A0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7448);
-
-void func_002D74F8() {
-    return;
-}
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7500);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D75F0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D76D0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D76E8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7710);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443B70); /* "0123456789abcdefghijklmnopqrstuvwxyz" */
-
-#ifdef NON_MATCHING
-// getTarget?
-char* func_002D7738(int arg0) {
-    switch (arg0) {
-    case 0:
-        //return &D_00452A28;
-        return "Windows";
-    case 1:
-        //return &D_00452A30;
-        return "PS2";
-    case 2:
-        //return &D_00452A38;
-        return "Xbox";
-    case 3:
-        // D_00443b98
-        return "GameCube";
-    default:
-        // D_00443ba8
-        return "unknown_target";
-    }
-}
-
-#else
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7738);
-#endif
-
-int func_002D77A8(char* arg0) {
-    int var_16;
-
-    var_16 = 0;
-loop_1:
-    if (strcasecmp(arg0, func_002D7738(var_16)) != 0) {
-        var_16 += 1;
-        if (var_16 >= 4) {
-            return 4;
-        }
-        goto loop_1;
-    }
-    return var_16;
-}
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7808);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D78D0); /* Endian::Endian */
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_6Endian);
-
-void Endian::func_002D7980(void) {
-    return;
-}
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7988);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7998);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D79A0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7A18);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7A28);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7A78);
-
-// split for Endian?
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7AB8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7BD8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7C20);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7F28);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D7F70);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8100);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8148);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8178);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D81C0); // in endian.cpp
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D84C8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8510);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8538);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8588);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8630);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8680);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8700);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8750); // in Endian.cpp
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D87E0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_16Endian_ExpandMem);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D88A8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D89A8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8AA0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_11EndianFile);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8B48);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8BB8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8CA0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8D28);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D8DB8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9010);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9090);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9148);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D91C8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf6Endian);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9250);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9258);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9260);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9268);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9270);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_10Endian_Mem);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf10Endian_Mem);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9308);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443BB8); /* "c:/coding/fgdk3/Code/Common/Endian.cpp" */
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$29Endian_GentleModificationFile);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$11EndianFile);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$16Endian_ExpandMem);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$10Endian_Mem);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$6Endian);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443D70); /* "10Endian_Mem" */
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf16Endian_ExpandMem);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93C0);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93C8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D93D8);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11Endian_File);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9468);
-
-INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00443D98); /* "11Endian_File" */
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf29Endian_GentleModificationFile);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9520);
-
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D9540);

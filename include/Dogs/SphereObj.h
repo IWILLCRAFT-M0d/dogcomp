@@ -25,6 +25,7 @@ class SphereObj : public WorldObject {
 
         SphereObj(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SphereObj();
+        virtual float func_001775C0();
 };
 
 

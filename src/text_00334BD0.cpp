@@ -847,7 +847,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00344F50);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00345158);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003451E8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceFsReset);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceOpen);
 

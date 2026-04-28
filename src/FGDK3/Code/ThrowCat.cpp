@@ -1,6 +1,9 @@
 #include "common.h"
 
 #include "FGDK3/ThrowCat.h"
+#include <stdio.h>
+#include <eekernel.h>
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B2A8); // Throwcatch stack
 
@@ -10,7 +13,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B3B0); /* "Throwcat
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B448); /* "Throwcatch sanity count of %d failure at %s %d" */
 
+#ifdef NON_MATCHING
+Status ThrowCatch_InternalInitialise() {
+    return Status(0xFFFFFFFF, "c:/coding/fgdk3/Code/Common/ThrowCat.cpp", 163);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_InternalInitialise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_InternalFinalise__Fv); /* D_004518F0 = 0; */
 
@@ -41,4 +50,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_Finalise__Fv);
 #endif
 
+#ifdef NON_MATCHING
+void ThrowCatch_DefiniteThrow(Status arg0) {
+    char str[512];
+
+    sprintf(str, "THROWN ERROR WAS NOT CAUGHT\n- ");
+    //
+    printf("%s\n", str);
+    Exit(1);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", ThrowCatch_DefiniteThrow); /* rct3 ThrowCatch_DefiniteThrow */
+#endif

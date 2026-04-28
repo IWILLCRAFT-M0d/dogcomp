@@ -1,6 +1,10 @@
 #include "common.h"
 
+#include <ee/eekernel.h>
 #include "FGDK3/Playstation2/InpKeybd.h"
+#include "FGDK3/Playstation2/sifManager.h"
+#include "FGDK3/Playstation2/RunPath.h"
+#include "FGDK3/Inpdev.h"
 
 #ifdef NON_MATCHING
 InputKeyboard_Device::InputKeyboard_Device() : InputDevice_Device(0,256,0,0,0,0) {

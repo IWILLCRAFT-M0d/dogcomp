@@ -560,7 +560,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168668);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168670); /* return 0.0f */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168680);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168680); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168688);
 
@@ -696,11 +696,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C38);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168C40);  // floor collision?
 /* return D_0044D7D4 */
 
-int func_00168C50(void) {
+int func_00168C50(void) { // virtual
     return 1;
 }
 
-int func_00168C58(void) {
+int func_00168C58(void) { // virtual
     return 1;
 }
 

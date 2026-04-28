@@ -83,7 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00101F30); // "Unk
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102088);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102190);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_00102190); // virtual AnimatedObject_Complex
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/AnimatedObject", func_001021B0);
 

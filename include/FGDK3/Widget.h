@@ -39,11 +39,14 @@ class Widget_LiveText : public Widget_Text {
 };
 
 class Widget_Graphic /*: public Widget */{
-
+    public:
+        virtual ~Widget_Graphic();
 };
 
 class Widget_WithChildren : public Widget {
     public:
+        float unkC8;
+
         Widget_WithChildren(char*, int, int);
         virtual ~Widget_WithChildren();
 };
@@ -64,6 +67,14 @@ class GUI_TitleBar /*: public Widget_Compositor*/ {
 
 
 class Widget_Pane /* : public Widget_Border */ {
+
+};
+
+class Widget_QuestionBox : public Widget_Pane {
+
+};
+
+class Widget_ErrorBox : public Widget_Pane {
 
 };
 

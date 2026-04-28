@@ -1,6 +1,8 @@
 #include "common.h"
 
-#include "LandscapeRes.h"
+#include "FGDK3/ResLibs/LandscapeRes/LandscapeRes.h"
+#include "FGDK3/ThrowCat.h"
+#include "FGDK3/RelRecv.h"
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/LandscapeRes/Code/LandscapeRes", D_004499A8); /* "DogsTaleLand" */
 

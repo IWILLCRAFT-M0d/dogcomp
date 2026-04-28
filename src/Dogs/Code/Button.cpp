@@ -1,6 +1,7 @@
 #include "common.h"
 
 #include "Dogs/Button.h"
+#include <libvu0.h>
 
 #ifdef NON_MATCHING
 Button::Button(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
@@ -48,7 +49,7 @@ int Button::func_0010A550() { // GetButtonType?
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550__6Button);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558); // static constructors
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __tf6Button);
 
