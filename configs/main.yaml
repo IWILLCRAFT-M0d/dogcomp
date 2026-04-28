@@ -183,6 +183,7 @@ segments:
       - [0x1CB560, cpp, text_002CA560]
       - [0x1D3D80, cpp, FGDK3/Code/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
+      - [0x1D79B8, cpp, FGDK3/Code/FontRes]
       - [0x1D7BE8, cpp, text_002D6BE8]
       - [0x1DA560, cpp, text_002D9560]
       - [0x1DBB38, cpp, FGDK3/Code/DrawShape]
@@ -370,7 +371,9 @@ segments:
 
       - [0x343CE8, .rodata, FGDK3/Code/GameShell]
       - [0x343D68, .rodata, text_002D3598]
+      - [0x344A98, .rodata, FGDK3/Code/FontRes]
       - [0x344B70, .rodata, text_002D6BE8]
+
       - [0x344DC8, .rodata, text_002D9560]
       - [0x345438, .rodata, FGDK3/Code/DrawShape]
       - [0x345498, .rodata, text_002DE720]
