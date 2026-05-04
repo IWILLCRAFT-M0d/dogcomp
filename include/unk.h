@@ -47,7 +47,7 @@ typedef struct {
   /* 0x034 */ float fogDistance; // Fog distance
   /* 0x038 */ bool  unk38;       // DOF
   /* 0x03C */ bool  unk3C;       // DOF
-} s_0044EB68_1E0;
+} s_func_0023E698;
 
 class string_ascii { // RCT3
     public:
@@ -271,6 +271,7 @@ class ShapeInstance {
         // virtual ? func_00270498
         // virtual ? func_002704D8
         virtual float func_002704F8();
+        virtual const string_ascii func_00271908();
         void Execute();
         void Render(GE_Device*);
 };
@@ -318,6 +319,7 @@ class Resource_LayoutOverlay /* : public Resource_LayoutUnit */ {
         //Resource_LayoutOverlay
         virtual ~Resource_LayoutOverlay();
         virtual void func_00274200();
+        virtual void func_00274400();
 
 };
 
@@ -6328,6 +6330,7 @@ class Endian_ExpandMem : public Endian_Mem {
 
 class Script {
     public:
+
         virtual ~Script();
         virtual void func_0031E8C0();
         // virtual ? 0031E6D8
@@ -6436,6 +6439,7 @@ class Script {
 
 class DogScript : public Script {
     public:
+        // DogScript(WorldObject*?, int scriptId)
         virtual ~DogScript();
         //
         virtual int func_001AD5F8();
@@ -6799,6 +6803,8 @@ class MessageStream { // RCT3
 extern "C" {
 #endif
 
+
+
 // BookMetaphor
 short func_0018C980(int level, int gate);
 void func_00196418(void);
@@ -6809,7 +6815,7 @@ void func_001AD560(void);
 void func_002C0340(void);
 int func_002C8358(s_func_002C8358* arg0);
 
-void func_002967C8(void* arg0, int arg1);
+
 unsigned int func_002684E8(unsigned int, unsigned int);
 unsigned int func_002684F8(unsigned int, unsigned int);
 Status func_0026CF60(void);
@@ -6924,8 +6930,8 @@ int func_002C6498(void);
 void func_00262F88(void);
 int func_00263640(void);
 
-int func_00274B00(char* name);
-int func_00275288(int arg0, int arg1, int ovlType, int arg3);
+void* func_00274B00(char* name);
+void* func_00275288(int arg0, int arg1, int ovlType, int arg3);
 void func_002757F0(void);
 int func_00290D08(void);
 void func_00291770(void);
@@ -7020,12 +7026,23 @@ string_ascii func_001FD148(short);
 }
 #endif
 
-void IOPMem_Finalise();
+struct s_func_001FC440 {
+
+   s_func_001FC440();
+};
+
+
+//s_func_001FC440* func_001FC440();
+s_func_001FC440* func_001FC598();
+
 
 Status SimObj_InternalInitialise();
 void SimObj_InternalFinalise();
 Status SimObj_Initialise();
 void SimObj_Finalise();
+
+
+extern void * const StdMem_StdInit_UsedModules[];
 
 Status StdMem_Initialise();
 void StdMem_Finalise();
@@ -7033,5 +7050,4 @@ void StdMem_Finalise();
 void Main_RunGame();
 void Main_Terminate();
 
-#endif
-
+#endif /* UNK_H */

@@ -24,7 +24,6 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA560);
 Status GE_InternalInitialise() {
   extern void *D_004528B4;
   extern int D_004528B8;
-  //PTR_004528b4 = (int *)__builtin_vec_new((undefined *)(DAT_004528b8 << 2));
   D_004528B4 = new int*[D_004528B8 << 2];
 
   sceDevVif0Reset();

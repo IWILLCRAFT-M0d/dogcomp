@@ -3,7 +3,18 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC440);
 
+#ifdef NON_MATCHING
+struct s_func_001FC440* D_00450974;
+struct s_func_001FC440* func_001FC598() {
+    if (D_00450974 == 0x0) {
+        D_00450974 = new s_func_001FC440();
+    }
+    return D_00450974;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598); // debug actor names?
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0); // text resources
 
@@ -13070,19 +13081,19 @@ INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_0040B530);
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC928); // overlayToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCA10); // overlayNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCA10); // overlayNameToId (string_ascii)
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCB38); // actorToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCC20); // actorNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCC20); // actorNameToId (string_ascii)
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCD48); // creatureTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCE28); // creatureNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCE28); // creatureNameToId (string_ascii)
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FCF48); // scriptTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD028); // scriptNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD028); // scriptNameToId (string_ascii)
 
 #ifdef NON_MATCHING
 string_ascii func_001FD148(short shape) {
@@ -13090,17 +13101,17 @@ string_ascii func_001FD148(short shape) {
         //return string_ascii( )
     }
 
-
+    return string_ascii("<Unknown shape type>");
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD148); // shapeTypeToString
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD228); // shapeNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD228); // shapeNameToId (string_ascii)
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD348); // navgraphTypeToString
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD428); // navgraphNameToId
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD428); // navgraphNameToId (string_ascii)
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD548);
 

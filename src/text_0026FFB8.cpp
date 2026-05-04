@@ -112,7 +112,13 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
 
+#ifdef NON_MATCHING
+const string_ascii ShapeInstance::func_00271908() {
+    return string_ascii("<unknown shape>");
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeInstance member; RCT3 ShapeInstance::GetShapeName?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938);
 

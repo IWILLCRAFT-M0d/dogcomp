@@ -28,7 +28,7 @@ class Dog : public WorldObject/*, public Jump_IF, public AnimationMovedObject_IF
         int unk85C;
         float unk868; // status bone height
         // 0x86C float boneScale
-        // 0x870 float boneRotation
+        // 0x870 float boneRotation (radians)
 
         union {int i;float f;} unkB0C; // shinyness/wetness? (set to 0 when entering water, increases when out of water)
         float unkB10; // time in water? (-1 when out of water)

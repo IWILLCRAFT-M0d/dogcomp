@@ -20,9 +20,32 @@ void StdMem_InternalFinalise() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", StdMem_Initialise__Fv);
+#ifdef NON_MATCHING
 
+StdInit_ModuleDescription StdMem_StdInit_Description = {
+    0,
+    &StdMem_StdInit_UsedModules
+};
+
+void * const StdMem_StdInit_UsedModules[] = {
+    &StdMem_InternalInitialise,
+    &StdMem_InternalFinalise,
+    0,
+    0,
+};
+
+Status StdMem_Initialise() {
+    return StdInit_InitialisationSequence(&StdMem_StdInit_Description);
+}
+
+void StdMem_Finalise() {
+    StdInit_FinalisationSequence(&StdMem_StdInit_Description);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", StdMem_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", StdMem_Finalise__Fv);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026C668);
 

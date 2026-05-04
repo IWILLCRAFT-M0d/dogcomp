@@ -93,7 +93,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4EC8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4F30);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4FD8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4FD8); // RCT3 Animation::AddWeightModifier ?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4FF8);
 

@@ -8,7 +8,7 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BED8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF0); /* return; */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF0); /* return; virtual*/
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF8);
 

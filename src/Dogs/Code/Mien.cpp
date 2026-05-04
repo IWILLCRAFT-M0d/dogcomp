@@ -1,5 +1,4 @@
 #include "common.h"
-#include "debug.h"
 #include "unk.h"
 
 
@@ -55,11 +54,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6EC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", __tf4Mien);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD0); // return (float) a0->unk8
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD8); // return (float) a0->unkC
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE0); // return (float) a0->unk10
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE8);
 

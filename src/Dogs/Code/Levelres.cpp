@@ -4,7 +4,6 @@
 #include "FGDK3/ThrowCat.h"
 
 
-
 #ifdef NON_MATCHING
 
 Status LevelRes_InternalInitialise() {
@@ -65,5 +64,3 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", func_001E5810);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Levelres", __tft8Resource1Z17Level_Description);
-
-// end of Levelres.cpp

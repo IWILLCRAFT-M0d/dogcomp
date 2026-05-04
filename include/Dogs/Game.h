@@ -8,6 +8,12 @@
 #include "FGDK3/GameShell.h"
 #include "Dogs/Lights.h"
 
+#include "text_001B07A8.h"
+
+#include "Dogs/Console.h"
+
+#include "Dogs/GameState.h"
+#include "Dogs/Scent.h"
 
 typedef struct {
     char unk0[0x4F8];
@@ -26,8 +32,8 @@ typedef struct {
     float unk24;
     float unk28;
     /* 0x2C */ int m_language;
-} s_Game_Document_584;
-// constructed by 001B1FA8
+} s_func_001B1FA8; // settings
+
 
 extern void * const Game_StdInit_UsedModules[];
 
@@ -56,7 +62,9 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk1D8;
         int unk1DC;
         //
-        s_0044EB68_1E0* unk1E0;
+        s_func_0023E698* unk1E0;
+        s_func_00154120* unk1E4;
+
         //
         int unk1E8;
         bool unk1EC; // musicEnabled?
@@ -66,7 +74,8 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk1FC; // script thread profiling actorId
         int unk200;
         int unk204;
-        // 0x3E0 GameDesktop (virtualdesktop)
+        // 0018b528 unk210?
+        GameDesktop* unk3E0;
         int unk3E8;
         int unk3EC;
         int unk3F0; // windowed mode?
@@ -88,13 +97,14 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         /* 0x4F0 */ bool m_renderHitSpheres;
         int unk4F4; // navcells actorId
         int unk4F8; // navcells thing
-        // 0x4FC GameStateReq?
+        s_func_001D8328* unk4FC;
         int unk500;
-        int unk504;
+        s_func_001A0628* unk504;
         //
         ShapeInstance unk51C; // backdrop (sky)
-        int* unk550;
-        //
+        s_func_001B07A8* unk550;
+        s_func_001B0B90* unk554;
+        s_func_001B11E0* unk558;
         bool unk55C; // makes speech/music quieter?
         int unk560;
         float unk564;
@@ -105,7 +115,8 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk578;
         int unk57C; // current collar
         int unk580;
-        s_Game_Document_584* unk584; // settings
+        s_func_001B1FA8* unk584; // settings
+
         float unk588;
         float unk58C;
         float unk5A0;
@@ -133,12 +144,12 @@ class SimObj_FilterFlagsAndEq : public SimObj_Filter {
         /* virtual */ int func_001D6B40();
 };
 
-const char* func_001B2470(s_Game_Document_584*, int);
-const char* func_001B24F8(s_Game_Document_584*);
-const char* func_001B2578(s_Game_Document_584*);
-void func_001B25F8(s_Game_Document_584*);
-void func_001B2620(s_Game_Document_584*);
-void func_001B2640(s_Game_Document_584*, int);
+const char* func_001B2470(s_func_001B1FA8*, int);
+const char* func_001B24F8(s_func_001B1FA8*);
+const char* func_001B2578(s_func_001B1FA8*);
+void func_001B25F8(s_func_001B1FA8*);
+void func_001B2620(s_func_001B1FA8*);
+void func_001B2640(s_func_001B1FA8*, int);
 
 #ifdef __cplusplus
 extern "C" {
@@ -149,6 +160,7 @@ s_func_001C6DC8* func_001C6DC8(Game_Document*);
 void func_001C8120(void);
 bool func_001C8128();
 void func_001C88D0(Game_Document*, int level, int gate);
+void func_001CA000(Game_Document*, bool);
 void func_001CCE58(Game_Document*);
 void func_001D1F70(Game_Document*);
 void func_001D22B0(Game_Document*, int level, int gate);

@@ -123,7 +123,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A740); // rendering funct
 INCLUDE_RODATA("asm/nonmatchings/text_00297578", D_0043EF70);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf14GE_TexturePage);
-
+// split?
 #ifdef NON_MATCHING
 GE_PS2Target::GE_PS2Target(GE_PS2Device* arg1) {
     this->unk8 = arg1;

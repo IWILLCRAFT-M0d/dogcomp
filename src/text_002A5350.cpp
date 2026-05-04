@@ -2,12 +2,6 @@
 #include "debug.h"
 #include "unk.h"
 
-#include "FGDK3/Playstation2/IOPMem.h"
-#include <libscf.h>
-#include <sound.h>
-#include <ee/sifdev.h>
-#include "FGDK3/ThrowCat.h"
-
 #include "FGDK3/Playstation2/GE.h"
 #include <libdev.h>
 #include <libgraph.h>

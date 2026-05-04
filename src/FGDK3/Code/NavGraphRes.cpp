@@ -1,8 +1,9 @@
 #include "common.h"
 #include "unk.h"
-#include "mem.h"
 
 #include "FGDK3/NavGraphRes.h"
+#include "ThrowCat.h"
+#include "RelRecv.h"
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/NavGraphRes", D_0043C7A8); /* "NavGraph" */
 

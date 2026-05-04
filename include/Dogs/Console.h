@@ -5,13 +5,13 @@
 #include <stdarg.h>
 #include <eekernel.h>
 
-#include "Game.h"
+//
 
 typedef struct {
 	/* 0x120 */ int m_lines;
 	// 0x124 scroll
 	/* 0x13C */ bool m_textEnabled;
-} consoleStruct;
+} s_func_001A0628; // consoleStruct
 
 #ifdef __cplusplus
 extern "C" {
@@ -19,9 +19,9 @@ extern "C" {
 void func_001A0810(void);
 void func_001A0900(void);
 void func_001A0968(void*, int);
-void func_001A0B08(consoleStruct*, int, char*);
-void func_001A0D80(int, int, int); 
-void func_001A0B90(int, char*, int);
+void func_001A0B08(s_func_001A0628*, int, char*);
+void func_001A0D80(s_func_001A0628*, int, int);
+void func_001A0B90(s_func_001A0628*, char*, int);
 
 
 void func_001A12A0(char arg0, int arg1);
@@ -91,17 +91,17 @@ int func_001AADF8(void);
 
 class Console {
 	public:
-		void Help(consoleStruct*);
-		void Time(consoleStruct*);
-		void ListActors(consoleStruct*);
-		void ToggleDebugConsole(consoleStruct*);
+		void Help(s_func_001A0628*);
+		void Time(s_func_001A0628*);
+		void ListActors(s_func_001A0628*);
+		void ToggleDebugConsole(s_func_001A0628*);
 		void Break();
-		void Save(consoleStruct*);
-		void Load(consoleStruct*);
-		void IsMediaReady(consoleStruct*);
-		void DirMemCard(consoleStruct*);
-		void FormatMemCard(consoleStruct*);
-		void UnformatMemCard(consoleStruct*);
+		void Save(s_func_001A0628*);
+		void Load(s_func_001A0628*);
+		void IsMediaReady(s_func_001A0628*);
+		void DirMemCard(s_func_001A0628*);
+		void FormatMemCard(s_func_001A0628*);
+		void UnformatMemCard(s_func_001A0628*);
 		void TestDoggyDoAnims();
 		void Parse();
 		void Patch();

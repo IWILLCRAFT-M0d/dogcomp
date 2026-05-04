@@ -3,6 +3,10 @@
 
 #include "SimObj.h"
 
+typedef struct {
+
+} s_func_00154120;
+
 class Scent : public SimObject {
     public:
         float unk114;

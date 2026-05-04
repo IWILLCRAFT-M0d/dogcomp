@@ -2,8 +2,6 @@
 #define NAVGRAPHRES_H
 
 #include "FGDK3/Playstation2/Thread.h"
-#include "ThrowCat.h"
-#include "RelRecv.h"
 
 extern void * const NavGraphRes_StdInit_UsedModules[];
 

@@ -3,6 +3,8 @@
 #include "unk.h"
 
 #include "FGDK3/RelRecv.h"
+#include "FGDK3/ThrowCat.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>

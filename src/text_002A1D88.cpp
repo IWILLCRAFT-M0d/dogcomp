@@ -70,7 +70,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A1D88", __tf10ClipVolume);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", _$_10ClipVolume);
 
-int func_002A48A8() {
+int func_002A48A8() { // virtual?
     return 0;
 }
 

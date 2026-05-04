@@ -1,5 +1,4 @@
 #include "common.h"
-#include "debug.h"
 #include "unk.h"
 
 #include "FGDK3/Playstation2/IOPMem.h"
@@ -53,91 +52,23 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", IOPMem_Finalise__
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296710);
 
+#ifdef NON_MATCHING
+void func_002967C8(void* arg0, int arg1) {
+    sceSifFreeIopHeap(arg0);
+    IOPMem_Finalise();
+    //    if (arg1 & 1) {
+    //    delete(arg0);
+    //}
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002967C8);
+#endif
 /*
 void func_002967C8(void* arg0, int arg1) {
     sceSifFreeIopHeap(arg0);
     IOPMem_Finalise();
-    if (arg1 & 1) {
-        delete(arg0);
-    }
+
 }
 */
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", D_0043EC70); /* "c:/coding/fgdk3/Code/Playstation2/IOPMem.cpp" */
-
-
-// Split? (Non-PS2 specific code)
-void InterfaceError(char* file, int line) {
-    DDE_FatalError("Failed to get interface in %s (line %d).", file, line);
-}
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296840); // RCT3 InterfaceInfo::InterfaceInfo ?
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296878); // RCT3 ClassInfo::Create?
-
-#ifdef NON_MATCHING
-extern void* D_00451CB8;
-ClassInfo::ClassInfo() {
-    this->unk8 = &D_00451CB8; // NameTag::s_emptyString?
-    this->unk4 = 0;
-    this->unk10 = 0;
-    this->unkC = 0;
-    this->unk14 = 0;
-    this->unk18 = 0;
-}
-#else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", __9ClassInfo);
-#endif
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", _$_9ClassInfo);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296AF0); /* rct ClassInfo::AddInterface ? */
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296CB8); // RCT3 /* InterfaceTag::InterfaceTag(InterfaceTag const&) */  ?
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296D40); /* rct3 InterfaceTag::InterfaceTag(const char*, NameTag::StringType) */
-
-// DDE_FatalError("There are more than %i interfaces (%i, in fact): the ClassInfo interface arrays should become cleverer.", 100, s_count + 1);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00296FB0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002970C0); // RCT3 InterfaceTag::HardShutDown() ?
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297158); // RCT3 ClassInfo::HardShutDown() ?
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002971D0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002971F8);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297228);
-
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", _vt$9ClassInfo);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297238);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297378); // RCT3 NameTag::Compare(const NameTag*, const NameTag*) ?
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002973C0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297400);
-
-INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", D_0043EDC0); /* "13GenericObject" */
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", __tf9ClassInfo);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002974A0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002974A8); /* return a0->unk18 */
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002974B0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002974E0);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_002974E8);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297520);
-
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/IOPMem", func_00297558);
-
-

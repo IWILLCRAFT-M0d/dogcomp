@@ -124,7 +124,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D250);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D300);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D3D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D3D0); // ~RelocationBlock?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D430);
 

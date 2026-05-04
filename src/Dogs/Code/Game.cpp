@@ -42,7 +42,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2460); /* float (a0->unk
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2468); /* float (a0->unk28) = f12 */
 
 #ifdef NON_MATCHING
-const char* func_001B2470(s_Game_Document_584* arg0, int arg1) {
+const char* func_001B2470(s_func_001B1FA8* arg0, int arg1) {
     const char* D_003DBD08[] = {
     "English",
     "Netherlands",
@@ -66,7 +66,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2470);
 #endif
 
 #ifdef NON_MATCHING
-const char* func_001B24F8(s_Game_Document_584* arg0) {
+const char* func_001B24F8(s_func_001B1FA8* arg0) {
     const char* D_003DBD38[] = {
     "EN",
     "NL",
@@ -87,7 +87,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B24F8);
 #endif
 
 #ifdef NON_MATCHING
-const char* func_001B2578(s_Game_Document_584* arg0) {
+const char* func_001B2578(s_func_001B1FA8* arg0) {
     const char* D_003DBD88[] = {
     "english",
     "dutch",
@@ -109,7 +109,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2578);
 #endif
 
 #ifdef NON_MATCHING
-void func_001B25F8(s_Game_Document_584* arg0) {
+void func_001B25F8(s_func_001B1FA8* arg0) {
     arg0->m_language += 1;
 
     if (arg0->m_language == 11) {
@@ -117,7 +117,7 @@ void func_001B25F8(s_Game_Document_584* arg0) {
     }
 }
 
-void func_001B2620(s_Game_Document_584* arg0) {
+void func_001B2620(s_func_001B1FA8* arg0) {
     arg0->m_language -= 1;
 
     if (arg0->m_language < 0) {
@@ -125,7 +125,7 @@ void func_001B2620(s_Game_Document_584* arg0) {
     }
 }
 
-void func_001B2640(s_Game_Document_584* arg0, int arg1) {
+void func_001B2640(s_func_001B1FA8* arg0, int arg1) {
     arg0->m_language = arg1;
     if (arg1 < 0) {
         arg0->m_language = arg1 + 11;
@@ -175,7 +175,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD78); /* "norwegia" */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DBD88);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2768);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2768); // creatures
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003DCE28); /* "c:/coding/dogs/Code/Common/Game.cpp" */
 
@@ -267,7 +267,7 @@ Game_Document::Game_Document(float deltaTime, float gamespeed) : GameShell(delta
 	this->m_renderHoldingPoints = false;
 	this->m_renderCarryHandles = false;
 	this->m_renderHitSpheres = false;
-	// unk4FC
+
 	this->unk55C = 0;
 	this->unk560 = 0;
 	//this->unk564
@@ -305,7 +305,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_13Game_Document);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E10); // (Game_Document*, )
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E50);
 
@@ -342,11 +342,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7B08); // "SetSaveInhibi
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7BA8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8050); // Game_Document nonvirtual?
-
+// bool D_0044E8CC
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C80C8); // debug stats toggle
 
+// bool D_0044E8D0
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C80F0); // memory stats toggle
 
+// bool D_0044E8D4
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8118);
 
 void func_001C8120(void) {
@@ -386,7 +388,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9DC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9F20);
 
+#ifdef NON_MATCHING
+void func_001CA000(Game_Document* gamedoc, bool arg1) {
+	if (gamedoc->unk3F0 != arg1) {
+		gamedoc->unk3F0 = arg1;
+		//func_001CA038
+		InputMouse_ResumeThread();
+	}
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA000);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA038); // ? func_001CA038(Game_Document*,)
 
@@ -651,7 +663,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", Game_Finalise__Fv);
 
 
 #ifdef NON_MATCHING
-Status func_001D5E90(void) {
+Status func_001D5E90() {
 	return Status(0xFFFFFFFF, "c:/coding/dogs/Code/Common/Game.cpp", 8588);
 }
 #else

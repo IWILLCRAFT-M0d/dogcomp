@@ -110,6 +110,10 @@ class FadeOutReq : public GameState::GameStateReq {
         //func_001DA070
 };
 
+typedef struct {
+
+} s_func_001D8328; // inherits SwitchViewReq?
+
 #ifdef __cplusplus
 extern "C" {
 #endif

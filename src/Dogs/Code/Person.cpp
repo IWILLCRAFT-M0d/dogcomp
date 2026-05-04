@@ -74,7 +74,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C1C0__6Person);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Person", func_0014C230);
 
-
 #ifdef NON_MATCHING
 int Person::func_0014C240() {
     this->unk6B8 = 1;

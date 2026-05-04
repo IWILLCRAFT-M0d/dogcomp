@@ -69,19 +69,14 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D6BE8", D_00443B70); /* "0123456789abcd
 char* func_002D7738(int arg0) {
     switch (arg0) {
     case 0:
-        //return &D_00452A28;
         return "Windows";
     case 1:
-        //return &D_00452A30;
         return "PS2";
     case 2:
-        //return &D_00452A38;
         return "Xbox";
     case 3:
-        // D_00443b98
         return "GameCube";
     default:
-        // D_00443ba8
         return "unknown_target";
     }
 }

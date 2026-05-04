@@ -1105,6 +1105,7 @@ __19Resource_LayoutUnitP19Resource_LayoutUnit = 0x00273D08; // type:func
 _$_19Resource_LayoutUnit = 0x00273D28; // type:func
 _$_22Resource_LayoutOverlay = 0x00273F68; // type:func
 func_00274200__22Resource_LayoutOverlay = 0x00274200; // type:func
+func_00274400__22Resource_LayoutOverlay = 0x00274400; // type:func
 _$_20Resource_LayoutGroup = 0x00274680; // type:func
 //func_00275288 = 0x00275288; // type:func
 
@@ -1187,6 +1188,7 @@ __tf12CreateAction = 0x00288440;
 __16MenuRegisterable = 0x002887E8; // type:func
 
 // MultiStream SDK
+SOUND_InitIOP = 0x00288B30; // type:func
 SOUND_StartCommand = 0x00288D60; // type:func
 SOUND_EndCommand = 0x00288DC0; // type:func
 SOUND_AddData = 0x00288F50; // type:func
