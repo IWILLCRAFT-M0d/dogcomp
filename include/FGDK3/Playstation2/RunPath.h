@@ -10,6 +10,6 @@ void RunPath_InternalFinalise();
 Status RunPath_Initialise();
 void RunPath_Finalise();
 
-char* RunPath_Get();
+const char* RunPath_Get();
 
 #endif

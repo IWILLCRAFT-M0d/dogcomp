@@ -121,7 +121,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strncmp);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strncpy);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00337A40); /* strrchr */
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strrchr);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", strstr);
 

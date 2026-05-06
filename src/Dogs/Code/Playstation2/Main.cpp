@@ -7,6 +7,9 @@
 #include "FGDK3/Playstation2/GE.h"
 #include "FGDK3/Playstation2/RunPath.h"
 
+#include <stdio.h>
+#include <string.h>
+
 #ifdef NON_MATCHING
 int main(int argc, char* argv[]) {
 //     s32* sp0;
@@ -17,7 +20,7 @@ int main(int argc, char* argv[]) {
 //     ?* sp14;
 //     s32* sp20;
 //     ?* sp420;
-//     ?* temp_16;
+    char* temp_16;
 //     ?* temp_20;
 //     s32 (*temp_6)(void*, ?, ?);
 //     s32 temp_2_4;
@@ -25,7 +28,7 @@ int main(int argc, char* argv[]) {
 //     s32 temp_2_7;
 //     s32 temp_2_8;
     int var_16;
-//     s32 var_16_2;
+     char* var_16_2;
     int var_17;
 //     void* temp_2;
 //     void* temp_2_2;
@@ -47,16 +50,16 @@ int main(int argc, char* argv[]) {
             var_17 = 1;
             goto block_7;
         }
-//         func_001C5518(sp, argv[1]);
+        func_001C5518(argv[1]);
 //         sp14 = &_vt$6Status;
 //         sp10 = (s32* )0xFFFFFFFF;
-//         _6Status$m_file = "c:/coding/dogs/Code/Playstation2/Main.cpp";
-//         _6Status$m_line = 0x8D;
+        Status::m_file = "c:/coding/dogs/Code/Playstation2/Main.cpp";
+        Status::m_line = 141;
 //         _6Status$m_errorString = 0;
 //         if (~sp0 != 0) {
-//             PrepareReport_6StatusPci(sp, &sp20, 0x400, &_6Status$m_errorString);
-//             printf("Failed to process command line:%s\n", &sp20);
-//             return -1;
+//             PrepareReport_6StatusPci(sp, &sp20, 1024, &_6Status$m_errorString);
+            printf("Failed to process command line:%s\n"/*, &sp20*/);
+            return -1;
 //         }
         goto block_7;
     }
@@ -84,8 +87,8 @@ block_7:
 //         spC = sp1C;
 //     }
 //     temp_20_2 = func_002A4C58(D_0045216C, sp, 0, 0, var_17 == 0);
-//     func_002D6EA8(&sp20, RunPath_Get());
-//     func_002D70C0(&sp10, &sp20, "Dogs.dgf", strlen("Dogs.dgf"));
+     /*func_002D6EA8(&sp20, */RunPath_Get()/*)*/;
+/*     func_002D70C0(&sp10, &sp20, "Dogs.dgf", */strlen("Dogs.dgf")/*)*/;
 //     func_002D7050(&sp10, sp10->unk4 + 1);
 //     *(sp10->unkC + sp10->unk4) = 0;
 //     func_002BEA88(&D_00388918, sp10->unkC);
@@ -111,12 +114,12 @@ block_7:
 //     func_0031FCF0(0, 0);
 //     func_0031FC50();
 //     func_00343478();
-//     var_16_2 = func_00337A40(argv->unk0, 0x5C);
-//     if ((var_16_2 != 0) || (var_16_2 = func_00337A40(argv->unk0, 0x3A), (var_16_2 != 0))) {
-//         temp_16 = var_16_2 + 1;
+     var_16_2 = strrchr(argv[0], '\\');
+     if ((var_16_2 != 0) || (var_16_2 = strrchr(argv[0], ':'), (var_16_2 != 0))) {
+        temp_16 = var_16_2 + 1;
 //         sp420 = "spongebob";
-//         func_002D6EA8(&sp20, RunPath_Get());
-//         func_002D70C0(&sp10, &sp20, temp_16, strlen(temp_16));
+         /*func_002D6EA8(&sp20, */RunPath_Get()/*)*/;
+/*         func_002D70C0(&sp10, &sp20, temp_16, */strlen(temp_16)/*)*/;
 //         func_002D7050(&sp10, sp10->unk4 + 1);
 //         *(sp10->unkC + sp10->unk4) = 0;
 //         func_00349B60(sp10->unkC, 1, &sp420);
@@ -136,7 +139,7 @@ block_7:
 //                 __builtin_delete(sp20);
 //             }
 //         }
-//     }
+     }
     return 0;
 }
 

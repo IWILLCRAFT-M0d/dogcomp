@@ -2,15 +2,27 @@
 #include "unk.h"
 
 #include "FGDK3/IKComponents.h"
+#include "FGDK3/BoneManager.h"
 
 // split? (bonemanager?)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E7B08);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E7B80);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E7C98); /* BoneManager */
+BoneManager::BoneManager() {
+    this->unk0 = 0;
+    this->unk4 = 0x0;
+    this->unkC = 0;
+    this->unk10 = 0x0;
+    this->unk14 = 0;
+    this->unk18 = 0x0;
+    this->unk1C = 0x0;
+    this->unk24 = 0x0;
+    this->unk28 = 0x0;
+    InitIKStateArrays(4, 20);
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E7CF0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", _$_11BoneManager);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002E7E18);
 
@@ -52,7 +64,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EAD28);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EB0E0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EB418);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", InitIKStateArrays__11BoneManagerii);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/BoneManager", func_002EB508);
 

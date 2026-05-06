@@ -30,7 +30,7 @@ void func_002606D0() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002606D8);
+INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002606D8); // called by 0012E960
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260700);
 

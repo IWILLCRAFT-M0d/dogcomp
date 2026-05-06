@@ -48,7 +48,20 @@ class AnimationTimeBase : public GenericObject {
         virtual void func_002F4378();
 };
 
+// RCT3
+class AnimationByLevel {
+    public:
+        AnimationByLevel(int);
+        ~AnimationByLevel();
+};
 
+// RCT3
+class AnimationStore {
+    public:
+        int unk1C;
+        AnimationStore();
+        ~AnimationStore();
+};
 
 
 class AnimationWeightModifier {

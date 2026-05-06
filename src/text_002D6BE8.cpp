@@ -7,9 +7,14 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6BE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6C40);
-// this->unk0 = 1;
-// this->unk4 = strlen(str);
+// func_002D6C40
+template<> Contents<char>::Contents(const char* data) {
+    m_unk0 = 1;
+    m_len = strlen(data);
+    m_cap = ((m_len + 0x15) & ~0xF) - 4;
+    m_data = new char[m_cap];
+    strcpy(m_data, (char*)data);
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6CB8);
 
@@ -19,13 +24,10 @@ INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6DE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6E68);
 
-#ifdef NON_MATCHING
-string_ascii::string_ascii(const char* str) {
-    // this->unk0 = new func_002D6C40(str);
+// func_002D6EA8
+string_ascii::string_ascii(const char* d) {
+    m_cont = new Contents<char>(d);
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6EA8); // RCT3 string_ascii::string_ascii(char const*) ?
-#endif
 
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6EF0); // loading thing (contents?)

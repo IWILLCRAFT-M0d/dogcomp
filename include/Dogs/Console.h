@@ -97,6 +97,7 @@ class Console {
 		void ToggleDebugConsole(s_func_001A0628*);
 		void Break();
 		void Save(s_func_001A0628*);
+		void SlowMo(s_func_001A0628*/**/);
 		void Load(s_func_001A0628*);
 		void IsMediaReady(s_func_001A0628*);
 		void DirMemCard(s_func_001A0628*);

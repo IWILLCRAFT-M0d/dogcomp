@@ -5,7 +5,8 @@
 
 #include "FGDK3/ThrowCat.h"
 
-#include "unk.h"
+//#include "unk.h"
+#include "resource_unk.h"
 
 extern void * const TextRes_StdInit_UsedModules[];
 

@@ -2,12 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 #include "unk.h"
+#include "resinfo_unk.h"
+#include "resource_unk.h"
 #include "mem.h"
 #include <eekernel.h>
 
 #include "FGDK3/Playstation2/Thread.h"
 #include "FGDK3/Playstation2/RunPath.h"
 #include "FGDK3/Playstation2/File_CD.h"
+
+
 
 #ifdef NON_MATCHING
 
@@ -55,14 +59,14 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_Finalise__Fv);
 #endif
 
 #ifdef NON_MATCHING
-char * RunPath_Get() {
+const char * RunPath_Get() {
     return "cdrom0:\\";
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_Get__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273000); // file related function (, char*)
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273000); // file related function (, char*); RCT3 RunPath_GetFileName?
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273158);
 

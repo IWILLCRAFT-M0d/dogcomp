@@ -1,5 +1,6 @@
 #include "common.h"
 #include "unk.h"
+#include "script_unk.h"
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DogScript", D_003DB138); /* "C:/Coding/Dogs/Code/Common/SimObj.h" */
 

@@ -2,7 +2,7 @@
 #define LEVELRES_H
 
 #include "FGDK3/Playstation2/Thread.h"
-#include "unk.h"
+#include "resource_unk.h"
 
 extern void * const LevelRes_StdInit_UsedModules[];
 

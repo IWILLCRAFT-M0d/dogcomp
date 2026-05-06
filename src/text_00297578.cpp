@@ -1,5 +1,6 @@
 #include "common.h"
 #include "unk.h"
+#include "ge_unk.h"
 
 #include <eeregs.h>
 

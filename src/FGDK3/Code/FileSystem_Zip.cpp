@@ -318,7 +318,9 @@ FileSystemDisc_FileDescriptor::FileSystemDisc_FileDescriptor() : FileSystemDisc(
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", __29FileSystemDisc_FileDescriptor);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315B60); /* return 1; */
+int FileSystemDisc_FileDescriptor::func_00315B60() {
+    return 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315B90);
 

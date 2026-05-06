@@ -712,13 +712,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf12UInt32Editor);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf10BoolEditor);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268788);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf9IntEditor);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002687D8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf10UIntEditor);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268828);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268828); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268848);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf15IntEditorWidget);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00268898);
 

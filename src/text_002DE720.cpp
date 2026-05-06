@@ -48,7 +48,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DEEE8); // PlaneClipVolume
 
 INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF180); // PlaneClipVolume member
 
-INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF320); // SixPlaneClipVolume member
+INCLUDE_ASM("asm/nonmatchings/text_002DE720", func_002DF320); // SixPlaneClipVolume member; RCT3 DoesSphereIntersect?
 
 int func_002DF488() {
     return 0;

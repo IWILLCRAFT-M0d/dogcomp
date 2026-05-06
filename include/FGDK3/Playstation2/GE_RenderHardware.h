@@ -1,7 +1,7 @@
 #ifndef PS2GE_RENDERHARDWARE_H
 #define PS2GE_RENDERHARDWARE_H
 
-#include "unk.h"
+#include "ge_unk.h"
 
 class GE_PS2RenderHardware : public GE_RenderHardware {
     public:

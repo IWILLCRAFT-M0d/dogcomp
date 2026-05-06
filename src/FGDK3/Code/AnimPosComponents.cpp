@@ -6,7 +6,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EDBD0); /* 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EDCE8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EDD60); /* AnimPosBaseAnimation */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EDD60); /* AnimPosBaseAnimation(Animation*, Animate_3D const*, TimeProvidingTimeBase*, int?) */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", _$_20AnimPosBaseAnimation);
 
@@ -146,9 +146,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", _$_31AnimPosWorldAF
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", __tf31AnimPosWorldAFSLoopingAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF218);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF218); // AnimationPosition?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF258);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF258); // ~AnimationPosition?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF2B8);
 

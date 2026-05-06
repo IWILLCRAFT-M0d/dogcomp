@@ -11,7 +11,7 @@ class Slidable : public WorldObject {
         //
         int unk5D0;
         //
-        int unk5F0;
+        float unk5F0;
         short unk610;
         float unk614;
         float unk618;

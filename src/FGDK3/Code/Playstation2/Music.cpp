@@ -121,6 +121,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_0027FF00);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280088);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280370);
+
 #ifdef NON_MATCHING
 Music_Piece::Music_Piece() {
     this->unk0 = 0;
@@ -134,7 +135,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", __11Music_Piece);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", _$_11Music_Piece);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280628);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00280628); // return a0->unk50
 
 
 
@@ -291,7 +292,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282F08);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00282FC8); // "piece timed out\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283148); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00283210__14Music_PS2Piece);
 
@@ -306,6 +307,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284090); //
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002841D8); // Music_PS2Piece virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_00284880);
+// if (this->unk50 == 4) {
+//  this->unk50 = 5;
+//}
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Music", func_002848C8);
 

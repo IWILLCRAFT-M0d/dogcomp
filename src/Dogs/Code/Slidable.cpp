@@ -11,7 +11,7 @@ Slidable::Slidable(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4)
     }
 
     //
-    this->unk5F0 = 0;
+    this->unk5F0 = 0.0f;
     this->unk610 = 0xFFFF;
     this->unk618 = -1.0f;
     this->unk624 = -1;

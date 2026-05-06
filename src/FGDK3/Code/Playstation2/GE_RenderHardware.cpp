@@ -22,7 +22,7 @@ Status func_002A4BF8(void) {
    //Status(0x4002, "c:/coding/fgdk3/Code/playstation2/GE_RenderHardware.cpp", 207)
 }
 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4C58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4C58); // RCT3 CreateDevice ?
 /*
   if ((param_2 == 0) || (puVar1[2] != 0x32)) {
     func_002CA560(0,SCE_GS_INTERLACE,SCE_GS_NTSC,SCE_GS_FRAME);

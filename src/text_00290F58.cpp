@@ -4,7 +4,7 @@
 #include "Dogs/Game.h"
 
 #include <libscf.h>
-
+#include <setjmp.h>
 // MeshManage?
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58);
@@ -137,16 +137,20 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
 
-extern int D_00453538; // CloseRequest
+extern bool D_00453538; // CloseRequest
 #ifdef NON_MATCHING
 
 extern int D_00453530; // CurrentSuspendState
 extern int D_00453534; // RequestedSuspendState
 void Main_RunGame() {
+    char str[1024];
+    jmp_buf env;
     // if
-    Game_Initialise();
+    if (setjmp(env) == 0) {
 
-    while (D_00453538 == 0) {
+    Game_Initialise();
+    }
+    while (D_00453538 == false) {
         if (D_00453530 != D_00453534) {
             //
         }
@@ -155,7 +159,7 @@ void Main_RunGame() {
     Game_Finalise();
 
     // else
-
+    scePrintf("%s", str);
     D_00453538 = 1;
 }
 #else
@@ -166,7 +170,10 @@ void Main_Terminate() {
     D_00453538 = 1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002963E0); /* return tempR__Main_CloseRequest; */
+bool func_002963E0() {
+    return D_00453538;
+}
+
 
 void func_002963E8() {
     return;

@@ -1,9 +1,9 @@
 #include "common.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002421F8);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002421F8); // SDK sample audioDecCreate?
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002422F0);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002422F0); // SDK sample audioDecDelete?
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00242328);
 

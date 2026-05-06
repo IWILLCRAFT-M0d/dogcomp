@@ -1,6 +1,5 @@
 #include "common.h"
-#include "unk.h"
-
+#include "Dogs/Mien.h"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E5C98);
 

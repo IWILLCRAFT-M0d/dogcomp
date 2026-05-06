@@ -2,6 +2,8 @@
 #define GAME_H
 
 #include "unk.h"
+#include "shape_unk.h"
+#include "script_unk.h"
 
 #include "FGDK3/Playstation2/Thread.h"
 

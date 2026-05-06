@@ -77,13 +77,13 @@ void func_002F4608() { // AnimationComponent member?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4610); // RCT3 Animation::ComponentsByLevel::ComponentsByLevel ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4628); // Animation::Animation(AnimationStore*, GenericObject*, AnimationHeader*?)
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4628); // Animation::Animation(AnimationStore* YES, GenericObject*, AnimationHeader*?)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4900);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_9Animation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4C60); // Animation member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4C60); // Animation member; Animation::GetName?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F4D38);
 
@@ -133,17 +133,23 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5948); // Animation 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5A80); // "Animation::SetPosition index is beyond end of tabls (idx=%d, tbl=%d)"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5B88);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5B88); // RCT3 Animation::Resume?
 
-int Animation::func_002F5BF8() {
+int Animation::func_002F5BF8() { // RCT3 Animation::GetAnimName?
     return 0;
 }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5C00);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5C70);
+#ifdef NON_MATCHING
+AnimationByLevel::AnimationByLevel(int arg1) {
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5CA0);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __16AnimationByLeveli);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_16AnimationByLevel);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F5D18);
 
@@ -173,9 +179,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F64C8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6500);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6548);
+#ifdef NON_MATCHING
+AnimationStore::AnimationStore() {
+    this->unk1C = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __14AnimationStore);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6578);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_14AnimationStore);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6608);
 
@@ -263,7 +275,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E98); /* __tf23Anim
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf18AnimationComponent);
 
-void func_002F6F18() {
+void func_002F6F18() { // virtual; AnimationComponent::Initialise?
     return;
 }
 

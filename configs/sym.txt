@@ -409,6 +409,7 @@ func_0016AEB8__6Skidoo = 0x0016AEB8; // type:func
 __tf6Skidoo = 0x0016AE60;
 
 // SkiLiftSeat
+__11SkiLiftSeatP9ClassInfoP15SimObj_Universeis = 0x0016AEE0; // type:func
 _$_11SkiLiftSeat = 0x0016B040; // type:func
 __tf11SkiLiftSeat = 0x0016BCF8;
 
@@ -977,6 +978,9 @@ __tf12Uint16Editor = 0x00268648;
 __tf11Int32Editor = 0x00268698;
 __tf12UInt32Editor = 0x002686E8;
 __tf10BoolEditor = 0x00268738;
+__tf9IntEditor = 0x00268788;
+__tf10UIntEditor = 0x002687D8;
+__tf15IntEditorWidget = 0x00268848;
 __tf17Int32EditorWidget = 0x002688B8;
 __tf18UInt32EditorWidget = 0x00268928;
 __tf17Int16EditorWidget = 0x00268998;
@@ -1448,6 +1452,9 @@ FontRes_Initialise__Fv = 0x002D6A08; // type:func
 FontRes_Finalise__Fv = 0x002D6A38; // type:func
 __tf14Font_Resources = 0x002D6B38;
 __tft8Resource1Z11Font_Header = 0x002D6B98;
+__t8Contents1ZcPCc = 0x002D6C40; // type:func
+
+__12string_asciiPCc = 0x002D6EA8; // type:func
 _$_6Endian = 0x002D7950; // type:func
 func_002D7980__6Endian = 0x002D7980; // type:func
 _$_16Endian_ExpandMem = 0x002D8850; // type:func
@@ -1506,7 +1513,10 @@ __tf25MatrixPositionIKAnimation = 0x002E7A48;
 _$_17LookAtIKAnimation = 0x002E7A98; // type:func
 __tf17LookAtIKAnimation = 0x002E7AB8;
 
+__11BoneManager = 0x002E7C98; // type:func
+_$_11BoneManager = 0x002E7CF0; // type:func
 GetMatrixIDFromName__11BoneManagerPc = 0x002E9868; // type:func
+InitIKStateArrays__11BoneManagerii = 0x002EB418; // type:func
 _$_20AnimVarBaseAnimation = 0x002ED770; // type:func
 __tf20AnimVarBaseAnimation = 0x002ED790;
 _$_26AnimVarLoopedBaseAnimation = 0x002ED7E0; // type:func
@@ -1617,6 +1627,11 @@ __23AnimationTimeBaseFinderP9ClassInfo = 0x002F4380; // type:func
 _$_18AnimationComponent = 0x002F44C0; // type:func
 _$_9Animation = 0x002F4A40; // type:func
 func_002F5BF8__9Animation = 0x002F5BF8; // type:func
+
+__16AnimationByLeveli = 0x002F5C70; // type:func
+_$_16AnimationByLevel = 0x002F5CA0; // type:func
+__14AnimationStore = 0x002F6548; // type:func
+_$_14AnimationStore = 0x002F6578; // type:func
 __23AnimationWeightModifierP9Animation = 0x002F6B60; // type:func
 _$_23AnimationWeightModifier = 0x002F6BB8; // type:func
 __tf17AnimationTimeBase = 0x002F6E08;
@@ -1821,6 +1836,7 @@ __tf19File_FileDescriptor = 0x00315458;
 _$_29FileFindAccess_FileDescriptor = 0x003154D8; // type:func
 __tf29FileFindAccess_FileDescriptor = 0x00315540;
 __29FileSystemDisc_FileDescriptor = 0x00315AE0; // type:func
+func_00315B60__29FileSystemDisc_FileDescriptor = 0x00315B60; // type:func
 func_00315CC0__29FileFindAccess_FileDescriptor = 0x00315CC0; // type:func
 func_00315D58__29FileFindAccess_FileDescriptor = 0x00315D58; // type:func
 // inflate.c
@@ -1990,6 +2006,7 @@ strcpy = 0x0033739C; // type:func
 strlen = 0x003374B0; // type:func
 strncmp = 0x003376C8; // type:func
 strncpy = 0x00337880; // type:func
+strrchr = 0x00337A40; // type:func
 strstr = 0x00337A90; // type:func
 __sprint = 0x00339CF0; // type:func
 vfprintf = 0x00339DF0; // type:func

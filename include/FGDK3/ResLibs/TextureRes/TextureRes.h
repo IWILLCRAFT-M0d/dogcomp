@@ -3,7 +3,7 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
-#include "unk.h"
+#include "resource_unk.h"
 
 extern void * const TextureRes_StdInit_UsedModules[];
 

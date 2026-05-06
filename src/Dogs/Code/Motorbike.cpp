@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", __9MotorbikeP9ClassInfoP15Si
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", _$_9Motorbike);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143220);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143220); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Motorbike", func_00143258); // "Unknown extra for Motorbike"
 

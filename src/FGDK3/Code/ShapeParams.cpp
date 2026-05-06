@@ -1,5 +1,6 @@
 #include "common.h"
 #include "unk.h"
+#include "shape_unk.h"
 
 #include "FGDK3/ShapeParams.h"
 

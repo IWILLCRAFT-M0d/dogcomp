@@ -9,7 +9,7 @@ extern "C" {
 #endif
 
 void func_002D5958(const char*, va_list);
-void InterfaceError(char* name, int line);
+void InterfaceError(char* file, int line);
 void DDE_FatalError(const char* message, ...);
 
 #ifdef __cplusplus

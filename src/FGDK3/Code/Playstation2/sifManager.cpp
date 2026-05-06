@@ -40,8 +40,6 @@ Status sifManager_InternalInitialise() {
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/sifManager", sifManager_InternalInitialise__Fv);
 #endif
 
-
-
 void sifManager_InternalFinalise() {
     return;
 }

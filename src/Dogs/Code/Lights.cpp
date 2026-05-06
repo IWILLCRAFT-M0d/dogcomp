@@ -94,7 +94,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141CC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141D60);
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00141D78);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", __tf5Light);
 
@@ -118,11 +120,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142148);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142158);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142160);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142160); // return a0->unk1A0
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142168);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142168); // return a0->unk1A4
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142170);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142170); // a0->unk1A4 = a1
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Lights", func_00142178);
 

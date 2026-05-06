@@ -726,7 +726,20 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5438); /* "Completed 
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Console", D_003D5450); /* "Unknown error occurred" */
 
+#ifdef NON_MATCHING
+void Console::SlowMo(s_func_001A0628* console/**/) {
+    char* consoleMessage;
+    char str[64];
+
+    //
+    consoleMessage = "Game (dubiously) accelerated to %.2f";
+    //
+    sprintf(str, consoleMessage/**/);
+    func_001A0B08(console, 2, consoleMessage);
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5980); /* Console::SlowMo */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_001A5AB0); /* Console::Speed */
 

@@ -11,7 +11,10 @@
 #include <libdev.h>
 #include <libgraph.h>
 
+
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
+#include "ge_unk.h"
+
 
 // D_004528C0
 // short D_004528C4 (interlacing mode)
@@ -32,8 +35,8 @@ Status GE_InternalInitialise() {
   sceDevVu1Reset();
   sceGsResetPath();
   sceDmaReset(1);
-  GE_DMAPktRc1i69* pvVar1 = new GE_DMAPktRc1i69();
-  GE_PS2RenderHardware* D_0045286C  = new GE_PS2RenderHardware();
+  new GE_DMAPktRc1i69();
+  GE_PS2RenderHardware* D_0045286C  = new GE_PS2RenderHardware(); // s_self?
 
   return Status(0xFFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/GE.cpp", 260);
 }
@@ -140,7 +143,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE070);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE0F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118__9GE_Device);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118__9GE_Device); // RCT3 RenderTextMesh ?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0); // GE_Device member
 

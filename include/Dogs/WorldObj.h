@@ -4,6 +4,8 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "SimObj.h"
+#include "shape_unk.h"
+#include "ge_unk.h"
 
 typedef struct {
     int unk0;
@@ -20,7 +22,7 @@ Status WorldObj_Initialise();
 void WorldObj_Finalise();
 
 
-class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance/*, public ScriptMessageAndRequestReceiver, public AnimPosProvider_IF, public AnimVarProvider_IF, BoneManagerProvider_IF, public WalkerProvider_IF, public WalkingFootRayHit_IF, public AnimationResourceProvider_IF*/ {
+class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, public ScriptMessageAndRequestReceiver/*, public AnimPosProvider_IF, public AnimVarProvider_IF, BoneManagerProvider_IF, public WalkerProvider_IF, public WalkingFootRayHit_IF, public AnimationResourceProvider_IF*/ {
     public:
         int unk2E0;
         //unk314

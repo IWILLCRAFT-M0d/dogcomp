@@ -1,6 +1,7 @@
 #include "common.h"
 #include <stdio.h>
 #include "unk.h"
+#include "bookmetaphor_unk.h"
 #include "Dogs/Game.h"
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D2B58);

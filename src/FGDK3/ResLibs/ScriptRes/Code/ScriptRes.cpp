@@ -3,6 +3,7 @@
 #include "FGDK3/ThrowCat.h"
 
 #include "unk.h"
+#include "script_unk.h"
 
 #ifdef NON_MATCHING
 Status ScriptRes_InternalInitialise() {

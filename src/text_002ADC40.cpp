@@ -148,7 +148,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1DB8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1E78);
 
+#ifdef NON_MATCHING
+void func_002B1F40(int arg0) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002B1F40);
+#endif
 
 #ifdef NON_MATCHING
 GE_TextureStylePkt::GE_TextureStylePkt() {
@@ -639,17 +645,28 @@ INCLUDE_RODATA("asm/nonmatchings/text_002ADC40", D_00441024);
 
 INCLUDE_RODATA("asm/nonmatchings/text_002ADC40", jtbl_00441030);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BECB0); // "No texture stage name found"
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BECB0);
+// string_ascii("No texture stage name found")
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BEE08);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BEE70); // "No shader name found"
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BEE70);
+// string_ascii("No shader name found")
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BEFC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BF030); // "No texture style name found"
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BF030);
+// string_ascii("No texture style name found")
 
+#ifdef NON_MATCHING
+void* func_002BF198(void* arg0, string_ascii arg1) {
+    if (arg1.m_cont == 0) {
+        string_ascii("Default");
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BF198);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002BF290);
 
@@ -1045,9 +1062,9 @@ int func_002C6498(void) {
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C64A0); // ui element stuff, shadows?
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C64A0); // ui element stuff, shadows?; RCT3 GetRenderState?
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C66A8); // texture thing; ge_device/GE_PS2Device virtual
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C66A8); // texture thing; ge_device/GE_PS2Device virtual; RCT3 SetRenderState?
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6AC8);
 
@@ -1072,6 +1089,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6DE0);
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6E68); //GE_PS2Device/GE_Device virtual; texture thing
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6EF0); // GE_PS2Device/GE_Device virtual; texture thing
+// (short textureID)
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C6F88); // texture thing
 
@@ -1148,7 +1166,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8368);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8838);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8EB0);
+INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8EB0); // jalr called from main
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C8F20);
 

@@ -381,7 +381,7 @@ ClassInfo* Dog::func_0013A200() {
     return s_classInfo;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A208);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_0013A208); // virtual
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Dog", D_003A8058); /* "7Jump_IF" */
 

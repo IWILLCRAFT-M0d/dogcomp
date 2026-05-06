@@ -1,5 +1,6 @@
 #include "common.h"
-#include "unk.h"
+//#include "unk.h"
+#include "resource_unk.h"
 
 #include "FGDK3/TextRes.h"
 #include "FGDK3/ResLibs/TextureRes/TextureRes.h"

@@ -2,7 +2,17 @@
 
 #include "Dogs/SkiLiftSeat.h"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", func_0016AEE0); /* SkiLiftSeat::SkiLiftSeat */
+#ifdef NON_MATCHING
+SkiLiftSeat::SkiLiftSeat(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
+    this->unk5C4 = 10;
+
+    this->unk5F0 = 2700.0f;
+    this->unk5F4 = 1000.0f;
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", __11SkiLiftSeatP9ClassInfoP15SimObj_Universeis); /* SkiLiftSeat::SkiLiftSeat */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SkiLiftSeat", _$_11SkiLiftSeat);
 
