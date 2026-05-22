@@ -41,7 +41,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0C70);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1000);
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B11E0);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B11E0); // clouds?
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B12F8);
 

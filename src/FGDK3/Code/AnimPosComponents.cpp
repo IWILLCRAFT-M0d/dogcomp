@@ -22,7 +22,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EE128);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EE198); /* AnimPosAFSBaseAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EE1D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EE1D0); // AnimPosAFSBaseAnimation member; // Advance?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EE240); /* AnimPosLocalLoopedBaseAnimation */
 

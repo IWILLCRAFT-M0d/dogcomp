@@ -116,7 +116,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182A70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AD0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti); // Shape to id called
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
 

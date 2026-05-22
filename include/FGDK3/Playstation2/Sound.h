@@ -24,10 +24,11 @@ class SoundImplementation {
         int unk18;
         int unk24;
         int unk28;
-        SoundImplementation(void*);
+        SoundImplementation(void*); // SoundImplementation(const Sound_Effect*?)
         virtual ~SoundImplementation();
         virtual void func_0026F8B8();
         virtual void func_0026E498();
+        // virtual ? func_0026E500 // SoundImplementation::Advance?
 };
 
 class Sound /* : public SoundImplementation */ {

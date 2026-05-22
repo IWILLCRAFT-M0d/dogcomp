@@ -11,7 +11,13 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304B48); /* File_MemRead */
 
+#ifdef NON_MATCHING
+File_MemRead::~File_MemRead() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", _$_12File_MemRead);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304C18__12File_MemRead);
 /*
@@ -87,7 +93,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306FF8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00307030);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00307258);
+#ifdef NON_MATCHING
+int File::Okay() {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00307258); // RCT3 File::Okay() ?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00307430);
 

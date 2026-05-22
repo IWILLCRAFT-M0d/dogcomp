@@ -24,7 +24,10 @@ s_func_002FC270* func_002FC270(s_func_002FC270* arg0) {
     return arg0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC288); // "%d:%d Initialising\n"
+// https://decomp.me/scratch/ROeYK
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC288); // controller function
+// "%d:%d Initialising\n"
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC798);
 

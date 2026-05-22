@@ -17,8 +17,12 @@ class GameShell {
         // 0x24 float m_frameTime
         GameShell(float deltaTime, float gameSpeed);
         virtual ~GameShell();
+        // virtual ? vtbl[2] = 0;
+        // virtual ? vtbl[3] = 0;
         void Step();
         virtual void func_002D30A8(bool);
+        // virtual ? vtbl[5] = 0;
+        // virtual ? vtbl[6] = 0;
 
 };
 

@@ -17,7 +17,7 @@ s_func_001EC630* func_001EC630(s_func_001EC630* arg0) {
     if (((D_004533D4 == 0) || (D_0044EF84 == 0)) && (D_00452944 == 0)) {
         if (D_0044EF88 == 0) {
             if (func_002D5B40("Objtable should always have two elements") != 0) {
-                asm("break 0x1");
+                PS2_BREAK();
             }
             D_0044EF88 = D_0045298C;
         }

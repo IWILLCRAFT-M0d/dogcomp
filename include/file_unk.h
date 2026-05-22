@@ -7,13 +7,19 @@
 class FileSystem {
     public:
         FileSystem(string_ascii);
+        // virtual ? = 0;
 };
 
 class FileSystemDisc {
     public:
         FileSystemDisc();
         FileSystemDisc(void*, string_ascii);
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
         virtual ~FileSystemDisc();
+        // virtual ? = 0;
 };
 
 class FileSystemDisc_FileDescriptor  : public FileSystemDisc {
@@ -28,7 +34,20 @@ class FileSystemDisc_FileDescriptor  : public FileSystemDisc {
 class StorageDevice {
     public:
         StorageDevice(string_ascii);
-        virtual ~StorageDevice();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? 002ff0f8 // RCT3 IsValidDevice?
+        // virtual ? 002ff128 // RCT3 IsCorrupt?
+        // virtual ? 002ff158 // RCT3 IsDamaged?
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        ~StorageDevice();
 };
 
 class StorageDevice_MemCardUpdater;
@@ -49,6 +68,8 @@ class StorageDevice_MemCard : public StorageDevice {
 class StorageDevice_MemCardUpdater : public Thread {
     public:
         StorageDevice_MemCardUpdater(StorageDevice_MemCard*);
+        virtual ~StorageDevice_MemCardUpdater();
+        // virtual ? 00301290
 };
 
 
@@ -68,7 +89,7 @@ class FileSystemDisc_CD : public FileSystemDisc {
         virtual ~FileSystemDisc_CD();
 };
 
-// static FileSystemRoot* D_00452EAC?
+// static FileSystemRoot* D_00452EAC? // RCT3 m_rootDisc?
 class FileSystemDiscRoot : public FileSystemDisc {
     public:
         FileSystemDiscRoot();
@@ -83,11 +104,20 @@ class FileSystemDiscRoot : public FileSystemDisc {
 class File {
     public:
         File(const char*, int, int);
+
+        int Okay();
     class Access {
         public:
             int unk0;
             Access();
             virtual ~Access();
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? 00302120
     };
     class CallBack {
 
@@ -98,11 +128,28 @@ class File {
 
 };
 
+class File_MemRead : public File::Access {
+    public:
+        //File_MemRead
+        virtual ~File_MemRead();
+        // virtual ? 00308a90
+        // virtual ? 00304c18
+        // virtual ? 00304c58
+        // virtual ? 00304d08
+        // virtual ? 00304d78
+        // virtual ? 00304db0
+        // base?
+};
+
 namespace FileFind {
     class Access {
         public:
             Access();
             virtual ~Access();
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
     };
 };
 
@@ -115,6 +162,13 @@ class NullAccess : public File::Access {
     public:
         NullAccess();
         virtual ~NullAccess();
+        // virtual ? 00309378
+        // virtual ? 003093a0
+        // virtual ? 003093d0
+        // virtual ? 00309448
+        // virtual ? 003094c0
+        // virtual ? 003094e8
+        // virtual ? 00309518
 
 };
 
@@ -122,6 +176,10 @@ class FileFindAccess_Nul : public FileFind::Access {
     public:
         FileFindAccess_Nul();
         virtual ~FileFindAccess_Nul();
+        // virtual ? 003095c8
+        // virtual ? 003095f8
+        // virtual ? 00309620 // RCT3 FileFindAccess_Null::Name?
+        // virtual ? 00309680
 };
 
 class File_FileDescriptor : public File::Access {

@@ -7,12 +7,12 @@
 class Bird : public WorldObject {
     public:
         static ClassInfo* s_classInfo;
-        int unk648;
+        int unk648; // height thing?
         int unk64C;
         int unk650;
-        int unk654;
+        bool unk654; // collide with walls?
         //
-        int unk670;
+        float unk670;
         int unk674;
         Bird(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Bird();

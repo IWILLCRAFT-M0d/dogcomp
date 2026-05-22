@@ -15,6 +15,7 @@
 
 #include <libcdvd.h>
 
+
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1F70);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B1FA8); // settings constructor
@@ -333,7 +334,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C79D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7A28);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7A80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7A80); // get GameCreatures?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C7AD8);
 
@@ -406,9 +407,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CA9A0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAA00);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAC10); // ? func_001CAC10(Game_Document*,)
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAC10); // ? func_001CAC10(Game_Document*,) // RCT3 Game_Document::BegineScene()?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CADD8); // ? func_001CADD8(Game_Document*,)
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CADD8); // ? func_001CADD8(Game_Document*) // RCT3 Game_Document::EndScene()?
+// call GE_PS2Device::EndScene method
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CAE08);
 
@@ -432,7 +434,7 @@ void func_001CCE58(Game_Document* gamedoc) {
 //
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCE58); // drawing function?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CCE58); // drawing function? // Related to RCT3 SF_Render()? (SystemFont Render)
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001CEA98); /* (Game_Document *)  rendering stuff; if stubbed level does not render */
@@ -525,7 +527,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2900);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2940);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2980__13Game_Documentf);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2980__13Game_Documentf); // RCT3 Game_Document::Advance?
+
+// if (sceCdStatus() == SCECdStatShellOpen) {
+//}
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2F28);
 
@@ -554,7 +559,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498); // remove (maroon
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4578); // Game_Document virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D45B8); // Game_Document member
+#ifdef NON_MATCHING
+void Game_Document::func_001D45B8() {
+	new SavedGame("ResPatch.tmp", 1, 0);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D45B8__13Game_Document); // Game_Document member
+#endif
 // new SavedGame("ResPatch.tmp", 1, 0);
 
 void func_001D4650(void) {

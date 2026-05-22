@@ -56,7 +56,7 @@ class Dog : public WorldObject/*, public Jump_IF, public AnimationMovedObject_IF
 
 };
 // union {int i;float f;}
-class DogHitPrimReceiver : public SimObj_HitReceiver {
+class DogHitPrimReceiver : public SimObj_HitReceiver, public SimObj_HitPrimReceiver {
     public:
         DogHitPrimReceiver(Dog*);
         virtual ~DogHitPrimReceiver();

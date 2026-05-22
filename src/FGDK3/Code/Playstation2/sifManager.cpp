@@ -3,15 +3,28 @@
 #include "FGDK3/Playstation2/sifManager.h"
 #include <libcdvd.h>
 #include <sifdev.h>
+#include <sifrpc.h>
 #include <stdio.h>
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/sifManager", func_0026FBA0);
-//sceGsResetPath();
-//sceSifInitRpc(0);
-//sceCdInit(SCECdINIT);
-//sceCdMmode(SCECdDVD);
+#ifdef NON_MATCHING
+void func_0026FBA0() {
+    //sceGsResetPath();
+    sceSifInitRpc(0);
+    sceCdInit(SCECdINIT);
+    sceCdMmode(SCECdDVD);
 
-//sceGsResetPath();
+    //sceGsResetPath();
+
+    printf("Can\'t find \'IOPRP255.IMG\'\n");
+
+    sceSifInitRpc(0);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/sifManager", func_0026FBA0);
+#endif
+
+
+
 
 
 #ifdef NON_MATCHING

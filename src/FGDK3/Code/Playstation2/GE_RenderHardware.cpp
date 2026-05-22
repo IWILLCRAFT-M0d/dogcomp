@@ -22,7 +22,9 @@ Status func_002A4BF8(void) {
    //Status(0x4002, "c:/coding/fgdk3/Code/playstation2/GE_RenderHardware.cpp", 207)
 }
 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4C58); // RCT3 CreateDevice ?
+#ifdef NON_MATCHING
+void func_002A4C58(/**/) {
+
 /*
   if ((param_2 == 0) || (puVar1[2] != 0x32)) {
     func_002CA560(0,SCE_GS_INTERLACE,SCE_GS_NTSC,SCE_GS_FRAME);
@@ -32,9 +34,14 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_0
     func_002CA560(0,SCE_GS_INTERLACE,SCE_GS_PAL,SCE_GS_FRAME);
     D_00386860 = 50; // set framerate
   }
-
-  new GE_PS2Device();
 */
+  new GE_PS2Device();
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4C58); // RCT3 CreateDevice ?
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A4D38); // GE_PS2RenderHardware member
 
@@ -68,16 +75,17 @@ int GE_PS2RenderHardware::func_002A5298() {
   return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52A0); // GE_PS2RenderHardware member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52A0); // GE_PS2RenderHardware member // GetCurrentScreenMode?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A52D0); // set screen parameters?
 
-int GE_PS2RenderHardware::func_002A5300() {
+int GE_PS2RenderHardware::func_002A5300() { // WGRABBIT GE_PS2RenderHardware::GetNumScreenModes(int) const ?
   return 6;
 }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5308); /* return D_0045216C */
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5310);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE_RenderHardware", func_002A5330);
+#endif

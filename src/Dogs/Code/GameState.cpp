@@ -41,7 +41,7 @@ LoadSavedGameReq::LoadSavedGameReq(int arg1) : GameState::GameStateReq::GameStat
 	this->unk0 = arg1;
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __16LoadSavedGameReqi);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __16LoadSavedGameReqi); // LoadSavedGameReq(SavedGame*?)
 #endif
 
 #ifdef NON_MATCHING

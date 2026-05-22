@@ -17,6 +17,11 @@ typedef struct {
 
 class Controller_Device /*: public InputDevice_Device*/ {
 	public:
+		// base
+		// base
+		// virtual ? 002fcee0
+		// virtual ? 002fc160
+		// virtual ? 002fc1a8
 
 };
 

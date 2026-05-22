@@ -71,7 +71,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", _$_18AnimationComponent);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F44F0);
 
-void func_002F4608() { // AnimationComponent member?
+void AnimationComponent::func_002F4608() {
     return;
 }
 
@@ -275,31 +275,31 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6E98); /* __tf23Anim
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf18AnimationComponent);
 
-void func_002F6F18() { // virtual; AnimationComponent::Initialise?
+void AnimationComponent::func_002F6F18() { // AnimationComponent::Initialise?
     return;
 }
 
-void func_002F6F20() { // virtual
+void AnimationComponent::func_002F6F20() {
     return;
 }
 
-void func_002F6F28() {
+void AnimationComponent::func_002F6F28() {
     return;
 }
 
-void func_002F6F30() {
+void AnimationComponent::func_002F6F30() {
     return;
 }
 
-void func_002F6F38() {
+void AnimationComponent::func_002F6F38() {
     return;
 }
 
-void func_002F6F40() {
+void AnimationComponent::func_002F6F40() {
     return;
 }
 
-void func_002F6F48() {
+void AnimationComponent::func_002F6F48() {
     return;
 }
 
@@ -311,7 +311,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6F60);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", __tf23AnimationWeightModifier);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FA8); /* a0-unk10 = 1 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FA8); /* a0->unk10 = 1 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F6FB8); /* return (float) a0->unk18 */
 
@@ -391,7 +391,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F71F8); /* (float) a0
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Animate", func_002F7200); /* a0->unk100 = a1 */
 
-void Animation::func_002F7208() {
+void Animation::func_002F7208() { // WGRABBIT Animation::InformOverlayRemoval()?
     return;
 }
 

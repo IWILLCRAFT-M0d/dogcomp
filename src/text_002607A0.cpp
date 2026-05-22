@@ -317,19 +317,19 @@ INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437F20);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf16FocusStackAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263260); /* __13VD_FocusStack */
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263260); // WGRABBIT FocusStackAction::Execute(Widget*, bool)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263330);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf15HierarchyAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002633A0); /* __17VD_HierarchyStack */
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002633A0); // WGRABBIT HierarchyAction::Execute(Widget*, bool)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263470);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf10HelpAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002634E0); /* __13VD_HelpWindow */
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002634E0); // WGRABBIT HelpAction::Execute(Widget*, bool)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002635D0);
 
@@ -351,7 +351,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_13VD_FocusStack);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf13VD_FocusStack);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002636B8); // VD_FocusStack member
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002636B8); // WGRABBIT VD_FocusStack::Advance(float)
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263748);
 

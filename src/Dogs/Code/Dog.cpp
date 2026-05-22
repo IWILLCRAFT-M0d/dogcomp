@@ -119,7 +119,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001324B0__3Dogf); // animatio
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134550); // handles movement/world positon
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134650); // Dog member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134650); // Dog member; physics?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00134670);
 

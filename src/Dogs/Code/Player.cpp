@@ -142,7 +142,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F46E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4708);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4728); // "host0:Grabs\\screen%05d.bmp"
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4728); // related to RCT3 RCTDesktop::TakeSnapShot?
+// char str[256];
+
+//sprintf(str, "host0:Grabs\\screen%05d.bmp"
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4888);
 

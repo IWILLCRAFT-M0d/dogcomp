@@ -29,7 +29,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA588);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA8F8); // ground collision?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DAC68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DAC68); // collision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB190);
 

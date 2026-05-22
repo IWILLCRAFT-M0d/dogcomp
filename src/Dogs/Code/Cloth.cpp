@@ -80,7 +80,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001279A8); // max<int> ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_001279B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00127B48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00127B48); // WGRABBIT Vector4::SetW ?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Cloth", func_00127B70);
 

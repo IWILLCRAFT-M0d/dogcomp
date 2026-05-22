@@ -214,7 +214,7 @@ void DebugEnvironment::VFatalError(const char* fmt, char* arg2) {
     strcat(str,"\n\nThis error has also been sent to Debug.log");
     strcat(str,"\n\nOK: <Attempt to continue>      Cancel: <Exit>");
     if (func_002963F0(str, 0) == 0) {
-        asm("break 0x1");
+        PS2_BREAK();
     }
 
 }
@@ -335,23 +335,24 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D61A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf19ClearMessagesAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6218);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6218); // WGRABBIT ClearMessagesAction::Execute(Widget*, bool)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6248);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf18TestMessagesAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62B8); // "Welcome to the debug environment"
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62B8); // WGRABBIT TestMessagesAction::Execute(Widget*, bool)?
+// "Welcome to the debug environment"
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D62E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf20SetDebugOutputAction);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6358);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6358); // WGRABBIT SetDebugOutputAction::Execute(Widget*, bool)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14StreamRenderer);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0); // StreamRenderer virtual
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0); // WGRABBIT StreamRender::Render(char*, int)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6480);
 

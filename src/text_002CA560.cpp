@@ -59,7 +59,7 @@ int func_002CA958() {
     return 1;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA960);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA960); // RCT3 GE_GetDevice?
 
 
 #ifdef NON_MATCHING
@@ -96,7 +96,14 @@ GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, 
     this->m_unk14 = 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0__12GE_PrimCache);
+//INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0__12GE_PrimCache);
+void GE_PrimCache::func_002CABF0() { // WGRABBIT ReleaseSelf?
+    this->m_unk1 -= 1;
+
+    if (this->m_unk1 == 0) {
+        delete this;
+   }
+}
 
 #ifdef NON_MATCHING
 GE_Device::GE_Device() {
@@ -145,9 +152,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE0F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE118__9GE_Device); // RCT3 RenderTextMesh ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0); // GE_Device member
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE2B0); // GE_Device member; render text?
 
+#ifdef NON_MATCHING
+void GE_Device::func_002CE870() {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE870__9GE_Device); // text render?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE8F0); // "You've got a NULL text glyph."
 
@@ -273,7 +286,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D18); /* return D_004528A0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20); // GE_Device member
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20); // WGRABBIT //GetCapsFloat__C9GE_Device7GE_Caps ?
+
 
 int GE_Device::func_002D1D58() {
     return 0;
@@ -355,13 +369,16 @@ void GE_Device::func_002D2328() {
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2330); /* return -0x1 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2338); /* return -0x1; */
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2338);
+/* return -0x1; */
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2340); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2340); // WGRABBIT GE_Device::SetVisSampleEnable(int, bool)?
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2348); // virtual
+int GE_Device::func_002D2348() { // WGRABBIT GE_Device::GetVisSampleEnable(int?)
+    return -1;
+}
 
-float func_002D2350() { // virtual
+float GE_Device::func_002D2350() { // WGRABBIT GE_Device::GetVisibility(int?)
     return -1.0f;
 }
 

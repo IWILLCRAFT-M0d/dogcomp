@@ -272,7 +272,7 @@ int func_002351C0() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Travel", __tf25NavToDestinationAnimation);
 
-int func_00235228() {
+int NavToDestinationAnimation::func_00235228() {
     return 1;
 }
 

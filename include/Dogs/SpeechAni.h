@@ -24,6 +24,9 @@ class SpeechAniSound : public AnimationComponent {
         virtual void func_0022B030();
         virtual void func_0022B038();
 
+
+        // virtual ? func_0022B5E8
+        // virtual ? func_0022B5B0
         virtual int func_0022B5E0();
 
 };
@@ -32,6 +35,11 @@ class SpeechAniSoundWithControl : public AnimationComponent/*, public ComponentD
     public:
         virtual ~SpeechAniSoundWithControl();
         virtual void func_0022B820();
+        // virtual ? func_0022B9F8
+        //base
+
+
+
 
         // virtual ? func_0022BA20
         virtual int func_0022BA18();

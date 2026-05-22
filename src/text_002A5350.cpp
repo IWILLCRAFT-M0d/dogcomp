@@ -8,9 +8,9 @@
 
 #include "FGDK3/Playstation2/GE_RenderHardware.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5350);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5350); // Create GE_PS2PrimVertices?
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A53B8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A53B8); // Create GE_PS2PrimVertices?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5430); /* GE_LoadedPS2PrimVertices ? */
 
@@ -226,11 +226,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_23GE_LoadedPS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf23GE_LoadedPS2PrimIndices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6940);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6940); // create GE_PS2PrimCache
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A69F8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A69F8);  // create GE_PS2PrimCache // MeshData stored?
 
+#ifdef NON_MATCHING
+GE_PS2PrimCache::GE_PS2PrimCache(/**/) /* : GE_PrimCache */ {
+    this->unk28 = 0x0;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6AB8); /* GE_PS2PrimCache::GE_PS2PrimCache */
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_15GE_PS2PrimCache);
 
@@ -288,7 +294,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AB778);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABAE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABF00); // GE_PS2PrimCache member
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ABF00); // GE_PS2PrimCache member; texture/transparency thing?
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC030);
 

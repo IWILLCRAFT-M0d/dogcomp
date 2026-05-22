@@ -1,6 +1,8 @@
 #ifndef TRAVEL_H
 #define TRAVEL_H
 
+#include "FGDK3/Animate.h"
+
 class TravelToExternalPosAnimation /* : public AnimationComponent */ {
     public:
         virtual ~TravelToExternalPosAnimation();
@@ -14,6 +16,14 @@ class NavToPosAnimation /* : public */ {
         /*virtual*/ int func_002353C8();
 };
 
+class NavToDestinationAnimation {
+    public:
+        virtual ~NavToDestinationAnimation();
+
+        virtual int func_00235228();
+
+};
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -25,7 +35,7 @@ int func_00235028(void);
 int func_002350C0(void);
 int func_00235158(void);
 int func_002351C0(void);
-int func_00235228(void);
+
 int func_00235290(void);
 int func_002352F8(void);
 int func_00235360(void);

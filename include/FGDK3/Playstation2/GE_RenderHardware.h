@@ -7,9 +7,14 @@ class GE_PS2RenderHardware : public GE_RenderHardware {
     public:
         GE_PS2RenderHardware();
         virtual ~GE_PS2RenderHardware();
+        // virtual ? func_002A4D38
+        // virtual ? func_002A52A0
         virtual int func_002A5300();
+        // virtual ? func_002A4D98
+        // virtual ? func_002A4BF8
         virtual int func_002A5298();
 };
 
+void func_002A4C58(/**/);
 
 #endif

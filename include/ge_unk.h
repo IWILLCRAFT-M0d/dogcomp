@@ -10,6 +10,11 @@ class GE_RenderHardware {
         int m_unk4;
         GE_RenderHardware();
         virtual ~GE_RenderHardware();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+
 
 };
 
@@ -33,30 +38,115 @@ class GE_Device : public GE_TransformState {
         float unk80;
         float unk90;
         GE_Device();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? 002CE118
+        // virtual ? 002CE2B0
+        virtual void func_002CE870();
         virtual ~GE_Device();
-        int func_002D1D58();
-        //
-        void func_002D1D60();
-        void func_002D1D68();
-        //
+        // virtual ? = 0;
+        // virtual ? 002D1D20
+        virtual int func_002D1D58();
+        virtual void func_002D1D60();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        virtual void func_002D1D68();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? func_002CEC18
+        // virtual ? func_002D0218
         virtual void func_002D2250();
         virtual void func_002D2258();
         //
-        void func_002D2328();
+        virtual void func_002D2328();
+
+        virtual int func_002D2348();
+        virtual float func_002D2350();
 };
 
 // 0x00452660 is s_theDevice? (this)
 class GE_PS2Device : public GE_Device {
     public:
+        bool unk458;
         //GE_PS2DisplayTarget* unk75C;
         GE_PS2Device();
+        virtual void* func_002C7520(int); // override
+        // virtual ? 002C75A0
+        //
+        //
+        //
         virtual ~GE_PS2Device();
+        // virtual ? 002c8ff8
+        //
+        //
+        //~~~~~
+        virtual void func_002C3D88(); // pure override; BeginScene?
+        // virtual ? 002C3F08 // pure override; Clear?
+        // virtual ? 002C4C80
+        // virtual ? func_002C9070(); // pure override
+        virtual void func_002C5478(); // pure override; EndScene?
+        virtual void func_002C9048();
+        // func_002cec18 // GE_Device
+        // virtual ? func_002C7A50
+        // virtual ? func_002C82A8 // Suspend?
+        // virtual ? func_002C8318
+        virtual int func_002C9FC0();
+        // virtual ? func_002C5910
+        // virtual ? func_002C5B28
+        // virtual ? func_002C5DA8
+        // virtual ? func_002C5E90
+        virtual void func_002C6488();
+        virtual void func_002C6490();
+        virtual int func_002C6498();
+        // virtual ? func_002C9210
+        // virtual ? func_002C9F38();
+        // virtual ? func_002C64A0
+        // virtual ? func_002C66A8
+        // virtual ? func_002C6C28();
+        // virtual ? func_002C6C30
+        // virtual ? func_002C6C60
+        // virtual ? func_002C6C98
+        // virtual ? func_002C6CD0
+        // virtual ? func_002C6D10
+        // virtual ? func_002C6D50
+        // virtual ? func_002C6D98
+        // virtual ? func_002C6E68
+        // virtual ? func_002C6EF0
+        // virtual ? func_002C6F88
+        // virtual ? func_002C7030
+        // virtual ? func_002C70E8
+        // virtual ? func_002C71B0
+        // virtual ? func_002C7288
+        // virtual ? func_002C7370
+        // virtual ? func_002C7468
+        // virtual ? func_002C8838
+        // virtual void func_002C7A48(?);
+        // virtual ? func_002C7CF8
+        // virtual ? func_002C7D30
+        // virtual ? func_002C8218(?); // SetTarget?
+        virtual void* func_002C8358();
+        // virtual ? func_002C9098
+        // virtual ? func_002C9898
+        // virtual ? func_002C9970
+        // virtual ? func_002C9790
+        // virtual ? func_002C9860
+        // virtual ? func_002C99E0
+        virtual void func_002C3D80();
+        virtual void func_002C9FB0();
+        virtual void func_002C9FB8();
+        // virtual ? func_002C57F0
+
 };
 
 class GE_PrimCache {
     public:
         char m_unk0;
-        char m_unk1;
+        unsigned char m_unk1;
         short m_unk2;
         int m_unk4;
         int m_unk8;
@@ -65,14 +155,32 @@ class GE_PrimCache {
         int m_unk14;
     GE_PrimCache(char, short, int, int, int, void*, int);
     virtual ~GE_PrimCache();
+    virtual void func_002CABF0();
+    // virtual ? = 0;
+    // virtual ? = 0;
+    // virtual ? = 0;
     virtual int func_002D1C78();
+    // virtual ? = 0;
+    // virtual ? = 0;
+    // virtual ? = 0;
 };
 
-class GE_PS2PrimCache /* : public GE_PrimCache */ {
+class GE_PS2PrimCache  /*: public GE_PrimCache */ {
     public:
+        void* unk24;
+        void* unk28;
+        GE_PS2PrimCache(/**/);
         virtual ~GE_PS2PrimCache();
-
+        //
+        // virtual ? func_002A7018
+        // virtual ? func_002A70A8
+        // virtual ? func_002A70E0
+        //
+        // virtual ? func_002A7008();
+        // virtual ? func_002A7010();
+        // virtual ? func_002ABF00
         virtual int func_002AC4A8();
+
 };
 
 class GE_PrimVertices {
@@ -85,9 +193,19 @@ class GE_PrimVertices {
 
         GE_PrimVertices(int, int, int);
         virtual ~GE_PrimVertices();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
         virtual int func_002A65C0();
         virtual int func_002A65C8();
         virtual void func_002A65D0();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? func_002A65D8
+        // virtual ? = 0;
+        // virtual ? = 0;
 };
 
 class GE_PS2PrimVertices : public GE_PrimVertices {
@@ -101,12 +219,18 @@ class GE_PS2PrimVertices : public GE_PrimVertices {
         int unk34;
         GE_PS2PrimVertices();
         virtual ~GE_PS2PrimVertices();
-        //002a57c0
+        //virtual ? func_002A57C0
         virtual int func_002A5868(int, int);
         virtual void func_002A5880();
-        //
+        //base
+        //base
+        //base
+        // virtual ? func_002A5890
+        // virtual ? func_002A5970
+        // virtual ? func_002A59E0
         virtual void func_002A5A50();
-
+        //base
+        // virtual func_002A6728
         virtual short func_002A6748();
 };
 
@@ -120,7 +244,17 @@ class GE_PrimIndices {
         int unk8;
         GE_PrimIndices(int, char, int);
         virtual ~GE_PrimIndices();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
         void func_002A62D0();
+};
+
+class GE_PS2PrimIndices /* : public GE_PrimIndices */ {
+
 };
 
 class I_GE_DMARc {

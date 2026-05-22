@@ -450,7 +450,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", __tf13GenericObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", _$_13GenericObject);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122058);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122058); // WGRABBIT Vector3::Set?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00122080);
 

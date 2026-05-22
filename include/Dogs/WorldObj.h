@@ -30,13 +30,13 @@ class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, publ
         int unk328;
         int unk32C;
         int unk330;
-        //unk334
+        //unk334 bool m_positionfrozen?
         int unk340;
         int unk344;
         int unk348;
         int unk34C;
         int unk350;
-
+        /* 0x498 */ int m_scriptId;
         int unk544;
         int unk554;
         int unk558;

@@ -34,10 +34,10 @@ typedef struct {
     int   unk74;
 } s_func_002C31D0;
 
-typedef struct {
-    int unk0[471];
-    int unk75C;
-} s_func_002C8358;
+// typedef struct {
+//     int unk0[471];
+//     int unk75C;
+// } s_func_002C8358;
 
 typedef struct {
   /* 0x000 */ int   unk0[5];
@@ -390,7 +390,8 @@ class Debug_StructContainer : public Debug_DataValueContainer {
 };
 
 class SetLevelEnumerator /* : public Tree34Enumerator<SimObj_Base> */ {
-
+    public:
+        // virtual ? func_001af410 ?
 };
 
 class Movement_IF /* : public Interface<Movement_IF> */ {
@@ -475,7 +476,7 @@ void func_00196418(void);
 void func_001AD560(void);
 
 void func_002C0340(void);
-int func_002C8358(s_func_002C8358* arg0);
+//int func_002C8358(s_func_002C8358* arg0);
 
 
 unsigned int func_002684E8(unsigned int, unsigned int);
@@ -492,19 +493,19 @@ int func_002A48B0(void);
 void* func_002BF198(void*, string_ascii);
 void func_002BF2D0(void);
 s_func_002C31D0* func_002C31D0(s_func_002C31D0* arg0);
-void func_002C3D80();
+
 void func_002C57E8(void);
 void func_002C6480(void);
-void func_002C6488(void);
-void func_002C6490(void);
+
+
 void func_002C8360(void);
 void func_002C9408(void);
 void func_002C9410(void);
 int func_002C9F08(void);
 int func_002C9F10(void);
-void func_002C9FB0(void);
-void func_002C9FB8(void);
-int func_002C9FC0(void);
+
+
+
 int func_002CA958(void);
 
 int func_001E72D0(void);
@@ -588,7 +589,7 @@ void func_00275FA8(void);
 void func_00275FB0(void);
 void func_0027C4E8(void);
 
-int func_002C6498(void);
+
 
 void func_00262F88(void);
 int func_00263640(void);
@@ -638,17 +639,12 @@ void func_002DFA18(void);
 
 float func_002EFEE0(float, float, float, float, float);
 
-void func_002F4608(void);
+
 int func_002F6C50(void);
 void func_002F6E80(void);
 void func_002F6E88(void);
-void func_002F6F18(void);
-void func_002F6F20(void);
-void func_002F6F28(void);
-void func_002F6F30(void);
-void func_002F6F38(void);
-void func_002F6F40(void);
-void func_002F6F48(void);
+
+
 
 Status func_002FBEB0(void);
 int func_00309798(char*, char*);
@@ -668,7 +664,7 @@ Status func_0026CFF8(int, char*,char* ,int);
 
 int func_002D1BC8(void);
 
-float func_002D2350(void);
+
 void* func_002D3360(void*);
 
 int func_001FD558(char* arg0, char* arg1);
@@ -686,6 +682,7 @@ int func_003143A8(void);
 
 string_ascii func_001FD148(short);
 bool func_002963E0();
+void func_002BEA88(const char*);
 #ifdef __cplusplus
 }
 #endif

@@ -66,11 +66,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299450); /* GE_TextureTarge
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_16GE_TextureTarget);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299690__16GE_TextureTarget);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299690__16GE_TextureTarget); // horizontal scale/size for target?
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996A8__16GE_TextureTarget);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996A8__16GE_TextureTarget); // vertical scale/size for target? // RCT3 GetHeight?
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996C0); // GE_TextureTarget member
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996C0); // GetSize
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299740); // GE_TextureTarget member
 
@@ -105,7 +105,7 @@ void func_0029A628() { // GE_Target::func_0029A628
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A630);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A630); // WGRABBIT GE_DMAWriter::EndGIF
 
 INCLUDE_RODATA("asm/nonmatchings/text_00297578", _vt$16GE_TextureTarget);
 
@@ -137,9 +137,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __12GE_PS2TargetP12GE_PS2Device); 
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_12GE_PS2Target);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8); // GetWidth? (returns screen width value?)
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928); // GE_PS2Target virtual
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928); // GE_PS2Target virtual; // GetHeight? (returns screen height value?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A968__12GE_PS2Target);
 
@@ -206,7 +206,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0C18); // GE_PS2DisplayTa
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_19GE_PS2DisplayTarget);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0CB0); // set gs display regs?
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0CB0); // set gs display regs for game resolution?
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0D80__19GE_PS2DisplayTarget);
 /*
@@ -272,7 +272,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B58);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68); /* return a0->unk14 */
 
-float func_002A1B70() { // GE_PS2Target::func_002A1B70
+float func_002A1B70() { // GE_PS2Target::SquarePixelYScale?
     return 1.0f;
 }
 
@@ -289,22 +289,22 @@ void func_002A1B90() { // GE_PS2Target::func_002A1B90
 }
 
 void func_002A1B98() { // GE_PS2Target::func_002A1B98
-    asm("break 0x1");
+    PS2_BREAK();
     return;
 }
 
 void func_002A1BA8() { // GE_PS2Target::func_002A1BA8
-    asm("break 0x1");
+    PS2_BREAK();
     return;
 }
 
 void func_002A1BB8() { // GE_PS2Target::func_002A1BB8
-    asm("break 0x1");
+    PS2_BREAK();
     return;
 }
 
 void func_002A1BC8() { // GE_PS2Target::func_002A1BB8
-    asm("break 0x1");
+    PS2_BREAK();
     return;
 }
 

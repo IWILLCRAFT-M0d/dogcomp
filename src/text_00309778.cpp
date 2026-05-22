@@ -11,7 +11,7 @@ int func_00309798(char* arg0, char* arg1) {
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003097B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003098D8);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003098D8); // constructor for D_00484050
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309908);
 

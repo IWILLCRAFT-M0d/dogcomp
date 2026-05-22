@@ -5,6 +5,16 @@
 
 class AnimationComponent {
     public:
+        virtual ~AnimationComponent();
+        virtual void func_002F6F18();
+        // virtual ? = 0; // Advance?
+        virtual void func_002F4608();
+        virtual void func_002F6F20();
+        virtual void func_002F6F28();
+        virtual void func_002F6F30();
+        virtual void func_002F6F38(); // AnimationComponent::Resume?
+        virtual void func_002F6F40();
+        virtual void func_002F6F48();
 };
 
 class NothingAnimation : public AnimationComponent {

@@ -99,7 +99,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB58); // PlayerDog
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DB80); // PlayerDog member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0); // PlayerDog member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBA0); // PlayerDog member; called when performing moves?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/PlayerDog", func_0014DBC0); // "IsMoveAvailableInCurrentStage: Unknown stage ID"
 

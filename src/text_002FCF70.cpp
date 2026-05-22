@@ -101,11 +101,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF080);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0F8__13StorageDevice); // RCT3 StorageDevice::IsValidDevice ?
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF0F8__13StorageDevice); // RCT3 StorageDevice::IsValidDevice() const ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128__13StorageDevice); // RCT3 StorageDevice::IsCorrupt ?
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF128__13StorageDevice); // RCT3 StorageDevice::IsCorrupt() const ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158__13StorageDevice); // RCT3 StorageDevice::IsDamaged ?
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FF158__13StorageDevice); // RCT3 StorageDevice::IsDamaged() const ?
 
 
 #ifdef NON_MATCHING // TODO: finish parent classes
@@ -172,7 +172,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA20__18FileSystemDiscRoo
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FFA58__18FileSystemDiscRoot); // needs more arguments?
 
-int FileSystemDiscRoot::func_002FFA90() {
+int FileSystemDiscRoot::func_002FFA90() { // RCT3 FileSystemDiscRoot::CanWrite ?
     return 1;
 }
 

@@ -18,4 +18,7 @@
 #define STATIC_ASSERT_SIZEOF(type, size) \
     typedef char static_assertion_sizeof_##type[(sizeof(type) == (size)) ? 1 : -1]
 
+#define PS2_BREAK() asm("break 0x1")
+
 #endif
+

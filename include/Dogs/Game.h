@@ -132,6 +132,11 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk59C;
         Game_Document(float fps, float gameSpeed);
         virtual ~Game_Document();
+        // virtual ? 001cb1d8 // RCT3 Game_Document::Render?
+        // virtual ? 001d2980
+        // virtual bool 002D30A8 (same as GameShell)
+        // virtual ? 001d4578
+         virtual void func_001D45B8();
 
 };
 

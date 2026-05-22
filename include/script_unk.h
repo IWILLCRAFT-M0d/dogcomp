@@ -115,7 +115,10 @@ class DogScript : public Script {
     public:
         // DogScript(WorldObject*?, int scriptId)
         virtual ~DogScript();
-        //
+        //virtual ? func_001ad8d0
+        // virtual ? func_001af020
+
+
         virtual int func_001AD5F8();
 };
 
