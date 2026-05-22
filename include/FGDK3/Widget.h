@@ -11,7 +11,7 @@ class Widget {
         int unk4;
         int unk8;
         int unkC;
-        int unk10;
+        char* unk10;
         int unk14;
         int unk18;
         //
@@ -23,7 +23,52 @@ class Widget {
         //
         int unkA0;
         Widget(char*, int);
+        // virtual ? func_0024C7C8()
+        // virtual ? func_0024C868
         virtual ~Widget();
+        virtual int func_0024C7D0();
+        virtual int func_0024C7D8();
+        virtual int func_0024C7E0();
+        virtual int func_0024C7E8();
+        virtual int func_0024C7F0();
+        virtual int func_0024C7F8();
+        virtual int func_0024C800();
+        // virtual ? func_0024C850
+        virtual int func_0024C808();
+        virtual void func_0024C818();
+        virtual void func_0024C820();
+        virtual void func_0024C828();
+        // virtual ? func_0024CCF0
+        virtual void func_0024C830();
+        // virtual ? func_0024C9C0
+        // virtual ? func_0024CA40
+        // virtual ? func_0024CA90
+        // virtual ? func_0024CAB8
+        // virtual ? func_0024C9E8
+        // virtual ? func_0024CA18
+        // virtual ? func_0024CAE0
+        // virtual ? func_0024CB30
+        // virtual ? func_0024CA68
+        // virtual ? = 0;
+        virtual Widget* func_0024C8D0();
+        // virtual ? func_0024D188
+        // virtual ? func_0024D4B0
+        // virtual ? func_0024D290
+        virtual void func_0024C838();
+        // virtual ? func_0024CCB8
+        // virtual ? func_00255720
+        // virtual ? func_002557C0
+        // virtual ? func_00255860
+        // virtual ? func_00255908
+        // virtual ? func_002559B0
+        // virtual ? func_00255A78
+        // virtual ? func_0024C8E8
+        virtual int func_0024C840();
+        virtual int func_0024CBD0();
+        // virtual ? func_0024CC58
+        // virtual void func_0024CBB8(?)
+        virtual void func_0024BEF0();
+        virtual int func_0024C848();
 };
 
 class Widget_Text /*: public Widget */{

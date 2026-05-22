@@ -8,7 +8,9 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BED8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF0); /* return; virtual*/
+void Widget::func_0024BEF0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BEF8);
 
@@ -70,83 +72,122 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __6WidgetPci); /* Widget::Widg
 #endif
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_6Widget);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8); /* return a0->unk10 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8__6Widget); /* return a0->unk10 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7D0); /* return 0; */
+int Widget::func_0024C7D0() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7D8); /* return 0; */
+int Widget::func_0024C7D8() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7E0); /* return 0; */
+int Widget::func_0024C7E0() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7E8); /* return 0; */
+int Widget::func_0024C7E8() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7F0); /* return 0; */
+int Widget::func_0024C7F0() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7F8); /* return 0; */
+int Widget::func_0024C7F8() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C800); /* return 0; */
+int Widget::func_0024C800() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C808);
+int Widget::func_0024C808() {
+    this->unk4 = 1;
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C818); /* return; */
+void Widget::func_0024C818() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C820); /* return; */
+void Widget::func_0024C820() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C828); /* return; */
+void Widget::func_0024C828() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C830); /* return; */
+void Widget::func_0024C830() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C838); /* return; */
+void Widget::func_0024C838() {
+    return;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C840); /* return; */
+int Widget::func_0024C840() {
+    return 0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C848); /* return 0xb0; */
+int Widget::func_0024C848() {
+    return 0xB0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C850);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C850); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C868);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C868); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C8C8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C8D0);
+Widget* Widget::func_0024C8D0() {
+    this->unk0 = 0;
+    this->unk4 = 0;
+    this->unk8 = 0;
+    this->unkC = 0;
+    return this;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C8E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C8E8); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C9C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C9C0); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C9E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C9E8); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA18); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA40); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA68); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CA90); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CAB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CAB8); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CAE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CAE0); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CB30);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CB30); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CB58);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CBB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CBB8); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CBC0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CBD0); /* return 0; */
+int Widget::func_0024CBD0() {
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CBD8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CC08);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CC58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CC58); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CCB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CCB8); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CCF0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CCF0); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CDA0);
 
@@ -160,13 +201,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CED0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEE0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D188);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D188); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D290);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D290); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D398);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D4B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D4B0); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D500);
 
@@ -460,17 +501,21 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255638);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002556A8); // "Attempt to remove non-child window\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255720); // "Bring to front request on widget with no parent\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255720); // Widget virtual
+// "Bring to front request on widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002557C0); // "Send to back request on widget with no parent\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002557C0); // Widget virtual
+// "Send to back request on widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255860); // "Attempt to demote widget with no parent\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255860); // Widget virtual
+// "Attempt to demote widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255908); // "Attempt to promote widget with no parent\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255908); // Widget virtual
+// "Attempt to promote widget with no parent\n"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002559B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_002559B0); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255A78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255A78); // Widget virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_00255B40);
 
