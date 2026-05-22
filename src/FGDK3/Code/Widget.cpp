@@ -5,6 +5,7 @@
 #include "FGDK3/Playstation2/Thread.h"
 
 #include "FGDK3/Widget.h"
+#include <string.h>
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024BED8);
 
@@ -58,7 +59,7 @@ Widget::Widget(char* arg1, int arg2) {
     this->unk4 = 0;
     this->unk8 = 0;
     this->unkC = 0;
-    this->unk10 = 0;
+    this->unk10 = NULL;
     this->unk14 = 0;
     this->unk70 = 0;
     //this->unk7C
@@ -66,13 +67,18 @@ Widget::Widget(char* arg1, int arg2) {
     this->unk9C = 0;
     this->unkA0 = 0;
     //
+    if (arg1 != NULL) {
+        this->func_0024C868(arg1);
+    }
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __6WidgetPci); /* Widget::Widget(char*, int) */
 #endif
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_6Widget);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C7C8__6Widget); /* return a0->unk10 */
+char* Widget::func_0024C7C8() {
+    return this->unk10;
+}
 
 int Widget::func_0024C7D0() {
     return 0;
@@ -132,12 +138,18 @@ int Widget::func_0024C840() {
 }
 
 int Widget::func_0024C848() {
-    return 0xB0;
+    return 176;
 }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C850); // Widget virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C868); // Widget virtual
+void Widget::func_0024C868(const char* arg1) {
+    if (this->unk10 != NULL) {
+        delete[] this->unk10;
+    }
+    this->unk10 = new char[strlen(arg1) + 1];
+    strcpy(this->unk10, arg1);
+}
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024C8C8);
 
@@ -193,13 +205,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CDA0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CE30); /* Widget_Text */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEA0); /* return 0xd0 */
+int Widget_Text::func_0024CEA0() {
+    return 208;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEA8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEA8); // Widget_Text virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CED0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024CEE0); // Widget_Text virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D188); // Widget virtual
 
@@ -211,7 +225,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D4B0); // Widget virt
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D500);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D7D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D7D0); // Widget_Text virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0024D998);
 
@@ -907,7 +921,9 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Widget", _vt$20Widget_FormattedText)
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Widget", _vt$11Widget_Text);
 
+#ifndef NON_MATCHING
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Widget", _vt$6Widget);
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Widget", D_00437150); /* "11Widget_Text" */
 
@@ -1021,7 +1037,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025D9F0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025D9F8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025DA00);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_11Widget_Text);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __tf11Widget_Text);
 

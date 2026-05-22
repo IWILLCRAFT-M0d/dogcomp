@@ -23,8 +23,13 @@ class Widget {
         //
         int unkA0;
         Widget(char*, int);
-        // virtual ? func_0024C7C8()
-        // virtual ? func_0024C868
+#ifdef NON_MATCHING // Remove when vtable is complete
+        virtual char* func_0024C7C8();
+        virtual void func_0024C868(const char*);
+#else
+        char* func_0024C7C8();
+        void func_0024C868(const char*);
+#endif
         virtual ~Widget();
         virtual int func_0024C7D0();
         virtual int func_0024C7D8();
@@ -71,8 +76,55 @@ class Widget {
         virtual int func_0024C848();
 };
 
-class Widget_Text /*: public Widget */{
-
+class Widget_Text : public Widget {
+    public:
+        Widget_Text(/**/);
+        // base
+        // virtual ? func_0024CEA8
+        virtual ~Widget_Text();
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // virtual ? func_0024D7D0
+        // virtual ? func_0024CEE0
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        virtual int func_0024CEA0();
 };
 
 class Widget_FormattedText : public Widget_Text {
