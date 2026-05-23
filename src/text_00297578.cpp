@@ -89,19 +89,19 @@ int func_0029A600(int arg0, int arg1) {
 }
 
 
-int func_0029A610() { // GE_Target::func_0029A610
+int GE_Target::func_0029A610() {
     return 0;
 }
 
-int func_0029A618() { // GE_Target::func_0029A618
+int GE_Target::func_0029A618() {
     return 0;
 }
 
-void func_0029A620() { // GE_Target::func_0029A620
+void GE_Target::func_0029A620() {
     return;
 }
 
-void func_0029A628() { // GE_Target::func_0029A628
+void GE_Target::func_0029A628() {
     return;
 }
 
@@ -137,9 +137,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __12GE_PS2TargetP12GE_PS2Device); 
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_12GE_PS2Target);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8); // GetWidth? (returns screen width value?)
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8__12GE_PS2Target); // GetWidth? (returns screen width value?)
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928); // GE_PS2Target virtual; // GetHeight? (returns screen height value?)
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928__12GE_PS2Target); // GE_PS2Target virtual; // GetHeight? (returns screen height value?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A968__12GE_PS2Target);
 
@@ -276,11 +276,11 @@ float func_002A1B70() { // GE_PS2Target::SquarePixelYScale?
     return 1.0f;
 }
 
-int func_002A1B80() { // GE_PS2Target::func_002A1B80
+int GE_PS2Target::func_002A1B80() {
     return 1;
 }
 
-int func_002A1B88() { // GE_PS2Target::func_002A1B88
+int GE_PS2Target::func_002A1B88() {
     return 0;
 }
 
@@ -321,7 +321,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_00297578", D_0043F200); /* "12GE_PS2Target
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf19GE_PS2DisplayTarget);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1C70__19GE_PS2DisplayTarget);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1C70__19GE_PS2DisplayTarget); // resolution?
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1CB8__19GE_PS2DisplayTarget); // widescreen function?
 

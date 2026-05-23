@@ -260,7 +260,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7E58);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7F10);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7FD0);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A7FD0); // rendering function
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A8258);
 

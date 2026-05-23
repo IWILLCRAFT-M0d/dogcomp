@@ -263,13 +263,16 @@ class I_GE_DMARc {
 
 class GE_PS2PrimCacheDMABuffer : public I_GE_DMARc {
     public:
-        virtual ~GE_PS2PrimCacheDMABuffer();
-
+        virtual ~GE_PS2PrimCacheDMABuffer(); // 002ac1b0?
+        virtual void func_002AC1A0();
         virtual void func_002AC220();
 };
 
 class GE_DMARc : public I_GE_DMARc {
-
+    public:
+        // virtual ? func_002DE730
+        // virtual ? func_002DE720
+        // virtual ? func_002C3158
 };
 
 class GE_DMAPktRcGeneric : public GE_DMARc {
@@ -291,10 +294,24 @@ class GE_TextureStylePkt : public GE_DMARc {
         int unk10;
         GE_TextureStylePkt();
         virtual ~GE_TextureStylePkt();
+        // base
+        // base
+        // virtual ? func_002B2528
 };
 
 class GE_Target {
-
+    public:
+        virtual ~GE_Target();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        virtual int func_0029A610();
+        virtual int func_0029A618();
+        virtual void func_0029A620();
+        virtual void func_0029A628();
 };
 
 class GE_PS2Target : public GE_Target {
@@ -305,6 +322,13 @@ class GE_PS2Target : public GE_Target {
         // void*
         GE_PS2Device* unk8;
         GE_PS2Target(GE_PS2Device*);
+        //
+        virtual int func_0029A8E8();
+        virtual int func_0029A928();
+        // virtual ? func_0029A968
+        virtual int func_002A1B80();
+        virtual int func_002A1B88();
+        //~~~~~
 };
 
 class GE_PS2DisplayTarget : public GE_PS2Target {
@@ -350,11 +374,23 @@ class GE_TexturePage {
 
 class GE_TextureTarget : /*public GE_PS2Target,*/ public GE_TexturePage {
     public:
+        // virtual
+        // virtual ? func_00299690
+        // virtual ? func_002996A8
+        // virtual ? func_002996C0
 
 };
 
 class ClipVolume {
-
+    public:
+        //
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
 };
 
 class PlaneClipVolume : public ClipVolume {

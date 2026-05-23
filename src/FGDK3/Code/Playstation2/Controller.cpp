@@ -8,7 +8,7 @@
 #include "FGDK3/Inpdev.h"
 #include "FGDK3/Playstation2/RunPath.h"
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FBFF0); // input function?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC160);
 
@@ -29,7 +29,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC288
 // "%d:%d Initialising\n"
 
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC798);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FC798); // controller thread
 
 #ifdef NON_MATCHING
 Status Controller_InternalInitialise() {

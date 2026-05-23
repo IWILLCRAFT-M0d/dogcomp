@@ -129,7 +129,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", _$_17InputEvent_Device);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA7F0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA810);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA810); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA830);
 
@@ -153,7 +153,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FAD70);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FAED8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB018);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB018); // input function
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB078);
 

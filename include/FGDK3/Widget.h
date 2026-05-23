@@ -2,7 +2,9 @@
 #define WIDGET_H
 
 class Widget_StdNotification /*: public Action */ {
-
+    public:
+        // virtual
+        // virtual ? func_0024BF18
 };
 
 class Widget {

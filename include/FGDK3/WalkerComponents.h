@@ -8,6 +8,17 @@ class WalkingBobAnimation : public AnimationComponent {
 };
 
 class WalkingParamsAnimation : public AnimationComponent {
+    public:
+        virtual ~WalkingParamsAnimation();
+        // virtual ? func_002E0A00
+        // virtual ? func_002E0AD0 // Advance?
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
+        // base
 
 };
 
@@ -64,6 +75,7 @@ class IKAmblerAnimation : public AnimationComponent {
 };
 
 class TurnFlexAnimation {
+
 
 };
 

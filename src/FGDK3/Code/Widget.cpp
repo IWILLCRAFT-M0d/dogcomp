@@ -1041,7 +1041,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", _$_11Widget_Text);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", __tf11Widget_Text);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025DA90); /* return D_004512f8; */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025DA90); /* return D_004512F8; */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Widget", func_0025DA98);
 

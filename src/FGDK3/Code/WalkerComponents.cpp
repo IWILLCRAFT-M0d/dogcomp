@@ -12,11 +12,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0690);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E06E0); /* WalkingParamsAnimation */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0A00);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0A00); // WalkingParamsAnimation virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0A20);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0AD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0AD0); // WalkingParamsAnimation virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E0B10); /* AnimVarWalkingAnimation */
 
@@ -106,7 +106,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5208); /* T
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_17TurnFlexAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8__17TurnFlexAnimation); // turnflexanimation animate?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E55A8__17TurnFlexAnimation); // TurnFlexAnimation virtual
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/WalkerComponents", _vt$17TurnFlexAnimation);
 
@@ -148,7 +148,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5E50);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf19WalkingBobAnimation);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", func_002E5EC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", _$_22WalkingParamsAnimation);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/WalkerComponents", __tf22WalkingParamsAnimation);
 

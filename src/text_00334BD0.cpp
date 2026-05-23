@@ -807,7 +807,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00344008);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00344148);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003441D8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifCallRpc);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003443C8);
 

@@ -63,6 +63,7 @@ class Action {
         int unk0;
         Action();
         virtual ~Action();
+        // virtual ? = 0;
 };
 
 class HierarchyAction /* : public Action */ {
@@ -606,10 +607,7 @@ int func_00296478(void);
 int func_00296480(int);
 void func_00299448(void);
 int func_0029A600(int, int);
-int func_0029A610(void);
-int func_0029A618(void);
-void func_0029A620(void);
-void func_0029A628(void);
+
 void func_0029A738(void);
 void func_0029AA28(void);
 void func_0029AA30(void);
@@ -618,8 +616,8 @@ int func_002A1A60(void);
 void func_002A1A68(void);
 void func_002A1A70(void);
 float func_002A1B70(void);
-int func_002A1B80(void);
-int func_002A1B88(void);
+
+
 void func_002A1B90(void);
 void func_002A1B98(void);
 void func_002A1BA8(void);
