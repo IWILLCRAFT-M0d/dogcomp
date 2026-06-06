@@ -228,7 +228,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
 #ifdef NON_MATCHING
 extern int D_0045298C;
-int func_002D5B40(char* arg0, ...) {
+int func_002D5B40(const char* arg0, ...) {
     va_list args;
     char str[1024];
     size_t len;

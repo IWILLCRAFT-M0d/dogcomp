@@ -420,7 +420,9 @@ File::Access::Access() {
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_Q24File6Access);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302120); // belongs to File::Access?
+int File::Access::func_00302120() {
+    return 0;
+}
 
 FileFind::Access::Access() {
 

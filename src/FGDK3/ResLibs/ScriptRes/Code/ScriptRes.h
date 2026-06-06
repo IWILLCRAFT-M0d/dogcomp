@@ -25,7 +25,7 @@ void func_0031CB30(void);
 int func_0031CB68(int, int);
 
 
-int func_0031E8E0(void);
+
 
 int func_0031E910(void);
 int func_0031E918(void);

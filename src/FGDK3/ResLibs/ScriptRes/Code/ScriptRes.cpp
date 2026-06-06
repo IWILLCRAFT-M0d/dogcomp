@@ -145,7 +145,7 @@ int Script::func_0031E8D8() {
     return 1;
 }
 
-int func_0031E8E0(void) {
+int Script::func_0031E8E0() {
     return 0;
 }
 

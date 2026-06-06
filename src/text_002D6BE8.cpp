@@ -5,7 +5,14 @@
 #include <stdio.h>
 #include <string.h>
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6BE8);
+// func_002D6BE8
+template<> Contents<char>::Contents(int size) {
+    m_unk0 = 1;
+    m_len = 0;
+    m_cap = ((size + 0x15) & ~0xF) - 4;
+    m_data = new char[m_cap];
+    m_data[0] = '\0';
+}
 
 // func_002D6C40
 template<> Contents<char>::Contents(const char* data) {
@@ -16,27 +23,76 @@ template<> Contents<char>::Contents(const char* data) {
     strcpy(m_data, (char*)data);
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6CB8);
+// func_002D6CB8
+template<> Contents<char>::Contents(const char* data, unsigned int size) {
+    m_unk0 = 1;
+    m_len = size;
+    m_cap = ((size + 0x15) & ~0xF) - 4;
+    size++;
+    char *temp = m_data = new char[m_cap];
+    strncpy(temp, data, size);
+    temp[size-1] = '\0';
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6D50);
+// func_002D6D50
+template<> Contents<char>::Contents(Contents<char> const &other, unsigned int size) {
+    m_unk0 = 1;
+    m_len = other.m_len;
+    m_cap = (size < other.m_len) ? (other.m_len & ~0xF) - 4 : ((size + 0x15) & ~0xF) - 4;
+    m_data = new char[m_cap];
+    memcpy(m_data, other.m_data, other.m_len + 1);
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6DE8);
+// func_002D6DE8
+template<> void Contents<char>::EnsureSpaceFor(unsigned int size) {
+    if (m_cap <= size) {
+        m_cap = ((size + 0x15) & ~0xF) - 4;
+        char *temp = new char[m_cap];
+        memcpy(temp, m_data, m_len + 1);
+        delete m_data;
+        m_data = temp;
+    }
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6E68);
+// func_002D6E68
+string_ascii::string_ascii() {
+    m_cont = new Contents<char>(0);
+}
 
 // func_002D6EA8
 string_ascii::string_ascii(const char* d) {
     m_cont = new Contents<char>(d);
 }
 
+// func_002D6EF0
+string_ascii::string_ascii(const char* d, unsigned int size) {
+    m_cont = new Contents<char>(d, size);
+}
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6EF0); // loading thing (contents?)
+// func_002D6F48
+// this function requires -fpermissive in order to compile; FIXME perhaps?
+string_ascii::string_ascii(unsigned int size, char c) {
+    m_cont = new Contents<char>(size + 1);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6F48);
+    for (int i = 0; i < size; i++) {
+        m_cont->m_data[i] = c;
+    }
+
+    m_cont->m_data[i] = '\0';
+    m_cont->m_len = size;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6FE0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7050);
+// func_002D7050
+void string_ascii::EnsureSpaceFor(int size) const {
+    if (m_cont->m_unk0 > 1) {
+        m_cont->m_unk0--;
+        m_cont = new Contents<char>(*m_cont, size);
+    } else {
+        m_cont->EnsureSpaceFor(size);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D70C0);
 

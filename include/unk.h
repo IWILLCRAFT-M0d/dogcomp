@@ -269,6 +269,7 @@ class LiveEditable {
         int unk10;
         int unk14;
         LiveEditable(char*, char*);
+        // virtual ? = 0;
 };
 
 class MenuRegisterable {
@@ -288,6 +289,7 @@ class EditableManager : public MenuRegisterable {
     public:
         char* unk2C;
         EditableManager(char*);
+        // virtual ? func_002d99F8
 
 };
 
@@ -427,7 +429,10 @@ class c_func_00276AC0 {
 
 
 class RelocationBlock : public Endian {
-
+    public:
+        // virtual ~RelocationBlock() // func_0030d3d0
+        // base
+        // virtual ? func_0030D470
 };
 
 class NavSphereHitPackage {
@@ -667,7 +672,7 @@ void* func_002D3360(void*);
 
 int func_001FD558(char* arg0, char* arg1);
 
-int func_002D5B40(char*,...);
+int func_002D5B40(const char*,...);
 
 Status func_001C5518(char*);
 

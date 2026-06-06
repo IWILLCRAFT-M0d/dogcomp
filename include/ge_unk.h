@@ -81,7 +81,7 @@ class GE_PS2Device : public GE_Device {
         //
         //
         virtual ~GE_PS2Device();
-        // virtual ? 002c8ff8
+        // virtual ? 002C8FF8
         //
         //
         //~~~~~
@@ -106,7 +106,7 @@ class GE_PS2Device : public GE_Device {
         // virtual ? func_002C9210
         // virtual ? func_002C9F38();
         // virtual ? func_002C64A0
-        // virtual ? func_002C66A8
+        // virtual void func_002C66A8(int, float) // override
         // virtual ? func_002C6C28();
         // virtual ? func_002C6C30
         // virtual ? func_002C6C60

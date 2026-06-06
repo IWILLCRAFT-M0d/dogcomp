@@ -122,12 +122,10 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC1C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC250); // ? func_002CC250(GE_Device*,); RCT3 GE_Device::DrawEnableColour?
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC2E0); // rendering function; if stubbed fonts don't render
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC2E0); // rendering function; if stubbed fonts don't render; font color?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC338);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC380);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC3F0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC420);

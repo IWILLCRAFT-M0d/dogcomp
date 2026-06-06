@@ -14,7 +14,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260990);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002609B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260AE8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260AE8); // VirtualDesktop virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260C48);
 

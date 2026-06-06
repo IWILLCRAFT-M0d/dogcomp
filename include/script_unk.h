@@ -11,7 +11,7 @@ class Script {
         virtual int func_0031E8C8();
         // virtual ? func_0031E8D0
         virtual int func_0031E8D8();
-        // virtual ? func_0031E8E0
+        virtual int func_0031E8E0();
 
         virtual void func_0031E8E8();
 

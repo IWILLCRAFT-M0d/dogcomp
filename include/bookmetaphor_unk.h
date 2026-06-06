@@ -100,6 +100,14 @@ namespace BookMetaphor {
             /* 0x14 */ bool m_cheatsAvailable;
             SettingsPage();
             virtual ~SettingsPage();
+            // virtual ? func_00192010
+            // virtual ? func_00192110
+            // virtual ? func_00192820
+            // virtual ? func_001928A8
+            // virtual ? func_00192CF0
+            // virtual base function (0019e380)
+            // virtual base function (0019e3a8)
+            // virtual base function (0019e3b0)
     };
 
     class CheatsPage : public Page, public CurrentPositionPageResponder {
@@ -110,6 +118,15 @@ namespace BookMetaphor {
             int unk1C;
             CheatsPage();
             virtual ~CheatsPage();
+            // virtual ? func_00193528
+            // virtual ? func_001935F0
+            // virtual ? func_00193D38
+            // virtual ? func_00193DC0
+            // virtual ? func_00193F60
+            // virtual base function (0019e380)
+            // virtual base function (0019e3a8)
+            // virtual base function (0019e3b0)
+
     };
 
     class BackgroundThread : public Thread {
@@ -131,7 +148,7 @@ namespace BookMetaphor {
             /* 0x10 */ int m_gate;
             ChangeLevelBackgroundThread(int level, int gate);
             virtual ~ChangeLevelBackgroundThread();
-
+            // virtual base function
             virtual void func_001947C8();
     };
 

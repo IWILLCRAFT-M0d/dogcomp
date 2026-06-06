@@ -117,7 +117,7 @@ class File {
             // virtual ? = 0;
             // virtual ? = 0;
             // virtual ? = 0;
-            // virtual ? 00302120
+            virtual int func_00302120();
     };
     class CallBack {
 

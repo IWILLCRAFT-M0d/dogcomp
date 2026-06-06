@@ -269,7 +269,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00247AE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00247B18);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00247B48);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", fptodp);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00247E18);
 
