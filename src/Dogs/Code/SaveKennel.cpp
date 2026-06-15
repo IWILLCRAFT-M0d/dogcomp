@@ -35,7 +35,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152248__10SaveKennel
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152288__10SaveKennel);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001522C8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152360);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523C0);

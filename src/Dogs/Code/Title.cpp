@@ -1,6 +1,7 @@
 #include "common.h"
 
 #include "Dogs/Title.h"
+#include "unk.h"
 
 #ifdef NON_MATCHING
 TitleView::TitleView() {
@@ -16,12 +17,28 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Title", D_0042E660); /* "m_mode==Mode
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022D588); // TitleView member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8); // TitleView member
+#ifdef NON_MATCHING
+void TitleView::func_0022DCB8(int* arg1) {
+    if (*arg1 == 0xA) {
+        Main_Terminate();
+    }
+    //func_0024C850(arg0, arg1);
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DCB8__9TitleViewPi); // TitleView member
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD08);
+#ifdef NON_MATCHING
+void TitleView::func_0022DD08(int arg1) {
+    // this->unkF8 = arg1;
+    // this->unkF0 = 0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD08__9TitleViewi);
+#endif
 // bool D_0044E974 (isRendering?)
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022DD18); // TitleView member
-
+//https://decomp.me/scratch/IjHMp
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0); // TitleView member
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E300);

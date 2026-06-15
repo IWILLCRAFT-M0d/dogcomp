@@ -20,7 +20,7 @@ class AnimationComponent {
 class NothingAnimation : public AnimationComponent {
     public:
         virtual ~NothingAnimation();
-
+        // virtual base function (002F6F18)
         virtual void func_002F3F88();
 };
 

@@ -17,6 +17,18 @@ class Button : public WorldObject {
         Button(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~Button();
         virtual ClassInfo* func_0010A6F0();
+        // virtual base function (00168410)
+        // virtual base function (00185680)
+        // virtual base function (001857E8)
+        // virtual ? func_0010A178
+        // virtual base function (00182AD0)
+        // virtual base function (00182A70)
+        // virtual base function (00168688)
+
+
+        // virtual base function (001884E8)
+        // end of vtable @ 0039D508
+
         virtual void func_0010A4E0();
         virtual int func_0010A550();
 

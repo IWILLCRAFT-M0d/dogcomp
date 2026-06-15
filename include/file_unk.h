@@ -2,6 +2,7 @@
 #ifndef FILE_UNK_H
 #define FILE_UNK_H
 
+#include "FGDK3/Playstation2/Thread.h"
 #include "data_unk.h"
 
 class FileSystem {
@@ -80,7 +81,14 @@ class FileSystemDisc_MemCard : public FileSystemDisc {
 };
 
 class FileSystemDisc_Zip /* : public FileSystemDisc */ {
-
+    public:
+        void* unk20;
+        // virtual ? func_00312BC8
+        virtual void* func_00312DA8(/**/);
+        // virtual ? func_003143D8
+        // virtual ? func_00314410
+        virtual ~FileSystemDisc_Zip();
+        // virtual ? func_00314448
 };
 
 class FileSystemDisc_CD : public FileSystemDisc {
@@ -195,5 +203,13 @@ class File_FileDescriptor : public File::Access {
         virtual void func_00314890(void);
         virtual int func_003148E8(void);
 };
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+string_ascii* func_00273000(const char*);
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* FILE_UNK_H */

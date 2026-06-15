@@ -35,6 +35,9 @@ void func_002ADEA8(void) {
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002ADF28);
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE010);
+// if (D_00452234 == 0) {
+//  D_00452234 = new 002ADC40
+//}
 
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002AE048);
 

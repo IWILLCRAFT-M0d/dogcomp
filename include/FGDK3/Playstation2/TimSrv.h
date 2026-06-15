@@ -22,10 +22,13 @@ void TimSrv_Finalise();
 
 
 class TimSrv_TimerImplementation {
+
 };
 
 class TimSrv_Timer : public TimSrv_TimerImplementation {
-
+    public:
+        TimSrv_Timer(/**/);
+        // virtual ? = 0;
 };
 
 #endif

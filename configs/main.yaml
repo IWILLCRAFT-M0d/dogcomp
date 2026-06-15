@@ -123,7 +123,8 @@ segments:
       - [0xE6648, cpp, Dogs/Code/Levelres]
 
       - [0xE6870, cpp, Dogs/Code/Playstation2/Main]
-      - [0xE6C98, cpp, Dogs/Code/Mien]
+      - [0xE6C98, cpp, text_001E5C98] # MatrixUtls?
+      - [0xE7428, cpp, Dogs/Code/Mien]
       - [0xE7FF0, cpp, Dogs/Code/MusicServices]
       - [0xE82D8, cpp, Dogs/Code/NavClient]
       - [0xEB608, cpp, Dogs/Code/Objects]

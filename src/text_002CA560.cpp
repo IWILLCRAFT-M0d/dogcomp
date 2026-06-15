@@ -67,8 +67,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA960); // RCT3 GE_GetDevi
 int D_00452894;
 
 GE_RenderHardware::GE_RenderHardware() {
-    this->m_unk0 = 1.0f;
-    this->m_unk4 = 0;
+    this->m_unk0.f = 1.0f;
+    this->m_unk4.i = 0;
     if (D_00452894 != 0) {
         ThrowCatch_DefiniteThrow(Status(0x4007, "C:/Coding/FGDK3/Code/Common/GE.cpp", 63));
     }

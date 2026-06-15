@@ -6,7 +6,7 @@
 
 class Player_GrowlTimer : public TimSrv_Timer {
     public:
-        // virtual ? func_001F73C8
+        // virtual void func_001F73C8
 };
 
 #ifdef __cplusplus

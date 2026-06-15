@@ -1,8 +1,10 @@
 #include "common.h"
 #include "debug.h"
 #include "unk.h"
+#include "data_unk.h"
 
 #include "FGDK3/Playstation2/sifManager.h"
+#include <sifcmd.h>
 #include "FGDK3/Playstation2/IOPMem.h"
 #include "FGDK3/Playstation2/GE.h"
 #include "FGDK3/Playstation2/RunPath.h"
@@ -87,9 +89,9 @@ block_7:
 //         spC = sp1C;
 //     }
 //     temp_20_2 = func_002A4C58(D_0045216C, sp, 0, 0, var_17 == 0);
-     /*func_002D6EA8(&sp20, */RunPath_Get()/*)*/;
+        string_ascii((char const*)RunPath_Get());
 /*     func_002D70C0(&sp10, &sp20, "Dogs.dgf", */strlen("Dogs.dgf")/*)*/;
-//     func_002D7050(&sp10, sp10->unk4 + 1);
+//     .EnsureSpaceFor(&sp10, sp10->unk4 + 1);
 //     *(sp10->unkC + sp10->unk4) = 0;
 //     func_002BEA88(&D_00388918, sp10->unkC);
 //     temp_2_4 = sp10->unk0 - 1;
@@ -112,15 +114,16 @@ block_7:
     GE_Finalise();
     Semaphore_Finalise();
 //     func_0031FCF0(0, 0);
-//     func_0031FC50();
-//     func_00343478();
+extern void func_0031FC50(void); // remove when function is actually defined
+    func_0031FC50();
+    sceSifExitCmd();
      var_16_2 = strrchr(argv[0], '\\');
      if ((var_16_2 != 0) || (var_16_2 = strrchr(argv[0], ':'), (var_16_2 != 0))) {
         temp_16 = var_16_2 + 1;
 //         sp420 = "spongebob";
-         /*func_002D6EA8(&sp20, */RunPath_Get()/*)*/;
+         string_ascii((char const*)RunPath_Get());
 /*         func_002D70C0(&sp10, &sp20, temp_16, */strlen(temp_16)/*)*/;
-//         func_002D7050(&sp10, sp10->unk4 + 1);
+//         .EnsureSpaceFor(&sp10, sp10->unk4 + 1);
 //         *(sp10->unkC + sp10->unk4) = 0;
 //         func_00349B60(sp10->unkC, 1, &sp420);
 //         temp_2_7 = sp10->unk0 - 1;

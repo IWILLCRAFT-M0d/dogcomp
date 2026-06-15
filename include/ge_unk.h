@@ -6,8 +6,9 @@
 
 class GE_RenderHardware {
     public:
-        float m_unk0;
-        int m_unk4;
+        union {int i;float f;} m_unk0;
+        union {int i;float f;} m_unk4;
+
         GE_RenderHardware();
         virtual ~GE_RenderHardware();
         // virtual ? = 0;

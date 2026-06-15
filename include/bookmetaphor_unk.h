@@ -3,6 +3,7 @@
 #define BOOKMETAPHOR_UNK_H
 
 #include "FGDK3/Playstation2/Thread.h"
+#include "data_unk.h"
 #include "file_unk.h"
 
 // BookMetaphor classes
@@ -11,9 +12,14 @@ namespace BookMetaphor {
         public:
             int unk0;
             virtual ~Page();
-            void func_0019E378();
-            int func_0019E3A8();
-            int func_0019E3B0();
+            virtual void func_0019E378();
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? func_0019e380
+            virtual int func_0019E3A8();
+            virtual int func_0019E3B0();
 
     };
     class CurrentPositionPageResponder {
@@ -22,16 +28,31 @@ namespace BookMetaphor {
 
     class GamePositionPage : public Page {
         public:
-            //unk8
+            // unk8;
             int unkC;
             GamePositionPage(int);
             virtual ~GamePositionPage();
+            // virtual ? func_0018CA48
+            // virtual ? func_0018CBA0
+            // virtual ? func_0018D438
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual base function (0019e380)
+            // virtual base function (0019e3a8)
+            // virtual base function (0019e3b0)
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
+            // virtual ? = 0;
     };
 
     class NewGamePage : public GamePositionPage {
         public:
             int unk10; // m_state?
-
+            string_ascii unk14;
             NewGamePage();
             virtual ~NewGamePage();
             //
@@ -158,6 +179,8 @@ namespace BookMetaphor {
 class BookMetaphorLayer : public GameLayer, public File::CallBack {
     public:
         BookMetaphorLayer();
+        // virtual base function (0024C7C8)
+        // virtual base function (0024C868)
         virtual ~BookMetaphorLayer();
 };
 

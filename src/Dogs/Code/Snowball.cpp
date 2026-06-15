@@ -22,7 +22,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", __8SnowballP9ClassInfoP15SimO
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", _$_8Snowball);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172BE8); // Snowball virtual
+#ifdef NON_MATCHING
+void Snowball::func_00172BE8() {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172BE8__8Snowball); // Snowball virtual
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Snowball", func_00172C08); // Snowball virtual
 

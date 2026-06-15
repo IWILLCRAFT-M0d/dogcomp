@@ -10,7 +10,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002607A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002608B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260990);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260990); // PrimaryMenu virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002609B0);
 
@@ -18,9 +18,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260AE8); // VirtualDesktop 
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00260C48);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00261010);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00261010); // VirtualDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00261090); /* return; */
+void VirtualDesktop::func_00261090() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00261098);
 
@@ -214,15 +216,28 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __14VirtualDesktop);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_14VirtualDesktop);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262650);
+#ifdef NON_MATCHING
+void VirtualDesktop::func_00262650() {
+    /*D_00452B14 =*/new DebugLayer;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262650__14VirtualDesktop);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002626B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262700);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262738);
+#ifdef NON_MATCHING
+int VirtualDesktop::func_00262738() {
+    //
+    return 1;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262738__14VirtualDesktop);
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262748);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262748); // VirtualDesktop virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262818);
 
@@ -232,9 +247,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002628A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262908);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262C10);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262C10); // VirtualDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262DD0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262DD0); // VirtualDesktop virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00262EF0); /* __tf12InputBinding */
 
@@ -299,13 +314,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002630F8); /* return a0->unk1
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263100); /* return a0->unk1B4 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263108);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263108); // VirtualDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263130);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263130); // VirtualDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263158);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263158__14VirtualDesktop);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263160); /* return a0->unk1BC */
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263160__14VirtualDesktop); /* return a0->unk1BC */
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00263168);
 

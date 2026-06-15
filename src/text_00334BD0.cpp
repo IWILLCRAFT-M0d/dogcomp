@@ -1,6 +1,7 @@
 #include "common.h"
 
 #include <ee/eekernel.h>
+#include <ee/sifcmd.h>
 
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00334BD0);
@@ -757,7 +758,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003431E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003431F8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00343478);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifExitCmd);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003434B0);
 
@@ -779,7 +780,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00343818);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003438C4);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003438C8);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifInitRpc);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00343A68);
 
@@ -971,9 +972,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00349288);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003493C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_003493F0);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifSyncIop);
 
-INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00349428);
+INCLUDE_ASM("asm/nonmatchings/text_00334BD0", sceSifRebootIop);
 
 INCLUDE_ASM("asm/nonmatchings/text_00334BD0", func_00349538);
 

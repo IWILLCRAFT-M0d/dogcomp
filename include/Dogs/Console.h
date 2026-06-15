@@ -118,6 +118,9 @@ class Console {
 class ConsoleLayer /* : public Widget_Border, public InputBinding */ {
 	public:
 		float unk100; // cursor blink?
+		// virtual base function (0024C7C8)
+		// virtual base function (0024C868)
+		// virtual ~ConsoleLayer();
 };
 
 

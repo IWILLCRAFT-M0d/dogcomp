@@ -40,7 +40,7 @@ func_002886B0 = 0x002886B0; // note - function noted in `PROBLEMATIC_FUNCS` list
 
 
 
-
+__ti4Mien = 0x00453798;
 
 // Functions
 entry = 0x00100008; // type:func
@@ -152,6 +152,8 @@ _$_13DiggablePatch = 0x00127E48; // type:func
 func_00127F78__13DiggablePatch = 0x00127F78; // type:func
 func_00128120__13DiggablePatchf = 0x00128120; // type:func
 func_00128130__13DiggablePatch = 0x00128130; // type:func
+__tf13DiggablePatch = 0x00129248;
+func_001292A0__13DiggablePatch = 0x001292A0; // type:func
 __14DiggingRaceGodP9ClassInfoP15SimObj_Universeis = 0x001292C8; // type:func
 _$_14DiggingRaceGod = 0x001294C8; // type:func
 func_00129AB0__14DiggingRaceGodf = 0x00129AB0; // type:func
@@ -174,6 +176,7 @@ func_0012EB78__3Dogf = 0x0012EB78; // type:func
 __18DogHitPrimReceiverP3Dog = 0x001317F8; // type:func
 _$_18DogHitPrimReceiver = 0x00131868; // type:func
 func_001324B0__3Dogf = 0x001324B0; // type:func
+func_00134650__3Dog = 0x00134650; // type:func
 func_00134B10__3Dog = 0x00134B10; // type:func
 func_001364F0__3Dog = 0x001364F0; // type:func
 func_00136558__3Dogf = 0x00136558; // type:func
@@ -436,6 +439,7 @@ func_00172A28__5Smell = 0x00172A28; // type:func
 // Snowball
 __8SnowballP9ClassInfoP15SimObj_Universeis = 0x00172A50; // type:func
 _$_8Snowball = 0x00172B48; // type:func
+func_00172BE8__8Snowball = 0x00172BE8; // type:func
 func_00172DF0__8Snowball = 0x00172DF0; // type:func
 __tf8Snowball = 0x00173178;
 
@@ -770,6 +774,9 @@ __tft8Resource1Z17Level_Description = 0x001E5820;
 main = 0x001E5870; // type:func
 __4Mien = 0x001E6428; // type:func
 _$_4Mien = 0x001E6478; // type:func
+func_001E6C68__4MienUi = 0x001E6C68; // type:func
+func_001E6C80__4Mienf = 0x001E6C80; // type:func
+func_001E6CC8__4Mienf = 0x001E6CC8; // type:func
 __tf4Mien = 0x001E6F90;
 __tf23Music_GameObjectService = 0x001E7158;
 __tf19Music_ObjectService = 0x001E7260;
@@ -860,6 +867,8 @@ func_0022D470__13StreamPreload = 0x0022D470; // type:func
 _$_17VibrateRumbleAnim = 0x0022D478; // type:func
 __tf17VibrateRumbleAnim = 0x0022D498;
 __9TitleView = 0x0022D4E8; // type:func
+func_0022DCB8__9TitleViewPi = 0x0022DCB8; // type:func
+func_0022DD08__9TitleViewi = 0x0022DD08; // type:func
 _$_9TitleView = 0x0022E898; // type:func
 __tf9TitleView = 0x0022E928;
 
@@ -979,8 +988,11 @@ __tf10RenderEnum = 0x0025FBC8;
 __tf13SubMenuAction = 0x0025FE50;
 __tf15Expander_Action = 0x0025FEF8;
 __tf32WidgetCompositor_ChildEnumerator = 0x0025FFC8;
+func_00261090__14VirtualDesktop = 0x00261090; // type:func
 __14VirtualDesktop = 0x002624C0; // type:func
 _$_14VirtualDesktop = 0x00262580; // type:func
+func_00262650__14VirtualDesktop = 0x00262650; // type:func
+func_00262738__14VirtualDesktop = 0x00262738; // type:func
 __tf21PointerMessageHandler = 0x00262F30;
 func_00262F70__21PointerMessageHandler = 0x00262F70; // type:func
 func_00262F78__21PointerMessageHandler = 0x00262F78; // type:func
@@ -989,6 +1001,8 @@ func_00262F90__21PointerMessageHandler = 0x00262F90; // type:func
 _$_11PrimaryMenu = 0x00262FD8; // type:func
 __tf11PrimaryMenu = 0x00262FF8;
 __tf14VirtualDesktop = 0x00263048;
+func_00263158__14VirtualDesktop = 0x00263158; // type:func
+func_00263160__14VirtualDesktop = 0x00263160; // type:func
 __tf16FocusStackAction = 0x00263210;
 __tf15HierarchyAction = 0x00263350;
 __tf10HelpAction = 0x00263490;
@@ -1379,7 +1393,9 @@ _$_10ClipVolume = 0x002A4878; // type:func
 __20GE_PS2RenderHardware = 0x002A49A0; // type:func
 _$_20GE_PS2RenderHardware = 0x002A4B90; // type:func
 func_002A4BF8__20GE_PS2RenderHardware = 0x002A4BF8; // type:func
+func_002A4D38__20GE_PS2RenderHardware = 0x002A4D38; // type:func
 __tf17GE_RenderHardware = 0x002A5190;
+_$_17GE_RenderHardware = 0x002A51D0; // type:func
 __tf20GE_PS2RenderHardware = 0x002A5200;
 func_002A5298__20GE_PS2RenderHardware = 0x002A5298; // type:func
 func_002A5300__20GE_PS2RenderHardware = 0x002A5300; // type:func
@@ -1972,6 +1988,9 @@ __17Texture_Resources = 0x0031F550; // type:func
 _$_17Texture_Resources = 0x0031F588; // type:func
 __tf17Texture_Resources = 0x0031FB90;
 __tft8Resource1Z10GE_Texture = 0x0031FC00;
+
+sceSifExitCmd = 0x00343478; // type:func
+sceSifInitRpc = 0x003438C8; // type:func
 // libmpeg
 sceMpegDemuxPss = 0x00320300; // type:func
 sceMpegInit = 0x00320B88; // type:func
@@ -1984,6 +2003,8 @@ sceCdCallback = 0x00328060; // type:func
 sceCdInitEeCb = 0x00328220; // type:func
 sceCdLayerSearchFile = 0x00328638; // type:func
 sceCdSearchFile = 0x00328950; // type:func
+sceCdInit = 0x00328DF8; // type:func
+sceCdMmode = 0x003292C0; // type:func
 sceCdRead = 0x00329390; // type:func
 sceCdGetDiskType = 0x00329570; // type:func
 sceCdGetError = 0x00329608; // type:func
@@ -2114,6 +2135,8 @@ sceOpen = 0x00345220; // type:func
 sceClose = 0x003454A8; // type:func
 sceLseek = 0x00345628; // type:func
 sceRead = 0x00345860; // type:func
+sceSifSyncIop = 0x003493F0; // type:func
+sceSifRebootIop = 0x00349428; // type:func
 Exit = 0x00349BA8; // type:func
 sceSifFreeIopHeap = 0x003481C8; // type:func
 _vt$33AnimatedObject_ComplexHitReceiver = 0x00390228;

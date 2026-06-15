@@ -8,6 +8,7 @@ class Font_Resources /* : public Resource<Font_Header> */ {
 };
 
 // font header?
+// see 0x001704C0 in 1.ovl (basefont)
 // float unk0 - character size?
 // float unk4
 // char[8] unk8

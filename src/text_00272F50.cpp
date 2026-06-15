@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "unk.h"
+#include "file_unk.h"
 #include "resinfo_unk.h"
 #include "resource_unk.h"
 #include "mem.h"
@@ -201,8 +202,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A00__29Resource_LayoutIn
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A60); // Resource_LayoutInclusiveGroup member
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274B00); // overlay loading function?
-// string_ascii(RunPath_Get());
-//
+// string_ascii* runPath = string_ascii(RunPath_Get());
+// (runPath, fileName, strlen(fileName));
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274C10); // used for preload.dat?
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274CB0);

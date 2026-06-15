@@ -16,6 +16,9 @@ class Mien {
 
         Mien();
         virtual ~Mien();
+        void func_001E6C68(unsigned int);
+        void func_001E6CC8(float);
+        void func_001E6C80(float);
 };
 
 #endif /* MIEN_H */

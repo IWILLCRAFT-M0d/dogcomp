@@ -34,6 +34,9 @@ class SoundImplementation {
 class Sound /* : public SoundImplementation */ {
     public:
         virtual ~Sound();
+        // virtual ? func_0026F5F0
+        // virtual ? func_0026F638
+        // virtual ? func_0026f330 // sound::advance?
 };
 
 

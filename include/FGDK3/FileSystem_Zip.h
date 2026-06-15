@@ -17,7 +17,7 @@ int func_00311040(int);
 class FileSystem_Zip : public FileSystem {
     public:
         FileSystem_Zip();
-        // virtual 003119D8
+        // virtual ? 003119D8
 };
 
 class FileAccess_Zip_Stored : public File::Access {
@@ -28,6 +28,11 @@ class FileAccess_Zip_Stored : public File::Access {
         virtual ~FileAccess_Zip_Stored();
         //virtual ? func_00310CC0();
         // virtual ? func_00311008();
+        // virtual ? func_00310D20
+        // virtual ? func_00310F10
+        // virtual ? func_00310F80
+        // virtual ? func_00311008
+        // virtual base function (00302120)
 
 };
 

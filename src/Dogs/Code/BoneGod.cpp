@@ -6,13 +6,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107760); /* BoneGod */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", _$_7BoneGod);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107CE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107CE0); // BoneGod virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D00);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D00); // BoneGod virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D20); // beacon animation?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00107D68); // BoneGod virtual; smellovision bone beacon
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108438);
 
@@ -22,9 +22,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108550);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_001086E8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108748);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108748); // orange scent in smellovision?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_001087C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_001087C8); // orange scent in smellovision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108840);
 // vtables
@@ -54,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", __tf7BoneGod);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108AA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108B20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108B20); // BoneGod virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BoneGod", func_00108B28);
 

@@ -65,7 +65,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00155240);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00155248);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00155550);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00155550); // smellovision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Scent", func_00156B90);
 
