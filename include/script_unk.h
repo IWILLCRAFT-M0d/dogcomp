@@ -91,15 +91,14 @@ class Script {
 
         // virtual ? func_0031EA30
 
-        // virtual ? __pure_virtual
+        // virtual ? = 0
+        // virtual ? = 0
 
-        // virtual ? __pure_virtual
+        // virtual ? = 0
 
-        // virtual ? __pure_virtual
+        // virtual ? = 0
 
-        // virtual ? __pure_virtual
-
-        // virtual ? __pure_virtual
+        // virtual ? = 0
 
         // virtual ? func_0031EA38
         virtual int func_0031EA40();

@@ -78,6 +78,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306920);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306B20); /* file::read(void* fp, int size) ? */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306CD8);
+// GetThreadId();
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00306D30);
 

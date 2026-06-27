@@ -17,6 +17,7 @@ class ShapeParams {
             unk0 = 0;
             unk4 = 1;
         }
+        virtual ~ShapeParams();
 };
 class ShapeParams_Dynamic : public ShapeParams {
     public:
@@ -25,8 +26,6 @@ class ShapeParams_Dynamic : public ShapeParams {
         virtual ~ShapeParams_Dynamic();
         void SetSize(int);
 };
-
-
 
 class MeshData {
 
@@ -54,7 +53,7 @@ class ShapeInstance {
         virtual ~ShapeInstance();
         void Empty();
         void Fill();
-        virtual void SetShape(void*); // SetShape(ShapeData* const)
+        virtual void SetShape(ShapeData*); // SetShape(ShapeData* const)
         int func_00270408(int, int);
         //virtual ? func_00270468
         // virtual ? func_00270498
@@ -66,11 +65,13 @@ class ShapeInstance {
 };
 
 class DrawShape {
-
+    public:
+        // virtual ? func_002DE250
 };
 
 class DrawShape_TexturedQuad : public DrawShape {
-
+    public:
+        // virtual base function (002DE250)
 };
 
 class CustomParameterBlockWriter {

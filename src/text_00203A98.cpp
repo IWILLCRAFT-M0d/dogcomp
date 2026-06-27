@@ -4663,11 +4663,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", __tf31ScriptMessageAndRequestRecei
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227A90);
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227AD0);
-
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227B70);
-
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227C18);
-
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227D00);
-
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227E28);

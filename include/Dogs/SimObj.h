@@ -2,6 +2,7 @@
 #define SIMOBJ_H
 
 #include "unk.h"
+#include "FGDK3/GenericObject.h"
 
 class DebugID_IF {
 
@@ -22,7 +23,7 @@ class SimObj_Universe : public SimObj_ChildHolder {
         //unk3C
         int unk40;
         int unk44;
-        int unk48;
+        int unk48; // bool active?
         //unk4C
         int unk50;
         // unk54
@@ -40,14 +41,10 @@ class SimObj_Universe : public SimObj_ChildHolder {
         //
         //Shape_Resources* unkB0;
         SimObj_Universe();
-        virtual ~SimObj_Universe();
+        ~SimObj_Universe();
+        // virtual ? = 0;
 };
 
-class GenericObject {
-    public:
-        // GenericObject(ClassInfo*, SimObj_Universe*, int, short);
-        // virtual ~GenericObject();
-};
 
 class ClassInfo : public GenericObject {
     public:
@@ -91,14 +88,14 @@ class SimObject : public SimObj_Base/*, public Location_IF*/ {
 
 class SimObj_ObjectWithMomentum : public SimObject/*, public Movement_IF */{
     public:
-        int unk140;
+        float unk140;
         float unk144;
         float unk148;
         float unk14C;
         float unk150;
         float unk154;
         float unk158;
-        int unk15C;
+        float unk15C;
         float unk160; // friction_in_1000ths? (from default.hfc)
         float unk164;
 
@@ -117,7 +114,8 @@ class SimObj_UniverseLandscape : public SimObj_ObjectWithMomentum/*, public Came
 };
 
 class SimObj_HitFilter {
-
+    public:
+        // virtual ? func_00161108
 };
 
 class SimObj_HitReceiver : public SimObj_HitFilter {

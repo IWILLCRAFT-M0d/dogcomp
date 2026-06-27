@@ -70,15 +70,12 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf13StorageDevice);
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEA90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEAE0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEB88);
-
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEC08);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEC40);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FECA8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FED60);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEDD0);

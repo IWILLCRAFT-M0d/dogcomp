@@ -63,9 +63,9 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveGameManager", jtbl_0040BFB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FFF00);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002002A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002002A8); // text
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201AF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201AF8); // text function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201CA8); // format memcard
 
@@ -103,7 +103,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002028B0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002028F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202958);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202958); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002029D0);
 
@@ -130,9 +130,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202D80);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E18);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E78);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E98);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202F30);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202F90);
@@ -154,7 +152,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203150);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002031B0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203248); /* return a0->unkC */
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00203250); /* return a0->unk8 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveGameManager", D_0040C3C8);

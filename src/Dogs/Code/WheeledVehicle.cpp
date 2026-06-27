@@ -52,7 +52,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180530__14Wheele
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180540__14WheeledVehicle);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180548); // if stubbed, vehicles do not move
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00180A68__14WheeledVehicle);
 
@@ -101,11 +101,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", __tf14WheeledVehicle);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181800); /* return a0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181808); /* return (float) a0->unk6B0 */
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181810); /* a0->unk638 = a1 */
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181818); /* a0->unk63C = a1 */
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181820); /* a0->unk640 = 1 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WheeledVehicle", func_00181830); /* return a0->unk6B4 */

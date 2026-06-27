@@ -20,7 +20,12 @@ typedef struct  {
 } s_func_001B0B90;
 
 typedef struct {
-
+    float unk0;
+    float unk4;
+    float unk8;
+    bool unkC;
+    float unk10;
+    float unk14;
 } s_func_001B11E0;
 
 #ifdef __cplusplus

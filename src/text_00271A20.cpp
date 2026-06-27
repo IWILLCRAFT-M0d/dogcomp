@@ -104,40 +104,22 @@ INCLUDE_RODATA("asm/nonmatchings/text_00271A20", _vt$9SavedGame);
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", __tf9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B00); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B08);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B30);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B58);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B88);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BB8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BE0);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C08);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C30);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C58);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C80);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CB8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CF0);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D28);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D60);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D98);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272DD0);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E28);
-
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E88);
 

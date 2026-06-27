@@ -32,7 +32,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA8F8); // ground col
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DAC68); // collision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB190);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB388);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB518); // level function?
@@ -98,9 +97,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCB60); // numbers st
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD08);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD40); // a0->unk34 = f12
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD48); // a0->unk38 = f12
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD50);
 
@@ -143,9 +142,7 @@ void func_001DD518(void) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD520);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD570);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD578);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD580);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD5B0);

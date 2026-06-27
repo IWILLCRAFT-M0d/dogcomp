@@ -2,7 +2,6 @@
 
 // beginning of levelres?
 INCLUDE_ASM("asm/nonmatchings/text_001E5198", func_001E5198);
-
 INCLUDE_ASM("asm/nonmatchings/text_001E5198", func_001E51D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_001E5198", func_001E5208);

@@ -1,6 +1,7 @@
 #include "common.h"
 #include <stdio.h>
 #include <string.h>
+#include <malloc.h>
 #include "unk.h"
 #include "file_unk.h"
 #include "resinfo_unk.h"
@@ -78,9 +79,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273240);
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002732B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273318);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002733D8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273420);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002735C8);
@@ -93,15 +92,16 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273778);
 
 // split???
 // 004534B5 lang variable
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002737A8);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002737A8); // InternalInitialise
+// func_002750E0
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273900);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273900); // InternalFinalise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273968);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273968); // Initialise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273998);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273998); // Finalise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002739B8);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002739B8); // called when switching game language
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273A80);
 
@@ -132,7 +132,30 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273E90); /* Resource_Layout
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_22Resource_LayoutOverlay);
 
+#ifdef NON_MATCHING
+void func_00274020(Resource_LayoutOverlay* arg0, void* arg1, void* arg2, int arg3);
+extern char D_004534B4;
+extern char D_004534B5;
+extern int D_0044F5A0;
+
+void func_00274020(Resource_LayoutOverlay* arg0, void* arg1, void* arg2, int arg3) {
+    char str[256];
+    File* file = func_00275288(D_004534B4, D_004534B5, arg0->unkC, arg3);
+
+    if (D_0044F5A0 > 0) {
+        //if ()
+            struct mallinfo mi;
+
+            mi = mallinfo();
+    }
+    do {
+        scePrintf(str);
+    } while (arg0 != 0x0);
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274020); // "Ovl % 20s %12s % 10d\n"
+#endif
 
 extern s_D_0035FC48* D_0035FC48;
 //extern char* D_00487600;
@@ -167,9 +190,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274400__22Resource_LayoutOv
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002744B0); // Resource_LayoutOverlay  virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002744F8); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002744F8); // Resource_LayoutOverlay virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274540); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274540); // Resource_LayoutOverlay virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274588);
 
@@ -201,9 +224,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A00__29Resource_LayoutIn
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A60); // Resource_LayoutInclusiveGroup member
 
+#ifdef NON_MATCHING
+File* func_00274B00(char* name) {
+    string_ascii runPath = string_ascii(RunPath_Get());
+    // (runPath, fileName, strlen(name));
+
+}
+
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274B00); // overlay loading function?
-// string_ascii* runPath = string_ascii(RunPath_Get());
-// (runPath, fileName, strlen(fileName));
+#endif
+
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274C10); // used for preload.dat?
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274CB0);
@@ -211,10 +242,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274CB0);
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274D40);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274DD0);
+// new Resource_LayoutOverlay(/**/)
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274EB8);
+// new Resource_LayoutInclusiveGroup(/**/)
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274F78);
+// new Resource_LayoutExclusiveGroup(/**/)
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275038);
 
@@ -226,7 +260,7 @@ void func_002750E0(void) {
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002750E0); // preload.dat referenced
 #endif
 
-void* func_00275288(int arg0, int arg1, int ovlType, int arg3) {
+File* func_00275288(int arg0, int lang, int ovlType, int arg3) {
     char ovlName[256];
 
     switch (arg3) {
@@ -237,10 +271,10 @@ void* func_00275288(int arg0, int arg1, int ovlType, int arg3) {
         sprintf(ovlName, "overlay\\%dd%d.ovl", ovlType, arg0);
         break;
     case 2:
-        sprintf(ovlName, "overlay\\%dl%d.ovl", ovlType, arg1);
+        sprintf(ovlName, "overlay\\%dl%d.ovl", ovlType, lang);
         break;
     case 3:
-        sprintf(ovlName, "overlay\\%dd%dl%d.ovl", ovlType, arg0, arg1);
+        sprintf(ovlName, "overlay\\%dd%dl%d.ovl", ovlType, arg0, lang);
         break;
     }
     return func_00274B00(ovlName);
@@ -249,10 +283,10 @@ void* func_00275288(int arg0, int arg1, int ovlType, int arg3) {
 
 
 #ifdef NON_MATCHING
-Resource_Generic::Resource_Generic(){
+Resource_Generic::Resource_Generic() {
     int i;
 
-    this->unk0 = NULL;
+    this->unk0 = NULL; // content?
     this->m_resourceCount = 0;
     this->m_resourceType = 0;
 
@@ -286,7 +320,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275600);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002756E0);
 
+
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275718);
+// char* type = this->ResName();
 //scePrintf("Resource %s:%d loaded twice\n",type,id)
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002757B0);
@@ -298,9 +334,7 @@ void func_002757E8(void) { // called by resource internalinitialise functions
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002757F0); // called by resource internalfinalise functions
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002758F8); /* return D_00451B54 != 0 */
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275908);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275990);
 
 void func_00275AF8(void) {
@@ -326,6 +360,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275BF0); /* return a0->unk4
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf20Resource_LayoutGroup);
 
 INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$16Resource_Generic);
+
 
 INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$29Resource_LayoutInclusiveGroup);
 
@@ -353,33 +388,30 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf29Resource_LayoutInclusiveGrou
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf16Resource_Generic);
 
-void func_00275E88(void) {
+
+void Resource_Generic::func_00275E88() {
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275E90);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275EE8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F20);
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F88); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F90); /* return D_00451B50 */
 
-int func_00275F98(void) { // buncha resources member (Resource_Generic?)
+int Resource_Generic::func_00275F98() {
     return 0;
 }
 
-int func_00275FA0(void) { // buncha resources member (Resource_Generic?)
+int Resource_Generic::func_00275FA0() {
     return 1;
 }
 
-void func_00275FA8(void) { // buncha resources member (Resource_Generic?)
+void Resource_Generic::func_00275FA8() {
     return;
 }
 
-void func_00275FB0(void) { // buncha resources member (Resource_Generic?)
+void Resource_Generic::func_00275FB0() {
     return;
 }
 

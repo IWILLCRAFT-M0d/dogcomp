@@ -14,6 +14,7 @@ class Music_Channel {
         void* unk4;
         Music_Channel();
         virtual ~Music_Channel();
+        // virtual ? func_002887C0
 };
 
 class Music_Performance {
@@ -33,6 +34,14 @@ class Music_Performance {
         Music_MenuRegisterable* unk48;
         Music_Performance();
         virtual ~Music_Performance();
+        // virtual ? = 0
+        // virtual ? func_00281BA8
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
+
 };
 
 class Music_PS2Performance : public Music_Performance/*, public Thread*/ {
@@ -42,12 +51,23 @@ class Music_PS2Performance : public Music_Performance/*, public Thread*/ {
         /* 0x128 */ bool m_paused;
         Music_PS2Performance();
         virtual ~Music_PS2Performance();
+        // virtual ? FUN_00284af0
+
+        // virtual ? FUN_002856f0
+
+        // virtual ? FUN_00284b60
+
+        // virtual ?  FUN_00284c28
+        // virtual ? FUN_00284ce0
+
         virtual void PauseNow();
         virtual void ResumeNow();
 };
 
 class Music_PS2Track : public Music_Track {
-
+    public:
+        virtual ~Music_PS2Track();
+        // virtual ? func_002826B0
 };
 
 
@@ -58,6 +78,7 @@ class Music_Piece {
         int unk8;
         Music_Piece();
         virtual ~Music_Piece();
+        // virtual ? = 0
 };
 
 class Music_PS2Piece : public Music_Piece {

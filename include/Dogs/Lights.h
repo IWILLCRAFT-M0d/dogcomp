@@ -13,6 +13,7 @@ class Light : public SimObject {
 class LightManager : public LiveEditable {
     public:
         LightManager();
+        // virtual ? func_001415F0
 };
 
 #endif

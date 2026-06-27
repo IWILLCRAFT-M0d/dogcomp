@@ -67,4 +67,19 @@ class Tree34_Unit {
         void Zero();
 };
 
+class Tree34_NodeAllocatorBasic {
+    public:
+        virtual ~Tree34_NodeAllocatorBasic();
+        // virtual ? = 0
+        // virtual ? = 0
+
+};
+
+
+class Tree34_NodeAllocator : public Tree34_NodeAllocatorBasic {
+    public:
+        // virtual ? func_00269598
+        // virtual ? func_00269600
+};
+
 #endif /* DATA_UNK_H */

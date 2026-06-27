@@ -54,12 +54,12 @@ class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, publ
         virtual void func_001884A8();
         virtual void func_001884B8();
         //
-        void func_00182AF0(int);
+        void func_00182AF0(int); // virtual
 
         //?
         virtual void func_001861B8();
         // WorldObject::ShapeInstance vtable
-        virtual void func_00182FF8(ShapeData* shape); // override SetShape?
+        virtual void SetShape(ShapeData* shape);
         // ShapeInstance base
         // virtual ? func_00184E68
         // virtual ? func_00185130

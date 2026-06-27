@@ -17,7 +17,6 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC598); // debug actor nam
 
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5D0); // text resources
-
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC5E0); // texture resources
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC648); // shape resources
@@ -13119,12 +13118,10 @@ int func_001FD558(char* arg0, char* arg1) {
     return strcmp(arg0, arg1);
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD578);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD578); // resource function
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD960);
-
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD9D8);
-
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FDA50);
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FDA60);

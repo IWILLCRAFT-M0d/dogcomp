@@ -18,7 +18,6 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0348);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E03A0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E03E0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0450);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0488);

@@ -43,7 +43,7 @@ class FileAccess_Zip_Deflated : public File::Access {
         z_stream unk40;
         FileAccess_Zip_Deflated(const void*, FileSystemDisc_Zip*);
         virtual ~FileAccess_Zip_Deflated();
-
+        // virtual ? func_003114C0
         void func_00311430();
         // virtual ? func_00311918
         // virtual ? func_003119A0();

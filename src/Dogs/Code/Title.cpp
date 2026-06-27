@@ -44,17 +44,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E2B0); // TitleView mem
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E300);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E340);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E3D8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E438);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E458);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E478);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E510);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E570);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Title", func_0022E590);

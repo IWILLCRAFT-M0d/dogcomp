@@ -83,9 +83,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E8); // RCT3 DebugEnvir
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D43A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4448);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4500);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4528);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4550);
@@ -110,7 +108,7 @@ void func_002D4780() { // RCT3 DebugEnvironment::ResetFile(const char*)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4788);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4930);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4930); // DebugWindow virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D49C8); // DebugEnvironment::CreateStream?
 
@@ -138,7 +136,7 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442E50); /* "top window" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442E60); /* "Game initialisation complete" */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4C00);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4C00); // DebugWindow virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4D78);
 
@@ -147,9 +145,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4DE8);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4E48);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4EC0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F28);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F90);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4FE8);
@@ -180,7 +176,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5588);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D55F0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5690);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5690); // Debug_StructContainer virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D56E0); // Debug_StructContainer member
 
@@ -194,11 +190,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5788); /* rct3 DebugEnvir
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D57C0); /* rct3 DebugEnvironment::Terminate */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5800);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5848);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5888);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D58D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5910);
@@ -306,18 +299,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf15MessageStreamUI);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5E90);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5ED0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F20);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F70);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5FA0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6010);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6020);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6020); // Debug_DataValueContainer virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf24Debug_DataValueContainer);
 

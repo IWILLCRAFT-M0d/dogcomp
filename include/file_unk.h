@@ -83,7 +83,7 @@ class FileSystemDisc_MemCard : public FileSystemDisc {
 class FileSystemDisc_Zip /* : public FileSystemDisc */ {
     public:
         void* unk20;
-        // virtual ? func_00312BC8
+        virtual void* func_00312BC8(/**/);
         virtual void* func_00312DA8(/**/);
         // virtual ? func_003143D8
         // virtual ? func_00314410
@@ -164,6 +164,11 @@ namespace FileFind {
 class FileFindAccess_Zip : public FileFind::Access {
     public:
         FileFindAccess_Zip(/**/);
+        virtual ~FileFindAccess_Zip();
+        // virtual ? func_003130C8
+        // virtual ? func_00313120
+        // virtual ? func_003134C8
+        // virtual ? func_00313528
 };
 
 class NullAccess : public File::Access {

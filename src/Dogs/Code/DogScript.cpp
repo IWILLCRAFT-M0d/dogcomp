@@ -20,7 +20,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD568); // DogScript
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD590); // DogScript member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD5E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD5E0); // can talk?
 
 int DogScript::func_001AD5F8() {
 	return -1;
@@ -44,7 +44,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AD950);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001ADA20);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001ADA80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001ADA80); // DogScript virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001ADAF8);
 
@@ -120,11 +120,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AED58);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AEDA0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AEE40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AEE40); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AEE80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AEE80); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF020);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF020); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DogScript", func_001AF180);
 

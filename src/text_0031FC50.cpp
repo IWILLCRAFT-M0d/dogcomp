@@ -2,6 +2,7 @@
 
 #include <ee/eekernel.h>
 #include "FGDK3/Playstation2/Thread.h"
+
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FC50);
 
 INCLUDE_ASM("asm/nonmatchings/text_0031FC50", func_0031FCF0);

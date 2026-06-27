@@ -41,6 +41,9 @@ class TugOfWarGod : public WorldObject {
         TugOfWarGod(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~TugOfWarGod();
         virtual ClassInfo* func_0017D1F8();
+
+
+
         virtual void func_0017C238();
         virtual void func_0017C248();
         virtual void func_0017C218();

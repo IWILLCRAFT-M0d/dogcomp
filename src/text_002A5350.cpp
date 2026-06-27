@@ -132,7 +132,6 @@ void GE_PrimIndices::func_002A62D0() {
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62E0); // GE_PrimIndices method
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6350);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A64C8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf15GE_PrimVertices);
@@ -144,11 +143,8 @@ int func_002A6598() {
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A8); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B8);
 
 int GE_PrimVertices::func_002A65C0() {
@@ -169,23 +165,16 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65D8__15GE_PrimVertices);
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf14GE_PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6650);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6668);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6670); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6678);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6680); /* return a0->unk8 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf18GE_PS2PrimVertices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A66F8); /* return a0->unk34 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6700);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6708); /* return a0->unk14 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6710);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6728__18GE_PS2PrimVertices);
@@ -195,7 +184,6 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6748__18GE_PS2PrimVertice
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf17GE_PS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C0); /* return a0->unk18 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A67C8); /* return a0->unk10 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_24GE_LoadedPS2PrimVertices);
@@ -227,8 +215,10 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", _$_23GE_LoadedPS2PrimIndices);
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf23GE_LoadedPS2PrimIndices);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6940); // create GE_PS2PrimCache
+// new GE_PS2PrimCache
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A69F8);  // create GE_PS2PrimCache // MeshData stored?
+// new GE_PS2PrimCache
 
 #ifdef NON_MATCHING
 GE_PS2PrimCache::GE_PS2PrimCache(/**/) /* : GE_PrimCache */ {
@@ -321,11 +311,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC228);
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf15GE_PS2PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC460);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC470);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC488); /* return a0->unk70 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC490);
 
 int GE_PS2PrimCache::func_002AC4A8() {
@@ -333,43 +320,24 @@ int GE_PS2PrimCache::func_002AC4A8() {
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC4B0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC4C0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC4D0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC4E0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC500);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC520);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC540);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC548);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC558); /* return (short) a0->unk62 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC560); /* return a0->unk40 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC568); /* return a0->unk1C */
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC570);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC618);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC660);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AC910);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ACBE0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ACF58);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AD278);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AD650);
-
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002AD928);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002ADA08);

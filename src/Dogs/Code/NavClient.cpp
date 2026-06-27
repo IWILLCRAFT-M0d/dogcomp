@@ -11,11 +11,8 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E7448);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E7528);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E7570);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E75F8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E7680);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E76C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/NavClient", func_001E7780);

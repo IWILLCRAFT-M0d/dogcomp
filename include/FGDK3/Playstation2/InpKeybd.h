@@ -7,7 +7,11 @@
 class InputKeyboard_Device : public InputDevice_Device {
     public:
         InputKeyboard_Device();
+        //
+        //
         virtual ~InputKeyboard_Device();
+        //
+        //
 };
 
 extern void * const InputKeyboard_StdInit_UsedModules[];

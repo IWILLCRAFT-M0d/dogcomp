@@ -158,44 +158,29 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A30); // creates pawc
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239A50);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239AD0); // ui elements rendering
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239AD0); // ui elements rendering (hint paw, smellovision, hint box)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239BC0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239C48);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239C90);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239CD8); // Countdown function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239CF8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239D18);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239DB0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239E10);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239E30);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239E50);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239EE8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239F48);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_00239F68);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A000);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A060);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A0F8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A158);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A178);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Visual", func_0023A210);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Visual", D_004314B0);

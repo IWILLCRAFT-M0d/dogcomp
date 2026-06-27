@@ -13,7 +13,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003097B8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_003098D8); // constructor for D_00484050
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309908);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309908); // destructor for D_00484050
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309988); // get id? (, char*)
 
@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309CD8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309E68);
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309F30);
+INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309F30); // set music for level
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_00309FC0);
 

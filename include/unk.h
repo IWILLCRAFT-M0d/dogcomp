@@ -51,6 +51,18 @@ typedef struct {
   /* 0x03C */ bool  unk3C;       // DOF
 } s_func_0023E698;
 
+
+
+class AnimationVariable {
+    public:
+        float unk0;
+        float unk4;
+        float unk8;
+        float unkC;
+        void* unk10;
+        AnimationVariable(float);
+};
+
 class StdAllocator {
     public:
         /*virtual*/ void* Alloc(size_t nbytes);
@@ -104,16 +116,31 @@ class Widget_Desktop : public Widget_Border {
 
 
 class InputBinding {
-
+    public:
+        // virtual ? = 0
+        // virtual ? = 0
 };
 
 
 class Pointer : public InputBinding {
+    public:
+        // virtual ? func_00278608
+        // virtual ? func_00278668
+        virtual ~Pointer();
+        // virtual ? = 0
+        // virtual ? func_002788D8
+        virtual void func_002786A0(float);
 
 };
 
 class JoystickPointer : public Pointer {
-
+    public:
+        // virtual base function (00278608)
+        // virtual base function (00278668)
+        virtual ~JoystickPointer();
+        // virtual ? func_00279238
+        // virtual base function (002788D8)
+        // virtual ? func_00279408
 };
 
 class GameLayer : public Widget_WithChildren , public InputBinding  {
@@ -165,6 +192,7 @@ class DebugEnvironment {
         int unk34;
         DebugEnvironment();
         virtual ~DebugEnvironment();
+        // virtual ? func_002d49c8
         // virtual ? func_002D3950
 
         virtual void func_002D5D58();
@@ -188,7 +216,7 @@ class TextRenderer {
 
 class YDRRenderer : public TextRenderer {
     public:
-        // virtual ? func_00168CB8
+        virtual void func_00168CB8(char*);
 };
 
 class DSLRenderer : public TextRenderer {
@@ -283,6 +311,7 @@ class Music_MenuRegisterable : public MenuRegisterable {
     public:
         Music_MenuRegisterable();
         virtual ~Music_MenuRegisterable();
+        // virtual ? func_0027F100
 };
 
 class EditableManager : public MenuRegisterable {
@@ -298,11 +327,13 @@ class Music_Track {
         int unk0;
 
         int unk20;
+        virtual ~Music_Track();
+        // virtual ? func_00280088
 };
 
 
 class DebugLayer /* : public Widget_Pane */ {
-
+    public:
 };
 
 
@@ -377,6 +408,7 @@ class InputCD {
 
 class InputCD_PS2 : public InputCD {
     public:
+        // virtual ? func_002fbe78
         virtual void func_002FBD70();
 };
 
@@ -411,7 +443,8 @@ class VehicleNavDirectionalBackwardsAnimation : public VehicleNavDirectionalAnim
 };
 
 class ObjectNewMessage /* : public Message<ObjectActionRx> */ {
-
+    public:
+        // virtual ? func_001E50B8
 };
 
 class c_func_00276AC0 {
@@ -505,6 +538,7 @@ void func_002C6480(void);
 
 
 void func_002C8360(void);
+void func_002C90B0(void);
 void func_002C9408(void);
 void func_002C9410(void);
 int func_002C9F08(void);
@@ -588,20 +622,12 @@ void func_002757E8(void);
 void func_00275AF8(void);
 int func_00275B00(void);
 void func_00275B08(void);
-void func_00275E88(void);
-int func_00275F98(void);
-int func_00275FA0(void);
-void func_00275FA8(void);
-void func_00275FB0(void);
 void func_0027C4E8(void);
-
-
-
 void func_00262F88(void);
 int func_00263640(void);
 
-void* func_00274B00(char* name);
-void* func_00275288(int arg0, int arg1, int ovlType, int arg3);
+File* func_00274B00(char* name);
+File* func_00275288(int arg0, int lang, int ovlType, int arg3);
 void func_002757F0(void);
 int func_00290D08(void);
 void func_00291770(void);
@@ -614,8 +640,7 @@ void func_00299448(void);
 int func_0029A600(int, int);
 
 void func_0029A738(void);
-void func_0029AA28(void);
-void func_0029AA30(void);
+
 int func_002A1A58(void);
 int func_002A1A60(void);
 void func_002A1A68(void);
@@ -623,11 +648,8 @@ void func_002A1A70(void);
 float func_002A1B70(void);
 
 
-void func_002A1B90(void);
-void func_002A1B98(void);
-void func_002A1BA8(void);
-void func_002A1BB8(void);
-void func_002A1BC8(void);
+
+
 
 int func_002A6598(void);
 

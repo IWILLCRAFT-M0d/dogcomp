@@ -112,7 +112,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_00297578", _vt$16GE_TextureTarget);
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf16GE_TextureTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A700); /* return a0->unk22C */
-
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A708);
 
 void func_0029A738() {
@@ -137,33 +136,34 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __12GE_PS2TargetP12GE_PS2Device); 
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", _$_12GE_PS2Target);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A8E8__12GE_PS2Target); // GetWidth? (returns screen width value?)
+INCLUDE_ASM("asm/nonmatchings/text_00297578", GetWidth__12GE_PS2Target); // GetWidth? (returns screen width value?)
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A928__12GE_PS2Target); // GE_PS2Target virtual; // GetHeight? (returns screen height value?)
+INCLUDE_ASM("asm/nonmatchings/text_00297578", GetHeight__12GE_PS2Target); // GE_PS2Target virtual; // GetHeight? (returns screen height value?)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A968__12GE_PS2Target);
 
-void func_0029AA28() { // GE_PS2Target::func_0029AA28()
+void GE_PS2Target::func_0029AA28() {
     return;
 }
 
-void func_0029AA30() { // GE_PS2Target::func_0029AA30()
+void GE_PS2Target::func_0029AA30() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA38__12GE_PS2Target);
-/*
+#ifdef NON_MATCHING
 void GE_PS2Target::func_0029AA38() {
     this->unkC = 1;
 }
-*/
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA48__12GE_PS2Target);
-/*
-GE_PS2Target::func_0029AA48() {
+void GE_PS2Target::func_0029AA48() {
     this->unkC = 0;
 }
-*/
+
+#else
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA38__12GE_PS2Target);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA48__12GE_PS2Target);
+#endif
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029AA58); // GE_PS2Target member
 
@@ -221,6 +221,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0D90); // GE_PS2DisplayTa
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0DD0); // GE_PS2DisplayTarget member
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0E10); // GE_PS2DisplayTarget member
+// d_00452110 shadow rendering?
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1218__19GE_PS2DisplayTarget);
 
@@ -269,7 +270,6 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A78);
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf12GE_PS2Target);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B58);
-
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68); /* return a0->unk14 */
 
 float func_002A1B70() { // GE_PS2Target::SquarePixelYScale?
@@ -284,26 +284,26 @@ int GE_PS2Target::func_002A1B88() {
     return 0;
 }
 
-void func_002A1B90() { // GE_PS2Target::func_002A1B90
+void GE_PS2Target::func_002A1B90() {
     return;
 }
 
-void func_002A1B98() { // GE_PS2Target::func_002A1B98
+void GE_PS2Target::func_002A1B98() {
     PS2_BREAK();
     return;
 }
 
-void func_002A1BA8() { // GE_PS2Target::func_002A1BA8
+void GE_PS2Target::func_002A1BA8() {
     PS2_BREAK();
     return;
 }
 
-void func_002A1BB8() { // GE_PS2Target::func_002A1BB8
+void GE_PS2Target::func_002A1BB8() {
     PS2_BREAK();
     return;
 }
 
-void func_002A1BC8() { // GE_PS2Target::func_002A1BB8
+void GE_PS2Target::func_002A1BC8() {
     PS2_BREAK();
     return;
 }
@@ -323,14 +323,22 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf19GE_PS2DisplayTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1C70__19GE_PS2DisplayTarget); // resolution?
 
+#ifdef NON_MATCHING
+float GE_PS2DisplayTarget::func_002A1CB8() {
+
+    if (GetHeight() != 448) {
+        return 0.85714287f;
+    }
+        return 0.75f;
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1CB8__19GE_PS2DisplayTarget); // widescreen function?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D00);
-
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D18); /* return D_004520EC */
-
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D28); /* return D_004520E8 */
-
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D30);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D48);

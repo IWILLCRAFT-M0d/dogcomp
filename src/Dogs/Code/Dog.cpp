@@ -119,7 +119,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", __18DogHitPrimReceiverP3Dog);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", _$_18DogHitPrimReceiver);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001318C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_001318C8); // collision pushback
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Dog", func_00131970);
 

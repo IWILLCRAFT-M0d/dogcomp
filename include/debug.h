@@ -7,7 +7,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+// FIXME: These functions might need to be C++ instead of C
 void func_002D5958(const char*, va_list);
 void InterfaceError(char* file, int line);
 void DDE_FatalError(const char* message, ...);

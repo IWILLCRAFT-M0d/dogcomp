@@ -110,11 +110,11 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003CFD10);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182380); // "Trying to activate a world object that already has a script. This usually means that the world obj has already been activated. ActorID = %d"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001828D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001828D8); // if stubbed, food objects can be held and other oddities
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182A70);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AD0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti); // Shape to id called
 
@@ -128,13 +128,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 //}
 
 #ifdef NON_MATCHING
-void WorldObject::func_00182FF8(ShapeData* shape) {
+void WorldObject::SetShape(ShapeData* shape) {
     //
     ShapeInstance::SetShape(shape);
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182FF8__11WorldObjectP9ShapeData);  // set shape for worldobject?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", SetShape__11WorldObjectP9ShapeData);  // set shape for worldobject?
 // "SetShape called but there are still animations running!"
 #endif
 
@@ -180,19 +180,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185518);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185550); // WorldObject updating
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185680);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185680); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001857E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001857E8); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185878);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185878); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185CE0);
 
 // ANIMPK 0x0044DC8C
 // PKACTOR 0x0044DC90
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185DD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185DD8); // virtual; if stubbed actor animations do not play
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8__11WorldObject);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8__11WorldObject); // virtual; animation function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186398);
 
@@ -216,9 +216,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186808); // animation 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186918);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186998);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186998); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186A90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186A90); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186B90);
 
@@ -238,7 +238,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872C0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001872F8); /* return (short) this->unkDC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187300);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187300); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187338);
 
@@ -263,9 +263,9 @@ void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t count) {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518); // "Trying to drop an object from an invalid holding point"
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518); // "Trying to drop an object from an invalid holding point" // virtual
 
 int func_00187628() { // worldobject member?
     return 1;
@@ -300,7 +300,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D0308);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D0320);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D1540);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$11WorldObject$13ShapeInstance);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D1580);
 
@@ -319,7 +319,6 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880D0); /* __tf21SimO
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf11WorldObject);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001881B8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188238);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188270);
@@ -346,11 +345,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883F0);
 
-int func_00188400(void) {
+int func_00188400(void) { // virtual
     return 0;
 }
 
-void func_00188408(void) {
+void func_00188408(void) { // virtual
     return;
 }
 

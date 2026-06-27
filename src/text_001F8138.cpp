@@ -1,9 +1,9 @@
 #include "common.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8138); // enter bookmetaphor?
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8138); // enter bookmetaphor? // called when start button is pressed during gameplay
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8158);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8158); // called when select button is pressed during gameplay
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F81F8);
 
@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F83A8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", __12PlayingLayer);
 
-void func_001F8628(void) { // virtual
+void func_001F8628(void) { // PlayingLayer virtual
     return;
 }
 

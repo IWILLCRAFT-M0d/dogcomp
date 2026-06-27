@@ -45,6 +45,8 @@
 #include "Dogs/WaterSplash.h"
 #include "Dogs/Fish.h"
 
+// Objects_CreateOne
+
 #ifdef NON_MATCHING
 
 Status Objects_InternalInitialise() {
@@ -238,33 +240,19 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBD10);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBE10);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF20);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF30);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBFC8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC028);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC048);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC068);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC100);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC160);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC180);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC218);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC278);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC310);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC370);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC390);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC428);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC488);

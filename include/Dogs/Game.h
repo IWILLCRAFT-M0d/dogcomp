@@ -1,7 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "unk.h"
+#include "ge_unk.h"
 #include "shape_unk.h"
 #include "script_unk.h"
 
@@ -24,6 +24,7 @@ typedef struct {
 
 
 typedef struct {
+    char pad0[0x8];
     /* 0x8 */ int m_screenPositionX;
     /* 0xC */ int m_screenPositionY;
     /* 0x10 */ bool m_rumble;
@@ -45,12 +46,14 @@ Status Game_Initialise();
 void Game_Finalise();
 
 class WorldObject_Universe : public SimObj_Universe {
-
+    public:
+        // virtual ? = 0
 };
 
 class Game_Document : public GameShell, public WorldObject_Universe, public DogScript {
     public:
         // 0xE4 GE_Device*
+        GE_Device* unkE4;
         int unk144;
         int unk148;
         int unk14C;
@@ -72,7 +75,7 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         bool unk1EC; // musicEnabled?
         int unk1F0;
         int unk1F4;
-        int unk1F8;
+        float unk1F8; // music var?
         int unk1FC; // script thread profiling actorId
         int unk200;
         int unk204;
@@ -132,18 +135,25 @@ class Game_Document : public GameShell, public WorldObject_Universe, public DogS
         int unk59C;
         Game_Document(float fps, float gameSpeed);
         virtual ~Game_Document();
-        // virtual ? 001cb1d8 // RCT3 Game_Document::Render?
-        // virtual ? 001d2980
-        // virtual bool 002D30A8 (same as GameShell)
-        // virtual ? 001d4578
-         virtual void func_001D45B8();
+        // virtual ? 001CB1D8 // RCT3 Game_Document::Render?
+        // virtual ? 001D2980
+        // virtual void 002D30A8 (same as GameShell)
+        // virtual ? 001D4578
+        virtual void func_001D45B8();
+        void EndScene();
 
 };
 
 extern Game_Document* TheGame; // should this be a static in Game_Document?
 
 class SimObj_Filter {
+    public:
+        // virtual ?() = 0
+};
 
+class Game_ClosestVisibleInFrontOf : public SimObj_Filter {
+    public:
+        // virtual ? func_001D72B0
 };
 
 class SimObj_FilterFlagsAndEq : public SimObj_Filter {
@@ -163,6 +173,9 @@ extern "C" {
 #endif
 void func_0019A860(s_func_001C6DC8*, int, int); // TODO:Move to unk.h or BookMetaphor header
 void func_00196470(s_func_001C6DC8*, int); // TODO:Move to unk.h or BookMetaphor header
+void func_001B2458(s_func_001B1FA8*, bool);
+void func_001B2460(s_func_001B1FA8*, float);
+void func_001B2468(s_func_001B1FA8*, float);
 s_func_001C6DC8* func_001C6DC8(Game_Document*);
 void func_001C8120(void);
 bool func_001C8128();

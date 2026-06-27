@@ -28,11 +28,12 @@ class AnimationTimeBaseFinder {
     public:
         ClassInfo* unk0;
         AnimationTimeBaseFinder(ClassInfo*);
+        // virtual ? = 0; // CreateOne?
 };
 
 class OnceThroughTimeBaseFinder /*: public AnimationTimeBaseFinder */{
     public:
-        //func_002f0cf0
+        virtual OnceThroughTimeBase* CreateOne(Animation*);
 };
 
 

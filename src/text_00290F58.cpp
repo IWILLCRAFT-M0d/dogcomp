@@ -40,7 +40,6 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291780); // RCT3 MeshData::
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291CC0); // RCT3 MeshData::EmptyContents?
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291DC8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292168);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292278);
@@ -48,17 +47,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292278);
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002922A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292338);
-
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292528);
-
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292940);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292C48);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292CF8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292D70);
-
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292E68);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292E78);
@@ -117,9 +112,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002957E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295838);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295918);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295918); // rendering
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295C50);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295C50); // rendering
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295D80);
 
@@ -129,13 +124,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295E60);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295ED0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295F68);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295F68); // if stubbed, smellovision ui and hint paw do not render
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296008);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178); // if stubbed, actors cannot rotate
 
 extern bool D_00453538; // CloseRequest
 #ifdef NON_MATCHING

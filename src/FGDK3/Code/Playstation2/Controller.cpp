@@ -97,8 +97,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", Controller_Fi
 #endif
 
 
-// Controller_Device::Controller_Device
+#ifdef NON_MATCHING
+Controller_Device::Controller_Device(/**/) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCDE8);
+#endif
 
 // __static_initialization_and_destruction_0
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/Controller", func_002FCE50);

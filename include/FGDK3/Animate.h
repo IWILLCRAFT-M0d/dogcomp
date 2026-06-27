@@ -39,8 +39,7 @@ class WeightSettingAnimation : public AnimationComponent {
 class Animation {
     public:
         virtual ~Animation();
-
-        //func_002F4C60
+        // virtual ? func_002F4C60
         virtual int func_002F5BF8();
         virtual void func_002F7208();
 };
@@ -54,6 +53,8 @@ class AnimationTimeBase : public GenericObject {
         AnimationTimeBase(ClassInfo*, Animation*);
         virtual ~AnimationTimeBase();
         virtual ClassInfo* func_002F6E90();
+        // virtual ? = 0;
+        // virtual ? = 0;
         virtual float func_002F4368();
         virtual void func_002F4378();
 };

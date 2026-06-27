@@ -7,7 +7,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330930);
 
 INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330A08); /* cosf */
 
-INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330AF0);
+INCLUDE_ASM("asm/nonmatchings/text_00330930", floorf);
 
 INCLUDE_ASM("asm/nonmatchings/text_00330930", func_00330BD8); /* sinf */
 

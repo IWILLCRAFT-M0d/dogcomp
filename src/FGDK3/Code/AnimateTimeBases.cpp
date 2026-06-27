@@ -88,7 +88,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0C90);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0CB0); /* OnceThroughTimeBaseFinder ? */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0CF0); // OnceThroughTimeBaseFinder member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", CreateOne__25OnceThroughTimeBaseFinderP9Animation); // OnceThroughTimeBaseFinder member
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimateTimeBases", func_002F0D28);
 

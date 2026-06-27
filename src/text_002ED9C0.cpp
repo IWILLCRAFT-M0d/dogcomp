@@ -1,9 +1,12 @@
 #include "common.h"
-// animvar?
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9C0);
-// this->unk0 = (float) arg1;
-// this->unkC = 1.0f;
-// this->unk10 = 0;
+#include "unk.h"
+
+AnimationVariable::AnimationVariable(float fparg0) {
+    this->unk0 = fparg0;
+    this->unkC = 1.0f;
+    this->unk10 = 0;
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9E0);
 

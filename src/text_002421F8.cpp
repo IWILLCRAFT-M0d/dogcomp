@@ -69,7 +69,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243DA0); // termAll? (from 
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243E38);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243E60);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243E60); // ErrMessage?
+// (char* message)
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00243E68);
 
@@ -81,7 +82,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00244088);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002441B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002441D0);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002441D0); // return;
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_002441D8);
 
@@ -185,7 +186,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00245D98);
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00245EC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00245F18);
+INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00245F18); // return;
 
 INCLUDE_ASM("asm/nonmatchings/text_002421F8", func_00245F20);
 

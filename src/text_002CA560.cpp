@@ -64,9 +64,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CA960); // RCT3 GE_GetDevi
 
 #ifdef NON_MATCHING
 
-int D_00452894;
-
 GE_RenderHardware::GE_RenderHardware() {
+    static int D_00452894;
     this->m_unk0.f = 1.0f;
     this->m_unk4.i = 0;
     if (D_00452894 != 0) {
@@ -96,7 +95,7 @@ GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, 
     this->m_unk14 = 0;
 }
 
-//INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CABF0__12GE_PrimCache);
+
 void GE_PrimCache::func_002CABF0() { // WGRABBIT ReleaseSelf?
     this->m_unk1 -= 1;
 
@@ -109,6 +108,8 @@ void GE_PrimCache::func_002CABF0() { // WGRABBIT ReleaseSelf?
 GE_Device::GE_Device() {
     this->unk50 = 0.0f;
     this->unk54 = 0.0f;
+    this->unk58 = 0.0f;
+    this->unk5C = 0.0f;
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __9GE_Device);
@@ -123,6 +124,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC1C0);
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC250); // ? func_002CC250(GE_Device*,); RCT3 GE_Device::DrawEnableColour?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC2E0); // rendering function; if stubbed fonts don't render; font color?
+// RCT3 GE_Device::DrawColourSet?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC338);
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC380);
@@ -132,13 +134,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC420);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC478);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC4A0); // (GE_Device*, float, float);
-// this->unk54 = fparg0
-// this->unk50 = fparg1
+// RCT3 GE_Device::DrawMove?
+void GE_Device::func_002CC4A0(float fparg0, float fparg1) {
+    this->unk50 = fparg0;
+    this->unk54 = fparg1;
+}
+
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CC4B0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CD060); // ? func_002CD060(GE_Device*,)
+// RCT3 GE_Device::FlushRect?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CD0C0);
 
@@ -164,15 +170,25 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CE8F0); // "You've got a N
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEA98);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB20);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB20); // RCT3 GE_Device::FindCustomGlyph(char const*) ?
+// Used for PS2 button icons
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEB78); // font icons function?
+// RCT3 GE_Device::ParseEscapeString ?
 
+#ifdef NON_MATCHING
+void GE_Device::DrawText(/**/) {
+
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CEC18); // this function deals with font rendering
+#endif
+// RCT3 GE_Device::DrawText ?
+// a2, const char*
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CF2D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CFA18);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CFA18); // text  function
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CFF38);
 
@@ -180,7 +196,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002CFFE0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0150);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0218); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0218); // GE_PS2Device virtual; RCT3 DrawSetScreenMatrix?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0490); /* rct3 GE_Device::GetViewFrustrumClipVolume ? */
 
@@ -190,13 +206,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0620); // rendering funct
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D0FE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D10B8); // rendering function
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D10B8); // rendering function; level of detail?
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1240);
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D12A0);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D12A0); // GE_Device*,
 
-INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D12E8);
+INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D12E8); // GE_Device*,
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1318);
 
@@ -213,17 +229,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1450);
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D14A0); // rendering function
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1540);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D15F0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D16B0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1780);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1860);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1948);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1A38);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1B10);
@@ -233,7 +243,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_002CA560", _vt$9GE_Device);
 INCLUDE_RODATA("asm/nonmatchings/text_002CA560", _vt$12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1B50); /* __tf10ClipVolume */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1B90);
 
 int func_002D1BC0() {
@@ -249,15 +258,10 @@ INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf12GE_PrimCache);
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", _$_12GE_PrimCache);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C40);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C50); /* return a0->unk8 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C58); /* return a0->unkC */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C60); /* return a0->unk10 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C68); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C70); /* return a0->unk2 */
 
 int GE_PrimCache::func_002D1C78() {
@@ -265,23 +269,16 @@ int GE_PrimCache::func_002D1C78() {
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C80);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C88); /* a0->unk14 = a1 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1C90); /* return a0->unk14 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf9GE_Device);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CE8); /* return D_00452898 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF0); /* return a0->unk78 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1CF8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D00); /* return D_0045289C */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D08);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D18); /* return D_004528A0 */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D20); // WGRABBIT //GetCapsFloat__C9GE_Device7GE_Caps ?
@@ -300,65 +297,40 @@ void GE_Device::func_002D1D68() {
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1D70);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1E40);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1E48);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1E50);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1E70);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1E90);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1ED8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1F00);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1F58);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D1FC8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2068);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2108);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2148);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D21B8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2228);
 
-void GE_Device::func_002D2250() {
+void GE_Device::Suspend() {
     return;
 }
 
-void GE_Device::func_002D2258() {
+void GE_Device::func_002D2258() { // GE_Device::Restart?
     return;
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2260);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2280); /* return (float) a0->unk194 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2288); /* return a0->unk98 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22B8); /* return a0->unk94 */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22C0); /* return a0->unk9C */
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22C8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22D0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22D8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22E0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D22F8);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2300);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2318);
 
 void GE_Device::func_002D2328() {
@@ -383,9 +355,7 @@ float GE_Device::func_002D2350() { // WGRABBIT GE_Device::GetVisibility(int?)
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D2360); /* __tf17GE_RenderHardware */
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D23A0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D23D0);
-
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", func_002D26E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002CA560", __tf17GE_TransformState);

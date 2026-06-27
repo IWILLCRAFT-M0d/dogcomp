@@ -23,7 +23,8 @@ namespace InputEvent_ValueInstance {
 };
 
 class InputEvent_Device : public InputDevice_ChangeCatcher {
-
+    public:
+        // virtual ? func_002FA810
 };
 
 

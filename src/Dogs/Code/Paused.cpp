@@ -16,9 +16,9 @@ void PausedLayer::func_001ED248() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED250); // PausedLayer member
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED250); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED2A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", func_001ED2A0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Paused", _$_11PausedLayer);
 

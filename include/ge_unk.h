@@ -25,17 +25,21 @@ class GE_TransformState {
 
 class MeshTransforms : public GE_TransformState {
     public:
-        // virtual 00310438
-        // virtual 00310448
+        // virtual ? 00310438
+        // virtual ? 00310448
 };
 
 // RCT3 "GE_Device::s_theDevice"
 // 0x78 - texture resources address
 class GE_Device : public GE_TransformState {
     public:
+        char temp_padding [0x4C];
         float unk50;
         float unk54;
-        //
+        float unk58; // x text offset?
+        float unk5C; // y text offset?
+        // 0x74 stores 0035FB40 (font resources)
+        // 0x78 stores 0035FB28 (texture resources)
         float unk80;
         float unk90;
         GE_Device();
@@ -53,28 +57,35 @@ class GE_Device : public GE_TransformState {
         // virtual ? = 0;
         // virtual ? = 0;
         // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? = 0;
+        virtual void BeginScene() = 0;
+        virtual void Clear(/**/) = 0;
         // virtual ? = 0;
         virtual void func_002D1D68();
+        virtual void EndScene() = 0;
         // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? func_002CEC18
+        virtual void DrawText(/**/);
         // virtual ? func_002D0218
-        virtual void func_002D2250();
+        virtual void Suspend();
         virtual void func_002D2258();
         //
         virtual void func_002D2328();
 
         virtual int func_002D2348();
         virtual float func_002D2350();
+
+        void func_002CC4A0(float, float);
 };
 
+// 0x00452898 ?
 // 0x00452660 is s_theDevice? (this)
+class GE_PS2DisplayTarget;
+
 class GE_PS2Device : public GE_Device {
     public:
-        bool unk458;
-        //GE_PS2DisplayTarget* unk75C;
+        bool unk458; // sceneStarted?
+        GE_PS2DisplayTarget* unk75C;
+        bool unk77C; // lighting variable?
+        int unk798;
         GE_PS2Device();
         virtual void* func_002C7520(int); // override
         // virtual ? 002C75A0
@@ -82,31 +93,31 @@ class GE_PS2Device : public GE_Device {
         //
         //
         virtual ~GE_PS2Device();
-        // virtual ? 002C8FF8
+        virtual int func_002C8FF8(int);
         //
         //
         //~~~~~
-        virtual void func_002C3D88(); // pure override; BeginScene?
-        // virtual ? 002C3F08 // pure override; Clear?
+        virtual void BeginScene();
+        virtual void Clear(/**/);
         // virtual ? 002C4C80
         // virtual ? func_002C9070(); // pure override
-        virtual void func_002C5478(); // pure override; EndScene?
+        virtual void EndScene(); // pure override; EndScene?
         virtual void func_002C9048();
-        // func_002cec18 // GE_Device
+        // virtual base function (DrawText)
         // virtual ? func_002C7A50
-        // virtual ? func_002C82A8 // Suspend?
+        virtual void Suspend();
         // virtual ? func_002C8318
         virtual int func_002C9FC0();
         // virtual ? func_002C5910
         // virtual ? func_002C5B28
         // virtual ? func_002C5DA8
-        // virtual ? func_002C5E90
+        virtual void func_002C5E90(/**/);
         virtual void func_002C6488();
         virtual void func_002C6490();
         virtual int func_002C6498();
         // virtual ? func_002C9210
         // virtual ? func_002C9F38();
-        // virtual ? func_002C64A0
+        virtual void* func_002C64A0(int);
         // virtual void func_002C66A8(int, float) // override
         // virtual ? func_002C6C28();
         // virtual ? func_002C6C30
@@ -116,8 +127,8 @@ class GE_PS2Device : public GE_Device {
         // virtual ? func_002C6D10
         // virtual ? func_002C6D50
         // virtual ? func_002C6D98
-        // virtual ? func_002C6E68
-        // virtual ? func_002C6EF0
+        virtual void func_002C6E68(/**/);
+        virtual void func_002C6EF0(short);
         // virtual ? func_002C6F88
         // virtual ? func_002C7030
         // virtual ? func_002C70E8
@@ -279,7 +290,7 @@ class GE_DMARc : public I_GE_DMARc {
 class GE_DMAPktRcGeneric : public GE_DMARc {
 
 };
-
+// 004525b4?
 class GE_DMAPktRc1i69 : public GE_DMAPktRcGeneric {
     public:
         GE_DMAPktRc1i69();
@@ -318,23 +329,41 @@ class GE_Target {
 class GE_PS2Target : public GE_Target {
     public:
         int unk0;
+        int unkC;
         short unk12;
         // void*
         // void*
         GE_PS2Device* unk8;
         GE_PS2Target(GE_PS2Device*);
-        //
-        virtual int func_0029A8E8();
-        virtual int func_0029A928();
+        virtual ~GE_PS2Target();
+        virtual int GetWidth(); // func_0029A8E8
+        virtual int GetHeight(); // func_0029A928
         // virtual ? func_0029A968
         virtual int func_002A1B80();
         virtual int func_002A1B88();
         //~~~~~
+        virtual void func_0029AA38();
+        virtual void func_0029AA48();
+        virtual void func_002A1B90();
+        virtual void func_0029AA28();
+        virtual void func_0029AA30();
+        // virtual ? func_0029AA58
+        //~~~~
+        virtual void func_002A1B98();
+        virtual void func_002A1BA8();
+        virtual void func_002A1BB8();
+        virtual void func_002A1BC8();
+
 };
 
 class GE_PS2DisplayTarget : public GE_PS2Target {
     public:
         GE_PS2DisplayTarget(GE_PS2Device*);
+        //virtual ~GE_PS2DisplayTarget();
+        // virtual base (GetWidth)
+        // virtual base (GetHeight)
+        //~~~~
+        virtual float func_002A1CB8();
 };
 
 class GE_GSPageMgr {
@@ -382,6 +411,7 @@ class GE_TextureTarget : /*public GE_PS2Target,*/ public GE_TexturePage {
 
 };
 
+// ClipVolume.h?
 class ClipVolume {
     public:
         //

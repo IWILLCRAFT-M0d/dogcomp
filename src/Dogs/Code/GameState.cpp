@@ -118,31 +118,18 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __9FadeInReqf);
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C00);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C98);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8CF8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D18);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D38);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8DD0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E30);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E50);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8EE8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8F48);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8FE0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9040);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9060);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D90F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tfQ29GameState12GameStateReq);
@@ -180,6 +167,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/GameState", D_003E33C0); /* "Q29GameS
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tf13SwitchViewReq);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9228__13SwitchViewReq);
+// PlayingLayer();
 
 int SwitchViewReq::func_001D95B0() {
 	return 1;
@@ -320,9 +308,9 @@ void func_001DA1B8(void) { // internalfinalise?
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA1C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA1C0); // Initialise
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA1F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA1F0); // Finalise
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001DA210);
 

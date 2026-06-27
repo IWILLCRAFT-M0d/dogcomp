@@ -29,16 +29,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF828);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF858);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF940);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF940); // called when changing level
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFA30); // water function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFAF0); // first arg is landscape_land* ?; water color/texture?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB80);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB90);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBA0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5218);
@@ -147,9 +145,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3EF8); // vector?
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3FB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4090);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4138);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E41C8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4218);
@@ -161,13 +157,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4318);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4368);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E45F8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E46C8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4748);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E47F0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4828);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4858); // called by loading function?
@@ -177,9 +169,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4878);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4898);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48B8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48E8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48F8); /* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4900); // render collision mesh
@@ -193,7 +183,6 @@ void func_001E5008(void) {
 }
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5010);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5038);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", _vt$16ObjectNewMessage);

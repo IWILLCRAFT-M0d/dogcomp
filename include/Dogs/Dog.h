@@ -16,6 +16,7 @@ class Dog : public WorldObject/*, public Jump_IF, public AnimationMovedObject_IF
         void* unk670;
         float unk678;
         float unk684; // boneTimeLeft (secs)
+        float unk690; // hover?
         /* 0x830 */ bool m_isSwimming;
         float unk838; // sink/swim (mass?)
         float unk83C;
@@ -26,12 +27,17 @@ class Dog : public WorldObject/*, public Jump_IF, public AnimationMovedObject_IF
         float unk850;
         float unk854;
         float unk858;
-        int unk85C;
+        union {int i; float f;} unk85C; // ice sliding
+
+        float unk864;
         float unk868; // status bone height
         // 0x86C float boneScale
         // 0x870 float boneRotation (radians)
         float unk9B0; // starsTimeLeft (secs)
         float unk9B4; // starsScale
+        float unkAF0; // sleeping zzz fade in/fade out speed (negative to fade out, positive to fade in, 0 to remain)
+        float unkAF4; // sleeping zzz opacity (0-1)
+        float unkAF8; // sleeping zzz animation times
 
         union {int i;float f;} unkB0C; // shinyness/wetness? (set to 0 when entering water, increases when out of water)
         float unkB10; // time in water? (-1 when out of water)

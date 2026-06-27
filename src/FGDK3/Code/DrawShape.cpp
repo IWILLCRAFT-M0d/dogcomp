@@ -26,9 +26,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB2C0);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB478);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB4E0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB780);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DB988);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DC088); // debug name rendering does not happen if stubbed
@@ -53,7 +51,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DDE58);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DE1E0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DE250);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DE250); // DrawShape virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/DrawShape", func_002DE280); /* DrawShape_TexturedQuad::DrawShape_TexturedQuad ? */
 

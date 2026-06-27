@@ -86,7 +86,54 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312860);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003129D0);
 
+#ifdef NON_MATCHING
+void* FileSystemDisc_Zip::func_00312BC8(/**/) {
+    // s32 sp0;
+    // s32 sp4;
+    // ? sp10;
+    // void *sp20;
+    // void *temp_2;
+    //
+    // sp0 = arg1;
+    // sp4 = arg2;
+    // if (arg0->unk20 == 0) {
+    //     return 0;
+    // }
+    // if (sp4 != 0) {
+    //     func_0026D068(&sp10, 0x1001, sp0, &D_00448040, 0x4CF);
+    //     func_00313F58(&sp10);
+    // }
+    // temp_2 = func_00312680(arg0, func_00286248(sp0));
+    // sp20 = temp_2;
+    // if (temp_2 == NULL) {
+    //     return 0;
+    // }
+    // switch (sp20->unk8) {
+    // case 0:
+    //     return new FileAccess_Zip_Stored(sp20, this);
+    // case 1:
+    //     return 0;
+    // case 2:
+    //     return 0;
+    // case 3:
+    //     return 0;
+    // case 4:
+    //     return 0;
+    // case 5:
+    //     return 0;
+    // case 6:
+    //     return 0;
+    // case 7:
+    //     return 0;
+    // case 8:
+    //     return new FileAccess_Zip_Deflated(sp20, this);
+    // default:
+    //     return 0;
+    //}
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312BC8); // FileSystemDisc_Zip virtual; RCT3 FileSystemDisc_Zip::CreateStreamHere(string_ascii const&, ?)
+#endif
 
 #ifdef NON_MATCHING
 void* FileSystemDisc_Zip::func_00312DA8(/**/) {

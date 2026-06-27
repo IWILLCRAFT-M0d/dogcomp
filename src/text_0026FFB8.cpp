@@ -48,7 +48,7 @@ void ShapeInstance::Fill() {
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", Fill__13ShapeInstance);
 #endif
 
-void ShapeInstance::SetShape(void* shapeData) {
+void ShapeInstance::SetShape(ShapeData* shapeData) {
     if (this->m_shapeData != shapeData) {
         Empty();
         this->m_shapeData = shapeData;
@@ -56,7 +56,15 @@ void ShapeInstance::SetShape(void* shapeData) {
     }
 }
 
+#ifdef NON_MATCHING
+int ShapeInstance::func_00270408(int arg1, int arg2) {
+    if (this->m_shapeData != NULL) {
+
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270408__13ShapeInstanceii); // RCT3 ShapeInstance::GetParameterBlock ?
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00270468); // RCT3 ShapeInstance::GetMatrix33 ?
 
@@ -92,9 +100,7 @@ void func_002717B8(void) {
 }
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717C0);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717E8);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271808);
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026FFB8", _vt$13ShapeInstance);
@@ -108,9 +114,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_11ShapeParams);
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf13ShapeInstance);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718D0);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4 */
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
 
 #ifdef NON_MATCHING
@@ -122,11 +126,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeIn
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271970);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719A8);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719E0);
-
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A18); /* return a0->unk20 */

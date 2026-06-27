@@ -12,10 +12,17 @@ class Resource_Generic {
 
         StdInit_ClientBase unkC;
 
-
         Resource_Generic();
         virtual ~Resource_Generic();
         virtual int func_00275520();
+        // virtual ?() = 0; // ResName();
+        // virtual ?(/**/) = 0;
+        // virtual ?(/**/) = 0;
+        virtual void func_00275E88();
+        virtual int func_00275F98();
+        virtual int func_00275FA0();
+        virtual void func_00275FA8();
+        virtual void func_00275FB0();
 };
 
 template <typename T> class Resource : public Resource_Generic {
@@ -27,8 +34,13 @@ class Resource_LayoutUnit {
     public:
         int unk0;
         Resource_LayoutUnit* unk4;
-        Resource_LayoutUnit(Resource_LayoutUnit*);
+        Resource_LayoutUnit(Resource_LayoutUnit*); // Resource_LayoutUnit(Resource_LayoutGroup*?)
         virtual ~Resource_LayoutUnit();
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
+        // virtual ? = 0
 };
 
 class Resource_LayoutOverlay /* : public Resource_LayoutUnit */ {
@@ -38,8 +50,11 @@ class Resource_LayoutOverlay /* : public Resource_LayoutUnit */ {
         void* unk10;
         //Resource_LayoutOverlay
         virtual ~Resource_LayoutOverlay();
-        virtual void func_00274200();
-        virtual void func_00274400();
+        virtual void func_00274200(); // Load? (common, d, l, dl)
+        virtual void func_00274400(); // Unload?
+        // virtual ? func_002744B0 // d ovl load
+        // virtual ? func_002744F8 // l ovl (language) load
+        // virtual ? func_00274540 // dl ovl load
 
 };
 
@@ -49,12 +64,20 @@ class Resource_LayoutGroup : public Resource_LayoutUnit {
         void* unk10;
         Resource_LayoutGroup(Resource_LayoutUnit*, int, void*);
         virtual ~Resource_LayoutGroup();
+        // virtual ? = 0
+        // virtual ? func_00274730
+        // virtual ? func_00274790
+        // virtual ? func_002747F0
+        // virtual ? func_00274850
+        // virtual ? = 0
+
 };
 
 class Resource_LayoutInclusiveGroup /*: public Resource_LayoutGroup*/ {
     public:
         virtual ~Resource_LayoutInclusiveGroup();
-            //func_00274A00
+        // virtual ? func_00274A00
+        // virtual base function (00274730)
 
 };
 

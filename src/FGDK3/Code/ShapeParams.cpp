@@ -68,21 +68,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF08); // RCT3 S
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF28); // RCT3 ShapeData::EmptyContents?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF48);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF98);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BFC0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C180);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C198);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C1D0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C458);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C4A8);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C598);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C5C0);
@@ -156,7 +150,6 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$15RelocationBlock)
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __tf15RelocationBlock);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DEF8); /* return a0->unk2C */
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DF00);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DF20);
@@ -188,29 +181,17 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F9D0);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FA20);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FAC8);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FBD0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC00);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC98);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FCD8);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FD28);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FEC8);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFB0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFE8);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310038);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003100E0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310148);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310158);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310170);
@@ -228,15 +209,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310438);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310448);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310478);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310490);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003104E0);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310560);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310A98);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310AE0);
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$14MeshTransforms);

@@ -163,7 +163,6 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF450);
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF518);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF538);
-
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF5F8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimPosComponents", func_002EF670);

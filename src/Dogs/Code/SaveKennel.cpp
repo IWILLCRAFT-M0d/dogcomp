@@ -22,7 +22,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __10SaveKennelP9ClassInfoP1
 #endif
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00151050); // "Unknown extra for SaveKennel"
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001510C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001510C0); // SaveKennel virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001512E8__10SaveKennelf); // animate kennel door?
 
@@ -36,29 +36,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152288__10SaveKennel
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001522C8);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152360);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523C0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523E0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152400);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152498);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001524F8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152518);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001525B0);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152610);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001526A8);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152708);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152728);
-
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001527C0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveKennel", _vt$21MostInFrontCalculator);
@@ -101,7 +89,7 @@ ClassInfo* SaveKennel::func_00152C38() {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", __tf21MostInFrontCalculator);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152C90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152C90); // MostInFrontCalculator virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152D00);
 

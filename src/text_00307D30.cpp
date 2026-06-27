@@ -82,19 +82,12 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tfQ24File11OpenWatcher);
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf12File_MemRead);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308140);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308190);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308238);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003082E8);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308368);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003083A0);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308430);
-
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003084E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308530);

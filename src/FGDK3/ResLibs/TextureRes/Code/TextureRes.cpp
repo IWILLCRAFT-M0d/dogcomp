@@ -83,11 +83,11 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", _vt$
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/TextureRes/Code/TextureRes", __tf17Texture_Resources);
 
 #ifdef NON_MATCHING
-char* func_0031FBE0() {
+char* func_0031FBE0() { // StaticResName
     return "Texture"; // D_00453200
 }
 
-char* func_0031FBF0() {
+char* func_0031FBF0() { // ResName
     return "Texture"; // D_00453200
 }
 
