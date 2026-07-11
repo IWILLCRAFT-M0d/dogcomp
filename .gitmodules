@@ -1,0 +1,3 @@
+[submodule "include/zlib-1.1.3"]
+	path = include/zlib-1.1.3
+	url = https://github.com/madler/zlib.git
