@@ -26,9 +26,11 @@ int func_00290D08() { // MeshInstance method?
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290D10); // RCT3 MeshInstance::CalcLod?
+INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290D10); // , GE_Device*,
+// if stubbed, shapeinstances do not render
+// RCT3 MeshInstance::CalcLod?
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290E50);
+INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290E50); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290E60);
 
@@ -36,6 +38,6 @@ INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290EC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290ED8);
 
-INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290EE8);
+INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290EE8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_00290F38);

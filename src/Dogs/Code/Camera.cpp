@@ -304,7 +304,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118AF8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118B50);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118BA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118BA8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Camera", func_00118C68);
 

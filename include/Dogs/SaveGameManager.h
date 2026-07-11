@@ -7,6 +7,8 @@
 
 /*
 class BackgroundSaveThread : public Thread {
+    public:
+        virtual 001FE088
 };
 */
 

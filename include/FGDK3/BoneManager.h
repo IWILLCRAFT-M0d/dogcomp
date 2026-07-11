@@ -1,6 +1,9 @@
 #ifndef BONEMANAGER_H
 #define BONEMANAGER_H
 
+/**
+ * @note Name taken from RCT3 symbols.
+*/
 class BoneManager {
     public:
         int unk0;
@@ -16,6 +19,10 @@ class BoneManager {
         void* unk28;
         BoneManager();
         ~BoneManager();
+
+        /**
+         * @note Name taken from RCT3 symbols.
+         */
         static void InitIKStateArrays(int, int);
 };
 

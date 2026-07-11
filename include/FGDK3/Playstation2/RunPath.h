@@ -10,6 +10,9 @@ void RunPath_InternalFinalise();
 Status RunPath_Initialise();
 void RunPath_Finalise();
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 const char* RunPath_Get();
 
 #endif

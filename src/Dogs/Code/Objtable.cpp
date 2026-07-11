@@ -29,8 +29,9 @@ s_func_001EC630* func_001EC630(s_func_001EC630* arg0) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC630); // "Objtable should always have two elements"
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC6C8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC6D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC6C8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC6D8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objtable", func_001EC718);
 

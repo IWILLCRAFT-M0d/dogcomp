@@ -69,8 +69,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7B38);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7BF8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7CE0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7DB8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7E38);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7CE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7DB8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7E38); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/InpUtil", func_002F7F10);

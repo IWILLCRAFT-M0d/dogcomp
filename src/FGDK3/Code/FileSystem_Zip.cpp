@@ -187,9 +187,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", _$_18FileFindAccess_Zi
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", __tf18FileFindAccess_Zip);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00313820);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00313820); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00313870);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00313870); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00313918);
 

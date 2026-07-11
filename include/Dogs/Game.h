@@ -23,6 +23,11 @@ typedef struct {
 } s_func_001C6DC8;
 
 
+/**
+ * @brief Game settings struct.
+ *
+ * @note Name is temporary.
+ */
 typedef struct {
     char pad0[0x8];
     /* 0x8 */ int m_screenPositionX;
@@ -35,7 +40,7 @@ typedef struct {
     float unk24;
     float unk28;
     /* 0x2C */ int m_language;
-} s_func_001B1FA8; // settings
+} s_func_001B1FA8;
 
 
 extern void * const Game_StdInit_UsedModules[];

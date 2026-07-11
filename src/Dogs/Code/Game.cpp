@@ -148,6 +148,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2640);
 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2658);
+
 // https://decomp.me/scratch/swMyB
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001B2678); // set options?
 
@@ -224,7 +225,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C5518); // load CLI optio
 
 #ifdef NON_MATCHING
 extern short D_004509F0; // null actorId
-Game_Document::Game_Document(float deltaTime, float gamespeed) : GameShell(deltaTime, gamespeed) {
+Game_Document::Game_Document(float deltaTime, float gamespeed) : GameShell(deltaTime, gamespeed), DogScript(NULL, -1) { // MainScript is -1?
 	this->unk148 = 0;
 	this->unk154 = 0;
 	this->unk144 = 0;
@@ -309,9 +310,10 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __13Game_Documentff);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", _$_13Game_Document);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6DC8); // (Game_Document*, )
+// new 00194D40();
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E10); // (Game_Document*, )
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E10); // (Game_Document*, s32)
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C6E50);
 
@@ -392,7 +394,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C8D40); // "LevelGateEdit
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9A58); // (Game_Document*, )
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9B68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9B68); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001C9D30); // if stubbed, scene does not render // (Game_Document*)
 
@@ -540,9 +542,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2870);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D28A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2900);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2900); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2940);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2940); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D2980__13Game_Documentf); // RCT3 Game_Document::Advance?
 
@@ -572,7 +574,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D42A8); // "Warning: toPo
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D43F0); // isolate actor? (Game_Document*, Actor*/WorldObject*)
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498); // remove (maroon) actor function?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4498); // remove (maroon) actor function? (Game_Document*, )
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D4578); // Game_Document virtual
 
@@ -711,43 +713,53 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6218); // GameDesktop vi
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6288); // GameDesktop virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D62D0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D62E0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6378);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D63D8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D63F8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6418);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D64B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D62D0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6510);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D62E0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6530);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6378); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D65C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D63D8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6628);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D63F8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D66C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6418); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6720);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D64B0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6740);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6510); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D67D8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6838);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6858);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6878);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6530); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6888);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D65C8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D69B8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D69E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6628); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D66C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6720); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6740); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D67D8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6838); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6858); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6878); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6888); // init and destruct
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D69B8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D69E8); // unreferenced
 
 void func_001D6A10(void) { // PointerMessageHandler member?
 	return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6A18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6A18); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Game", D_003E21D8);
 
@@ -805,19 +817,30 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6C40);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf13Game_Document);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D60); /* return a0->unk3F0 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D68); /* return a0->unk3F4 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D70); /* a0->unk3F4 = a1 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D78);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D80); /* return a0->unk3EC */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D88); /* return a0->unkE4 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D60); // unreferenced
+/* return a0->unk3F0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D68); // unreferenced
+/* return a0->unk3F4 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D70); // unreferenced
+/* a0->unk3F4 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D78); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D80); // unreferenced
+/* return a0->unk3EC */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D88); // unreferenced
+/* return a0->unkE4 */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6D90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DC0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DC8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DD0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6DD8); /* a0->unk4D4 = a1 */
 
@@ -843,13 +866,14 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E28);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E38); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E40); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E48); /* a0->unk4EC = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E50); /* return a0->unk4EC */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E50); // unreferenced
+/* return a0->unk4EC */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E58); /* a0->unk4F0 = a1 */
 
@@ -857,47 +881,59 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E60); /* return a0->unk
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E68); /* a0->unk4F4 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E70); /* a0->unk4F8 = a1 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E78); /* return a0->unk4B0 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E70); // unreferenced
+/* a0->unk4F8 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E98);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E78); // unreferenced
+/* return a0->unk4B0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6ED0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E80); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6ED8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6E98); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6EE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6ED0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6ED8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6EE8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F40);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F30); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F38); // virtual (Game_Document::DogScript?)
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F90);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FA0); /* a0->unk55C = a1 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F40); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FA8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F88); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FB8); /* return a0->unk4FC */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6F90); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FC0); /* return a0->unk4D0 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FA0); // unreferenced
+/* a0->unk55C = a1 */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FA8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FB8); // unreferenced
+/* return a0->unk4FC */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FC0); // unreferenced
+/* return a0->unk4D0 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FC8); /* a0->unk1FC = a1 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FD0); /* return a0->unk200 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FD8); /* a0->unk200 = a1 */
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FE0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FD8); // unreferenced
+/* a0->unk200 = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FF8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FE0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7008); /* return a0->unk570 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D6FF8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7010); /* return a0->unk574 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7008); // unreferenced
+/* return a0->unk570 */
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7010); // unreferenced
+/* return a0->unk574 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7018); /* DebugLayer */
 
@@ -917,11 +953,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D72B0); // Game_ClosestVi
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D74F0); /* __tf21PersistentDataUpdater */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7540);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7540); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7568);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D7568); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D75B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D75B8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tf24AfterMapChangeEnumerator);
 
@@ -1007,7 +1043,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", __tfQ28CameraMR19CameraControlAct
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D8160);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D8220);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D8220); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Game", func_001D8260);
 

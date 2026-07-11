@@ -5,15 +5,15 @@
 #include "Dogs/Landscape.h"
 
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE378);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE378); // ground collision?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE3E0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DE608); // ground collision?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DEDF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DEDF0); // called by unreferenced function
 
-void func_001DEF10(void) { // called by func_001DF858
+void func_001DEF10(void) { // called by unreferenced function
 	return;
 }
 
@@ -21,13 +21,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DEF18);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF4B8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF590);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF590); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF810); // gravity function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF828);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF828); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF858);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF858); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DF940); // called when changing level
 
@@ -35,9 +35,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFA30); // water fun
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFAF0); // first arg is landscape_land* ?; water color/texture?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB80);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB90);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBA0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB80); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFB90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001DFBA0); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", D_003E5218);
 
@@ -51,7 +53,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E14F8); // landscape
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E16B0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E1850);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E1850); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E18E0); // slidable collision?
 
@@ -102,79 +104,89 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", Landscape_Initialise__Fv);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", Landscape_Finalise__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3230);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3230); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E32F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E32F8); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3370);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3370); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3408);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3408); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E35D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E35D8); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3650);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3650); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3688);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3688); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E36F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E36F8); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3768);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3768); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3790);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3790); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E37C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E37C8); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3848);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3848); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3940);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3940); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3B38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3B38); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3C88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3C88); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3CB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3CB0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3CF0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3CF0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3D70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3D70); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3DE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3DE8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3EF8); // vector?
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3EF8); // called through unreferenced function
+// vector?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3FB0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E3FB0); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4090);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4138);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E41C8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4090); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4218);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4138); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4288);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E41C8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4318);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4218); // called through unreferenced functions
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4368);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4288); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E45F8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E46C8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4748);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E47F0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4828);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4318); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4368); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E45F8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E46C8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4748); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E47F0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4828); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4858); // called by loading function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4878);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4878); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4898);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4898); // called during level transition
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48B8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48E8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48F8); /* return a0->unk4 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48B8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48E8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E48F8); // unreferenced
+/* return a0->unk4 */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4900); // render collision mesh
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4F10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4F10); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E4F20);
 
@@ -182,8 +194,9 @@ void func_001E5008(void) {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5010);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5038);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5010); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Landscape", func_001E5038); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Landscape", _vt$16ObjectNewMessage);
 

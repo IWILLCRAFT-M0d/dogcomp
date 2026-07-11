@@ -10,8 +10,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A1F40);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A1F88);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A22A8);
-INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A2330);
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A22A8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A2330); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002A1D88", func_002A23B8);
 

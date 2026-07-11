@@ -34,11 +34,11 @@ void * const LevelRes_StdInit_UsedModules[] = {
     0,
 };
 
-Status LevelRes_Initialise() {
+Status LevelRes_Initialise() { // unreferenced
     return StdInit_InitialisationSequence(&LevelRes_StdInit_Description);
 }
 
-void LevelRes_Finalise() {
+void LevelRes_Finalise() { // unreferenced
     StdInit_FinalisationSequence(&LevelRes_StdInit_Description);
 }
 

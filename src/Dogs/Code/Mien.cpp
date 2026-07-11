@@ -15,7 +15,6 @@ Mien::Mien() {
 
 #ifdef NON_MATCHING
 Mien::~Mien() {
-
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", _$_4Mien);
@@ -33,7 +32,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Mien", D_003E5AA0); /* "TimeDecayDist
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E64A8); // Mien function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6958);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6958); // unreferenced
 
 // Used by Console::Mien
 void Mien::func_001E6C68(unsigned int arg1) {
@@ -65,22 +64,28 @@ void Mien::func_001E6CC8(float fparg0) {
     this->unk20 = fparg0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CD0); // unreferenced
 
 // food health logic/set mien ?
 // negative values in float parameter make jake lose health/go sad */
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6CF8); /* Mien::Set(float) ? */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6EC0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6EC0__FP4Mienf);
 
 #ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", __tf4Mien);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD0); // return (float) a0->unk8
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD8); // return (float) a0->unkC
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE0); // return (float) a0->unk10
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD0); // unreferenced
+// return (float) a0->unk8
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FD8); // unreferenced
+// return (float) a0->unkC
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE0); // unreferenced
+// return (float) a0->unk10
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Mien", func_001E6FE8); // unreferenced
 
 #ifndef NON_MATCHING
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Mien", _vt$4Mien);

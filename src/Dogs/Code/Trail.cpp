@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EE68);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EEE0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EF18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EF18); // Trail virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Trail", func_0022EF38);
 

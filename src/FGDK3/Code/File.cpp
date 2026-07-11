@@ -41,11 +41,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304DF0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304ED0); // temp file function
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304F68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00304F68); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_003050C0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305210);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305210); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/File", func_00305378);
 

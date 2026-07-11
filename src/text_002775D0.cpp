@@ -88,9 +88,9 @@ void* StdAllocator::MemAlign(size_t alignment, size_t size) {
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278308); /* StdAllocator */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278350);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278350); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278358);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278358); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_002775D0", _vt$12StdAllocator);
 
@@ -102,9 +102,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002784C8); /* __7PointerPv Po
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", _$_7Pointer);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278608);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278608); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278668);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278668); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002786A0);
 

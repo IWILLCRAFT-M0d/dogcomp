@@ -8,7 +8,7 @@ AnimationVariable::AnimationVariable(float fparg0) {
 }
 
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9E0);
+INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9E0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9F8);
 

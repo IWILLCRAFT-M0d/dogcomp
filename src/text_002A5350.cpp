@@ -62,7 +62,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5AC0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B38); /* GE_LoadedPS2PrimIndices? */
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B70);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5B70); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5BA8); /* GE_PS2PrimIndices? */
 
@@ -94,7 +94,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F68); // GE_PS2PrimIndic
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5F90); // GE_PS2PrimIndices member
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5FB8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A5FB8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6040);
 
@@ -131,21 +131,22 @@ void GE_PrimIndices::func_002A62D0() {
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A62E0); // GE_PrimIndices method
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6350);
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A64C8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6350); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A64C8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002A5350", __tf15GE_PrimVertices);
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6580);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A6580); // unreferenced
 
-int func_002A6598() {
+int func_002A6598() { // unreferenced
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A0);
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A8); /* return a0->unk4 */
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B0);
-INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B8);
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65A8); // unreferenced
+/* return a0->unk4 */
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002A5350", func_002A65B8); // unreferenced
 
 int GE_PrimVertices::func_002A65C0() {
     return 0;

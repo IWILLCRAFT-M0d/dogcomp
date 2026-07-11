@@ -27,10 +27,16 @@ class ShapeParams_Dynamic : public ShapeParams {
         void SetSize(int);
 };
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class MeshData {
 
 };
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class MeshInstance {
     public:
         int unk0;

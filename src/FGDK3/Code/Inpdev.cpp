@@ -60,7 +60,7 @@ void InputDevice_Device::func_002FBB78() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBB80);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBB80); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBC20);
 
@@ -76,13 +76,25 @@ void InputDevice_Device::func_002FBCA8() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCB0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCB8); /* return a0->unk4 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCC0); /* return a0->unk8 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCC8); /* return a0->unkC */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCD0); /* return a0->unk10 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCD8); /* return a0->unk14 */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCE0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCB0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCB8); // unreferenced
+/* return a0->unk4 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCC0); // unreferenced
+/* return a0->unk8 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCC8); // unreferenced
+/* return a0->unkC */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCD0); // unreferenced
+/* return a0->unk10 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCD8); // unreferenced
+/* return a0->unk14 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBCE8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpdev", func_002FBD20);

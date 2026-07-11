@@ -231,29 +231,43 @@ void func_001EB100(SimObj_Universe* arg0, short* arg1, void* arg2, void* arg3, v
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EB100); // spawn objects function (SimObj_Universe*/WorldObject_Universe*, short*, Creature_TypeDescription*?, )
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBBE8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBBE8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBC30); // calls spawning function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBD10);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBD10); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBE10);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF20);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF30);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBFC8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC028);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC048);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC068);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC100);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC160);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC180);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC218);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC278);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC310);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC370);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC390);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC428);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF20); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBF30); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EBFC8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC028); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC048); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC068); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC100); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC160); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC180); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC218); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC278); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC310); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC370); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC390); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC428); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Objects", func_001EC488);
 

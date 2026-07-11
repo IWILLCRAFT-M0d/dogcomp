@@ -45,9 +45,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", _$_9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271D98);
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271EE0);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271EE0); // unreferenced
 
-void func_00271EF8(void) {
+void func_00271EF8(void) { // unreferenced
     return;
 }
 
@@ -97,29 +97,49 @@ INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_002729A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272A78);
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272A98);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272A98); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_00271A20", _vt$9SavedGame);
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", __tf9SavedGame);
 
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B00); /* return a0->unk4 */
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B08);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B30);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B58);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B88);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BB8);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BE0);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C08);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C30);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C58);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C80);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CB8);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CF0);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D28);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D60);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D98);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272DD0);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E28);
-INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E88);
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B00); // unreferenced
+/* return a0->unk4 */
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B08); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B30); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B58); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272B88); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BB8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272BE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C08); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C30); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C58); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272C80); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CB8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272CF0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D28); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D60); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272D98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272DD0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E28); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00272E88); // unreferenced
+
 

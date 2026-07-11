@@ -95,13 +95,16 @@ void ShapeInstance::Render(GE_Device* arg1) {
     }
 }
 
-void func_002717B8(void) {
+extern "C"
+void func_002717B8(void) { // unreferenced
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717C0);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717E8);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271808);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002717E8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271808); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_0026FFB8", _vt$13ShapeInstance);
 
@@ -113,9 +116,12 @@ INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", _$_11ShapeParams);
 
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", __tf13ShapeInstance);
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718D0);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); /* return a0->unk4 */
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900);
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718D0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002718F8); // unreferenced
+/* return a0->unk4 */
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271900); // unreferenced
 
 #ifdef NON_MATCHING
 const string_ascii ShapeInstance::func_00271908() {
@@ -125,8 +131,13 @@ const string_ascii ShapeInstance::func_00271908() {
 INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271908); // virtual ShapeInstance member; RCT3 ShapeInstance::GetShapeName?
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271970);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719A8);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719E0);
-INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A18); /* return a0->unk20 */
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271938); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271970); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719A8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_002719E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_0026FFB8", func_00271A18); // unreferenced
+/* return a0->unk20 */

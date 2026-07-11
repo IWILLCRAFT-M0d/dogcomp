@@ -78,7 +78,24 @@ class GE_Device : public GE_TransformState {
 
 // 0x00452898 ?
 // 0x00452660 is s_theDevice? (this)
+class GE_Target {
+    public:
+        virtual ~GE_Target();
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        // virtual ? = 0;
+        virtual int func_0029A610();
+        virtual int func_0029A618();
+        virtual void func_0029A620();
+        virtual void func_0029A628();
+};
+
 class GE_PS2DisplayTarget;
+
+
 
 class GE_PS2Device : public GE_Device {
     public:
@@ -140,9 +157,9 @@ class GE_PS2Device : public GE_Device {
         // virtual void func_002C7A48(?);
         // virtual ? func_002C7CF8
         // virtual ? func_002C7D30
-        // virtual ? func_002C8218(?); // SetTarget?
-        virtual void* func_002C8358();
-        // virtual ? func_002C9098
+        virtual void SetTarget(GE_Target*);
+        virtual void* func_002C8358(); // RCT3 GetTarget() const?
+        // virtual ? func_002C9098(); // RCT3 ClaimTarget() const?
         // virtual ? func_002C9898
         // virtual ? func_002C9970
         // virtual ? func_002C9790
@@ -311,20 +328,7 @@ class GE_TextureStylePkt : public GE_DMARc {
         // virtual ? func_002B2528
 };
 
-class GE_Target {
-    public:
-        virtual ~GE_Target();
-        // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? = 0;
-        // virtual ? = 0;
-        virtual int func_0029A610();
-        virtual int func_0029A618();
-        virtual void func_0029A620();
-        virtual void func_0029A628();
-};
+
 
 class GE_PS2Target : public GE_Target {
     public:

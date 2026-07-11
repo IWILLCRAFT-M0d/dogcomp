@@ -10,11 +10,11 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", D_003E9B80);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F08F8); // called by Game_Document
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F0F68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F0F68); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1070);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F10F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F10F0); // if stubbed, horizontal and vertical controls for movement and camera are swapped
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F12D8);
 
@@ -24,15 +24,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1A58);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1A98);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1AD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1AD8); // called when jump button (cross) pressed or released (, bool)
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1DD8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1DD8); // called when action button (circle) press or released
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1E28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1E28); // called when smellovision button (triangle) pressed or released
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1E88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1E88); // called when sniff button (R1) pressed or released
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1EC8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F1EC8); // called when bark button (square) pressed or released
 
 void func_001F1FF8(void) {
     return;
@@ -157,7 +157,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4F00);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F4FD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F5240);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F5240); // (?, GE_Device*)
+// arg1->EndScene();
+// arg1->SetTarget(/**/);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F52D0);
 
@@ -165,35 +167,49 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F52E8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F5310); // dirt texture function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F61C8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6260);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F62C0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F62E0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6300);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6398);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F63F8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6418);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F64B0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6510);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F65A8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6608);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6628);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F66C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F61C8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6260); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F62C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F62E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6300); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6398); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F63F8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6418); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F64B0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6510); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F65A8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6608); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6628); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F66C0); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/Player", _vt$17Player_GrowlTimer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F6720); // player moves function
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7368);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7370);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7368); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7370); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", __tf17Player_GrowlTimer);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73C8); // Player_GrowlTimer member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F73E0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7408);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7408); /* __tf12TimSrv_Timer */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Player", func_001F7458); /* __tf26TimSrv_TimerImplementation */
 

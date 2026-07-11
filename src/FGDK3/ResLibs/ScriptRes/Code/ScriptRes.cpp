@@ -73,7 +73,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", __tft8Resource1Z12ScriptHeader); /* Resource<ScriptHeader>  */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", __6ScriptPvii); /* Script::Script */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", __6ScriptP11WorldObjectPvi); /* Script::Script */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", _$_6Script);
 
@@ -82,6 +82,34 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CEA8);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031CF78);
+
+//     s32 var_7;
+//     void *var_16;
+//     void *temp_16;
+//
+//     var_16 = this->unk3C->unk4 + this->unk3C->unk58;
+//     if (this->unk40 != NULL) {
+//         free(this->unk40);
+//     }
+//     this->unk40 = malloc(this->unk3C->unk40 * 4);
+//     var_7 = 0;
+//     if (this->unk3C->unk40 > 0) {
+// loop_4:
+//         temp_16 = var_16 + 2;
+//         var_16 = temp_16 + 4;
+//         if ((var_16->unk2 | (temp_16->unk1 << 8) | (temp_16->unk2 << 0x10) | (temp_16->unk3 << 0x18)) & 0x01000000) {
+//             *((var_7 * 4) + this->unk40) = var_16->unk0 | (var_16->unk1 << 8) | (var_16->unk2 << 0x10) | (var_16->unk3 << 0x18);
+//             var_16 += 4;
+//         } else {
+//             *((var_7 * 4) + this->unk40) = 0;
+//         }
+//         var_7 += 1;
+//         if (var_7 < this->unk3C->unk40) {
+//             goto loop_4;
+//         }
+//     }
+// }
+
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031D0A8);
 
@@ -139,7 +167,9 @@ int Script::func_0031E8C8() {
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031E8D0);
+int Script::func_0031E8D0() {
+    return -1;
+}
 
 int Script::func_0031E8D8() {
     return 1;
@@ -153,59 +183,63 @@ void Script::func_0031E8E8() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031E8F0);
+int Script::func_0031E8F0() {
+    return 0xFFFFFF;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031E900);
+int Script::func_0031E900() {
+    return 0xFFFFFF;
+}
 
-int func_0031E910(void) {
+int Script::func_0031E910() {
     return 0;
 }
 
-int func_0031E918(void) {
+int Script::func_0031E918() {
     return 0;
 }
 
-int func_0031E920(void) {
+int Script::func_0031E920() {
     return 0;
 }
 
-void func_0031E928(void) {
+void Script::func_0031E928() {
     return;
 }
 
-int func_0031E930(void) {
+int Script::func_0031E930() {
     return 0;
 }
 
-int func_0031E938(void) {
+int Script::func_0031E938() {
     return 0;
 }
 
-float func_0031E940(void) {
+float Script::func_0031E940() {
     return 0.0f;
 }
 
-void func_0031E950(void) {
+void Script::func_0031E950() {
     return;
 }
 
-int func_0031E958(void) {
+int Script::func_0031E958() {
     return 0;
 }
 
-int func_0031E960(void) {
+int Script::func_0031E960() {
     return 0;
 }
 
-int func_0031E968(void) {
+int Script::func_0031E968() {
     return 0;
 }
 
-int func_0031E970(void) {
+int Script::func_0031E970() {
     return 0;
 }
 
-int func_0031E978(void) {
+int Script::func_0031E978() {
     return 0;
 }
 
@@ -296,11 +330,11 @@ void func_0031EA28(void) {
     return;
 }
 
-void func_0031EA30(void) {
+void Script::func_0031EA30() {
     return;
 }
 
-void func_0031EA38(void) {
+void Script::func_0031EA38() {
     return;
 }
 
@@ -314,52 +348,62 @@ void Script::func_0031EA48() {
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", __tf6Script);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EA90); /* return a0->unk3C */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EA90); // unreferenced
+/* return a0->unk3C */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EA98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EA98); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EAD8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EAD8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EAE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EAE8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EB78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EB78); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EB90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EB90); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBA0); /* return a0->unk30 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBA0); // unreferenced
+/* return a0->unk30 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBA8); /* return a0->unk34 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBA8); // unreferenced
+/* return a0->unk34 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBB0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBC0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EBE0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC18); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC50);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC50); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC60);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC60); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC78); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC90); /* return a0->unk40 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC90); // unreferenced
+/* return a0->unk40 */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EC98); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031ECA8);
+// int func_0031ECA8(void) {
+//     static int D_00453194 = 0;
+//
+//     return D_00453194 += 1;
+// }
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031ECC0);
+// new ScriptThread(/**/)
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031ED58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031ED58); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EDD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EDD0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE40); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE48); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE60);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", func_0031EE60); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/ResLibs/ScriptRes/Code/ScriptRes", _vt$6Script);

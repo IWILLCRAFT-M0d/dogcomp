@@ -39,6 +39,9 @@ class Status {
         }
     }
     virtual ~Status();
+    /**
+     * @note Name taken from RCT3 symbols.
+     */
     virtual int PrepareReport(char*, int);
 };
 

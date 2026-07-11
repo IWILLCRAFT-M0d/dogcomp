@@ -31,16 +31,17 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DA8F8); // ground col
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DAC68); // collision?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB190);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB388);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB190); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB388); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB518); // level function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB8B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB8B0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB998);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB9E8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DB9E8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBC90);
 
@@ -73,7 +74,7 @@ int func_001DBD50(int arg0) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBD50);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBDB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBDB8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DBFE0);
 
@@ -101,7 +102,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD40); // a0->unk34 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD48); // a0->unk38 = f12
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD50);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCD50); // constructor for D_00453770
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DCDC8);
 
@@ -141,9 +142,11 @@ void func_001DD518(void) {
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD520);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD570);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD578);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD580);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD570); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD578); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD580); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Gameutil", func_001DD5B0);
 

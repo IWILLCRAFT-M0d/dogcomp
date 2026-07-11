@@ -42,9 +42,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297158); // RCT3 ClassInfo:
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002971D0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002971F8);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002971F8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297228);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297228); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_00296818", _vt$9ClassInfo);
 
@@ -52,21 +52,22 @@ INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297238);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297378); // RCT3 NameTag::Compare(const NameTag*, const NameTag*) ?
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002973C0);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002973C0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297400);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297400); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_00296818", D_0043EDC0); /* "13GenericObject" */
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", __tf9ClassInfo);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974A0);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974A0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974A8); /* return a0->unk18 */
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974A8); // unreferenced
+/* return a0->unk18 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974B0);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974B0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974E0);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974E0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974E8);
 

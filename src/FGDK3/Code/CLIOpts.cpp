@@ -11,19 +11,20 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002DFD70); /* rct3 CLIOp
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0018); /* rct3 CLIOptions_Via */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0318);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0318); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0348);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E03A0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E03E0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0450);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E03E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0450); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0488);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0498);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E04C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E04C0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/CLIOpts", func_002E0510);

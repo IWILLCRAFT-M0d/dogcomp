@@ -3,6 +3,7 @@
 
 #include "FGDK3/Playstation2/Thread.h"
 
+#include "data_unk.h"
 #include "unk.h"
 
 
@@ -70,12 +71,19 @@ class Music_PS2Track : public Music_Track {
         // virtual ? func_002826B0
 };
 
-
+// 00377810 RCT3 m_nullTrack?
 class Music_Piece {
     public:
         int unk0;
         int unk4;
         int unk8;
+        // 0x20 002880d8?
+        char pad0[0x34];
+        string_ascii unk3C;
+        string_ascii unk40;
+        int unk44;
+        void* unk48;
+        int unk50;
         Music_Piece();
         virtual ~Music_Piece();
         // virtual ? = 0
@@ -84,8 +92,16 @@ class Music_Piece {
 class Music_PS2Piece : public Music_Piece {
     public:
         char* unk58; // name?
-        /* 0x60 */ u_int headerinfo; // MIH address
+        /* 0x60 */ u_int m_headerinfo; // MIH address
         Music_PS2Piece(char*);
+        virtual ~Music_PS2Piece();
+        // virtual ? 00284018
+        // virtual void 00282fc8
+        // virtual ? Load
+        virtual void func_00283EB0(); // unload?
+        // virtual ? 002841d8 // play?
+        // virtual ? 00284090
+        virtual void func_00284880();
 };
 
 

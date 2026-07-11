@@ -128,7 +128,7 @@ class Dog : public WorldObject/*, public Jump_IF, public AnimationMovedObject_IF
         // virtual base function (001884E8)
         // end of vtable @ 003A7C90
 
-        virtual bool GetSwimmingState();
+        virtual bool GetSwimmingState(); // in Dog::ScriptMessageAndRequestReceiver vtable?
         virtual int func_001365B0();
         virtual void func_001365C8(float);
         //func_0021f3d8

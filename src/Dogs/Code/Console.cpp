@@ -48,7 +48,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FB18);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FC38);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FD38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FD38); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Console", func_0019FDE0); // check valid map id?
 

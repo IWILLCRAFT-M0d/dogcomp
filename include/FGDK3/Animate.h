@@ -59,14 +59,18 @@ class AnimationTimeBase : public GenericObject {
         virtual void func_002F4378();
 };
 
-// RCT3
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class AnimationByLevel {
     public:
         AnimationByLevel(int);
         ~AnimationByLevel();
 };
 
-// RCT3
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class AnimationStore {
     public:
         int unk1C;

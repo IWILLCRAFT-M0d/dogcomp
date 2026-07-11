@@ -346,7 +346,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf10HelpAction);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002634E0); // WGRABBIT HelpAction::Execute(Widget*, bool)?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002635D0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002635D0); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_00437F80);
 
@@ -356,9 +356,10 @@ INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_004387C8); /* _vt$17VD_Hierar
 
 INCLUDE_RODATA("asm/nonmatchings/text_002607A0", D_004389A8); /* _vt$13VD_FocusStack */
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002635F0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002635F0); // unreferenced
 
-int func_00263640(void) {
+extern "C"
+int func_00263640(void) { // unreferenced
     return 0;
 }
 
@@ -426,7 +427,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264448);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002644A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002644E0);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002644E0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00264540);
 
@@ -830,7 +831,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf16V3DEW_ZeroAction);
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_002693F0);
 
 // tree34 split?
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269410);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269410); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_20Tree34_NodeAllocator);
 

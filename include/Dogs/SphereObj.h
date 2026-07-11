@@ -6,6 +6,7 @@
 
 class SphereObj : public WorldObject {
     public:
+        static ClassInfo* s_classInfo;
         float unk5C0; // hitbox diameter?
         float unk5C4; // current diameter
         int unk5C8;
@@ -25,6 +26,7 @@ class SphereObj : public WorldObject {
 
         SphereObj(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SphereObj();
+        virtual ClassInfo* func_001775D0();
         virtual float func_001775C0();
 };
 

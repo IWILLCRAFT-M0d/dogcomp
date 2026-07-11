@@ -48,7 +48,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggingRace", D_003A4DF0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggingRace", D_003A4E30);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012A0F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012A0F8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012B1E0);
 
@@ -94,7 +94,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012C960);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012C980);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012CA18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggingRace", func_0012CA18); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggingRace", D_003A4EF8);
 

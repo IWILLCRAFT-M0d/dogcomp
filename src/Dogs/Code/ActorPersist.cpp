@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018AAB0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018AAD8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018AB08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018AB08); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/ActorPersist", func_0018ABC8); // "Mismatch between current script and stored script"
 

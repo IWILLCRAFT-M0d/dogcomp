@@ -61,7 +61,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026C818);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026C900);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026C9C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026C9C8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", StdInit_InitialisationSequence__FP25StdInit_ModuleDescription); // stdinit.cpp?
 
@@ -114,11 +114,12 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026D108);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026D110);
 
-int func_0026D120() {
+extern "C"
+int func_0026D120() { // unreferenced
   return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026D128);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026D128); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/StdMem", func_0026D138);
 

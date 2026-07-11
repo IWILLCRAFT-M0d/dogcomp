@@ -74,17 +74,19 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273158);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002731E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273240);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273240); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002732B8);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002732B8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273318);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002733D8);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273420);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273318); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002733D8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273420); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002735C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002736A8);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002736A8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002736E8);
 
@@ -103,11 +105,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273998); // Finalise
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002739B8); // called when switching game language
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273A80);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273A80); // (overlayId, ) ; required overlay loading/check?
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273B10);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273B10); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273C38);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273C38); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273CB0);
 
@@ -308,7 +310,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_16Resource_Generic);
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275448);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002754E8);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002754E8); // unreferenced
 
 int Resource_Generic::func_00275520() {
     return 0;
@@ -333,19 +335,23 @@ void func_002757E8(void) { // called by resource internalinitialise functions
 
 INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002757F0); // called by resource internalfinalise functions
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002758F8); /* return D_00451B54 != 0 */
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275908);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275990);
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002758F8); // unreferenced
+/* return D_00451B54 != 0 */
 
-void func_00275AF8(void) {
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275908); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275990); // unreferenced
+
+
+void func_00275AF8(void) { // unreferenced
     return;
 }
 
-int func_00275B00(void) {
+int func_00275B00(void) { // unreferenced
     return 0;
 }
 
-void func_00275B08(void) {
+void func_00275B08(void) { // unreferenced
     return;
 }
 
@@ -393,11 +399,17 @@ void Resource_Generic::func_00275E88() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275E90);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275EE8);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F20);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F88); /* return a0->unk4 */
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F90); /* return D_00451B50 */
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275E90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275EE8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F20); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F88); // unreferenced
+/* return a0->unk4 */
+
+INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F90); // unreferenced
+/* return D_00451B50 */
 
 int Resource_Generic::func_00275F98() {
     return 0;

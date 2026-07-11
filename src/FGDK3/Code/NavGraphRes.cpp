@@ -176,7 +176,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E068);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E0C8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E160);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E160); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/NavGraphRes", func_0027E1C0);
 

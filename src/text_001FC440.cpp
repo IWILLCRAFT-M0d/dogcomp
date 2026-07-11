@@ -38,13 +38,17 @@ INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC858); // animation resou
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FC8C0); // get navgraph?
 
 // overlay types and names
-INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB868); /* "Creature" */
+INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB868); // used by D_003665C0
+/* "Creature" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB878); /* "DogsTaleLand" */
+INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB878); // used by D_003665C0
+/* "DogsTaleLand" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB888); /* "Animation" */
+INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB888); // used by D_003665C0
+/* "Animation" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB898); /* "NavGraph" */
+INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB898); // used by D_003665C0
+/* "NavGraph" */
 
 INCLUDE_RODATA("asm/nonmatchings/text_001FC440", D_003EB8A8); /* "NullBanners" */
 
@@ -13120,9 +13124,11 @@ int func_001FD558(char* arg0, char* arg1) {
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD578); // resource function
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD960);
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD9D8);
-INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FDA50);
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD960); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FD9D8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FDA50); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_001FC440", func_001FDA60);
 

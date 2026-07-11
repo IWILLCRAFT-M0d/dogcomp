@@ -3,7 +3,8 @@
 #include "Dogs/SaveGameManager.h"
 
 // beginning of savegamemanager?
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FE088); /* background saving */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FE088); // virtual
+/* background saving */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_001FE0C8);
 
@@ -76,6 +77,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00201E98);
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002020D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002021D0); // deals with settings stuff
+// strlen("/settings")
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202258); // Load saved game function
 
@@ -105,33 +107,35 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002028F8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202958); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002029D0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_002029D0); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202A38);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202A38); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202AD0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202AD0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B30); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B50);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B50); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202B70); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C08);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C08); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C68); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C88);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202C88); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202D20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202D20); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202D80);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202D80); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E18);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E18); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E78);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E98);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202F30);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E78); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202E98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202F30); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveGameManager", func_00202F90);
 

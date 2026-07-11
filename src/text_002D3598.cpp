@@ -25,7 +25,7 @@ MessageStream::MessageStream(const char* arg1, int arg2, int arg3) {
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3628);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3690);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3690); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D36E0);
 
@@ -82,9 +82,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D42E8); // RCT3 DebugEnvir
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D43A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4448);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4500);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4528);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4448); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4500); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4528); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4550);
 
@@ -156,7 +158,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5130);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5190);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D51D8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D51D8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5208); /* Debug_StructContainer */
 
@@ -167,6 +169,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5378);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D53D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5448);
+// new BoolEditor
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D54A8);
 
@@ -189,12 +192,15 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5788); /* rct3 DebugEnvir
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D57C0); /* rct3 DebugEnvironment::Terminate */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5800);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5848);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5888);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D58D0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5800); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5910);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5848); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5888); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D58D0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5910); // unreferenced
 
 #ifdef NON_MATCHING
 void DebugEnvironment::VFatalError(const char* fmt, char* arg2) {
@@ -215,7 +221,7 @@ void DebugEnvironment::VFatalError(const char* fmt, char* arg2) {
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5958); /* RCT3 DebugEnvironment::VFatalError */
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D59F0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5AA8);
 
@@ -260,7 +266,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CC0__11DebugWindow);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5CE0); // DebugWindow virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D08);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D08); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", _vt$14StreamRenderer);
 
@@ -288,9 +294,9 @@ void DebugEnvironment::func_002D5D58() { // RCT3 DebugEnvironment::OnRebuild() ?
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D60);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D60); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D68);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5D68); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_15MessageStreamUI);
 
@@ -298,12 +304,17 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf15MessageStreamUI);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf11DebugWindow);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5E90);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5ED0);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F20);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F70);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5FA0);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6010);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5E90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5ED0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F20); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5F70); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D5FA0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6010); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6020); // Debug_DataValueContainer virtual
 
@@ -343,10 +354,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __tf14StreamRenderer);
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D63F0); // WGRABBIT StreamRender::Render(char*, int)?
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6480);
+// func_002D4770
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D64F8);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D64F8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6570);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6570); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D65B0);
 
@@ -354,18 +366,18 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D65D8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6678);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6718);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6718); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D67B8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6858);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6858); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D68A0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6900);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6978);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6978); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6998);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D6998); // unreferenced
 
 

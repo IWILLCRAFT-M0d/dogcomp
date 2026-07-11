@@ -432,20 +432,33 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B9B0); // BookMe
     void* foo[2];
 } */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B9C0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BA58);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAB8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAD8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAF8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BB90);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BBF0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BC10);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BCA8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BD08);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BDA0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BE00);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BE20);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BEB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019B9C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BA58); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAB8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAD8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BAF8);  // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BB90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BBF0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BC10); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BCA8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BD08); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BDA0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BE00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BE20); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/BookMetaphor", func_0019BEB8); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/BookMetaphor", D_003D31B0);
 

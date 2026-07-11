@@ -7,9 +7,13 @@
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B2A8); // Throwcatch stack
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B398);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B3B0); /* "Throwcatch sanity seriously failed. Try section starts at %s %d" */
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B448); /* "Throwcatch sanity count of %d failure at %s %d" */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B398); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B3B0); // unreferenced
+/* "Throwcatch sanity seriously failed. Try section starts at %s %d" */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ThrowCat", func_0026B448); // unreferenced
+/* "Throwcatch sanity count of %d failure at %s %d" */
 
 #ifdef NON_MATCHING
 Status ThrowCatch_InternalInitialise() {

@@ -112,13 +112,15 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182380); // "Trying to
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001828D8); // if stubbed, food objects can be held and other oddities
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182A70);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182A70); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AD0); // virtual
+// func_001828D8
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182AF0__11WorldObjecti); // Shape to id called
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182D90); // WorldObject::ShapeInstance virtual; override GetFloat?
+// if stubbed, person accessories do not render
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00182EC0);
 // string_ascii WorldObject::func_00182EC0() {
@@ -134,8 +136,8 @@ void WorldObject::SetShape(ShapeData* shape) {
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", SetShape__11WorldObjectP9ShapeData);  // set shape for worldobject?
-// "SetShape called but there are still animations running!"
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", SetShape__11WorldObjectP9ShapeData);
+// func_002D5B40("SetShape called but there are still animations running!")
 #endif
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001833E8); // world object update? (if nopped, food items never disappear when eaten)
@@ -158,25 +160,26 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184738);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184A90__11WorldObject); // this function deals with rendering; member function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E28);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E28); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E48);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E48); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E68);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184E68); // WorldObject::ShapeInstance virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184F58);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00184F58); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185130);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185130); // WorldObject::ShapeInstance virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185200);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185200); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185280);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001853C0);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185510);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185510); // virtual
+// return;
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185518);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185518); // WorldObject::ScriptMessageAndRequestReceiver virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185550); // WorldObject updating
 
@@ -185,6 +188,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185680); // virtual
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001857E8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185878); // virtual
+// actor movement
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185CE0);
 
@@ -194,7 +198,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00185DD8); // virtual; i
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001861B8__11WorldObject); // virtual; animation function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186398);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00186398); // virtual WorldObject::WalkingFootRay_IF function?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001866E8);
 
@@ -263,7 +267,7 @@ void func_00187490(s_func_00187490* arg0, void* dest, int arg2, size_t count) {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8); // virtual
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001874C8); // WorldObject virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187518); // "Trying to drop an object from an invalid holding point" // virtual
 
@@ -273,9 +277,9 @@ int func_00187628() { // worldobject member?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187630); // pickup object function?
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187828);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187828); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001878F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001878F8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001879A8);
 
@@ -298,7 +302,7 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D02F0);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D0308);
 
-INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D0320);
+INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$11WorldObject$31ScriptMessageAndRequestReceiver);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$11WorldObject$13ShapeInstance);
 
@@ -308,42 +312,46 @@ INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D1598);
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", _vt$11WorldObject);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187ED8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00187ED8); // global init and destruct
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188080);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188080); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880A8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001880D0); /* __tf21SimObj_RayHitReceiver */
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf11WorldObject);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001881B8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188238);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001881B8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188270);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188238); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001882A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188270); // WorldObject virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188308);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001882A8); // WorldObject virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188340);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188308); // WorldObject virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883A0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188340); // WorldObject virtual; no collision between objects if stubbed
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883A0); // return BoneManager?
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883A8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B0); /* return a0->unk314 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B0); // unreferenced
+/* return a0->unk314 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883B8); // virtual
+// if stubbed player cannot move
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D0); /* return a0->unk338 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D8); /* return a0->unk33C */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883D8); // unreferenced
+/* return a0->unk33C */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883E0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883E0); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001883F0); // virtual
 
 int func_00188400(void) { // virtual
     return 0;
@@ -355,7 +363,7 @@ void func_00188408(void) { // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188410);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188448);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188448); // virtual
 
 int func_00188450(void) {
     return 0;
@@ -369,7 +377,7 @@ int func_00188460(void) {
     return 0;
 }
 
-int func_00188468(void) {
+int func_00188468(void) { // virtual
     return 0;
 }
 
@@ -380,7 +388,7 @@ int func_00188470(void) {
 int func_00188478(void) {
     return 0;
 }
-int func_00188480(void) {
+int func_00188480(void) { // virtual
     return 0;
 }
 int func_00188488(void) {
@@ -391,7 +399,8 @@ float func_00188490(void) {
     return 0.0f;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A0); /* return a0->unk5A8 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884A0); // unreferenced
+/* return a0->unk5A8 */
 
 #ifdef NON_MATCHING
 void WorldObject::func_001884A8() {
@@ -414,25 +423,29 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884D8); /* return a0-
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884E0); /* return a0->unk544 */
 
-int func_001884E8(void) {
+int func_001884E8(void) { // virtual
      return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F0); /* return a0->unk48 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F0); // unreferenced
+/* return a0->unk48 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F8); /* return a0->unk5B0 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_001884F8); // unreferenced
+/* return a0->unk5B0 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188500); /* return a0->unk5B8 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188500); // unreferenced
+/* return a0->unk5B8 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188508); /* return a0->unk5BC */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188508); // unreferenced
+/* return a0->unk5BC */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188510); /* return D_0044DCA0 */
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188510__11WorldObject); /* return D_0044DCA0 */
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/WorldObj", D_003D18B8);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf21PersistentDataUpdater);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188568);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", func_00188568); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/WorldObj", __tf18AnimPosProvider_IF);
 

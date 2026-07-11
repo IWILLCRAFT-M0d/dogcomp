@@ -7,6 +7,8 @@
 #include "shape_unk.h"
 #include "ge_unk.h"
 
+class DogScript;
+
 typedef struct {
     int unk0;
     char unk4[4];
@@ -36,6 +38,7 @@ class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, publ
         int unk348;
         int unk34C;
         int unk350;
+        /* 0x494 */ DogScript* m_script;
         /* 0x498 */ int m_scriptId;
         int unk544;
         int unk554;
@@ -50,14 +53,17 @@ class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, publ
 
         WorldObject(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~WorldObject();
-        //00188510
+        ClassInfo* func_00188510();
         virtual void func_001884A8();
         virtual void func_001884B8();
         //
         void func_00182AF0(int); // virtual
-
         //?
+        virtual void func_00184A90();
+        //
         virtual void func_001861B8();
+
+
         // WorldObject::ShapeInstance vtable
         virtual void SetShape(ShapeData* shape);
         // ShapeInstance base
@@ -66,10 +72,10 @@ class WorldObject : public SimObj_ObjectWithMomentum, public ShapeInstance, publ
         // virtual ? func_00182D90
         // virtual ? func_00182EC0 // override GetShapeName?
 
+        // WorldObject::ScriptMessageAndRequestReceiver vtable
 
 
 
-        virtual void func_00184A90();
 
 };
 

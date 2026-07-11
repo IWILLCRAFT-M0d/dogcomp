@@ -7,7 +7,7 @@
 #include <setjmp.h>
 // MeshManage?
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F58); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00290F70);
 
@@ -15,11 +15,11 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291050);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002910C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291110);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291110); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002912D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291438);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291438); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291568);
 
@@ -39,22 +39,27 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291780); // RCT3 MeshData::
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291CC0); // RCT3 MeshData::EmptyContents?
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291DC8);
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292168);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00291DC8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292168); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292278);
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002922A0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292338);
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292528);
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292940);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292338); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292528); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292940); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292C48);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292CF8);
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292D70);
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292E68);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292CF8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292D70); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292E68); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00292E78);
 
@@ -128,7 +133,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00295F68); // if stubbed, sme
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296008);
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002960A8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296178); // if stubbed, actors cannot rotate
 
@@ -226,7 +231,7 @@ bool func_002964C0() {
     return sceScfGetAspect() == SCE_ASPECT_169;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002964E8);
+INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_002964E8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00290F58", func_00296548);
 

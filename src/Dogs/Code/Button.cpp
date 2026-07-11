@@ -49,7 +49,7 @@ int Button::func_0010A550() { // GetButtonType?
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A550__6Button);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558); // static constructors
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", func_0010A558); // static init and destruct
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Button", __tf6Button);
 

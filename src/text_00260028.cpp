@@ -8,19 +8,19 @@ INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260060);
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002600A0); // WalkerProvider_IF constructor?
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260158);
+INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260158); // walking animation function
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002601C0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002601E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002601F8);
+INCLUDE_ASM("asm/nonmatchings/text_00260028", func_002601F8); // walking animation function
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260420);
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260590);
+INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260590); // walking animation function
 
-INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260600);
+INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260600); // animation speed?
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260660);
 

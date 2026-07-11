@@ -50,7 +50,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", __9GameShellff);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", _$_9GameShell);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3210);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3210); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/GameShell", func_002D3268);
 

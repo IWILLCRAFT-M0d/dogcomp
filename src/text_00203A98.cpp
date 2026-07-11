@@ -1,7 +1,7 @@
 #include "common.h"
 #include "unk.h"
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00203A98);
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00203A98); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00203B10);
 
@@ -1155,7 +1155,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00216578);
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00216618);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002166B8);
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002166B8); // ScriptMessageAndRequestReceiver virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002166F8);
 
@@ -1565,7 +1565,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00219E38);
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00219E70);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00219EB0);
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00219EB0); // GetSwimmingState?
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00219EE8);
 
@@ -2551,7 +2551,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00222E50);
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00222E90);
 
-void func_00222EC8(void) {
+void ScriptMessageAndRequestReceiver::func_00222EC8() {
     return;
 }
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00222ED0);
@@ -3558,11 +3558,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227990); /* return; */
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227998);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002279D0); /* return; */
+void ScriptMessageAndRequestReceiver::func_002279D0() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_002279D8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227A10); /* return; */
+void ScriptMessageAndRequestReceiver::func_00227A10() {
+    return;
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227A18);
 
@@ -4662,8 +4666,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00203A98", __tf31ScriptMessageAndRequestRecei
 
 INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227A90);
 
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227AD0);
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227B70);
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227C18);
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227D00);
-INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227E28);
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227AD0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227B70); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227C18); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227D00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00203A98", func_00227E28); // unreferenced
+

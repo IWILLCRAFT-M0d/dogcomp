@@ -19,7 +19,7 @@ INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B07F8);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B08A0); // fader function
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B08F0);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B08F0); // ?, GE_Device*/GE_PS2Device*
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B0AC8);
 
@@ -43,14 +43,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1000); // smellovision ma
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B11E0); // clouds?
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B12F8);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B12F8); // called by Game_Document destructor
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1360);
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1440); // rendering function
 
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1E60);
-INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1E80);
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1E60); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1E80); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_001B07A8", func_001B1EA0);
 

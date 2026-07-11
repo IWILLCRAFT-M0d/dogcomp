@@ -35,15 +35,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8630); // PlayingLayer me
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F87A0); // PlayingLayer virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F88B8);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F88B8); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8958);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8958); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F89F0);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F89F0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8A50);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8A50); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8A70);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8A70); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001F8A90);
 
@@ -169,15 +169,15 @@ INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FB978);
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBA20);
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBA30);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBA30); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBE38);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBE38); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBE90);
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBFF0);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FBFF0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FC018);
+INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FC018); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_001F8138", func_001FC038);
 

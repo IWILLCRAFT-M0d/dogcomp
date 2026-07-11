@@ -60,7 +60,8 @@ class ClassInfo : public GenericObject {
 
 class SimObj_Base : public GenericObject/*, public DebugID_IF, public LiveEditable*/ {
     public:
-        short unk5C; // actorId
+        void* unk58;
+        /* 0x5C */ short m_actorId;
         SimObj_Base(ClassInfo*, SimObj_Universe*, int, short);
         virtual ~SimObj_Base();
 };

@@ -29,7 +29,7 @@ PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg
         s_classInfo->unk4 = 1;
     }
 
-    if (this->unk5C == D_00450A10) { // Gem
+    if (this->m_actorId == D_00450A10) { // Gem
     func_0014EB88(2);
     func_0014EB88(3);
     func_0014EB88(4);
@@ -47,7 +47,7 @@ PlayerDog::PlayerDog(ClassInfo* arg0, SimObj_Universe* arg1, int arg2, short arg
     func_0014EB88(31);
     func_0014EB88(32);
     }
-    else if (this->unk5C == D_00450A18) { // ControllableDog
+    else if (this->m_actorId == D_00450A18) { // ControllableDog
         func_0014EB88(2);
         func_0014EB88(3);
         func_0014EB88(4);

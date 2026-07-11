@@ -33,7 +33,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", SetSize__19ShapeParams_Dy
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7B8); /* __tf11ShapeParams */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7F8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B7F8); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$19ShapeParams_Dynamic);
 
@@ -41,17 +41,17 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", D_00447D50); /* "11Sha
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __tf19ShapeParams_Dynamic);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B898);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B898); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B8A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B8A0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B920);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030B920); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BA18);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BB10);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BB10); // unreferenced
 
-void func_0030BEC0() {
+void func_0030BEC0() { // unreferenced
     return;
 }
 
@@ -67,39 +67,45 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF08); // RCT3 S
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF28); // RCT3 ShapeData::EmptyContents?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF48);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF98);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF48); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BFC0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BF98); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C180);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C198);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C1D0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C458);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C4A8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C598);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030BFC0); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C5C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C180); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C680);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C198); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CB50);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C1D0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC28);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C458); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C4A8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC68);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C598); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC80);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C5C0); // called by unreferenced functions
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CCD8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030C680); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CD28);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CB50); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CD60);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC28); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CE18);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC48); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC68); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CC80); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CCD8); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CD28); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CD60); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CE18); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030CF98); // ShapeDataNamedBoneWriter member
 
@@ -135,13 +141,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D688);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D738);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D7A0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D7A0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D818);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D818); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D8B8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030D8B8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DD08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DD08); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DDC8);
 
@@ -149,7 +155,8 @@ INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$15RelocationBlock)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", __tf15RelocationBlock);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DEF8); /* return a0->unk2C */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DEF8); // unreferenced
+/* return a0->unk2C */
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DF00);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030DF20);
@@ -160,60 +167,77 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E3D0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E820);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E8C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E8C0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E920);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E920); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E990);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030E990); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030EC70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030EC70); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F678);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F678); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F6C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F6C8); // called by unreferenced functions
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F7E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F7E8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F868);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F868); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F9D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030F9D0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FA20);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FA20); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FAC8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FBD0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC00);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC98);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FCD8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FD28);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FEC8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFB0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFE8);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310038);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003100E0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310148);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310158);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FAC8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310170);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FBD0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003101C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC00); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310250);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FC98); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003102E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FCD8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310370);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FD28); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310438);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FEC8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310448);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFB0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310478);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310490);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003104E0);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310560);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310A98);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310AE0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_0030FFE8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310038); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003100E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310148); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310158); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310170); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003101C0); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310250); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003102E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310370); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310438); // MeshTransforms virtual
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310448); // MeshTransforms virtual
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310478); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310490); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_003104E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310560); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310A98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/ShapeParams", func_00310AE0); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/ShapeParams", _vt$14MeshTransforms);
 

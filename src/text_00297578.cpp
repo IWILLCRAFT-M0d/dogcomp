@@ -18,15 +18,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297950);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002979B0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297A40);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297A40); // texture related function
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297AC8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297B88);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297B88); // texture format? (called during loading texture)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297BD8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297D60);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297D60); // texture related function
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297DD0);
 
@@ -34,13 +34,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00297F88);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298688);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002987C0);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002987C0); // texture related function? if stubbed game does not render correctly
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00298D50); // texture function
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299190); // texture function; called by GE_TextureTarget constructor?
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991C8);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991C8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002991F8); // set texture scale? used by button icons
 
@@ -50,15 +50,15 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299258); // called by GE_Te
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299270); /* return a0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299278);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299278); // called during boot
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002992D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299338);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002993A0);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002993A0); // if stubbed, button icons do not render properly
 
-void func_00299448() {
+void func_00299448() { // unreferenced
     return;
 }
 
@@ -70,7 +70,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299690__16GE_TextureTarget)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996A8__16GE_TextureTarget); // vertical scale/size for target? // RCT3 GetHeight?
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996C0); // GetSize
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002996C0); // GE_TextureTarget virtual
+// GetSize
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_00299740); // GE_TextureTarget member
 
@@ -111,10 +112,12 @@ INCLUDE_RODATA("asm/nonmatchings/text_00297578", _vt$16GE_TextureTarget);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf16GE_TextureTarget);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A700); /* return a0->unk22C */
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A708);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A700); // unreferenced
+/* return a0->unk22C */
 
-void func_0029A738() {
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029A708); // unreferenced
+
+void func_0029A738() { // unreferenced
     return;
 }
 
@@ -178,6 +181,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029C340); // rendering funct
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029CC50);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029D728);
+// (static?) bool D_00452108 (blur)
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_0029FEA0);
 
@@ -221,7 +225,8 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0D90); // GE_PS2DisplayTa
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0DD0); // GE_PS2DisplayTarget member
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A0E10); // GE_PS2DisplayTarget member
-// d_00452110 shadow rendering?
+// (static?) bool D_00452110 shadow rendering?
+// (static?) bool D_0045210C
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1218__19GE_PS2DisplayTarget);
 
@@ -229,13 +234,16 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1500__19GE_PS2DisplayTarg
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1520);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1678);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1678); // called on boot
 /*
 void func_002A1678() {
     D_004520EC = 1;
 }
 */
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1688);
+// (static?) ? D_0045211C
+// (static?) 4byte D_00452124 (vertical screen offset?)
+
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A17E0);
 
@@ -269,8 +277,10 @@ INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1A78);
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", __tf12GE_PS2Target);
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B58);
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68); /* return a0->unk14 */
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B58); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1B68); // unreferenced
+/* return a0->unk14 */
 
 float func_002A1B70() { // GE_PS2Target::SquarePixelYScale?
     return 1.0f;
@@ -336,10 +346,14 @@ float GE_PS2DisplayTarget::func_002A1CB8() {
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1CB8__19GE_PS2DisplayTarget); // widescreen function?
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D00);
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D18); /* return D_004520EC */
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D28); /* return D_004520E8 */
-INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D30);
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D18); // unreferenced
+/* return D_004520EC */
+
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D28); // unreferenced
+/* return D_004520E8 */
+INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D30); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00297578", func_002A1D48);
 

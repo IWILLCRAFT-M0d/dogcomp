@@ -3,10 +3,9 @@
 #include "Dogs/SphereObj.h"
 
 #ifdef NON_MATCHING
-extern ClassInfo* D_0044DA60;
 SphereObj::SphereObj(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : WorldObject(arg1 = 0, arg2, arg3, arg4) {
     if (arg1 != 0) {
-        D_0044DA60 = arg1;
+        s_classInfo = arg1;
     }
     this->unk5C4 = 1.0;
     this->unk5F0 = -10000.0;
@@ -25,7 +24,7 @@ SphereObj::SphereObj(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg
     this->unk5EC = 0;
 
     if (arg1 == NULL) {
-        D_0044DA60->unk4 = 1;
+        s_classInfo->unk4 = 1;
     }
 }
 #else
@@ -128,9 +127,11 @@ float SphereObj::func_001775C0() {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775C0__9SphereObj);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775D0);
+ClassInfo* SphereObj::func_001775D0() {
+    return s_classInfo;
+}
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775D8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SphereObj", func_001775F8); /* __tf14TransientSound */
 

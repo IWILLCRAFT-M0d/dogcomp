@@ -46,6 +46,9 @@ struct string_ascii {
     string_ascii operator+(const char* rhs) const;
 };
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class Tree34_Node {
     public:
         ///* 0x4 */ Tree34_Node
@@ -53,12 +56,18 @@ class Tree34_Node {
         void Empty();
 };
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class Tree34_Basic {
     public:
         ///* 0x4 */ Tree34_Node
         void Empty();
 };
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
 class Tree34_Unit {
     public:
         void* unk0;

@@ -8,13 +8,13 @@ INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276090);
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276110);
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276190);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276190); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276650);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276650); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002766C0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276A40);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276A40); // unreferenced
 
 // c_func_00276AC0* D_00453774
 #ifdef NON_MATCHING
@@ -46,21 +46,33 @@ void c_func_00276AC0::func_00276FA0(short arg1) {
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA0);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA8);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276FA8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277040);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770A0);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770C0);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770E0);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277178);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002771D8);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002771F8);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277290);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002772F0);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277388);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002773E8);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277408);
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002774A0);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277040); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770A0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002770E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277178); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002771D8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002771F8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277290); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002772F0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277388); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002773E8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277408); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002774A0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277500);
 

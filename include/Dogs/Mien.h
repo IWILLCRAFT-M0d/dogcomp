@@ -1,6 +1,9 @@
 #ifndef MIEN_H
 #define MIEN_H
 
+/**
+ * @brief Used for player (Gem) mood.
+ */
 class Mien {
     public:
         int unk0;
@@ -20,5 +23,10 @@ class Mien {
         void func_001E6CC8(float);
         void func_001E6C80(float);
 };
+
+/**
+ * @todo Determine if this should be a method of Mien class.
+ */
+void func_001E6EC0(Mien*, float);
 
 #endif /* MIEN_H */

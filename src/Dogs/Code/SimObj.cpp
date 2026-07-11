@@ -521,11 +521,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168558); // SimObj_Base 
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", __tf15SimObj_Universe);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685B0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685B0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685B8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685B8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685C0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685C8); /* return (float) a0->unkD4 */
 
@@ -537,9 +537,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685E0); /* return a0->u
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685E8); /* a0->unkCC = a1 */
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001685F0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168600);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168600); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168610); /* return; */
 
@@ -590,9 +590,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168770); /* a0->unk164 =
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168778);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168780);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168788);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168790);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168780); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168788); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168790); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168798);
 
@@ -638,15 +640,23 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001689D0);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_001689F8);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A00);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A18);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A30);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A48);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A70);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A98);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168AC0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168AE0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B20);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A18); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A30); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A48); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A70); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168A98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168AC0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168AE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B20); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SimObj", func_00168B40);
 

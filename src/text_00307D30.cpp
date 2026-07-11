@@ -81,14 +81,21 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tfQ24File11OpenWatcher);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", __tf12File_MemRead);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308140);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308190);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308238);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003082E8);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308368);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003083A0);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308430);
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003084E8);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308140); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308190); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308238); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003082E8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308368); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003083A0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308430); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003084E8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00308530);
 // File_Initialise();
@@ -218,9 +225,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309588);
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095C8__18FileFindAccess_Nul);
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095F8);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_003095F8); // FileFindAccess_Nul virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309620);
+INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309620); // FileFindAccces_Nul virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_00307D30", func_00309680__18FileFindAccess_Nul);
 

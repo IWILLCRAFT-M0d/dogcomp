@@ -34,20 +34,33 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152248__10SaveKennel
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152288__10SaveKennel);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001522C8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152360);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523C0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523E0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152400);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152498);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001524F8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152518);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001525B0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152610);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001526A8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152708);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152728);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001527C0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001522C8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152360); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523C0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001523E0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152400); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152498); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001524F8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152518); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001525B0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152610); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001526A8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152708); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_00152728); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/SaveKennel", func_001527C0); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/SaveKennel", _vt$21MostInFrontCalculator);
 

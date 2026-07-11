@@ -11,6 +11,10 @@ typedef struct {
     int unk4;
 } s_D_0044D398;
 
+
+/**
+ * @brief Used by Gem (Jake) and ControllableDog actors.
+ */
 class PlayerDog : public Dog {
     public:
         static ClassInfo* s_classInfo;

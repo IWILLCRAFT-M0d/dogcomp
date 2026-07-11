@@ -61,11 +61,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD70__11InputCD_PS2);
 #endif
 
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBE78); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBE78); // InputCD_PS2 virtual
 
 #ifdef NON_MATCHING
 
-Status func_002FBEB0(void) {
+Status func_002FBEB0(void) { // unreferenced
     return Status(0xFFFFFFFF, 0, -1);
 }
 
@@ -73,11 +73,11 @@ Status func_002FBEB0(void) {
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEB0);
 #endif
 
-void func_002FBEE8(void) {
+void func_002FBEE8(void) { // unreferenced
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEF0);
+INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBEF0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBF18);
 // if (D_00452E6C = NULL) {
@@ -88,6 +88,6 @@ INCLUDE_RODATA("asm/nonmatchings/text_002FBD40", _vt$11InputCD_PS2);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", __tf11InputCD_PS2);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBF98);
+INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBF98); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", __tf7InputCD);

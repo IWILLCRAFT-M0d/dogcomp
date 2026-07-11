@@ -79,20 +79,33 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001285B0); // Digga
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001286D8); // DiggablePatch member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128BB0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128C48);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CA8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CC8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CE8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128D80);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128DE0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128E00);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128E98);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128EF8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128F90);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128FF0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00129010);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001290A8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128BB0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128C48); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CA8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CC8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128CE8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128D80); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128DE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128E00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128E98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128EF8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128F90); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00128FF0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_00129010); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/DiggablePatch", func_001290A8); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/Dogs/Code/DiggablePatch", D_003A36C0);
 

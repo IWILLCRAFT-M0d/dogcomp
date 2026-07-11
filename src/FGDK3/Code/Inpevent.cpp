@@ -91,7 +91,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F9C10);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F9D90);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F9E70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002F9E70); // button handler function? (, InputDevice_Device*?)
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA050);
 
@@ -119,7 +119,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA630);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA678);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA688);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA688); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FA6D8);
 
@@ -159,7 +159,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB078);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB0D8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB198);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB198); // Called by Game_Document::Advance; if stubbed input does not get registered
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Inpevent", func_002FB3A0); // called by GameShell::Step
 

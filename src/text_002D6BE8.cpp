@@ -168,7 +168,7 @@ void Endian::func_002D7980(void) {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7988);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7988); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7998);
 
@@ -219,7 +219,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D87E0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", _$_16Endian_ExpandMem);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D88A8);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D88A8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D89A8);
 

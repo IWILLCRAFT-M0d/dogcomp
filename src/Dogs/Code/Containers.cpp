@@ -25,11 +25,11 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_9Container);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB8B8__9Container);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB920);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB920); // container virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB990__9Container);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB9D8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AB9D8); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABA10__9Containerf);
 
@@ -55,7 +55,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", _$_13BasketballNet);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABCA8); // virtual BasketballNet member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFB8); // BasketballNet virtual
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ABFE0); // ball detection?
 
@@ -63,13 +63,13 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC098); // renderin
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC0B8); // virtual BasketballNet member
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC120);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC120); // BasketballNet virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC1F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC1F8); // BasketballNet virtual
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC2F0);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC2F0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC350);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001AC350); // unreferenced
 
 #ifdef NON_MATCHING
 Pram::Pram(ClassInfo* arg1, SimObj_Universe* arg2, int arg3, short arg4) : Container(arg1 = 0, arg2, arg3, arg4) {
@@ -179,9 +179,9 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ACC20);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", __tf9Container);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ACFB8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Containers", func_001ACFB8); // virtual
 
-int func_001ACFC0(void) {
+int func_001ACFC0(void) { // virtual
 	return 0;
 }
 

@@ -62,7 +62,7 @@ INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F168);
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F180);
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F210);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F210); // used by object throwing function
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/Bounce", func_0019F290);
 

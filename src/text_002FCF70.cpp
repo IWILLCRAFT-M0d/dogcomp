@@ -69,14 +69,14 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf13StorageDevice);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEA90);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEAE0);
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEB88);
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEC08);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEAE0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEB88); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEC08); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEC40);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FECA8);
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FED60);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FECA8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FED60); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_002FEDD0);
 
@@ -304,9 +304,9 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_22FileSystemDisc_MemCard);
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00300D50); // virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301058);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301058); // FileSystemDisc_Memcard virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301158);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301158); // FileSystemDisc_Memcard virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_003011F8);
 
@@ -330,6 +330,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __21StorageDevice_MemCardi); /* in
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301648); // StorageDevice_MemCard virtual
 
+// 00452ec8 memcard ps2semaphore?
 #ifdef NON_MATCHING
 void StorageDevice_MemCard::func_003016A0() {
     //
@@ -399,13 +400,13 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", _$_28StorageDevice_MemCardUpdater)
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", __tf28StorageDevice_MemCardUpdater);
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301D98);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301D98); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301DE8);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301DE8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301E90);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301E90); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301F10);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301F10); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00301F48);
 
@@ -487,7 +488,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302B80); /* __tf6Thread */
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302BD0); /* __tf13StorageDevice */
 
-INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302C28);
+INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302C28); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002FCF70", func_00302C98);
 

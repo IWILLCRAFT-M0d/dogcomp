@@ -117,20 +117,34 @@ FadeInReq::FadeInReq(float arg) : GameState::GameStateReq::GameStateReq(this) {
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __9FadeInReqf);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C00);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C98);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8CF8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D18);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D38);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8DD0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E30);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E50);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8EE8);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8F48);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8FE0);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9040);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9060);
-INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D90F8);
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8C98); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8CF8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D18); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8D38); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8DD0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E30); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8E50); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8EE8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8F48); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D8FE0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9040); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D9060); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", func_001D90F8); // unreferenced
+
 
 INCLUDE_ASM("asm/nonmatchings/Dogs/Code/GameState", __tfQ29GameState12GameStateReq);
 

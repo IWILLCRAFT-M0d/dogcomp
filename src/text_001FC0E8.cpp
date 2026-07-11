@@ -28,7 +28,7 @@ static NavGraph_Resources D_0035FBE8;
 // static Music_Resources D_0035FC00;
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_001FC0E8", func_001FC108);
+INCLUDE_ASM("asm/nonmatchings/text_001FC0E8", func_001FC108); // unreferenced
 
 #ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/text_001FC0E8", func_001FC118); // create/destroy resources
