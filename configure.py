@@ -66,6 +66,7 @@ O0_SPLITS = [
     "src/FGDK3/Code/Playstation2/Music.cpp",
     "src/FGDK3/Code/GameShell.cpp",
     "src/text_002FCF70.cpp",
+    "src/FGDK3/Code/Playstation2/File_MemCard.cpp",
     "src/text_00307D30.cpp",
     "src/FGDK3/Code/FileSystem_Zip.cpp"
 ]
