@@ -163,7 +163,7 @@ segments:
       - [0x170BA0, cpp, FGDK3/Code/Playstation2/sifManager]
       - [0x170FB8, cpp, text_0026FFB8] # shape.cpp?
       - [0x172A20, cpp, text_00271A20]
-      - [0x173F50, cpp, text_00272F50] # beginning of RunPath.cpp?
+      - [0x173F50, cpp, FGDK3/Code/Playstation2/RunPath] # beginning of RunPath.cpp?
       - [0x176FF8, cpp, text_00275FF8]
       - [0x1785D0, cpp, text_002775D0] # beginning of RelRecv.cpp?
       - [0x17A880, cpp, FGDK3/Code/NavGraphRes] # navgraph functions
@@ -350,8 +350,7 @@ segments:
       - [0x33CAD0, .rodata, FGDK3/Code/Playstation2/sifManager]
       - [0x33CBC0, .rodata, text_0026FFB8]
       - [0x33CE40, .rodata, text_00271A20] # SavedGame
-      - [0x33CE68, .rodata, text_00272F50]
-      #- [0x33CE68, .rodata, FGDK3/Code/Playstation2/RunPath]
+      - [0x33CE68, .rodata, FGDK3/Code/Playstation2/RunPath]
       #- [0x33CEE0]
       - [0x33D280, .rodata, text_00275FF8]
       - [0x33D2B0, .rodata, text_002775D0]
