@@ -130,6 +130,10 @@ class InputBinding {
 
 class Pointer : public InputBinding {
     public:
+        void* unk2C;
+
+        float unk60;
+        float unk64;
         // virtual ? func_00278608
         // virtual ? func_00278668
         virtual ~Pointer();
