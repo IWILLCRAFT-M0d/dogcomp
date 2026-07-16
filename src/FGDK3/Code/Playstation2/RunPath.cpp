@@ -22,7 +22,7 @@ Status RunPath_InternalInitialise() {
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_InternalInitialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", RunPath_InternalInitialise__Fv);
 #endif
 
 void RunPath_InternalFinalise() {
@@ -56,8 +56,8 @@ void RunPath_Finalise() {
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_Initialise__Fv);
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_Finalise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", RunPath_Initialise__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", RunPath_Finalise__Fv);
 #endif
 
 #ifdef NON_MATCHING
@@ -65,74 +65,74 @@ const char * RunPath_Get() {
     return "cdrom0:\\";
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", RunPath_Get__Fv);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", RunPath_Get__Fv);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273000); // file related function (, char*); RCT3 RunPath_GetFileName?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273000); // file related function (, char*); RCT3 RunPath_GetFileName?
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273158);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273158);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002731E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002731E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273240); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273240); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002732B8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002732B8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273318); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273318); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002733D8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002733D8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273420); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273420); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002735C8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002735C8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002736A8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002736A8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002736E8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002736E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273778);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273778);
 
 // split???
 // 004534B5 lang variable
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002737A8); // InternalInitialise
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002737A8); // InternalInitialise
 // func_002750E0
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273900); // InternalFinalise
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273900); // InternalFinalise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273968); // Initialise
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273968); // Initialise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273998); // Finalise
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273998); // Finalise
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002739B8); // called when switching game language
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002739B8); // called when switching game language
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273A80); // (overlayId, ) ; required overlay loading/check?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273A80); // (overlayId, ) ; required overlay loading/check?
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273B10); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273B10); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273C38); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273C38); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273CB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273CB0);
 
 Resource_LayoutUnit::Resource_LayoutUnit(Resource_LayoutUnit* arg0){
     this->unk0 = 0;
     this->unk4 = arg0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_19Resource_LayoutUnit);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_19Resource_LayoutUnit);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273D58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273D58);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273DA0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273DA0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273DE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273DE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273E20);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273E20);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273E58);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273E58);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00273E90); /* Resource_LayoutOverlay */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00273E90); /* Resource_LayoutOverlay */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_22Resource_LayoutOverlay);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_22Resource_LayoutOverlay);
 
 #ifdef NON_MATCHING
 void func_00274020(Resource_LayoutOverlay* arg0, void* arg1, void* arg2, int arg3);
@@ -156,7 +156,7 @@ void func_00274020(Resource_LayoutOverlay* arg0, void* arg1, void* arg2, int arg
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274020); // "Ovl % 20s %12s % 10d\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274020); // "Ovl % 20s %12s % 10d\n"
 #endif
 
 extern s_D_0035FC48* D_0035FC48;
@@ -172,10 +172,10 @@ void Resource_LayoutOverlay::func_00274200() {
     //func_00274020(this, this->unk28, this->unk2C, 3);
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274200__22Resource_LayoutOverlay); /* Load Resource_LayoutOverlay */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274200__22Resource_LayoutOverlay); /* Load Resource_LayoutOverlay */
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002742B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002742B0);
 
 #ifdef NON_MATCHING
 void Resource_LayoutOverlay::func_00274400() {
@@ -187,44 +187,44 @@ void Resource_LayoutOverlay::func_00274400() {
     //func_002742B0(this, this->unk28, this->unk2C, 3);
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274400__22Resource_LayoutOverlay); /* Unload Resource_LayoutOverlay */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274400__22Resource_LayoutOverlay); /* Unload Resource_LayoutOverlay */
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002744B0); // Resource_LayoutOverlay  virtual
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002744B0); // Resource_LayoutOverlay  virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002744F8); // Resource_LayoutOverlay virtual
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002744F8); // Resource_LayoutOverlay virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274540); // Resource_LayoutOverlay virtual
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274540); // Resource_LayoutOverlay virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274588);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274588);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002745D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002745D0);
 
 Resource_LayoutGroup::Resource_LayoutGroup(Resource_LayoutUnit* arg0, int arg1, void* arg2) :  Resource_LayoutUnit(arg0) {
     this->unkC = arg1;
     this->unk10 = arg2;
 }
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_20Resource_LayoutGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_20Resource_LayoutGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274730); // Resource_LayoutGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274730); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274790); // Resource_LayoutGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274790); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002747F0);  // Resource_LayoutGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002747F0);  // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274850); // Resource_LayoutGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274850); // Resource_LayoutGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002748B0); /* Resource_LayoutExclusiveGroup) */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002748B0); /* Resource_LayoutExclusiveGroup) */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002748E8); // Resource_LayoutExclusiveGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002748E8); // Resource_LayoutExclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274918); // Resource_LayoutExclusiveGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274918); // Resource_LayoutExclusiveGroup member
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002749C8); /* Resource_LayoutInclusiveGroup */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002749C8); /* Resource_LayoutInclusiveGroup */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A00__29Resource_LayoutInclusiveGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274A00__29Resource_LayoutInclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274A60); // Resource_LayoutInclusiveGroup member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274A60); // Resource_LayoutInclusiveGroup member
 
 #ifdef NON_MATCHING
 File* func_00274B00(char* name) {
@@ -234,32 +234,32 @@ File* func_00274B00(char* name) {
 }
 
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274B00); // overlay loading function?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274B00); // overlay loading function?
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274C10); // used for preload.dat?
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274C10); // used for preload.dat?
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274CB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274CB0);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274D40);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274D40);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274DD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274DD0);
 // new Resource_LayoutOverlay(/**/)
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274EB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274EB8);
 // new Resource_LayoutInclusiveGroup(/**/)
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00274F78);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00274F78);
 // new Resource_LayoutExclusiveGroup(/**/)
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275038);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275038);
 
 #ifdef NON_MATCHING
 void func_002750E0(void) {
     func_00274B00("preload.dat");
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002750E0); // preload.dat referenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002750E0); // preload.dat referenced
 #endif
 
 File* func_00275288(int arg0, int lang, int ovlType, int arg3) {
@@ -303,44 +303,44 @@ Resource_Generic::Resource_Generic() {
     }
 }
 #else
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __16Resource_Generic);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __16Resource_Generic);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_16Resource_Generic);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_16Resource_Generic);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275448);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275448);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002754E8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002754E8); // unreferenced
 
 int Resource_Generic::func_00275520() {
     return 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275528);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275528);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275600);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275600);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002756E0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002756E0);
 
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275718);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275718);
 // char* type = this->ResName();
 //scePrintf("Resource %s:%d loaded twice\n",type,id)
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002757B0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002757B0);
 
 void func_002757E8(void) { // called by resource internalinitialise functions
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002757F0); // called by resource internalfinalise functions
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002757F0); // called by resource internalfinalise functions
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_002758F8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_002758F8); // unreferenced
 /* return D_00451B54 != 0 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275908); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275908); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275990); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275990); // unreferenced
 
 
 void func_00275AF8(void) { // unreferenced
@@ -355,60 +355,60 @@ void func_00275B08(void) { // unreferenced
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275B10);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275B10);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf19Resource_LayoutUnit);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf19Resource_LayoutUnit);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275BE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275BE8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275BF0); /* return a0->unk4 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275BF0); /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf20Resource_LayoutGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf20Resource_LayoutGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$16Resource_Generic);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$16Resource_Generic);
 
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$29Resource_LayoutInclusiveGroup);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$29Resource_LayoutInclusiveGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$29Resource_LayoutExclusiveGroup);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$29Resource_LayoutExclusiveGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$22Resource_LayoutOverlay);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$22Resource_LayoutOverlay);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$20Resource_LayoutGroup);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$20Resource_LayoutGroup);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", _vt$19Resource_LayoutUnit);
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _vt$19Resource_LayoutUnit);
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", D_0043C188); /* "19Resource_LayoutUnit" */
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", D_0043C188); /* "19Resource_LayoutUnit" */
 
-INCLUDE_RODATA("asm/nonmatchings/text_00272F50", D_0043C1A0); /* "20Resource_LayoutGroup" */
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", D_0043C1A0); /* "20Resource_LayoutGroup" */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf22Resource_LayoutOverlay);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf22Resource_LayoutOverlay);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_29Resource_LayoutExclusiveGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_29Resource_LayoutExclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf29Resource_LayoutExclusiveGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf29Resource_LayoutExclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", _$_29Resource_LayoutInclusiveGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", _$_29Resource_LayoutInclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf29Resource_LayoutInclusiveGroup);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf29Resource_LayoutInclusiveGroup);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", __tf16Resource_Generic);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", __tf16Resource_Generic);
 
 
 void Resource_Generic::func_00275E88() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275E90); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275E90); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275EE8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275EE8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F20); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275F20); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F88); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275F88); // unreferenced
 /* return a0->unk4 */
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275F90); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275F90); // unreferenced
 /* return D_00451B50 */
 
 int Resource_Generic::func_00275F98() {
@@ -427,6 +427,6 @@ void Resource_Generic::func_00275FB0() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275FB8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275FB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_00272F50", func_00275FD8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/RunPath", func_00275FD8);
