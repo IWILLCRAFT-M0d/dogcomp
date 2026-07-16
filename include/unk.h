@@ -1346,4 +1346,15 @@ class String_Buffer {
         virtual ~String_Buffer();
 };
 
+/**
+ * @note Class and method names taken from RCT3 symbols.
+ */
+class NameStore {
+    public:
+        void* unk0;
+        string_ascii unk4;
+        NameStore(const char*, int, bool);
+        void Initialise(const char*, int, bool);
+};
+
 #endif /* UNK_H */

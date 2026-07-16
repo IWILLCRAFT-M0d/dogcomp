@@ -77,7 +77,10 @@ block_5:
 };
 
 // 003777e8 RCT3 Music_Track::s_nameStore?
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A030); // RCT3 NameStore::NameStore?
+
+NameStore::NameStore(const char* arg1, int arg2, bool arg3) {
+    Initialise(arg1, arg2, arg3);
+}
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A098); // unreferenced
 
@@ -85,7 +88,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A0D0); // RCT3 ~NameStore
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A150); // RCT3 NameStore::Reset?
 
-INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A1C8); // RCT3 NameStore::Initialise?
+INCLUDE_ASM("asm/nonmatchings/text_00309778", Initialise__9NameStorePCcib);
 
 INCLUDE_ASM("asm/nonmatchings/text_00309778", func_0030A388);
 
