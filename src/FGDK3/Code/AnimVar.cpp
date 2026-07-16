@@ -1,5 +1,6 @@
 #include "common.h"
-#include "unk.h"
+
+#include "FGDK3/AnimVar.h"
 
 AnimationVariable::AnimationVariable(float fparg0) {
     this->unk0 = fparg0;
@@ -8,9 +9,9 @@ AnimationVariable::AnimationVariable(float fparg0) {
 }
 
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9E0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002ED9E0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002ED9F8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002ED9F8);
 
 
 void AnimationVariable::SetDefaultNextValue(float fparg0) {
@@ -19,7 +20,7 @@ void AnimationVariable::SetDefaultNextValue(float fparg0) {
     this->unk10 = 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002EDA30);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002EDA30);
 
 void AnimationVariable::Advance() {
     if (this->unkC < 1.0f) {
@@ -30,9 +31,9 @@ void AnimationVariable::Advance() {
 }
 
 #ifndef NON_MATCHING
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002EDB30);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002EDB30);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002EDB90);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002EDB90);
 
-INCLUDE_ASM("asm/nonmatchings/text_002ED9C0", func_002EDBB0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/AnimVar", func_002EDBB0);
 #endif

@@ -183,7 +183,7 @@ segments:
       - [0x1A59A0, cpp, FGDK3/Code/Playstation2/GE_RenderHardware]
       - [0x1A6350, cpp, text_002A5350]
       - [0x1AEC40, cpp, text_002ADC40]
-      - [0x1CB560, cpp, text_002CA560]
+      - [0x1CB560, cpp, FGDK3/Code/Playstation2/GE]
       - [0x1D3D80, cpp, FGDK3/Code/GameShell] # -O0 - Guessed filepath and name
       - [0x1D4598, cpp, text_002D3598]
       - [0x1D79B8, cpp, FGDK3/Code/FontRes]
@@ -197,7 +197,7 @@ segments:
       - [0x1E85B0, cpp, FGDK3/Code/IKComponents]
       - [0x1E8B08, cpp, FGDK3/Code/BoneManager]
       - [0x1EE2C8, cpp, FGDK3/Code/AnimVarComponents]
-      - [0x1EE9C0, cpp, text_002ED9C0]
+      - [0x1EE9C0, cpp, FGDK3/Code/AnimVar]
       - [0x1EEBD0, cpp, FGDK3/Code/AnimPosComponents]
       - [0x1F0738, cpp, FGDK3/Code/AnimateTimeBases]
       - [0x1F4EF0, cpp, FGDK3/Code/Animate]
@@ -370,7 +370,7 @@ segments:
       - [0x340320, .rodata, FGDK3/Code/Playstation2/GE_RenderHardware]
       - [0x340490, .rodata, text_002A5350]
       - [0x340970, .rodata, text_002ADC40]
-      - [0x3438E0, .rodata, text_002CA560]
+      - [0x3438E0, .rodata, FGDK3/Code/Playstation2/GE]
 
 
       - [0x343CE8, .rodata, FGDK3/Code/GameShell]
@@ -387,7 +387,7 @@ segments:
       - [0x346100, .rodata, FGDK3/Code/IKComponents]
       - [0x3462B0, .rodata, FGDK3/Code/BoneManager]
       - [0x346350, .rodata, FGDK3/Code/AnimVarComponents]
-      - [0x346578, .rodata, text_002ED9C0]
+      - [0x346578, .rodata, FGDK3/Code/AnimVar]
       - [0x346590, .rodata, FGDK3/Code/AnimPosComponents]
       - [0x346CE8, .rodata, FGDK3/Code/AnimateTimeBases]
       - [0x347610, .rodata, FGDK3/Code/Animate]

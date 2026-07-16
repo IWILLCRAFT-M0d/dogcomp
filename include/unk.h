@@ -55,24 +55,6 @@ typedef struct {
   /* 0x03C */ bool  unk3C;       // DOF
 } s_func_0023E698;
 
-
-/**
- * @note Class and method names taken from RCT3 symbols.
- *
- * @todo Document variables.
- */
-class AnimationVariable {
-    public:
-        float unk0;
-        float unk4;
-        float unk8;
-        float unkC;
-        void* unk10;
-        AnimationVariable(float);
-        void SetDefaultNextValue(float);
-        void Advance();
-};
-
 class StdAllocator {
     public:
         /*virtual*/ void* Alloc(size_t nbytes);

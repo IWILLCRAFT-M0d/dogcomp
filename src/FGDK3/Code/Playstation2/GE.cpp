@@ -1,0 +1,379 @@
+#include "common.h"
+#include "debug.h"
+#include "unk.h"
+
+#include "FGDK3/Playstation2/IOPMem.h"
+#include <libscf.h>
+#include <ee/sifdev.h>
+#include "FGDK3/ThrowCat.h"
+
+#include "FGDK3/Playstation2/GE.h"
+#include <libdev.h>
+#include <libgraph.h>
+
+
+#include "FGDK3/Playstation2/GE_RenderHardware.h"
+#include "ge_unk.h"
+
+// Beginning of Playstation2/GE.cpp
+
+// D_004528C0
+// short D_004528C4 (interlacing mode)
+// short D_004528C6 (TV mode)
+// short D_004528C8 (field/frame mode)
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CA560);
+
+#ifdef NON_MATCHING
+Status GE_InternalInitialise() {
+  extern void *D_004528B4;
+  extern int D_004528B8;
+  D_004528B4 = new int*[D_004528B8 << 2];
+
+  sceDevVif0Reset();
+  sceDevVif1Reset();
+  sceDevVu0Reset();
+  sceDevVu1Reset();
+  sceGsResetPath();
+  sceDmaReset(1);
+  new GE_DMAPktRc1i69();
+  GE_PS2RenderHardware* D_0045286C  = new GE_PS2RenderHardware(); // s_self?
+
+  return Status(0xFFFFFFFFF, "c:/coding/fgdk3/Code/playstation2/GE.cpp", 260);
+}
+
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", GE_InternalInitialise__Fv);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CA6D8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", GE_InternalFinalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", GE_Initialise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", GE_Finalise__Fv);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CA950); /* return D_0045216C */
+
+int func_002CA958() {
+    return 1;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CA960); // RCT3 GE_GetDevice?
+
+
+#ifdef NON_MATCHING
+
+GE_RenderHardware::GE_RenderHardware() {
+    static int D_00452894;
+    this->m_unk0.f = 1.0f;
+    this->m_unk4.i = 0;
+    if (D_00452894 != 0) {
+        ThrowCatch_DefiniteThrow(Status(0x4007, "C:/Coding/FGDK3/Code/Common/GE.cpp", 63));
+    }
+    D_00452894 = 1;
+
+};
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", __17GE_RenderHardware);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CAA00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CAAB0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CAB88); // unreferenced
+
+GE_PrimCache::GE_PrimCache(char arg1, short arg2, int arg3, int arg4, int arg5, void* arg6, int arg7) {
+    this->m_unk0 = arg1;
+    this->m_unk1 = 1;
+    this->m_unk2 = arg2;
+    this->m_unk4 = -1;
+    this->m_unk8 = arg4;
+    this->m_unkC = arg5;
+    this->m_unk10 = arg7;
+    this->m_unk14 = 0;
+}
+
+
+void GE_PrimCache::func_002CABF0() { // WGRABBIT ReleaseSelf?
+    this->m_unk1 -= 1;
+
+    if (this->m_unk1 == 0) {
+        delete this;
+   }
+}
+
+#ifdef NON_MATCHING
+GE_Device::GE_Device() {
+    this->unk50 = 0.0f;
+    this->unk54 = 0.0f;
+    this->unk58 = 0.0f;
+    this->unk5C = 0.0f;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", __9GE_Device);
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", _$_9GE_Device);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CAF00); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC1C0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC250); // ? func_002CC250(GE_Device*,); RCT3 GE_Device::DrawEnableColour?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC2E0); // rendering function; if stubbed fonts don't render; font color?
+// RCT3 GE_Device::DrawColourSet?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC338); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC380); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC3F0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC420);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC478); // GE_Device*
+// if stubbed, hintboxes do not render correctly
+
+// RCT3 GE_Device::DrawMove?
+void GE_Device::func_002CC4A0(float fparg0, float fparg1) {
+    this->unk50 = fparg0;
+    this->unk54 = fparg1;
+}
+
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CC4B0);
+
+extern "C"
+void func_002CD060(GE_Device*);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CD060); // ? func_002CD060(GE_Device*,)
+// RCT3 GE_Device::FlushRect?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CD0C0); // GE_PS2Device*,
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CDD48); // GE_PS2Device*,
+// if stubbed, bookmetaphor does not render properly
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CE070); // GE_Device*,
+
+extern "C"
+void func_002CE0F8(GE_Device* arg) {
+    func_002CD060(arg);
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CE118__9GE_Device); // RCT3 RenderTextMesh ?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CE2B0); // GE_Device member; render text? ; RCT3 AddRectToTextMesh?
+
+#ifdef NON_MATCHING
+void GE_Device::func_002CE870() {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CE870__9GE_Device); // RCT3 RenderTextMesh? ; called by DrawText
+#endif
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CE8F0); // "You've got a NULL text glyph."
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CEA98);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CEB20); // RCT3 GE_Device::FindCustomGlyph(char const*) ?
+// Used for PS2 button icons
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CEB78); // font icons function?
+// RCT3 GE_Device::ParseEscapeString ?
+
+#ifdef NON_MATCHING
+void GE_Device::DrawText(/**/) {
+
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CEC18); // this function deals with font rendering
+#endif
+// RCT3 GE_Device::DrawText ?
+// a2, const char*
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CF2D8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CFA18); // text  function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CFF38);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002CFFE0);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D0150); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D0218); // GE_PS2Device virtual; RCT3 DrawSetScreenMatrix?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D0490); /* rct3 GE_Device::GetViewFrustrumClipVolume ? */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D04E8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D0620); // rendering function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D0FE8);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D10B8); // rendering function; level of detail?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1240); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D12A0); // GE_Device*,
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D12E8); // GE_Device*,
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1318); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1350); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1388); // called by unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D13C8); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1408); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1450); // called by unreferenced function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D14A0); // rendering function
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1540); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D15F0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D16B0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1780); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1860); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1948); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1A38); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1B10);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GE", _vt$9GE_Device);
+
+INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/GE", _vt$12GE_PrimCache);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1B50); /* __tf10ClipVolume */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1B90); // unreferenced
+
+int func_002D1BC0() { // unreferenced
+    return 0;
+}
+
+int func_002D1BC8() { // unreferenced
+    return 0;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", __tf12GE_PrimCache);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", _$_12GE_PrimCache);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C40); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C50); /* return a0->unk8 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C58); /* return a0->unkC */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C60); /* return a0->unk10 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C68); /* return a0->unk4 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C70); /* return a0->unk2 */
+
+int GE_PrimCache::func_002D1C78() {
+    return 0;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C80); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C88); /* a0->unk14 = a1 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1C90); /* return a0->unk14 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", __tf9GE_Device);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1CE8); /* return D_00452898 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1CF0); /* return a0->unk78 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1CF8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1D00); /* return D_0045289C */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1D08);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1D18); /* return D_004528A0 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1D20); // WGRABBIT //GetCapsFloat__C9GE_Device7GE_Caps ?
+
+
+int GE_Device::func_002D1D58() {
+    return 0;
+}
+
+void GE_Device::func_002D1D60() {
+    return;
+}
+
+void GE_Device::func_002D1D68() {
+    return;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1D70); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1E40); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1E48); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1E50); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1E70); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1E90); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1ED8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1F00); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1F58); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D1FC8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2068); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2108); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2148); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D21B8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2228); // unreferenced
+
+void GE_Device::Suspend() {
+    return;
+}
+
+void GE_Device::func_002D2258() { // GE_Device::Restart?
+    return;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2260);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2280); /* return (float) a0->unk194 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2288); /* return a0->unk98 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22B8); /* return a0->unk94 */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22C0); /* return a0->unk9C */
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22C8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22D0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22D8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22E0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D22F8); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2300); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2318); // unreferenced
+
+void GE_Device::func_002D2328() {
+    return;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2330); /* return -0x1 */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2338); // virtual
+/* return -0x1; */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2340); // WGRABBIT GE_Device::SetVisSampleEnable(int, bool)?
+
+int GE_Device::func_002D2348() { // WGRABBIT GE_Device::GetVisSampleEnable(int?)
+    return -1;
+}
+
+float GE_Device::func_002D2350() { // WGRABBIT GE_Device::GetVisibility(int?)
+    return -1.0f;
+}
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2360); /* __tf17GE_RenderHardware */
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D23A0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D23D0); // unreferenced
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D26E8); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", __tf17GE_TransformState);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2D40);
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/GE", func_002D2D60);
