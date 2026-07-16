@@ -1,6 +1,7 @@
 #include "common.h"
 #include "unk.h"
 // WalkerProvider_IF functions?
+// Walker.cpp/Walker.h?
 
 INCLUDE_ASM("asm/nonmatchings/text_00260028", func_00260028);
 

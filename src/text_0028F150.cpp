@@ -22,7 +22,7 @@ INCLUDE_ASM("asm/nonmatchings/text_0028F150", func_0028F208);
 
 INCLUDE_ASM("asm/nonmatchings/text_0028F150", Render__12MeshInstanceP9GE_Device); /* rct3 MeshInstance::Render ? */
 
-int func_00290D08() { // MeshInstance method?
+int func_00290D08() { // MeshInstance method? ; called by unreferenced function
     return 0;
 }
 

@@ -82,7 +82,7 @@ string_ascii::string_ascii(unsigned int size, char c) {
     m_cont->m_len = size;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6FE0);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D6FE0); // unreferenced
 
 // func_002D7050
 void string_ascii::EnsureSpaceFor(int size) const {
@@ -110,7 +110,7 @@ void func_002D74F8() {
     return;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7500);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7500); // if stubbed, game does not render correctly
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D75F0);
 
@@ -118,7 +118,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D76D0);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D76E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7710);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7710); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D6BE8", D_00443B70); /* "0123456789abcdefghijklmnopqrstuvwxyz" */
 
@@ -158,13 +158,13 @@ loop_1:
     return var_16;
 }
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7808);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7808); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D78D0); /* Endian::Endian */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", _$_6Endian);
 
-void Endian::func_002D7980(void) {
+void Endian::func_002D7980() {
     return;
 }
 
@@ -183,25 +183,25 @@ INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7A78);
 // split for Endian?
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7AB8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7BD8);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7BD8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7C20);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7C20); // Endian virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7F28);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7F70);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D7F70); // Endian virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8100);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8148);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8148); // Endian virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8178);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8178); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D81C0); // in endian.cpp
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D81C0); // Endian virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D84C8);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D84C8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8510);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8510); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8538);
 
@@ -215,7 +215,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8700);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D8750); // in Endian.cpp
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D87E0);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D87E0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", _$_16Endian_ExpandMem);
 
@@ -279,15 +279,15 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D6BE8", D_00443D70); /* "10Endian_Mem" 
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", __tf16Endian_ExpandMem);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93C0);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93C0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93C8);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93C8); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93D8);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D93D8); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", __tf11Endian_File);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D9468);
+INCLUDE_ASM("asm/nonmatchings/text_002D6BE8", func_002D9468); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D6BE8", D_00443D98); /* "11Endian_File" */
 

@@ -1023,15 +1023,50 @@ INCLUDE_RODATA("asm/nonmatchings/text_002ADC40", D_00441900);
 #ifdef NON_MATCHING
 extern "C" void func_002C9418(void); // remove later
 void GE_PS2Device::BeginScene() {
-    if (this->unk458 == 0) {
-        func_002C9418();
-        this->unk798 = this->unk798 + 1;
-    }
-    else {
+    // s32 temp_8;
+    // void *temp_7;
+    // void *temp_7_2;
+    // void *temp_2;
+
+    // D_00452840 = D_0045283C;
+    // D_0045283C = 0;
+    // D_00452838 = Count - D_00452824;
+    // SwitchToNext__6Thread();
+    if (this->unk458 != 0) {
         scePrintf("FGDK ERROR: GE_Device::BeginScene called multiple times with no EndScene\n");
         PS2_BREAK();
+        // return;
     }
+    // D_00452828 = Count - D_00452824;
+    // D_0045282C = Count - D_00452824;
+    // D_00452688 = D_00452684 - D_00452680;
+    // D_00452680 = Count;
+    func_002C9418();
+    // func_002C0A28(D_004525B4, arg0->unk75C);
+    // func_002C9A20(arg0);
+    // func_002B16E8(arg0->unk760);
+    // temp_8 = this->unk214;
+    // temp_7 = arg0->unk21C;
+    // arg0->unk228 = (s32) arg0->unk230;
+    // arg0->unk218 = temp_8;
+    // arg0->unk220 = temp_7;
+    // temp_2 = arg0->unk0;
+    this->unk458 = 1;
+    // arg0->unk224 = (s32) arg0->unk22C;
+    // arg0->unk764 = 0;
+    // arg0->unk76C = 0;
+    // arg0->unk768 = 0;
+    // arg0->unk5E4 = 0;
+    // temp_2->unk124(arg0 + temp_2->unk120, 0x145, 0, temp_7, temp_8);
+    // temp_7_2 = arg0->unk0;
+    // temp_7_2->unk124(arg0 + temp_7_2->unk120, 0x144, 0, temp_7_2);
+    // func_002C3F98(arg0);
+    this->unk798 = this->unk798 + 1;
+    // D_00452678 = Count - Count;
+    // D_00452820 = Count;
 }
+
+
 #else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40",BeginScene__12GE_PS2Device);
 #endif
@@ -1064,16 +1099,21 @@ INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C4BF8); // GE_PS2Device*,
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", func_002C4C80); // render ui overlay?
 
 #ifdef NON_MATCHING
+
 void GE_PS2Device::EndScene() {
-    if (this->unk458 == true) {
-        this->unk458 == false;
-        //
-    }
-    else {
+    if (this->unk458 != true) {
         scePrintf("FGDK ERROR: GE_Device::EndScene called with no BeginScene\n");
         PS2_BREAK();
+        // return;
     }
+    this->unk458 = false;
+    // D_00452760 = Count - D_00452820;
+    // func_002C26F8(D_004525B4);
+    // D_00452844 = D_004521D0;
+    // D_0045267C = Count - D_00452820;
 }
+
+
 #else
 INCLUDE_ASM("asm/nonmatchings/text_002ADC40", EndScene__12GE_PS2Device);
 // jalr called by 001CADD8

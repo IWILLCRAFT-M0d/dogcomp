@@ -12,7 +12,7 @@ INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276190); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276650); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002766C0);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002766C0); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00276A40); // unreferenced
 
@@ -74,9 +74,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277408); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_002774A0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277500);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277500); // called by unreferenced functions
 
-INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277520);
+INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277520); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/text_00275FF8", func_00277540);
 

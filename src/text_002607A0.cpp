@@ -835,7 +835,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269410); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", _$_20Tree34_NodeAllocator);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269598); // Tree34_NodeAllocator member
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269598); // Tree34_NodeAllocator virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269600); // Tree34_NodeAllocator member
 
@@ -853,11 +853,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", NewNode__12Tree34_BasicP12Tree34_B
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269718); // RCT3 Tree34_Basic::DeleteNode(Tree34_Node*) ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269760);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269760); // RCT3 Tree34_Basic::Tree34_Basic?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", Empty__12Tree34_Basic); // RCT3 Tree34_Basic::Empty() ?
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269810);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269810); // RCT3 Tree34_Basic::~Tree34Basic?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_00269868); // RCT3_Tree34_Node::IntFind ?
 
@@ -877,11 +877,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A208);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A228);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A2C8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A2C8); // RCT3 Tree34_Basic::operator[]?
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A2E8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A3C8);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A3C8); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A3E8);
 
@@ -893,7 +893,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A570);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A590);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A700);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A700); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A720);
 
@@ -901,7 +901,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A788);
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A7A8);
 
-INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A840);
+INCLUDE_ASM("asm/nonmatchings/text_002607A0", func_0026A840); // called by unreferenced function
 
 INCLUDE_ASM("asm/nonmatchings/text_002607A0", __tf25Tree34_NodeAllocatorBasic);
 

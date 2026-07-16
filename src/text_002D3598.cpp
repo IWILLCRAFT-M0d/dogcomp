@@ -27,7 +27,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3628);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3690); // called by unreferenced function
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D36E0);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D36E0); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3760);
 
@@ -62,7 +62,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", __16DebugEnvironment);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", _$_16DebugEnvironment);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950); // RCT3 DebugEnvironment::OnNewMessage(const TextMessage*) ?
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D3950); // DebugEnvironment virtual
+// RCT3 DebugEnvironment::OnNewMessage(const TextMessage*) ?
 
 INCLUDE_RODATA("asm/nonmatchings/text_002D3598", D_00442D68);
 
@@ -146,9 +147,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4DE8);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4E48);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4EC0);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F28);
-INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F90);
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4EC0); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F28); // unreferenced
+
+INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4F90); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D3598", func_002D4FE8);
 

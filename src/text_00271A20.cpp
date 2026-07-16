@@ -1,14 +1,7 @@
 #include "common.h"
-#include <stdio.h>
+
 #include <string.h>
 #include "unk.h"
-#include "mem.h"
-#include <eekernel.h>
-
-#include "FGDK3/Playstation2/Thread.h"
-#include "FGDK3/Playstation2/RunPath.h"
-#include "FGDK3/Playstation2/File_CD.h"
-
 
 INCLUDE_ASM("asm/nonmatchings/text_00271A20", func_00271A20);
 

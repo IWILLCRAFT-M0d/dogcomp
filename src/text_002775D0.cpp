@@ -102,11 +102,19 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002784C8); /* __7PointerPv Po
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", _$_7Pointer);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278608); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278608); // Pointer virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278668); // virtual
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00278668); // Pointer virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002786A0);
+#ifdef NON_MATCHING
+void Pointer::func_002786A0(float fparg0) {
+  this->unk64 = fparg0;
+  this->unk2C = 0;
+  this->unk60 += fparg0;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002786A0); // Pointer virtual
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_002786B8);
 
@@ -138,9 +146,11 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", __tf7Pointer);
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279618);
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279630); /* return (float) a0-unk8 */
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279630); // unreferenced
+/* return (float) a0-unk8 */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279638); /* return (float) a0-unkC */
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279638); // unreferenced
+/* return (float) a0-unkC */
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279640); /* return (float) a0-unk10 */
 
@@ -150,7 +160,7 @@ INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279650); /* return (float) 
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279658); /* return (float) a0-unk1C */
 
-INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279660);
+INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279660); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002775D0", func_00279680); /* a0-unk54 = a1 */
 

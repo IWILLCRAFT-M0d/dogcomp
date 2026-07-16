@@ -9,6 +9,7 @@ void InterfaceError(char* file, int line) {
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296840); // RCT3 InterfaceInfo::InterfaceInfo ?
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296878); // RCT3 ClassInfo::Create?
+// new ClassInfo();
 
 #ifdef NON_MATCHING
 extern void* D_00451CB8;
@@ -30,15 +31,17 @@ INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296AF0); /* rct ClassInfo::
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296CB8); // RCT3 /* InterfaceTag::InterfaceTag(InterfaceTag const&) */  ?
 
+//https://decomp.me/scratch/yXsTr
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296D40); /* rct3 InterfaceTag::InterfaceTag(const char*, NameTag::StringType) */
 
 // DDE_FatalError("There are more than %i interfaces (%i, in fact): the ClassInfo interface arrays should become cleverer.", 100, s_count + 1);
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296FB0);
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00296FB0); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002970C0); // RCT3 InterfaceTag::HardShutDown() ?
 
-INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297158); // RCT3 ClassInfo::HardShutDown() ?
+INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297158); // unreferenced
+// RCT3 ClassInfo::HardShutDown() ?
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002971D0);
 
@@ -48,7 +51,9 @@ INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297228); // unreferenced
 
 INCLUDE_RODATA("asm/nonmatchings/text_00296818", _vt$9ClassInfo);
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297238);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297378); // RCT3 NameTag::Compare(const NameTag*, const NameTag*) ?
 
@@ -73,4 +78,6 @@ INCLUDE_ASM("asm/nonmatchings/text_00296818", func_002974E8);
 
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297520);
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/text_00296818", func_00297558);
+#endif

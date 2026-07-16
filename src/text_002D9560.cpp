@@ -14,9 +14,9 @@ LiveEditable::LiveEditable(char* arg1, char* arg2) { // member, manager?
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __12LiveEditablePcPc);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D95D0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D95D0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9620);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9620); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9658);
 
@@ -35,7 +35,8 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_15EditableManager);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D99F8); // EditableManager virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9B08); // "Duplicate member name \'%s\' in manager %s"
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9B08);
+// DDE_FatalError("Duplicate member name \'%s\' in manager %s", /**/);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002D9C38);
 
@@ -67,11 +68,12 @@ INCLUDE_RODATA("asm/nonmatchings/text_002D9560", _vt$15EditableManager);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf15EditableManager);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA568);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA568); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA570); /* return a0->unk2C */
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA570); // unreferenced
+/* return a0->unk2C */
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA578);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA578); // EditableSelectionDialog virtual
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf23EditableSelectionDialog);
 
@@ -87,17 +89,18 @@ INCLUDE_ASM("asm/nonmatchings/text_002D9560", _$_17Widget_FilterText);
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", __tf17Widget_FilterText);
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA7B8);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA7B8); // Widget_FilterText virtual
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA9E0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DA9E0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAA20);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAA20); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAA0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAA0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAC0);
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAAC0); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB10); /* return 0; */
+INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB10); // unreferenced
+/* return 0; */
 
 INCLUDE_ASM("asm/nonmatchings/text_002D9560", func_002DAB18);
 
