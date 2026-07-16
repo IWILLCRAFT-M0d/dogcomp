@@ -57,7 +57,9 @@ typedef struct {
 
 
 /**
- * @note Name taken from RCT3 symbols.
+ * @note Class and method names taken from RCT3 symbols.
+ *
+ * @todo Document variables.
  */
 class AnimationVariable {
     public:
@@ -67,6 +69,8 @@ class AnimationVariable {
         float unkC;
         void* unk10;
         AnimationVariable(float);
+        void SetDefaultNextValue(float);
+        void Advance();
 };
 
 class StdAllocator {
