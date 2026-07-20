@@ -5,6 +5,16 @@
 #include "FGDK3/Playstation2/Thread.h"
 #include "data_unk.h"
 
+/**
+ * @note Name taken from RCT3 symbols.
+ */
+struct FileInZip_Info {
+    unsigned int m_unk0;
+    unsigned int m_size;
+    char unkC[4];
+    char* m_name;
+};
+
 class FileSystem {
     public:
         FileSystem(string_ascii);
@@ -13,6 +23,7 @@ class FileSystem {
 
 class FileSystemDisc {
     public:
+        void* unkC;
         FileSystemDisc();
         FileSystemDisc(void*, string_ascii);
         // virtual ? = 0;
@@ -58,10 +69,15 @@ class StorageDevice_MemCard : public StorageDevice {
         /* 0x14 */ int m_port;
         int unk18;
         int unk1C;
+        int unk20;
+        int unk24;
 
         //StorageDevice_MemCardUpdater* unk28;
         StorageDevice_MemCard(int slot);
-
+        virtual int func_00301648();
+        virtual int func_00302658();
+        // virtual ? func_00302690
+        //
         virtual void func_003016A0(); // format
         virtual void func_00301798(); // unformat?
 };
@@ -95,16 +111,17 @@ class FileSystemDisc_CD : public FileSystemDisc {
     public:
         FileSystemDisc_CD();
         virtual ~FileSystemDisc_CD();
+        // virtual ? func_00303BB0
 };
 
 // static FileSystemRoot* D_00452EAC? // RCT3 m_rootDisc?
 class FileSystemDiscRoot : public FileSystemDisc {
     public:
         FileSystemDiscRoot();
-        // func_002FFA20
-        // func_002FFA58
-        // func_002FFAC0
-        // func_002FFAF8
+        // virtual ? func_002FFA20
+        // virtual ? func_002FFA58
+        // virtual ? func_002FFAC0
+        // virtual ? func_002FFAF8
         virtual ~FileSystemDiscRoot();
         virtual int func_002FFA90();
 };
@@ -120,7 +137,7 @@ class File {
             Access();
             virtual ~Access();
             // virtual ? = 0;
-            // virtual ? = 0;
+            // virtual ? () = 0; // RCT3 RequestLength? (returns size of file)
             // virtual ? = 0;
             // virtual ? = 0;
             // virtual ? = 0;
@@ -136,6 +153,7 @@ class File {
 
 };
 
+// Unused?
 class File_MemRead : public File::Access {
     public:
         //File_MemRead

@@ -15,7 +15,7 @@ class File_MemCard : public File::Access {
         int unk424;
         // File_MemCard(void*, int, int)
         virtual ~File_MemCard();
-        void func_00300040();
+        virtual void func_00300040();
 };
 
 extern void * const File_MemCard_StdInit_UsedModules[];

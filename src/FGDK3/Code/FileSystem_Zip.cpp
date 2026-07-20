@@ -6,8 +6,8 @@
 // Beginning of FileSystem_Zip.cpp
 
 #ifdef NON_MATCHING
-FileAccess_Zip_Stored::FileAccess_Zip_Stored(const void* arg1, const FileSystemDisc_Zip* arg2) {
-    this->unk8 = arg1;
+FileAccess_Zip_Stored::FileAccess_Zip_Stored(const FileInZip_Info* arg1, const FileSystemDisc_Zip* arg2) {
+    this->m_info = arg1;
     this->unkC = arg2;
 }
 #else
@@ -18,23 +18,33 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", _$_21FileAccess_Zip_St
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310CC0__21FileAccess_Zip_Stored); // FileAccess_Zip_Stored virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310CE8__21FileAccess_Zip_Stored);
+unsigned int FileAccess_Zip_Stored::func_00310CE8() {
+    return m_info->m_size;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310D20); // FileAccess_Zip_Stored virtual
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310D20); // FileAccess_Zip_Stored virtual; Execute?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310F10); // FileAccess_Zip_Stored virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00310F80); // FileAccess_Zip_Stored member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311008__21FileAccess_Zip_Stored); /* return a0->unk34 */
+void FileAccess_Zip_Stored::func_00310F80(int arg1) {
+    // TODO: Replace explicit function name when method name is decided
+    if (arg1 >= 0 && (int) func_00310CE8() >= arg1) {
+        this->unk34 = arg1;
+    }
+}
+
+int FileAccess_Zip_Stored::func_00311008() {
+    return this->unk34;
+}
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", D_00448040); /* "c:/coding/fgdk3/Code/Common/FileSystem_Zip.cpp" */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311040); // RCT3 ZipCheckError?
 
 #ifdef NON_MATCHING
-FileAccess_Zip_Deflated::FileAccess_Zip_Deflated(const void* arg1, FileSystemDisc_Zip* arg2) {
-    this->unk8 = arg1;
+FileAccess_Zip_Deflated::FileAccess_Zip_Deflated(const FileInZip_Info* arg1, FileSystemDisc_Zip* arg2) {
+    this->m_info = arg1;
     this->unkC = arg2;
 }
 #else
@@ -56,9 +66,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311430__23FileA
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003114C0__23FileAccess_Zip_Deflated);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003114E8); // FileAccess_Zip_Deflated member
+unsigned int FileAccess_Zip_Deflated::func_003114E8() {
+    return m_info->m_size;
+}
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311520); // FileAccess_Zip_Deflated virtual
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311520); // FileAccess_Zip_Deflated virtual; Execute?
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003118A8__23FileAccess_Zip_Deflated); // FileAccess_Zip_Deflated virtual
 
@@ -67,6 +79,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311918); // Fil
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003119A0__23FileAccess_Zip_Deflated); // FileAccess_Zip_Deflated virtual; return a0->unk38 */
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003119D8); // FileSystem_Zip virtual; RCT3 FileSystem_Zip::TestAndCreateDisc?
+// new FileSystemDisc_Zip
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311B10); // FileSystemDisc_Zip (FileSystemDisc*, string_ascii const&?)
 
@@ -74,17 +87,21 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311B88);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311C88); // RCT3 FileSystemDisc_Zip::Compare(char const*, char const*) ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311DD0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00311DD0); // RCT3 FileSystemDisc_Zip::HeapBubbleDown(int, int) const ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003120D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003120D0); // RCT3 FileSystemDisc_Zip::HeapSort() const ?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312238);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312238); // RCT3 FileSystemDisc_Zip::AttachToFile(Stream*) ?
+// a1 is File_CD*?
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312680); /*FileSystemDisc_Zip::Find(char * filename)? */
+//  vtbl[3] called by jalr (RequestLength)?
+//
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312860);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312680); /*FileSystemDisc_Zip::Find(char const*) const? */
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003129D0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00312860); // RCT3 FindLeastGE?
+
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003129D0); // RCT3 FindLeastGT?
 
 #ifdef NON_MATCHING
 void* FileSystemDisc_Zip::func_00312BC8(/**/) {
@@ -313,9 +330,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00314DA0); /* Fil
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00314E30);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00314EE8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00314EE8); // FileSystemDisc_FileDescriptor virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315100);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315100); // FileSystemDisc_FileDescriptor virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315330);
 
@@ -361,9 +378,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_003159C0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315A00);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315A70);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315A70); // FileSystemDisc_FileDescriptor virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315AA8); // return 0
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/FileSystem_Zip", func_00315AA8); // FileSystemDisc_FileDescriptor virtual
+// return 0
 
 #ifdef NON_MATCHING
 FileSystemDisc_FileDescriptor::FileSystemDisc_FileDescriptor() : FileSystemDisc(0, string_ascii("host0:")) {

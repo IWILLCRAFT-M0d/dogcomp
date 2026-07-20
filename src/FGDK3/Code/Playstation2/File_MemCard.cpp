@@ -101,11 +101,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003000
 #endif
 
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300140__12File_MemCard);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300140__12File_MemCard); // File_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003002C0);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003003C0);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003003C0); // File_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300640);
 
@@ -115,7 +115,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003007
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300890);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300988__12File_MemCard);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300988__12File_MemCard); // File_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003009C0); /* FileFind_MemCard */
 
@@ -132,12 +132,13 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", _$_22FileSy
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00300D50); // virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301058); // FileSystemDisc_Memcard virtual
+// new FileFind_MemCard
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301158); // FileSystemDisc_Memcard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003011F8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301290);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301290); // StoradgeDevice_MemCardUpdater virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003014E8);
 
@@ -155,19 +156,45 @@ StorageDevice_MemCard::StorageDevice_MemCard(int slot) : StorageDevice(string_as
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", __21StorageDevice_MemCardi); /* int slot */
 #endif
 
+#ifdef NON_MATCHING
+int StorageDevice_MemCard::func_00301648() {
+    if (this->unk18 != 0) {
+        this->unk18 = 0;
+        return 1;
+    }
+    return 0;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301648); // StorageDevice_MemCard virtual
+#endif
 
 // 00452ec8 memcard ps2semaphore?
 #ifdef NON_MATCHING
+
 void StorageDevice_MemCard::func_003016A0() {
-    //
-    if (sceMcFormat(this->m_port, 0) == sceMcResSucceed) {
-        //
-    }
-    else {
+    int temp_2;
+    int ret;
+
+    // func_00286A30(&D_00452EC8);
+    temp_2 = sceMcFormat(this->m_port, 0);
+    // sp0 = temp_2;
+    if (temp_2 == 0) {
+        loop_2:
+        if (sceMcSync(1, 0, &ret) == 0) {
+            goto loop_2;
+        }
+        if (temp_2 < 0) {
+            // func_002869C8(&D_00452EC8);
+            return;
+        }
         this->unk18 = 1;
         this->unk1C = 1;
+        this->unk20 = 1;
+        this->unk24 = 0x7D0000;
+        // func_002869C8(&D_00452EC8);
+        return;
     }
+    // func_002869C8(&D_00452EC8);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003016A0__21StorageDevice_MemCard);
@@ -180,14 +207,14 @@ void StorageDevice_MemCard::func_00301798() {
     if (sceMcUnformat(this->m_port, 0) == sceMcResSucceed) {
         this->unk18 = 1;
         this->unk1C = 1;
-        //   *(undefined4 *)&param_1->field_0x20 = 0;
+        this->unk20 = 0;
     }
-    // else {
+    else {
     //   FUN_002869c8((int *)&DAT_00452ec8);
     //   FUN_002ffd10(-1);
-    // }
+    }
     // FUN_002869c8((int *)&DAT_00452ec8);
-    // return;
+    return;
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301798__21StorageDevice_MemCard);
@@ -197,7 +224,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003018
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301958); // StorageDevice_MemCard virtual
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301A50);
+#endif
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", D_004475A0); /* "memcard1:" */
 
@@ -235,7 +264,7 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301E
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301F10); // unreferenced
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301F48);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301F48); // unreferenced
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00301FB0);
 
@@ -277,9 +306,15 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003025
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302608);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302658); // virtual
+#ifdef NON_MATCHING
+int StorageDevice_MemCard::func_00302658() {
+    return this->unk1C;
+}
+#else
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302658__21StorageDevice_MemCard); // StorageDevice_MemCard virtual
+#endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302690);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302690); // StorageDevice_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302720);
 
@@ -289,9 +324,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003027
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302838);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302870);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302870); // FileSystemDisc_MemCard virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003028A8);
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_003028A8); // FileSystemDisc_MemCard virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302930);
 
@@ -319,6 +354,8 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302C
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302C98);
 
+#ifndef NON_MATCHING
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302CE0);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_MemCard", func_00302D18);
+#endif

@@ -9,12 +9,13 @@
 
 class File_CD : public File::Access {
     public:
-        u_int unkC;
+        sceCdlFILE m_file;
         /* 0x808C */ u_int m_lbn;
         /* 0x8090 */ u_int m_sectors;
         File_CD(sceCdlFILE *fp);
         virtual ~File_CD();
-        virtual u_int func_00303110();
+        //
+        virtual u_int func_00303110(); // Get file size
 };
 
 extern void * const File_CD_StdInit_UsedModules[];

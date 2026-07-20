@@ -66,13 +66,11 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", _$_7File_CD);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003030E8); // File_CD Member
 
-#ifdef NON_MATCHING
+// RCT3 RequestLength?
 u_int File_CD::func_00303110() {
-    return this->unkC;
+    return m_file.size;
 }
-#else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303110__7File_CD);
-#endif
+
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", D_00447880); /* "c:/coding/FGDK3/Code/Playstation2/File_CD.cpp" */
 
@@ -86,9 +84,10 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303AD0); 
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303B70__7File_CD); // File_CD Member
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303BB0); // "CD search for %s\n"
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303BB0); // FileSystemDisc_CD virtual (string_ascii,? )
+// scePrintf("CD search for %s\n",/**/)
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303FD0); // FileSystemDisc_CD member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00303FD0); // FileSystemDisc_CD virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304008);
 
@@ -130,9 +129,9 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304660);
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_003046C8);
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730); // FileSystemDisc_CD member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304730); // FileSystemDisc_CD virtual
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768); // FileSystemDisc_CD member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304768); // FileSystemDisc_CD virtual
 
 #ifdef NON_MATCHING
 FileSystemDisc_CD::FileSystemDisc_CD() : FileSystemDisc(0, string_ascii("cdrom0:")) {
@@ -142,7 +141,7 @@ FileSystemDisc_CD::FileSystemDisc_CD() : FileSystemDisc(0, string_ascii("cdrom0:
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", __17FileSystemDisc_CD);
 #endif
 
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304830); // FileSystemDisc_CD member
+INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304830); // FileSystemDisc_CD virtual
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/File_CD", func_00304860);
 
