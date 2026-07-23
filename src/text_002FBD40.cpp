@@ -11,49 +11,63 @@
 
 INCLUDE_ASM("asm/nonmatchings/text_002FBD40", func_002FBD40); /* InputCD_PS2::InputCD_PS2 ?*/
 
+// https://decomp.me/scratch/NWmeR
 #ifdef NON_MATCHING
+extern int D_004535A4;
+extern int D_004535A8;
+extern int D_004535AC;
+
 void InputCD_PS2::func_002FBD70() {
-    static int D_004535A4 = sceCdStatus();
-    if (D_004535A4 < SCECdStatStop) {
-        static int D_004535A8 = sceCdGetError();
-    }
-    switch (D_004535A4) {
-        // case SCECdStatStop:
 
-        // case SCECdStatShellOpen:
-        default:
-            static int D_004535AC = sceCdGetDiskType();
-            if (D_004535AC < SCECdPS2CD) {
-                if (D_004535AC < SCECdPSCD) {
-                    if (D_004535AC < 3) {
-                        //if (D_004535AC > SCECdGDTFUNCFAIL)?
-                        if (0 < D_004535AC) {
-                            return;
-                        }
-                    }
-                    if (D_004535AC != SCECdNODISC) {
-                        //this->unk4 = 1;
-                        return;
-                    }
-                    //uVar1 = 3;
-                    break;
-                }
-                if (D_004535AC != SCECdUNKNOWN) {
-                    //this->unk4 = 1;
-                    return;
-                }
-            }
-            //uVar1 = 4;
-        case SCECdStatEmg:
-            //uVar1 = 1;
+    D_004535A4 = sceCdStatus();
+
+    if (D_004535A4 <= -1) {
+        D_004535A8 = sceCdGetError();
+        return;
+    }
+    switch (D_004535A4) {                             /* jump table: jtbl_004471A0 */
+        case SCECdStatStop:
+        case SCECdStatShellOpen:
+            this->unk4 = 2;
             break;
-        case SCECdStatRead:
-            return;
-        case SCECdStatSeek:
-            //this->unk4 = 0;
-            return;
+        default:
+            D_004535AC = sceCdGetDiskType();
+            switch(D_004535AC) {
+                case SCECdPSCD:
+                case SCECdPSCDDA:
+                case SCECdCDDA:
+                case SCECdDVDV:
+                case SCECdIllegalMedia:
+                    goto block_23;
+                case SCECdPS2CD:
+                case SCECdPS2CDDA:
+                case SCECdPS2DVD:
+                    this->unk4 = 0;
+                    break;
+                case SCECdUNKNOWN:
+                    goto block_23;
+                case SCECdNODISC:
+                    this->unk4 = 3;
+                    break;
+                case SCECdStatShellOpen:
+                case SCECdStatSpin:
+                    break;
+                default:
+                    this->unk4 = 1;
+                    break;
+            }
+            break;
+                case SCECdStatRead:
+                case SCECdStatSeek:
+                    this->unk4 = 0;
+                    break;
+                    block_23:
+                    this->unk4 = 4;
+                    break;
+                case SCECdStatEmg:
+                    this->unk4 = 1;
+                    break;
     }
-
 }
 
 #else

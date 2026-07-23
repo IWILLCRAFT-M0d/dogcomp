@@ -989,6 +989,7 @@ class InputCD {
 
 class InputCD_PS2 : public InputCD {
     public:
+        int unk4;
         // virtual ? func_002fbe78
         virtual void func_002FBD70();
 };
