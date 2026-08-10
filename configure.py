@@ -39,7 +39,7 @@ INCLUDE_PATHS        = "-Iinclude -I include/MultiStream -I include/ee_gcc -I in
 CC_DIR               = f"{TOOLS_DIR}/ee-gcc2.95.3"
 COMMON_COMPILE_FLAGS = f"-g0"
 COMPILER_FLAGS_C     = f"-x c {COMMON_COMPILE_FLAGS}"
-COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -fpermissive -G8 {COMMON_COMPILE_FLAGS}"
+COMPILER_FLAGS_CPP   = f"-x c++ -fno-exceptions -fpermissive -G8 -frtti {COMMON_COMPILE_FLAGS}"
 CROSS = "mips-linux-gnu-"
 LD_ARGS = f"-EL -T {LINK_DIR}/undefined_syms_auto.txt -T {LINK_DIR}/undefined_funcs_auto.txt -Map $mapfile -T $in -o $out"
 
@@ -80,6 +80,7 @@ UNCOMPATIBLE_SN_AS_SPLITS = [
 ]
 
 COMPLETED_SPLITS = [
+    "src/FGDK3/Code/Playstation2/InpJoy5.cpp"
 ]
 
 def clean():

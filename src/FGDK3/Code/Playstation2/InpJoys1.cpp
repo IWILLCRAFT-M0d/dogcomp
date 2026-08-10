@@ -32,7 +32,6 @@ INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_
 
 INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_InternalFinalise__Fv);
 
-#ifdef NON_MATCHING
 
 StdInit_ModuleDescription InputJoystick1_StdInit_Description = {
     0,
@@ -49,7 +48,7 @@ void * const InputJoystick1_StdInit_UsedModules[] = {
     &ThrowCatch_Initialise,
     &ThrowCatch_Finalise,
     0,
-    0,
+    0
 };
 
 Status InputJoystick1_Initialise() {
@@ -59,11 +58,6 @@ Status InputJoystick1_Initialise() {
 void InputJoystick1_Finalise() {
     StdInit_FinalisationSequence(&InputJoystick1_StdInit_Description);
 }
-
-#else
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_Initialise__Fv);
-INCLUDE_ASM("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", InputJoystick1_Finalise__Fv);
-#endif
 
 
 INCLUDE_RODATA("asm/nonmatchings/FGDK3/Code/Playstation2/InpJoys1", D_00446F00); /* _vt$21InputJoystick1_Device */

@@ -1786,8 +1786,11 @@ InputKeyboard_SuspendThread__Fv = 0x002F8E40; // type:func
 InputKeyboard_ResumeThread__Fv = 0x002F8E68; // type:func
 _$_20InputKeyboard_Device = 0x002F8E90; // type:func
 __tf20InputKeyboard_Device = 0x002F8EB0;
+
 // InpJoys1.cpp
 _$_21InputJoystick1_Device = 0x002F8F68; // type:func
+InputJoystick1_StdInit_UsedModules = 0x00446ED8;
+InputJoystick1_StdInit_Description = 0x00452DA8; // size:0x8
 InputJoystick1_InternalInitialise__Fv = 0x002F9190; // type:func
 InputJoystick1_InternalFinalise__Fv = 0x002F91D8; // type:func
 InputJoystick1_Initialise__Fv = 0x002F9248; // type:func
@@ -1795,6 +1798,8 @@ InputJoystick1_Finalise__Fv = 0x002F9278; // type:func
 __tf21InputJoystick1_Device = 0x002F9298;
 
 // InpJoy5.cpp
+InputJoy5_StdInit_UsedModules = 0x00446FD8;
+InputJoy5_StdInit_Description = 0x00452DE0; // size:0x8
 InputJoy5_InternalInitialise__Fv = 0x002F9408; // type:func
 InputJoy5_InternalFinalise__Fv = 0x002F9450; // type:func
 InputJoy5_Initialise__Fv = 0x002F9458; // type:func

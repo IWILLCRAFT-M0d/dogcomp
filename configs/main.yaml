@@ -440,8 +440,12 @@ segments:
 
 
 
-      - [0x34D580, gcc_except_table]
-      - [0x34D700, sdata]
+      - [0x34D580,  gcc_except_table]
+      - [0x34D700,  sdata]
+      - [0x353D98, .sdata, FGDK3/Code/Playstation2/InpJoys1]
+      - [0x353DB0,  sdata]
+      - [0x353DD0, .sdata, FGDK3/Code/Playstation2/InpJoy5]
+      - [0x353DE8,  sdata]
       - {start: 0x354280, type: sbss, vram: 0x00453280}
       - {start: 0x354A80, type: bss,  vram: 0x00453A80}
 
